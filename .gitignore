@@ -1,0 +1,22 @@
+# build output
+dist/
+.output/
+
+# deps
+node_modules/
+
+# astro
+.astro/
+
+# env
+.env
+.env.production
+.dev.vars
+
+# local automation queues
+.codex/reporadar-daily-queue/
+
+# os / editor
+.DS_Store
+*.log
+npm-debug.log*

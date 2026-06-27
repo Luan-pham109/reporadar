@@ -1,0 +1,348 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SignalBadge from '../../components/SignalBadge.astro';
+import { industryShort } from '../../lib/industries';
+import { includeDraft, shouldShowDrafts } from '../../lib/drafts';
+
+export async function getStaticPaths() {
+  const all = await getCollection('repos');
+  const entries = all.filter((e) => includeDraft(e.data));
+  // Cluster link: tool liên quan = cùng ngành hoặc cùng tag (loại draft ở prod, loại chính nó).
+  const linkable = entries;
+  return entries.map((entry) => {
+    const related = linkable
+      .filter((e) => e.id !== entry.id)
+      .map((e) => {
+        const sharedV = e.data.vertical.filter((v) => entry.data.vertical.includes(v)).length;
+        const sharedT = e.data.tags.filter((t) => entry.data.tags.includes(t)).length;
+        return { e, score: sharedV * 2 + sharedT };
+      })
+      .filter((x) => x.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 4)
+      .map((x) => x.e);
+    return { params: { slug: entry.id }, props: { entry, related } };
+  });
+}
+
+const { entry, related } = Astro.props;
+const r = entry.data;
+const { Content } = await render(entry);
+const showInternalAnalysis = shouldShowDrafts && ['localhost', '127.0.0.1'].includes(Astro.url.hostname);
+
+const dateStr = r.publishedAt.toLocaleDateString('vi-VN', {
+  day: '2-digit',
+  month: '2-digit',
+  year: 'numeric',
+});
+const greyTone = r.greyHatFlag === 'out' ? 'danger' : r.greyHatFlag === 'borderline' ? 'warn' : null;
+
+// ---- SEO / AEO ----
+const heroImg = r.media.find((m) => m.type === 'image')?.url;
+const keywords = [...r.vnMarket.seoKeywords, ...r.tags].join(', ');
+const seoTitle = `${r.name}: dùng để làm gì, thay công cụ nào? | RepoRadar VN`;
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname;
+
+// AEO: Article + SoftwareApplication
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: seoTitle,
+  description: r.oneLiner,
+  datePublished: r.publishedAt.toISOString(),
+  inLanguage: 'vi',
+  author: { '@type': 'Organization', name: 'RepoRadar VN' },
+  publisher: { '@type': 'Organization', name: 'RepoRadar VN' },
+  mainEntityOfPage: canonical,
+  ...(heroImg ? { image: [heroImg] } : {}),
+  ...(keywords ? { keywords } : {}),
+  about: { '@type': 'SoftwareApplication', name: r.name, applicationCategory: 'BusinessApplication', url: r.repoUrl },
+};
+
+// AEO: FAQPage — câu hỏi người dùng/AI hay hỏi
+const faqs = [
+  r.useCases.length > 0 && { q: `${r.name} dùng để làm gì?`, a: r.useCases.join(' ') },
+  r.paidToolReplaced && { q: `${r.name} thay được tool trả phí nào?`, a: `${r.name} có thể thay ${r.paidToolReplaced}.` },
+  r.usabilityRisk && { q: `Cần lưu ý gì trước khi dùng ${r.name}?`, a: r.usabilityRisk },
+].filter(Boolean) as { q: string; a: string }[];
+const faqLd =
+  faqs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+---
+
+<BaseLayout title={seoTitle} description={r.oneLiner} image={heroImg} keywords={keywords} ogType="article">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />
+    {faqLd && <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />}
+  </Fragment>
+
+  <a href="/" class="text-sm text-[var(--rr-muted)] no-underline hover:text-[var(--rr-text)]">← Trang chủ</a>
+
+  <header class="mt-4">
+    <div class="mb-3 flex flex-wrap items-center gap-2">
+      {r.maturity === 'pre-viral' && (
+        <SignalBadge tone="core" label="⚡ Đáng thử sớm" title="Có tín hiệu tốt từ cộng đồng quốc tế, nhưng ở Việt Nam còn ít người khai thác" />
+      )}
+      {r.maturity === 'established' && (
+        <SignalBadge tone="muted" label="⭐ Đã có chỗ đứng" title="Công cụ đã có cộng đồng dùng và đủ dữ liệu để đánh giá thực tế" />
+      )}
+      {r.vertical.map((v) => (
+        <a
+          href={`/nganh/${v}`}
+          class="rounded-full border border-[var(--rr-border)] px-2.5 py-0.5 text-xs text-[var(--rr-muted)] no-underline hover:border-[var(--rr-core)]/50 hover:text-[var(--rr-text)]"
+        >
+          {industryShort(v)}
+        </a>
+      ))}
+      {greyTone && (
+        <SignalBadge tone={greyTone} label={r.greyHatFlag === 'out' ? '⚠ Rủi ro cao' : 'Cần kể đúng ngữ cảnh'} />
+      )}
+      <span class="ml-auto text-xs text-[var(--rr-muted)]">{dateStr} · {r.week}</span>
+    </div>
+    <h1 class="text-3xl font-bold tracking-tight">{r.name}</h1>
+    <p class="mt-2 text-[var(--rr-muted)]">{r.oneLiner}</p>
+    <a
+      href={r.repoUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-3 inline-block text-sm text-[var(--rr-core)] hover:underline"
+    >
+      {r.repoUrl} ↗
+    </a>
+    {r.repoStats && (r.repoStats.stars != null || r.repoStats.forks != null || r.repoStats.note) && (
+      <p class="mt-2 flex flex-wrap gap-3 text-xs text-[var(--rr-muted)]">
+        {r.repoStats.stars != null && <span>⭐ {r.repoStats.stars.toLocaleString('vi-VN')} sao</span>}
+        {r.repoStats.forks != null && <span>🍴 {r.repoStats.forks.toLocaleString('vi-VN')} fork</span>}
+        {r.repoStats.note && <span>{r.repoStats.note}</span>}
+      </p>
+    )}
+  </header>
+
+  {r.media.length > 0 && (
+    <section class="mt-6 space-y-3">
+      {r.media.map((m) =>
+        m.type === 'video' ? (
+          <figure>
+            <video
+              src={m.url}
+              controls
+              preload="metadata"
+              class="w-full rounded-lg border border-[var(--rr-border)] bg-black"
+            ></video>
+            {m.caption && <figcaption class="mt-1 text-xs text-[var(--rr-muted)]">{m.caption}</figcaption>}
+          </figure>
+        ) : (
+          <figure>
+            <img
+              src={m.url}
+              alt={m.caption ?? r.name}
+              loading="lazy"
+              class="w-full rounded-lg border border-[var(--rr-border)]"
+            />
+            {m.caption && <figcaption class="mt-1 text-xs text-[var(--rr-muted)]">{m.caption}</figcaption>}
+          </figure>
+        ),
+      )}
+    </section>
+  )}
+
+  <!-- ============ TẦNG ĐỌC (reader-first, usecase-first) ============ -->
+
+  {r.useCases.length > 0 && (
+    <section class="mt-8 rounded-lg border border-[var(--rr-core)]/30 bg-[var(--rr-core)]/5 p-5">
+      <h2 class="text-base font-semibold">{r.name} dùng để làm gì?</h2>
+      <ul class="mt-3 space-y-2">
+        {r.useCases.map((uc) => (
+          <li class="flex gap-2 text-sm">
+            <span class="text-[var(--rr-core)]">✓</span>
+            <span>{uc}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {r.standoutFeatures.length > 0 && (
+    <section class="mt-6 rounded-lg border border-[var(--rr-border)] bg-[var(--rr-surface)] p-4">
+      <h2 class="text-sm font-semibold">{r.name} có gì nổi bật?</h2>
+      <ul class="mt-2 space-y-1.5">
+        {r.standoutFeatures.map((f) => (
+          <li class="flex gap-2 text-sm"><span class="text-[var(--rr-muted)]">•</span><span>{f}</span></li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="mt-6 space-y-4">
+    {(r.workflowStepReplaced || r.timeOrCostSaved || r.paidToolReplaced) && (
+      <div class="rounded-lg border border-[var(--rr-border)] bg-[var(--rr-surface)] p-4">
+        <h2 class="text-sm font-semibold">{r.name} thay được gì, tiết kiệm gì?</h2>
+        {r.workflowStepReplaced && <p class="mt-1 text-sm">{r.workflowStepReplaced}</p>}
+        {r.timeOrCostSaved && (
+          <p class="mt-2 text-sm text-[var(--rr-muted)]"><span class="font-medium text-[var(--rr-text)]">Tiết kiệm:</span> {r.timeOrCostSaved}</p>
+        )}
+        {r.paidToolReplaced && (
+          <p class="mt-2 text-sm text-[var(--rr-muted)]"><span class="font-medium text-[var(--rr-text)]">Có thể thay:</span> {r.paidToolReplaced}</p>
+        )}
+      </div>
+    )}
+
+    <div class="rounded-lg border border-[var(--rr-border)] bg-[var(--rr-surface)] p-4">
+      <h2 class="text-sm font-semibold">{r.name} hợp với ai ở Việt Nam?</h2>
+      <p class="mt-1 text-sm">{r.localProblem}</p>
+      <p class="mt-2 text-sm text-[var(--rr-muted)]"><span class="font-medium text-[var(--rr-text)]">Vì sao đáng chú ý:</span> {r.localEvidence}</p>
+    </div>
+
+    {r.usabilityRisk && (
+      <div class="rounded-lg border border-[var(--rr-warn)]/30 bg-[var(--rr-warn)]/5 p-4">
+        <h2 class="text-sm font-semibold text-[var(--rr-warn)]">⚠ Cần lưu ý gì trước khi dùng {r.name}?</h2>
+        <p class="mt-1 text-sm">{r.usabilityRisk}</p>
+      </div>
+    )}
+  </section>
+
+  <!-- Cluster: tool liên quan (cùng ngành / tag) -->
+  {related.length > 0 && (
+    <section class="mt-8">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Công cụ liên quan</h2>
+      <ul class="mt-3 grid gap-3 sm:grid-cols-2">
+        {related.map((rel) => (
+          <li>
+            <a
+              href={`/repos/${rel.id}`}
+              class="block h-full rounded-lg border border-[var(--rr-border)] p-3 no-underline transition-colors hover:border-[var(--rr-core)]/50"
+            >
+              <p class="text-sm font-semibold text-[var(--rr-text)]">{rel.data.name}</p>
+              <p class="mt-1 line-clamp-2 text-xs text-[var(--rr-muted)]">{rel.data.oneLiner}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <!-- ============ TẦNG PHÂN TÍCH (nội bộ / cho creator — gập lại) ============ -->
+  {showInternalAnalysis && (
+    <details class="mt-10 rounded-lg border border-dashed border-[var(--rr-border)] p-4">
+    <summary class="cursor-pointer text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">
+      Vì sao lọt radar · góc cho creator (nội bộ)
+    </summary>
+
+    <div class="mt-4 space-y-4">
+      {showInternalAnalysis && (
+        <div class="rounded border border-dashed border-[var(--rr-warn)]/40 p-3">
+          <p class="text-xs font-semibold text-[var(--rr-warn)]">[DEV] Nguyên liệu viết — KHÔNG render khi publish</p>
+          <p class="mt-1 text-sm">{r.vnMarket.insight}</p>
+          {r.vnMarket.seoKeywords.length > 0 && (
+            <p class="mt-1 text-xs text-[var(--rr-muted)]">SEO keywords: {r.vnMarket.seoKeywords.join(', ')}</p>
+          )}
+          {r.vnMarket.notes && <p class="mt-1 text-xs text-[var(--rr-muted)]">{r.vnMarket.notes}</p>}
+        </div>
+      )}
+
+      {r.maturity === 'pre-viral' && r.signalSources.length > 0 && (
+        <div>
+          <p class="text-sm font-semibold">Tín hiệu pre-viral</p>
+          <p class="mt-1 text-sm text-[var(--rr-muted)]">
+            Đang được bàn ở các nguồn dưới đây nhưng chưa lên GitHub Trending. Kèm link để tự đánh giá —
+            không hứa "chắc chắn viral".
+          </p>
+          <ul class="mt-2 flex flex-wrap gap-2">
+            {r.signalSources.map((s) => (
+              <li>
+                <a
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="rounded border border-[var(--rr-border)] px-2 py-1 text-xs hover:border-[var(--rr-core)]/50"
+                >
+                  {s.label} ↗
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <div>
+        <p class="text-sm font-semibold">Kiểm chứng hơn-AI (KR#5)</p>
+        <p class="mt-1 text-sm">
+          {r.aiCheck.canAIGetThis
+            ? '⚠ Thông tin này có thể tự lấy từ Trending/hỏi AI — cân nhắc đào sâu thêm.'
+            : '✓ Phần giá trị (đi-trước + insight ngành VN) khó tự lấy từ Trending/hỏi AI.'}
+        </p>
+        {r.aiCheck.note && <p class="mt-1 text-sm text-[var(--rr-muted)]">{r.aiCheck.note}</p>}
+      </div>
+
+      {r.suggestedAngle && (
+        <div>
+          <p class="text-sm font-semibold">Góc cho creator khuếch đại</p>
+          <p class="mt-1 text-sm text-[var(--rr-muted)]">{r.suggestedAngle}</p>
+          <p class="mt-2 text-xs text-[var(--rr-muted)]">
+            {r.creatorWhitespace ? '✓ Còn đất viết cho cộng đồng Việt.' : '⚠ Góc này đã bão hoà — tìm góc hẹp khác.'}
+          </p>
+        </div>
+      )}
+
+      <div class="prose-invert max-w-none border-t border-[var(--rr-border)] pt-4 text-sm leading-relaxed [&_blockquote]:border-l-2 [&_blockquote]:border-[var(--rr-border)] [&_blockquote]:pl-3 [&_blockquote]:text-[var(--rr-muted)] [&_h2]:mt-4 [&_h2]:font-semibold [&_li]:ml-4 [&_li]:list-disc [&_p]:mt-3">
+        <Content />
+      </div>
+    </div>
+    </details>
+  )}
+  <!-- ============ MEMBER VALUE (public teaser, auth hook sau) ============ -->
+  <section class="mt-10 rounded-lg border border-[var(--rr-core)]/25 bg-[var(--rr-core)]/5 p-5">
+    <div class="grid gap-5 sm:grid-cols-[1.2fr_0.8fr] sm:items-start">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-core)]">Member insight</p>
+        <h2 class="mt-2 text-lg font-semibold">Xem vì sao {r.name} lọt radar</h2>
+        <p class="mt-2 text-sm leading-6 text-[var(--rr-muted)]">
+          Bản public giữ phần đủ để quyết định có nên mở tab thử. Phần thành viên đi sâu hơn: nguồn tín hiệu,
+          keyword tiếng Việt, góc khai thác cho creator và ghi chú kiểm chứng hơn-AI.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <a href="/login" class="rounded-md bg-[var(--rr-core)] px-3 py-2 text-sm font-semibold text-black no-underline hover:opacity-90">
+            Đăng nhập để xem
+          </a>
+          <a href="/rss.xml" class="rounded-md border border-[var(--rr-border)] px-3 py-2 text-sm text-[var(--rr-muted)] no-underline hover:border-[var(--rr-core)]/50 hover:text-[var(--rr-text)]">
+            Theo dõi bản public
+          </a>
+        </div>
+      </div>
+      <ul class="space-y-2 text-sm">
+        {r.signalSources.length > 0 && (
+          <li class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-bg)] p-3">
+            <span class="font-medium text-[var(--rr-text)]">Nguồn tín hiệu:</span>
+            <span class="text-[var(--rr-muted)]"> {r.signalSources.length} link cộng đồng/quốc tế để tự kiểm chứng.</span>
+          </li>
+        )}
+        {r.vnMarket.seoKeywords.length > 0 && (
+          <li class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-bg)] p-3">
+            <span class="font-medium text-[var(--rr-text)]">Keyword VN:</span>
+            <span class="text-[var(--rr-muted)]"> {r.vnMarket.seoKeywords.length} cụm từ tìm kiếm nên canh sớm.</span>
+          </li>
+        )}
+        {r.suggestedAngle && (
+          <li class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-bg)] p-3">
+            <span class="font-medium text-[var(--rr-text)]">Góc khuếch đại:</span>
+            <span class="text-[var(--rr-muted)]"> Có angle riêng cho creator hoặc đội content.</span>
+          </li>
+        )}
+        <li class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-bg)] p-3">
+          <span class="font-medium text-[var(--rr-text)]">Kiểm chứng hơn-AI:</span>
+          <span class="text-[var(--rr-muted)]"> Ghi chú phần nào AI/Trending tự trả lời được, phần nào là insight riêng.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,163 @@
+---
+import { getCollection } from 'astro:content';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SignalBadge from '../components/SignalBadge.astro';
+import { industryShort } from '../lib/industries';
+
+const canEdit = import.meta.env.DEV;
+
+async function readDraftStates() {
+  if (!canEdit) return new Map<string, boolean>();
+
+  const reposDir = path.resolve(process.cwd(), 'src/content/repos');
+  const files = await fs.readdir(reposDir);
+  const states = new Map<string, boolean>();
+
+  await Promise.all(
+    files
+      .filter((file) => file.endsWith('.md') && !file.startsWith('_'))
+      .map(async (file) => {
+        const slug = file.replace(/\.md$/, '');
+        const text = await fs.readFile(path.join(reposDir, file), 'utf8');
+        const match = text.match(/^draft:\s*(true|false)\s*$/m);
+        states.set(slug, match ? match[1] === 'true' : false);
+      }),
+  );
+
+  return states;
+}
+
+const draftStates = await readDraftStates();
+const entries = canEdit
+  ? (await getCollection('repos')).sort((a, b) => {
+      const aDraft = draftStates.get(a.id) ?? a.data.draft;
+      const bDraft = draftStates.get(b.id) ?? b.data.draft;
+      if (aDraft !== bDraft) return aDraft ? -1 : 1;
+      return b.data.publishedAt.getTime() - a.data.publishedAt.getTime();
+    })
+  : [];
+
+const drafts = entries.filter((entry) => draftStates.get(entry.id) ?? entry.data.draft).length;
+const published = entries.length - drafts;
+---
+
+<BaseLayout title="Duyệt draft | RepoRadar VN" description="Màn hình duyệt draft local cho RepoRadar VN">
+  <header class="mb-6">
+    <div class="flex flex-wrap items-center justify-between gap-3">
+      <div>
+        <a href="/" class="text-sm text-[var(--rr-muted)] no-underline hover:text-[var(--rr-text)]">Trang chủ</a>
+        <h1 class="mt-2 text-2xl font-bold tracking-tight">Duyệt draft</h1>
+      </div>
+      {canEdit && (
+        <p class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface)] px-3 py-2 text-xs text-[var(--rr-muted)]">
+          {drafts} draft / {published} published
+        </p>
+      )}
+    </div>
+    <p class="mt-2 max-w-prose text-sm text-[var(--rr-muted)]">
+      Mở bài để đọc, bấm Publish khi ổn. Nút này chỉ hoạt động trong <code>npm run dev</code>.
+    </p>
+  </header>
+
+  {!canEdit ? (
+    <section class="rounded-lg border border-[var(--rr-warn)]/40 bg-[var(--rr-warn)]/5 p-4">
+      <p class="text-sm">Trang review chỉ dùng ở local dev, không hiện danh sách draft trên production.</p>
+    </section>
+  ) : (
+    <section class="space-y-3">
+      {entries.map((entry) => {
+        const r = entry.data;
+        const isDraft = draftStates.get(entry.id) ?? r.draft;
+        return (
+          <article data-review-card={entry.id} class="rounded-lg border border-[var(--rr-border)] bg-[var(--rr-surface)] p-4">
+            <div class="flex flex-wrap items-start justify-between gap-3">
+              <div class="min-w-0 flex-1">
+                <div class="mb-2 flex flex-wrap items-center gap-2">
+                  <span data-review-state={entry.id}>
+                    <SignalBadge tone={isDraft ? 'warn' : 'core'} label={isDraft ? 'Draft' : 'Published'} />
+                  </span>
+                  {r.maturity === 'pre-viral' && <SignalBadge tone="core" label="Đáng thử sớm" />}
+                  {r.maturity === 'established' && <SignalBadge tone="muted" label="Đã có chỗ đứng" />}
+                  {r.vertical.map((v) => (
+                    <span class="rounded-full border border-[var(--rr-border)] px-2.5 py-0.5 text-xs text-[var(--rr-muted)]">
+                      {industryShort(v)}
+                    </span>
+                  ))}
+                </div>
+                <h2 class="text-lg font-semibold">
+                  <a href={`/repos/${entry.id}`} class="no-underline hover:text-[var(--rr-core)]">{r.name}</a>
+                </h2>
+                <p class="mt-1 text-sm text-[var(--rr-muted)]">{r.oneLiner}</p>
+                <p class="mt-2 text-xs text-[var(--rr-muted)]">{entry.id}.md</p>
+              </div>
+
+              <div class="flex shrink-0 gap-2">
+                <a
+                  href={`/repos/${entry.id}`}
+                  class="rounded-md border border-[var(--rr-border)] px-3 py-2 text-sm no-underline hover:border-[var(--rr-core)]/50"
+                >
+                  Đọc
+                </a>
+                <button
+                  type="button"
+                  data-slug={entry.id}
+                  data-draft={isDraft ? 'false' : 'true'}
+                  class:list={[
+                    'rounded-md border px-3 py-2 text-sm font-medium',
+                    isDraft
+                      ? 'border-[var(--rr-core)] bg-[var(--rr-core)] text-black'
+                      : 'border-[var(--rr-border)] text-[var(--rr-muted)]',
+                  ]}
+                >
+                  {isDraft ? 'Publish' : 'Về draft'}
+                </button>
+              </div>
+            </div>
+          </article>
+        );
+      })}
+    </section>
+  )}
+
+  <p id="review-status" class="mt-4 text-sm text-[var(--rr-muted)]" aria-live="polite"></p>
+
+  <script>
+    const status = document.querySelector('#review-status');
+    document.querySelectorAll('button[data-slug]').forEach((button) => {
+      button.addEventListener('click', async () => {
+        const slug = button.dataset.slug;
+        const draft = button.dataset.draft === 'true';
+        button.setAttribute('disabled', 'true');
+        if (status) status.textContent = 'Đang ghi file...';
+
+        try {
+          const response = await fetch('/__drafts/publish', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ slug, draft }),
+          });
+          const result = await response.json();
+          if (!result.ok) throw new Error(result.error || 'Không ghi được file');
+          button.dataset.draft = draft ? 'false' : 'true';
+          button.textContent = draft ? 'Publish' : 'Về draft';
+          button.className = draft
+            ? 'rounded-md border px-3 py-2 text-sm font-medium border-[var(--rr-core)] bg-[var(--rr-core)] text-black'
+            : 'rounded-md border px-3 py-2 text-sm font-medium border-[var(--rr-border)] text-[var(--rr-muted)]';
+          const state = document.querySelector(`[data-review-state="${slug}"]`);
+          if (state) {
+            state.innerHTML = draft
+              ? '<span class="rounded-full border border-[var(--rr-warn)]/30 bg-[var(--rr-warn)]/10 px-2 py-0.5 text-xs font-medium text-[var(--rr-warn)]">Draft</span>'
+              : '<span class="rounded-full border border-[var(--rr-core)]/30 bg-[var(--rr-core)]/10 px-2 py-0.5 text-xs font-medium text-[var(--rr-core)]">Published</span>';
+          }
+          button.removeAttribute('disabled');
+          if (status) status.textContent = draft ? 'Đã đưa về draft.' : 'Đã publish.';
+        } catch (error) {
+          button.removeAttribute('disabled');
+          if (status) status.textContent = error instanceof Error ? error.message : 'Có lỗi xảy ra';
+        }
+      });
+    });
+  </script>
+</BaseLayout>

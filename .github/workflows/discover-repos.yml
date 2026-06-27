@@ -1,0 +1,66 @@
+name: Daily RepoRadar discovery
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Discovery source"
+        required: false
+        default: "all"
+      vertical:
+        description: "Vertical filter"
+        required: false
+        default: "all"
+      days:
+        description: "Lookback window in days"
+        required: false
+        default: "365"
+      limit:
+        description: "Max candidates"
+        required: false
+        default: "60"
+      pick:
+        description: "Candidate records to queue"
+        required: false
+        default: "5"
+  schedule:
+    - cron: "30 1 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      GITHUB_TOKEN: ${{ secrets.REPO_RADAR_GITHUB_PAT || secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Prepare Codex drafting queue
+        run: |
+          npm run daily -- \
+            --source "${{ inputs.source || 'all' }}" \
+            --vertical "${{ inputs.vertical || 'all' }}" \
+            --days "${{ inputs.days || '365' }}" \
+            --limit "${{ inputs.limit || '60' }}" \
+            --pick "${{ inputs.pick || '5' }}"
+
+      - name: Upload queue artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: reporadar-daily-queue
+          path: .codex/reporadar-daily-queue/latest.json

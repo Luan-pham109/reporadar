@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RepoCard from '../../components/RepoCard.astro';
+import IndustryNav from '../../components/IndustryNav.astro';
+import { INDUSTRIES, entriesInIndustry } from '../../lib/industries';
+import { includeDraft } from '../../lib/drafts';
+
+// Pillar page — 1 trang/ngành (PRD §2bis, KR#6 topical-authority).
+export async function getStaticPaths() {
+  const entries = await getCollection('repos', ({ data }) => includeDraft(data));
+  return INDUSTRIES.map((ind) => ({
+    params: { vertical: ind.slug },
+    props: {
+      industry: ind,
+      entries: entriesInIndustry(entries, ind.slug).sort(
+        (a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime(),
+      ),
+    },
+  }));
+}
+
+const { industry, entries } = Astro.props;
+const title = `${industry.label} — công cụ AI đáng dùng | RepoRadar VN`;
+---
+
+<BaseLayout title={title} description={industry.blurb}>
+  <a href="/" class="text-sm text-[var(--rr-muted)] no-underline hover:text-[var(--rr-text)]">← Trang chủ</a>
+
+  <header class="mt-4 mb-6">
+    <h1 class="text-2xl font-bold tracking-tight">{industry.icon} {industry.label}</h1>
+    <p class="mt-2 max-w-prose text-sm text-[var(--rr-muted)]">{industry.blurb}</p>
+    <p class="mt-3 max-w-prose rounded-lg border border-[var(--rr-border)] bg-[var(--rr-surface)] p-3 text-sm">
+      <span class="font-medium text-[var(--rr-core)]">Câu hỏi khi chọn:</span> {industry.question}
+    </p>
+  </header>
+
+  <div class="mb-8">
+    <IndustryNav active={industry.slug} showHot />
+  </div>
+
+  {entries.length === 0 ? (
+    <p class="text-sm text-[var(--rr-muted)]">Chưa có công cụ nào trong ngành này. Xem <a href="/" class="text-[var(--rr-core)] hover:underline">trang chủ</a> hoặc thử một ngành khác phía trên.</p>
+  ) : (
+    <div class="flex flex-col gap-4">
+      {entries.map((entry) => (
+        <RepoCard entry={entry} />
+      ))}
+    </div>
+  )}
+</BaseLayout>

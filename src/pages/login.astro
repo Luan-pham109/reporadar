@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Đăng nhập | RepoRadar VN" description="Đăng nhập RepoRadar VN để xem phần member insight.">
+  <section class="rounded-lg border border-[var(--rr-border)] bg-[var(--rr-surface)] p-6">
+    <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-core)]">RepoRadar member</p>
+    <h1 class="mt-2 text-2xl font-bold tracking-tight">Đăng nhập để mở lớp insight sâu</h1>
+    <p class="mt-3 max-w-prose text-sm leading-6 text-[var(--rr-muted)]">
+      Phần này sẽ dùng cho nguồn tín hiệu, keyword tiếng Việt, góc khuếch đại và bản full intelligence feed.
+      Auth thật sẽ được cắm sau khi chốt nền newsletter/member.
+    </p>
+    <div class="mt-5 flex flex-wrap gap-2">
+      <a href="/" class="rounded-md bg-[var(--rr-core)] px-3 py-2 text-sm font-semibold text-black no-underline hover:opacity-90">
+        Quay lại radar
+      </a>
+      <a href="/rss.xml" class="rounded-md border border-[var(--rr-border)] px-3 py-2 text-sm text-[var(--rr-muted)] no-underline hover:border-[var(--rr-core)]/50 hover:text-[var(--rr-text)]">
+        Theo dõi RSS
+      </a>
+    </div>
+  </section>
+</BaseLayout>

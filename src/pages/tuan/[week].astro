@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RepoCard from '../../components/RepoCard.astro';
+import { includeDraft } from '../../lib/drafts';
+
+// Tổng hợp newsletter theo tuần (PRD §7): 3-5 repo mạnh nhất của tuần.
+export async function getStaticPaths() {
+  const entries = await getCollection('repos', ({ data }) => includeDraft(data));
+  const byWeek = new Map<string, typeof entries>();
+  for (const e of entries) {
+    const list = byWeek.get(e.data.week) ?? [];
+    list.push(e);
+    byWeek.set(e.data.week, list);
+  }
+  return [...byWeek.entries()].map(([week, list]) => ({
+    params: { week },
+    props: {
+      week,
+      entries: list.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime()),
+    },
+  }));
+}
+
+const { week, entries } = Astro.props;
+---
+
+<BaseLayout title={`Tổng hợp tuần ${week} — RepoRadar VN`}>
+  <a href="/" class="text-sm text-[var(--rr-muted)] no-underline hover:text-[var(--rr-text)]">← Trang chủ</a>
+
+  <header class="mt-4 mb-8">
+    <h1 class="text-2xl font-bold tracking-tight">Tổng hợp tuần · {week}</h1>
+    <p class="mt-2 text-sm text-[var(--rr-muted)]">
+      {entries.length} công cụ được chọn trong tuần. Ít thôi, nhưng có lý do để thử.
+    </p>
+  </header>
+
+  <div class="flex flex-col gap-4">
+    {entries.map((entry) => (
+      <RepoCard entry={entry} />
+    ))}
+  </div>
+</BaseLayout>

@@ -1,0 +1,44 @@
+---
+import { INDUSTRIES } from '../lib/industries';
+
+interface Props {
+  /** Slug ngành đang active (để tô đậm), nếu có. */
+  active?: string;
+  /** Hiện chip "Đáng đi trước" + "Đã kiểm chứng" trỏ về #hot/#proven trên trang Feed. */
+  showHot?: boolean;
+}
+
+const { active, showHot = false } = Astro.props;
+---
+
+<nav class="flex flex-wrap gap-2 text-sm">
+  {showHot && (
+    <>
+      <a
+        href="/#hot"
+        class="rounded-full border border-[var(--rr-core)]/40 bg-[var(--rr-core)]/10 px-3 py-1 text-[var(--rr-core)] no-underline hover:bg-[var(--rr-core)]/20"
+      >
+        🔥 Đáng thử sớm
+      </a>
+      <a
+        href="/#proven"
+        class="rounded-full border border-[var(--rr-border)] px-3 py-1 text-[var(--rr-muted)] no-underline hover:border-[var(--rr-core)]/50 hover:text-[var(--rr-text)]"
+      >
+        ⭐ Đã có chỗ đứng
+      </a>
+    </>
+  )}
+  {INDUSTRIES.map((ind) => (
+    <a
+      href={`/nganh/${ind.slug}`}
+      class:list={[
+        'rounded-full border px-3 py-1 no-underline transition-colors',
+        active === ind.slug
+          ? 'border-[var(--rr-core)]/50 bg-[var(--rr-core)]/10 text-[var(--rr-core)]'
+          : 'border-[var(--rr-border)] text-[var(--rr-muted)] hover:border-[var(--rr-core)]/50 hover:text-[var(--rr-text)]',
+      ]}
+    >
+      {ind.icon} {ind.short}
+    </a>
+  ))}
+</nav>

@@ -1,0 +1,93 @@
+---
+import '../styles/global.css';
+import { INDUSTRIES } from '../lib/industries';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Ảnh OG (tuyệt đối hoặc tương đối). Mặc định không có. */
+  image?: string;
+  /** Meta keywords (đã join chuỗi). */
+  keywords?: string;
+  /** og:type — 'website' | 'article'. */
+  ogType?: string;
+}
+
+const {
+  title = 'RepoRadar VN — công cụ AI đáng đưa vào việc cho creative, agency, ecom & SEO',
+  description = 'RepoRadar VN chọn lọc công cụ AI và repo đáng dùng cho creative, agency, ecom, SEO: dùng vào việc gì, cắt khâu nào, thay được gì và cần lưu ý gì.',
+  image,
+  keywords,
+  ogType = 'website',
+} = Astro.props;
+
+// SEO: canonical + OG tuyệt đối (cần `site` trong astro.config).
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname;
+const ogImage = image ? (Astro.site ? new URL(image, Astro.site).href : image) : undefined;
+const canReviewDrafts = ['localhost', '127.0.0.1'].includes(Astro.url.hostname);
+---
+
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {keywords && <meta name="keywords" content={keywords} />}
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content="RepoRadar VN" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+
+    <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
+
+    <link rel="alternate" type="application/rss+xml" title="RepoRadar VN" href="/rss.xml" />
+    <slot name="head" />
+  </head>
+  <body class="min-h-screen">
+    <header class="border-b border-[var(--rr-border)]">
+      <div class="mx-auto flex max-w-3xl items-center justify-between px-4 py-5">
+        <a href="/" class="flex items-baseline gap-2 no-underline">
+          <span class="text-lg font-bold tracking-tight">RepoRadar<span class="text-[var(--rr-core)]"> VN</span></span>
+        </a>
+        <nav class="flex items-center gap-4 text-sm text-[var(--rr-muted)]">
+          <a href="/" class="hover:text-[var(--rr-text)]">Trang chủ</a>
+          {canReviewDrafts && <a href="/review" class="hover:text-[var(--rr-text)]">Review</a>}
+          <a href="/feed.json" class="hover:text-[var(--rr-text)]">JSON</a>
+          <a href="/rss.xml" class="hover:text-[var(--rr-text)]">RSS</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-3xl px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="mt-16 border-t border-[var(--rr-border)]">
+      <div class="mx-auto max-w-3xl px-4 py-6 text-xs text-[var(--rr-muted)]">
+        <nav class="mb-3 flex flex-wrap gap-x-4 gap-y-1">
+          <span class="font-medium text-[var(--rr-text)]">Ngành:</span>
+          {INDUSTRIES.map((ind) => (
+            <a href={`/nganh/${ind.slug}`} class="hover:text-[var(--rr-text)]">{ind.icon} {ind.short}</a>
+          ))}
+        </nav>
+        <p>
+          RepoRadar VN chọn lọc công cụ cho creative, agency, ecom và SEO. Ưu tiên thứ có thể đưa vào việc ngay:
+          <span class="text-[var(--rr-core)]">đang nổi sớm</span>,
+          <span class="text-[var(--rr-core)]">hợp đúng ngành</span> và
+          <span class="text-[var(--rr-core)]">có góc nhìn thực tế ở Việt Nam</span>.
+        </p>
+        <p class="mt-2">Không hứa “chắc chắn viral”; mỗi bài chỉ là một gợi ý để bạn tự kiểm và thử trong quy trình của mình.</p>
+      </div>
+    </footer>
+  </body>
+</html>

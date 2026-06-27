@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* RepoRadar VN — theme tối, gọn, ưu tiên đọc nhanh.
+   Quy ước màu theo "vùng giá trị" của PRD:
+   - core (vùng AI mù): accent xanh lá / hổ phách nổi bật
+   - commodity: xám, cố tình mờ hơn */
+:root {
+  --rr-bg: #0b0e14;
+  --rr-surface: #131722;
+  --rr-border: #232a39;
+  --rr-text: #e6e9ef;
+  --rr-muted: #8b94a7;
+  --rr-core: #34d399;     /* xanh lá: pre-viral / còn đất */
+  --rr-warn: #fbbf24;     /* hổ phách: cần lưu ý / bão hoà một phần */
+  --rr-danger: #f87171;   /* đỏ: đã bão hoà / AI làm được */
+}
+
+html {
+  background: var(--rr-bg);
+  color: var(--rr-text);
+  font-family: ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
