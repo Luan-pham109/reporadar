@@ -46,6 +46,24 @@ vnMarket:
 
 usabilityRisk: "Muốn tự cài thì cần biết dùng Docker/VPS; đây không phải kiểu bấm một phát là chạy. Ai không rành kỹ thuật sẽ hơi vất ở khâu cài, nhưng hướng dẫn tiếng Việt đã khá nhiều nên không đến nỗi bí."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, bạn có một lịch nội dung đa kênh đầu tiên và thử được một vòng đăng bài từ cùng một ý tưởng."
+  prerequisites:
+    - "Một máy hoặc VPS có thể chạy Docker."
+    - "Ít nhất 2-3 kênh social thật mà bạn đang quản lý, ví dụ Facebook Page, TikTok hoặc LinkedIn."
+    - "Một batch nội dung nhỏ để test, như 3 bài post hoặc một tuần lịch đăng."
+  steps:
+    - "Dựng Postiz theo hướng dẫn sẵn có và kết nối thử vài kênh quan trọng nhất trước, không cần nối hết toàn bộ nền tảng ngay."
+    - "Tạo một lịch nội dung nhỏ cho 3-5 bài để xem giao diện, trạng thái publish và cách quản lý nhiều kênh."
+    - "Dùng AI Writer hoặc caption variation trên một ý tưởng gốc để xem công cụ giúp nhanh ở đâu và dở ở đâu."
+    - "Lên lịch publish thử cho vài kênh khác nhau rồi theo dõi xem việc đăng, preview và sửa nội dung có ổn không."
+    - "So chi phí và công sức vừa bỏ ra với cách cũ: đăng tay, Buffer hoặc Hootsuite."
+  expectedResult: "Bạn có một vòng thử thật cho lịch đăng đa kênh và biết Postiz có giảm công thao tác hay giảm phí SaaS cho team mình không."
+  commonPitfalls:
+    - "Ôm luôn toàn bộ social stack ở lần đầu thay vì chỉ kiểm tra 2-3 kênh cốt lõi."
+    - "Tưởng phần cài đặt là khó nhất, trong khi bài toán thật nằm ở workflow nội dung và kiểm lỗi publish."
+    - "Tin hoàn toàn caption AI mà không chỉnh lại theo giọng thương hiệu từng nền tảng."
+
 greyHatFlag: "in"
 
 suggestedAngle: "Đừng làm lại bài 'cài Postiz' (đã bão hoà). Góc còn đất: 'Agency/creator VN bỏ Buffer, tự chạy đa kênh bằng Postiz' — tập trung workflow + tiết kiệm phí USD, không phải hướng dẫn Docker."

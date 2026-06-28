@@ -1,31 +1,76 @@
 @import "tailwindcss";
 
-/* RepoRadar VN — theme tối, gọn, ưu tiên đọc nhanh.
-   Quy ước màu theo "vùng giá trị" của PRD:
-   - core (vùng AI mù): accent xanh lá / hổ phách nổi bật
-   - commodity: xám, cố tình mờ hơn */
+/* AltStack - operator-grade, neutral-first interface.
+   Color ratio follows the brand doc: mostly neutral, Signal Blue for action,
+   Open Green for savings/OSS, Amber/Red only for caution and risk. */
 :root {
-  --rr-bg: #0b0e14;
-  --rr-surface: #131722;
-  --rr-border: #232a39;
-  --rr-text: #e6e9ef;
-  --rr-muted: #8b94a7;
-  --rr-core: #34d399;     /* xanh lá: pre-viral / còn đất */
-  --rr-warn: #fbbf24;     /* hổ phách: cần lưu ý / bão hoà một phần */
-  --rr-danger: #f87171;   /* đỏ: đã bão hoà / AI làm được */
+  --rr-bg: #f7f8fb;
+  --rr-surface: #ffffff;
+  --rr-surface-soft: #f3f4f6;
+  --rr-elevated: #ffffff;
+  --rr-border: #d8dee8;
+  --rr-border-strong: #b7c0ce;
+  --rr-text: #111827;
+  --rr-muted: #5f6b7a;
+  --rr-faint: #8a94a6;
+  --rr-core: #2563eb;
+  --rr-open: #22c55e;
+  --rr-warn: #f59e0b;
+  --rr-danger: #ef4444;
+  --rr-dark: #111827;
+  --rr-ring: rgba(37, 99, 235, 0.28);
+  --rr-shadow: 0 18px 45px rgba(17, 24, 39, 0.08);
 }
 
 html {
   background: var(--rr-bg);
   color: var(--rr-text);
-  font-family: ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Inter, ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(37, 99, 235, 0.08), rgba(37, 99, 235, 0) 320px),
+    var(--rr-bg);
 }
 
 a {
   color: inherit;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: "Space Grotesk", Inter, ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.18);
+}
+
+:focus-visible {
+  outline: 3px solid var(--rr-ring);
+  outline-offset: 3px;
+}
+
+.as-card {
+  border: 1px solid var(--rr-border);
+  background: var(--rr-surface);
+  box-shadow: 0 1px 0 rgba(17, 24, 39, 0.03);
+}
+
+.as-card:hover {
+  border-color: rgba(37, 99, 235, 0.45);
+}
+
+.as-grid-bg {
+  background-image:
+    linear-gradient(rgba(17, 24, 39, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 24, 39, 0.045) 1px, transparent 1px);
+  background-size: 28px 28px;
 }

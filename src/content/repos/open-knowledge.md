@@ -36,6 +36,24 @@ vnMarket:
 
 usabilityRisk: "OpenKnowledge chưa hỗ trợ desktop Windows; hiện desktop ưu tiên macOS, còn Linux/Windows phải chạy bản web qua CLI và cần Node 24+. Đây là rào cản lớn với nhiều người dùng Việt. Repo cũng còn rất mới nên tính năng có thể đổi nhanh."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, bạn có một vault note mà AI có thể đọc và sửa trực tiếp trên dữ liệu markdown của bạn."
+  prerequisites:
+    - "Một bộ note thật, tốt nhất là vài file markdown đang dùng trong Obsidian, Notion export hoặc repo ghi chú riêng."
+    - "Máy phù hợp với trạng thái hiện tại của dự án: macOS cho desktop hoặc Linux/Windows nếu bạn chấp nhận chạy bản web qua CLI với Node 24+."
+    - "Claude, Codex hoặc công cụ AI bạn muốn dùng cùng kho note đó."
+  steps:
+    - "Bắt đầu bằng một vault nhỏ hoặc một thư mục note mẫu, đừng import toàn bộ kho tri thức lớn ngay lần đầu."
+    - "Cài OpenKnowledge theo nền tảng bạn đang có rồi kết nối nó với thư mục markdown hoặc repo note của bạn."
+    - "Mở một task thật như tóm tắt meeting notes, viết tiếp dàn ý hoặc chuẩn hóa một trang tài liệu để xem AI đọc note trực tiếp ra sao."
+    - "Yêu cầu AI chỉnh sửa trên đúng file note đó thay vì copy nội dung sang chat riêng."
+    - "Kiểm tra diff hoặc thay đổi trong file để xem bạn có thật sự thích cách AI chạm vào dữ liệu của mình không."
+  expectedResult: "Bạn thấy AI có thể làm việc trực tiếp trên note thật của mình và vẫn giữ dữ liệu ở markdown/git do bạn sở hữu."
+  commonPitfalls:
+    - "Dùng Windows rồi kỳ vọng desktop app chạy mượt ngay, trong khi hiện đường đi thực tế còn nhiều hạn chế."
+    - "Import cả kho note lớn ngay từ đầu khiến bạn khó đánh giá value trên một use case cụ thể."
+    - "Tin rằng repo đã ổn định như Notion hay Obsidian trong khi dự án còn rất mới và thay đổi nhanh."
+
 greyHatFlag: "in"
 
 suggestedAngle: "'Bộ não thứ hai mà AI thực sự đọc được' — đánh thẳng vào người đã dùng Obsidian/Notion ở VN. Nhấn 2 điểm: AI-native (Claude/Codex sửa note trực tiếp) + sở hữu dữ liệu (git/markdown, không khoá vendor)."

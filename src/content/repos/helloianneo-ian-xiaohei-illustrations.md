@@ -47,6 +47,24 @@ vnMarket:
 
 usabilityRisk: "Phong cách của Ian Xiaohei rất riêng nên không hợp mọi brand. Tool này cũng không sinh file vector editable, không hợp bài cần chính xác bố cục như slide bán hàng, và ảnh có chữ tay ngắn vẫn cần kiểm lỗi sau khi sinh."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, bạn có một shot list và vài hình minh họa đầu cho một bài viết hoặc newsletter."
+  prerequisites:
+    - "Một bài viết, dàn ý hoặc tài liệu kiến thức đã tương đối rõ cấu trúc."
+    - "Môi trường Codex hoặc Claude Code có thể chạy skill này."
+    - "Chấp nhận trước rằng phong cách minh họa sẽ là nét tay Xiaohei, không phải visual brand tùy biến hoàn toàn."
+  steps:
+    - "Chọn một bài viết thật, tốt nhất là bài dài đang bị khô ở phần thân bài chứ không phải chỉ cần ảnh cover."
+    - "Xác định 3-5 đoạn trong bài cần hình giải thích nhất rồi viết ngắn ý chính của từng đoạn."
+    - "Chạy skill để lấy shot list trước, xem từng hình đề xuất có đúng vai trò giải thích hay chỉ đẹp cho vui."
+    - "Sinh 1-2 hình đầu tiên, kiểm xem visual language có hợp với bài và có giúp người đọc hiểu nhanh hơn không."
+    - "Chỉnh lại mô tả cảnh hoặc shot list rồi mới sinh đủ bộ ảnh cho cả bài."
+  expectedResult: "Bạn có một bộ hình thân bài nhìn đồng nhất và phục vụ giải thích ý, không chỉ là ảnh trang trí."
+  commonPitfalls:
+    - "Dùng skill này cho ads, landing page hoặc deck bán hàng nơi brand control quan trọng hơn minh họa ý."
+    - "Sinh ảnh trước khi chốt shot list nên dễ tốn lượt mà vẫn không đúng ý."
+    - "Nhét quá nhiều chữ hoặc quá nhiều ý vào một hình khiến ảnh mất chất minh họa."
+
 greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: biến bài viết khô thành bài có hình minh họa giải thích, không biến nó thành một tool vẽ poster chung chung."
@@ -60,7 +78,7 @@ aiCheck:
 tags: ["creative", "illustration", "codex-skill", "content", "newsletter"]
 publishedAt: 2026-06-27
 week: "2026-W26"
-draft: true
+draft: false
 ---
 
 Draft foundation. Cần Luan review thêm xem có nên giữ từ Codex trong public copy hay đẩy mạnh hơn góc minh họa thân bài.

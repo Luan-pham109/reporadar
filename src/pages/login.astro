@@ -2,21 +2,238 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Đăng nhập | RepoRadar VN" description="Đăng nhập RepoRadar VN để xem phần member insight.">
-  <section class="rounded-lg border border-[var(--rr-border)] bg-[var(--rr-surface)] p-6">
-    <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-core)]">RepoRadar member</p>
-    <h1 class="mt-2 text-2xl font-bold tracking-tight">Đăng nhập để mở lớp insight sâu</h1>
-    <p class="mt-3 max-w-prose text-sm leading-6 text-[var(--rr-muted)]">
-      Phần này sẽ dùng cho nguồn tín hiệu, keyword tiếng Việt, góc khuếch đại và bản full intelligence feed.
-      Auth thật sẽ được cắm sau khi chốt nền newsletter/member.
-    </p>
-    <div class="mt-5 flex flex-wrap gap-2">
-      <a href="/" class="rounded-md bg-[var(--rr-core)] px-3 py-2 text-sm font-semibold text-black no-underline hover:opacity-90">
-        Quay lại radar
+<BaseLayout title="Member insight | AltStack" description="Đăng nhập AltStack để xem practitioner guide, decision note và risk notes cho từng công cụ.">
+  <section class="grid gap-6 lg:grid-cols-[1fr_0.9fr] lg:items-start">
+    <div class="overflow-hidden rounded-lg border border-[var(--rr-dark)] bg-[var(--rr-dark)] text-white shadow-[var(--rr-shadow)]">
+      <div class="p-6 sm:p-8">
+        <p class="text-xs font-bold uppercase tracking-widest text-blue-200">AltStack Member</p>
+        <h1 class="mt-3 text-4xl font-bold tracking-tight">Mở lớp hướng dẫn sau verdict.</h1>
+        <p class="mt-4 max-w-2xl text-sm leading-7 text-slate-300">
+          Public brief giúp bạn biết tool có đáng mở tab không. Member insight đi vào việc thật:
+          chuẩn bị gì, thử theo bước nào, output đầu tiên nên đạt mức nào, và bẫy nào dễ làm mất thời gian.
+        </p>
+      </div>
+      <div class="grid gap-0 border-t border-white/10 sm:grid-cols-3">
+        <div class="border-b border-white/10 p-4 sm:border-b-0 sm:border-r">
+          <p class="font-display text-2xl font-bold text-green-300">Guide</p>
+          <p class="mt-1 text-xs leading-5 text-slate-300">Từng bước thử tool trong workflow thật.</p>
+        </div>
+        <div class="border-b border-white/10 p-4 sm:border-b-0 sm:border-r">
+          <p class="font-display text-2xl font-bold text-blue-200">Decision</p>
+          <p class="mt-1 text-xs leading-5 text-slate-300">Try, Watch, Skip hoặc dùng SaaS tiếp.</p>
+        </div>
+        <div class="p-4">
+          <p class="font-display text-2xl font-bold text-amber-300">Risk</p>
+          <p class="mt-1 text-xs leading-5 text-slate-300">Hidden cost, setup, support, kỹ năng team.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-lg border border-[var(--rr-border)] bg-white p-5 shadow-[var(--rr-shadow)]">
+      <div class="grid grid-cols-2 rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] p-1 text-sm">
+        <button id="login-tab" type="button" class="rounded bg-white px-3 py-2 font-semibold text-[var(--rr-text)] shadow-sm" data-mode-button="login">
+          Đăng nhập
+        </button>
+        <button id="signup-tab" type="button" class="rounded px-3 py-2 text-[var(--rr-muted)]" data-mode-button="signup">
+          Tạo tài khoản
+        </button>
+      </div>
+
+      <a
+        id="google-login"
+        href="/api/auth/google/start"
+        class="mt-4 block rounded-md border border-[var(--rr-border)] px-3 py-2 text-center text-sm font-semibold text-[var(--rr-text)] no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]"
+        data-track-event="membership_intent"
+        data-track-label="login_google"
+        data-track-prop-surface="login"
+        data-track-prop-method="google"
+      >
+        Tiếp tục với Google
       </a>
-      <a href="/rss.xml" class="rounded-md border border-[var(--rr-border)] px-3 py-2 text-sm text-[var(--rr-muted)] no-underline hover:border-[var(--rr-core)]/50 hover:text-[var(--rr-text)]">
-        Theo dõi RSS
-      </a>
+
+      <div class="my-4 flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-[var(--rr-faint)]">
+        <span class="h-px flex-1 bg-[var(--rr-border)]"></span>
+        <span>hoặc email</span>
+        <span class="h-px flex-1 bg-[var(--rr-border)]"></span>
+      </div>
+
+      <form id="auth-form">
+        <div class="space-y-4">
+          <label id="name-field" class="hidden">
+            <span class="text-sm font-semibold">Tên hiển thị</span>
+            <input name="name" type="text" autocomplete="name" placeholder="Luan" class="mt-1 w-full rounded-md border border-[var(--rr-border)] bg-white px-3 py-2 text-sm text-[var(--rr-text)] outline-none focus:border-[var(--rr-core)]" />
+          </label>
+
+          <label class="block">
+            <span class="text-sm font-semibold">Email</span>
+            <input name="email" type="email" autocomplete="email" required placeholder="you@company.com" class="mt-1 w-full rounded-md border border-[var(--rr-border)] bg-white px-3 py-2 text-sm text-[var(--rr-text)] outline-none focus:border-[var(--rr-core)]" />
+          </label>
+
+          <label class="block">
+            <span class="text-sm font-semibold">Mật khẩu</span>
+            <input name="password" type="password" autocomplete="current-password" required minlength="8" placeholder="••••••••" class="mt-1 w-full rounded-md border border-[var(--rr-border)] bg-white px-3 py-2 text-sm text-[var(--rr-text)] outline-none focus:border-[var(--rr-core)]" />
+          </label>
+
+          <button id="submit-button" type="submit" class="w-full rounded-md bg-[var(--rr-core)] px-3 py-2.5 text-sm font-semibold text-white hover:bg-blue-700">
+            Đăng nhập
+          </button>
+        </div>
+      </form>
+
+      <div id="member-actions" class="mt-4 hidden rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] p-3 text-sm">
+        <p id="member-label" class="text-[var(--rr-muted)]"></p>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <a href="/feed.json" class="rounded-md bg-[var(--rr-core)] px-3 py-2 font-semibold text-white no-underline hover:bg-blue-700">Mở member feed</a>
+          <button id="logout-button" type="button" class="rounded-md border border-[var(--rr-border)] bg-white px-3 py-2 text-[var(--rr-muted)] hover:text-[var(--rr-text)]">
+            Đăng xuất
+          </button>
+        </div>
+      </div>
+
+      <p id="login-status" class="mt-4 text-sm leading-6 text-[var(--rr-muted)]" aria-live="polite">
+        Bạn có thể đăng ký bằng email/mật khẩu hoặc đăng nhập nhanh bằng Google.
+      </p>
+
+      <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-[var(--rr-muted)]">
+        <a href="/" class="hover:text-[var(--rr-core)]">Quay lại radar</a>
+        <span>·</span>
+        <a href="/rss.xml" class="hover:text-[var(--rr-core)]">RSS public</a>
+      </div>
     </div>
   </section>
+
+  <script>
+    const form = document.querySelector('#auth-form');
+    const status = document.querySelector('#login-status');
+    const submitButton = document.querySelector('#submit-button');
+    const nameField = document.querySelector('#name-field');
+    const tabs = document.querySelectorAll('[data-mode-button]');
+    const googleLogin = document.querySelector('#google-login');
+    const memberActions = document.querySelector('#member-actions');
+    const memberLabel = document.querySelector('#member-label');
+    const logoutButton = document.querySelector('#logout-button');
+
+    const params = new URLSearchParams(window.location.search);
+    const returnTo = safeReturnTo(params.get('returnTo') || '/feed.json');
+    let mode = 'login';
+
+    function track(name, properties = {}) {
+      if (typeof window.altstackTrack === 'function') window.altstackTrack(name, properties);
+    }
+
+    if (googleLogin instanceof HTMLAnchorElement) {
+      googleLogin.href = `/api/auth/google/start?returnTo=${encodeURIComponent(returnTo)}`;
+    }
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        if (tab instanceof HTMLElement) setMode(tab.dataset.modeButton === 'signup' ? 'signup' : 'login');
+      });
+    });
+
+    form?.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!(form instanceof HTMLFormElement)) return;
+
+      setBusy(true);
+      track('membership_submit', { method: 'password', mode, surface: 'login_form' });
+      const data = Object.fromEntries(new FormData(form).entries());
+      try {
+        const response = await fetch(`/api/auth/${mode === 'signup' ? 'signup' : 'login'}`, {
+          method: 'POST',
+          credentials: 'include',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        const payload = await response.json().catch(() => ({}));
+        if (!response.ok) throw new Error(payload.message || 'Không xác thực được.');
+
+        track(mode === 'signup' ? 'membership_signup_success' : 'membership_login_success', {
+          method: 'password',
+          mode,
+          surface: 'login_form',
+        });
+        setStatus(mode === 'signup' ? 'Đã tạo tài khoản. Đang mở member feed...' : 'Đã đăng nhập. Đang mở member feed...');
+        window.location.assign(returnTo);
+      } catch (error) {
+        track(mode === 'signup' ? 'membership_signup_failed' : 'membership_login_failed', {
+          method: 'password',
+          mode,
+          surface: 'login_form',
+          message: error instanceof Error ? error.message : 'unknown',
+        });
+        setStatus(error instanceof Error ? error.message : 'Không xác thực được.');
+      } finally {
+        setBusy(false);
+      }
+    });
+
+    logoutButton?.addEventListener('click', async () => {
+      setBusy(true);
+      track('membership_logout_submit', { surface: 'login_form' });
+      try {
+        await fetch('/api/auth/logout', { method: 'POST', credentials: 'include' });
+        showMember(null);
+        track('membership_logout_success', { surface: 'login_form' });
+        setStatus('Đã đăng xuất.');
+      } catch {
+        setStatus('Không đăng xuất được. Thử tải lại trang rồi làm lại.');
+      } finally {
+        setBusy(false);
+      }
+    });
+
+    boot();
+
+    async function boot() {
+      try {
+        const response = await fetch('/api/auth/me', { credentials: 'include' });
+        if (!response.ok) return;
+        const payload = await response.json();
+        showMember(payload.user);
+      } catch {
+        setStatus('Auth runtime chưa chạy trong preview tĩnh. Dùng Cloudflare Pages Functions để thử đăng nhập thật.');
+      }
+    }
+
+    function setMode(nextMode) {
+      mode = nextMode;
+      const isSignup = mode === 'signup';
+      nameField?.classList.toggle('hidden', !isSignup);
+      if (submitButton) submitButton.textContent = isSignup ? 'Tạo tài khoản' : 'Đăng nhập';
+      form?.querySelector('input[name="password"]')?.setAttribute('autocomplete', isSignup ? 'new-password' : 'current-password');
+
+      tabs.forEach((tab) => {
+        const active = tab instanceof HTMLElement && tab.dataset.modeButton === mode;
+        tab.classList.toggle('font-semibold', active);
+        tab.classList.toggle('text-[var(--rr-text)]', active);
+        tab.classList.toggle('text-[var(--rr-muted)]', !active);
+        tab.classList.toggle('bg-white', active);
+        tab.classList.toggle('shadow-sm', active);
+      });
+      setStatus(isSignup ? 'Tạo account trực tiếp bằng email và mật khẩu.' : 'Đăng nhập bằng account đã tạo hoặc dùng Google.');
+    }
+
+    function showMember(user) {
+      const loggedIn = Boolean(user);
+      memberActions?.classList.toggle('hidden', !loggedIn);
+      if (memberLabel && user) {
+        memberLabel.textContent = `Đang đăng nhập: ${user.name || user.email}`;
+      }
+    }
+
+    function setBusy(isBusy) {
+      if (submitButton instanceof HTMLButtonElement) submitButton.disabled = isBusy;
+      if (logoutButton instanceof HTMLButtonElement) logoutButton.disabled = isBusy;
+    }
+
+    function setStatus(message) {
+      if (status) status.textContent = message;
+    }
+
+    function safeReturnTo(value) {
+      if (!value || !value.startsWith('/') || value.startsWith('//') || value.length > 512) return '/feed.json';
+      return value;
+    }
+  </script>
 </BaseLayout>

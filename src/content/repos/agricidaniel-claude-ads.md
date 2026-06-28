@@ -41,6 +41,24 @@ vnMarket:
 
 usabilityRisk: "Claude Ads không thay người chịu KPI. Muốn audit ra việc đáng tin, bạn vẫn cần export dữ liệu thật, hiểu ngữ cảnh tài khoản và quen làm việc trong môi trường coding assistant thay vì chỉ bấm UI."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, bạn có một bản audit đầu cho một account quảng cáo kèm danh sách việc ưu tiên để team media hoặc tracking xử lý tiếp."
+  prerequisites:
+    - "Một account Google Ads hoặc Meta Ads thật mà bạn đang có quyền xem dữ liệu."
+    - "Máy có thể chạy Claude Code hoặc một coding assistant tương tự, kèm quyền đọc file/export dữ liệu."
+    - "File hoặc ảnh chụp các phần chính của account: campaign, ad set, conversion, tracking nếu chưa nối API trực tiếp."
+  steps:
+    - "Chọn một account đang có vấn đề rõ nhất, ví dụ CPL tăng hoặc ROAS tụt, để test trên ca thật thay vì account quá sạch."
+    - "Xuất dữ liệu cơ bản của account và gom thêm bối cảnh như mục tiêu chiến dịch, ngân sách, conversion chính và thay đổi gần đây."
+    - "Đưa repo hoặc skill Claude Ads vào môi trường Claude Code rồi nạp dữ liệu account làm input cho lần audit đầu."
+    - "Chạy audit trước ở scope hẹp: một nền tảng, một account, một giai đoạn thời gian để đọc logic chấm điểm và action plan."
+    - "Đối chiếu 5-10 khuyến nghị đầu với người phụ trách account, gạch ra mục nào giao ngay cho media buyer, mục nào cần dev tracking hoặc analytics."
+  expectedResult: "Bạn nhận được một bản audit có nhóm lỗi, mức ưu tiên và vài action item đủ rõ để đem vào buổi họp tối ưu tuần này."
+  commonPitfalls:
+    - "Nhét dữ liệu quá ít hoặc thiếu bối cảnh mục tiêu nên kết quả nghe đúng mà khó hành động."
+    - "Dùng output như kết luận cuối cùng mà không để PPC lead kiểm lại conversion, seasonality và bối cảnh account."
+    - "Audit nhiều nền tảng cùng lúc ở lần thử đầu khiến team khó biết repo đang giúp thật ở khâu nào."
+
 greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: biến audit quảng cáo từ cuộc soi account kéo dài nhiều giờ thành backlog ưu tiên cho team media và tracking."
@@ -54,7 +72,7 @@ aiCheck:
 tags: ["ads", "ppc", "agency", "ecom", "google-ads", "meta-ads"]
 publishedAt: 2026-06-27
 week: "2026-W26"
-draft: true
+draft: false
 ---
 
 Draft foundation. Cần Luan review thêm phần nào nên nhấn vào Google Ads trước, phần nào giữ ở góc đa nền tảng.

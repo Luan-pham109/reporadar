@@ -47,6 +47,24 @@ vnMarket:
 
 usabilityRisk: "Prompt mẫu không đảm bảo ra ảnh đúng 100% vì model, ngôn ngữ, seed và ảnh tham chiếu có thể khác. Hãy coi đây là thư viện tham khảo, không phải công thức cố định."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, bạn có một vài prompt mẫu đã tinh chỉnh để test nhanh nhiều hướng visual với Nano Banana Pro hoặc Gemini."
+  prerequisites:
+    - "Tài khoản hoặc workflow đang dùng Nano Banana Pro, Gemini hoặc model tương thích với prompt kiểu này."
+    - "Một nhu cầu ảnh thật như thumbnail, post social, key visual nhỏ hoặc ảnh sản phẩm."
+    - "Một buổi brainstorm có người ra quyết định visual để chốt hướng nhanh."
+  steps:
+    - "Khoanh trước một mục tiêu hình ảnh, ví dụ chỉ thumbnail hoặc chỉ moodboard social, thay vì mọi thứ một lúc."
+    - "Chọn vài prompt có preview gần gu team nhất rồi đọc cấu trúc của chúng như một công thức, không chỉ nhìn ảnh."
+    - "Sửa prompt theo brand, chủ thể, ánh sáng hoặc bố cục bạn cần rồi chạy thử 2-3 biến thể."
+    - "So các kết quả để xem team thích style nào và prompt nào dễ tái dùng nhất."
+    - "Lưu lại prompt thắng cuộc thành template ngắn cho nội bộ dùng về sau."
+  expectedResult: "Bạn có một hướng visual cụ thể và một prompt template tái dùng được cho lần sau."
+  commonPitfalls:
+    - "Lẫn lộn giữa thư viện prompt và năng lực thật của model đang dùng."
+    - "Chạy quá nhiều style đẹp mà không gắn với bài toán truyền thông nào cụ thể."
+    - "Không lưu lại prompt đã chỉnh nên mỗi buổi brainstorm lại quay về mò từ đầu."
+
 greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: dùng thư viện prompt như moodboard có công thức cho social/creative team."

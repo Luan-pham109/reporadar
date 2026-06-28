@@ -138,6 +138,7 @@ Mỗi tool trong feed là một record schema cố định (structured-first —
 | `localProblem` + `localEvidence` | Nỗi đau cụ thể của shop/ekip/team VN nào + ví dụ thật | **Cốt lõi** |
 | 🆕 `vnMarket` | Lớp phủ insight thực tế ngành VN: `insight` (ngành đang làm gì quanh bài toán) + `seoKeywords` (từ khoá tiếng Việt target search → nối thẳng KR#6) + `notes` | **Cốt lõi** (moat ngôn ngữ + SEO) |
 | 🆕 `usabilityRisk` | Cạm bẫy: hỗ trợ Windows? cần GPU? độ khó cài/dùng? chưa có cộng đồng VN? | **Cốt lõi** (cảnh báo) |
+| 🆕 `practitionerGuide` | Hướng dẫn từng bước cho member: chuẩn bị gì, thao tác thế nào, output đúng trông ra sao, bẫy nào dễ gặp | **Cốt lõi / member value** |
 | 🆕 `greyHatFlag` | IN / borderline / OUT theo §2bis | **Cốt lõi** (kỷ luật) |
 | `paidToolReplaced` | Thay tool trả phí nào (vd "ComfyUI ↔ Midjourney") | Bán-cốt-lõi |
 | `suggestedAngle` | Góc cho **creator khuếch đại** (nhánh hybrid) | Bán-cốt-lõi |

@@ -41,6 +41,24 @@ vnMarket:
 
 usabilityRisk: "Output AI video/nhân vật có thể không nhất quán giữa các cảnh. Người dùng vẫn cần chỉnh prompt, duyệt nhân vật và hậu kỳ nếu muốn đăng kênh chính."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, bạn có một storyboard hoặc bản nháp hoạt hình ngắn để kiểm tra nhịp kể và thiết kế nhân vật."
+  prerequisites:
+    - "Một truyện ngắn, outline hoặc kịch bản có mở đầu, giữa và kết rõ."
+    - "Máy cài được app desktop Toonflow và đủ tài nguyên để chạy các bước sinh hình/video cơ bản."
+    - "Một quyết định sớm về độ dài clip và phong cách nhân vật để tránh sửa quá nhiều vòng."
+  steps:
+    - "Chọn một câu chuyện rất ngắn hoặc một đoạn trích thay vì ném cả series dài vào ngay lần đầu."
+    - "Nhập kịch bản hoặc outline vào Toonflow rồi để hệ thống chia cảnh và đề xuất cách kể."
+    - "Xem lại storyboard trước, chỉnh tên nhân vật, bối cảnh và tông hình ảnh cho nhất quán."
+    - "Sinh thử một vài cảnh quan trọng trước khi render cả clip để kiểm xem nhân vật có giữ được mặt và mood không."
+    - "Xuất bản nháp đầu rồi dùng nó để quyết định có tiếp tục series, chỉnh script hay chuyển sang hậu kỳ thủ công."
+  expectedResult: "Bạn có một storyboard xem được hoặc một đoạn hoạt hình nháp đủ để đánh giá format kể chuyện."
+  commonPitfalls:
+    - "Cho kịch bản quá dài ở lần đầu khiến output rối và khó kiểm sự nhất quán."
+    - "Không khoá thiết kế nhân vật sớm nên mỗi cảnh trông như một nhân vật khác."
+    - "Kỳ vọng video AI cuối cùng đủ chất lượng đăng kênh chính mà bỏ qua bước hậu kỳ."
+
 greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: test một tập hoạt hình ngắn từ kịch bản trong một buổi, thay vì hứa làm phim hoàn chỉnh."

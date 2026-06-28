@@ -1,0 +1,97 @@
+---
+interface Props {
+  tags: { tag: string; count: number }[];
+  basePath?: string;
+  label?: string;
+  description?: string;
+}
+
+const {
+  tags,
+  basePath = Astro.url.pathname,
+  label = 'Filter by tag',
+  description = 'Chọn một tag để thu hẹp danh sách tool theo use case hoặc workflow.',
+} = Astro.props;
+
+const visibleTags = tags.slice(0, 18);
+---
+
+{visibleTags.length > 0 && (
+  <div class="rounded-lg border border-[var(--rr-border)] bg-white p-4" data-tag-filter-root>
+    <div class="mb-3 flex flex-wrap items-end justify-between gap-3">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">{label}</p>
+        <p class="mt-1 text-sm leading-6 text-[var(--rr-muted)]">{description}</p>
+      </div>
+      <p class="hidden rounded-md bg-[var(--rr-core)]/10 px-2.5 py-1 text-xs font-bold text-[var(--rr-core)]" data-tag-filter-status></p>
+    </div>
+    <div class="flex flex-wrap gap-2">
+      <a
+        href={`${basePath}#radar`}
+        class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] px-3 py-1.5 text-xs font-semibold text-[var(--rr-text)] no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]"
+        data-tag-filter="__all"
+      >
+        All
+      </a>
+      {visibleTags.map(({ tag, count }) => (
+        <a
+          href={`${basePath}?tag=${encodeURIComponent(tag)}#radar`}
+          class="rounded-md border border-[var(--rr-border)] bg-white px-3 py-1.5 text-xs font-semibold text-[var(--rr-muted)] no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]"
+          data-tag-filter={tag.toLowerCase()}
+        >
+          #{tag} <span class="text-[var(--rr-faint)]">{count}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+)}
+
+<script>
+  function applyAltStackTagFilter() {
+    const params = new URLSearchParams(window.location.search);
+    const selected = (params.get('tag') || '').trim().toLowerCase();
+    const cards = Array.from(document.querySelectorAll('[data-filter-tags]'));
+    const roots = Array.from(document.querySelectorAll('[data-tag-filter-root]'));
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+      const tagText = card.getAttribute('data-filter-tags') || '';
+      const tags = tagText.split('|').filter(Boolean);
+      const visible = !selected || tags.includes(selected);
+      card.classList.toggle('hidden', !visible);
+      if (visible) visibleCount += 1;
+    });
+
+    roots.forEach((root) => {
+      root.querySelectorAll('[data-tag-filter]').forEach((link) => {
+        if (!(link instanceof HTMLElement)) return;
+        const value = link.dataset.tagFilter || '';
+        const active = (!selected && value === '__all') || value === selected;
+        link.classList.toggle('border-[var(--rr-core)]', active);
+        link.classList.toggle('bg-[var(--rr-core)]/10', active);
+        link.classList.toggle('text-[var(--rr-core)]', active);
+      });
+
+      const status = root.querySelector('[data-tag-filter-status]');
+      if (status instanceof HTMLElement) {
+        status.classList.toggle('hidden', !selected);
+        status.textContent = selected ? `${visibleCount} match${visibleCount === 1 ? '' : 'es'}` : '';
+      }
+    });
+  }
+
+  applyAltStackTagFilter();
+  const initialTag = new URLSearchParams(window.location.search).get('tag') || '';
+  if (initialTag && typeof window.altstackTrack === 'function') {
+    window.altstackTrack('tag_filter_applied', { tag: initialTag, source: 'url' });
+  }
+  document.addEventListener('click', (event) => {
+    const target = event.target instanceof Element ? event.target.closest('[data-tag-filter]') : null;
+    if (!(target instanceof HTMLElement)) return;
+    const tag = target.dataset.tagFilter || '';
+    if (typeof window.altstackTrack === 'function') {
+      window.altstackTrack('tag_filter_click', { tag, surface: 'tag_filter' });
+    }
+  });
+  window.addEventListener('popstate', applyAltStackTagFilter);
+</script>

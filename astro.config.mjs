@@ -1,8 +1,49 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
+import { spawn } from 'node:child_process';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+
+const autoDeployProduction = process.env.REPO_RADAR_AUTO_DEPLOY === 'true';
+let deployQueue = Promise.resolve();
+
+function runCommand(command, args) {
+  return new Promise((resolve, reject) => {
+    let output = '';
+    const child = spawn(command, args, {
+      cwd: process.cwd(),
+      env: process.env,
+      shell: false,
+    });
+
+    child.stdout.on('data', (chunk) => {
+      output += chunk;
+      process.stdout.write(chunk);
+    });
+    child.stderr.on('data', (chunk) => {
+      output += chunk;
+      process.stderr.write(chunk);
+    });
+    child.on('error', reject);
+    child.on('exit', (code) => {
+      if (code === 0) {
+        resolve(output);
+        return;
+      }
+
+      const tail = output.split(/\r?\n/).slice(-20).join('\n');
+      reject(new Error(`Production deploy failed with exit code ${code}.\n${tail}`));
+    });
+  });
+}
+
+function enqueueProductionDeploy() {
+  const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
+  const next = deployQueue.then(() => runCommand(npm, ['run', 'publish:prod']));
+  deployQueue = next.catch(() => {});
+  return next;
+}
 
 function draftReviewPlugin() {
   return {
@@ -46,8 +87,13 @@ function draftReviewPlugin() {
             }
 
             await fs.writeFile(filePath, next);
+            const shouldDeploy = body.deploy === true && autoDeployProduction;
+            if (shouldDeploy) {
+              await enqueueProductionDeploy();
+            }
+
             res.setHeader('content-type', 'application/json');
-            res.end(JSON.stringify({ ok: true, slug, draft }));
+            res.end(JSON.stringify({ ok: true, slug, draft, deployed: shouldDeploy }));
           } catch (error) {
             res.statusCode = 400;
             res.setHeader('content-type', 'application/json');

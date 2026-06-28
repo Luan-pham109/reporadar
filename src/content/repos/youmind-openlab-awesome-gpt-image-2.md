@@ -47,6 +47,24 @@ vnMarket:
 
 usabilityRisk: "Đây là thư viện tham khảo, không phải model tạo ảnh. Kết quả còn phụ thuộc model, ảnh tham chiếu, seed và cách bạn chỉnh prompt; nếu bê nguyên prompt đẹp về dùng, team rất dễ ra ảnh không khớp brand."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, bạn có vài prompt mẫu đã chỉnh theo brand để tạo bộ ảnh thử cho social hoặc sản phẩm."
+  prerequisites:
+    - "Quyền dùng GPT Image 2 hoặc workflow tạo ảnh mà team bạn đang sử dụng."
+    - "Một bài toán cụ thể như poster social, thumbnail hoặc ảnh sản phẩm."
+    - "Ít nhất vài ghi chú về brand như màu, mood, sản phẩm và loại bố cục muốn ra."
+  steps:
+    - "Chọn một category gần với bài toán nhất thay vì lướt cả thư viện như Pinterest."
+    - "Mở 3-5 prompt có preview gần phong cách bạn muốn rồi so điểm chung trong cấu trúc câu lệnh."
+    - "Lấy một prompt gốc, thay nội dung sản phẩm, brand note, text yêu cầu và bố cục theo case của bạn."
+    - "Sinh 2-3 ảnh thử từ prompt đã sửa để xem phần nào của công thức đang thực sự giúp."
+    - "Ghi lại prompt nào ra đúng style nhất để dùng làm template nội bộ cho team."
+  expectedResult: "Bạn có một prompt template riêng cho team hoặc shop của mình, thay vì chỉ bookmark một thư viện đẹp."
+  commonPitfalls:
+    - "Copy nguyên prompt đẹp rồi thất vọng vì output không khớp brand hoặc sản phẩm thật."
+    - "Thử quá nhiều category cùng lúc nên không rút ra được công thức nào hữu ích."
+    - "Quên rằng đây là thư viện tham khảo, không phải model đảm bảo kết quả."
+
 greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: dùng thư viện prompt như moodboard có công thức cho social team, designer và shop nhỏ."
@@ -60,7 +78,7 @@ aiCheck:
 tags: ["prompt", "image-generation", "creative", "ecom", "gpt-image-2"]
 publishedAt: 2026-06-27
 week: "2026-W26"
-draft: true
+draft: false
 ---
 
 Draft foundation. Cần Luan review thêm mức độ bão hòa nội dung Việt quanh GPT Image 2 trước khi publish.

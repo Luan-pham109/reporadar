@@ -3,8 +3,99 @@
 > File sống. Cập nhật mỗi phiên làm việc. PRD gốc: `PRD_RepoRadar_VN.md`.
 
 - **Phase hiện tại:** Phase 0 → 1 (build lean MVP thủ công).
-- **Cập nhật lần cuối:** 2026-06-26.
-- **Trạng thái:** PRD v0.2 (pivot audience) đã chốt; schema/skill/render ĐÃ migrate xong + build sạch + verify preview; chưa deploy.
+- **Cập nhật lần cuối:** 2026-06-27.
+- **Trạng thái:** Phase 1 foundation đang chạy; schema/render/pipeline/draft preview build sạch; member feed đã khóa static, chưa có auth runtime thật; chưa deploy.
+
+---
+
+# Current Status - 2026-06-28
+
+- Phase: AltStack repositioning/UI pass is now implemented on top of the existing RepoRadar foundation.
+- Brand direction: shifted public UI from "RepoRadar VN / dark pre-viral feed" toward **AltStack - operator-grade alternative intelligence**.
+- North star focus: membership and "open repo" are now explicitly instrumented.
+- Last verification: `npm.cmd run build` passed and generated 32 pages; function import smoke check passed for analytics/auth event files.
+
+## Session Summary
+
+- Applied AltStack brand identity across core UI surfaces:
+  - `src/styles/global.css`
+  - `src/layouts/BaseLayout.astro`
+  - `src/pages/index.astro`
+  - `src/pages/nganh/[vertical].astro`
+  - `src/pages/repos/[slug].astro`
+  - `src/pages/login.astro`
+  - `src/pages/tuan/[week].astro`
+  - `src/components/RepoCard.astro`
+  - `src/components/RepoListItem.astro`
+  - `src/components/IndustryNav.astro`
+  - `src/components/SignalBadge.astro`
+- Visual system now uses a neutral-first palette with Signal Blue, Open Green, Warning Amber, and dark editorial panels.
+- Homepage now leads with "Trước khi gia hạn SaaS, kiểm tra AltStack" and a radar/decision console.
+- Industry pages now feel like stack command centers with dark masthead, operator lens, and stats.
+- Repo detail pages are now decision briefs:
+  - `Repo signal` moved into the header content area under the `mt-5` cluster, with icon/color/stars/forks emphasis.
+  - `Member insight` moved above `Related alternatives`.
+  - `Decision brief` holds Replaces / Workflow cut / Caution.
+- Fixed CTA contrast issues:
+  - `Xem radar mới nhất`
+  - `Open decision brief`
+  - `Đăng nhập để xem guide`
+
+## Discovery UX Added
+
+- Added tag filtering at key browsing touchpoints:
+  - Homepage Radar filter.
+  - Industry/stack page filter scoped to that industry.
+- New reusable component:
+  - `src/components/TagFilter.astro`
+- Repo list/card items now expose `data-filter-tags`.
+- Card tag chips link into filtered radar views.
+- Browser verification: `/nganh/seo?tag=seo#radar` showed filter active and matching cards.
+
+## Measurement Added
+
+- Added first-party event tracking layer:
+  - `functions/api/events.js`
+  - `functions/_lib/analytics.js`
+  - client tracker in `src/layouts/BaseLayout.astro`
+- Storage behavior:
+  - Writes to `ANALYTICS_KV` or `EVENTS_KV` if bound.
+  - Falls back to console logging without breaking UX.
+- Tracked events:
+  - `page_view`
+  - `membership_intent`
+  - `membership_submit`
+  - `membership_signup_success`
+  - `membership_login_success`
+  - `membership_signup_failed`
+  - `membership_login_failed`
+  - `membership_logout_submit`
+  - `membership_logout_success`
+  - `repo_brief_open`
+  - `repo_open`
+  - `tag_filter_click`
+  - `tag_filter_applied`
+- Server-side conversion events added to:
+  - `functions/api/auth/login.js`
+  - `functions/api/auth/signup.js`
+  - `functions/api/auth/google/callback.js`
+
+## Updated North Star Metrics
+
+| Metric | Event(s) | Notes |
+|---|---|---|
+| Membership | `membership_intent`, `membership_signup_success`, `membership_login_success` | Intent and conversion are separated. Password and Google auth both report success server-side. |
+| Open repo | `repo_open` | Fired when user clicks external GitHub repo CTA from repo detail. |
+
+## Immediate Next Steps
+
+1. Add Cloudflare KV binding for analytics, preferably `ANALYTICS_KV`, before relying on production event storage.
+2. Build a simple analytics review script/page to summarize daily counts for `membership_*` and `repo_open`.
+3. Clean up remaining legacy naming/domain:
+   - `astro.config.mjs` still uses `https://reporadar.vn`.
+   - Some internal comments/files still reference RepoRadar.
+4. Remove the old unreachable `{false && (...)}` member block in `src/pages/repos/[slug].astro` once the detail layout is stable.
+5. Decide whether to keep direct KV event storage long-term or forward events to an analytics warehouse later.
 
 ---
 
@@ -149,41 +240,47 @@ C5. ✅ Build sạch (9 trang) + verify DOM (3 figure ở detail, thumbnail trê
 - **R1 (chí mạng):** nội dung trượt về commodity → đối phó bằng field `aiCheck` (KR4) mỗi record + skill từ chối gắn cờ pre-viral khi không xứng (đã chứng minh với Postiz).
 - **R3:** pre-viral false positive → record luôn kèm link nguồn + phát biểu mềm ("đang được bàn", không hứa viral) + cảnh báo nhược điểm (vd OpenKnowledge chưa hỗ trợ Windows).
 - **Kỹ thuật:** Reddit chặn JSON 403 → hiện degrade sang link tìm-tay. Nếu Phase 2 cần đọc Reddit tự động → phải dùng OAuth.
-# Current Status - 2026-06-26
+# Current Status - 2026-06-27
 
-- Phase: Phase 1 foundation build. MVP site/schema/render pipeline is working; daily discovery + Codex draft automation is now wired.
-- Automation mode: GitHub Actions prepares deterministic discovery queues; Codex scheduler writes draft records from the queue. The daily script does not call the OpenAI API and does not require `OPENAI_API_KEY`.
+- Phase: Phase 1 foundation is working. MVP site/schema/render pipeline, daily discovery queue, draft review screen, and static member-feed gate are wired.
+- Automation mode: GitHub Actions prepares deterministic discovery queues; Codex scheduler/manual review turns queue items into draft records. `scripts/run-daily-pipeline.mjs` does not call an LLM API and does not need `OPENAI_API_KEY`.
 - Foundation defaults: `npm.cmd run daily -- --source all --days 365 --limit 60 --pick 5`.
-- Scheduler: `reporadar-daily-codex-draft`, daily at 09:15 Asia/Saigon, cwd `D:\RepoRadar`.
+- Scheduler note: intended local scheduler is `reporadar-daily-codex-draft`, daily 09:15 Asia/Saigon, cwd `D:\RepoRadar`; verify scheduler config outside git before relying on it.
 - GitHub Action: `.github/workflows/discover-repos.yml`, daily at 08:30 Asia/Saigon, uploads `reporadar-daily-queue` artifact.
 - Queue path: `.codex/reporadar-daily-queue/latest.json` locally; directory is ignored by git.
-- Draft preview: `npm.cmd run dev` shows drafts; static draft preview uses `npm.cmd run preview:drafts`; production build `npm.cmd run build` still hides `draft: true`.
-- Last verification: `npm.cmd run build` passed; `npm.cmd run build:drafts` passed and generated 15 pages including draft routes.
+- Draft preview: `npm.cmd run dev` shows drafts; static draft preview uses `npm.cmd run preview:drafts`; production build `npm.cmd run build` hides `draft: true`.
+- Member/feed state: public nav now points to `/login`; `/feed.json` returns an empty `auth_required` payload and `public/_redirects` plus `scripts/serve-dist.mjs` redirect `/feed.json` to `/login`. This is a static lock, not real auth.
+- Last verification: `npm.cmd ci` restored a broken local Vite install; `npm.cmd run build` passed and generated 17 production pages; `npm.cmd run build:drafts` passed and generated 22 draft-preview pages.
 
-## Automation Added
+## Automation And Tooling
 
 - `scripts/run-daily-pipeline.mjs`: discovery -> shortlist -> signals -> README/media hints -> queue JSON.
 - `src/lib/drafts.ts`: shared draft visibility gate for dev/draft-preview vs production.
-- `scripts/build-drafts.mjs` and `scripts/preview-drafts.mjs`: commands for static preview with drafts.
-- `package.json`: added `daily`, `build:drafts`, and `preview:drafts`.
+- `src/pages/review.astro`: local dev review screen can flip `draft` via Vite middleware.
+- `scripts/build-drafts.mjs` and `scripts/preview-drafts.mjs`: run Astro directly through Node, no Windows shell warning.
+- `scripts/serve-dist.mjs`: static dist preview helper; now uses `dist/` relative to cwd and redirects `/feed.json`.
 - `.gitignore`: ignores `.codex/reporadar-daily-queue/`.
 
-## Records Added In Foundation Batch
+## Records Now
 
-| Repo | File | draft | Status |
-|---|---|---|---|
-| Pixelle-Video | `src/content/repos/aidc-ai-pixelle-video.md` | `true` | Test draft from first end-to-end run; AI short-video engine; needs media + VN saturation review |
-| OpenMontage | `src/content/repos/calesthio-openmontage.md` | `true` | Foundation draft; agentic video production for creative/ecom |
-| Guizang PPT Skill | `src/content/repos/op7418-guizang-ppt-skill.md` | `true` | Foundation draft; agent-made HTML decks for agency/creative |
-| Awesome Nano Banana Pro Prompts | `src/content/repos/youmind-openlab-awesome-nano-banana-pro-prompts.md` | `true` | Foundation draft; prompt/image reference library for creative |
-| Toonflow | `src/content/repos/hbai-ltd-toonflow-app.md` | `true` | Foundation draft; story/script to animated short workflow |
-| Claude SEO | `src/content/repos/agricidaniel-claude-seo.md` | `true` | Foundation draft; Claude Code SEO/GEO/AEO audit workflow |
+| State | Count | Records |
+|---|---:|---|
+| Published (`draft: false`) | 9 | Claude SEO, Pixelle-Video, OpenMontage, Toonflow, Guizang PPT Skill, OpenKnowledge, Plane, Postiz, Awesome Nano Banana Pro Prompts |
+| Draft (`draft: true`) | 5 | Claude Ads, API Mega List, Ian Xiaohei Illustrations, vLLM-Omni, Awesome GPT Image 2 Prompts |
+
+## Content Caveats
+
+- Plane is still published even though earlier tracker notes called it a demo record. Decide whether to keep it as "proven" example or move it back to draft before deploy.
+- Postiz is still published even though earlier notes said it was not pre-viral. It can stay only if framed as an established/proven tool, not an "đi trước" pick.
+- The five remaining draft records build cleanly, but still need editorial review before flipping public.
 
 ## Immediate Next Steps
 
-1. Review the six new foundation drafts in draft preview and decide which 2-3 are worth polishing first.
-2. Verify media URLs and replace any weak/incorrect preview assets.
-3. For publish-ready items, do a tighter Vietnamese keyword/saturation check, then flip only approved records to `draft: false`.
-4. Keep foundation cadence `365/60/5` for 2-3 weeks, then reduce to radar cadence such as `--days 30 --limit 30 --pick 2`.
+1. Decide public set before deploy: keep/remove Plane and confirm Postiz framing.
+2. Review the 5 remaining drafts in `/review`; polish and publish only the strongest 2-3.
+3. Verify media URLs for published records and replace weak/incorrect preview assets.
+4. If member feed is strategic, add real auth/runtime later; current state only prevents casual static exposure.
+5. Chốt tên + domain, then update `site` in `astro.config.mjs` and deploy Cloudflare Pages.
+6. Keep foundation cadence `365/60/5` for 2-3 weeks, then reduce to radar cadence such as `--days 30 --limit 30 --pick 2`.
 
 ---

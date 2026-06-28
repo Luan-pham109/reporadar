@@ -47,6 +47,24 @@ vnMarket:
 
 usabilityRisk: "Pixelle-Video không phải công cụ bấm một phát là ra video thương mại hoàn hảo. Bạn vẫn cần cấu hình LLM, model hình/video, TTS hoặc ComfyUI/RunningHub; dùng bản Windows thì dễ khởi động hơn nhưng vẫn cần API key và phải duyệt lại chất lượng hình, giọng, nhịp dựng."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, bạn có một video nháp ngắn từ một ý tưởng nội dung để xem hook, nhịp và cách kể đã ổn chưa."
+  prerequisites:
+    - "Một ý tưởng video thật, ví dụ một chủ đề Shorts/Reels hoặc một kịch bản ngắn 30-60 giây."
+    - "API key hoặc dịch vụ AI mà bản bạn dùng cần cho LLM, TTS, hình hoặc video."
+    - "Máy Windows dùng bản đóng gói sẵn hoặc môi trường có thể chạy WebUI cùng các dependency liên quan."
+  steps:
+    - "Chọn một case nhỏ, chỉ một video ngắn với ít cảnh, để test luồng end-to-end thay vì cố làm video thương mại hoàn chỉnh."
+    - "Chuẩn bị chủ đề, giọng điệu, đối tượng người xem và vài ghi chú về phong cách hình ảnh trước khi nhập vào hệ thống."
+    - "Khởi động Pixelle-Video, nối các API hoặc module cần thiết rồi chạy workflow tạo script, chia cảnh, sinh visual và voice."
+    - "Xuất bản nháp đầu tiên, xem lại từng cảnh để chỉnh prompt phần hình, lời thoại và nhịp cắt ở những đoạn bị lệch."
+    - "Chạy thêm một biến thể nữa từ cùng ý tưởng để so sánh hook hoặc style trước khi quyết định có đưa sang editor hay không."
+  expectedResult: "Bạn có ít nhất một bản video xem được từ đầu tới cuối, đủ để team đánh giá format nội dung trước khi đầu tư dựng kỹ."
+  commonPitfalls:
+    - "Ôm quá nhiều model và quá nhiều tuỳ chọn ngay lần đầu nên lỗi cấu hình nhiều hơn giá trị nhận được."
+    - "Dùng prompt quá chung chung khiến visual mỗi cảnh một kiểu và voice không khớp nhịp."
+    - "Đem bản nháp AI đi đăng ngay mà không duyệt lại hình, lời và nhạc nền."
+
 greyHatFlag: "borderline"
 
 suggestedAngle: "Góc nên viết: 'Dùng Pixelle-Video để dựng 10 bản nháp Shorts/Reels từ 10 ý tưởng nội dung trong một buổi' thay vì chỉ làm bài cài đặt."

@@ -3,84 +3,115 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import RepoListItem from '../components/RepoListItem.astro';
 import IndustryNav from '../components/IndustryNav.astro';
+import TagFilter from '../components/TagFilter.astro';
 import { includeDraft } from '../lib/drafts';
 
-// Feed liên tục: ẩn draft ở production, mới nhất lên đầu (PRD §7).
 const entries = (await getCollection('repos', ({ data }) => includeDraft(data))).sort(
   (a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime(),
 );
 
-// Gom theo tuần để link sang trang tổng hợp newsletter.
 const weeks = [...new Set(entries.map((e) => e.data.week))].sort().reverse();
+const latestWeek = weeks[0];
+const replacementCount = entries.filter((e) => e.data.paidToolReplaced).length;
+const preViralCount = entries.filter((e) => e.data.maturity === 'pre-viral').length;
+const tagCounts = [...entries.reduce((counts, entry) => {
+  for (const tag of entry.data.tags) counts.set(tag, (counts.get(tag) ?? 0) + 1);
+  return counts;
+}, new Map<string, number>())]
+  .map(([tag, count]) => ({ tag, count }))
+  .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag));
 ---
 
 <BaseLayout>
-  <section class="mb-7 border-b border-[var(--rr-border)] pb-7">
-    <p class="mb-2 text-xs font-semibold uppercase tracking-widest text-[var(--rr-core)]">AI tool radar cho người làm nghề</p>
-    <h1 class="max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">Biết công cụ AI nào đáng thử trước khi nó thành ồn ào.</h1>
-    <p class="mt-3 max-w-2xl text-sm leading-6 text-[var(--rr-muted)]">
-      RepoRadar VN chọn lọc repo và tool AI cho creative, agency, ecom, SEO. Mỗi bài trả lời nhanh:
-      dùng vào việc gì, thay được khâu nào, có đáng thử ở Việt Nam không.
-    </p>
+  <section class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+    <div>
+      <p class="mb-3 text-xs font-bold uppercase tracking-widest text-[var(--rr-core)]">Open-source alternatives for expensive software</p>
+      <h1 class="max-w-3xl text-4xl font-bold tracking-tight text-[var(--rr-text)] sm:text-5xl lg:text-6xl">
+        Trước khi gia hạn SaaS, kiểm tra AltStack.
+      </h1>
+      <p class="mt-5 max-w-2xl text-base leading-7 text-[var(--rr-muted)]">
+        AltStack chọn lọc công cụ AI/open-source giúp team Việt Nam biết tool nào thay được phần mềm đắt tiền,
+        cắt được khâu nào, khó triển khai không và có đáng thử trong công việc thật không.
+      </p>
 
-    <div class="mt-5 grid gap-3 sm:grid-cols-3">
-      <div class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface)] p-3">
-        <p class="text-sm font-semibold">Săn sớm</p>
-        <p class="mt-1 text-xs leading-5 text-[var(--rr-muted)]">Tool có tín hiệu tốt trước khi quá đông người viết lại.</p>
-      </div>
-      <div class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface)] p-3">
-        <p class="text-sm font-semibold">Dùng được</p>
-        <p class="mt-1 text-xs leading-5 text-[var(--rr-muted)]">Không chỉ “hay ho”: phải cắt được việc thật cho team/shop/agency.</p>
-      </div>
-      <div class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface)] p-3">
-        <p class="text-sm font-semibold">Hợp bối cảnh Việt Nam</p>
-        <p class="mt-1 text-xs leading-5 text-[var(--rr-muted)]">Có góc nhìn về chi phí, thói quen dùng tool và rào cản triển khai.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="#radar" class="rounded-md bg-[var(--rr-core)] px-4 py-2.5 text-sm font-semibold !text-white no-underline shadow-sm hover:bg-blue-700">
+          Xem radar mới nhất
+        </a>
+        <a href="#stacks" class="rounded-md border border-[var(--rr-border-strong)] bg-white px-4 py-2.5 text-sm font-semibold text-[var(--rr-text)] no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]">
+          Duyệt theo workflow
+        </a>
       </div>
     </div>
 
-    <div class="mt-5 flex flex-wrap gap-2">
-      <a href="#radar" class="rounded-md bg-[var(--rr-core)] px-3 py-2 text-sm font-semibold text-black no-underline hover:opacity-90">
-        Xem radar tuần này
-      </a>
-      <a href="/rss.xml" class="rounded-md border border-[var(--rr-border)] px-3 py-2 text-sm text-[var(--rr-muted)] no-underline hover:border-[var(--rr-core)]/50 hover:text-[var(--rr-text)]">
-        Theo dõi RSS
-      </a>
-      <a href="/feed.json" class="rounded-md border border-[var(--rr-border)] px-3 py-2 text-sm text-[var(--rr-muted)] no-underline hover:border-[var(--rr-core)]/50 hover:text-[var(--rr-text)]">
-        JSON feed
-      </a>
+    <div class="overflow-hidden rounded-lg border border-[var(--rr-dark)] bg-[var(--rr-dark)] text-white shadow-[var(--rr-shadow)]">
+      <div class="border-b border-white/10 p-4">
+        <p class="text-xs font-bold uppercase tracking-widest text-blue-200">Radar console</p>
+        <p class="mt-2 font-display text-3xl font-bold">Replace the stack. Keep the capability.</p>
+      </div>
+      <div class="p-4">
+      <div class="mb-3 flex items-center justify-between gap-3">
+        <div>
+          <p class="text-xs font-semibold uppercase text-slate-400">Decision system</p>
+          <p class="mt-1 font-display text-xl font-bold">Try / Watch / Skip</p>
+        </div>
+        <span class="rounded-md bg-white/10 px-2.5 py-1 text-xs font-semibold text-slate-200">{entries.length} briefs</span>
+      </div>
+      <div class="grid gap-2 text-sm">
+        <div class="rounded-md border border-white/10 bg-white/10 p-3">
+          <p class="font-semibold text-green-300">Replaces</p>
+          <p class="mt-1 text-slate-300">{replacementCount} tool có ghi rõ SaaS/phần mềm có thể thay.</p>
+        </div>
+        <div class="rounded-md border border-white/10 bg-white/10 p-3">
+          <p class="font-semibold text-white">Workflow impact</p>
+          <p class="mt-1 text-slate-300">Ưu tiên brief nói được khâu nào được cắt, tiết kiệm gì, ai không nên dùng.</p>
+        </div>
+        <div class="rounded-md border border-blue-300/20 bg-blue-400/10 p-3">
+          <p class="font-semibold text-blue-200">Pre-viral signal</p>
+          <p class="mt-1 text-slate-300">{preViralCount} tín hiệu sớm để theo dõi trước khi thị trường viết lại quá nhiều.</p>
+        </div>
+      </div>
+      </div>
     </div>
   </section>
 
-  <section class="mb-7">
-    <div class="mb-2 flex flex-wrap items-baseline justify-between gap-2">
-      <h2 class="text-sm font-semibold">Duyệt theo ngành</h2>
-      <p class="text-xs text-[var(--rr-muted)]">Creative, agency, ecom, SEO</p>
+  <section id="stacks" class="mt-10 scroll-mt-24 rounded-lg border border-[var(--rr-border)] bg-white p-5">
+    <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Stacks</p>
+        <h2 class="mt-1 text-2xl font-semibold">Duyệt theo đội đang ra quyết định</h2>
+      </div>
+      <p class="max-w-md text-sm leading-6 text-[var(--rr-muted)]">Creative, agency, ecommerce và SEO cần câu hỏi khác nhau trước khi đưa một tool vào workflow.</p>
     </div>
     <IndustryNav />
   </section>
 
-  <section id="radar" class="mb-8 scroll-mt-20">
-    <div class="mb-3 flex flex-wrap items-end justify-between gap-2">
+  <section id="radar" class="mt-10 scroll-mt-24">
+    <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
       <div>
-        <p class="text-xs font-semibold uppercase tracking-widest text-[var(--rr-muted)]">Radar mới nhất</p>
-        <h2 class="mt-1 text-xl font-semibold">Công cụ đáng mở tab hôm nay</h2>
+        <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">AltStack Radar</p>
+        <h2 class="mt-1 text-2xl font-semibold">Công cụ đáng mở tab hôm nay</h2>
       </div>
-      {weeks.length > 0 && (
-        <div class="flex flex-wrap gap-2 text-xs">
-          <span class="text-[var(--rr-muted)]">Tổng hợp tuần:</span>
-          {weeks.map((w) => (
-            <a href={`/tuan/${w}`} class="rounded border border-[var(--rr-border)] px-2 py-0.5 hover:border-[var(--rr-core)]/50">
-              {w}
-            </a>
-          ))}
-        </div>
+      {latestWeek && (
+        <a href={`/tuan/${latestWeek}`} class="rounded-md border border-[var(--rr-border)] bg-white px-3 py-2 text-sm font-semibold text-[var(--rr-text)] no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]">
+          Weekly {latestWeek}
+        </a>
       )}
     </div>
 
+    <div class="mb-4">
+      <TagFilter
+        tags={tagCounts}
+        basePath="/"
+        label="Find by tag"
+        description="Lọc nhanh theo use case, category hoặc workflow để tìm repo phù hợp hơn."
+      />
+    </div>
+
     {entries.length === 0 ? (
-      <p class="text-[var(--rr-muted)]">Chưa có công cụ nào được đăng.</p>
+      <p class="rounded-lg border border-[var(--rr-border)] bg-white p-5 text-[var(--rr-muted)]">Chưa có công cụ nào được đăng.</p>
     ) : (
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-3">
         {entries.map((entry) => (
           <RepoListItem entry={entry} />
         ))}
@@ -88,17 +119,26 @@ const weeks = [...new Set(entries.map((e) => e.data.week))].sort().reverse();
     )}
   </section>
 
-  <section class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface)] p-4">
-    <div class="grid gap-4 sm:grid-cols-[1.3fr_1fr] sm:items-center">
+  <section id="weekly" class="mt-10 scroll-mt-24 rounded-lg border border-[var(--rr-dark)] bg-[var(--rr-dark)] p-5 text-white">
+    <div class="grid gap-5 sm:grid-cols-[1.3fr_1fr] sm:items-center">
       <div>
-        <h2 class="text-base font-semibold">Muốn nhận bản radar đều hơn?</h2>
-        <p class="mt-1 text-sm leading-6 text-[var(--rr-muted)]">
-          Mục tiêu tiếp theo là gửi digest ngắn: vài tool đáng thử, góc dùng ở Việt Nam, và cảnh báo cạm bẫy trước khi bạn mất thời gian test.
+        <p class="text-xs font-bold uppercase tracking-widest text-blue-200">AltStack Weekly</p>
+        <h2 class="mt-2 text-xl font-semibold">Ít tool hơn, quyết định rõ hơn.</h2>
+        <p class="mt-2 text-sm leading-6 text-slate-300">
+          Digest ngắn cho vài công cụ đáng thử, góc dùng ở Việt Nam và cảnh báo cạm bẫy trước khi bạn mất thời gian test.
         </p>
       </div>
       <div class="flex flex-wrap gap-2 sm:justify-end">
-        <a href="/rss.xml" class="rounded-md bg-[var(--rr-core)] px-3 py-2 text-sm font-semibold text-black no-underline hover:opacity-90">RSS trước</a>
-        <a href="/feed.json" class="rounded-md border border-[var(--rr-border)] px-3 py-2 text-sm text-[var(--rr-muted)] no-underline hover:border-[var(--rr-core)]/50 hover:text-[var(--rr-text)]">JSON feed</a>
+        <a href="/rss.xml" class="rounded-md bg-white px-3 py-2 text-sm font-semibold text-[var(--rr-dark)] no-underline hover:bg-slate-100">Theo dõi RSS</a>
+        <a
+          href="/login"
+          class="rounded-md border border-white/40 px-3 py-2 text-sm font-semibold text-white no-underline hover:border-white/60 hover:bg-white/10"
+          data-track-event="membership_intent"
+          data-track-label="homepage_weekly_member_insight"
+          data-track-prop-surface="homepage_weekly"
+        >
+          Member insight
+        </a>
       </div>
     </div>
   </section>

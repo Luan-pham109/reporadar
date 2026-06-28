@@ -22,9 +22,11 @@ vào record. KHÔNG vá từng bài như một ngoại lệ nếu lỗi đó là
 
 ## Tách tầng (quan trọng nhất)
 
-Trang chi tiết có 2 tầng — skill này chỉ viết **tầng đọc**:
+Trang chi tiết có 3 tầng — skill này chỉ viết **tầng đọc** và **tầng member**:
 - **Tầng đọc (VIẾT LẠI, hiển thị cho người đọc):** `useCases`, `oneLiner`, `workflowStepReplaced`,
   `timeOrCostSaved`, `paidToolReplaced`, `localProblem`, `localEvidence`, `usabilityRisk`, `media[].caption`.
+- **Tầng member (VIẾT LẠI, khoá sau login khi có auth):** `practitionerGuide`. Đây là JTBD quan trọng:
+  giúp người làm nghề biết chuẩn bị gì, làm từng bước thế nào, output đúng trông ra sao, và bẫy nào dễ làm mất thời gian.
 - **Nguyên liệu (KHÔNG hiển thị — dùng để viết):** `vnMarket.insight` (thực tế ngành VN) và
   `standoutFeatures` (Hunt). **Bạn HẤP THỤ chúng vào** `localProblem`/`useCases`/`oneLiner` bằng giọng tự
   nhiên — KHÔNG dán nguyên văn lên trang. `vnMarket.insight` chỉ hiện ở dev cho Luan.
@@ -33,11 +35,11 @@ Trang chi tiết có 2 tầng — skill này chỉ viết **tầng đọc**:
 - **SEO tự động:** `vnMarket.seoKeywords` được trang đổ vào meta keywords + JSON-LD. Việc của bạn: **rải
   các từ khoá đó một cách TỰ NHIÊN** vào `oneLiner`, `useCases`, heading — không nhồi nhét.
 
-## Luật lọc tầng đọc (bắt buộc)
+## Luật lọc tầng đọc/member (bắt buộc)
 
 Các field tầng đọc là mặt tiền của site. Trước khi ghi file, phải scan riêng các field này:
 `oneLiner`, `useCases`, `workflowStepReplaced`, `timeOrCostSaved`, `paidToolReplaced`, `localProblem`,
-`localEvidence`, `usabilityRisk`, `media[].caption`.
+`localEvidence`, `usabilityRisk`, `media[].caption`, `practitionerGuide`.
 
 Không phải thuật ngữ nào cũng xấu. Nhiều độc giả RepoRadar hiểu và search bằng các từ như `tool`,
 `Trending`, `self-host`. Mục tiêu là **lọc giọng nội bộ và thuật ngữ làm câu xa người đọc**, không phải
@@ -102,9 +104,10 @@ AI engine trích những đoạn **trả lời thẳng, đứng một mình cũn
    trang đã là câu hỏi "<tên công cụ> dùng để làm gì?"). Chuyển `standoutFeatures` (khách quan) thành việc người
    dùng làm được theo lăng kính `vertical`. VD: "Lên lịch một lần, đăng cùng lúc lên 5 nền — khỏi dán tay."
 3. Viết lại từng field tầng đọc theo bản đồ dưới đây. Giữ ý + bằng chứng, chỉ đổi giọng. KHÔNG bịa số mới.
-4. Chạy luật lọc tầng đọc ở trên: nếu còn cụm nội bộ hoặc thuật ngữ làm câu khó hiểu trong field hiển thị, phải sửa ngay trong record trước khi xong.
-5. KHÔNG đổi field tầng phân tích.
-6. Đặt `draft: false` nếu Luan duyệt; ghi đè file. Chạy `npm run build`.
+4. Viết lại `practitionerGuide` nếu đã có khung từ synthesize: câu hành động, từng bước rõ, không biến thành bài cài đặt mơ hồ.
+5. Chạy luật lọc tầng đọc/member ở trên: nếu còn cụm nội bộ hoặc thuật ngữ làm câu khó hiểu trong field hiển thị, phải sửa ngay trong record trước khi xong.
+6. KHÔNG đổi field tầng phân tích.
+7. Đặt `draft: false` nếu Luan duyệt; ghi đè file. Chạy `npm run build`.
 
 ### Bản đồ viết field tầng đọc
 
@@ -127,6 +130,13 @@ AI engine trích những đoạn **trả lời thẳng, đứng một mình cũn
   cộng đồng Việt. Không biến risk thành lời quảng cáo.
 - `media[].caption`: caption ngắn, mô tả người xem đang thấy gì. Tránh "demo workflow" nếu "Demo quy trình",
   "Giao diện lịch đăng", "Ví dụ bản dựng" đọc tự nhiên hơn.
+- `practitionerGuide.outcome`: nói rõ sau guide người dùng tạo/kiểm được kết quả gì. Không viết chung "hiểu cách dùng".
+- `practitionerGuide.prerequisites`: checklist chuẩn bị trước khi thử: tài khoản, API key, file mẫu, URL, dữ liệu,
+  Docker/VPS/GPU, quyền truy cập, người kỹ thuật. Viết thực tế, không dọa quá.
+- `practitionerGuide.steps`: từng bước thao tác, mỗi dòng bắt đầu bằng động từ. Nếu bước cần kiến thức kỹ thuật,
+  giải thích bằng tác động thực tế. Không bịa command nếu chưa có trong README/docs.
+- `practitionerGuide.expectedResult`: dấu hiệu output đúng/đủ tốt để quyết định thử tiếp.
+- `practitionerGuide.commonPitfalls`: lỗi/bẫy hay gặp và cách tránh ngắn gọn; ưu tiên những thứ làm practitioner mất thời gian.
 
 ### B. Viết copy website (chrome/heading/hero)
 Áp 6 quy tắc cho hero index, blurb/question pillar (`src/lib/industries.ts`), heading section, nav, footer.
@@ -147,6 +157,7 @@ Website copy cũng phải dùng cùng luật lọc:
 - [ ] Các field `localProblem/localEvidence` đã nói như người đọc ở Việt Nam, không như ghi chú nghiên cứu?
 - [ ] `workflowStepReplaced` dùng "khâu/việc/quy trình/bước" khi phù hợp, và không lặp `workflow` vô tội vạ?
 - [ ] Website/detail public dùng "công cụ" hay "tool" theo keyword/ngữ cảnh, không máy móc?
+- [ ] `practitionerGuide` có giúp người đọc làm được output đầu tiên theo từng bước không?
 - [ ] Có thổi phồng / hứa chắc chắn không? Cạm bẫy có nói thẳng không?
 - [ ] Field tầng phân tích còn nguyên không?
 - [ ] `npm run build` sạch?
