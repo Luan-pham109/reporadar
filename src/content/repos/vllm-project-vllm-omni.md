@@ -43,6 +43,24 @@ vnMarket:
 
 usabilityRisk: "vLLM-Omni đòi hỏi Linux, GPU, hiểu model serving và vận hành backend. Nếu team chưa quen hạ tầng hoặc chỉ cần chạy một model đơn lẻ, chi phí học và vận hành sẽ cao hơn lợi ích."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, team bạn biết liệu có thể gom vài luồng model về một lớp serve chung hay chưa."
+  prerequisites:
+    - "Máy Linux có GPU và người phụ trách hạ tầng đủ quen model serving."
+    - "Ít nhất hai bài toán multimodal thật, ví dụ chat cộng TTS hoặc chat cộng image generation."
+    - "Kỳ vọng rõ rằng đây là bài test hạ tầng, không phải bài cài nhanh cho người dùng phổ thông."
+  steps:
+    - "Chọn một use case nhỏ nhưng thật, ví dụ một app nội bộ cần chat và TTS chung API, thay vì cố phục vụ đủ mọi modality ngay."
+    - "Đọc recipe triển khai phù hợp trong repo rồi dựng môi trường Linux/GPU tối thiểu theo yêu cầu."
+    - "Khởi chạy một mô hình đầu tiên và xác nhận API tương thích OpenAI hoạt động ổn trên ca đơn giản."
+    - "Bổ sung thêm một modality thứ hai để xem mức độ hợp nhất backend, logging và cách team vận hành thay đổi ra sao."
+    - "Đo lại công sức vận hành, độ ổn định và lợi ích của việc gom stack trước khi quyết định mở rộng."
+  expectedResult: "Bạn có một bài test hạ tầng đủ rõ để biết vLLM-Omni hợp với team builder của mình hay chỉ làm tăng độ phức tạp."
+  commonPitfalls:
+    - "Nhìn repo như công cụ cho creator phổ thông trong khi nó dành cho team infra."
+    - "Thử quá nhiều modality và model ở vòng đầu khiến khó debug."
+    - "Không có use case nội bộ thật nên team chỉ benchmark cho vui mà không ra quyết định."
+
 greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: framework hợp nhất backend multimodal cho team hạ tầng AI, không bán nó như tool dễ cài cho mọi người."
@@ -56,7 +74,7 @@ aiCheck:
 tags: ["inference", "multimodal", "self-host", "api", "creative", "ai-infra"]
 publishedAt: 2026-06-27
 week: "2026-W26"
-draft: true
+draft: false
 ---
 
 Draft foundation. Cần Luan review thêm xem record này có nên giữ ở nhánh audience hẹp hơn cho team hạ tầng AI.

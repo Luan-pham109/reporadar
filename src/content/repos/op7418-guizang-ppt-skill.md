@@ -47,6 +47,24 @@ vnMarket:
 
 usabilityRisk: "Đây là skill cho môi trường coding, không phải app PowerPoint kéo thả. Người dùng cần biết cách chạy Claude Code/Codex và chấp nhận chỉnh HTML/CSS khi muốn polish sâu."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, bạn có một deck HTML nháp đủ đẹp để review nội dung hoặc pitch thử."
+  prerequisites:
+    - "Một outline 5-10 slide hoặc ít nhất là các ý chính của proposal/deck."
+    - "Claude Code hoặc Codex có thể chạy skill và xuất file HTML."
+    - "Một người trong team có thể đọc nhanh HTML/CSS nếu cần chỉnh sâu phần layout."
+  steps:
+    - "Chuẩn bị outline rõ ràng theo từng slide: mở bài, vấn đề, giải pháp, bằng chứng, chốt."
+    - "Chọn một phong cách trước khi chạy, ví dụ editorial magazine hay Swiss, để deck không nhảy visual giữa chừng."
+    - "Đưa outline vào skill và yêu cầu xuất bản deck HTML đầu tiên thay vì cố hoàn thiện cả brand guideline ngay."
+    - "Mở deck đã sinh ra, review logic câu chuyện và bố cục trước; chỉ sửa visual sau khi nội dung đã đúng."
+    - "Tinh chỉnh các slide quan trọng như cover, giải pháp và pricing rồi mới quyết định có chuyển cho designer polish."
+  expectedResult: "Bạn có một bản deck xem được từ đầu tới cuối, đủ để nội bộ phản hồi hoặc mang đi demo sớm."
+  commonPitfalls:
+    - "Thiếu outline rõ nên tool phải tự đoán câu chuyện và deck ra đẹp nhưng rỗng."
+    - "Kỳ vọng đây là PowerPoint kéo thả hoàn chỉnh nên thất vọng khi phải chạm HTML/CSS."
+    - "Chỉnh font, màu, animation quá sớm trước khi chốt cấu trúc nội dung."
+
 greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: tạo bản nháp proposal/deck trong 30 phút bằng Codex, rồi designer chỉ polish brand."

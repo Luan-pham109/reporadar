@@ -3,10 +3,10 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import RepoCard from '../../components/RepoCard.astro';
 import IndustryNav from '../../components/IndustryNav.astro';
+import TagFilter from '../../components/TagFilter.astro';
 import { INDUSTRIES, entriesInIndustry } from '../../lib/industries';
 import { includeDraft } from '../../lib/drafts';
 
-// Pillar page — 1 trang/ngành (PRD §2bis, KR#6 topical-authority).
 export async function getStaticPaths() {
   const entries = await getCollection('repos', ({ data }) => includeDraft(data));
   return INDUSTRIES.map((ind) => ({
@@ -21,31 +21,86 @@ export async function getStaticPaths() {
 }
 
 const { industry, entries } = Astro.props;
-const title = `${industry.label} — công cụ AI đáng dùng | RepoRadar VN`;
+const title = `${industry.label} alternatives & AI/open-source tools | AltStack`;
+const replacementCount = entries.filter((entry) => entry.data.paidToolReplaced).length;
+const riskCount = entries.filter((entry) => entry.data.usabilityRisk).length;
+const preViralCount = entries.filter((entry) => entry.data.maturity === 'pre-viral').length;
+const tagCounts = [...entries.reduce((counts, entry) => {
+  for (const tag of entry.data.tags) counts.set(tag, (counts.get(tag) ?? 0) + 1);
+  return counts;
+}, new Map<string, number>())]
+  .map(([tag, count]) => ({ tag, count }))
+  .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag));
 ---
 
 <BaseLayout title={title} description={industry.blurb}>
-  <a href="/" class="text-sm text-[var(--rr-muted)] no-underline hover:text-[var(--rr-text)]">← Trang chủ</a>
+  <a href="/" class="text-sm font-medium text-[var(--rr-muted)] no-underline hover:text-[var(--rr-core)]">← AltStack</a>
 
-  <header class="mt-4 mb-6">
-    <h1 class="text-2xl font-bold tracking-tight">{industry.icon} {industry.label}</h1>
-    <p class="mt-2 max-w-prose text-sm text-[var(--rr-muted)]">{industry.blurb}</p>
-    <p class="mt-3 max-w-prose rounded-lg border border-[var(--rr-border)] bg-[var(--rr-surface)] p-3 text-sm">
-      <span class="font-medium text-[var(--rr-core)]">Câu hỏi khi chọn:</span> {industry.question}
-    </p>
+  <header class="mt-4 overflow-hidden rounded-lg border border-[var(--rr-dark)] bg-[var(--rr-dark)] text-white shadow-[var(--rr-shadow)]">
+    <div class="grid gap-0 lg:grid-cols-[1.1fr_0.9fr]">
+      <div class="p-6 sm:p-8">
+        <p class="text-xs font-bold uppercase tracking-widest text-blue-200">Open Stack For</p>
+        <h1 class="mt-3 max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">{industry.label}</h1>
+        <p class="mt-4 max-w-2xl text-base leading-7 text-slate-300">{industry.blurb}</p>
+      </div>
+
+      <div class="border-t border-white/10 bg-white/[0.04] p-6 sm:p-8 lg:border-l lg:border-t-0">
+        <p class="text-xs font-bold uppercase tracking-widest text-blue-200">Operator lens</p>
+        <p class="mt-3 font-display text-2xl font-bold leading-tight">{industry.question}</p>
+        <div class="mt-6 grid grid-cols-3 gap-2">
+          <div class="rounded-md border border-white/10 bg-white/10 p-3">
+            <p class="font-display text-2xl font-bold">{entries.length}</p>
+            <p class="mt-1 text-xs text-slate-300">briefs</p>
+          </div>
+          <div class="rounded-md border border-white/10 bg-white/10 p-3">
+            <p class="font-display text-2xl font-bold text-green-300">{replacementCount}</p>
+            <p class="mt-1 text-xs text-slate-300">replaces SaaS</p>
+          </div>
+          <div class="rounded-md border border-white/10 bg-white/10 p-3">
+            <p class="font-display text-2xl font-bold text-amber-300">{riskCount}</p>
+            <p class="mt-1 text-xs text-slate-300">risk notes</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <div class="mb-8">
+  <section class="mt-6 rounded-lg border border-[var(--rr-border)] bg-white p-4">
+    <div class="mb-3 flex flex-wrap items-center justify-between gap-3">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Switch lens</p>
+        <p class="mt-1 text-sm text-[var(--rr-muted)]">{preViralCount} pre-viral signal trong stack này.</p>
+      </div>
+    </div>
     <IndustryNav active={industry.slug} showHot />
-  </div>
+    <div class="mt-4">
+      <TagFilter
+        tags={tagCounts}
+        basePath={`/nganh/${industry.slug}`}
+        label="Filter this stack"
+        description={`Lọc ${industry.short} stack theo tag để tìm repo gần nhất với bài toán hiện tại.`}
+      />
+    </div>
+  </section>
 
   {entries.length === 0 ? (
-    <p class="text-sm text-[var(--rr-muted)]">Chưa có công cụ nào trong ngành này. Xem <a href="/" class="text-[var(--rr-core)] hover:underline">trang chủ</a> hoặc thử một ngành khác phía trên.</p>
+    <p class="mt-8 rounded-lg border border-[var(--rr-border)] bg-white p-5 text-sm text-[var(--rr-muted)]">
+      Chưa có công cụ nào trong ngành này. Xem <a href="/" class="font-semibold text-[var(--rr-core)] hover:underline">trang chủ</a> hoặc thử một ngành khác phía trên.
+    </p>
   ) : (
-    <div class="flex flex-col gap-4">
-      {entries.map((entry) => (
-        <RepoCard entry={entry} />
-      ))}
-    </div>
+    <section class="mt-8">
+      <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Tool intelligence briefs</p>
+          <h2 class="mt-1 text-2xl font-semibold">Đáng thử, đáng theo dõi, hoặc nên bỏ qua</h2>
+        </div>
+        <p class="max-w-sm text-sm leading-6 text-[var(--rr-muted)]">Mỗi brief phải nói được thay gì, dùng cho ai, và cái giá thật của việc triển khai.</p>
+      </div>
+      <div class="grid gap-4 lg:grid-cols-2">
+        {entries.map((entry) => (
+          <RepoCard entry={entry} />
+        ))}
+      </div>
+    </section>
   )}
 </BaseLayout>

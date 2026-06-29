@@ -2,7 +2,7 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 
-const root = path.resolve('D:/RepoRadar/dist');
+const root = path.resolve('dist');
 const mime = {
   '.html': 'text/html; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
@@ -19,6 +19,7 @@ const mime = {
 http
   .createServer((req, res) => {
     const url = decodeURIComponent((req.url || '/').split('?')[0]);
+
     let filePath = path.join(root, url === '/' ? 'index.html' : url);
 
     fs.stat(filePath, (err, stat) => {

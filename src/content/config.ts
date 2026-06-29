@@ -90,6 +90,26 @@ const repos = defineCollection({
     /** Hỗ trợ Windows? cần GPU? khó cài/dùng? chưa có cộng đồng VN? — nói thẳng (R3). */
     usabilityRisk: z.string().default(''),
 
+    // ---- MEMBER VALUE: hướng dẫn áp dụng cho practitioner ----
+    /**
+     * Hướng dẫn từng bước để người làm nghề thử tool và có kết quả đầu tiên.
+     * Public page chỉ teaser; khi có auth/runtime, đây là lớp member chính.
+     */
+    practitionerGuide: z
+      .object({
+        /** Sau guide này người dùng tạo/kiểm được kết quả gì. */
+        outcome: z.string().default(''),
+        /** File, tài khoản, API key, dữ liệu, quyền truy cập... cần chuẩn bị trước. */
+        prerequisites: z.array(z.string()).default([]),
+        /** Các bước thao tác theo thứ tự, viết cho người dùng thực hành. */
+        steps: z.array(z.string()).default([]),
+        /** Dấu hiệu cho biết chạy đúng / output đạt mức chấp nhận được. */
+        expectedResult: z.string().default(''),
+        /** Lỗi, bẫy, điều kiện dễ làm người dùng mất thời gian khi thử. */
+        commonPitfalls: z.array(z.string()).default([]),
+      })
+      .default({}),
+
     // ---- CỐT LÕI: kỷ luật IN/OUT (PRD §2bis) ----
     /** in = đồ sạch; borderline = tuỳ khung kể; out = grey-hat, không đưa lên (hoặc cảnh báo mạnh). */
     greyHatFlag: z.enum(['in', 'borderline', 'out']).default('in'),

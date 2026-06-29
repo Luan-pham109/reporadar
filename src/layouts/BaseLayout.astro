@@ -5,23 +5,22 @@ import { INDUSTRIES } from '../lib/industries';
 interface Props {
   title?: string;
   description?: string;
-  /** Ảnh OG (tuyệt đối hoặc tương đối). Mặc định không có. */
+  /** OG image, absolute or relative. */
   image?: string;
-  /** Meta keywords (đã join chuỗi). */
+  /** Meta keywords, already joined. */
   keywords?: string;
-  /** og:type — 'website' | 'article'. */
+  /** og:type - 'website' | 'article'. */
   ogType?: string;
 }
 
 const {
-  title = 'RepoRadar VN — công cụ AI đáng đưa vào việc cho creative, agency, ecom & SEO',
-  description = 'RepoRadar VN chọn lọc công cụ AI và repo đáng dùng cho creative, agency, ecom, SEO: dùng vào việc gì, cắt khâu nào, thay được gì và cần lưu ý gì.',
+  title = 'AltStack - open-source alternatives for expensive software',
+  description = 'AltStack chọn lọc công cụ AI/open-source giúp team Việt Nam biết tool nào thay được SaaS đắt tiền, cắt được khâu nào, khó triển khai không và có đáng thử trong workflow thật không.',
   image,
   keywords,
   ogType = 'website',
 } = Astro.props;
 
-// SEO: canonical + OG tuyệt đối (cần `site` trong astro.config).
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname;
 const ogImage = image ? (Astro.site ? new URL(image, Astro.site).href : image) : undefined;
 const canReviewDrafts = ['localhost', '127.0.0.1'].includes(Astro.url.hostname);
@@ -38,7 +37,7 @@ const canReviewDrafts = ['localhost', '127.0.0.1'].includes(Astro.url.hostname);
     <link rel="canonical" href={canonical} />
 
     <meta property="og:type" content={ogType} />
-    <meta property="og:site_name" content="RepoRadar VN" />
+    <meta property="og:site_name" content="AltStack" />
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -50,44 +49,140 @@ const canReviewDrafts = ['localhost', '127.0.0.1'].includes(Astro.url.hostname);
     <meta name="twitter:description" content={description} />
     {ogImage && <meta name="twitter:image" content={ogImage} />}
 
-    <link rel="alternate" type="application/rss+xml" title="RepoRadar VN" href="/rss.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="alternate" type="application/rss+xml" title="AltStack" href="/rss.xml" />
     <slot name="head" />
   </head>
   <body class="min-h-screen">
-    <header class="border-b border-[var(--rr-border)]">
-      <div class="mx-auto flex max-w-3xl items-center justify-between px-4 py-5">
-        <a href="/" class="flex items-baseline gap-2 no-underline">
-          <span class="text-lg font-bold tracking-tight">RepoRadar<span class="text-[var(--rr-core)]"> VN</span></span>
+    <header class="sticky top-0 z-20 border-b border-[var(--rr-border)] bg-white/88 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-5 px-4 py-3">
+        <a href="/" class="flex items-center gap-2.5 no-underline" aria-label="AltStack homepage">
+          <span class="relative grid h-9 w-9 place-items-center rounded-md bg-[var(--rr-dark)] text-white shadow-sm">
+            <span class="absolute left-2 right-2 top-2 h-1 rounded-sm bg-white"></span>
+            <span class="absolute left-2.5 right-2.5 top-4 h-1 rounded-sm bg-[var(--rr-core)]"></span>
+            <span class="absolute left-3 right-3 top-6 h-1 rounded-sm bg-[var(--rr-open)]"></span>
+          </span>
+          <span class="leading-none">
+            <span class="block font-display text-lg font-bold tracking-tight">AltStack</span>
+            <span class="block text-[11px] font-medium uppercase text-[var(--rr-muted)]">Alternative tool intelligence</span>
+          </span>
         </a>
-        <nav class="flex items-center gap-4 text-sm text-[var(--rr-muted)]">
-          <a href="/" class="hover:text-[var(--rr-text)]">Trang chủ</a>
-          {canReviewDrafts && <a href="/review" class="hover:text-[var(--rr-text)]">Review</a>}
-          <a href="/feed.json" class="hover:text-[var(--rr-text)]">JSON</a>
-          <a href="/rss.xml" class="hover:text-[var(--rr-text)]">RSS</a>
+
+        <nav class="hidden items-center gap-1 text-sm font-medium text-[var(--rr-muted)] sm:flex">
+          <a href="/#radar" class="rounded-md px-3 py-2 hover:bg-[var(--rr-surface-soft)] hover:text-[var(--rr-text)]">Radar</a>
+          <a href="/#stacks" class="rounded-md px-3 py-2 hover:bg-[var(--rr-surface-soft)] hover:text-[var(--rr-text)]">Stacks</a>
+          <a href="/#weekly" class="rounded-md px-3 py-2 hover:bg-[var(--rr-surface-soft)] hover:text-[var(--rr-text)]">Weekly</a>
+          {canReviewDrafts && <a href="/review" class="rounded-md px-3 py-2 hover:bg-[var(--rr-surface-soft)] hover:text-[var(--rr-text)]">Review</a>}
+          <a
+            href="/login"
+            class="rounded-md px-3 py-2 hover:bg-[var(--rr-surface-soft)] hover:text-[var(--rr-text)]"
+            data-track-event="membership_intent"
+            data-track-label="header_member"
+            data-track-prop-surface="header"
+          >
+            Member
+          </a>
+          <a href="/rss.xml" class="rounded-md border border-[var(--rr-border)] px-3 py-2 text-[var(--rr-text)] hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]">RSS</a>
         </nav>
       </div>
     </header>
 
-    <main class="mx-auto max-w-3xl px-4 py-8">
+    <main class="mx-auto max-w-6xl px-4 py-8 sm:py-10">
       <slot />
     </main>
 
-    <footer class="mt-16 border-t border-[var(--rr-border)]">
-      <div class="mx-auto max-w-3xl px-4 py-6 text-xs text-[var(--rr-muted)]">
-        <nav class="mb-3 flex flex-wrap gap-x-4 gap-y-1">
-          <span class="font-medium text-[var(--rr-text)]">Ngành:</span>
+    <footer class="mt-16 border-t border-[var(--rr-border)] bg-white">
+      <div class="mx-auto grid max-w-6xl gap-6 px-4 py-8 text-sm text-[var(--rr-muted)] sm:grid-cols-[1.4fr_1fr]">
+        <div>
+          <p class="font-display text-lg font-bold text-[var(--rr-text)]">AltStack</p>
+          <p class="mt-2 max-w-2xl leading-6">
+            Kho công cụ AI/open-source thay SaaS đắt tiền cho creative, agency, ecommerce và SEO team Việt Nam.
+            Mỗi brief ưu tiên verdict rõ: thay được gì, tiết kiệm gì, khó dùng không, có hợp bối cảnh Việt Nam không.
+          </p>
+        </div>
+        <nav class="flex flex-wrap items-start gap-2 sm:justify-end">
           {INDUSTRIES.map((ind) => (
-            <a href={`/nganh/${ind.slug}`} class="hover:text-[var(--rr-text)]">{ind.icon} {ind.short}</a>
+            <a href={`/nganh/${ind.slug}`} class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] px-3 py-1.5 text-xs font-medium text-[var(--rr-text)] no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]">
+              {ind.short}
+            </a>
           ))}
+          <a href="/rss.xml" class="rounded-md border border-[var(--rr-border)] px-3 py-1.5 text-xs font-medium text-[var(--rr-text)] no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]">RSS</a>
         </nav>
-        <p>
-          RepoRadar VN chọn lọc công cụ cho creative, agency, ecom và SEO. Ưu tiên thứ có thể đưa vào việc ngay:
-          <span class="text-[var(--rr-core)]">đang nổi sớm</span>,
-          <span class="text-[var(--rr-core)]">hợp đúng ngành</span> và
-          <span class="text-[var(--rr-core)]">có góc nhìn thực tế ở Việt Nam</span>.
-        </p>
-        <p class="mt-2">Không hứa “chắc chắn viral”; mỗi bài chỉ là một gợi ý để bạn tự kiểm và thử trong quy trình của mình.</p>
       </div>
     </footer>
+    <script>
+      (() => {
+        const endpoint = '/api/events';
+        const storageKey = 'altstack_anon_id';
+        const sessionKey = 'altstack_session_id';
+
+        function getId(storage, key, prefix) {
+          try {
+            let value = storage.getItem(key);
+            if (!value) {
+              value = `${prefix}_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 10)}`;
+              storage.setItem(key, value);
+            }
+            return value;
+          } catch {
+            return `${prefix}_ephemeral`;
+          }
+        }
+
+        const anonymousId = getId(window.localStorage, storageKey, 'anon');
+        const sessionId = getId(window.sessionStorage, sessionKey, 'ses');
+
+        function collectProps(element) {
+          const props = {};
+          for (const attr of element.attributes) {
+            if (!attr.name.startsWith('data-track-prop-')) continue;
+            const key = attr.name.replace('data-track-prop-', '').replace(/-/g, '_');
+            props[key] = attr.value;
+          }
+          return props;
+        }
+
+        function sendEvent(name, properties = {}) {
+          const payload = JSON.stringify({
+            name,
+            anonymousId,
+            sessionId,
+            path: `${window.location.pathname}${window.location.search}`,
+            referrer: document.referrer,
+            properties,
+          });
+
+          if (navigator.sendBeacon) {
+            const sent = navigator.sendBeacon(endpoint, new Blob([payload], { type: 'application/json' }));
+            if (sent) return;
+          }
+
+          fetch(endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: payload,
+            keepalive: true,
+          }).catch(() => {});
+        }
+
+        window.altstackTrack = sendEvent;
+        sendEvent('page_view', {
+          title: document.title,
+          tag: new URLSearchParams(window.location.search).get('tag') || '',
+        });
+
+        document.addEventListener('click', (event) => {
+          const target = event.target instanceof Element ? event.target.closest('[data-track-event]') : null;
+          if (!(target instanceof HTMLElement)) return;
+          sendEvent(target.dataset.trackEvent || 'click', {
+            label: target.dataset.trackLabel || target.textContent?.trim() || '',
+            href: target instanceof HTMLAnchorElement ? target.href : '',
+            ...collectProps(target),
+          });
+        });
+      })();
+    </script>
   </body>
 </html>

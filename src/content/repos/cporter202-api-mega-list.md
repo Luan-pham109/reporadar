@@ -44,6 +44,24 @@ vnMarket:
 
 usabilityRisk: "Danh sách càng lớn càng dễ loãng. Không phải API nào cũng hợp pháp, rẻ hoặc ổn định ở thị trường Việt Nam; nhiều API còn cần dev đọc docs, xử lý rate limit và kiểm tra điều khoản dữ liệu trước khi triển khai."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, bạn shortlist được 3-5 API phù hợp cho một bài toán dữ liệu hoặc automation cụ thể."
+  prerequisites:
+    - "Một bài toán thật cần giải, ví dụ lấy giá đối thủ, enrich lead, social listening hoặc đồng bộ CRM."
+    - "Tiêu chí chọn vendor cơ bản như chi phí, quốc gia hỗ trợ, legal risk và khả năng tích hợp."
+    - "Ít nhất một người có thể đọc docs kỹ thuật hoặc test API sau bước shortlist."
+  steps:
+    - "Viết rõ bài toán trước: cần lấy loại dữ liệu gì, tần suất bao nhiêu và output dùng cho team nào."
+    - "Mở API Mega List và lọc theo nhóm use case gần nhất thay vì đi từ đầu tới cuối repo."
+    - "Chọn ra 5-10 API có vẻ phù hợp rồi mở docs chính thức của từng bên để kiểm tra pricing, rate limit và điều khoản dùng dữ liệu."
+    - "Rút shortlist xuống 3-5 lựa chọn dựa trên tiêu chí thật của team: rẻ, ổn định, hỗ trợ region hoặc dễ tích hợp."
+    - "Giao shortlist này cho dev hoặc người vận hành automation test một endpoint mẫu trước khi quyết định mua hoặc triển khai."
+  expectedResult: "Bạn có một danh sách ngắn các API đáng thử tiếp, thay vì một repo dài 10.000 mục mà chưa biết bắt đầu ở đâu."
+  commonPitfalls:
+    - "Xem repo như tool plug-and-play và bỏ qua bước kiểm docs thật của vendor."
+    - "Chọn API chỉ vì rẻ hoặc phổ biến mà không kiểm legal, rate limit và phạm vi dữ liệu."
+    - "Không chốt bài toán cụ thể trước nên shortlist cuối cùng rất loãng."
+
 greyHatFlag: "borderline"
 
 suggestedAngle: "Góc nên viết: dùng API Mega List như chợ đầu mối để chốt vendor cho bài toán dữ liệu, không phải như một tool plug-and-play."
@@ -57,7 +75,7 @@ aiCheck:
 tags: ["api", "automation", "data", "agency", "ecom", "seo"]
 publishedAt: 2026-06-27
 week: "2026-W26"
-draft: true
+draft: false
 ---
 
 Draft foundation. Cần Luan review thêm cách kể cho phần borderline vì repo này chạm vào scraping và lead-data use case.

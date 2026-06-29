@@ -2,29 +2,29 @@
 import { INDUSTRIES } from '../lib/industries';
 
 interface Props {
-  /** Slug ngành đang active (để tô đậm), nếu có. */
+  /** Active industry slug. */
   active?: string;
-  /** Hiện chip "Đáng đi trước" + "Đã kiểm chứng" trỏ về #hot/#proven trên trang Feed. */
+  /** Show maturity shortcuts on list pages. */
   showHot?: boolean;
 }
 
 const { active, showHot = false } = Astro.props;
 ---
 
-<nav class="flex flex-wrap gap-2 text-sm">
+<nav class="flex flex-wrap gap-2 text-sm" aria-label="Industry navigation">
   {showHot && (
     <>
       <a
-        href="/#hot"
-        class="rounded-full border border-[var(--rr-core)]/40 bg-[var(--rr-core)]/10 px-3 py-1 text-[var(--rr-core)] no-underline hover:bg-[var(--rr-core)]/20"
+        href="/#radar"
+        class="rounded-md border border-[var(--rr-core)]/40 bg-[var(--rr-core)]/10 px-3 py-1.5 font-semibold text-[var(--rr-core)] no-underline hover:bg-[var(--rr-core)]/15"
       >
-        🔥 Đáng thử sớm
+        Pre-viral signals
       </a>
       <a
-        href="/#proven"
-        class="rounded-full border border-[var(--rr-border)] px-3 py-1 text-[var(--rr-muted)] no-underline hover:border-[var(--rr-core)]/50 hover:text-[var(--rr-text)]"
+        href="/#radar"
+        class="rounded-md border border-[var(--rr-border)] bg-white px-3 py-1.5 font-medium text-[var(--rr-muted)] no-underline hover:border-[var(--rr-core)]/50 hover:text-[var(--rr-text)]"
       >
-        ⭐ Đã có chỗ đứng
+        Established tools
       </a>
     </>
   )}
@@ -32,13 +32,13 @@ const { active, showHot = false } = Astro.props;
     <a
       href={`/nganh/${ind.slug}`}
       class:list={[
-        'rounded-full border px-3 py-1 no-underline transition-colors',
+        'rounded-md border px-3 py-1.5 font-medium no-underline transition-colors',
         active === ind.slug
           ? 'border-[var(--rr-core)]/50 bg-[var(--rr-core)]/10 text-[var(--rr-core)]'
-          : 'border-[var(--rr-border)] text-[var(--rr-muted)] hover:border-[var(--rr-core)]/50 hover:text-[var(--rr-text)]',
+          : 'border-[var(--rr-border)] bg-white text-[var(--rr-muted)] hover:border-[var(--rr-core)]/50 hover:text-[var(--rr-text)]',
       ]}
     >
-      {ind.icon} {ind.short}
+      {ind.short}
     </a>
   ))}
 </nav>

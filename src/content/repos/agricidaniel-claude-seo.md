@@ -38,6 +38,24 @@ vnMarket:
 
 usabilityRisk: "Claude SEO không thay SEO lead. Nếu thiếu dữ liệu thật từ site, Search Console, GA hoặc crawl, khuyến nghị vẫn cần kiểm chứng; người dùng cũng phải quen làm việc trong Claude Code."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, bạn có một backlog audit SEO đầu cho một site, đủ để giao việc tiếp cho dev hoặc content."
+  prerequisites:
+    - "Một website thật có thể crawl được, tốt nhất là site của khách hoặc dự án nội bộ."
+    - "Dữ liệu nền như sitemap, Search Console, GA hoặc file crawl nếu bạn có."
+    - "Claude Code và quyền chạy repo trong môi trường có thể đọc dữ liệu site."
+  steps:
+    - "Chọn một site hoặc một thư mục nội dung cụ thể cần audit trước, đừng quét cả hệ thống lớn ngay vòng đầu."
+    - "Chuẩn bị URL, sitemap và các dữ liệu SEO sẵn có như Search Console export, crawl lỗi kỹ thuật hoặc nhóm trang cần ưu tiên."
+    - "Cài hoặc nạp Claude SEO vào Claude Code rồi chạy audit theo đúng bài toán bạn cần: technical, schema, GEO/AEO hay ecommerce SEO."
+    - "Đọc phần action plan trước, sau đó mở ngược lại các bằng chứng quan trọng để xem repo đang kết luận dựa trên dữ liệu nào."
+    - "Tách kết quả thành ba cột: sửa ngay, cần dev kiểm, cần SEO lead xác minh rồi mới đưa vào backlog chính thức."
+  expectedResult: "Bạn có một danh sách lỗi và cơ hội SEO được ưu tiên rõ, không chỉ là checklist dài mà không biết bắt đầu từ đâu."
+  commonPitfalls:
+    - "Thiếu dữ liệu crawl hoặc Search Console nên audit nghe tổng quát nhưng khó ra việc."
+    - "Gộp technical SEO, content và GEO/AEO vào một lượt quá rộng làm người đọc bị loãng."
+    - "Tin thẳng mọi khuyến nghị về schema, entity hoặc AEO mà không kiểm lại trên trang thật."
+
 greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: dùng Claude SEO để biến audit GEO/AEO + technical SEO thành backlog rõ việc cho dev/content."

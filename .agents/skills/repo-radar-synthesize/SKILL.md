@@ -6,7 +6,7 @@ description: >-
   dùng yêu cầu "synthesize", "nghiên cứu từ khoá", "keyword research", "query fan-out", "góc Việt cho
   repo này", "người Việt sẽ tìm bằng từ khoá gì", "insight ngành VN", "độ bão hoà VN", hoặc sau khi
   repo-radar-hunt tạo nháp khách quan. Output = điền vnMarket (insight + seoKeywords), localProblem,
-  usabilityRisk, suggestedAngle, aiCheck. KHÔNG làm hồ sơ khách quan (repo-radar-hunt) và KHÔNG viết nội
+  usabilityRisk, practitionerGuide, suggestedAngle, aiCheck. KHÔNG làm hồ sơ khách quan (repo-radar-hunt) và KHÔNG viết nội
   dung reader (repo-radar-edit).
 ---
 
@@ -43,6 +43,12 @@ Mục tiêu: (a) từ khoá người Việt THỰC SỰ gõ; (b) đã có ai là
 - `vnMarket.notes`: đã tìm ở đâu, độ chắc chắn.
 - `localProblem` + `localEvidence`: nỗi đau CỤ THỂ của shop/ekip/team VN nào + bằng chứng thật.
 - `usabilityRisk`: cạm bẫy cho người Việt — Windows? GPU? khó cài? CHƯA có cộng đồng VN?
+- `practitionerGuide`: member value chính cho practitioner. Viết khung hướng dẫn thực tế để có output đầu tiên:
+  - `outcome`: sau guide này người dùng làm được việc gì.
+  - `prerequisites`: cần chuẩn bị tài khoản/API key/file dữ liệu/máy/VPS/GPU/người kỹ thuật gì.
+  - `steps`: các bước thao tác theo thứ tự, bám README/docs thật; nếu chưa kiểm được thì ghi dè dặt, không bịa.
+  - `expectedResult`: output đúng trông như thế nào, đủ để quyết định thử tiếp ra sao.
+  - `commonPitfalls`: lỗi/bẫy hay gặp khi practitioner Việt thử tool này.
 - `creatorWhitespace`: creator còn đất viết không (nhánh khuếch đại).
 - `suggestedAngle`: góc cho creator khuếch đại.
 - `aiCheck`: practitioner có tự lấy được info này từ Trending/hỏi AI không? (KR#5).

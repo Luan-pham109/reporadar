@@ -47,6 +47,24 @@ vnMarket:
 
 usabilityRisk: "Tự cài Plane cần Docker và cần ít nhất một người trong team biết dựng hạ tầng cơ bản."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, bạn có một workspace Plane đầu tiên để team thử quản lý task và sprint trên hạ tầng của mình."
+  prerequisites:
+    - "Một máy chủ hoặc VPS có thể chạy Docker."
+    - "Một team nhỏ thật, ít nhất vài người và một dự án đang cần quản lý task."
+    - "Một người đủ tự tin cài hạ tầng cơ bản và xử lý cấu hình ban đầu."
+  steps:
+    - "Chọn một team hoặc một dự án nhỏ để thử trước, đừng chuyển cả công ty khỏi Jira hay Trello ngay vòng đầu."
+    - "Dựng Plane bằng Docker trên máy test hoặc VPS nội bộ theo hướng dẫn chính thức."
+    - "Tạo workspace, mời vài thành viên và nhập một backlog nhỏ gồm task đang làm thật."
+    - "Thiết lập một quy trình đơn giản như Todo, Doing, Review, Done hoặc một cycle ngắn để team dùng trong 1 tuần."
+    - "So sánh trải nghiệm của team với công cụ cũ: có đủ dùng không, có đỡ phí seat không, có ai bị nghẽn ở phần self-host không."
+  expectedResult: "Bạn có một không gian quản lý dự án chạy được và đủ task thật để đánh giá việc chuyển khỏi tool seat-based có đáng hay không."
+  commonPitfalls:
+    - "Chuyển toàn bộ dữ liệu và quy trình phức tạp sang ngay từ đầu làm team mệt trước khi thấy lợi ích."
+    - "Không có ai phụ trách self-host nên chỉ cần một lỗi hạ tầng nhỏ là mọi người mất niềm tin."
+    - "Kỳ vọng Plane phải thay được mọi workflow enterprise của Jira dù nhu cầu team còn nhỏ."
+
 greyHatFlag: "in"
 
 suggestedAngle: "So sánh thẳng chi phí: Jira/Linear theo seat/tháng vs Plane tự host miễn phí — kèm hướng dẫn dựng trong 30 phút cho team 10 người."

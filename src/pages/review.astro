@@ -7,6 +7,7 @@ import SignalBadge from '../components/SignalBadge.astro';
 import { industryShort } from '../lib/industries';
 
 const canEdit = import.meta.env.DEV;
+const canList = canEdit || import.meta.env.PUBLIC_SHOW_DRAFTS === 'true';
 
 async function readDraftStates() {
   if (!canEdit) return new Map<string, boolean>();
@@ -30,7 +31,7 @@ async function readDraftStates() {
 }
 
 const draftStates = await readDraftStates();
-const entries = canEdit
+const entries = canList
   ? (await getCollection('repos')).sort((a, b) => {
       const aDraft = draftStates.get(a.id) ?? a.data.draft;
       const bDraft = draftStates.get(b.id) ?? b.data.draft;
@@ -41,29 +42,31 @@ const entries = canEdit
 
 const drafts = entries.filter((entry) => draftStates.get(entry.id) ?? entry.data.draft).length;
 const published = entries.length - drafts;
+const deployOnPublish = canEdit && process.env.REPO_RADAR_AUTO_DEPLOY === 'true';
 ---
 
-<BaseLayout title="Duyệt draft | RepoRadar VN" description="Màn hình duyệt draft local cho RepoRadar VN">
+<BaseLayout title="Duyệt draft | AltStack" description="Màn hình duyệt draft local cho AltStack">
   <header class="mb-6">
     <div class="flex flex-wrap items-center justify-between gap-3">
       <div>
         <a href="/" class="text-sm text-[var(--rr-muted)] no-underline hover:text-[var(--rr-text)]">Trang chủ</a>
         <h1 class="mt-2 text-2xl font-bold tracking-tight">Duyệt draft</h1>
       </div>
-      {canEdit && (
+      {canList && (
         <p class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface)] px-3 py-2 text-xs text-[var(--rr-muted)]">
           {drafts} draft / {published} published
         </p>
       )}
     </div>
     <p class="mt-2 max-w-prose text-sm text-[var(--rr-muted)]">
-      Mở bài để đọc, bấm Publish khi ổn. Nút này chỉ hoạt động trong <code>npm run dev</code>.
+      Mở bài để đọc và soát trạng thái. Nút Publish/Về draft chỉ hoạt động trong <code>npm run dev</code>.
+      {deployOnPublish && ' Auto-deploy production đang bật.'}
     </p>
   </header>
 
-  {!canEdit ? (
+  {!canList ? (
     <section class="rounded-lg border border-[var(--rr-warn)]/40 bg-[var(--rr-warn)]/5 p-4">
-      <p class="text-sm">Trang review chỉ dùng ở local dev, không hiện danh sách draft trên production.</p>
+      <p class="text-sm">Production preview đang ẩn draft đúng thiết kế. Muốn xem danh sách duyệt, chạy draft preview bằng <code>npm run preview:drafts</code> hoặc dev server bằng <code>npm run dev</code>.</p>
     </section>
   ) : (
     <section class="space-y-3">
@@ -100,19 +103,25 @@ const published = entries.length - drafts;
                 >
                   Đọc
                 </a>
-                <button
-                  type="button"
-                  data-slug={entry.id}
-                  data-draft={isDraft ? 'false' : 'true'}
-                  class:list={[
-                    'rounded-md border px-3 py-2 text-sm font-medium',
-                    isDraft
-                      ? 'border-[var(--rr-core)] bg-[var(--rr-core)] text-black'
-                      : 'border-[var(--rr-border)] text-[var(--rr-muted)]',
-                  ]}
-                >
-                  {isDraft ? 'Publish' : 'Về draft'}
-                </button>
+                {canEdit ? (
+                  <button
+                    type="button"
+                    data-slug={entry.id}
+                    data-draft={isDraft ? 'false' : 'true'}
+                    class:list={[
+                      'rounded-md border px-3 py-2 text-sm font-medium',
+                      isDraft
+                        ? 'border-[var(--rr-core)] bg-[var(--rr-core)] text-white'
+                        : 'border-[var(--rr-border)] text-[var(--rr-muted)]',
+                    ]}
+                  >
+                    {isDraft ? 'Publish' : 'Về draft'}
+                  </button>
+                ) : (
+                  <span class="rounded-md border border-[var(--rr-border)] px-3 py-2 text-sm text-[var(--rr-muted)]">
+                    Chỉ đọc
+                  </span>
+                )}
               </div>
             </div>
           </article>
@@ -123,27 +132,31 @@ const published = entries.length - drafts;
 
   <p id="review-status" class="mt-4 text-sm text-[var(--rr-muted)]" aria-live="polite"></p>
 
-  <script>
+  <script define:vars={{ deployOnPublish }}>
     const status = document.querySelector('#review-status');
     document.querySelectorAll('button[data-slug]').forEach((button) => {
       button.addEventListener('click', async () => {
         const slug = button.dataset.slug;
         const draft = button.dataset.draft === 'true';
         button.setAttribute('disabled', 'true');
-        if (status) status.textContent = 'Đang ghi file...';
+        if (status) {
+          status.textContent = deployOnPublish
+            ? 'Đang ghi file, build production và deploy...'
+            : 'Đang ghi file...';
+        }
 
         try {
           const response = await fetch('/__drafts/publish', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({ slug, draft }),
+            body: JSON.stringify({ slug, draft, deploy: deployOnPublish }),
           });
           const result = await response.json();
           if (!result.ok) throw new Error(result.error || 'Không ghi được file');
           button.dataset.draft = draft ? 'false' : 'true';
           button.textContent = draft ? 'Publish' : 'Về draft';
           button.className = draft
-            ? 'rounded-md border px-3 py-2 text-sm font-medium border-[var(--rr-core)] bg-[var(--rr-core)] text-black'
+            ? 'rounded-md border px-3 py-2 text-sm font-medium border-[var(--rr-core)] bg-[var(--rr-core)] text-white'
             : 'rounded-md border px-3 py-2 text-sm font-medium border-[var(--rr-border)] text-[var(--rr-muted)]';
           const state = document.querySelector(`[data-review-state="${slug}"]`);
           if (state) {
@@ -152,7 +165,10 @@ const published = entries.length - drafts;
               : '<span class="rounded-full border border-[var(--rr-core)]/30 bg-[var(--rr-core)]/10 px-2 py-0.5 text-xs font-medium text-[var(--rr-core)]">Published</span>';
           }
           button.removeAttribute('disabled');
-          if (status) status.textContent = draft ? 'Đã đưa về draft.' : 'Đã publish.';
+          if (status) {
+            const localMessage = draft ? 'Đã đưa về draft.' : 'Đã publish.';
+            status.textContent = result.deployed ? `${localMessage} Production đã deploy xong.` : localMessage;
+          }
         } catch (error) {
           button.removeAttribute('disabled');
           if (status) status.textContent = error instanceof Error ? error.message : 'Có lỗi xảy ra';

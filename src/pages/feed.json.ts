@@ -1,57 +1,32 @@
 import type { APIRoute } from 'astro';
-import { getCollection } from 'astro:content';
-import { includeDraft } from '../lib/drafts';
 
 /**
- * Public JSON feed = chỉ xuất lớp discovery tối thiểu.
+ * Locked member feed / practitioner guide.
  *
- * Full schema có vnMarket, signalSources, aiCheck, suggestedAngle... là lớp intelligence
- * của RepoRadar; không expose ở endpoint public khi chưa có auth/runtime.
+ * Static hosting cannot enforce a real 401 without a runtime/auth layer, so this endpoint
+ * intentionally publishes no records. The full member guide should move behind auth
+ * when AltStack has a server-side member flow.
  */
-export const GET: APIRoute = async ({ site }) => {
-  const entries = (await getCollection('repos', ({ data }) => includeDraft(data))).sort(
-    (a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime(),
-  );
-
-  const items = entries.map((e) => {
-    const r = e.data;
-    return {
-      id: e.id,
-      url: site ? new URL(`/repos/${e.id}`, site).href : `/repos/${e.id}`,
-      name: r.name,
-      repoUrl: r.repoUrl,
-      oneLiner: r.oneLiner,
-      vertical: r.vertical,
-      maturity: r.maturity,
-      repoStats: r.repoStats
-        ? {
-            stars: r.repoStats.stars,
-            forks: r.repoStats.forks,
-          }
-        : undefined,
-      tags: r.tags,
-      publishedAt: r.publishedAt,
-      week: r.week,
-      lang: r.lang,
-    };
-  });
-
-  return new Response(
+export const GET: APIRoute = async () =>
+  new Response(
     JSON.stringify(
       {
-        title: 'RepoRadar VN',
-        description:
-          'Public discovery feed của RepoRadar VN: bản rút gọn để theo dõi tool mới, không gồm lớp phân tích thành viên.',
+        title: 'AltStack',
         version: '0.2',
-        access: 'public-summary',
-        fullAccessNote: 'Full intelligence feed sẽ cần đăng nhập khi RepoRadar có auth/runtime.',
-        generatedAt: new Date().toISOString(),
-        count: items.length,
-        items,
+        access: 'auth_required',
+        loginUrl: '/login',
+        count: 0,
+        items: [],
+        message: 'Practitioner guide và member insight đầy đủ chỉ dành cho thành viên đã đăng nhập.',
       },
       null,
       2,
     ),
-    { headers: { 'Content-Type': 'application/json; charset=utf-8' } },
+    {
+      status: 401,
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+        'Cache-Control': 'no-store',
+      },
+    },
   );
-};

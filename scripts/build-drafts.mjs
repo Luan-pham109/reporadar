@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import { spawn } from 'node:child_process';
+import { join } from 'node:path';
 
-const astro = process.platform === 'win32' ? 'node_modules\\.bin\\astro.cmd' : 'node_modules/.bin/astro';
-const child = spawn(astro, ['build'], {
+const astro = join('node_modules', 'astro', 'astro.js');
+const child = spawn(process.execPath, [astro, 'build'], {
   stdio: 'inherit',
-  shell: process.platform === 'win32',
   env: { ...process.env, PUBLIC_SHOW_DRAFTS: 'true' },
 });
 

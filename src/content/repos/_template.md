@@ -47,6 +47,21 @@ vnMarket:
 # === CỐT LÕI: cảnh báo cạm bẫy ===
 usabilityRisk: "Hỗ trợ Windows? cần GPU? khó cài/dùng? chưa có cộng đồng VN? — nói thẳng."
 
+# === MEMBER VALUE: hướng dẫn áp dụng cho practitioner ===
+practitionerGuide:
+  outcome: "Sau guide này người dùng làm được việc gì / có output đầu tiên nào."
+  prerequisites:
+    - "Cần chuẩn bị tài khoản/API key/file dữ liệu/quyền truy cập gì."
+    - "Cần máy/VPS/GPU/Docker hay người kỹ thuật không."
+  steps:
+    - "Bước 1: ..."
+    - "Bước 2: ..."
+    - "Bước 3: ..."
+  expectedResult: "Kết quả đúng trông như thế nào, đủ tốt để đánh giá tiếp ra sao."
+  commonPitfalls:
+    - "Lỗi/bẫy hay gặp 1."
+    - "Lỗi/bẫy hay gặp 2."
+
 # === CỐT LÕI: kỷ luật IN/OUT ===
 greyHatFlag: "in" # in | borderline | out
 
@@ -67,5 +82,5 @@ week: "2026-W26"
 draft: true
 ---
 
-Phần body = ghi chú góc viết mở rộng / dàn ý / bối cảnh thêm cho nhánh creator khuếch đại.
+Phần body = ghi chú mở rộng / dàn ý / bối cảnh thêm cho người biên tập.
 Markdown thoải mái. Phần này tuỳ chọn.

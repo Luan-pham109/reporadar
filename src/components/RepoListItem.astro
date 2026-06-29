@@ -20,52 +20,70 @@ const thumb = r.media.find((m) => m.type === 'image');
 const primaryVertical = r.vertical[0] ? industryShort(r.vertical[0]) : null;
 const secondaryVerticals = r.vertical.slice(1).map((v) => industryShort(v));
 const stars = r.repoStats?.stars;
+const filterTags = r.tags.map((tag) => tag.toLowerCase()).join('|');
 ---
 
-<article class="group rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface)] transition-colors hover:border-[var(--rr-core)]/50">
-  <a href={`/repos/${entry.id}`} class="grid gap-3 p-3 no-underline sm:grid-cols-[88px_1fr_auto] sm:items-start">
+<article class="group rounded-lg as-card transition-colors" data-filter-tags={filterTags}>
+  <a
+    href={`/repos/${entry.id}`}
+    class="grid gap-4 p-4 no-underline sm:grid-cols-[112px_1fr_auto] sm:items-start"
+    data-track-event="repo_brief_open"
+    data-track-label="repo_list_item"
+    data-track-prop-surface="repo_list"
+    data-track-prop-repo-slug={entry.id}
+    data-track-prop-repo-name={r.name}
+  >
     {thumb ? (
       <img
         src={thumb.url}
         alt={thumb.caption ?? r.name}
         loading="lazy"
-        class="hidden aspect-[4/3] h-16 w-[88px] rounded border border-[var(--rr-border)] object-cover sm:block"
+        class="hidden aspect-[4/3] h-20 w-28 rounded-md border border-[var(--rr-border)] object-cover sm:block"
       />
     ) : (
-      <div class="hidden h-16 w-[88px] rounded border border-[var(--rr-border)] bg-[var(--rr-bg)] sm:block"></div>
+      <div class="hidden h-20 w-28 rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] as-grid-bg sm:block"></div>
     )}
 
     <div class="min-w-0">
-      <div class="mb-1 flex flex-wrap items-center gap-1.5">
+      <div class="mb-2 flex flex-wrap items-center gap-1.5">
         {r.maturity === 'pre-viral' && (
-          <SignalBadge tone="core" label="Đáng thử sớm" title="Có tín hiệu tốt, còn ít người Việt khai thác" />
+          <SignalBadge tone="core" label="Pre-viral Signal" title="Có tín hiệu sớm, đáng theo dõi trước khi mainstream" />
         )}
+        {r.maturity === 'rising' && <SignalBadge tone="core" label="Rising" />}
         {r.maturity === 'established' && (
-          <SignalBadge tone="muted" label="Đã có chỗ đứng" title="Công cụ đã có cộng đồng dùng và đủ dữ liệu để đánh giá thực tế" />
-        )}
-        {greyTone && (
-          <SignalBadge tone={greyTone} label={r.greyHatFlag === 'out' ? 'Rủi ro cao' : 'Cần đúng ngữ cảnh'} title="Có yếu tố nhạy cảm; cần đọc kỹ trước khi áp dụng" />
+          <SignalBadge tone="muted" label="Established" title="Đã có cộng đồng dùng và đủ dữ liệu để đánh giá thực tế" />
         )}
         {primaryVertical && (
-          <span class="rounded-full border border-[var(--rr-border)] px-2 py-0.5 text-[11px] text-[var(--rr-muted)]">
+          <span class="rounded-full border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] px-2.5 py-0.5 text-xs font-medium text-[var(--rr-muted)]">
             {primaryVertical}{secondaryVerticals.length > 0 ? ` +${secondaryVerticals.length}` : ''}
           </span>
         )}
+        {greyTone && (
+          <SignalBadge tone={greyTone} label={r.greyHatFlag === 'out' ? 'High risk' : 'Context needed'} title="Có yếu tố nhạy cảm; cần đọc kỹ trước khi áp dụng" />
+        )}
       </div>
 
-      <h3 class="truncate text-base font-semibold group-hover:text-[var(--rr-core)]">{r.name}</h3>
+      <h3 class="truncate text-lg font-semibold group-hover:text-[var(--rr-core)]">{r.name}</h3>
       <p class="mt-1 line-clamp-2 text-sm leading-5 text-[var(--rr-muted)]">{r.oneLiner}</p>
-      {r.workflowStepReplaced && (
-        <p class="mt-2 line-clamp-1 text-xs text-[var(--rr-muted)]">
-          <span class="font-medium text-[var(--rr-text)]">Giúp bớt việc:</span> {r.workflowStepReplaced}
-        </p>
-      )}
+
+      <div class="mt-3 grid gap-2 text-xs text-[var(--rr-muted)] sm:grid-cols-2">
+        {r.paidToolReplaced && (
+          <p class="rounded-md bg-[var(--rr-surface-soft)] px-2.5 py-2">
+            <span class="font-semibold text-[var(--rr-text)]">Replaces:</span> {r.paidToolReplaced}
+          </p>
+        )}
+        {r.workflowStepReplaced && (
+          <p class="rounded-md bg-[var(--rr-surface-soft)] px-2.5 py-2">
+            <span class="font-semibold text-[var(--rr-text)]">Workflow:</span> {r.workflowStepReplaced}
+          </p>
+        )}
+      </div>
     </div>
 
-    <div class="flex flex-wrap items-center gap-2 text-xs text-[var(--rr-muted)] sm:min-w-[94px] sm:justify-end">
-      {stars != null && <span>⭐ {stars.toLocaleString('vi-VN')}</span>}
+    <div class="flex flex-wrap items-center gap-2 text-xs text-[var(--rr-muted)] sm:min-w-[112px] sm:justify-end">
+      {stars != null && <span>{stars.toLocaleString('vi-VN')} stars</span>}
       <span>{dateStr}</span>
-      <span class="text-[var(--rr-core)]">Đọc →</span>
+      <span class="font-semibold text-[var(--rr-core)]">Read brief</span>
     </div>
   </a>
 </article>

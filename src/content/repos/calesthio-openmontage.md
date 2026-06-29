@@ -47,6 +47,24 @@ vnMarket:
 
 usabilityRisk: "OpenMontage phù hợp với người quen dùng AI trong môi trường coding hơn là người chỉ muốn một app kéo thả. Team vẫn phải cấu hình dịch vụ, kiểm đầu ra và có người biết video để duyệt chất lượng."
 
+practitionerGuide:
+  outcome: "Chạy xong guide này, bạn có một bản dựng video nháp từ brief hoặc video mẫu để cả team duyệt cấu trúc và hook."
+  prerequisites:
+    - "Một brief video rõ mục tiêu hoặc một video mẫu mà bạn muốn học lại cấu trúc."
+    - "Môi trường coding có thể chạy OpenMontage cùng các dịch vụ hình, voice hoặc video cần thiết."
+    - "Một người trong team đủ quen video để nhận xét pacing, shot logic và chất lượng output."
+  steps:
+    - "Bắt đầu từ một use case hẹp như video sản phẩm 20-40 giây hoặc một clip social có format rõ."
+    - "Chuẩn bị brief gồm mục tiêu, audience, key message, định dạng khung hình và nếu có thì đính kèm video mẫu."
+    - "Chạy pipeline tạo outline, asset và bản dựng đầu trong OpenMontage thay vì bật toàn bộ capability một lúc."
+    - "Xem lại bản xuất đầu tiên để đánh dấu cảnh nào ổn, cảnh nào cần thay voice, visual hoặc timing."
+    - "Chạy thêm một biến thể khác về hook hoặc visual rồi so hai bản để xem tool giúp nhanh nhất ở khâu nào."
+  expectedResult: "Bạn có một hoặc hai bản nháp video đủ để chọn hướng dựng tiếp, chứ không chỉ là một đống asset rời."
+  commonPitfalls:
+    - "Hiểu nhầm đây là máy thay editor hoàn toàn nên kỳ vọng output phải hoàn thiện ngay."
+    - "Thiếu brief rõ ràng khiến pipeline sinh ra nhiều cảnh đẹp nhưng không bám thông điệp."
+    - "Không giới hạn scope của lần thử đầu nên cả team khó đo được công cụ tiết kiệm thời gian thật ở đâu."
+
 greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: dùng OpenMontage như xưởng dựng nháp cho 10 biến thể video sản phẩm, không phải lời hứa thay editor."
