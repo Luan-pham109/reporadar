@@ -1,25 +1,45 @@
 @import "tailwindcss";
 
-/* AltStack - operator-grade, neutral-first interface.
-   Color ratio follows the brand doc: mostly neutral, Signal Blue for action,
-   Open Green for savings/OSS, Amber/Red only for caution and risk. */
+/* AltStack — softer, warmer, more human take on the operator-grade system.
+   Brand semantics preserved: Signal Blue for action, Open Green for savings/OSS,
+   Amber/Red only for caution. We soften, we don't repaint:
+   calmer neutrals, one generous radius, layered tinted shadows, gentle motion. */
 :root {
-  --rr-bg: #f7f8fb;
+  /* Neutrals — calmer and a touch warmer than the old cold blue-grays. */
+  --rr-bg: #f7f7f5;
   --rr-surface: #ffffff;
-  --rr-surface-soft: #f3f4f6;
+  --rr-surface-soft: #f1f2f0;
   --rr-elevated: #ffffff;
-  --rr-border: #d8dee8;
-  --rr-border-strong: #b7c0ce;
-  --rr-text: #111827;
-  --rr-muted: #5f6b7a;
-  --rr-faint: #8a94a6;
+  --rr-border: #e6e7e3;
+  --rr-border-strong: #d3d5cf;
+  --rr-text: #1f2430;
+  --rr-muted: #5c6675;
+  --rr-faint: #969eac;
+
+  /* Accents — same brand hues, slightly friendlier. */
   --rr-core: #2563eb;
-  --rr-open: #22c55e;
+  --rr-core-soft: rgba(37, 99, 235, 0.10);
+  --rr-open: #1fb866;
   --rr-warn: #f59e0b;
   --rr-danger: #ef4444;
-  --rr-dark: #111827;
-  --rr-ring: rgba(37, 99, 235, 0.28);
-  --rr-shadow: 0 18px 45px rgba(17, 24, 39, 0.08);
+
+  /* Dark surface — deep slate instead of stark ink, so panels feel calm not harsh. */
+  --rr-dark: #1c2333;
+  --rr-dark-soft: #283044;
+
+  --rr-ring: rgba(37, 99, 235, 0.30);
+
+  /* One radius scale — Shape Consistency Lock. */
+  --rr-radius-sm: 12px;
+  --rr-radius: 18px;
+  --rr-radius-lg: 26px;
+
+  /* Soft, layered, hue-tinted shadows — no pure-black drop shadows. */
+  --rr-shadow-sm: 0 1px 2px rgba(31, 36, 48, 0.04), 0 4px 12px -6px rgba(31, 36, 48, 0.10);
+  --rr-shadow: 0 6px 16px -8px rgba(31, 36, 48, 0.14), 0 24px 60px -32px rgba(31, 36, 48, 0.22);
+  --rr-shadow-blue: 0 14px 40px -18px rgba(37, 99, 235, 0.40);
+
+  --rr-ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 html {
@@ -27,14 +47,19 @@ html {
   color: var(--rr-text);
   font-family: Inter, ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+  /* Ambient warm-to-cool glow instead of a hard blue band + grid. */
   background:
-    linear-gradient(180deg, rgba(37, 99, 235, 0.08), rgba(37, 99, 235, 0) 320px),
+    radial-gradient(1100px 520px at 12% -8%, rgba(37, 99, 235, 0.07), transparent 60%),
+    radial-gradient(900px 480px at 92% 2%, rgba(31, 184, 102, 0.06), transparent 58%),
     var(--rr-bg);
+  background-attachment: fixed;
 }
 
 a {
@@ -46,7 +71,16 @@ h2,
 h3,
 .font-display {
   font-family: "Space Grotesk", Inter, ui-sans-serif, system-ui, sans-serif;
-  letter-spacing: 0;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  letter-spacing: -0.02em;
+  line-height: 1.06;
+}
+
+p {
+  line-height: 1.7;
 }
 
 ::selection {
@@ -56,21 +90,66 @@ h3,
 :focus-visible {
   outline: 3px solid var(--rr-ring);
   outline-offset: 3px;
+  border-radius: 6px;
 }
 
+/* Shared surface — soft corners, gentle lift on hover. */
 .as-card {
   border: 1px solid var(--rr-border);
+  border-radius: var(--rr-radius);
   background: var(--rr-surface);
-  box-shadow: 0 1px 0 rgba(17, 24, 39, 0.03);
+  box-shadow: var(--rr-shadow-sm);
+  transition: transform 0.35s var(--rr-ease), box-shadow 0.35s var(--rr-ease),
+    border-color 0.35s var(--rr-ease);
 }
 
 .as-card:hover {
-  border-color: rgba(37, 99, 235, 0.45);
+  border-color: rgba(37, 99, 235, 0.32);
+  box-shadow: var(--rr-shadow);
+  transform: translateY(-3px);
 }
 
-.as-grid-bg {
-  background-image:
-    linear-gradient(rgba(17, 24, 39, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(17, 24, 39, 0.045) 1px, transparent 1px);
-  background-size: 28px 28px;
+/* Gentle entrance — emotional, not cinematic. */
+@keyframes as-rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.as-reveal {
+  animation: as-rise 0.7s var(--rr-ease) both;
+}
+
+.as-reveal-1 { animation-delay: 0.06s; }
+.as-reveal-2 { animation-delay: 0.14s; }
+.as-reveal-3 { animation-delay: 0.22s; }
+.as-reveal-4 { animation-delay: 0.30s; }
+
+/* Progressive reveal — items beyond initial limit are hidden until "Xem thêm" */
+[data-overflow="true"] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .as-reveal,
+  .as-reveal-1,
+  .as-reveal-2,
+  .as-reveal-3,
+  .as-reveal-4 {
+    animation: none;
+  }
+  .as-card {
+    transition: none;
+  }
+  .as-card:hover {
+    transform: none;
+  }
 }

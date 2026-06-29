@@ -43,6 +43,9 @@ const entries = canList
 const drafts = entries.filter((entry) => draftStates.get(entry.id) ?? entry.data.draft).length;
 const published = entries.length - drafts;
 const deployOnPublish = canEdit && process.env.REPO_RADAR_AUTO_DEPLOY === 'true';
+const deployHint = deployOnPublish
+  ? ' Publish/Về draft sẽ build production và deploy sau bước xác nhận.'
+  : ' Publish/Về draft chỉ ghi file local.';
 ---
 
 <BaseLayout title="Duyệt draft | AltStack" description="Màn hình duyệt draft local cho AltStack">
@@ -61,12 +64,16 @@ const deployOnPublish = canEdit && process.env.REPO_RADAR_AUTO_DEPLOY === 'true'
     <p class="mt-2 max-w-prose text-sm text-[var(--rr-muted)]">
       Mở bài để đọc và soát trạng thái. Nút Publish/Về draft chỉ hoạt động trong <code>npm run dev</code>.
       {deployOnPublish && ' Auto-deploy production đang bật.'}
+      {deployHint}
     </p>
   </header>
 
   {!canList ? (
     <section class="rounded-lg border border-[var(--rr-warn)]/40 bg-[var(--rr-warn)]/5 p-4">
-      <p class="text-sm">Production preview đang ẩn draft đúng thiết kế. Muốn xem danh sách duyệt, chạy draft preview bằng <code>npm run preview:drafts</code> hoặc dev server bằng <code>npm run dev</code>.</p>
+      <p class="text-sm">
+        Production preview đang ẩn draft đúng thiết kế. Muốn xem danh sách duyệt, chạy draft preview bằng
+        <code>npm run preview:drafts</code> hoặc dev server bằng <code>npm run dev</code>.
+      </p>
     </section>
   ) : (
     <section class="space-y-3">
@@ -138,9 +145,19 @@ const deployOnPublish = canEdit && process.env.REPO_RADAR_AUTO_DEPLOY === 'true'
       button.addEventListener('click', async () => {
         const slug = button.dataset.slug;
         const draft = button.dataset.draft === 'true';
+        const liveDeployRequested = deployOnPublish;
+        const confirmationMessage = draft
+          ? `Publish "${slug}" lên production?\n\nThao tác này sẽ đổi draft:false, chạy production build và deploy live site.`
+          : `Đưa "${slug}" về draft và deploy lại production?\n\nThao tác này sẽ gỡ record khỏi live site sau khi build/deploy xong.`;
+
+        if (liveDeployRequested && !window.confirm(confirmationMessage)) {
+          if (status) status.textContent = 'Đã hủy deploy production.';
+          return;
+        }
+
         button.setAttribute('disabled', 'true');
         if (status) {
-          status.textContent = deployOnPublish
+          status.textContent = liveDeployRequested
             ? 'Đang ghi file, build production và deploy...'
             : 'Đang ghi file...';
         }
@@ -149,7 +166,12 @@ const deployOnPublish = canEdit && process.env.REPO_RADAR_AUTO_DEPLOY === 'true'
           const response = await fetch('/__drafts/publish', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({ slug, draft, deploy: deployOnPublish }),
+            body: JSON.stringify({
+              slug,
+              draft,
+              deploy: liveDeployRequested,
+              confirmDeploy: liveDeployRequested,
+            }),
           });
           const result = await response.json();
           if (!result.ok) throw new Error(result.error || 'Không ghi được file');

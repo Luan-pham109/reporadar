@@ -23,9 +23,10 @@ export async function getStaticPaths() {
 
 const { week, entries } = Astro.props;
 const replacementCount = entries.filter((entry) => entry.data.paidToolReplaced).length;
+const description = `AltStack Weekly ${week}: ${entries.length} công cụ AI/open-source đáng chú ý, ${replacementCount} tool thay được SaaS trả phí — chọn lọc cho creative, agency và ecommerce Việt Nam.`;
 ---
 
-<BaseLayout title={`AltStack Weekly ${week} - công cụ AI/open-source đáng chú ý`}>
+<BaseLayout title={`AltStack Weekly ${week} - công cụ AI/open-source đáng chú ý`} description={description}>
   <a href="/" class="text-sm font-medium text-[var(--rr-muted)] no-underline hover:text-[var(--rr-core)]">← AltStack</a>
 
   <header class="mt-4 overflow-hidden rounded-lg border border-[var(--rr-dark)] bg-[var(--rr-dark)] text-white shadow-[var(--rr-shadow)]">

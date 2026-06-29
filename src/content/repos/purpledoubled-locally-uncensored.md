@@ -69,7 +69,7 @@ aiCheck:
 tags: ["local-ai", "desktop-app", "ollama", "comfyui", "image-generation", "video-generation"]
 publishedAt: 2026-06-28
 week: "2026-W26"
-draft: true
+draft: false
 ---
 
 Draft foundation. Cần Luan quyết định framing vì tên repo có yếu tố borderline; nên giữ ở hướng private/offline workflow, không khuyến khích nội dung xấu.

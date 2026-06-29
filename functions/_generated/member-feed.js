@@ -2,9 +2,266 @@
 export const memberFeed = {
   "title": "RepoRadar VN",
   "version": "0.3",
-  "generatedAt": "2026-06-29T04:59:44.203Z",
-  "count": 24,
+  "generatedAt": "2026-06-29T10:50:28.665Z",
+  "count": 30,
   "items": [
+    {
+      "slug": "minhnv0807-ai-business-skills",
+      "url": "/repos/minhnv0807-ai-business-skills",
+      "name": "ai-business-skills",
+      "repoUrl": "https://github.com/minhnv0807/ai-business-skills",
+      "oneLiner": "ai-business-skills là bộ 63 skill marketing song ngữ Việt/Global cho Claude Code, OpenCode, Codex và VS Code, giúp agent viết kế hoạch, brief, content, phân tích ads, personal brand, AI avatar và dropshipping theo workflow có sẵn.",
+      "vertical": [
+        "agency",
+        "creative",
+        "ecom"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 478,
+        "forks": 205,
+        "note": "~75 ngày tuổi, ~6.4 sao/ngày",
+        "starsPerDay": 6.4,
+        "ageDays": 75,
+        "pushedAt": "2026-06-20T03:06:14.000Z",
+        "archived": false,
+        "openIssues": 3
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/minhnv0807/ai-business-skills"
+        },
+        {
+          "label": "Homepage",
+          "url": "https://opa.business"
+        }
+      ],
+      "useCases": [
+        "Cài một bộ prompt/skill chung cho team marketing để agent trả output theo cùng khung kế hoạch, brief và báo cáo.",
+        "Lập kế hoạch campaign 30 ngày, content calendar, ad copy và video script mà không phải paste lại từng prompt rời rạc.",
+        "Audit ads, đọc số liệu, tính KPI ngược và viết báo cáo tháng theo format có sẵn cho agency hoặc team in-house.",
+        "Dựng workflow personal brand, AI avatar hoặc dropshipping cho creator/ecom muốn có khung làm việc trước khi thuê thêm người."
+      ],
+      "workflowStepReplaced": "Khâu mỗi người tự lưu prompt marketing riêng, hỏi AI theo kiểu rời rạc rồi mất thời gian chỉnh lại format cho đồng nhất.",
+      "timeOrCostSaved": "Có thể giảm nhiều vòng viết prompt và chuẩn hoá output cho team marketing; mức tiết kiệm phụ thuộc việc team có chịu dùng chung context và review chất lượng đầu ra hay không.",
+      "localProblem": "Nhiều agency và team marketing Việt dùng ChatGPT/Claude hằng ngày nhưng prompt nằm rải rác trong note cá nhân, chất lượng output lệch nhau giữa từng người. ai-business-skills đáng chú ý vì nó đóng gói thành skill markdown có thể cài cho nhiều môi trường agent.",
+      "localEvidence": "README đã có tiếng Việt, use case Việt, benchmark VN 2025-2026 và ví dụ marketing rất gần với thị trường Việt. Từ khoá về prompt marketing, kế hoạch marketing bằng AI và Claude Code/Codex skill vẫn đang còn sớm.",
+      "usabilityRisk": "ai-business-skills không tự đảm bảo chiến lược đúng. Team vẫn phải cung cấp context sản phẩm, số liệu thật, ngân sách, insight khách hàng và người review; nếu chỉ cài skill rồi giao hết cho agent, output rất dễ đẹp format nhưng sai thực tế.",
+      "suggestedAngle": "Góc nên viết: bộ skill marketing tiếng Việt cho team muốn chuẩn hoá cách dùng Claude/Codex/OpenCode, không chỉ sưu tầm prompt lẻ.",
+      "paidToolReplaced": "Một phần nhu cầu mua prompt pack, template marketing hoặc thuê viết framework ban đầu cho team nhỏ",
+      "practitionerGuide": {
+        "outcome": "Bạn có một bộ skill marketing cài vào môi trường agent và chạy thử được một output thật như kế hoạch campaign hoặc audit ads.",
+        "prerequisites": [
+          "Một môi trường hỗ trợ đọc skill markdown hoặc custom instruction, ví dụ Claude Code, OpenCode, Codex, VS Code extension hoặc workflow agent tương đương.",
+          "Context sản phẩm, tệp khách hàng, kênh bán, ngân sách và số liệu nền để skill không phải đoán.",
+          "Một người marketing đủ kinh nghiệm để review output trước khi đưa cho khách hoặc chạy ads."
+        ],
+        "steps": [
+          "Cài repo theo quickstart bash hoặc PowerShell, chọn global nếu muốn dùng chung hoặc project nếu chỉ thử trong một workspace.",
+          "Chạy foundation/context skill trước để ghi lại sản phẩm, audience, thị trường và mục tiêu.",
+          "Chọn một việc cụ thể như kế hoạch marketing 30 ngày, content calendar, ad copy hoặc audit ads.",
+          "Đưa dữ liệu thật vào prompt: ngân sách, KPI, kênh, benchmark cũ, insight khách hàng và ràng buộc vận hành.",
+          "Review output theo checklist nghề: logic funnel, giả định số liệu, claim pháp lý, brand voice và khả năng triển khai."
+        ],
+        "expectedResult": "Kết quả đúng là một bản kế hoạch hoặc tài liệu marketing có cấu trúc rõ, đủ để team sửa tiếp và triển khai, không chỉ là bài viết AI nghe mượt.",
+        "commonPitfalls": [
+          "Bỏ qua bước context nên skill phải tự đoán sản phẩm và thị trường.",
+          "Dùng output thẳng cho khách mà chưa kiểm số liệu, claim và brand voice.",
+          "Cài quá nhiều skill cùng lúc nhưng không chọn workflow cụ thể để đo hiệu quả."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 25,
+        "projectHealth": 18,
+        "costAdvantage": 8,
+        "deployment": 10,
+        "documentation": 15
+      },
+      "altstackSignalScore": 76,
+      "evidenceLevel": "B",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-29T00:00:00.000Z",
+      "tags": [
+        "marketing",
+        "agent-skills",
+        "prompt",
+        "agency",
+        "vietnam"
+      ],
+      "publishedAt": "2026-06-29T00:00:00.000Z",
+      "week": "2026-W27"
+    },
+    {
+      "slug": "wildminder-comfyui-dype",
+      "url": "/repos/wildminder-comfyui-dype",
+      "name": "ComfyUI-DyPE",
+      "repoUrl": "https://github.com/wildminder/ComfyUI-DyPE",
+      "oneLiner": "ComfyUI-DyPE là custom node cho ComfyUI giúp tạo ảnh 4K trở lên bằng FLUX, Qwen Image hoặc Z-Image mà giảm lỗi lặp hoạ tiết và vỡ cấu trúc khi đẩy ảnh quá lớn.",
+      "vertical": [
+        "creative"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 554,
+        "forks": 47,
+        "note": "~245 ngày tuổi, ~2.3 sao/ngày",
+        "starsPerDay": 2.3,
+        "ageDays": 245,
+        "pushedAt": "2025-12-09T13:40:24.000Z",
+        "archived": false,
+        "openIssues": 27
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/wildminder/ComfyUI-DyPE"
+        }
+      ],
+      "useCases": [
+        "Render key visual hoặc poster 4K trong ComfyUI mà bớt gặp lỗi pattern lặp, mặt méo hoặc chi tiết bị nát khi upscale quá tay.",
+        "Thử FLUX, Qwen Image hoặc Z-Image cho ảnh sản phẩm, concept art và background lớn trước khi phải chuyển sang bước upscale riêng.",
+        "So sánh nhanh nhiều prompt ở độ phân giải cao để chọn moodboard cho campaign mà không phải cắt nhỏ ảnh rồi ghép lại.",
+        "Giữ workflow ComfyUI quen thuộc cho team creative đã có GPU, chỉ thêm node để xử lý bài toán ảnh lớn."
+      ],
+      "workflowStepReplaced": "Khâu render ảnh lớn rồi phải sửa lỗi lặp hoạ tiết, vỡ bố cục hoặc chạy thêm một vòng upscale riêng.",
+      "timeOrCostSaved": "Có thể bớt vài vòng upscale và sửa tay cho mỗi key visual lớn; mức tiết kiệm phụ thuộc model, GPU và workflow ComfyUI đang dùng.",
+      "localProblem": "Ở Việt Nam, nhiều designer và studio nhỏ đã dùng ComfyUI để làm moodboard, ảnh sản phẩm hoặc visual social, nhưng ảnh cần in ấn/hero thường vướng lỗi khi đẩy lên 4K. ComfyUI-DyPE đáng thử cho nhóm đã có máy GPU và muốn giữ file trong pipeline nội bộ.",
+      "localEvidence": "Từ khoá quanh ComfyUI, FLUX, Qwen Image và tạo ảnh AI 4K đã có nội dung tiếng Việt rải rác, nhưng phần DyPE cụ thể còn rất ít; đây vẫn là góc sớm cho creator hoặc studio chuyên ComfyUI.",
+      "usabilityRisk": "ComfyUI-DyPE không dành cho người mới mở app AI lần đầu. Bạn cần ComfyUI chạy ổn, đúng model, đủ VRAM và hiểu cách nối node; nếu máy yếu hoặc workflow hiện tại đã hay lỗi dependency, node này có thể làm mất thời gian trước khi cho ảnh đẹp.",
+      "suggestedAngle": "Góc nên viết: node ComfyUI cho ảnh 4K sạch hơn, dành cho designer đã có workflow FLUX/Qwen nhưng còn đau vì ảnh lớn bị vỡ.",
+      "paidToolReplaced": "Một phần nhu cầu dùng dịch vụ upscale hoặc tạo ảnh trả phí khi team đã có ComfyUI và GPU riêng",
+      "practitionerGuide": {
+        "outcome": "Bạn có một workflow ComfyUI thử tạo ảnh 4K bằng DyPE và đủ mẫu so sánh để quyết định có đưa vào quy trình creative hay không.",
+        "prerequisites": [
+          "Một bản ComfyUI đang chạy ổn, kèm model được README nhắc tới như FLUX, Qwen Image hoặc Z-Image.",
+          "GPU đủ VRAM cho độ phân giải mục tiêu; ảnh 4K trở lên có thể làm máy chậm hoặc hết bộ nhớ.",
+          "Một prompt thật của team, ví dụ poster campaign, ảnh sản phẩm hoặc background landing page để so sánh trước/sau."
+        ],
+        "steps": [
+          "Cài custom node theo hướng dẫn trong README của ComfyUI-DyPE.",
+          "Mở workflow mẫu hoặc thêm node DyPE vào workflow DiT hiện có trong ComfyUI.",
+          "Chạy một prompt ở độ phân giải vừa phải trước để xác nhận node không lỗi dependency.",
+          "Tăng dần độ phân giải lên mức cần dùng, rồi so sánh lỗi lặp hoạ tiết, bố cục và chi tiết với workflow cũ.",
+          "Lưu lại preset tốt nhất cho từng loại việc: poster, background, concept hoặc ảnh sản phẩm."
+        ],
+        "expectedResult": "Kết quả đủ tốt là ảnh lớn giữ được cấu trúc chính, ít pattern lặp và không cần sửa tay quá nhiều trước khi đưa qua bước hậu kỳ.",
+        "commonPitfalls": [
+          "Đẩy thẳng lên 4K trên máy thiếu VRAM rồi gặp lỗi out-of-memory.",
+          "Dùng nhầm model hoặc workflow không phải nhóm DiT mà README nhắm tới.",
+          "Chỉ nhìn một ảnh đẹp mà không test nhiều prompt thực tế của team."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 7,
+        "costAdvantage": 8,
+        "deployment": 6,
+        "documentation": 10
+      },
+      "altstackSignalScore": 49,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-29T00:00:00.000Z",
+      "tags": [
+        "comfyui",
+        "image-generation",
+        "4k",
+        "flux",
+        "qwen-image"
+      ],
+      "publishedAt": "2026-06-29T00:00:00.000Z",
+      "week": "2026-W27"
+    },
+    {
+      "slug": "auriti-labs-geo-optimizer-skill",
+      "url": "/repos/auriti-labs-geo-optimizer-skill",
+      "name": "Geo Optimizer Skill",
+      "repoUrl": "https://github.com/Auriti-Labs/geo-optimizer-skill",
+      "oneLiner": "Geo Optimizer Skill là bộ công cụ AEO/GEO mã nguồn mở để audit website xem ChatGPT, Perplexity, Gemini, Claude và Google AI Overviews có crawl, hiểu và trích dẫn nội dung của bạn hay không.",
+      "vertical": [
+        "seo"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 506,
+        "forks": 60,
+        "note": "~131 ngày tuổi, ~3.9 sao/ngày",
+        "starsPerDay": 3.9,
+        "ageDays": 131,
+        "pushedAt": "2026-06-27T04:57:44.000Z",
+        "archived": false,
+        "openIssues": 3
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Auriti-Labs/geo-optimizer-skill"
+        },
+        {
+          "label": "PyPI",
+          "url": "https://pypi.org/project/geo-optimizer-skill/"
+        },
+        {
+          "label": "Live Demo",
+          "url": "https://geoready.dev"
+        }
+      ],
+      "useCases": [
+        "Audit một website xem đã có robots, sitemap, schema, llms.txt và cấu trúc nội dung đủ thân thiện với AI search chưa.",
+        "Theo dõi khả năng thương hiệu hoặc bài viết được ChatGPT, Perplexity, Gemini và Google AI Overviews trích dẫn.",
+        "Tạo checklist sửa lỗi GEO/AEO cho team SEO trước khi đổ thêm tiền vào content.",
+        "Gắn vào quy trình kỹ thuật qua CLI, Python hoặc MCP để kiểm tra lại sau mỗi lần deploy nội dung."
+      ],
+      "workflowStepReplaced": "Khâu audit thủ công từng checklist AI SEO/GEO rồi tự hỏi liệu nội dung có được answer engine đọc và cite hay không.",
+      "timeOrCostSaved": "Có thể rút ngắn vòng audit AEO/GEO ban đầu từ nhiều giờ checklist thủ công xuống một báo cáo có điểm và hạng mục sửa; phần xác nhận citation thật vẫn cần kiểm tra định kỳ.",
+      "localProblem": "Ở Việt Nam, SEO team và agency đang bắt đầu bán dịch vụ AI SEO, AEO, GEO nhưng nhiều nơi vẫn thiếu cách đo cụ thể ngoài cảm tính. Geo Optimizer Skill hữu ích cho nhóm muốn biến câu hỏi 'AI có trích dẫn mình không?' thành checklist và điểm số có thể bàn với khách.",
+      "localEvidence": "Các cụm như AI SEO, AEO, GEO, tối ưu AI Overview và ChatGPT trích dẫn website đã xuất hiện trong nội dung SEO Việt. Tool cụ thể này chưa bão hoà tiếng Việt, nên còn đất cho bài hướng dẫn thực hành.",
+      "usabilityRisk": "Geo Optimizer Skill vẫn cần người hiểu SEO kỹ thuật và cách đọc báo cáo. Một điểm 0-100 không tự biến thành traffic; team phải kiểm chứng lại bằng truy vấn thật, log crawl, nội dung nguồn và thay đổi schema/llms.txt đúng cách.",
+      "suggestedAngle": "Góc nên viết: checklist AI SEO thực dụng cho agency Việt muốn kiểm tra khả năng được ChatGPT/Perplexity/AI Overview trích dẫn.",
+      "paidToolReplaced": "Một phần nhu cầu dùng các nền tảng GEO/AEO audit và citation tracking trả phí ở vòng kiểm tra ban đầu",
+      "practitionerGuide": {
+        "outcome": "Bạn có một báo cáo AEO/GEO đầu tiên cho website và một danh sách lỗi ưu tiên để sửa trước khi pitch hoặc triển khai AI SEO.",
+        "prerequisites": [
+          "URL website cần audit, quyền sửa nội dung hoặc quyền gửi ticket cho dev.",
+          "Máy có Python/CLI theo hướng dẫn README hoặc môi trường kỹ thuật có thể chạy package.",
+          "Danh sách 5-10 truy vấn mà khách hàng thật sẽ hỏi AI search về ngành hoặc thương hiệu."
+        ],
+        "steps": [
+          "Cài package hoặc chạy CLI theo quickstart trong README.",
+          "Audit một URL quan trọng trước, ví dụ trang dịch vụ, bài pillar hoặc trang sản phẩm chủ lực.",
+          "Đọc điểm tổng và nhóm lỗi: crawlability, metadata, schema, llms.txt, nội dung trả lời câu hỏi.",
+          "Chọn 3 lỗi có tác động rõ nhất để sửa trước, thay vì sửa toàn bộ checklist trong một lần.",
+          "Kiểm tra lại bằng truy vấn thật trên ChatGPT, Perplexity, Gemini hoặc Google AI Overviews để xem site có được nhắc/cite không."
+        ],
+        "expectedResult": "Kết quả đúng là một báo cáo chỉ ra website đang thiếu gì cho AI search, kèm vài việc sửa cụ thể đủ để team SEO và dev cùng hành động.",
+        "commonPitfalls": [
+          "Dùng điểm GEO như cam kết traffic hoặc ranking, trong khi citation phụ thuộc cả thương hiệu và nguồn ngoài.",
+          "Chỉ thêm llms.txt rồi bỏ qua chất lượng nội dung, schema và khả năng crawl.",
+          "Không lưu baseline trước/sau nên không chứng minh được việc tối ưu có tác dụng."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 25,
+        "projectHealth": 16,
+        "costAdvantage": 14,
+        "deployment": 10,
+        "documentation": 15
+      },
+      "altstackSignalScore": 80,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-29T00:00:00.000Z",
+      "tags": [
+        "seo",
+        "aeo",
+        "geo",
+        "ai-search",
+        "llms-txt"
+      ],
+      "publishedAt": "2026-06-29T00:00:00.000Z",
+      "week": "2026-W27"
+    },
     {
       "slug": "lingyichen-ai-aicomicbuilder",
       "url": "/repos/lingyichen-ai-aicomicbuilder",
@@ -77,6 +334,78 @@ export const memberFeed = {
         "text-to-video",
         "creative",
         "self-host"
+      ],
+      "publishedAt": "2026-06-28T00:00:00.000Z",
+      "week": "2026-W26"
+    },
+    {
+      "slug": "irinabuht12-oss-google-meta-ads-ga4-mcp",
+      "url": "/repos/irinabuht12-oss-google-meta-ads-ga4-mcp",
+      "name": "Google Meta Ads GA4 MCP",
+      "repoUrl": "https://github.com/irinabuht12-oss/google-meta-ads-ga4-mcp",
+      "oneLiner": "Google Meta Ads GA4 MCP giúp agency điều khiển Google Ads, Meta Ads và GA4 từ ChatGPT, Claude, Cursor hoặc n8n: kéo số liệu, audit tài khoản, chỉnh chiến dịch và xuất báo cáo mà không phải nhảy qua từng dashboard.",
+      "vertical": [
+        "agency",
+        "ecom"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 1028,
+        "forks": 46,
+        "note": "~83 ngày tuổi, ~12.4 sao/ngày"
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/irinabuht12-oss/google-meta-ads-ga4-mcp"
+        }
+      ],
+      "useCases": [
+        "Audit nhanh tài khoản Google Ads và Meta Ads rồi nhờ AI gom thành checklist tối ưu cho client.",
+        "Kéo số liệu GA4 cạnh dữ liệu ad spend để xem campaign nào đang tạo chuyển đổi thật, không chỉ tạo click.",
+        "Tạo hoặc chỉnh campaign, ad group, keyword, negative keyword và budget từ cùng một trợ lý AI.",
+        "Dựng báo cáo so sánh Google Ads với Meta Ads cho agency trước buổi review tuần."
+      ],
+      "workflowStepReplaced": "Khâu mở nhiều dashboard quảng cáo, copy số liệu thủ công và tự ghép báo cáo audit cho client.",
+      "timeOrCostSaved": "Có thể rút ngắn phần kéo số liệu và lập báo cáo audit từ vài giờ xuống một phiên làm việc có cấu trúc, nếu tài khoản đã kết nối đúng.",
+      "localProblem": "Agency Việt chạy performance thường phải quản lý Google Ads, Meta Ads và GA4 cùng lúc. Khi mỗi nền tảng nằm ở một giao diện riêng, việc audit ngân sách, ROAS và tracking cho nhiều client rất dễ chậm và lệch số.",
+      "localEvidence": "Queue ghi repo mới 83 ngày nhưng đã có 1,028 sao và 46 fork, mô tả rõ bài toán agency: quản lý Google Ads, Meta Ads và GA4 bằng AI assistant. Chưa có tín hiệu HN/Reddit chắc chắn, nên cần Luan kiểm tay thêm cộng đồng media buyer Việt trước khi publish.",
+      "usabilityRisk": "Google Meta Ads GA4 MCP đụng trực tiếp tài khoản quảng cáo thật, nên cần kiểm soát quyền OAuth, quyền ghi và lịch sử thao tác rất kỹ. Team chưa quen MCP có thể nên bắt đầu ở chế độ đọc báo cáo trước khi cho AI chỉnh campaign.",
+      "suggestedAngle": "Viết theo góc 'media buyer có trợ lý audit đa nền tảng', không viết như bài giới thiệu MCP khô.",
+      "paidToolReplaced": "Một phần thao tác trong Supermetrics, Looker Studio workflow, Ads Manager reporting và các tool audit quảng cáo",
+      "practitionerGuide": {
+        "outcome": "Bạn có một luồng thử nghiệm kéo số liệu quảng cáo và tạo bản audit đầu tiên từ Google Ads, Meta Ads và GA4.",
+        "prerequisites": [
+          "Tài khoản Google Ads, Meta Ads và GA4 mà bạn có quyền truy cập hợp lệ.",
+          "Một AI assistant có hỗ trợ MCP như Claude, ChatGPT connector, Cursor, Windsurf hoặc n8n.",
+          "Một client hoặc tài khoản test để audit trước khi dùng trên tài khoản đang chi ngân sách lớn."
+        ],
+        "steps": [
+          "Kết nối MCP server theo hướng dẫn phù hợp với assistant bạn dùng, ưu tiên môi trường test trước.",
+          "Bắt đầu bằng prompt chỉ đọc: liệt kê campaign, spend, conversion và ROAS trong 7 hoặc 30 ngày gần nhất.",
+          "Yêu cầu AI so sánh Google Ads, Meta Ads và GA4 để tìm campaign có spend cao nhưng chuyển đổi thấp.",
+          "Tạo báo cáo audit dạng bullet cho client, ghi rõ insight nào lấy từ dữ liệu và đề xuất nào là suy luận.",
+          "Chỉ bật thao tác ghi như pause, update budget hoặc add negative keyword sau khi đã có bước duyệt tay."
+        ],
+        "expectedResult": "Bạn có một bản audit quảng cáo đủ để review nội bộ: số liệu chính, vấn đề nổi bật và đề xuất tối ưu có nguồn từ tài khoản.",
+        "commonPitfalls": [
+          "Cho AI quyền ghi quá sớm trên tài khoản đang chạy tiền thật.",
+          "Tin đề xuất tối ưu mà không kiểm tra attribution và tracking trong GA4.",
+          "Không ghi log prompt và thao tác, khiến team khó truy lại vì sao campaign bị đổi."
+        ]
+      },
+      "scoreBreakdown": null,
+      "altstackSignalScore": null,
+      "evidenceLevel": null,
+      "confidence": null,
+      "lastReviewedAt": null,
+      "tags": [
+        "mcp",
+        "google-ads",
+        "meta-ads",
+        "ga4",
+        "agency",
+        "marketing-automation"
       ],
       "publishedAt": "2026-06-28T00:00:00.000Z",
       "week": "2026-W26"
@@ -242,6 +571,148 @@ export const memberFeed = {
         "video-ai",
         "creative",
         "sound-design"
+      ],
+      "publishedAt": "2026-06-28T00:00:00.000Z",
+      "week": "2026-W26"
+    },
+    {
+      "slug": "kadevin-ilab-gpt-conjure",
+      "url": "/repos/kadevin-ilab-gpt-conjure",
+      "name": "iLab GPT Conjure",
+      "repoUrl": "https://github.com/kadevin/ilab-gpt-conjure",
+      "oneLiner": "iLab GPT Conjure là WebUI/CLI để tạo và chỉnh ảnh với GPT-image-2, có gallery tham chiếu, prompt template, queue local và nhiều chế độ kết nối gồm Codex local hoặc OpenAI-compatible API.",
+      "vertical": [
+        "creative",
+        "ecom"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 586,
+        "forks": 80,
+        "note": "~20 ngày tuổi, ~29.3 sao/ngày"
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/kadevin/ilab-gpt-conjure"
+        }
+      ],
+      "useCases": [
+        "Dựng một bàn làm việc tạo ảnh GPT-image-2 có lịch sử, template và ảnh tham chiếu thay vì prompt rời rạc trong chat.",
+        "Quản lý nhiều job tạo ảnh cùng lúc cho social, sản phẩm hoặc concept visual.",
+        "Lưu prompt template và public gallery để team dùng lại style, màu, nhân vật hoặc ảnh sản phẩm.",
+        "Chạy WebUI local khi bạn muốn kiểm soát file đầu vào, output và lịch sử tác vụ trên máy."
+      ],
+      "workflowStepReplaced": "Khâu quản lý prompt, ảnh tham chiếu, lịch sử tạo ảnh và nhiều task thủ công trong từng phiên chat riêng.",
+      "timeOrCostSaved": "Có thể giảm thời gian tìm lại prompt/ảnh cũ và chạy lại job, nhất là khi team tạo nhiều biến thể ảnh trong cùng một ngày.",
+      "localProblem": "Creative và shop Việt dùng GPT-image-2 thường bị rơi vào cảnh prompt nằm rải rác, ảnh tham chiếu lẫn trong chat, khó tái sử dụng style cho batch tiếp theo. Một WebUI có template, gallery và queue giúp biến việc tạo ảnh thành quy trình hơn.",
+      "localEvidence": "Queue ghi repo chỉ 20 ngày tuổi nhưng đã có 586 sao, 80 fork và tốc độ ~29.3 sao/ngày. README mô tả chi tiết WebUI, CLI, prompt templates, gallery, task history và portable release.",
+      "usabilityRisk": "iLab GPT Conjure có chế độ API ổn định hơn cho dùng chung, còn chế độ Codex/ChatGPT OAuth local được README mô tả là nâng cao và có thể thay đổi. Team dùng chung không nên lưu nhầm API key, OAuth file, ảnh đầu vào hoặc output nhạy cảm vào repo.",
+      "suggestedAngle": "Viết theo góc 'biến GPT-image-2 thành xưởng ảnh có template và queue', không tập trung vào tranh luận API/OAuth.",
+      "paidToolReplaced": "Một phần nhu cầu dùng giao diện tạo ảnh SaaS có history/template, hoặc quản lý thủ công trong ChatGPT",
+      "practitionerGuide": {
+        "outcome": "Bạn có một WebUI local để chạy vài job GPT-image-2, lưu template và kiểm tra cách quản lý ảnh tham chiếu.",
+        "prerequisites": [
+          "Python 3.11+ hoặc bản portable phù hợp hệ điều hành nếu bạn không muốn cài thủ công.",
+          "API key/provider OpenAI-compatible cho chế độ ổn định, hoặc hiểu rõ rủi ro nếu dùng chế độ Codex/OAuth local.",
+          "Một bộ prompt, ảnh tham chiếu hoặc yêu cầu tạo ảnh cụ thể cho social/sản phẩm."
+        ],
+        "steps": [
+          "Chọn chế độ chạy: portable nếu muốn thử nhanh, cài source nếu cần chỉnh hoặc phát triển thêm.",
+          "Cấu hình provider API trong WebUI và chạy một prompt đơn giản để kiểm tra kết nối.",
+          "Tải lên vài ảnh tham chiếu hoặc lưu chúng vào gallery nếu bạn cần dùng lại nhiều lần.",
+          "Tạo một prompt template cho case lặp lại, ví dụ ảnh sản phẩm, poster social hoặc nhân vật cố định.",
+          "Chạy nhiều biến thể, xem lịch sử và đánh dấu output đủ tốt để dùng tiếp."
+        ],
+        "expectedResult": "Bạn có một bộ output thử, một prompt template tái sử dụng được và biết WebUI có giúp team quản lý quy trình tạo ảnh tốt hơn chat thường không.",
+        "commonPitfalls": [
+          "Dùng chế độ OAuth nâng cao cho workflow chung mà chưa hiểu rủi ro thay đổi và bảo mật.",
+          "Không tách dữ liệu local như input/output/API key khỏi git hoặc thư mục chia sẻ.",
+          "Tạo quá nhiều template vụn khiến team khó tìm lại template thật sự dùng được."
+        ]
+      },
+      "scoreBreakdown": null,
+      "altstackSignalScore": null,
+      "evidenceLevel": null,
+      "confidence": null,
+      "lastReviewedAt": null,
+      "tags": [
+        "gpt-image-2",
+        "image-generation",
+        "webui",
+        "prompt-template",
+        "creative-workflow"
+      ],
+      "publishedAt": "2026-06-28T00:00:00.000Z",
+      "week": "2026-W26"
+    },
+    {
+      "slug": "purpledoubled-locally-uncensored",
+      "url": "/repos/purpledoubled-locally-uncensored",
+      "name": "Locally Uncensored",
+      "repoUrl": "https://github.com/PurpleDoubleD/locally-uncensored",
+      "oneLiner": "Locally Uncensored là app desktop để chat, tạo ảnh, tạo video và chạy agent bằng AI local: một file cài, không Docker, dữ liệu không phải đi qua cloud nếu bạn dùng backend nội bộ.",
+      "vertical": [
+        "creative"
+      ],
+      "maturity": "pre-viral",
+      "repoStats": {
+        "stars": 824,
+        "forks": 118,
+        "note": "~95 ngày tuổi, ~8.7 sao/ngày; có tín hiệu đang được bàn ở HN/Reddit"
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/PurpleDoubleD/locally-uncensored"
+        }
+      ],
+      "useCases": [
+        "Chạy một bàn làm việc AI offline cho chat, ảnh và video mà không phải nối nhiều app rời.",
+        "Thử local LLM, Ollama hoặc ComfyUI trong giao diện desktop dễ đưa cho người không thích dòng lệnh.",
+        "Tạo nháp ảnh hoặc video nội bộ khi brief còn nhạy cảm và team chưa muốn đẩy dữ liệu lên cloud.",
+        "Dùng agent mode để thử sửa code hoặc thao tác file trong phạm vi workspace có kiểm soát."
+      ],
+      "workflowStepReplaced": "Khâu ghép nhiều công cụ local AI rời rạc như chat app, ComfyUI UI, image gallery và agent runner.",
+      "timeOrCostSaved": "Có thể giảm thời gian cài ghép ban đầu cho người muốn thử AI local, nhất là khi họ ngại Docker và chỉ muốn một app desktop.",
+      "localProblem": "Creative cá nhân và team nhỏ ở Việt Nam hay muốn thử AI local vì chi phí API, quyền riêng tư hoặc nội dung nhạy cảm, nhưng vướng ở phần cài nhiều backend và giao diện khó dùng.",
+      "localEvidence": "Queue ghi repo có 824 sao, 118 fork trong 95 ngày và có tín hiệu đang được bàn ở HN/Reddit. README tập trung vào thông điệp 'single .exe, no Docker', trúng nỗi đau cài đặt của nhóm không chuyên hạ tầng.",
+      "usabilityRisk": "Tên 'uncensored' dễ kéo kỳ vọng sai. Locally Uncensored vẫn phụ thuộc model/backend bạn dùng, cấu hình máy, GPU và rào pháp lý nội dung. Nếu bật remote access hoặc agent mode, cần đọc kỹ quyền file, shell và mạng.",
+      "suggestedAngle": "Nên viết theo góc 'AI local dễ cài cho creative', tránh câu chuyện vượt kiểm duyệt hoặc tạo nội dung nhạy cảm.",
+      "paidToolReplaced": "Một phần nhu cầu dùng ChatGPT/Claude cloud, image/video SaaS và các UI local rời",
+      "practitionerGuide": {
+        "outcome": "Bạn có một môi trường AI local đầu tiên để chat và thử tạo ảnh/video mà không phải nối nhiều giao diện rời.",
+        "prerequisites": [
+          "Một máy Windows/macOS đủ mạnh cho backend local bạn muốn dùng; tác vụ ảnh/video thường cần GPU tốt hơn chat text.",
+          "Một backend local như Ollama hoặc ComfyUI nếu bạn muốn chạy hoàn toàn offline.",
+          "Một thư mục workspace test, không chứa dữ liệu nhạy cảm, để thử agent mode."
+        ],
+        "steps": [
+          "Cài bản desktop theo hướng dẫn của repo, mở app và để app phát hiện backend local có sẵn.",
+          "Thử chat với một model nhỏ trước để kiểm tra kết nối và tốc độ phản hồi.",
+          "Chuyển sang tab tạo ảnh hoặc video với prompt đơn giản, chỉ dùng nội dung không nhạy cảm ở vòng đầu.",
+          "Nếu thử agent mode, giới hạn trong thư mục test và xem kỹ quyền trước khi cho agent sửa file.",
+          "Ghi lại backend nào chạy ổn trên máy của bạn để quyết định có dùng cho việc thật không."
+        ],
+        "expectedResult": "Bạn biết máy của mình chạy được phần nào: chat, ảnh, video hay agent, và phần nào cần GPU/backend tốt hơn.",
+        "commonPitfalls": [
+          "Kỳ vọng app tự làm mọi thứ dù chưa có model hoặc backend local phù hợp.",
+          "Bật quyền remote/agent quá rộng khi chưa hiểu cơ chế giới hạn workspace.",
+          "Dùng tên 'uncensored' như lời hứa chất lượng, trong khi output vẫn phụ thuộc model và cấu hình."
+        ]
+      },
+      "scoreBreakdown": null,
+      "altstackSignalScore": null,
+      "evidenceLevel": null,
+      "confidence": null,
+      "lastReviewedAt": null,
+      "tags": [
+        "local-ai",
+        "desktop-app",
+        "ollama",
+        "comfyui",
+        "image-generation",
+        "video-generation"
       ],
       "publishedAt": "2026-06-28T00:00:00.000Z",
       "week": "2026-W26"

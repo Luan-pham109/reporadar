@@ -11,12 +11,23 @@ import {
   oauthReturnCookieName,
   oauthStateCookieName,
   putUser,
-  safeReturnTo,
+  safeBrowserReturnTo,
 } from '../../../_lib/auth.js';
 import { recordEvent } from '../../../_lib/analytics.js';
+import { consumeRateLimit, rateLimited } from '../../../_lib/ratelimit.js';
 
 export async function onRequestGet(context) {
   try {
+    const limit = await consumeRateLimit(context, {
+      scope: 'oauth_callback',
+      limit: 30,
+      windowSeconds: 60 * 10,
+      kvBinding: 'AUTH_KV',
+    });
+    if (!limit.ok) {
+      return rateLimited('Bạn thao tác quá nhanh. Hãy đợi một chút rồi thử lại.', limit);
+    }
+
     const requestUrl = new URL(context.request.url);
     const state = requestUrl.searchParams.get('state') || '';
     const expectedState = getCookie(context.request, oauthStateCookieName());
@@ -66,7 +77,7 @@ export async function onRequestGet(context) {
 
     await putUser(kv, user);
     const session = await createSession(context, user);
-    const returnTo = safeReturnTo(getCookie(context.request, oauthReturnCookieName()), '/feed.json');
+    const returnTo = safeBrowserReturnTo(getCookie(context.request, oauthReturnCookieName()), '/account');
     context.waitUntil?.(
       recordEvent(context, {
         name: isNewUser ? 'membership_signup_success' : 'membership_login_success',

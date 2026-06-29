@@ -69,7 +69,7 @@ aiCheck:
 tags: ["gpt-image-2", "image-generation", "webui", "prompt-template", "creative-workflow"]
 publishedAt: 2026-06-28
 week: "2026-W26"
-draft: true
+draft: false
 ---
 
 Draft foundation. Cần Luan kiểm thêm trải nghiệm portable, cách dự án xử lý API/OAuth và mức độ phù hợp với team creative Việt trước khi publish.

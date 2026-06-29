@@ -72,7 +72,7 @@ aiCheck:
 tags: ["mcp", "google-ads", "meta-ads", "ga4", "agency", "marketing-automation"]
 publishedAt: 2026-06-28
 week: "2026-W26"
-draft: true
+draft: false
 ---
 
 Draft foundation từ daily queue. Cần Luan kiểm thêm cộng đồng media buyer Việt, mức độ bão hòa nội dung MCP quảng cáo và rủi ro quyền ghi trước khi publish.

@@ -10,7 +10,7 @@ export async function onRequestGet(context) {
           title: 'RepoRadar VN',
           version: memberFeed.version,
           access: 'auth_required',
-          loginUrl: `/login?returnTo=${encodeURIComponent('/feed.json')}`,
+          loginUrl: `/login?returnTo=${encodeURIComponent('/account')}`,
           count: 0,
           items: [],
           message: 'Practitioner guide và member insight đầy đủ chỉ dành cho thành viên đã đăng nhập.',

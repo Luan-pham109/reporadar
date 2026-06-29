@@ -1,9 +1,11 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
+import sitemap from '@astrojs/sitemap';
 import { spawn } from 'node:child_process';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { buildReviewDeployArgs, updateDraftFrontmatter } from './scripts/lib/publish-flow.mjs';
 
 const autoDeployProduction = process.env.REPO_RADAR_AUTO_DEPLOY === 'true';
 let deployQueue = Promise.resolve();
@@ -14,7 +16,7 @@ function runCommand(command, args) {
     const child = spawn(command, args, {
       cwd: process.cwd(),
       env: process.env,
-      shell: false,
+      shell: process.platform === 'win32',
     });
 
     child.stdout.on('data', (chunk) => {
@@ -38,9 +40,9 @@ function runCommand(command, args) {
   });
 }
 
-function enqueueProductionDeploy() {
+function enqueueProductionDeploy(payload) {
   const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
-  const next = deployQueue.then(() => runCommand(npm, ['run', 'publish:prod']));
+  const next = deployQueue.then(() => runCommand(npm, buildReviewDeployArgs(payload)));
   deployQueue = next.catch(() => {});
   return next;
 }
@@ -65,9 +67,15 @@ function draftReviewPlugin() {
             const body = JSON.parse(raw || '{}');
             const slug = String(body.slug || '');
             const draft = Boolean(body.draft);
+            const wantsDeploy = body.deploy === true && autoDeployProduction;
+            const confirmDeploy = body.confirmDeploy === true;
 
             if (!/^[a-z0-9][a-z0-9-]*$/.test(slug)) {
               throw new Error('Slug khong hop le');
+            }
+
+            if (wantsDeploy && !confirmDeploy) {
+              throw new Error('Live deploy needs explicit confirmation');
             }
 
             const reposDir = path.resolve(process.cwd(), 'src/content/repos');
@@ -77,23 +85,14 @@ function draftReviewPlugin() {
             }
 
             const original = await fs.readFile(filePath, 'utf8');
-            const nextDraft = `draft: ${draft ? 'true' : 'false'}`;
-            let next = original;
-
-            if (/^draft:\s*(true|false)\s*$/m.test(next)) {
-              next = next.replace(/^draft:\s*(true|false)\s*$/m, nextDraft);
-            } else {
-              next = next.replace(/^(---\r?\n)/, `$1${nextDraft}\n`);
-            }
-
+            const next = updateDraftFrontmatter(original, draft);
             await fs.writeFile(filePath, next);
-            const shouldDeploy = body.deploy === true && autoDeployProduction;
-            if (shouldDeploy) {
-              await enqueueProductionDeploy();
+            if (wantsDeploy) {
+              await enqueueProductionDeploy({ slug, draft });
             }
 
             res.setHeader('content-type', 'application/json');
-            res.end(JSON.stringify({ ok: true, slug, draft, deployed: shouldDeploy }));
+            res.end(JSON.stringify({ ok: true, slug, draft, deployed: wantsDeploy }));
           } catch (error) {
             res.statusCode = 400;
             res.setHeader('content-type', 'application/json');
@@ -107,8 +106,15 @@ function draftReviewPlugin() {
 
 // Static output (default) → build ra dist/ cho Cloudflare Pages.
 // Đổi `site` sang domain thật khi chốt tên (PRD §12.1) để RSS/JSON feed có URL tuyệt đối.
+const PRIVATE_PAGES = ['/login/', '/review/', '/account/'];
+
 export default defineConfig({
-  site: 'https://reporadar.vn',
+  site: 'https://altstack.io.vn',
+  integrations: [
+    sitemap({
+      filter: (url) => !PRIVATE_PAGES.some((p) => new URL(url).pathname === p),
+    }),
+  ],
   server: {
     port: Number(process.env.PORT) || 4321,
   },

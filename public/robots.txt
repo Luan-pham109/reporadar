@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /login
+Disallow: /account
+Disallow: /review
+Disallow: /api/
+
+Sitemap: https://altstack.io.vn/sitemap-index.xml

@@ -50,6 +50,19 @@ const heroImg = r.media.find((m) => m.type === 'image')?.url;
 const keywords = [...r.vnMarket.seoKeywords, ...r.tags].join(', ');
 const seoTitle = `${r.name}: thay gì, dùng cho ai, có đáng thử không? | AltStack`;
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname;
+const repoLoginUrl = `/login?returnTo=${encodeURIComponent(Astro.url.pathname)}`;
+const repoSlug = entry.id;
+const repoOutboundUrl = withUtmSource(r.repoUrl);
+
+function withUtmSource(url: string) {
+  try {
+    const next = new URL(url);
+    if (!next.searchParams.has('utm_source')) next.searchParams.set('utm_source', 'altstack');
+    return next.href;
+  } catch {
+    return url;
+  }
+}
 
 const articleLd = {
   '@context': 'https://schema.org',
@@ -256,7 +269,7 @@ const faqLd =
   )}
 
   <section class="mt-8 rounded-lg border border-[var(--rr-dark)] bg-[var(--rr-dark)] p-6 text-white">
-    <div class="grid gap-5 sm:grid-cols-[1.2fr_0.8fr] sm:items-start">
+    <div id="member-lock" class="grid gap-5 sm:grid-cols-[1.2fr_0.8fr] sm:items-start">
       <div>
         <p class="text-xs font-bold uppercase tracking-widest text-blue-200">Member insight</p>
         <h2 class="mt-2 text-2xl font-semibold">Dùng thử {r.name} theo từng bước</h2>
@@ -266,7 +279,7 @@ const faqLd =
         </p>
         <div class="mt-4 flex flex-wrap gap-2">
           <a
-            href="/login"
+            href={repoLoginUrl}
             class="rounded-md bg-white px-3 py-2 text-sm font-semibold !text-[var(--rr-dark)] no-underline hover:bg-slate-100"
             data-track-event="membership_intent"
             data-track-label="repo_detail_member_guide"
@@ -277,16 +290,16 @@ const faqLd =
             Đăng nhập để xem guide
           </a>
           <a
-            href={r.repoUrl}
+            href={repoOutboundUrl}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             class="rounded-md border border-white/30 px-3 py-2 text-sm font-semibold text-white no-underline hover:border-white/50 hover:bg-white/10"
             data-track-event="repo_open"
             data-track-label="repo_detail_member_insight"
             data-track-prop-surface="repo_detail_member_insight"
             data-track-prop-repo-slug={entry.id}
             data-track-prop-repo-name={r.name}
-            data-track-prop-repo-url={r.repoUrl}
+            data-track-prop-repo-url={repoOutboundUrl}
           >
             Mở repo ↗
           </a>
@@ -307,7 +320,129 @@ const faqLd =
         </li>
       </ul>
     </div>
+
+    <div id="member-guide" class="hidden">
+      <div class="flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-widest text-green-300">Member insight unlocked</p>
+          <h2 id="member-guide-title" class="mt-2 text-2xl font-semibold">Guide thực hành cho {r.name}</h2>
+          <p id="member-guide-outcome" class="mt-2 max-w-3xl text-sm leading-6 text-slate-300"></p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <a
+            href={repoOutboundUrl}
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="rounded-md bg-white px-3 py-2 text-sm font-semibold !text-[var(--rr-dark)] no-underline hover:bg-slate-100"
+            data-track-event="repo_open"
+            data-track-label="repo_detail_member_guide_unlocked"
+            data-track-prop-surface="repo_detail_member_guide"
+            data-track-prop-repo-slug={entry.id}
+            data-track-prop-repo-name={r.name}
+            data-track-prop-repo-url={repoOutboundUrl}
+          >
+            Mở repo ↗
+          </a>
+          <a
+            href="/account"
+            class="rounded-md border border-white/30 px-3 py-2 text-sm font-semibold text-white no-underline hover:border-white/50 hover:bg-white/10"
+          >
+            Tài khoản
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-5 grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
+        <div class="space-y-4">
+          <div class="rounded-md border border-white/10 bg-white/10 p-4">
+            <h3 class="text-sm font-semibold text-white">Cần chuẩn bị</h3>
+            <ul id="member-guide-prerequisites" class="mt-3 space-y-2 text-sm leading-6 text-slate-300"></ul>
+          </div>
+          <div class="rounded-md border border-white/10 bg-white/10 p-4">
+            <h3 class="text-sm font-semibold text-white">Kết quả đạt</h3>
+            <p id="member-guide-expected" class="mt-3 text-sm leading-6 text-slate-300"></p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="rounded-md border border-white/10 bg-white/10 p-4">
+            <h3 class="text-sm font-semibold text-white">Các bước thử nhanh</h3>
+            <ol id="member-guide-steps" class="mt-3 space-y-3 text-sm leading-6 text-slate-300"></ol>
+          </div>
+          <div class="rounded-md border border-amber-300/20 bg-amber-400/10 p-4">
+            <h3 class="text-sm font-semibold text-amber-100">Bẫy dễ mất thời gian</h3>
+            <ul id="member-guide-pitfalls" class="mt-3 space-y-2 text-sm leading-6 text-amber-50"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <script define:vars={{ repoSlug }}>
+    const memberLock = document.querySelector('#member-lock');
+    const memberGuide = document.querySelector('#member-guide');
+
+    loadMemberGuide();
+
+    async function loadMemberGuide() {
+      try {
+        const response = await fetch(`/api/member/repos/${encodeURIComponent(repoSlug)}`, {
+          credentials: 'include',
+        });
+        if (!response.ok) return;
+
+        const payload = await response.json();
+        const guide = payload.repo?.practitionerGuide;
+        if (!guide) return;
+
+        renderMemberGuide(payload.repo.name, guide);
+        memberLock?.classList.add('hidden');
+        memberGuide?.classList.remove('hidden');
+      } catch {
+        // Static preview and logged-out visitors keep the locked teaser.
+      }
+    }
+
+    function renderMemberGuide(repoName, guide) {
+      setText('#member-guide-title', `Guide thực hành cho ${repoName}`);
+      setText('#member-guide-outcome', guide.outcome || 'Guide này đang được hoàn thiện.');
+      setText('#member-guide-expected', guide.expectedResult || 'Sau khi thử, bạn có đủ tín hiệu để quyết định có đưa tool vào workflow thật không.');
+
+      renderList('#member-guide-prerequisites', guide.prerequisites || []);
+      renderList('#member-guide-steps', guide.steps || [], true);
+      renderList('#member-guide-pitfalls', guide.commonPitfalls || []);
+    }
+
+    function renderList(selector, items, ordered = false) {
+      const root = document.querySelector(selector);
+      if (!root) return;
+      root.replaceChildren();
+
+      const list = Array.isArray(items) && items.length > 0 ? items : ['Chưa có ghi chú chi tiết cho mục này.'];
+      list.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.className = ordered ? 'flex gap-3' : 'list-disc ml-4';
+
+        if (ordered) {
+          const marker = document.createElement('span');
+          marker.className = 'mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded bg-white/10 text-xs font-bold text-white';
+          marker.textContent = String(index + 1);
+          const text = document.createElement('span');
+          text.textContent = item;
+          li.append(marker, text);
+        } else {
+          li.textContent = item;
+        }
+
+        root.append(li);
+      });
+    }
+
+    function setText(selector, value) {
+      const node = document.querySelector(selector);
+      if (node) node.textContent = value;
+    }
+  </script>
 
   {related.length > 0 && (
     <section class="mt-8">
@@ -342,7 +477,7 @@ const faqLd =
             <ul class="mt-2 flex flex-wrap gap-2">
               {r.signalSources.map((s) => (
                 <li>
-                  <a href={s.url} target="_blank" rel="noopener noreferrer" class="rounded-md border border-[var(--rr-border)] px-2.5 py-1 text-xs font-medium hover:border-[var(--rr-core)]">
+                  <a href={s.url} target="_blank" rel="nofollow noopener noreferrer" class="rounded-md border border-[var(--rr-border)] px-2.5 py-1 text-xs font-medium hover:border-[var(--rr-core)]">
                     {s.label} ↗
                   </a>
                 </li>
@@ -356,38 +491,5 @@ const faqLd =
         </div>
       </div>
     </details>
-  )}
-
-  {false && (
-  <section>
-    <div class="grid gap-5 sm:grid-cols-[1.2fr_0.8fr] sm:items-start">
-      <div>
-        <p class="text-xs font-bold uppercase tracking-widest text-blue-200">Member insight</p>
-        <h2 class="mt-2 text-2xl font-semibold">Dùng thử {r.name} theo từng bước</h2>
-        <p class="mt-2 text-sm leading-6 text-slate-300">
-          Bản public giúp bạn quyết định có nên mở tab hay không. Member guide đi sâu hơn: chuẩn bị gì,
-          thử theo bước nào, output đầu tiên nên đạt mức nào, và bẫy nào dễ làm mất thời gian.
-        </p>
-        <div class="mt-4 flex flex-wrap gap-2">
-          <a href="/login" class="rounded-md bg-white px-3 py-2 text-sm font-semibold !text-[var(--rr-dark)] no-underline hover:bg-slate-100">Đăng nhập để xem guide</a>
-          <a href={r.repoUrl} target="_blank" rel="noopener noreferrer" class="rounded-md border border-white/25 px-3 py-2 text-sm font-semibold text-white no-underline hover:bg-white/10">Mở repo ↗</a>
-        </div>
-      </div>
-      <ul class="space-y-2 text-sm">
-        <li class="rounded-md border border-white/10 bg-white/10 p-3">
-          <span class="font-semibold text-white">Practitioner guide:</span>
-          <span class="text-slate-300">
-            {hasPractitionerGuide
-              ? ` ${guide.steps.length} bước thử nhanh, kèm chuẩn bị và kết quả kỳ vọng.`
-              : ' Khung hướng dẫn từng bước để thử tool trong việc thật.'}
-          </span>
-        </li>
-        <li class="rounded-md border border-white/10 bg-white/10 p-3">
-          <span class="font-semibold text-white">Decision note:</span>
-          <span class="text-slate-300"> Nên thử ngay, theo dõi thêm, hay bỏ qua để khỏi test sai lúc.</span>
-        </li>
-      </ul>
-    </div>
-  </section>
   )}
 </BaseLayout>

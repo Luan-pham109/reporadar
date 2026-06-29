@@ -4,16 +4,27 @@ import {
   oauthReturnCookieName,
   oauthStateCookieName,
   randomToken,
-  safeReturnTo,
+  safeBrowserReturnTo,
 } from '../../../_lib/auth.js';
+import { consumeRateLimit, rateLimited } from '../../../_lib/ratelimit.js';
 
-export function onRequestGet(context) {
+export async function onRequestGet(context) {
   const clientId = context.env.GOOGLE_CLIENT_ID;
   if (!clientId) return fail(500, 'Thiếu GOOGLE_CLIENT_ID.', 'google_not_configured');
 
+  const limit = await consumeRateLimit(context, {
+    scope: 'oauth_start',
+    limit: 20,
+    windowSeconds: 60 * 10,
+    kvBinding: 'AUTH_KV',
+  });
+  if (!limit.ok) {
+    return rateLimited('Bạn thao tác quá nhanh. Hãy đợi một chút rồi thử đăng nhập lại.', limit);
+  }
+
   const requestUrl = new URL(context.request.url);
   const state = randomToken(24);
-  const returnTo = safeReturnTo(requestUrl.searchParams.get('returnTo'), '/feed.json');
+  const returnTo = safeBrowserReturnTo(requestUrl.searchParams.get('returnTo'), '/account');
   const redirectUri = new URL('/api/auth/google/callback', requestUrl.origin).href;
 
   const authUrl = new URL('https://accounts.google.com/o/oauth2/v2/auth');

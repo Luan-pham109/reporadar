@@ -13,8 +13,15 @@ node_modules/
 .env.production
 .dev.vars
 
-# local automation queues
-.codex/reporadar-daily-queue/
+# local automation / codex
+.codex/
+
+# wrangler & temp
+.wrangler/
+.tmp/
+
+# packed tarballs
+*.tgz
 
 # os / editor
 .DS_Store

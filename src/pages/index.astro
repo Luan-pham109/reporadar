@@ -14,6 +14,46 @@ const weeks = [...new Set(entries.map((e) => e.data.week))].sort().reverse();
 const latestWeek = weeks[0];
 const replacementCount = entries.filter((e) => e.data.paidToolReplaced).length;
 const preViralCount = entries.filter((e) => e.data.maturity === 'pre-viral').length;
+
+// ---- Replace This grid ----
+// Extract the first recognisable tool brand from verbose paidToolReplaced strings.
+function extractToolLabel(raw: string): string | null {
+  if (!raw) return null;
+  // Skip template placeholder
+  if (raw.startsWith('Tool trả phí')) return null;
+  // Strip common Vietnamese prefixes before the actual tool name
+  let s = raw
+    .replace(/^Một phần\s+(việc của|thao tác (trong|ở|giữa)|nhu cầu (dùng|R&D thay cho|mua)|thư viện|thời gian research (vendor |trên )?|công sức (tự lắp|storyboard)|stack tự ghép giữa|khâu (moodboard|inspect|audit)|checklist|credit (ở|thử nghiệm trên))\s*/i, '')
+    .replace(/^Một phần\s+/i, '')
+    .trim();
+  // Take only the first tool (before " / ", ",", " bản", " (", " và", " hoặc", " — ")
+  const first = s.split(/\s*[\/,]\s*|\s+(bản |hoặc |và |—\s*)|\s+\(/).at(0)?.trim() ?? '';
+  // Drop trailing filler words
+  const clean = first.replace(/\s+(trả phí|thuê ngoài|cloud|nội bộ|workflow|reporting).*$/i, '').trim();
+  // Must look like a real product name: starts with uppercase or contains digit
+  if (!clean || clean.length < 3) return null;
+  if (/^[a-z]/.test(clean) && !/\d/.test(clean)) return null; // all-lowercase with no digits → probably not a brand
+  // Skip AI assistants that people don't think of as "SaaS to replace"
+  const blocklist = ['ChatGPT', 'Claude', 'Gemini', 'Copilot'];
+  if (blocklist.includes(clean)) return null;
+  return clean;
+}
+
+const replaceGroups = entries
+  .filter((e) => e.data.paidToolReplaced)
+  .reduce((map, entry) => {
+    const label = extractToolLabel(entry.data.paidToolReplaced!);
+    if (!label) return map;
+    if (!map.has(label)) map.set(label, []);
+    map.get(label)!.push(entry);
+    return map;
+  }, new Map<string, typeof entries>());
+
+// Sort by number of alternatives desc — no hard cap, template handles the fold
+const replaceGrid = [...replaceGroups.entries()]
+  .sort((a, b) => b[1].length - a[1].length);
+const REPLACE_FOLD = 9;
+const RADAR_FOLD = 10;
 const tagCounts = [...entries.reduce((counts, entry) => {
   for (const tag of entry.data.tags) counts.set(tag, (counts.get(tag) ?? 0) + 1);
   return counts;
@@ -23,50 +63,53 @@ const tagCounts = [...entries.reduce((counts, entry) => {
 ---
 
 <BaseLayout>
-  <section class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
-    <div>
-      <p class="mb-3 text-xs font-bold uppercase tracking-widest text-[var(--rr-core)]">Open-source alternatives for expensive software</p>
-      <h1 class="max-w-3xl text-4xl font-bold tracking-tight text-[var(--rr-text)] sm:text-5xl lg:text-6xl">
-        Trước khi gia hạn SaaS, kiểm tra AltStack.
+  <section class="grid gap-8 py-6 sm:py-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+    <div class="as-reveal">
+      <p class="mb-4 inline-flex items-center gap-2 rounded-full border border-[var(--rr-border)] bg-white/70 px-3 py-1 text-xs font-semibold text-[var(--rr-core)] shadow-[var(--rr-shadow-sm)] backdrop-blur">
+        <span class="h-1.5 w-1.5 rounded-full bg-[var(--rr-open)]"></span>
+        Open-source alternatives for expensive software
+      </p>
+      <h1 class="max-w-3xl text-4xl font-bold text-[var(--rr-text)] sm:text-5xl lg:text-[3.6rem]">
+        Trước khi gia hạn, kiểm tra AltStack.
       </h1>
-      <p class="mt-5 max-w-2xl text-base leading-7 text-[var(--rr-muted)]">
-        AltStack chọn lọc công cụ AI/open-source giúp team Việt Nam biết tool nào thay được phần mềm đắt tiền,
-        cắt được khâu nào, khó triển khai không và có đáng thử trong công việc thật không.
+      <p class="mt-5 max-w-2xl text-lg text-[var(--rr-muted)]">
+        Tổng hợp tín hiệu từ nhiều nguồn, lọc theo tiêu chí rõ ràng, rồi nói thẳng:
+        tool nào thay được phần mềm đắt tiền, cắt được khâu nào, và có đáng thử trong công việc thật của team Việt Nam không.
       </p>
 
-      <div class="mt-6 flex flex-wrap gap-3">
-        <a href="#radar" class="rounded-md bg-[var(--rr-core)] px-4 py-2.5 text-sm font-semibold !text-white no-underline shadow-sm hover:bg-blue-700">
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a href="#radar" class="rounded-full bg-[var(--rr-core)] px-5 py-3 text-sm font-semibold !text-white no-underline shadow-[var(--rr-shadow-blue)] transition-transform duration-300 ease-out hover:-translate-y-0.5 active:translate-y-0">
           Xem radar mới nhất
         </a>
-        <a href="#stacks" class="rounded-md border border-[var(--rr-border-strong)] bg-white px-4 py-2.5 text-sm font-semibold text-[var(--rr-text)] no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]">
+        <a href="#stacks" class="rounded-full border border-[var(--rr-border-strong)] bg-white/80 px-5 py-3 text-sm font-semibold text-[var(--rr-text)] no-underline backdrop-blur transition-colors duration-300 hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]">
           Duyệt theo workflow
         </a>
       </div>
     </div>
 
-    <div class="overflow-hidden rounded-lg border border-[var(--rr-dark)] bg-[var(--rr-dark)] text-white shadow-[var(--rr-shadow)]">
-      <div class="border-b border-white/10 p-4">
-        <p class="text-xs font-bold uppercase tracking-widest text-blue-200">Radar console</p>
-        <p class="mt-2 font-display text-3xl font-bold">Replace the stack. Keep the capability.</p>
+    <div class="as-reveal as-reveal-2 overflow-hidden rounded-[var(--rr-radius-lg)] border border-white/10 bg-gradient-to-br from-[var(--rr-dark)] to-[var(--rr-dark-soft)] text-white shadow-[var(--rr-shadow)]">
+      <div class="border-b border-white/10 p-5">
+        <p class="text-xs font-semibold uppercase tracking-widest text-blue-200">Radar console</p>
+        <p class="mt-2 font-display text-3xl font-bold leading-tight">Replace the stack. Keep the capability.</p>
       </div>
-      <div class="p-4">
-      <div class="mb-3 flex items-center justify-between gap-3">
+      <div class="p-5">
+      <div class="mb-4 flex items-center justify-between gap-3">
         <div>
           <p class="text-xs font-semibold uppercase text-slate-400">Decision system</p>
           <p class="mt-1 font-display text-xl font-bold">Try / Watch / Skip</p>
         </div>
-        <span class="rounded-md bg-white/10 px-2.5 py-1 text-xs font-semibold text-slate-200">{entries.length} briefs</span>
+        <span class="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-slate-200">{entries.length} briefs</span>
       </div>
-      <div class="grid gap-2 text-sm">
-        <div class="rounded-md border border-white/10 bg-white/10 p-3">
+      <div class="grid gap-2.5 text-sm">
+        <div class="rounded-2xl border border-white/10 bg-white/[0.07] p-4">
           <p class="font-semibold text-green-300">Replaces</p>
           <p class="mt-1 text-slate-300">{replacementCount} tool có ghi rõ SaaS/phần mềm có thể thay.</p>
         </div>
-        <div class="rounded-md border border-white/10 bg-white/10 p-3">
+        <div class="rounded-2xl border border-white/10 bg-white/[0.07] p-4">
           <p class="font-semibold text-white">Workflow impact</p>
           <p class="mt-1 text-slate-300">Ưu tiên brief nói được khâu nào được cắt, tiết kiệm gì, ai không nên dùng.</p>
         </div>
-        <div class="rounded-md border border-blue-300/20 bg-blue-400/10 p-3">
+        <div class="rounded-2xl border border-blue-300/20 bg-blue-400/10 p-4">
           <p class="font-semibold text-blue-200">Pre-viral signal</p>
           <p class="mt-1 text-slate-300">{preViralCount} tín hiệu sớm để theo dõi trước khi thị trường viết lại quá nhiều.</p>
         </div>
@@ -75,7 +118,7 @@ const tagCounts = [...entries.reduce((counts, entry) => {
     </div>
   </section>
 
-  <section id="stacks" class="mt-10 scroll-mt-24 rounded-lg border border-[var(--rr-border)] bg-white p-5">
+  <section id="stacks" class="mt-12 scroll-mt-24 rounded-[var(--rr-radius-lg)] border border-[var(--rr-border)] bg-white/80 p-6 shadow-[var(--rr-shadow-sm)] backdrop-blur">
     <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
       <div>
         <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Stacks</p>
@@ -86,14 +129,58 @@ const tagCounts = [...entries.reduce((counts, entry) => {
     <IndustryNav />
   </section>
 
-  <section id="radar" class="mt-10 scroll-mt-24">
+  {replaceGrid.length > 0 && (
+  <section id="replace" class="mt-12 scroll-mt-24">
+    <div class="mb-5">
+      <h2 class="text-2xl font-semibold">Đang trả tiền cho tool nào?</h2>
+      <p class="mt-1.5 text-sm text-[var(--rr-muted)]">Tìm nhanh alternative open-source theo tên phần mềm bạn đang dùng.</p>
+    </div>
+    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {[
+        ...replaceGrid.slice(0, REPLACE_FOLD).map(item => ({ item, overflow: false })),
+        ...replaceGrid.slice(REPLACE_FOLD).map(item => ({ item, overflow: true })),
+      ].map(({ item: [label, alts], overflow }) => (
+        <a
+          href={alts.length === 1 ? `/repos/${alts[0].id}` : `/#radar`}
+          class="as-card group flex items-start justify-between gap-4 p-4 no-underline"
+          {...(overflow ? { 'data-overflow': 'true' } : {})}
+        >
+          <div class="min-w-0">
+            <p class="text-xs font-semibold uppercase tracking-widest text-[var(--rr-muted)]">Thay thế</p>
+            <p class="mt-1 truncate font-display text-lg font-bold text-[var(--rr-text)] group-hover:text-[var(--rr-core)]">{label}</p>
+            <p class="mt-0.5 text-sm text-[var(--rr-muted)]">
+              {alts.length === 1
+                ? alts[0].data.name
+                : `${alts.length} alternative`}
+            </p>
+          </div>
+          <span class="mt-1 shrink-0 rounded-full bg-[var(--rr-core-soft)] px-2.5 py-1 text-xs font-semibold text-[var(--rr-core)]">
+            OSS
+          </span>
+        </a>
+      ))}
+    </div>
+    {replaceGrid.length > REPLACE_FOLD && (
+      <div class="mt-4 text-center">
+        <button
+          id="replace-more-btn"
+          class="rounded-full border border-[var(--rr-border)] bg-white/80 px-5 py-2.5 text-sm font-semibold text-[var(--rr-text)] backdrop-blur transition-colors duration-300 hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]"
+        >
+          Xem thêm ({replaceGrid.length - REPLACE_FOLD} tool)
+        </button>
+      </div>
+    )}
+  </section>
+  )}
+
+  <section id="radar" class="mt-12 scroll-mt-24">
     <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
       <div>
         <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">AltStack Radar</p>
         <h2 class="mt-1 text-2xl font-semibold">Công cụ đáng mở tab hôm nay</h2>
       </div>
       {latestWeek && (
-        <a href={`/tuan/${latestWeek}`} class="rounded-md border border-[var(--rr-border)] bg-white px-3 py-2 text-sm font-semibold text-[var(--rr-text)] no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]">
+        <a href={`/tuan/${latestWeek}`} class="rounded-full border border-[var(--rr-border)] bg-white/80 px-4 py-2 text-sm font-semibold text-[var(--rr-text)] no-underline backdrop-blur transition-colors duration-300 hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]">
           Weekly {latestWeek}
         </a>
       )}
@@ -109,17 +196,36 @@ const tagCounts = [...entries.reduce((counts, entry) => {
     </div>
 
     {entries.length === 0 ? (
-      <p class="rounded-lg border border-[var(--rr-border)] bg-white p-5 text-[var(--rr-muted)]">Chưa có công cụ nào được đăng.</p>
+      <p class="rounded-[var(--rr-radius)] border border-[var(--rr-border)] bg-white p-6 text-[var(--rr-muted)]">Chưa có công cụ nào được đăng.</p>
     ) : (
-      <div class="flex flex-col gap-3">
-        {entries.map((entry) => (
-          <RepoListItem entry={entry} />
-        ))}
-      </div>
+      <>
+        <div class="flex flex-col gap-3">
+          {entries.slice(0, RADAR_FOLD).map((entry) => (
+            <div>
+              <RepoListItem entry={entry} />
+            </div>
+          ))}
+          {entries.slice(RADAR_FOLD).map((entry) => (
+            <div data-overflow="true">
+              <RepoListItem entry={entry} />
+            </div>
+          ))}
+        </div>
+        {entries.length > RADAR_FOLD && (
+          <div class="mt-5 text-center">
+            <button
+              id="radar-more-btn"
+              class="rounded-full border border-[var(--rr-border)] bg-white/80 px-5 py-2.5 text-sm font-semibold text-[var(--rr-text)] backdrop-blur transition-colors duration-300 hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]"
+            >
+              Xem thêm ({entries.length - RADAR_FOLD} tool)
+            </button>
+          </div>
+        )}
+      </>
     )}
   </section>
 
-  <section id="weekly" class="mt-10 scroll-mt-24 rounded-lg border border-[var(--rr-dark)] bg-[var(--rr-dark)] p-5 text-white">
+  <section id="weekly" class="mt-12 scroll-mt-24 overflow-hidden rounded-[var(--rr-radius-lg)] border border-white/10 bg-gradient-to-br from-[var(--rr-dark)] to-[var(--rr-dark-soft)] p-6 text-white shadow-[var(--rr-shadow)]">
     <div class="grid gap-5 sm:grid-cols-[1.3fr_1fr] sm:items-center">
       <div>
         <p class="text-xs font-bold uppercase tracking-widest text-blue-200">AltStack Weekly</p>
@@ -129,10 +235,10 @@ const tagCounts = [...entries.reduce((counts, entry) => {
         </p>
       </div>
       <div class="flex flex-wrap gap-2 sm:justify-end">
-        <a href="/rss.xml" class="rounded-md bg-white px-3 py-2 text-sm font-semibold text-[var(--rr-dark)] no-underline hover:bg-slate-100">Theo dõi RSS</a>
+        <a href="/rss.xml" class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-[var(--rr-dark)] no-underline transition-transform duration-300 hover:-translate-y-0.5 hover:bg-slate-100">Theo dõi RSS</a>
         <a
           href="/login"
-          class="rounded-md border border-white/40 px-3 py-2 text-sm font-semibold text-white no-underline hover:border-white/60 hover:bg-white/10"
+          class="rounded-full border border-white/40 px-4 py-2 text-sm font-semibold text-white no-underline transition-colors duration-300 hover:border-white/60 hover:bg-white/10"
           data-track-event="membership_intent"
           data-track-label="homepage_weekly_member_insight"
           data-track-prop-surface="homepage_weekly"
@@ -142,4 +248,22 @@ const tagCounts = [...entries.reduce((counts, entry) => {
       </div>
     </div>
   </section>
+
+<script>
+  function setupReveal(btnId: string) {
+    const btn = document.getElementById(btnId);
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      // Find all overflow items in the same section as this button
+      const section = btn.closest('section');
+      if (!section) return;
+      section.querySelectorAll<HTMLElement>('[data-overflow="true"]').forEach((el) => {
+        el.removeAttribute('data-overflow');
+      });
+      btn.remove();
+    });
+  }
+  setupReveal('replace-more-btn');
+  setupReveal('radar-more-btn');
+</script>
 </BaseLayout>

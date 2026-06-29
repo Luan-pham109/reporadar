@@ -13,8 +13,8 @@ export function json(data, init = {}) {
   return new Response(JSON.stringify(data, null, 2), { ...init, headers });
 }
 
-export function fail(status, message, code = 'error') {
-  return json({ ok: false, code, message }, { status });
+export function fail(status, message, code = 'error', init = {}) {
+  return json({ ok: false, code, message }, { status, ...init });
 }
 
 export function getAuthKv(env) {
@@ -61,6 +61,17 @@ export function safeReturnTo(value, fallback = '/') {
   if (!returnTo || returnTo.length > 512) return fallback;
   if (!returnTo.startsWith('/') || returnTo.startsWith('//')) return fallback;
   if (/[\r\n]/.test(returnTo)) return fallback;
+  return returnTo;
+}
+
+export function safeBrowserReturnTo(value, fallback = '/account') {
+  const returnTo = safeReturnTo(value, fallback);
+  try {
+    const path = new URL(returnTo, 'https://altstack.local').pathname.toLowerCase();
+    if (path.endsWith('.json') || path.endsWith('.xml')) return fallback;
+  } catch {
+    return fallback;
+  }
   return returnTo;
 }
 
@@ -205,13 +216,13 @@ function randomBytes(length) {
   return bytes;
 }
 
-function base64Url(bytes) {
+export function base64Url(bytes) {
   let binary = '';
   for (const byte of bytes) binary += String.fromCharCode(byte);
   return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
 }
 
-function fromBase64Url(value) {
+export function fromBase64Url(value) {
   const base64 = String(value).replace(/-/g, '+').replace(/_/g, '/');
   const padded = base64.padEnd(base64.length + ((4 - (base64.length % 4)) % 4), '=');
   const binary = atob(padded);
