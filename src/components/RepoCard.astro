@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import SignalBadge from './SignalBadge.astro';
 import { industryShort } from '../lib/industries';
+import { computeScore } from '../lib/score';
 
 interface Props {
   entry: CollectionEntry<'repos'>;
@@ -27,6 +28,7 @@ const signalColor =
         ? 'bg-[var(--rr-border-strong)]'
         : 'bg-[var(--rr-core)]';
 const filterTags = r.tags.map((tag) => tag.toLowerCase()).join('|');
+const { total, hasScore } = computeScore(r);
 ---
 
 <article class="group overflow-hidden rounded-lg as-card transition-colors" data-filter-tags={filterTags}>
@@ -64,6 +66,16 @@ const filterTags = r.tags.map((tag) => tag.toLowerCase()).join('|');
       )}
       {r.aiCheck.canAIGetThis && (
         <SignalBadge tone="warn" label="Needs testing" title="Thông tin cơ bản dễ tìm; giá trị nằm ở cách áp dụng thực tế" />
+      )}
+      {r.evidenceLevel && (
+        <span class="rounded-full border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] px-2.5 py-0.5 text-xs font-medium text-[var(--rr-muted)]" title="Evidence Level — A: lab-tested · B: signal-reviewed · C: discovery · D: unverified">
+          Ev.{r.evidenceLevel}
+        </span>
+      )}
+      {hasScore && (
+        <span class="rounded-full border border-[var(--rr-core)]/40 bg-[var(--rr-core)]/8 px-2.5 py-0.5 text-xs font-bold text-[var(--rr-core)]" title="Signal Score v1 — xem methodology để hiểu cách tính">
+          {total}/100
+        </span>
       )}
       <span class="ml-auto text-xs text-[var(--rr-faint)]">{dateStr} · {r.week}</span>
     </div>

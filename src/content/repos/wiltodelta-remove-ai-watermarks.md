@@ -68,6 +68,17 @@ aiCheck:
   note: "AI có thể tóm tắt tính năng, nhưng quyết định editorial về việc coi repo này là out và cách kể nó cho độc giả Việt vẫn cần người biên tập."
 
 tags: ["watermark", "provenance", "c2pa", "synthid", "creative", "policy-risk"]
+scoreBreakdown:
+  useCaseFit: 6
+  projectHealth: 21
+  costAdvantage: 0
+  deployment: 6
+  documentation: 6
+scoringVersion: "v1"
+evidenceLevel: "B"
+confidence: "high"
+lastReviewedAt: 2026-06-27
+nextReviewDueAt: 2026-09-27
 publishedAt: 2026-06-27
 week: "2026-W26"
 draft: false

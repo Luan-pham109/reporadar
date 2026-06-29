@@ -22,6 +22,21 @@ for (const file of files) {
 
   const slug = file.replace(/\.md$/, '');
   const guide = data.practitionerGuide || {};
+
+  // Compute altstackSignalScore (derived, never stored in frontmatter)
+  // Weights must stay in sync with src/lib/score.ts WEIGHTS
+  const WEIGHTS = { useCaseFit: 25, projectHealth: 25, costAdvantage: 20, deployment: 15, documentation: 15 };
+  const sb = data.scoreBreakdown;
+  let altstackSignalScore = null;
+  if (sb && Object.values(sb).some((v) => v != null)) {
+    let sum = 0;
+    for (const [key, max] of Object.entries(WEIGHTS)) {
+      const v = sb[key] ?? 0;
+      sum += Math.min(max, Math.max(0, v));
+    }
+    altstackSignalScore = Math.round(sum);
+  }
+
   items.push({
     slug,
     url: `/repos/${slug}`,
@@ -47,10 +62,28 @@ for (const file of files) {
       expectedResult: guide.expectedResult || '',
       commonPitfalls: guide.commonPitfalls || [],
     },
+    scoreBreakdown: data.scoreBreakdown || null,
+    altstackSignalScore,
+    evidenceLevel: data.evidenceLevel || null,
+    confidence: data.confidence || null,
+    lastReviewedAt: data.lastReviewedAt ? formatDate(data.lastReviewedAt) : null,
     tags: data.tags || [],
     publishedAt: formatDate(data.publishedAt),
     week: data.week,
   });
+}
+
+// Soft publish checklist: warn (not fail) when published records are missing score fields
+const REQUIRED_SCORE_FIELDS = ['scoreBreakdown', 'evidenceLevel', 'confidence', 'lastReviewedAt'];
+const warnings = [];
+for (const item of items) {
+  const missing = REQUIRED_SCORE_FIELDS.filter((f) => item[f] == null);
+  if (missing.length > 0) warnings.push(`  ⚠  ${item.slug}: missing ${missing.join(', ')}`);
+}
+if (warnings.length > 0) {
+  console.warn(`\n[WARN] ${warnings.length} published record(s) missing score fields (không fail build):`);
+  warnings.forEach((w) => console.warn(w));
+  console.warn('');
 }
 
 items.sort((a, b) => String(b.publishedAt).localeCompare(String(a.publishedAt)) || a.name.localeCompare(b.name));

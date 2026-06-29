@@ -70,6 +70,17 @@ aiCheck:
   note: "AI có thể mô tả repo, nhưng góc ứng dụng vào nhịp audit account đa kênh của agency Việt vẫn cần lớp biên tập theo ngữ cảnh."
 
 tags: ["ads", "ppc", "agency", "ecom", "google-ads", "meta-ads"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 23
+  costAdvantage: 8
+  deployment: 3
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-27
+nextReviewDueAt: 2026-09-27
 publishedAt: 2026-06-27
 week: "2026-W26"
 draft: false

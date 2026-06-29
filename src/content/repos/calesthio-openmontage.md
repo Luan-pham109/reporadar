@@ -76,6 +76,17 @@ aiCheck:
   note: "Thông tin repo công khai dễ lấy, nhưng góc dùng cho shop/agency Việt để test biến thể video và cảnh báo không thay editor là lớp biên tập cần ngữ cảnh."
 
 tags: ["ai-video", "agent", "creative", "ecom", "video-production"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 25
+  costAdvantage: 8
+  deployment: 3
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-26
+nextReviewDueAt: 2026-09-26
 publishedAt: 2026-06-26
 week: "2026-W26"
 draft: false

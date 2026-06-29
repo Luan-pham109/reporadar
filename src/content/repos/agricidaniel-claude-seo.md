@@ -67,6 +67,17 @@ aiCheck:
   note: "AI có thể mô tả repo, nhưng góc thực dụng cho SEO agency Việt đang chuyển từ checklist sang backlog GEO/AEO cần biên tập theo ngữ cảnh."
 
 tags: ["seo", "agency", "ecom", "geo", "aeo", "claude-code"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 23
+  costAdvantage: 8
+  deployment: 3
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-26
+nextReviewDueAt: 2026-09-26
 publishedAt: 2026-06-26
 week: "2026-W26"
 draft: false

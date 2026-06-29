@@ -70,6 +70,17 @@ aiCheck:
   note: "AI có thể kể tính năng của repo, nhưng góc áp vào nhịp làm storyboard, video ads và lab motion của team Việt vẫn cần lớp biên tập thủ công."
 
 tags: ["video-ai", "text-to-video", "image-to-video", "creative", "comfyui", "open-source"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 21
+  costAdvantage: 8
+  deployment: 3
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-27
+nextReviewDueAt: 2026-09-27
 publishedAt: 2026-06-27
 week: "2026-W26"
 draft: false

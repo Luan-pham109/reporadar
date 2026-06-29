@@ -76,6 +76,17 @@ aiCheck:
   note: "AI có thể tóm tắt repo, nhưng góc dùng cho proposal/deck agency Việt và cảnh báo cần biết agent/html là phần cần biên tập."
 
 tags: ["presentation", "deck", "agency", "creative", "codex", "html"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 23
+  costAdvantage: 14
+  deployment: 3
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-26
+nextReviewDueAt: 2026-09-26
 publishedAt: 2026-06-26
 week: "2026-W26"
 draft: false

@@ -70,6 +70,17 @@ aiCheck:
   note: "AI có thể kể command của repo, nhưng góc đặt nó vào nhịp pre-sales và internal audit của agency Việt vẫn cần lớp curation thủ công."
 
 tags: ["marketing", "claude-code", "agency", "seo", "audit", "copywriting"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 20
+  costAdvantage: 8
+  deployment: 3
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-27
+nextReviewDueAt: 2026-09-27
 publishedAt: 2026-06-27
 week: "2026-W26"
 draft: false

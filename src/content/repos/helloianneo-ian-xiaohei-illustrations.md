@@ -76,6 +76,17 @@ aiCheck:
   note: "AI có thể tóm tắt repo, nhưng việc đặt nó vào bài toán minh họa thân bài cho creator Việt là lớp curation khó lấy từ trending chung."
 
 tags: ["creative", "illustration", "codex-skill", "content", "newsletter"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 19
+  costAdvantage: 8
+  deployment: 15
+  documentation: 15
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-27
+nextReviewDueAt: 2026-09-27
 publishedAt: 2026-06-27
 week: "2026-W26"
 draft: false

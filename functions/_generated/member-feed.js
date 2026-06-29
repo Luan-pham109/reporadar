@@ -2,7 +2,7 @@
 export const memberFeed = {
   "title": "RepoRadar VN",
   "version": "0.3",
-  "generatedAt": "2026-06-28T10:57:55.607Z",
+  "generatedAt": "2026-06-29T04:59:44.203Z",
   "count": 24,
   "items": [
     {
@@ -60,6 +60,17 @@ export const memberFeed = {
           "Quên cài FFmpeg hoặc cấu hình model khiến bước ghép video không chạy dù phần giao diện đã lên."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 20,
+        "costAdvantage": 8,
+        "deployment": 6,
+        "documentation": 10
+      },
+      "altstackSignalScore": 62,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-28T00:00:00.000Z",
       "tags": [
         "comic-ai",
         "storyboard",
@@ -133,6 +144,17 @@ export const memberFeed = {
           "Không kiểm tra driver, CUDA và dung lượng model trước khi demo cho team."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 20,
+        "costAdvantage": 8,
+        "deployment": 3,
+        "documentation": 10
+      },
+      "altstackSignalScore": 59,
+      "evidenceLevel": "B",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-28T00:00:00.000Z",
       "tags": [
         "video-ai",
         "text-to-video",
@@ -203,6 +225,17 @@ export const memberFeed = {
           "Lấy output AI dùng thẳng cho thương mại mà chưa kiểm tiếng nhiễu, bản quyền asset và mức phù hợp thương hiệu."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 18,
+        "costAdvantage": 8,
+        "deployment": 3,
+        "documentation": 10
+      },
+      "altstackSignalScore": 57,
+      "evidenceLevel": "B",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-28T00:00:00.000Z",
       "tags": [
         "audio-ai",
         "foley",
@@ -269,6 +302,17 @@ export const memberFeed = {
           "Dùng prompt quá chung nên thư viện prompt mạnh nhưng output vẫn không đúng brand hoặc format."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 20,
+        "costAdvantage": 8,
+        "deployment": 3,
+        "documentation": 10
+      },
+      "altstackSignalScore": 59,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-28T00:00:00.000Z",
       "tags": [
         "mcp",
         "design-ai",
@@ -336,6 +380,17 @@ export const memberFeed = {
           "Dùng giọng người khác khi chưa có quyền, đặc biệt với nội dung thương mại."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 18,
+        "costAdvantage": 8,
+        "deployment": 3,
+        "documentation": 10
+      },
+      "altstackSignalScore": 57,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-28T00:00:00.000Z",
       "tags": [
         "tts",
         "audio-ai",
@@ -403,6 +458,17 @@ export const memberFeed = {
           "Cố áp bộ skill này cho team chỉ quen giao diện web, không có ai chịu phần terminal và context management."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 20,
+        "costAdvantage": 8,
+        "deployment": 3,
+        "documentation": 10
+      },
+      "altstackSignalScore": 59,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-27T00:00:00.000Z",
       "tags": [
         "marketing",
         "claude-code",
@@ -471,6 +537,17 @@ export const memberFeed = {
           "Không chốt bài toán cụ thể trước nên shortlist cuối cùng rất loãng."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 22,
+        "costAdvantage": 8,
+        "deployment": 15,
+        "documentation": 10
+      },
+      "altstackSignalScore": 73,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-27T00:00:00.000Z",
       "tags": [
         "api",
         "automation",
@@ -539,6 +616,17 @@ export const memberFeed = {
           "Quên rằng đây là thư viện tham khảo, không phải model đảm bảo kết quả."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 23,
+        "costAdvantage": 8,
+        "deployment": 15,
+        "documentation": 10
+      },
+      "altstackSignalScore": 74,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-27T00:00:00.000Z",
       "tags": [
         "prompt",
         "image-generation",
@@ -605,6 +693,17 @@ export const memberFeed = {
           "Audit nhiều nền tảng cùng lúc ở lần thử đầu khiến team khó biết repo đang giúp thật ở khâu nào."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 23,
+        "costAdvantage": 8,
+        "deployment": 3,
+        "documentation": 10
+      },
+      "altstackSignalScore": 62,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-27T00:00:00.000Z",
       "tags": [
         "ads",
         "ppc",
@@ -676,6 +775,17 @@ export const memberFeed = {
           "Bỏ qua các khác biệt nền tảng giữa Linux, Windows và macOS khiến bước setup tốn thời gian hơn cần thiết."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 20,
+        "costAdvantage": 8,
+        "deployment": 3,
+        "documentation": 10
+      },
+      "altstackSignalScore": 59,
+      "evidenceLevel": "B",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-27T00:00:00.000Z",
       "tags": [
         "self-host",
         "local-ai",
@@ -745,6 +855,17 @@ export const memberFeed = {
           "Chỉ nhìn phần tiết kiệm công mà bỏ qua chi phí khóa tài khoản và tổn hại uy tín."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 6,
+        "projectHealth": 17,
+        "costAdvantage": 8,
+        "deployment": 6,
+        "documentation": 10
+      },
+      "altstackSignalScore": 47,
+      "evidenceLevel": "B",
+      "confidence": "low",
+      "lastReviewedAt": "2026-06-27T00:00:00.000Z",
       "tags": [
         "outreach",
         "automation",
@@ -811,6 +932,17 @@ export const memberFeed = {
           "Không tính trước chuyện tải model, cài CUDA và tối ưu thư viện attention nên mất cả ngày chỉ để qua bước setup."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 21,
+        "costAdvantage": 8,
+        "deployment": 3,
+        "documentation": 10
+      },
+      "altstackSignalScore": 60,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-27T00:00:00.000Z",
       "tags": [
         "video-ai",
         "text-to-video",
@@ -878,6 +1010,17 @@ export const memberFeed = {
           "Nhét quá nhiều chữ hoặc quá nhiều ý vào một hình khiến ảnh mất chất minh họa."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 19,
+        "costAdvantage": 8,
+        "deployment": 15,
+        "documentation": 15
+      },
+      "altstackSignalScore": 75,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-27T00:00:00.000Z",
       "tags": [
         "creative",
         "illustration",
@@ -947,6 +1090,17 @@ export const memberFeed = {
           "Đánh đồng chuyện inspect provenance với chuyện nên xóa provenance."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 6,
+        "projectHealth": 21,
+        "costAdvantage": 0,
+        "deployment": 6,
+        "documentation": 6
+      },
+      "altstackSignalScore": 39,
+      "evidenceLevel": "B",
+      "confidence": "high",
+      "lastReviewedAt": "2026-06-27T00:00:00.000Z",
       "tags": [
         "watermark",
         "provenance",
@@ -1018,6 +1172,17 @@ export const memberFeed = {
           "Không có use case nội bộ thật nên team chỉ benchmark cho vui mà không ra quyết định."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 22,
+        "costAdvantage": 8,
+        "deployment": 3,
+        "documentation": 10
+      },
+      "altstackSignalScore": 61,
+      "evidenceLevel": "B",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-27T00:00:00.000Z",
       "tags": [
         "inference",
         "multimodal",
@@ -1084,6 +1249,17 @@ export const memberFeed = {
           "Không lưu lại prompt đã chỉnh nên mỗi buổi brainstorm lại quay về mò từ đầu."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 23,
+        "costAdvantage": 8,
+        "deployment": 15,
+        "documentation": 10
+      },
+      "altstackSignalScore": 74,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-26T00:00:00.000Z",
       "tags": [
         "prompt",
         "image-generation",
@@ -1151,6 +1327,17 @@ export const memberFeed = {
           "Tin thẳng mọi khuyến nghị về schema, entity hoặc AEO mà không kiểm lại trên trang thật."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 23,
+        "costAdvantage": 8,
+        "deployment": 3,
+        "documentation": 10
+      },
+      "altstackSignalScore": 62,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-26T00:00:00.000Z",
       "tags": [
         "seo",
         "agency",
@@ -1218,6 +1405,17 @@ export const memberFeed = {
           "Chỉnh font, màu, animation quá sớm trước khi chốt cấu trúc nội dung."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 23,
+        "costAdvantage": 14,
+        "deployment": 3,
+        "documentation": 10
+      },
+      "altstackSignalScore": 68,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-26T00:00:00.000Z",
       "tags": [
         "presentation",
         "deck",
@@ -1284,6 +1482,17 @@ export const memberFeed = {
           "Tin rằng repo đã ổn định như Notion hay Obsidian trong khi dự án còn rất mới và thay đổi nhanh."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 19,
+        "costAdvantage": 8,
+        "deployment": 6,
+        "documentation": 6
+      },
+      "altstackSignalScore": 57,
+      "evidenceLevel": "B",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-26T00:00:00.000Z",
       "tags": [
         "ai",
         "pkm",
@@ -1350,6 +1559,17 @@ export const memberFeed = {
           "Không giới hạn scope của lần thử đầu nên cả team khó đo được công cụ tiết kiệm thời gian thật ở đâu."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 25,
+        "costAdvantage": 8,
+        "deployment": 3,
+        "documentation": 10
+      },
+      "altstackSignalScore": 64,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-26T00:00:00.000Z",
       "tags": [
         "ai-video",
         "agent",
@@ -1416,6 +1636,17 @@ export const memberFeed = {
           "Đem bản nháp AI đi đăng ngay mà không duyệt lại hình, lời và nhạc nền."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 25,
+        "costAdvantage": 8,
+        "deployment": 3,
+        "documentation": 10
+      },
+      "altstackSignalScore": 64,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-26T00:00:00.000Z",
       "tags": [
         "ai-video",
         "creative",
@@ -1438,9 +1669,14 @@ export const memberFeed = {
       ],
       "maturity": "established",
       "repoStats": {
-        "stars": 53243,
-        "forks": 4766,
-        "note": "~3,5 năm tuổi"
+        "stars": 53477,
+        "forks": 4802,
+        "note": "~3,6 năm tuổi, ~40 sao/ngày",
+        "starsPerDay": 40.6,
+        "ageDays": 1318,
+        "pushedAt": "2026-06-29",
+        "archived": false,
+        "openIssues": 951
       },
       "signalSources": [
         {
@@ -1485,6 +1721,17 @@ export const memberFeed = {
           "Kỳ vọng Plane phải thay được mọi workflow enterprise của Jira dù nhu cầu team còn nhỏ."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 25,
+        "costAdvantage": 20,
+        "deployment": 6,
+        "documentation": 10
+      },
+      "altstackSignalScore": 79,
+      "evidenceLevel": "B",
+      "confidence": "high",
+      "lastReviewedAt": "2026-06-29T00:00:00.000Z",
       "tags": [
         "self-hosted",
         "project-management",
@@ -1549,6 +1796,17 @@ export const memberFeed = {
           "Tin hoàn toàn caption AI mà không chỉnh lại theo giọng thương hiệu từng nền tảng."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 25,
+        "costAdvantage": 14,
+        "deployment": 6,
+        "documentation": 15
+      },
+      "altstackSignalScore": 78,
+      "evidenceLevel": "B",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-26T00:00:00.000Z",
       "tags": [
         "self-hosted",
         "social-media",
@@ -1614,6 +1872,17 @@ export const memberFeed = {
           "Kỳ vọng video AI cuối cùng đủ chất lượng đăng kênh chính mà bỏ qua bước hậu kỳ."
         ]
       },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 22,
+        "costAdvantage": 8,
+        "deployment": 10,
+        "documentation": 10
+      },
+      "altstackSignalScore": 68,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-26T00:00:00.000Z",
       "tags": [
         "ai-video",
         "animation",

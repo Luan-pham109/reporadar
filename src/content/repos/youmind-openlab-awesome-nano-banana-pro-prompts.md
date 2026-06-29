@@ -76,6 +76,17 @@ aiCheck:
   note: "AI có thể tìm repo, nhưng cách đặt nó vào workflow brief visual cho team Việt là phần cần biên tập."
 
 tags: ["prompt", "image-generation", "creative", "gemini", "nano-banana"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 23
+  costAdvantage: 8
+  deployment: 15
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-26
+nextReviewDueAt: 2026-09-26
 publishedAt: 2026-06-26
 week: "2026-W26"
 draft: false

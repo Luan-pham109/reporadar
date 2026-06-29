@@ -67,6 +67,17 @@ aiCheck:
   note: "AI có thể đọc README và liệt kê tính năng, nhưng góc dùng cho creator Việt thử format truyện tranh động cần hiểu chi phí API, vòng sửa và thói quen sản xuất nội dung ngắn."
 
 tags: ["comic-ai", "storyboard", "text-to-video", "creative", "self-host"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 20
+  costAdvantage: 8
+  deployment: 6
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-28
+nextReviewDueAt: 2026-09-28
 publishedAt: 2026-06-28
 week: "2026-W26"
 draft: false

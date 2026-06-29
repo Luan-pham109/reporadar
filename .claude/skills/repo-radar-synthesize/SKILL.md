@@ -50,9 +50,30 @@ Mục tiêu: (a) từ khoá người Việt THỰC SỰ gõ; (b) đã có ai là
 > Trung thực: thiếu dữ liệu thì ghi rõ trong `notes` "cần Luan kiểm tay ở group X", đừng bịa từ khoá hay
 > "ngành VN đang làm Y".
 
-### Bước 4 — Build
-Chạy `npm run build`. Tóm tắt: từ khoá chính tìm được, insight ngành, độ bão hoà, và nhắc bước cuối:
-**chạy `repo-radar-edit`** để viết nội dung reader-first.
+### Bước 4 — Signal Score (phần Synthesize phụ trách)
+Điền vào record sau khi đã hiểu bài toán VN:
+
+**`scoreBreakdown.costAdvantage`** (0–20):
+| Điểm | Tiêu chí |
+|---|---|
+| 20 | Thay rõ 1 SaaS trả phí (`paidToolReplaced`) + `timeOrCostSaved` có số/tiền |
+| 14 | Thay tool phí nhưng mức tiết kiệm mơ hồ |
+| 8 | Lợi ích chi phí gián tiếp |
+| 0 | Không phải bản thay free đáng kể |
+
+**`evidenceLevel`** (chọn 1):
+- `"B"` — đã review public signal đầy đủ (GitHub + HN/Reddit + community VN + bài viết ngoài). Mặc định cho record đã synthesize kỹ.
+- `"C"` — mới ở mức discovery, chưa đủ dữ liệu community. Dùng khi signal yếu/mỏng.
+- `"D"` — chỉ tuyên bố của tác giả tool, chưa kiểm chứng.
+
+**`confidence`** (chọn 1):
+- `"high"` — dữ liệu chắc, nhiều nguồn độc lập.
+- `"medium"` — đủ tin nhưng vài điểm suy luận.
+- `"low"` — mỏng, cần review lại sớm.
+
+### Bước 5 — Build
+Chạy `npm run build`. Tóm tắt: từ khoá chính tìm được, insight ngành, độ bão hoà, costAdvantage chấm, evidenceLevel/confidence, và nhắc bước cuối:
+**chạy `repo-radar-edit`** để viết nội dung reader-first + hoàn thiện điểm còn lại.
 
 ## Tuyệt đối tránh
 - Bịa từ khoá / "creator Việt X đã viết" mà chưa verify.

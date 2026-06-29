@@ -17,9 +17,27 @@ vertical: ["agency"]
 
 maturity: "established"
 repoStats:
-  stars: 53243
-  forks: 4766
-  note: "~3,5 năm tuổi"
+  stars: 53477
+  forks: 4802
+  note: "~3,6 năm tuổi, ~40 sao/ngày"
+  starsPerDay: 40.6
+  ageDays: 1318
+  pushedAt: "2026-06-29"
+  archived: false
+  openIssues: 951
+
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 25
+  costAdvantage: 20
+  deployment: 6
+  documentation: 10
+
+scoringVersion: "v1"
+evidenceLevel: "B"
+confidence: "high"
+lastReviewedAt: 2026-06-29
+nextReviewDueAt: 2026-09-29
 standoutFeatures:
   - "Quản lý issue, cycle (sprint), module, nhiều kiểu view trong một nơi."
   - "Tự host, dữ liệu nằm trên máy bạn."

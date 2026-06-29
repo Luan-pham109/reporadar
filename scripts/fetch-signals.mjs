@@ -38,18 +38,39 @@ async function fetchGitHub({ owner, repo }) {
     : {};
   const data = await getJson(`https://api.github.com/repos/${owner}/${repo}`, headers);
   const createdDays = Math.round((Date.now() - new Date(data.created_at)) / 86400000);
-  return {
+  const starsPerDay = createdDays > 0 ? +(data.stargazers_count / createdDays).toFixed(1) : data.stargazers_count;
+  const gh = {
     fullName: data.full_name,
     description: data.description,
     stars: data.stargazers_count,
     forks: data.forks_count,
     createdAt: data.created_at,
     ageDays: createdDays,
-    starsPerDay: createdDays > 0 ? +(data.stargazers_count / createdDays).toFixed(1) : data.stargazers_count,
+    starsPerDay,
+    pushedAt: data.pushed_at,
+    archived: data.archived ?? false,
+    openIssues: data.open_issues_count ?? 0,
     topics: data.topics ?? [],
     homepage: data.homepage,
     language: data.language,
   };
+  gh.suggestedHealthScore = healthScore(gh);
+  return gh;
+}
+
+function healthScore(gh) {
+  if (!gh) return 0;
+  if (gh.archived) return 3;
+  const daysSincePush = gh.pushedAt
+    ? Math.round((Date.now() - new Date(gh.pushedAt)) / 86400000)
+    : 999;
+  const liveness =
+    daysSincePush <= 30 ? 12 : daysSincePush <= 90 ? 9 : daysSincePush <= 180 ? 6 : daysSincePush <= 365 ? 3 : 0;
+  const adoption =
+    gh.stars >= 20000 ? 8 : gh.stars >= 5000 ? 6 : gh.stars >= 1000 ? 4 : gh.stars >= 200 ? 2 : 1;
+  const momentum =
+    gh.starsPerDay >= 20 ? 5 : gh.starsPerDay >= 5 ? 4 : gh.starsPerDay >= 1 ? 2 : 1;
+  return Math.min(25, liveness + adoption + momentum);
 }
 
 async function fetchHN({ owner, repo }) {
@@ -141,6 +162,8 @@ function printHuman(repo, gh, hn, reddit, heur) {
     line(`\nGitHub:`);
     line(`  ${gh.fullName} — ${gh.description ?? '(no description)'}`);
     line(`  ⭐ ${gh.stars}  |  🍴 ${gh.forks ?? '?'}  |  ~${gh.starsPerDay} sao/ngày  |  ${gh.ageDays} ngày tuổi  |  ${gh.language ?? '?'}`);
+    line(`  pushedAt: ${gh.pushedAt ?? '?'}  |  archived: ${gh.archived}  |  openIssues: ${gh.openIssues}`);
+    line(`  suggestedHealthScore: ${gh.suggestedHealthScore}/25`);
     if (gh.topics.length) line(`  topics: ${gh.topics.join(', ')}`);
     if (gh.homepage) line(`  homepage: ${gh.homepage}`);
   } else {

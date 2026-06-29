@@ -1,0 +1,198 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { WEIGHTS, SCORE_LABELS, SCORE_KIND } from '../lib/score';
+
+const components = Object.entries(WEIGHTS).map(([key, max]) => ({
+  key,
+  label: SCORE_LABELS[key as keyof typeof WEIGHTS],
+  max,
+  kind: SCORE_KIND[key as keyof typeof WEIGHTS],
+}));
+
+const total = Object.values(WEIGHTS).reduce((s, v) => s + v, 0);
+---
+
+<BaseLayout
+  title="Cách tính Signal Score | AltStack"
+  description="Signal Score là gì, cách AltStack đánh giá tool, và tại sao 'Signal Scored ≠ Lab Tested'."
+>
+  <a href="/" class="text-sm font-medium text-[var(--rr-muted)] no-underline hover:text-[var(--rr-core)]">← AltStack Radar</a>
+
+  <header class="mt-6 rounded-lg border border-[var(--rr-dark)] bg-[var(--rr-dark)] p-8 text-white">
+    <p class="text-xs font-bold uppercase tracking-widest text-blue-200">Methodology</p>
+    <h1 class="mt-2 text-4xl font-bold tracking-tight">Signal Score v1</h1>
+    <p class="mt-3 max-w-2xl text-base leading-7 text-slate-300">
+      Signal Score giúp người đọc so sánh nhanh mức độ đánh giá kỹ của từng record —
+      không phải xếp hạng "tool tốt nhất", mà là mức độ bằng chứng và fit với bài toán VN.
+    </p>
+  </header>
+
+  <!-- What score means / doesn't mean -->
+  <section class="mt-8 grid gap-4 sm:grid-cols-2">
+    <div class="rounded-lg border border-[var(--rr-border)] bg-white p-6">
+      <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-core)]">Signal Score nghĩa là</p>
+      <ul class="mt-4 space-y-2">
+        {[
+          'Đã review public signal (GitHub, HN, Reddit, community VN).',
+          'Đã đánh giá fit với use case Việt Nam cụ thể.',
+          'Đã ghi nhận ưu/nhược điểm triển khai thực tế.',
+          'Có thể so sánh tương đối giữa các record cùng đã review.',
+        ].map((item) => (
+          <li class="flex gap-2 text-sm leading-6">
+            <span class="mt-0.5 text-[var(--rr-core)]">✓</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="rounded-lg border border-amber-300/30 bg-amber-50 p-6">
+      <p class="text-xs font-bold uppercase tracking-widest text-amber-700">Signal Score KHÔNG nghĩa là</p>
+      <ul class="mt-4 space-y-2">
+        {[
+          'AltStack đã lab-test thực tế (đó là Evidence Level A — hiếm).',
+          '"Tool tốt nhất" hay xếp hạng tuyệt đối.',
+          'Bảo đảm tool chạy được trong hạ tầng của bạn.',
+          'Score cao = nên dùng ngay; score thấp = bỏ qua.',
+        ].map((item) => (
+          <li class="flex gap-2 text-sm leading-6 text-amber-800">
+            <span class="mt-0.5">✗</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Score components table -->
+  <section class="mt-8 rounded-lg border border-[var(--rr-border)] bg-white overflow-hidden">
+    <div class="px-6 py-4 border-b border-[var(--rr-border)]">
+      <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">5 cấu phần — tổng {total} điểm</p>
+      <h2 class="mt-1 text-xl font-semibold">Trọng số & cách chấm</h2>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-[var(--rr-border)] bg-[var(--rr-surface-soft)]">
+            <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Cấu phần</th>
+            <th class="px-4 py-3 text-center text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Max</th>
+            <th class="px-4 py-3 text-center text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Loại</th>
+            <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Tiêu chí chính</th>
+          </tr>
+        </thead>
+        <tbody>
+          {components.map(({ label, max, kind }, i) => (
+            <tr class:list={['border-b border-[var(--rr-border)]', i % 2 === 0 ? 'bg-white' : 'bg-[var(--rr-surface-soft)]']}>
+              <td class="px-6 py-4 font-semibold">{label}</td>
+              <td class="px-4 py-4 text-center font-bold text-[var(--rr-core)]">{max}</td>
+              <td class="px-4 py-4 text-center">
+                <span class:list={[
+                  'rounded-sm px-1.5 py-0.5 text-[10px] font-bold uppercase',
+                  kind === 'auto'
+                    ? 'bg-blue-100 text-blue-700'
+                    : 'bg-[var(--rr-surface-soft)] text-[var(--rr-faint)] border border-[var(--rr-border)]',
+                ]}>
+                  {kind}
+                </span>
+              </td>
+              <td class="px-6 py-4 text-[var(--rr-muted)]">
+                {label === 'Use Case Fit' && '≥3 use case cụ thể, đúng ngành, có con số; workflowStepReplaced rõ.'}
+                {label === 'Project Health' && 'Tự động từ GitHub: liveness (ngày push gần nhất), adoption (stars), momentum (sao/ngày). Archived → 3 điểm.'}
+                {label === 'Cost Advantage' && 'Thay rõ 1 SaaS trả phí + timeOrCostSaved có số/tiền.'}
+                {label === 'Deployment' && 'Hosted/one-click = cao nhất; cần GPU/self-host phức tạp = thấp.'}
+                {label === 'Docs' && 'README đầy đủ + media demo + quickstart chạy được.'}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="px-6 py-4 text-xs text-[var(--rr-faint)] border-t border-[var(--rr-border)]">
+      <strong>auto</strong> = script tính từ GitHub API. <strong>judged</strong> = người review chấm theo rubric thống nhất.
+      Trọng số được khai báo một chỗ duy nhất trong <code class="font-mono">src/lib/score.ts</code>.
+    </p>
+  </section>
+
+  <!-- Evidence Level -->
+  <section class="mt-8 rounded-lg border border-[var(--rr-border)] bg-white p-6">
+    <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Evidence Level</p>
+    <h2 class="mt-1 text-xl font-semibold">Mức độ bằng chứng (A → D)</h2>
+    <p class="mt-2 text-sm leading-6 text-[var(--rr-muted)]">
+      Mỗi record gắn một mức bằng chứng để người đọc biết đánh giá dựa trên bao nhiêu dữ liệu thực tế.
+    </p>
+    <div class="mt-4 grid gap-3 sm:grid-cols-2">
+      {[
+        { level: 'A', color: 'border-green-400/30 bg-green-50', label: 'Lab tested', desc: 'AltStack đã thử tool thực tế trong workflow nghề, có output kiểm chứng được. Hiếm — chỉ áp dụng từ Phase 2.' },
+        { level: 'B', color: 'border-[var(--rr-core)]/30 bg-[var(--rr-core)]/5', label: 'Signal reviewed', desc: 'Đã review public signal: GitHub, HN, Reddit, community VN, báo cáo bên ngoài. Mặc định cho record đã synthesize kỹ.' },
+        { level: 'C', color: 'border-amber-400/30 bg-amber-50', label: 'Discovery', desc: 'Mới ở mức discovery: signal tốt nhưng chưa synthesize đầy đủ. Cần thêm review trước khi tin hoàn toàn.' },
+        { level: 'D', color: 'border-[var(--rr-border)] bg-white', label: 'Unverified', desc: 'Chỉ dựa trên tuyên bố của tác giả tool, chưa kiểm chứng. Đọc kỹ signalSources trước khi áp dụng.' },
+      ].map(({ level, color, label, desc }) => (
+        <div class:list={['rounded-lg border p-4', color]}>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-lg font-black text-[var(--rr-dark)]">{level}</span>
+            <span class="text-sm font-semibold">{label}</span>
+          </div>
+          <p class="text-xs leading-5 text-[var(--rr-muted)]">{desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Confidence -->
+  <section class="mt-6 rounded-lg border border-[var(--rr-border)] bg-white p-6">
+    <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Confidence</p>
+    <h2 class="mt-1 text-xl font-semibold">Độ tin cậy đánh giá</h2>
+    <div class="mt-4 grid gap-3 sm:grid-cols-3">
+      {[
+        { level: 'High', color: 'text-green-700 border-green-400/30 bg-green-50', desc: 'Dữ liệu chắc, nhiều nguồn độc lập, đã synthesize kỹ. Các kết luận ít có khả năng thay đổi khi review lại.' },
+        { level: 'Medium', color: 'text-amber-700 border-amber-400/30 bg-amber-50', desc: 'Đủ tin cậy để ra quyết định thử, nhưng một vài điểm dựa trên suy luận. Nên đọc usabilityRisk cẩn thận.' },
+        { level: 'Low', color: 'text-[var(--rr-muted)] border-[var(--rr-border)] bg-white', desc: 'Dữ liệu mỏng hoặc signal chưa nhất quán. Nên đặt nextReviewDueAt gần và dùng làm điểm khởi đầu, không phải kết luận.' },
+      ].map(({ level, color, desc }) => (
+        <div class:list={['rounded-lg border p-4', color.split(' ').filter(c => c.startsWith('border') || c.startsWith('bg')).join(' ')]}>
+          <p class:list={['text-sm font-bold mb-1', color.split(' ').filter(c => c.startsWith('text')).join(' ')]}>{level} confidence</p>
+          <p class="text-xs leading-5 text-[var(--rr-muted)]">{desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Review cadence -->
+  <section class="mt-6 rounded-lg border border-[var(--rr-border)] bg-white p-6">
+    <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Review cadence</p>
+    <h2 class="mt-1 text-xl font-semibold">Quy trình review định kỳ</h2>
+    <div class="mt-4 space-y-3 text-sm leading-7 text-[var(--rr-muted)]">
+      <p>
+        Mỗi record có <code class="font-mono text-xs bg-[var(--rr-surface-soft)] px-1.5 py-0.5 rounded">lastReviewedAt</code> (ngày review gần nhất)
+        và <code class="font-mono text-xs bg-[var(--rr-surface-soft)] px-1.5 py-0.5 rounded">nextReviewDueAt</code> (ngày review tiếp theo dự kiến).
+        Chu kỳ mặc định: <strong>~1 quý (~90 ngày)</strong>.
+      </p>
+      <p>
+        Khi review: chạy lại <code class="font-mono text-xs bg-[var(--rr-surface-soft)] px-1.5 py-0.5 rounded">fetch-signals.mjs</code> lấy
+        <code class="font-mono text-xs bg-[var(--rr-surface-soft)] px-1.5 py-0.5 rounded">projectHealth</code> mới; kiểm tra lại 4 cấu phần judged
+        xem có cần điều chỉnh không; cập nhật <code class="font-mono text-xs bg-[var(--rr-surface-soft)] px-1.5 py-0.5 rounded">lastReviewedAt</code>.
+      </p>
+      <p>
+        Record quá hạn review không tự ẩn — người đọc vẫn thấy, nhưng nên kiểm tra <code class="font-mono text-xs bg-[var(--rr-surface-soft)] px-1.5 py-0.5 rounded">nextReviewDueAt</code>
+        và <code class="font-mono text-xs bg-[var(--rr-surface-soft)] px-1.5 py-0.5 rounded">lastReviewedAt</code> để biết thông tin còn mới không.
+      </p>
+    </div>
+  </section>
+
+  <!-- COI policy -->
+  <section class="mt-6 rounded-lg border border-[var(--rr-border)] bg-white p-6">
+    <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Conflict of interest</p>
+    <h2 class="mt-1 text-xl font-semibold">Chính sách độc lập</h2>
+    <p class="mt-3 text-sm leading-7 text-[var(--rr-muted)]">
+      AltStack hiện chưa nhận tài trợ, sponsor, hay affiliate từ bất kỳ tool nào được đánh giá.
+      Khi có quan hệ thương mại trong tương lai, sẽ được ghi rõ trực tiếp trên record liên quan và
+      tách bạch khỏi nội dung đánh giá kỹ thuật. Signal Score và Evidence Level không thay đổi vì lý do thương mại.
+      Đây là cam kết theo PRD §8 của dự án — không phải tuyên bố marketing.
+    </p>
+  </section>
+
+  <div class="mt-8 text-center">
+    <a href="/" class="inline-block rounded-md bg-[var(--rr-dark)] px-5 py-2.5 text-sm font-semibold text-white no-underline hover:bg-[var(--rr-core)]">
+      ← Quay lại Radar
+    </a>
+  </div>
+</BaseLayout>

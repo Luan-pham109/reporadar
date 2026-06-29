@@ -73,6 +73,17 @@ aiCheck:
   note: "AI có thể gợi ý vài API phổ biến, nhưng việc nối thư viện này với nhu cầu thực của agency/ecom/SEO Việt vẫn cần lớp curation thủ công."
 
 tags: ["api", "automation", "data", "agency", "ecom", "seo"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 22
+  costAdvantage: 8
+  deployment: 15
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-27
+nextReviewDueAt: 2026-09-27
 publishedAt: 2026-06-27
 week: "2026-W26"
 draft: false

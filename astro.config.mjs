@@ -109,6 +109,9 @@ function draftReviewPlugin() {
 // Đổi `site` sang domain thật khi chốt tên (PRD §12.1) để RSS/JSON feed có URL tuyệt đối.
 export default defineConfig({
   site: 'https://reporadar.vn',
+  server: {
+    port: Number(process.env.PORT) || 4321,
+  },
   vite: {
     plugins: [tailwindcss(), draftReviewPlugin()],
   },

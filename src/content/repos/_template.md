@@ -17,6 +17,11 @@ repoStats:
   stars: 0
   forks: 0
   note: "vd '~90 ngày tuổi, ~12 sao/ngày'"
+  starsPerDay: 0        # fetch-signals --json → .github.starsPerDay
+  ageDays: 0            # fetch-signals --json → .github.ageDays
+  pushedAt: ""          # fetch-signals --json → .github.pushedAt (ISO date)
+  archived: false       # fetch-signals --json → .github.archived
+  openIssues: 0         # fetch-signals --json → .github.openIssues
 standoutFeatures:
   - "Đặc điểm nổi bật 1 (khách quan)."
   - "Đặc điểm nổi bật 2."
@@ -74,6 +79,21 @@ creatorWhitespace: true # creator còn đất viết về tool này không
 aiCheck:
   canAIGetThis: false
   note: "Vì sao thông tin này practitioner KHÔNG tự lấy được từ Trending/hỏi AI."
+
+# === Signal Score v1 (Kịch bản A) ===
+# Hunt điền projectHealth (auto). Synthesize điền costAdvantage + evidenceLevel + confidence.
+# Edit điền useCaseFit + deployment + documentation + lastReviewedAt.
+scoreBreakdown:
+  useCaseFit: 0        # 0-25 — repo-radar-edit chấm (rubric trong skill)
+  projectHealth: 0     # 0-25 — fetch-signals --json → .github.suggestedHealthScore (auto)
+  costAdvantage: 0     # 0-20 — repo-radar-synthesize chấm
+  deployment: 0        # 0-15 — repo-radar-edit chấm
+  documentation: 0     # 0-15 — repo-radar-edit chấm
+scoringVersion: "v1"
+evidenceLevel: "C"     # A=lab-tested B=signal-reviewed C=discovery D=unverified — repo-radar-synthesize set
+confidence: "low"      # high | medium | low — repo-radar-synthesize set
+lastReviewedAt: ""     # repo-radar-edit set = ngày publish
+nextReviewDueAt: ""    # repo-radar-edit set = lastReviewedAt + 90 ngày
 
 # === Metadata ===
 tags: ["ai", "creative"]

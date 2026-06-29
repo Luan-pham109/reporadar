@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import RepoListItem from '../../components/RepoListItem.astro';
+import EvidenceCard from '../../components/EvidenceCard.astro';
 import { industryShort } from '../../lib/industries';
 import { includeDraft, shouldShowDrafts } from '../../lib/drafts';
 
@@ -191,6 +192,10 @@ const faqLd =
       </div>
     </div>
   </header>
+
+  <div class="mt-6">
+    <EvidenceCard data={r} />
+  </div>
 
   <section class="mt-6 grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
     <div class="rounded-lg border border-[var(--rr-border)] bg-white p-5">

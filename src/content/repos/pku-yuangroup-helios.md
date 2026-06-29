@@ -77,6 +77,17 @@ aiCheck:
   note: "AI có thể tóm tắt Helios là model video thời gian thực, nhưng góc áp vào bài toán lab motion cho team Việt và rào cản GPU cần lớp biên tập theo ngữ cảnh."
 
 tags: ["video-ai", "text-to-video", "image-to-video", "creative", "gpu"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 20
+  costAdvantage: 8
+  deployment: 3
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "B"
+confidence: "medium"
+lastReviewedAt: 2026-06-28
+nextReviewDueAt: 2026-09-28
 publishedAt: 2026-06-28
 week: "2026-W26"
 draft: false

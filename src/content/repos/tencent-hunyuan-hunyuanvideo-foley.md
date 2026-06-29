@@ -72,6 +72,17 @@ aiCheck:
   note: "AI có thể tóm tắt paper, nhưng góc dùng cho editor Việt cần đặt vào bài toán hậu kỳ âm thanh, quyền dùng và chất lượng bản nháp."
 
 tags: ["audio-ai", "foley", "video-ai", "creative", "sound-design"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 18
+  costAdvantage: 8
+  deployment: 3
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "B"
+confidence: "medium"
+lastReviewedAt: 2026-06-28
+nextReviewDueAt: 2026-09-28
 publishedAt: 2026-06-28
 week: "2026-W26"
 draft: false

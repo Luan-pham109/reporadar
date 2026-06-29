@@ -72,6 +72,17 @@ aiCheck:
   note: "AI có thể nói chung về vLLM, nhưng lớp ứng dụng thực tế cho team builder Việt ở bài toán multimodal serving vẫn cần biên tập theo ngữ cảnh."
 
 tags: ["inference", "multimodal", "self-host", "api", "creative", "ai-infra"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 22
+  costAdvantage: 8
+  deployment: 3
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "B"
+confidence: "medium"
+lastReviewedAt: 2026-06-27
+nextReviewDueAt: 2026-09-27
 publishedAt: 2026-06-27
 week: "2026-W26"
 draft: false

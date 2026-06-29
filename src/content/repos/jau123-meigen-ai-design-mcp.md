@@ -70,6 +70,17 @@ aiCheck:
   note: "AI có thể nêu MeiGen là MCP server, nhưng góc dùng cho đội creative Việt đã dùng agent và cần quản trị provider/chi phí là lớp biên tập riêng."
 
 tags: ["mcp", "design-ai", "image-ai", "video-ai", "creative", "agency"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 20
+  costAdvantage: 8
+  deployment: 3
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-28
+nextReviewDueAt: 2026-09-28
 publishedAt: 2026-06-28
 week: "2026-W26"
 draft: false

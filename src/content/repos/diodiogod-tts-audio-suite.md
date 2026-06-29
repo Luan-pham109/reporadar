@@ -73,6 +73,17 @@ aiCheck:
   note: "AI có thể liệt kê engine trong README, nhưng góc dùng cho creator Việt cần đặt đúng rủi ro tiếng Việt, quyền giọng và quy trình phụ đề."
 
 tags: ["tts", "audio-ai", "comfyui", "voice", "creative", "subtitle"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 18
+  costAdvantage: 8
+  deployment: 3
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-28
+nextReviewDueAt: 2026-09-28
 publishedAt: 2026-06-28
 week: "2026-W26"
 draft: false

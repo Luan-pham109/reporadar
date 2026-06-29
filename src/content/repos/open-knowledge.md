@@ -65,6 +65,17 @@ aiCheck:
   note: "Repo mới đăng 25/06 → nằm ngoài tri thức hầu hết model (độ trễ). Cộng việc CHƯA creator Việt nào viết → đúng vùng AI mù: 'cái này mới, đang nóng, ở VN chưa ai làm' không tự lấy được từ Trending/hỏi AI."
 
 tags: ["ai", "pkm", "note-taking", "markdown", "claude"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 19
+  costAdvantage: 8
+  deployment: 6
+  documentation: 6
+scoringVersion: "v1"
+evidenceLevel: "B"
+confidence: "medium"
+lastReviewedAt: 2026-06-26
+nextReviewDueAt: 2026-09-26
 publishedAt: 2026-06-26
 week: "2026-W26"
 draft: false

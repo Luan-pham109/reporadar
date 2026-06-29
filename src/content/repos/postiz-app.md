@@ -75,6 +75,17 @@ aiCheck:
   note: "AI mô tả được Postiz là gì (commodity). Nhưng cảnh báo 'ở VN đã có vnrom/nghiaapple/Bình dân học AI viết bài cài đặt rồi → đừng làm lại góc đó' là insight độ-bão-hoà mà practitioner không tự lấy chắc từ Trending/hỏi AI."
 
 tags: ["self-hosted", "social-media", "content-creator", "ai"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 25
+  costAdvantage: 14
+  deployment: 6
+  documentation: 15
+scoringVersion: "v1"
+evidenceLevel: "B"
+confidence: "medium"
+lastReviewedAt: 2026-06-26
+nextReviewDueAt: 2026-09-26
 publishedAt: 2026-06-26
 week: "2026-W26"
 draft: false

@@ -76,6 +76,17 @@ aiCheck:
   note: "AI có thể mô tả repo, nhưng cách đặt nó vào workflow brainstorm visual của team Việt vẫn cần lớp biên tập và keyword địa phương."
 
 tags: ["prompt", "image-generation", "creative", "ecom", "gpt-image-2"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 23
+  costAdvantage: 8
+  deployment: 15
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-27
+nextReviewDueAt: 2026-09-27
 publishedAt: 2026-06-27
 week: "2026-W26"
 draft: false

@@ -72,6 +72,17 @@ aiCheck:
   note: "AI có thể kể Dream Server là stack local AI, nhưng góc dùng nó như bản pilot private AI cho team Việt vẫn cần lớp biên tập theo ngữ cảnh."
 
 tags: ["self-host", "local-ai", "llm", "open-webui", "rag", "creative"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 20
+  costAdvantage: 8
+  deployment: 3
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "B"
+confidence: "medium"
+lastReviewedAt: 2026-06-27
+nextReviewDueAt: 2026-09-27
 publishedAt: 2026-06-27
 week: "2026-W26"
 draft: false

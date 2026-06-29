@@ -71,6 +71,17 @@ aiCheck:
   note: "AI có thể liệt kê tính năng, nhưng đánh giá vì sao repo này trượt sang vùng out theo tiêu chí RepoRadar vẫn cần lớp curation của người làm nội dung."
 
 tags: ["outreach", "automation", "lead-gen", "linkedin", "agency", "policy-risk"]
+scoreBreakdown:
+  useCaseFit: 6
+  projectHealth: 17
+  costAdvantage: 8
+  deployment: 6
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "B"
+confidence: "low"
+lastReviewedAt: 2026-06-27
+nextReviewDueAt: 2026-09-27
 publishedAt: 2026-06-27
 week: "2026-W26"
 draft: false

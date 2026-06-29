@@ -76,6 +76,17 @@ aiCheck:
   note: "AI có thể tóm tắt Pixelle-Video là công cụ tạo video tự động, nhưng góc dùng cho creator/agency Việt, rủi ro cấu hình và cách đặt nó vào workflow test nội dung là phần cần biên tập theo ngữ cảnh VN."
 
 tags: ["ai-video", "creative", "agency", "comfyui", "tts", "video-generation"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 25
+  costAdvantage: 8
+  deployment: 3
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-26
+nextReviewDueAt: 2026-09-26
 publishedAt: 2026-06-26
 week: "2026-W26"
 draft: false

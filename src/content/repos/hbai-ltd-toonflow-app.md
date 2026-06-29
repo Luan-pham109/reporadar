@@ -70,6 +70,17 @@ aiCheck:
   note: "AI có thể tóm tắt Toonflow, nhưng góc dùng cho creator Việt làm truyện/hoạt hình ngắn và cảnh báo tính nhất quán nhân vật cần biên tập."
 
 tags: ["ai-video", "animation", "storyboard", "creative", "desktop-app"]
+scoreBreakdown:
+  useCaseFit: 18
+  projectHealth: 22
+  costAdvantage: 8
+  deployment: 10
+  documentation: 10
+scoringVersion: "v1"
+evidenceLevel: "C"
+confidence: "medium"
+lastReviewedAt: 2026-06-26
+nextReviewDueAt: 2026-09-26
 publishedAt: 2026-06-26
 week: "2026-W26"
 draft: false

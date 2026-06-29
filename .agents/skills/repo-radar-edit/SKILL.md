@@ -107,7 +107,41 @@ AI engine trích những đoạn **trả lời thẳng, đứng một mình cũn
 4. Viết lại `practitionerGuide` nếu đã có khung từ synthesize: câu hành động, từng bước rõ, không biến thành bài cài đặt mơ hồ.
 5. Chạy luật lọc tầng đọc/member ở trên: nếu còn cụm nội bộ hoặc thuật ngữ làm câu khó hiểu trong field hiển thị, phải sửa ngay trong record trước khi xong.
 6. KHÔNG đổi field tầng phân tích.
-7. Đặt `draft: false` nếu Luan duyệt; ghi đè file. Chạy `npm run build`.
+7. **Chấm Signal Score (phần Edit phụ trách)** — điền vào `scoreBreakdown`:
+
+   **`useCaseFit`** (0–25):
+   | Điểm | Tiêu chí |
+   |---|---|
+   | 25 | ≥3 useCases cụ thể, đúng ngành, có con số; `workflowStepReplaced` rõ |
+   | 18 | ≥3 useCases, đúng ngành nhưng thiếu con số |
+   | 12 | useCases có nhưng chung chung |
+   | 6 | fit yếu/mơ hồ |
+   | 0 | không có useCases |
+
+   **`deployment`** (0–15):
+   | Điểm | Tiêu chí |
+   |---|---|
+   | 15 | Hosted/one-click/SaaS-like; chạy Windows; không cần GPU |
+   | 10 | Cài local đơn giản, prereq nhẹ |
+   | 6 | Cần Docker / setup kỹ thuật vừa |
+   | 3 | Cần GPU / self-host phức tạp |
+   | 0 | Rất khó / không rõ |
+
+   **`documentation`** (0–15):
+   | Điểm | Tiêu chí |
+   |---|---|
+   | 15 | README đầy đủ + media demo + quickstart chạy được + `practitionerGuide.steps` |
+   | 10 | README tốt + có demo |
+   | 6 | README cơ bản |
+   | 3 | Sơ sài |
+   | 0 | Gần như không có |
+
+   Ngoài ra điền:
+   - `scoringVersion: "v1"`
+   - `lastReviewedAt: <ngày publish hoặc ngày edit hôm nay>`
+   - `nextReviewDueAt: <lastReviewedAt + 90 ngày>`
+
+8. Đặt `draft: false` nếu Luan duyệt; ghi đè file. Chạy `npm run build`.
 
 ### Bản đồ viết field tầng đọc
 

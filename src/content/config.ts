@@ -49,7 +49,12 @@ const repos = defineCollection({
       .object({
         stars: z.number().optional(),
         forks: z.number().optional(),
-        note: z.string().default(''), // vd "~12 sao/ngày, 90 ngày tuổi"
+        note: z.string().default(''),
+        starsPerDay: z.number().optional(),
+        ageDays: z.number().int().optional(),
+        pushedAt: z.coerce.date().optional(),
+        archived: z.boolean().optional(),
+        openIssues: z.number().int().optional(),
       })
       .optional(),
     /** Đặc điểm nổi bật khách quan (Hunt) — vì sao tool này đáng để ý. */
@@ -130,6 +135,28 @@ const repos = defineCollection({
         note: z.string().default(''),
       })
       .default({ canAIGetThis: false, note: '' }),
+
+    // ---- Signal Score v1 (Kịch bản A) ----
+    /** Điểm thành phần — nguồn sự thật; tổng DERIVED qua computeScore(). */
+    scoreBreakdown: z
+      .object({
+        useCaseFit: z.number().int().min(0).max(25).optional(),
+        projectHealth: z.number().int().min(0).max(25).optional(),
+        costAdvantage: z.number().int().min(0).max(20).optional(),
+        deployment: z.number().int().min(0).max(15).optional(),
+        documentation: z.number().int().min(0).max(15).optional(),
+      })
+      .optional(),
+    /** Phiên bản rubric đã dùng để chấm, vd "v1". */
+    scoringVersion: z.string().optional(),
+    /** Mức bằng chứng: A=lab-tested, B=public-signal-reviewed, C=discovery, D=unverified-claim. */
+    evidenceLevel: z.enum(['A', 'B', 'C', 'D']).optional(),
+    /** Độ tin cậy tổng thể của đánh giá. */
+    confidence: z.enum(['high', 'medium', 'low']).optional(),
+    /** Ngày review gần nhất. */
+    lastReviewedAt: z.coerce.date().optional(),
+    /** Ngày review tiếp theo dự kiến. */
+    nextReviewDueAt: z.coerce.date().optional(),
 
     // ---- Phase 2 (để sẵn, chưa dùng) ----
     /** Trust score / sao thật-giả (0-100). Hoãn tới Phase 2. */
