@@ -14,7 +14,8 @@
     "publish:prod": "node scripts/deploy-production.mjs",
     "astro": "astro",
     "signals": "node scripts/fetch-signals.mjs",
-    "daily": "node scripts/run-daily-pipeline.mjs"
+    "daily": "node scripts/run-daily-pipeline.mjs",
+    "dev:functions": "npm run build && wrangler pages dev dist"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.11",

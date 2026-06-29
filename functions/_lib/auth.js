@@ -3,9 +3,6 @@ const OAUTH_STATE_COOKIE = 'rr_oauth_state';
 const OAUTH_RETURN_COOKIE = 'rr_oauth_return';
 
 const DEFAULT_SESSION_TTL_SECONDS = 60 * 60 * 24 * 30;
-const PASSWORD_ITERATIONS = 210000;
-const PASSWORD_SALT_BYTES = 16;
-const PASSWORD_HASH_BYTES = 32;
 
 const encoder = new TextEncoder();
 
@@ -100,34 +97,6 @@ export function getSessionTtl(env) {
   const configured = Number(env.AUTH_SESSION_TTL_SECONDS || DEFAULT_SESSION_TTL_SECONDS);
   if (!Number.isFinite(configured) || configured < 3600) return DEFAULT_SESSION_TTL_SECONDS;
   return Math.floor(configured);
-}
-
-export async function hashPassword(password) {
-  const salt = randomBytes(PASSWORD_SALT_BYTES);
-  const key = await crypto.subtle.importKey('raw', encoder.encode(password), 'PBKDF2', false, ['deriveBits']);
-  const bits = await crypto.subtle.deriveBits(
-    { name: 'PBKDF2', hash: 'SHA-256', salt, iterations: PASSWORD_ITERATIONS },
-    key,
-    PASSWORD_HASH_BYTES * 8,
-  );
-  return `pbkdf2:sha256:${PASSWORD_ITERATIONS}:${base64Url(salt)}:${base64Url(new Uint8Array(bits))}`;
-}
-
-export async function verifyPassword(password, encodedHash) {
-  const parts = String(encodedHash || '').split(':');
-  if (parts.length !== 5 || parts[0] !== 'pbkdf2' || parts[1] !== 'sha256') return false;
-  const iterations = Number(parts[2]);
-  if (!Number.isInteger(iterations) || iterations < 100000) return false;
-
-  const salt = fromBase64Url(parts[3]);
-  const expected = fromBase64Url(parts[4]);
-  const key = await crypto.subtle.importKey('raw', encoder.encode(password), 'PBKDF2', false, ['deriveBits']);
-  const bits = await crypto.subtle.deriveBits(
-    { name: 'PBKDF2', hash: 'SHA-256', salt, iterations },
-    key,
-    expected.byteLength * 8,
-  );
-  return constantTimeEqual(new Uint8Array(bits), expected);
 }
 
 export async function getUserByEmail(kv, email) {

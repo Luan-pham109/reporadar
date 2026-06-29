@@ -1,0 +1,17 @@
+{
+  "name": "reporadar-vn",
+  "compatibility_date": "2024-11-01",
+  "pages_build_output_dir": "dist",
+  "kv_namespaces": [
+    {
+      "binding": "AUTH_KV",
+      "id": "95115b17d4574df8983e68487bc49aa3",
+      "preview_id": "f081d35369474014b85cc71ca42f190c"
+    },
+    {
+      "binding": "ANALYTICS_KV",
+      "id": "8bc10547cfef4e72ad26d6891e9ddd77",
+      "preview_id": "22cde998cd23405eab1bd21509054d00"
+    }
+  ]
+}
