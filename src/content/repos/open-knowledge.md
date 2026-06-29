@@ -58,6 +58,9 @@ greyHatFlag: "in"
 
 suggestedAngle: "'Bộ não thứ hai mà AI thực sự đọc được' — đánh thẳng vào người đã dùng Obsidian/Notion ở VN. Nhấn 2 điểm: AI-native (Claude/Codex sửa note trực tiếp) + sở hữu dữ liệu (git/markdown, không khoá vendor)."
 paidToolReplaced: "Notion (bản trả phí) / Obsidian Sync"
+alternativeTo:
+  - name: "Notion"
+    slug: "notion"
 creatorWhitespace: true
 
 aiCheck:

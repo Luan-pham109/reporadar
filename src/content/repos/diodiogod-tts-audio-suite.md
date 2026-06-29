@@ -66,6 +66,9 @@ greyHatFlag: "borderline"
 
 suggestedAngle: "Góc nên viết: bộ node ComfyUI cho voice-over, SRT và thử nhiều giọng AI trong một luồng làm video."
 paidToolReplaced: "Một phần thao tác ở ElevenLabs, CapCut voice, tool phụ đề và app chỉnh audio khi làm bản nháp"
+alternativeTo:
+  - name: "ElevenLabs"
+    slug: "elevenlabs"
 creatorWhitespace: true
 
 aiCheck:

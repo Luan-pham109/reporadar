@@ -65,6 +65,9 @@ greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: bộ cài local AI all-in-one cho team muốn thử private AI mà không muốn tự nối từng service."
 paidToolReplaced: "Một phần công sức tự lắp Ollama, Open WebUI, n8n, Qdrant, ComfyUI và các thành phần private AI khác"
+alternativeTo:
+  - name: "Ollama"
+    slug: "ollama"
 creatorWhitespace: true
 
 aiCheck:

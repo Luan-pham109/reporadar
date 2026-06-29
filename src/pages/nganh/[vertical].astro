@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import RepoCard from '../../components/RepoCard.astro';
 import IndustryNav from '../../components/IndustryNav.astro';
-import TagFilter from '../../components/TagFilter.astro';
+import FacetFilter from '../../components/FacetFilter.astro';
 import { INDUSTRIES, entriesInIndustry } from '../../lib/industries';
 import { includeDraft } from '../../lib/drafts';
 
@@ -25,12 +25,28 @@ const title = `${industry.label} alternatives & AI/open-source tools | AltStack`
 const replacementCount = entries.filter((entry) => entry.data.paidToolReplaced).length;
 const riskCount = entries.filter((entry) => entry.data.usabilityRisk).length;
 const preViralCount = entries.filter((entry) => entry.data.maturity === 'pre-viral').length;
+
+const maturityLabel: Record<string, string> = {
+  'pre-viral': 'Pre-viral',
+  rising: 'Rising',
+  established: 'Established',
+};
+
+const maturityCounts = ['pre-viral', 'rising', 'established']
+  .map((value) => ({
+    value,
+    label: maturityLabel[value],
+    count: entries.filter((entry) => entry.data.maturity === value).length,
+  }))
+  .filter((item) => item.count > 0);
+
 const tagCounts = [...entries.reduce((counts, entry) => {
   for (const tag of entry.data.tags) counts.set(tag, (counts.get(tag) ?? 0) + 1);
   return counts;
 }, new Map<string, number>())]
-  .map(([tag, count]) => ({ tag, count }))
-  .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag));
+  .map(([tag, count]) => ({ value: tag.toLowerCase(), label: tag, count }))
+  .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'vi'))
+  .slice(0, 18);
 ---
 
 <BaseLayout title={title} description={industry.blurb}>
@@ -74,11 +90,13 @@ const tagCounts = [...entries.reduce((counts, entry) => {
     </div>
     <IndustryNav active={industry.slug} showHot />
     <div class="mt-4">
-      <TagFilter
-        tags={tagCounts}
+      <FacetFilter
+        facets={{ maturity: maturityCounts, tag: tagCounts }}
+        enabledFacets={['maturity', 'tag']}
         basePath={`/nganh/${industry.slug}`}
+        anchorId="stack-grid"
         label="Filter this stack"
-        description={`Lọc ${industry.short} stack theo tag để tìm repo gần nhất với bài toán hiện tại.`}
+        description={`Lọc ${industry.short} stack theo maturity và tag để tìm repo gần nhất với bài toán hiện tại.`}
       />
     </div>
   </section>
@@ -88,7 +106,7 @@ const tagCounts = [...entries.reduce((counts, entry) => {
       Chưa có công cụ nào trong ngành này. Xem <a href="/" class="font-semibold text-[var(--rr-core)] hover:underline">trang chủ</a> hoặc thử một ngành khác phía trên.
     </p>
   ) : (
-    <section class="mt-8">
+    <section id="stack-grid" class="mt-8">
       <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
         <div>
           <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Tool intelligence briefs</p>

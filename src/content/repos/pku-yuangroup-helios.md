@@ -70,6 +70,9 @@ greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: lab video AI tự host cho team muốn thử motion dài hơn, không chỉ clip vài giây."
 paidToolReplaced: "Một phần credit thử nghiệm trên Runway, Kling, Pika hoặc các SaaS video AI ở vòng concept"
+alternativeTo:
+  - name: "Runway"
+    slug: "runway"
 creatorWhitespace: true
 
 aiCheck:

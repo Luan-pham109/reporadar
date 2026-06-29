@@ -69,6 +69,9 @@ greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: tạo bản nháp proposal/deck trong 30 phút bằng Codex, rồi designer chỉ polish brand."
 paidToolReplaced: "Gamma / Tome / Canva Docs-to-Deck / một phần việc làm PowerPoint thủ công"
+alternativeTo:
+  - name: "Gamma"
+    slug: "gamma"
 creatorWhitespace: true
 
 aiCheck:

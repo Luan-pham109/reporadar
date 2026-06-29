@@ -69,6 +69,9 @@ greyHatFlag: "borderline"
 
 suggestedAngle: "Góc nên viết: 'Dùng Pixelle-Video để dựng 10 bản nháp Shorts/Reels từ 10 ý tưởng nội dung trong một buổi' thay vì chỉ làm bài cài đặt."
 paidToolReplaced: "Runway / Pika / CapCut AI / các gói SaaS tạo video AI"
+alternativeTo:
+  - name: "Runway"
+    slug: "runway"
 creatorWhitespace: true
 
 aiCheck:

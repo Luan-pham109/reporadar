@@ -68,6 +68,9 @@ greyHatFlag: "in"
 
 suggestedAngle: "Đừng làm lại bài 'cài Postiz' (đã bão hoà). Góc còn đất: 'Agency/creator VN bỏ Buffer, tự chạy đa kênh bằng Postiz' — tập trung workflow + tiết kiệm phí USD, không phải hướng dẫn Docker."
 paidToolReplaced: "Buffer / Hootsuite / Hypefury"
+alternativeTo:
+  - name: "Buffer"
+    slug: "buffer"
 creatorWhitespace: true
 
 aiCheck:

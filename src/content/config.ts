@@ -125,6 +125,14 @@ const repos = defineCollection({
     /** Thay thế tool trả phí nào (vd "ComfyUI ↔ Midjourney"). */
     paidToolReplaced: z.string().optional(),
     /** Nhánh khuếch đại: creator còn đất viết về tool này không (logic "bão hoà" cũ). */
+    alternativeTo: z
+      .array(
+        z.object({
+          name: z.string(),
+          slug: z.string(),
+        }),
+      )
+      .default([]),
     creatorWhitespace: z.boolean().default(true),
 
     // ---- Kiểm chứng "hơn-AI" (KR#5, PRD §9) ----

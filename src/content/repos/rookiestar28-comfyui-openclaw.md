@@ -71,6 +71,9 @@ greyHatFlag: "borderline"
 
 suggestedAngle: "Góc nên viết: biến ComfyUI từ tool cá nhân thành xưởng nội bộ có bot/API, nhưng phải kể rõ rào cản bảo mật."
 paidToolReplaced: "Một phần nhu cầu dùng Make, Zapier, bot nội bộ hoặc dashboard tự viết để điều phối request tạo ảnh/video"
+alternativeTo:
+  - name: "Make"
+    slug: "make"
 creatorWhitespace: true
 
 aiCheck:

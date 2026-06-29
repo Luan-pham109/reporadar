@@ -1,0 +1,111 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { ownerAvatar, relativeTime } from '../lib/alternatives';
+import { industryShort } from '../lib/industries';
+
+interface Props {
+  entry: CollectionEntry<'repos'>;
+}
+
+const { entry } = Astro.props;
+const r = entry.data;
+
+const avatarUrl = ownerAvatar(r.repoUrl);
+const fallbackInitial = r.name.trim().charAt(0).toUpperCase() || 'R';
+const primaryAlternative = r.alternativeTo[0];
+const lastCommit = relativeTime(r.repoStats?.pushedAt);
+const filterTags = r.tags.map((tag) => tag.toLowerCase()).join('|');
+const filterVertical = r.vertical.map((vertical) => vertical.toLowerCase()).join('|');
+const maturityLabel =
+  r.maturity === 'pre-viral' ? 'Pre-viral' : r.maturity === 'established' ? 'Established' : 'Rising';
+const stats = [
+  r.repoStats?.stars != null ? `${r.repoStats.stars.toLocaleString('vi-VN')} stars` : null,
+  r.repoStats?.forks != null ? `${r.repoStats.forks.toLocaleString('vi-VN')} forks` : null,
+  lastCommit,
+].filter(Boolean);
+---
+
+<article
+  class="group flex h-full flex-col rounded-xl border border-[var(--rr-border)] bg-white p-5 shadow-[0_1px_0_rgba(15,23,42,0.02)] transition-colors hover:border-[var(--rr-border-strong)]"
+  data-filter-tags={filterTags}
+  data-filter-vertical={filterVertical}
+  data-filter-maturity={r.maturity}
+>
+  <div class="flex items-start justify-between gap-3">
+    <div class="flex min-w-0 items-start gap-3">
+      <div class="relative mt-0.5 h-11 w-11 shrink-0 overflow-hidden rounded-full border border-[var(--rr-border)] bg-[var(--rr-surface-soft)]">
+        {avatarUrl && (
+          <img
+            src={avatarUrl}
+            alt=""
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            class="h-full w-full object-cover"
+            onerror="this.style.display='none';this.nextElementSibling?.classList.remove('hidden');"
+          />
+        )}
+        <span class:list={['grid h-full w-full place-items-center text-sm font-semibold text-[var(--rr-core)]', avatarUrl ? 'hidden' : '']}>
+          {fallbackInitial}
+        </span>
+      </div>
+
+      <div class="min-w-0">
+        <div class="flex flex-wrap gap-2">
+          <span class="rounded-full border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] px-2 py-0.5 text-[11px] font-semibold text-[var(--rr-muted)]">
+            {maturityLabel}
+          </span>
+          {r.vertical[0] && (
+            <span class="rounded-full border border-[var(--rr-border)] px-2 py-0.5 text-[11px] font-semibold text-[var(--rr-muted)]">
+              {industryShort(r.vertical[0])}
+            </span>
+          )}
+        </div>
+        <h2 class="mt-2 truncate text-lg font-semibold text-[var(--rr-text)]">
+          <a href={`/repos/${entry.id}`} class="no-underline group-hover:text-[var(--rr-core)]">{r.name}</a>
+        </h2>
+        <p class="mt-1 line-clamp-2 text-sm leading-6 text-[var(--rr-muted)]">{r.oneLiner}</p>
+      </div>
+    </div>
+
+    <span class="shrink-0 rounded-full border border-[var(--rr-open)]/25 bg-[var(--rr-open)]/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-green-700">
+      Open Source
+    </span>
+  </div>
+
+  {stats.length > 0 && (
+    <div class="mt-4 flex flex-wrap gap-x-3 gap-y-1 border-y border-[var(--rr-border)] py-3 text-xs font-medium text-[var(--rr-muted)]">
+      {stats.map((stat) => (
+        <span>{stat}</span>
+      ))}
+    </div>
+  )}
+
+  <p class="mt-4 line-clamp-3 text-sm leading-6 text-[var(--rr-text)]">{r.localProblem}</p>
+
+  <div class="mt-4 flex flex-wrap gap-2">
+    {primaryAlternative && (
+      <a
+        href={`/alternatives/${primaryAlternative.slug}`}
+        class="rounded-full border border-[var(--rr-open)]/35 bg-[var(--rr-open)]/10 px-3 py-1 text-xs font-semibold text-green-700 no-underline hover:border-[var(--rr-open)]"
+      >
+        Alternative to: {primaryAlternative.name}
+      </a>
+    )}
+    {r.tags.slice(0, 2).map((tag) => (
+      <span class="rounded-full border border-[var(--rr-border)] px-3 py-1 text-xs font-medium text-[var(--rr-muted)]">#{tag}</span>
+    ))}
+  </div>
+
+  <a
+    href={`/repos/${entry.id}`}
+    class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[var(--rr-core)] no-underline"
+    data-track-event="repo_brief_open"
+    data-track-label="repo_card_flat_open"
+    data-track-prop-surface="repo_card_flat"
+    data-track-prop-repo-slug={entry.id}
+    data-track-prop-repo-name={r.name}
+  >
+    Open decision brief
+    <span aria-hidden="true">→</span>
+  </a>
+</article>

@@ -87,6 +87,9 @@ greyHatFlag: "in"
 
 suggestedAngle: "So sánh thẳng chi phí: Jira/Linear theo seat/tháng vs Plane tự host miễn phí — kèm hướng dẫn dựng trong 30 phút cho team 10 người."
 paidToolReplaced: "Jira / Linear / Trello bản trả phí"
+alternativeTo:
+  - name: "Jira"
+    slug: "jira"
 creatorWhitespace: true
 
 aiCheck:

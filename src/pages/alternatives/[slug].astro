@@ -1,0 +1,117 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RepoListItem from '../../components/RepoListItem.astro';
+import { groupByAlternative } from '../../lib/alternatives';
+import { includeDraft } from '../../lib/drafts';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('repos', ({ data }) => includeDraft(data));
+  const groups = [...groupByAlternative(entries).values()]
+    .filter((group) => group.entries.length > 0)
+    .map((group) => ({
+      ...group,
+      entries: [...group.entries].sort(
+        (a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime(),
+      ),
+    }))
+    .sort((a, b) => b.entries.length - a.entries.length || a.name.localeCompare(b.name, 'vi'));
+
+  return groups.map((group) => ({
+    params: { slug: group.slug },
+    props: { group },
+  }));
+}
+
+interface Props {
+  group: {
+    slug: string;
+    name: string;
+    entries: CollectionEntry<'repos'>[];
+  };
+}
+
+const { group } = Astro.props as Props;
+const title = `${group.name}: các lựa chọn open-source thay thế | AltStack`;
+const description = `Các repo open-source trong AltStack có thể thay ${group.name}, kèm brief để biết repo nào đáng thử và repo nào chỉ nên theo dõi.`;
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname;
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'AltStack',
+      item: 'https://altstack.io.vn/',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Alternatives',
+      item: 'https://altstack.io.vn/alternatives/',
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: group.name,
+      item: canonical,
+    },
+  ],
+};
+
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: `Open-source alternatives to ${group.name}`,
+  itemListElement: group.entries.map((entry, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: entry.data.name,
+    url: `https://altstack.io.vn/repos/${entry.id}/`,
+  })),
+};
+---
+
+<BaseLayout title={title} description={description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListLd)} />
+  </Fragment>
+
+  <div class="flex flex-wrap items-center gap-2 text-sm text-[var(--rr-muted)]">
+    <a href="/" class="no-underline hover:text-[var(--rr-core)]">AltStack</a>
+    <span>/</span>
+    <a href="/alternatives" class="no-underline hover:text-[var(--rr-core)]">Alternatives</a>
+    <span>/</span>
+    <span class="text-[var(--rr-text)]">{group.name}</span>
+  </div>
+
+  <section class="mt-4 rounded-[var(--rr-radius-lg)] border border-[var(--rr-border)] bg-white p-6 shadow-[var(--rr-shadow-sm)]">
+    <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-core)]">Alternative to</p>
+    <h1 class="mt-2 text-3xl font-semibold text-[var(--rr-text)] sm:text-4xl">Open-source alternatives to {group.name}</h1>
+    <p class="mt-3 max-w-3xl text-sm leading-6 text-[var(--rr-muted)]">
+      Đây là các repo trong AltStack có thể thay toàn phần hoặc một phần workflow đang dùng {group.name}.
+      Mỗi brief ưu tiên trả lời nhanh: đáng thử ngay, nên theo dõi thêm, hay dễ mất thời gian vì setup quá nặng.
+    </p>
+    <div class="mt-5 flex flex-wrap gap-3 text-sm text-[var(--rr-muted)]">
+      <span class="rounded-full bg-[var(--rr-surface-soft)] px-3 py-1.5">{group.entries.length} repo liên quan</span>
+      <a href="/alternatives" class="rounded-full border border-[var(--rr-border)] px-3 py-1.5 no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]">
+        Xem tất cả brand
+      </a>
+    </div>
+  </section>
+
+  <section class="mt-6">
+    <div class="mb-4">
+      <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">Decision briefs</p>
+      <h2 class="mt-1 text-2xl font-semibold">Repo nào đáng mở tab trước</h2>
+    </div>
+    <div class="flex flex-col gap-3">
+      {group.entries.map((entry) => (
+        <RepoListItem entry={entry} />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

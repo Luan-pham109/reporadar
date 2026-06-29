@@ -69,6 +69,9 @@ greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: dùng thư viện prompt như moodboard có công thức cho social team, designer và shop nhỏ."
 paidToolReplaced: "Một phần thời gian research trên Pinterest, prompt marketplace hoặc feed inspiration"
+alternativeTo:
+  - name: "Pinterest"
+    slug: "pinterest"
 creatorWhitespace: true
 
 aiCheck:

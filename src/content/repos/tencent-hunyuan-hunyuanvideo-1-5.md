@@ -63,6 +63,9 @@ greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: dựng motion lab nội bộ bằng model video mở để test idea nhanh trước khi đổ tiền vào SaaS."
 paidToolReplaced: "Một phần credit ở Runway, Kling, Pika hoặc các SaaS video AI dùng cho vòng thử ý tưởng đầu"
+alternativeTo:
+  - name: "Runway"
+    slug: "runway"
 creatorWhitespace: true
 
 aiCheck:

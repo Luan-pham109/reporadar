@@ -1,0 +1,205 @@
+---
+type FacetKey = 'vertical' | 'maturity' | 'tag';
+
+interface FacetOption {
+  value: string;
+  label: string;
+  count: number;
+}
+
+interface Props {
+  facets: Partial<Record<FacetKey, FacetOption[]>>;
+  enabledFacets?: FacetKey[];
+  basePath?: string;
+  anchorId?: string;
+  orientation?: 'horizontal' | 'vertical';
+  label?: string;
+  description?: string;
+}
+
+const {
+  facets,
+  enabledFacets = ['vertical', 'maturity', 'tag'],
+  basePath = Astro.url.pathname,
+  anchorId = 'radar',
+  orientation = 'horizontal',
+  label = 'Filter the radar',
+  description = 'Kết hợp vertical, maturity và tag để thu hẹp nhanh danh sách repo.',
+} = Astro.props;
+
+const rootClass = [
+  'rounded-lg border border-[var(--rr-border)] bg-white p-4',
+  orientation === 'vertical' ? 'lg:sticky lg:top-24' : '',
+];
+const groupsClass = orientation === 'vertical' ? 'grid gap-4' : 'grid gap-4 lg:grid-cols-3';
+
+const facetMeta: Record<FacetKey, { title: string; allLabel: string }> = {
+  vertical: { title: 'Vertical', allLabel: 'All verticals' },
+  maturity: { title: 'Maturity', allLabel: 'All maturity' },
+  tag: { title: 'Tag', allLabel: 'All tags' },
+};
+---
+
+<div
+  class:list={rootClass}
+  data-facet-filter-root
+  data-facet-base-path={basePath}
+  data-facet-anchor={anchorId}
+  data-facet-enabled={enabledFacets.join('|')}
+>
+  <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
+    <div>
+      <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">{label}</p>
+      <p class="mt-1 text-sm leading-6 text-[var(--rr-muted)]">{description}</p>
+    </div>
+    <p class="hidden rounded-md bg-[var(--rr-core)]/10 px-2.5 py-1 text-xs font-bold text-[var(--rr-core)]" data-facet-filter-status></p>
+  </div>
+
+  <div class={groupsClass}>
+    {enabledFacets.map((facetKey) => {
+      const options = facets[facetKey] ?? [];
+      const meta = facetMeta[facetKey];
+
+      return (
+        <section>
+          <p class="mb-2 text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]">{meta.title}</p>
+          <div class="flex flex-wrap gap-2">
+            <a
+              href={`${basePath}#${anchorId}`}
+              class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] px-3 py-1.5 text-xs font-semibold text-[var(--rr-text)] no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]"
+              data-facet-key={facetKey}
+              data-facet-value="__all"
+            >
+              {meta.allLabel}
+            </a>
+            {options.map((option) => (
+              <a
+                href={`${basePath}#${anchorId}`}
+                class="rounded-md border border-[var(--rr-border)] bg-white px-3 py-1.5 text-xs font-semibold text-[var(--rr-muted)] no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]"
+                data-facet-key={facetKey}
+                data-facet-value={option.value}
+              >
+                {facetKey === 'tag' ? `#${option.label}` : option.label}{' '}
+                <span class="text-[var(--rr-faint)]">{option.count}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      );
+    })}
+  </div>
+</div>
+
+<script>
+  function applyFacetFilter() {
+    const roots = Array.from(document.querySelectorAll('[data-facet-filter-root]'));
+    const cards = Array.from(document.querySelectorAll('[data-filter-tags]'));
+    const enabled = roots[0] instanceof HTMLElement
+      ? (roots[0].dataset.facetEnabled || '').split('|').filter(Boolean)
+      : ['vertical', 'maturity', 'tag'];
+    const params = new URLSearchParams(window.location.search);
+    const selected = {
+      vertical: enabled.includes('vertical') ? (params.get('vertical') || '').trim().toLowerCase() : '',
+      maturity: enabled.includes('maturity') ? (params.get('maturity') || '').trim().toLowerCase() : '',
+      tag: enabled.includes('tag') ? (params.get('tag') || '').trim().toLowerCase() : '',
+    };
+
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+      const tagText = (card.getAttribute('data-filter-tags') || '').toLowerCase();
+      const verticalText = (card.getAttribute('data-filter-vertical') || '').toLowerCase();
+      const maturityText = (card.getAttribute('data-filter-maturity') || '').toLowerCase();
+
+      const tags = tagText.split('|').filter(Boolean);
+      const verticals = verticalText.split('|').filter(Boolean);
+      const matchesVertical = !selected.vertical || verticals.includes(selected.vertical);
+      const matchesMaturity = !selected.maturity || maturityText === selected.maturity;
+      const matchesTag = !selected.tag || tags.includes(selected.tag);
+      const visible = matchesVertical && matchesMaturity && matchesTag;
+
+      card.classList.toggle('hidden', !visible);
+      if (visible) visibleCount += 1;
+    });
+
+    roots.forEach((root) => {
+      root.querySelectorAll('[data-facet-key]').forEach((link) => {
+        if (!(link instanceof HTMLElement)) return;
+        const facetKey = link.dataset.facetKey;
+        const facetValue = link.dataset.facetValue || '';
+        if (!facetKey) return;
+        const activeValue = getSelectedValue(selected, facetKey);
+
+        const active =
+          (!activeValue && facetValue === '__all') || activeValue === facetValue;
+
+        link.classList.toggle('border-[var(--rr-core)]', active);
+        link.classList.toggle('bg-[var(--rr-core)]/10', active);
+        link.classList.toggle('text-[var(--rr-core)]', active);
+      });
+
+      const status = root.querySelector('[data-facet-filter-status]');
+      if (status instanceof HTMLElement) {
+        const hasSelection = Boolean(selected.vertical || selected.maturity || selected.tag);
+        status.classList.toggle('hidden', !hasSelection);
+        status.textContent = hasSelection ? `${visibleCount} match${visibleCount === 1 ? '' : 'es'}` : '';
+      }
+    });
+  }
+
+  function getSelectedValue(selected, facetKey) {
+    if (facetKey === 'vertical') return selected.vertical;
+    if (facetKey === 'maturity') return selected.maturity;
+    if (facetKey === 'tag') return selected.tag;
+    return '';
+  }
+
+  function updateFacetUrl(facetKey, facetValue, root) {
+    const params = new URLSearchParams(window.location.search);
+    const enabled = (root.dataset.facetEnabled || '').split('|').filter(Boolean);
+
+    if (facetValue === '__all') {
+      params.delete(facetKey);
+    } else {
+      params.set(facetKey, facetValue);
+    }
+
+    for (const key of ['vertical', 'maturity', 'tag']) {
+      if (!enabled.includes(key)) params.delete(key);
+    }
+
+    const query = params.toString();
+    const basePath = root.dataset.facetBasePath || window.location.pathname;
+    const anchor = root.dataset.facetAnchor ? `#${root.dataset.facetAnchor}` : '';
+    const nextUrl = `${basePath}${query ? `?${query}` : ''}${anchor}`;
+
+    window.history.pushState({}, '', nextUrl);
+    applyFacetFilter();
+  }
+
+  applyFacetFilter();
+
+  document.addEventListener('click', (event) => {
+    const target = event.target instanceof Element ? event.target.closest('[data-facet-key]') : null;
+    if (!(target instanceof HTMLElement)) return;
+
+    const root = target.closest('[data-facet-filter-root]');
+    if (!(root instanceof HTMLElement)) return;
+
+    event.preventDefault();
+
+    const facetKey = target.dataset.facetKey || '';
+    const facetValue = target.dataset.facetValue || '__all';
+    updateFacetUrl(facetKey, facetValue, root);
+
+    if (typeof window.altstackTrack === 'function') {
+      window.altstackTrack('facet_filter_click', {
+        facet: facetKey,
+        value: facetValue,
+        surface: root.dataset.facetAnchor || 'facet_filter',
+      });
+    }
+  });
+
+  window.addEventListener('popstate', applyFacetFilter);
+</script>

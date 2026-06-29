@@ -2,13 +2,16 @@
 import type { CollectionEntry } from 'astro:content';
 import SignalBadge from './SignalBadge.astro';
 import { industryShort } from '../lib/industries';
+import { ownerAvatar, relativeTime } from '../lib/alternatives';
 
 interface Props {
   entry: CollectionEntry<'repos'>;
+  layout?: 'list' | 'grid';
 }
 
-const { entry } = Astro.props;
+const { entry, layout = 'list' } = Astro.props;
 const r = entry.data;
+const isGrid = layout === 'grid';
 
 const dateStr = r.publishedAt.toLocaleDateString('vi-VN', {
   day: '2-digit',
@@ -19,29 +22,47 @@ const greyTone = r.greyHatFlag === 'out' ? 'danger' : r.greyHatFlag === 'borderl
 const thumb = r.media.find((m) => m.type === 'image');
 const primaryVertical = r.vertical[0] ? industryShort(r.vertical[0]) : null;
 const secondaryVerticals = r.vertical.slice(1).map((v) => industryShort(v));
-const stars = r.repoStats?.stars;
+const avatarUrl = ownerAvatar(r.repoUrl);
+const fallbackInitial = r.name.trim().charAt(0).toUpperCase() || 'R';
+const lastCommit = relativeTime(r.repoStats?.pushedAt);
+const primaryAlternative = r.alternativeTo[0];
 const filterTags = r.tags.map((tag) => tag.toLowerCase()).join('|');
+const filterVertical = r.vertical.map((vertical) => vertical.toLowerCase()).join('|');
+const stats = [
+  r.repoStats?.stars != null ? `${r.repoStats.stars.toLocaleString('vi-VN')} stars` : null,
+  r.repoStats?.forks != null ? `${r.repoStats.forks.toLocaleString('vi-VN')} forks` : null,
+  lastCommit ? `${lastCommit}` : null,
+].filter(Boolean);
 ---
 
-<article class="group rounded-lg as-card transition-colors" data-filter-tags={filterTags}>
-  <a
-    href={`/repos/${entry.id}`}
-    class="grid gap-4 p-4 no-underline sm:grid-cols-[112px_1fr_auto] sm:items-start"
-    data-track-event="repo_brief_open"
-    data-track-label="repo_list_item"
-    data-track-prop-surface="repo_list"
-    data-track-prop-repo-slug={entry.id}
-    data-track-prop-repo-name={r.name}
-  >
+<article
+  class:list={['group rounded-lg as-card transition-colors', isGrid ? 'h-full' : '']}
+  data-filter-tags={filterTags}
+  data-filter-vertical={filterVertical}
+  data-filter-maturity={r.maturity}
+>
+  <div class:list={[
+    isGrid ? 'flex h-full flex-col gap-4 p-4' : 'grid gap-4 p-4 sm:grid-cols-[112px_1fr_auto] sm:items-start',
+  ]}>
     {thumb ? (
-      <img
-        src={thumb.url}
-        alt={thumb.caption ?? r.name}
-        loading="lazy"
-        class="hidden aspect-[4/3] h-20 w-28 rounded-md border border-[var(--rr-border)] object-cover sm:block"
-      />
+      <a
+        href={`/repos/${entry.id}`}
+        class:list={[isGrid ? 'hidden' : 'hidden sm:block']}
+        data-track-event="repo_brief_open"
+        data-track-label="repo_list_item_thumb"
+        data-track-prop-surface="repo_list"
+        data-track-prop-repo-slug={entry.id}
+        data-track-prop-repo-name={r.name}
+      >
+        <img
+          src={thumb.url}
+          alt={thumb.caption ?? r.name}
+          loading="lazy"
+          class="aspect-[4/3] h-20 w-28 rounded-md border border-[var(--rr-border)] object-cover"
+        />
+      </a>
     ) : (
-      <div class="hidden h-20 w-28 rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] as-grid-bg sm:block"></div>
+      <div class:list={[isGrid ? 'hidden' : 'hidden h-20 w-28 rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] as-grid-bg sm:block']}></div>
     )}
 
     <div class="min-w-0">
@@ -63,27 +84,82 @@ const filterTags = r.tags.map((tag) => tag.toLowerCase()).join('|');
         )}
       </div>
 
-      <h3 class="truncate text-lg font-semibold group-hover:text-[var(--rr-core)]">{r.name}</h3>
-      <p class="mt-1 line-clamp-2 text-sm leading-5 text-[var(--rr-muted)]">{r.oneLiner}</p>
+      <div class="flex items-start gap-3">
+        <div class="relative mt-0.5 h-10 w-10 shrink-0 overflow-hidden rounded-full border border-[var(--rr-border)] bg-[var(--rr-surface-soft)]">
+          {avatarUrl && (
+            <img
+              src={avatarUrl}
+              alt=""
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              class="h-full w-full object-cover"
+              onerror="this.style.display='none';this.nextElementSibling?.classList.remove('hidden');"
+            />
+          )}
+          <span class:list={['grid h-full w-full place-items-center text-sm font-semibold text-[var(--rr-core)]', avatarUrl ? 'hidden' : '']}>
+            {fallbackInitial}
+          </span>
+        </div>
 
-      <div class="mt-3 grid gap-2 text-xs text-[var(--rr-muted)] sm:grid-cols-2">
-        {r.paidToolReplaced && (
-          <p class="rounded-md bg-[var(--rr-surface-soft)] px-2.5 py-2">
-            <span class="font-semibold text-[var(--rr-text)]">Replaces:</span> {r.paidToolReplaced}
-          </p>
+        <div class="min-w-0 flex-1">
+          <h3 class="truncate text-lg font-semibold text-[var(--rr-text)] group-hover:text-[var(--rr-core)]">
+            <a
+              href={`/repos/${entry.id}`}
+              class="no-underline hover:text-[var(--rr-core)]"
+              data-track-event="repo_brief_open"
+              data-track-label="repo_list_item"
+              data-track-prop-surface="repo_list"
+              data-track-prop-repo-slug={entry.id}
+              data-track-prop-repo-name={r.name}
+            >
+              {r.name}
+            </a>
+          </h3>
+          <p class="mt-1 line-clamp-2 text-sm leading-5 text-[var(--rr-muted)]">{r.oneLiner}</p>
+        </div>
+      </div>
+
+      {stats.length > 0 && (
+        <div class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-medium text-[var(--rr-muted)]">
+          {stats.map((stat) => (
+            <span>{stat}</span>
+          ))}
+        </div>
+      )}
+
+      <div class="mt-3 flex flex-wrap gap-2 text-xs">
+        {primaryAlternative && (
+          <a
+            href={`/alternatives/${primaryAlternative.slug}`}
+            class="rounded-full border border-[var(--rr-open)]/35 bg-[var(--rr-open)]/10 px-2.5 py-1 font-semibold text-green-700 no-underline hover:border-[var(--rr-open)] hover:text-green-800"
+          >
+            Alternative to {primaryAlternative.name}
+          </a>
         )}
         {r.workflowStepReplaced && (
-          <p class="rounded-md bg-[var(--rr-surface-soft)] px-2.5 py-2">
-            <span class="font-semibold text-[var(--rr-text)]">Workflow:</span> {r.workflowStepReplaced}
-          </p>
+          <span class="rounded-full border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] px-2.5 py-1 text-[var(--rr-muted)]">
+            Workflow: {r.workflowStepReplaced}
+          </span>
         )}
       </div>
     </div>
 
-    <div class="flex flex-wrap items-center gap-2 text-xs text-[var(--rr-muted)] sm:min-w-[112px] sm:justify-end">
-      {stars != null && <span>{stars.toLocaleString('vi-VN')} stars</span>}
+    <div class:list={[
+      'flex flex-wrap items-center gap-2 text-xs text-[var(--rr-muted)]',
+      isGrid ? 'mt-auto justify-between border-t border-[var(--rr-border)] pt-3' : 'sm:min-w-[112px] sm:justify-end',
+    ]}>
       <span>{dateStr}</span>
-      <span class="font-semibold text-[var(--rr-core)]">Read brief</span>
+      <a
+        href={`/repos/${entry.id}`}
+        class="font-semibold text-[var(--rr-core)] no-underline hover:underline"
+        data-track-event="repo_brief_open"
+        data-track-label="repo_list_item_cta"
+        data-track-prop-surface="repo_list"
+        data-track-prop-repo-slug={entry.id}
+        data-track-prop-repo-name={r.name}
+      >
+        Read brief
+      </a>
     </div>
-  </a>
+  </div>
 </article>

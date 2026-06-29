@@ -64,6 +64,9 @@ greyHatFlag: "out"
 
 suggestedAngle: "Nếu giữ record, nên kể như bài phân tích về outreach automation và ranh giới anti-detect, không nên kể như tool growth sạch."
 paidToolReplaced: "Expandi, PhantomBuster, LinkedIn Helper, Meet Alfred và các SaaS outbound automation tương tự"
+alternativeTo:
+  - name: "Expandi"
+    slug: "expandi"
 creatorWhitespace: false
 
 aiCheck:

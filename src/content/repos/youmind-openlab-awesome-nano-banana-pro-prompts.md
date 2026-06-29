@@ -69,6 +69,9 @@ greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: dùng thư viện prompt như moodboard có công thức cho social/creative team."
 paidToolReplaced: "Một phần thời gian research trên Midjourney Explore / Pinterest / prompt marketplace"
+alternativeTo:
+  - name: "Midjourney Explore"
+    slug: "midjourney-explore"
 creatorWhitespace: true
 
 aiCheck:

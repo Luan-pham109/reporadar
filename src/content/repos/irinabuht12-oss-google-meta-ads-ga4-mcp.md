@@ -63,6 +63,9 @@ greyHatFlag: "in"
 
 suggestedAngle: "Viết theo góc 'media buyer có trợ lý audit đa nền tảng', không viết như bài giới thiệu MCP khô."
 paidToolReplaced: "Một phần thao tác trong Supermetrics, Looker Studio workflow, Ads Manager reporting và các tool audit quảng cáo"
+alternativeTo:
+  - name: "Supermetrics"
+    slug: "supermetrics"
 creatorWhitespace: true
 
 aiCheck:

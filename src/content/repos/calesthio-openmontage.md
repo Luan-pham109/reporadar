@@ -69,6 +69,9 @@ greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: dùng OpenMontage như xưởng dựng nháp cho 10 biến thể video sản phẩm, không phải lời hứa thay editor."
 paidToolReplaced: "Runway / Pika / CapCut AI / một phần việc dựng video thuê ngoài"
+alternativeTo:
+  - name: "Runway"
+    slug: "runway"
 creatorWhitespace: true
 
 aiCheck:

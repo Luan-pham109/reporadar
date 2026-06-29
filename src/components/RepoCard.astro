@@ -3,6 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import SignalBadge from './SignalBadge.astro';
 import { industryShort } from '../lib/industries';
 import { computeScore } from '../lib/score';
+import { ownerAvatar, relativeTime } from '../lib/alternatives';
 
 interface Props {
   entry: CollectionEntry<'repos'>;
@@ -27,11 +28,26 @@ const signalColor =
       : r.maturity === 'established'
         ? 'bg-[var(--rr-border-strong)]'
         : 'bg-[var(--rr-core)]';
+const avatarUrl = ownerAvatar(r.repoUrl);
+const fallbackInitial = r.name.trim().charAt(0).toUpperCase() || 'R';
+const lastCommit = relativeTime(r.repoStats?.pushedAt);
+const primaryAlternative = r.alternativeTo[0];
 const filterTags = r.tags.map((tag) => tag.toLowerCase()).join('|');
+const filterVertical = r.vertical.map((vertical) => vertical.toLowerCase()).join('|');
+const stats = [
+  r.repoStats?.stars != null ? `${r.repoStats.stars.toLocaleString('vi-VN')} stars` : null,
+  r.repoStats?.forks != null ? `${r.repoStats.forks.toLocaleString('vi-VN')} forks` : null,
+  lastCommit,
+].filter(Boolean);
 const { total, hasScore } = computeScore(r);
 ---
 
-<article class="group overflow-hidden rounded-lg as-card transition-colors" data-filter-tags={filterTags}>
+<article
+  class="group overflow-hidden rounded-lg as-card transition-colors"
+  data-filter-tags={filterTags}
+  data-filter-vertical={filterVertical}
+  data-filter-maturity={r.maturity}
+>
   <div class:list={['h-1.5 w-full', signalColor]}></div>
   {thumb && (
     <a href={`/repos/${entry.id}`} class="block bg-[var(--rr-surface-soft)]">
@@ -80,25 +96,48 @@ const { total, hasScore } = computeScore(r);
       <span class="ml-auto text-xs text-[var(--rr-faint)]">{dateStr} · {r.week}</span>
     </div>
 
-    <h2 class="text-xl font-semibold leading-tight">
-      <a href={`/repos/${entry.id}`} class="no-underline hover:text-[var(--rr-core)]">{r.name}</a>
-    </h2>
+    <div class="flex items-start gap-3">
+      <div class="relative mt-0.5 h-11 w-11 shrink-0 overflow-hidden rounded-full border border-[var(--rr-border)] bg-[var(--rr-surface-soft)]">
+        {avatarUrl && (
+          <img
+            src={avatarUrl}
+            alt=""
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            class="h-full w-full object-cover"
+            onerror="this.style.display='none';this.nextElementSibling?.classList.remove('hidden');"
+          />
+        )}
+        <span class:list={['grid h-full w-full place-items-center text-sm font-semibold text-[var(--rr-core)]', avatarUrl ? 'hidden' : '']}>
+          {fallbackInitial}
+        </span>
+      </div>
 
-    <p class="mt-1 text-sm leading-6 text-[var(--rr-muted)]">{r.oneLiner}</p>
+      <div class="min-w-0 flex-1">
+        <h2 class="text-xl font-semibold leading-tight">
+          <a href={`/repos/${entry.id}`} class="no-underline hover:text-[var(--rr-core)]">{r.name}</a>
+        </h2>
+        <p class="mt-1 text-sm leading-6 text-[var(--rr-muted)]">{r.oneLiner}</p>
+      </div>
+    </div>
 
-    {r.repoStats && (r.repoStats.stars != null || r.repoStats.forks != null) && (
-      <p class="mt-3 flex gap-3 text-xs font-medium text-[var(--rr-faint)]">
-        {r.repoStats.stars != null && <span>{r.repoStats.stars.toLocaleString('vi-VN')} stars</span>}
-        {r.repoStats.forks != null && <span>{r.repoStats.forks.toLocaleString('vi-VN')} forks</span>}
+    {stats.length > 0 && (
+      <p class="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-xs font-medium text-[var(--rr-faint)]">
+        {stats.map((stat) => (
+          <span>{stat}</span>
+        ))}
       </p>
     )}
 
     <div class="mt-4 grid gap-3 sm:grid-cols-2">
-      {r.paidToolReplaced && (
-        <div class="rounded-md border border-[var(--rr-open)]/25 bg-[var(--rr-open)]/10 p-3">
-          <p class="text-xs font-bold uppercase text-green-700">Replaces</p>
-          <p class="mt-1 text-sm font-medium">{r.paidToolReplaced}</p>
-        </div>
+      {primaryAlternative && (
+        <a
+          href={`/alternatives/${primaryAlternative.slug}`}
+          class="rounded-md border border-[var(--rr-open)]/25 bg-[var(--rr-open)]/10 p-3 no-underline hover:border-[var(--rr-open)]/50"
+        >
+          <p class="text-xs font-bold uppercase text-green-700">Alternative to</p>
+          <p class="mt-1 text-sm font-medium text-[var(--rr-text)]">{primaryAlternative.name}</p>
+        </a>
       )}
       {(r.workflowStepReplaced || r.timeOrCostSaved) && (
         <div class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] p-3">

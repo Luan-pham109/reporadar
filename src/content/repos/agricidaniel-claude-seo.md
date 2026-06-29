@@ -60,6 +60,9 @@ greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: dùng Claude SEO để biến audit GEO/AEO + technical SEO thành backlog rõ việc cho dev/content."
 paidToolReplaced: "Một phần việc của Screaming Frog / Sitebulb / Surfer / checklist audit thủ công"
+alternativeTo:
+  - name: "Screaming Frog"
+    slug: "screaming-frog"
 creatorWhitespace: true
 
 aiCheck:

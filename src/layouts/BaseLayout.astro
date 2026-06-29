@@ -89,6 +89,7 @@ const canReviewDrafts = ['localhost', '127.0.0.1'].includes(Astro.url.hostname);
 
         <nav class="hidden items-center gap-1 text-sm font-medium text-[var(--rr-muted)] sm:flex">
           <a href="/#radar" class="rounded-md px-3 py-2 hover:bg-[var(--rr-surface-soft)] hover:text-[var(--rr-text)]">Radar</a>
+          <a href="/alternatives" class="rounded-md px-3 py-2 hover:bg-[var(--rr-surface-soft)] hover:text-[var(--rr-text)]">Alternatives</a>
           <a href="/#stacks" class="rounded-md px-3 py-2 hover:bg-[var(--rr-surface-soft)] hover:text-[var(--rr-text)]">Stacks</a>
           <a href="/#weekly" class="rounded-md px-3 py-2 hover:bg-[var(--rr-surface-soft)] hover:text-[var(--rr-text)]">Weekly</a>
           {canReviewDrafts && <a href="/review" class="rounded-md px-3 py-2 hover:bg-[var(--rr-surface-soft)] hover:text-[var(--rr-text)]">Review</a>}
@@ -122,6 +123,7 @@ const canReviewDrafts = ['localhost', '127.0.0.1'].includes(Astro.url.hostname);
           </p>
         </div>
         <nav class="flex flex-wrap items-start gap-2 sm:justify-end">
+          <a href="/alternatives" class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] px-3 py-1.5 text-xs font-medium text-[var(--rr-text)] no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]">Alternatives</a>
           {INDUSTRIES.map((ind) => (
             <a href={`/nganh/${ind.slug}`} class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] px-3 py-1.5 text-xs font-medium text-[var(--rr-text)] no-underline hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]">
               {ind.short}

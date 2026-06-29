@@ -63,6 +63,9 @@ greyHatFlag: "in"
 
 suggestedAngle: "Góc nên viết: test một tập hoạt hình ngắn từ kịch bản trong một buổi, thay vì hứa làm phim hoàn chỉnh."
 paidToolReplaced: "Một phần việc của Runway / Pika / storyboard thuê ngoài / công cụ làm animation"
+alternativeTo:
+  - name: "Runway"
+    slug: "runway"
 creatorWhitespace: true
 
 aiCheck:
