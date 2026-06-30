@@ -36,6 +36,11 @@ const entries = canList
       const aDraft = draftStates.get(a.id) ?? a.data.draft;
       const bDraft = draftStates.get(b.id) ?? b.data.draft;
       if (aDraft !== bDraft) return aDraft ? -1 : 1;
+      // Published quá hạn re-review nổi lên trước (giảm áp lực soát định kỳ).
+      const overdue = (d: typeof a.data) =>
+        !d.draft && d.nextReviewDueAt ? (d.nextReviewDueAt.getTime() < Date.now() ? 1 : 0) : 0;
+      const od = overdue(b.data) - overdue(a.data);
+      if (od !== 0) return od;
       return b.data.publishedAt.getTime() - a.data.publishedAt.getTime();
     })
   : [];
@@ -88,6 +93,9 @@ const deployHint = deployOnPublish
                   <span data-review-state={entry.id}>
                     <SignalBadge tone={isDraft ? 'warn' : 'core'} label={isDraft ? 'Draft' : 'Published'} />
                   </span>
+                  {!isDraft && r.nextReviewDueAt && r.nextReviewDueAt.getTime() < Date.now() && (
+                    <SignalBadge tone="warn" label="Quá hạn review" />
+                  )}
                   {r.maturity === 'pre-viral' && <SignalBadge tone="core" label="Đáng thử sớm" />}
                   {r.maturity === 'established' && <SignalBadge tone="muted" label="Đã có chỗ đứng" />}
                   {r.vertical.map((v) => (

@@ -12,6 +12,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { promisify } from 'node:util';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { computeProjectHealth, docProxy, GATE_THRESHOLD } from './lib/health.mjs';
 
 const execFileAsync = promisify(execFile);
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -69,7 +70,9 @@ async function discover(args) {
   return JSON.parse(stdout).candidates ?? [];
 }
 
-function scoreCandidate(c) {
+// Lọc THÔ (rẻ, chỉ từ dữ liệu discovery) — chỉ để thu hẹp số repo cần fetch signals,
+// KHÔNG quyết định queue. Quyết định cuối là objectiveFloor (cần signals + README).
+function prefilterScore(c) {
   const sourceScore = (c.sources?.length ?? 0) * 1000;
   const starsScore = Math.min(c.stars ?? 0, 20000) / 20;
   const pointsScore = c.points ?? 0;
@@ -77,10 +80,8 @@ function scoreCandidate(c) {
   return sourceScore + starsScore + pointsScore + verticalScore;
 }
 
-function shortlist(candidates, pick) {
-  return [...candidates]
-    .sort((a, b) => scoreCandidate(b) - scoreCandidate(a))
-    .slice(0, pick);
+function prefilter(candidates, n) {
+  return [...candidates].sort((a, b) => prefilterScore(b) - prefilterScore(a)).slice(0, n);
 }
 
 async function fetchSignals(fullName) {
@@ -114,36 +115,63 @@ function extractMedia(readme) {
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const candidates = await discover(args);
-  const picked = shortlist(candidates, args.pick);
+
+  // Tầng 1: lọc thô để giới hạn số repo cần gọi API (rate-limit).
+  const narrowed = prefilter(candidates, Math.max(args.pick * 3, 12));
+
+  // Tầng 2: fetch signals + README, chấm sàn khách quan, gate theo objectiveFloor.
+  const evaluated = [];
+  for (const candidate of narrowed) {
+    const signals = await fetchSignals(candidate.fullName);
+    const readme = await fetchReadme(signals.repo);
+    const media = extractMedia(readme);
+    const gh = signals.github;
+    const projectHealth = computeProjectHealth(gh);
+    const documentation = docProxy(readme.length, media.length > 0);
+    const floor = projectHealth + documentation;
+    evaluated.push({
+      candidate,
+      signals,
+      readmeExcerpt: readme.slice(0, 16000),
+      media,
+      projectHealth,
+      documentation,
+      objectiveFloor: floor,
+    });
+  }
+
+  const gated = evaluated.filter((it) => it.objectiveFloor >= GATE_THRESHOLD);
+  const dropped = evaluated.filter((it) => it.objectiveFloor < GATE_THRESHOLD);
+  const picked = [...gated].sort((a, b) => b.objectiveFloor - a.objectiveFloor).slice(0, args.pick);
 
   const queue = {
     generatedAt: new Date().toISOString(),
     args,
+    gateThreshold: GATE_THRESHOLD,
     count: picked.length,
     instructions: [
       'Use repo-radar-hunt, repo-radar-synthesize, and repo-radar-edit semantics.',
       'Create one draft markdown record per queued repo in src/content/repos.',
+      'Pre-fill scoreBreakdown.projectHealth and documentation from item fields below; only judge useCaseFit/costAdvantage/deployment.',
       'Keep draft: true. Do not publish automatically.',
       'Run npm.cmd run build after writing records.',
     ],
-    items: [],
+    items: picked,
   };
 
-  for (const candidate of picked) {
-    const signals = await fetchSignals(candidate.fullName);
-    const readme = await fetchReadme(signals.repo);
-    queue.items.push({
-      candidate,
-      signals,
-      readmeExcerpt: readme.slice(0, 16000),
-      media: extractMedia(readme),
-      score: scoreCandidate(candidate),
-    });
+  console.log(
+    `Discovered ${candidates.length}, evaluated ${evaluated.length}, gated ${gated.length} (floor>=${GATE_THRESHOLD}), queued ${picked.length}.`,
+  );
+  for (const item of picked) {
+    console.log(
+      `- ${item.candidate.fullName} floor=${item.objectiveFloor} (health=${item.projectHealth}, docs=${item.documentation}) ${item.candidate.url}`,
+    );
   }
-
-  console.log(`Discovered ${candidates.length} candidates, queued ${queue.items.length}.`);
-  for (const item of queue.items) {
-    console.log(`- ${item.candidate.fullName} (${Math.round(item.score)}) ${item.candidate.url}`);
+  if (dropped.length) {
+    console.log(`Dropped ${dropped.length} below gate:`);
+    for (const item of dropped) {
+      console.log(`  - ${item.candidate.fullName} floor=${item.objectiveFloor}`);
+    }
   }
 
   if (args.dryRun) return;

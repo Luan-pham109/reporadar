@@ -1,3 +1,35 @@
+import { REVIEW_CADENCE_DAYS } from './health.mjs';
+
+function toISODate(d) {
+  return d.toISOString().slice(0, 10);
+}
+
+/** Upsert một dòng frontmatter `key: value` (thay nếu có, chèn sau dòng draft nếu chưa). */
+function upsertFrontmatterLine(source, key, value) {
+  const line = `${key}: ${value}`;
+  const re = new RegExp(`^${key}:.*$`, 'm');
+  if (re.test(source)) return source.replace(re, line);
+  if (/^draft:\s*(true|false)\s*$/m.test(source)) {
+    return source.replace(/^(draft:\s*(?:true|false)\s*)$/m, `$1\n${line}`);
+  }
+  return source.replace(/^(---\r?\n)/, `$1${line}\n`);
+}
+
+/**
+ * Khi PUBLISH (draft:false) — đóng dấu lastReviewedAt = hôm nay và
+ * nextReviewDueAt = hôm nay + cadence theo maturity (pre-viral 30 / rising 60 / established 120).
+ */
+export function stampReviewDates(source, now = new Date()) {
+  const m = source.match(/^maturity:\s*["']?([a-z-]+)["']?\s*$/m);
+  const maturity = m ? m[1] : 'rising';
+  const cadence = REVIEW_CADENCE_DAYS[maturity] ?? REVIEW_CADENCE_DAYS.rising;
+
+  const due = new Date(now.getTime() + cadence * 86400000);
+  let next = upsertFrontmatterLine(source, 'lastReviewedAt', toISODate(now));
+  next = upsertFrontmatterLine(next, 'nextReviewDueAt', toISODate(due));
+  return next;
+}
+
 export function updateDraftFrontmatter(source, draft) {
   const nextDraft = `draft: ${draft ? 'true' : 'false'}`;
 

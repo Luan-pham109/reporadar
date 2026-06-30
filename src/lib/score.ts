@@ -19,7 +19,7 @@ export const SCORE_KIND: Record<keyof typeof WEIGHTS, 'judged' | 'auto'> = {
   projectHealth: 'auto',
   costAdvantage: 'judged',
   deployment: 'judged',
-  documentation: 'judged',
+  documentation: 'auto',
 };
 
 type ScoreBreakdown = Partial<Record<keyof typeof WEIGHTS, number | undefined>>;

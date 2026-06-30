@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import { spawn } from 'node:child_process';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { buildReviewDeployArgs, updateDraftFrontmatter } from './scripts/lib/publish-flow.mjs';
+import { buildReviewDeployArgs, stampReviewDates, updateDraftFrontmatter } from './scripts/lib/publish-flow.mjs';
 
 const autoDeployProduction = process.env.REPO_RADAR_AUTO_DEPLOY === 'true';
 let deployQueue = Promise.resolve();
@@ -85,7 +85,9 @@ function draftReviewPlugin() {
             }
 
             const original = await fs.readFile(filePath, 'utf8');
-            const next = updateDraftFrontmatter(original, draft);
+            let next = updateDraftFrontmatter(original, draft);
+            // Publish → đóng dấu chu kỳ review; đưa về draft thì giữ nguyên.
+            if (!draft) next = stampReviewDates(next);
             await fs.writeFile(filePath, next);
             if (wantsDeploy) {
               await enqueueProductionDeploy({ slug, draft });

@@ -16,6 +16,8 @@
  * Đặt GITHUB_TOKEN trong env để nâng rate-limit (tuỳ chọn).
  */
 
+import { computeProjectHealth } from './lib/health.mjs';
+
 const SUBREDDITS = ['selfhosted', 'opensource', 'SideProject'];
 const UA = 'RepoRadarVN/0.1 (manual research tool)';
 
@@ -54,23 +56,8 @@ async function fetchGitHub({ owner, repo }) {
     homepage: data.homepage,
     language: data.language,
   };
-  gh.suggestedHealthScore = healthScore(gh);
+  gh.suggestedHealthScore = computeProjectHealth(gh);
   return gh;
-}
-
-function healthScore(gh) {
-  if (!gh) return 0;
-  if (gh.archived) return 3;
-  const daysSincePush = gh.pushedAt
-    ? Math.round((Date.now() - new Date(gh.pushedAt)) / 86400000)
-    : 999;
-  const liveness =
-    daysSincePush <= 30 ? 12 : daysSincePush <= 90 ? 9 : daysSincePush <= 180 ? 6 : daysSincePush <= 365 ? 3 : 0;
-  const adoption =
-    gh.stars >= 20000 ? 8 : gh.stars >= 5000 ? 6 : gh.stars >= 1000 ? 4 : gh.stars >= 200 ? 2 : 1;
-  const momentum =
-    gh.starsPerDay >= 20 ? 5 : gh.starsPerDay >= 5 ? 4 : gh.starsPerDay >= 1 ? 2 : 1;
-  return Math.min(25, liveness + adoption + momentum);
 }
 
 async function fetchHN({ owner, repo }) {
