@@ -106,7 +106,7 @@ function draftReviewPlugin() {
 
 // Static output (default) → build ra dist/ cho Cloudflare Pages.
 // Đổi `site` sang domain thật khi chốt tên (PRD §12.1) để RSS/JSON feed có URL tuyệt đối.
-const PRIVATE_PAGES = ['/login/', '/review/', '/account/', '/alt-preview/'];
+const PRIVATE_PAGES = ['/login/', '/review/', '/account/'];
 
 export default defineConfig({
   site: 'https://altstack.io.vn',

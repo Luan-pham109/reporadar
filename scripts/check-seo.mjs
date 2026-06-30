@@ -17,14 +17,14 @@
  *   - mọi trang public indexable có mặt trong sitemap (không mồ côi)
  *   - trang noindex KHÔNG được nằm trong sitemap (rò rỉ)
  *
- * Trang "private" (login/account/review/alt-preview) và trang noindex/404 được loại khỏi gate.
+ * Trang "private" (login/account/review) và trang noindex/404 được loại khỏi gate.
  */
 import { readdir, readFile, access } from 'node:fs/promises';
 import path from 'node:path';
 
 const DIST = path.resolve('dist');
 const LIMITS = { titleMax: 62, descMin: 70, descMax: 160 };
-const PRIVATE_PREFIXES = ['/login', '/account', '/review', '/alt-preview'];
+const PRIVATE_PREFIXES = ['/login', '/account', '/review'];
 const SITEMAP_OPTIONAL = new Set(['/404']);
 
 async function htmlFiles(dir) {
