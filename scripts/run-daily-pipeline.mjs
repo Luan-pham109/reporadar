@@ -153,7 +153,7 @@ async function main() {
       'Use repo-radar-hunt, repo-radar-synthesize, and repo-radar-edit semantics.',
       'Create one draft markdown record per queued repo in src/content/repos.',
       'Pre-fill scoreBreakdown.projectHealth and documentation from item fields below; only judge useCaseFit/costAdvantage/deployment.',
-      'Keep draft: true. Do not publish automatically.',
+      'Keep draft: true. Then run `npm run auto-publish`: records with score>=70 + evidenceLevel A + confidence high + greyHatFlag in go live automatically; the rest stay draft for manual /review.',
       'Run npm.cmd run build after writing records.',
     ],
     items: picked,

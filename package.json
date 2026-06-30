@@ -19,6 +19,7 @@
     "astro": "astro",
     "signals": "node scripts/fetch-signals.mjs",
     "daily": "node scripts/run-daily-pipeline.mjs",
+    "auto-publish": "node scripts/auto-publish.mjs",
     "dev:functions": "npm run build && wrangler pages dev dist"
   },
   "dependencies": {
