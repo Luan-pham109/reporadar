@@ -14,7 +14,10 @@ RepoRadar membership chạy trên:
 - `/api/auth/me`, `/api/auth/logout`, `/api/auth/google/start`, `/api/auth/google/callback` là các endpoint auth đang dùng.
 - `/feed.json` là member feed JSON đã được gate theo session.
 - `/api/member/repos/:slug` trả guide theo repo cho member và được trang repo dùng để mở khóa `Member insight`.
+- `/api/member/saved-repos` trả shortlist repo đã lưu của member.
+- `/api/member/saved-repos/:slug` cho phép đọc, lưu, sửa trạng thái/note và bỏ lưu một repo trong shortlist.
 - Header và `/account` phản ánh trạng thái đăng nhập ở client side.
+- `/account` hiện là member workspace nhẹ: xem hồ sơ, shortlist repo, đổi trạng thái và lưu note riêng.
 
 ## Biến môi trường và secrets
 
@@ -98,6 +101,8 @@ Endpoint quick checks:
 - `GET /api/auth/me` guest => `{"ok":true,"user":null}`
 - `GET /feed.json` guest => `401` + `loginUrl` về `/account`
 - `GET /api/member/repos/postiz-app` guest => `401` + `loginUrl` về trang repo
+- `GET /api/member/saved-repos` guest => `401` + `loginUrl` về `/account`
+- `GET /api/member/saved-repos/postiz-app` guest => `401` + `loginUrl` về trang repo
 - `POST /api/auth/login` => `404` hoặc `405` (đều cho thấy password flow không còn khả dụng)
 
 ## Test và QA
@@ -128,9 +133,11 @@ Checklist QA tay:
 3. Kiểm tra header đổi từ `Đăng nhập` sang tên/avatar + `Đăng xuất`.
 4. Kiểm tra `/api/auth/me` trả `providers: ["google"]`.
 5. Mở một trang repo bất kỳ và xác nhận `Member insight` tự mở guide thật sau khi đã login.
-6. Kiểm tra `/feed.json` trả `access: "member"` nếu cần xác minh JSON feed.
-7. Bấm CTA member từ trạng thái guest, đăng nhập, và xác nhận quay về đúng repo.
-8. Đăng xuất từ header và từ `/account`, sau đó xác nhận `/api/auth/me` quay lại `user: null`.
+6. Từ trang repo, bấm `Lưu vào shortlist`, đổi trạng thái, thêm note riêng và tải lại trang để xác nhận dữ liệu vẫn còn.
+7. Mở `/account`, xác nhận repo vừa lưu xuất hiện trong shortlist, đổi được filter, sửa note và bỏ lưu được.
+8. Kiểm tra `/feed.json` trả `access: "member"` nếu cần xác minh JSON feed.
+9. Bấm CTA member từ trạng thái guest, đăng nhập, và xác nhận quay về đúng repo.
+10. Đăng xuất từ header và từ `/account`, sau đó xác nhận `/api/auth/me` quay lại `user: null`.
 
 ## Deploy
 

@@ -8,6 +8,7 @@ async function main() {
   await checkEventsEndpoint();
   await checkPasswordRouteRemoved();
   await checkMemberRepoRequiresAuth();
+  await checkSavedReposRequireAuth();
 
   console.log('Auth smoke checks passed.');
 }
@@ -66,6 +67,27 @@ async function checkMemberRepoRequiresAuth() {
   assert(
     typeof payload.loginUrl === 'string' && payload.loginUrl.includes('returnTo=%2Frepos%2Fpostiz-app%2F'),
     '/api/member/repos/postiz-app should return a repo detail loginUrl',
+  );
+}
+
+async function checkSavedReposRequireAuth() {
+  const listResponse = await fetch(`${baseUrl}/api/member/saved-repos`);
+  const listPayload = await listResponse.json();
+
+  assert(listResponse.status === 401, `/api/member/saved-repos should return 401 for guests, got ${listResponse.status}`);
+  assert(listPayload.code === 'auth_required', '/api/member/saved-repos should require auth for guests');
+
+  const itemResponse = await fetch(`${baseUrl}/api/member/saved-repos/postiz-app`);
+  const itemPayload = await itemResponse.json();
+
+  assert(
+    itemResponse.status === 401,
+    `/api/member/saved-repos/postiz-app should return 401 for guests, got ${itemResponse.status}`,
+  );
+  assert(itemPayload.code === 'auth_required', '/api/member/saved-repos/postiz-app should require auth for guests');
+  assert(
+    typeof itemPayload.loginUrl === 'string' && itemPayload.loginUrl.includes('returnTo=%2Frepos%2Fpostiz-app%2F'),
+    '/api/member/saved-repos/postiz-app should return a repo detail loginUrl',
   );
 }
 

@@ -1,16 +1,43 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const savedRepoStatuses = [
+  { value: 'want_to_try', label: 'Muốn thử' },
+  { value: 'testing', label: 'Đang test' },
+  { value: 'watching', label: 'Theo dõi' },
+  { value: 'skipped', label: 'Bỏ qua' },
+  { value: 'using', label: 'Đã dùng' },
+];
 ---
 
-<BaseLayout title="Tài khoản member | AltStack" description="Xem hồ sơ member, trạng thái phiên đăng nhập và lối tắt tới member feed của AltStack.">
-  <section class="mx-auto max-w-3xl">
+<BaseLayout title="Tài khoản member | AltStack" description="Quản lý shortlist repo, note riêng và trạng thái member của bạn trên AltStack.">
+  <section class="mx-auto max-w-5xl">
     <div class="overflow-hidden rounded-lg border border-[var(--rr-dark)] bg-[var(--rr-dark)] text-white shadow-[var(--rr-shadow)]">
-      <div class="p-6 sm:p-8">
-        <p class="text-xs font-bold uppercase tracking-widest text-blue-200">Account</p>
-        <h1 class="mt-2 text-3xl font-bold tracking-tight">Thông tin member của bạn</h1>
-        <p class="mt-3 max-w-2xl text-sm leading-7 text-slate-300">
-          Trang này xác nhận trạng thái phiên đăng nhập và cho bạn lối tắt quay lại member feed hoặc nội dung đang bị khóa.
-        </p>
+      <div class="grid gap-0 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="p-6 sm:p-8">
+          <p class="text-xs font-bold uppercase tracking-widest text-blue-200">Account</p>
+          <h1 class="mt-2 text-3xl font-bold tracking-tight">Shortlist repo và note riêng của bạn</h1>
+          <p class="mt-3 max-w-2xl text-sm leading-7 text-slate-300">
+            Account page giờ không chỉ để xác nhận đăng nhập. Đây là nơi bạn gom repo muốn thử, gắn trạng thái thực tế và
+            quay lại đúng tool khi cần test cho client hay workflow nội bộ.
+          </p>
+        </div>
+        <div class="border-t border-white/10 bg-white/[0.04] p-6 sm:p-8 lg:border-l lg:border-t-0">
+          <div class="grid gap-3 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+            <div class="rounded-md border border-white/10 bg-white/10 p-3">
+              <p class="text-xs font-bold uppercase tracking-widest text-blue-200">Save</p>
+              <p class="mt-2 text-sm leading-6 text-slate-200">Lưu repo vào shortlist thay vì bookmark rời rạc.</p>
+            </div>
+            <div class="rounded-md border border-white/10 bg-white/10 p-3">
+              <p class="text-xs font-bold uppercase tracking-widest text-green-300">Track</p>
+              <p class="mt-2 text-sm leading-6 text-slate-200">Đánh dấu Muốn thử, Đang test, Theo dõi, Bỏ qua, Đã dùng.</p>
+            </div>
+            <div class="rounded-md border border-white/10 bg-white/10 p-3">
+              <p class="text-xs font-bold uppercase tracking-widest text-amber-200">Note</p>
+              <p class="mt-2 text-sm leading-6 text-slate-200">Ghi bối cảnh riêng như client, GPU, account, hoặc rủi ro cần nhớ.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -51,9 +78,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
       </div>
     </div>
+
+    <section id="saved-repos-panel" class="mt-10 hidden">
+      <div class="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-widest text-[var(--rr-core)]">Shortlist</p>
+          <h2 class="mt-1 text-2xl font-semibold text-[var(--rr-text)]">Repo bạn muốn quay lại đúng lúc</h2>
+          <p class="mt-2 max-w-3xl text-sm leading-6 text-[var(--rr-muted)]">
+            Lưu repo từ trang brief, đổi trạng thái khi workflow tiến triển, rồi để lại note riêng cho lần test tiếp theo.
+          </p>
+        </div>
+        <p id="saved-repos-status" class="text-sm leading-6 text-[var(--rr-muted)]" aria-live="polite">
+          Đang tải shortlist...
+        </p>
+      </div>
+
+      <div id="saved-repos-metrics" class="mt-5 grid gap-3 sm:grid-cols-3 xl:grid-cols-6"></div>
+      <div id="saved-repos-filters" class="mt-4 flex flex-wrap gap-2"></div>
+      <div id="saved-repos-list" class="mt-6"></div>
+    </section>
   </section>
 
-  <script>
+  <script define:vars={{ savedRepoStatuses }}>
     const status = document.querySelector('#account-status');
     const card = document.querySelector('#account-card');
     const avatar = document.querySelector('#account-avatar');
@@ -62,6 +108,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     const provider = document.querySelector('#account-provider');
     const created = document.querySelector('#account-created');
     const logoutButton = document.querySelector('#account-logout');
+    const savedReposPanel = document.querySelector('#saved-repos-panel');
+    const savedReposStatus = document.querySelector('#saved-repos-status');
+    const savedReposMetrics = document.querySelector('#saved-repos-metrics');
+    const savedReposFilters = document.querySelector('#saved-repos-filters');
+    const savedReposList = document.querySelector('#saved-repos-list');
+
+    const statusMeta = Object.fromEntries(savedRepoStatuses.map((item) => [item.value, item.label]));
+    let savedItems = [];
+    let activeFilter = 'all';
 
     boot();
 
@@ -69,7 +124,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       try {
         const response = await fetch('/api/auth/me', { credentials: 'include' });
         if (!response.ok) {
-          setStatus('Không đọc được phiên đăng nhập hiện tại.');
+          setAccountStatus('Không đọc được phiên đăng nhập hiện tại.');
           return;
         }
 
@@ -80,8 +135,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         }
 
         renderUser(payload.user);
+        await loadSavedRepos();
       } catch {
-        setStatus('Auth runtime chưa chạy trong preview tĩnh. Dùng `npm run dev:functions` để kiểm tra account thật.');
+        setAccountStatus('Auth runtime chưa chạy trong preview tĩnh. Dùng `npm run dev:functions` để kiểm tra account thật.');
       }
     }
 
@@ -92,10 +148,33 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         await fetch('/api/auth/logout', { method: 'POST', credentials: 'include' });
         window.location.assign('/login?returnTo=%2Faccount');
       } catch {
-        setStatus('Không đăng xuất được. Thử tải lại trang rồi làm lại.');
+        setAccountStatus('Không đăng xuất được. Thử tải lại trang rồi làm lại.');
         logoutButton.disabled = false;
       }
     });
+
+    async function loadSavedRepos() {
+      savedReposPanel?.classList.remove('hidden');
+      setSavedStatus('Đang tải shortlist...');
+
+      try {
+        const response = await fetch('/api/member/saved-repos', { credentials: 'include' });
+        if (response.status === 401) {
+          window.location.assign('/login?returnTo=%2Faccount');
+          return;
+        }
+        if (!response.ok) {
+          setSavedStatus('Không tải được shortlist lúc này.');
+          return;
+        }
+
+        const payload = await response.json();
+        savedItems = Array.isArray(payload.items) ? payload.items : [];
+        renderSavedRepos();
+      } catch {
+        setSavedStatus('Không tải được shortlist lúc này.');
+      }
+    }
 
     function renderUser(user) {
       if (name) name.textContent = user.name || 'AltStack member';
@@ -113,21 +192,319 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       }
 
       card?.classList.remove('hidden');
-      setStatus('Bạn đang đăng nhập và có thể truy cập member feed.');
+      setAccountStatus('Bạn đang đăng nhập và có thể quản lý shortlist repo của mình.');
+    }
+
+    function renderSavedRepos() {
+      renderMetrics();
+      renderFilters();
+
+      const items = activeFilter === 'all'
+        ? savedItems
+        : savedItems.filter((item) => item.status === activeFilter);
+
+      if (!(savedReposList instanceof HTMLElement)) return;
+      savedReposList.replaceChildren();
+
+      if (savedItems.length === 0) {
+        savedReposList.append(createEmptyState(
+          'Shortlist của bạn đang trống.',
+          'Mở một repo detail rồi bấm lưu để biến member area thành nơi nhớ các tool đáng thử.'
+        ));
+        setSavedStatus('Chưa có repo nào được lưu.');
+        return;
+      }
+
+      if (items.length === 0) {
+        savedReposList.append(createEmptyState(
+          'Không có repo nào trong bộ lọc này.',
+          'Đổi sang trạng thái khác hoặc quay lại trang repo để lưu thêm công cụ.'
+        ));
+        setSavedStatus(`Không có repo nào ở trạng thái ${statusMeta[activeFilter] || activeFilter}.`);
+        return;
+      }
+
+      const list = document.createElement('div');
+      list.className = 'divide-y divide-[var(--rr-border)] overflow-hidden rounded-lg border border-[var(--rr-border)] bg-white';
+      items.forEach((item) => list.append(createSavedRepoRow(item)));
+      savedReposList.append(list);
+      setSavedStatus(`Đang hiển thị ${items.length}/${savedItems.length} repo đã lưu.`);
+    }
+
+    function renderMetrics() {
+      if (!(savedReposMetrics instanceof HTMLElement)) return;
+      savedReposMetrics.replaceChildren();
+
+      const counts = countStatuses(savedItems);
+      const items = [
+        { label: 'Tổng', value: String(savedItems.length) },
+        ...savedRepoStatuses.map((item) => ({
+          label: item.label,
+          value: String(counts[item.value] || 0),
+        })),
+      ];
+
+      items.forEach((item) => {
+        const metric = document.createElement('div');
+        metric.className = 'rounded-md border border-[var(--rr-border)] bg-white p-4';
+
+        const label = document.createElement('p');
+        label.className = 'text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]';
+        label.textContent = item.label;
+
+        const value = document.createElement('p');
+        value.className = 'mt-2 text-2xl font-semibold text-[var(--rr-text)]';
+        value.textContent = item.value;
+
+        metric.append(label, value);
+        savedReposMetrics.append(metric);
+      });
+    }
+
+    function renderFilters() {
+      if (!(savedReposFilters instanceof HTMLElement)) return;
+      savedReposFilters.replaceChildren();
+
+      const options = [{ value: 'all', label: 'Tất cả' }, ...savedRepoStatuses];
+      options.forEach((option) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = [
+          'rounded-md border px-3 py-2 text-sm font-semibold',
+          activeFilter === option.value
+            ? 'border-[var(--rr-core)] bg-[var(--rr-core)] text-white'
+            : 'border-[var(--rr-border)] bg-white text-[var(--rr-text)] hover:border-[var(--rr-core)] hover:text-[var(--rr-core)]',
+        ].join(' ');
+        button.textContent = option.label;
+        button.addEventListener('click', () => {
+          activeFilter = option.value;
+          renderSavedRepos();
+        });
+        savedReposFilters.append(button);
+      });
+    }
+
+    function createSavedRepoRow(item) {
+      const article = document.createElement('article');
+      article.className = 'grid gap-4 p-4 lg:grid-cols-[1fr_280px]';
+
+      const main = document.createElement('div');
+
+      const meta = document.createElement('div');
+      meta.className = 'mb-2 flex flex-wrap items-center gap-2 text-xs font-medium text-[var(--rr-muted)]';
+
+      const statusBadge = document.createElement('span');
+      statusBadge.className = 'rounded-full border border-[var(--rr-core)]/20 bg-[var(--rr-core)]/8 px-2.5 py-1 font-semibold text-[var(--rr-core)]';
+      statusBadge.textContent = statusMeta[item.status] || item.status;
+
+      meta.append(statusBadge);
+
+      if (!item.available) {
+        const missingBadge = document.createElement('span');
+        missingBadge.className = 'rounded-full border border-amber-300/30 bg-amber-400/10 px-2.5 py-1 font-semibold text-amber-700';
+        missingBadge.textContent = 'Tạm không còn trong feed';
+        meta.append(missingBadge);
+      }
+
+      const updated = document.createElement('span');
+      updated.textContent = `Cập nhật ${formatDate(item.updatedAt)}`;
+      meta.append(updated);
+
+      const title = document.createElement('a');
+      title.href = item.repo?.url || `/repos/${item.slug}`;
+      title.className = 'text-xl font-semibold text-[var(--rr-text)] no-underline hover:text-[var(--rr-core)]';
+      title.textContent = item.repo?.name || item.slug;
+
+      const oneLiner = document.createElement('p');
+      oneLiner.className = 'mt-2 text-sm leading-6 text-[var(--rr-muted)]';
+      oneLiner.textContent = item.repo?.oneLiner || 'Repo này hiện không còn metadata chi tiết trong member feed.';
+
+      const quickLinks = document.createElement('div');
+      quickLinks.className = 'mt-4 flex flex-wrap gap-2';
+
+      const briefLink = document.createElement('a');
+      briefLink.href = item.repo?.url || `/repos/${item.slug}`;
+      briefLink.className = 'rounded-md bg-[var(--rr-core)] px-3 py-2 text-sm font-semibold text-white no-underline hover:bg-blue-700';
+      briefLink.textContent = 'Mở decision brief';
+
+      quickLinks.append(briefLink);
+
+      if (item.available && item.repo?.slug) {
+        const note = document.createElement('span');
+        note.className = 'rounded-md border border-[var(--rr-border)] px-3 py-2 text-xs font-medium text-[var(--rr-muted)]';
+        note.textContent = `Evidence ${item.repo.evidenceLevel || 'n/a'} · ${item.repo.confidence || 'n/a'}`;
+        quickLinks.append(note);
+      }
+
+      main.append(meta, title, oneLiner, quickLinks);
+
+      const controls = document.createElement('div');
+      controls.className = 'rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface-soft)] p-4';
+
+      const selectLabel = document.createElement('label');
+      selectLabel.className = 'text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]';
+      selectLabel.textContent = 'Trạng thái';
+
+      const select = document.createElement('select');
+      select.className = 'mt-2 w-full rounded-md border border-[var(--rr-border)] bg-white px-3 py-2 text-sm text-[var(--rr-text)]';
+      savedRepoStatuses.forEach((option) => {
+        const element = document.createElement('option');
+        element.value = option.value;
+        element.textContent = option.label;
+        element.selected = option.value === item.status;
+        select.append(element);
+      });
+
+      select.addEventListener('change', async () => {
+        const ok = await patchSavedRepo(item.slug, { status: select.value }, select);
+        if (!ok) {
+          select.value = item.status;
+        }
+      });
+
+      const noteLabel = document.createElement('label');
+      noteLabel.className = 'mt-4 block text-xs font-bold uppercase tracking-widest text-[var(--rr-muted)]';
+      noteLabel.textContent = 'Note riêng';
+
+      const textarea = document.createElement('textarea');
+      textarea.className = 'mt-2 min-h-[112px] w-full rounded-md border border-[var(--rr-border)] bg-white px-3 py-2 text-sm leading-6 text-[var(--rr-text)]';
+      textarea.value = item.note || '';
+      textarea.maxLength = 1000;
+      textarea.placeholder = 'Ví dụ: test cho client mỹ phẩm, cần GPU, cần hỏi team dev về OAuth.';
+
+      const actions = document.createElement('div');
+      actions.className = 'mt-4 flex flex-wrap gap-2';
+
+      const saveButton = document.createElement('button');
+      saveButton.type = 'button';
+      saveButton.className = 'rounded-md bg-[var(--rr-dark)] px-3 py-2 text-sm font-semibold text-white hover:bg-[var(--rr-core)]';
+      saveButton.textContent = 'Lưu note';
+      saveButton.addEventListener('click', async () => {
+        const next = textarea.value;
+        const ok = await patchSavedRepo(item.slug, { note: next }, saveButton);
+        if (!ok) textarea.value = item.note || '';
+      });
+
+      const removeButton = document.createElement('button');
+      removeButton.type = 'button';
+      removeButton.className = 'rounded-md border border-[var(--rr-border)] bg-white px-3 py-2 text-sm font-semibold text-[var(--rr-text)] hover:border-[var(--rr-danger)] hover:text-[var(--rr-danger)]';
+      removeButton.textContent = 'Bỏ lưu';
+      removeButton.addEventListener('click', async () => {
+        await removeSavedRepo(item.slug, removeButton);
+      });
+
+      actions.append(saveButton, removeButton);
+      controls.append(selectLabel, select, noteLabel, textarea, actions);
+      article.append(main, controls);
+      return article;
+    }
+
+    async function patchSavedRepo(slug, body, trigger) {
+      setBusy(trigger, true);
+      try {
+        const response = await fetch(`/api/member/saved-repos/${encodeURIComponent(slug)}`, {
+          method: 'PATCH',
+          credentials: 'include',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        });
+        if (!response.ok) {
+          setSavedStatus('Không lưu được thay đổi. Thử lại giúp mình.');
+          return false;
+        }
+
+        const payload = await response.json();
+        upsertSavedItem(payload.item);
+        renderSavedRepos();
+        setSavedStatus('Đã lưu thay đổi trong shortlist.');
+        return true;
+      } catch {
+        setSavedStatus('Không lưu được thay đổi. Thử lại giúp mình.');
+        return false;
+      } finally {
+        setBusy(trigger, false);
+      }
+    }
+
+    async function removeSavedRepo(slug, trigger) {
+      setBusy(trigger, true);
+      try {
+        const response = await fetch(`/api/member/saved-repos/${encodeURIComponent(slug)}`, {
+          method: 'DELETE',
+          credentials: 'include',
+        });
+        if (!response.ok) {
+          setSavedStatus('Không bỏ lưu được repo này lúc này.');
+          return;
+        }
+
+        savedItems = savedItems.filter((item) => item.slug !== slug);
+        renderSavedRepos();
+        setSavedStatus('Đã bỏ repo khỏi shortlist.');
+      } catch {
+        setSavedStatus('Không bỏ lưu được repo này lúc này.');
+      } finally {
+        setBusy(trigger, false);
+      }
+    }
+
+    function upsertSavedItem(item) {
+      if (!item) return;
+      const next = savedItems.filter((entry) => entry.slug !== item.slug);
+      next.unshift(item);
+      savedItems = next.sort((a, b) => {
+        const aTime = Date.parse(a.updatedAt || a.createdAt || '') || 0;
+        const bTime = Date.parse(b.updatedAt || b.createdAt || '') || 0;
+        return bTime - aTime;
+      });
+    }
+
+    function createEmptyState(title, body) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'rounded-lg border border-dashed border-[var(--rr-border-strong)] bg-[var(--rr-surface-soft)] p-6';
+
+      const heading = document.createElement('h3');
+      heading.className = 'text-lg font-semibold text-[var(--rr-text)]';
+      heading.textContent = title;
+
+      const text = document.createElement('p');
+      text.className = 'mt-2 text-sm leading-6 text-[var(--rr-muted)]';
+      text.textContent = body;
+
+      wrapper.append(heading, text);
+      return wrapper;
+    }
+
+    function countStatuses(items) {
+      const counts = Object.fromEntries(savedRepoStatuses.map((item) => [item.value, 0]));
+      items.forEach((item) => {
+        counts[item.status] = (counts[item.status] || 0) + 1;
+      });
+      return counts;
+    }
+
+    function setBusy(element, isBusy) {
+      if (element instanceof HTMLButtonElement || element instanceof HTMLSelectElement) {
+        element.disabled = isBusy;
+      }
     }
 
     function formatDate(value) {
-      if (!value) return 'Không rõ';
+      if (!value) return 'không rõ';
       const parsed = new Date(value);
-      if (Number.isNaN(parsed.getTime())) return 'Không rõ';
+      if (Number.isNaN(parsed.getTime())) return 'không rõ';
       return new Intl.DateTimeFormat('vi-VN', {
         dateStyle: 'medium',
         timeStyle: 'short',
       }).format(parsed);
     }
 
-    function setStatus(message) {
+    function setAccountStatus(message) {
       if (status) status.textContent = message;
+    }
+
+    function setSavedStatus(message) {
+      if (savedReposStatus) savedReposStatus.textContent = message;
     }
   </script>
 </BaseLayout>
