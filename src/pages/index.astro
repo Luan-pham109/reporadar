@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import RepoListItem from '../components/RepoListItem.astro';
+import RepoCardFlat from '../components/RepoCardFlat.astro';
 import IndustryNav from '../components/IndustryNav.astro';
 import FacetFilter from '../components/FacetFilter.astro';
 import { includeDraft } from '../lib/drafts';
@@ -198,13 +198,13 @@ const tagCounts = [...entries.reduce((counts, entry) => {
       <>
         <div class="grid gap-3 lg:grid-cols-2">
           {entries.slice(0, RADAR_FOLD).map((entry) => (
-            <div>
-                  <RepoListItem entry={entry} layout="grid" />
+            <div class="h-full">
+              <RepoCardFlat entry={entry} />
             </div>
           ))}
           {entries.slice(RADAR_FOLD).map((entry) => (
-            <div data-overflow="true">
-              <RepoListItem entry={entry} layout="grid" />
+            <div class="h-full" data-overflow="true">
+              <RepoCardFlat entry={entry} />
             </div>
           ))}
         </div>
