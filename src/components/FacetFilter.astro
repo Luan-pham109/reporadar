@@ -122,6 +122,8 @@ const facetMeta: Record<FacetKey, { title: string; allLabel: string }> = {
       if (visible) visibleCount += 1;
     });
 
+    const hasSelection = Boolean(selected.vertical || selected.maturity || selected.tag);
+
     roots.forEach((root) => {
       root.querySelectorAll('[data-facet-key]').forEach((link) => {
         if (!(link instanceof HTMLElement)) return;
@@ -140,11 +142,14 @@ const facetMeta: Record<FacetKey, { title: string; allLabel: string }> = {
 
       const status = root.querySelector('[data-facet-filter-status]');
       if (status instanceof HTMLElement) {
-        const hasSelection = Boolean(selected.vertical || selected.maturity || selected.tag);
         status.classList.toggle('hidden', !hasSelection);
         status.textContent = hasSelection ? `${visibleCount} match${visibleCount === 1 ? '' : 'es'}` : '';
       }
     });
+
+    document.dispatchEvent(
+      new CustomEvent('facetfilter:change', { detail: { hasSelection } }),
+    );
   }
 
   function getSelectedValue(selected, facetKey) {

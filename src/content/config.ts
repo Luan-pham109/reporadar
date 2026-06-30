@@ -124,7 +124,7 @@ const repos = defineCollection({
     suggestedAngle: z.string().optional(),
     /** Thay thế tool trả phí nào (vd "ComfyUI ↔ Midjourney"). */
     paidToolReplaced: z.string().optional(),
-    /** Nhánh khuếch đại: creator còn đất viết về tool này không (logic "bão hoà" cũ). */
+    /** Brand/tool trả phí mà repo này thay được — nguồn sự thật cho trang /alternatives/[slug]. */
     alternativeTo: z
       .array(
         z.object({
@@ -133,6 +133,7 @@ const repos = defineCollection({
         }),
       )
       .default([]),
+    /** Nhánh khuếch đại: creator còn đất viết về tool này không (logic "bão hoà" cũ). */
     creatorWhitespace: z.boolean().default(true),
 
     // ---- Kiểm chứng "hơn-AI" (KR#5, PRD §9) ----

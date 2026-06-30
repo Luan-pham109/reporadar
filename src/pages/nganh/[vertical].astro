@@ -6,6 +6,7 @@ import IndustryNav from '../../components/IndustryNav.astro';
 import FacetFilter from '../../components/FacetFilter.astro';
 import { INDUSTRIES, entriesInIndustry } from '../../lib/industries';
 import { includeDraft } from '../../lib/drafts';
+import { pageTitle } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const entries = await getCollection('repos', ({ data }) => includeDraft(data));
@@ -21,7 +22,7 @@ export async function getStaticPaths() {
 }
 
 const { industry, entries } = Astro.props;
-const title = `${industry.label} alternatives & AI/open-source tools | AltStack`;
+const title = pageTitle(`${industry.label} – open-source alternatives`);
 const replacementCount = entries.filter((entry) => entry.data.paidToolReplaced).length;
 const riskCount = entries.filter((entry) => entry.data.usabilityRisk).length;
 const preViralCount = entries.filter((entry) => entry.data.maturity === 'pre-viral').length;

@@ -249,6 +249,7 @@ const tagCounts = [...entries.reduce((counts, entry) => {
   </section>
 
   <script>
+    // Simple one-way fold (Replace grid): reveal-all then drop the button.
     function setupReveal(btnId: string) {
       const btn = document.getElementById(btnId);
       if (!btn) return;
@@ -263,6 +264,39 @@ const tagCounts = [...entries.reduce((counts, entry) => {
     }
 
     setupReveal('replace-more-btn');
-    setupReveal('radar-more-btn');
+
+    // Radar fold cooperates with FacetFilter: an active filter must reveal the
+    // whole list so matches beyond the fold are reachable and the count is honest.
+    const radarSection = document.getElementById('radar');
+    const radarMoreBtn = document.getElementById('radar-more-btn');
+    const radarFolded = radarSection
+      ? Array.from(radarSection.querySelectorAll<HTMLElement>('[data-overflow="true"]'))
+      : [];
+    let radarExpanded = false;
+    const radarParams = new URLSearchParams(window.location.search);
+    let radarFilterActive = Boolean(
+      radarParams.get('vertical') || radarParams.get('maturity') || radarParams.get('tag'),
+    );
+
+    function syncRadarFold() {
+      const reveal = radarExpanded || radarFilterActive;
+      radarFolded.forEach((el) => {
+        if (reveal) el.removeAttribute('data-overflow');
+        else el.setAttribute('data-overflow', 'true');
+      });
+      radarMoreBtn?.classList.toggle('hidden', reveal || radarFolded.length === 0);
+    }
+
+    radarMoreBtn?.addEventListener('click', () => {
+      radarExpanded = true;
+      syncRadarFold();
+    });
+
+    document.addEventListener('facetfilter:change', (event) => {
+      radarFilterActive = Boolean((event as CustomEvent).detail?.hasSelection);
+      syncRadarFold();
+    });
+
+    syncRadarFold();
   </script>
 </BaseLayout>

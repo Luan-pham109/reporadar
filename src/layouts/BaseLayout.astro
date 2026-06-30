@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { INDUSTRIES } from '../lib/industries';
+import { clampDescription } from '../lib/seo';
 
 interface Props {
   title?: string;
@@ -21,6 +22,7 @@ const {
   ogType = 'website',
 } = Astro.props;
 
+const metaDescription = clampDescription(description);
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname;
 const ogImage = image ? (Astro.site ? new URL(image, Astro.site).href : image) : undefined;
 const canReviewDrafts = ['localhost', '127.0.0.1'].includes(Astro.url.hostname);
@@ -32,7 +34,7 @@ const canReviewDrafts = ['localhost', '127.0.0.1'].includes(Astro.url.hostname);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
-    <meta name="description" content={description} />
+    <meta name="description" content={metaDescription} />
     {keywords && <meta name="keywords" content={keywords} />}
     <link rel="canonical" href={canonical} />
 
@@ -40,13 +42,13 @@ const canReviewDrafts = ['localhost', '127.0.0.1'].includes(Astro.url.hostname);
     <meta property="og:site_name" content="AltStack" />
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={metaDescription} />
     <meta property="og:url" content={canonical} />
     {ogImage && <meta property="og:image" content={ogImage} />}
 
     <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:description" content={metaDescription} />
     {ogImage && <meta name="twitter:image" content={ogImage} />}
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDN8P59J7M"></script>
