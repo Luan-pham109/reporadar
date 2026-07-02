@@ -4,8 +4,15 @@
     {
       "name": "reporadar-dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeArgs": ["run", "dev:publish"],
       "port": 4321,
+      "autoPort": true
+    },
+    {
+      "name": "reporadar-dev-plain",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 4322,
       "autoPort": true
     }
   ]

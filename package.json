@@ -6,7 +6,7 @@
   "description": "RepoRadar VN — nguồn tình báo repo cho creator AI/tech Việt (Lean MVP)",
   "scripts": {
     "dev": "astro dev",
-    "dev:publish": "node scripts/dev-publish.mjs",
+    "dev:publish": "node --env-file=.env scripts/dev-publish.mjs",
     "build": "node scripts/export-member-feed.mjs && astro build && node scripts/check-seo.mjs",
     "build:drafts": "node scripts/build-drafts.mjs",
     "seo": "node scripts/check-seo.mjs",

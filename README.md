@@ -66,7 +66,7 @@ npx wrangler pages deploy dist
 Luồng nhanh hằng ngày:
 
 ```powershell
-$env:REPO_RADAR_PAGES_PROJECT="your-cloudflare-pages-project"
+$env:REPO_RADAR_PAGES_PROJECT="reporadar-vn"
 npm run dev:publish
 ```
 
