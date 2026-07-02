@@ -2,9 +2,434 @@
 export const memberFeed = {
   "title": "RepoRadar VN",
   "version": "0.3",
-  "generatedAt": "2026-06-30T06:27:17.601Z",
-  "count": 30,
+  "generatedAt": "2026-07-02T03:06:39.757Z",
+  "count": 35,
   "items": [
+    {
+      "slug": "thetacursed-anima-style-explorer",
+      "url": "/repos/thetacursed-anima-style-explorer",
+      "name": "Anima Style Explorer",
+      "repoUrl": "https://github.com/ThetaCursed/Anima-Style-Explorer",
+      "oneLiner": "Anima Style Explorer là thư viện tra cứu trực quan hơn 40.000 phong cách hoạ sĩ gắn tag Danbooru, cho xem trước ảnh minh hoạ trước khi đưa tên hoạ sĩ vào prompt cho model Anima 2B thay vì đoán mò.",
+      "vertical": [
+        "creative"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 254,
+        "forks": 29,
+        "note": "~145 ngày tuổi, ~1.8 sao/ngày",
+        "starsPerDay": 1.8,
+        "ageDays": 145,
+        "pushedAt": "2026-06-03",
+        "archived": false,
+        "openIssues": 0
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ThetaCursed/Anima-Style-Explorer"
+        }
+      ],
+      "useCases": [
+        "Xem trước ảnh minh hoạ của hơn 40.000 phong cách hoạ sĩ trước khi quyết định đưa tên nào vào prompt, thay vì gõ tag rồi generate thử để đoán.",
+        "Lọc phong cách hiếm, ít người dùng (Uniqueness Rank cao) để ảnh AI của bạn không bị trùng gu với số đông.",
+        "Duyệt nhanh hàng trăm hoạ sĩ bằng chế độ Swipe, lưu ngay những cái ưng vào bộ sưu tập riêng theo dự án.",
+        "Gom các phong cách đã chọn vào từng folder theo dự án (vd bộ nhân vật, bộ minh hoạ bìa) rồi xuất file tên để chia sẻ cho cả team.",
+        "Chạy hoàn toàn offline trên trình duyệt, không cần tài khoản hay kết nối mạng khi đã tải trang một lần."
+      ],
+      "workflowStepReplaced": "Khâu tự thử-sai để tìm tên hoạ sĩ Danbooru phù hợp phong cách mong muốn khi viết prompt cho model Anima 2B hoặc hệ Danbooru-tag tương tự.",
+      "timeOrCostSaved": "Không thay tool trả phí cụ thể; tiết kiệm chủ yếu ở số vòng generate-thử-sai để tìm đúng phong cách — người vẽ AI làm việc nghiêm túc có thể giảm đáng kể số lần chạy model chỉ để 'xem thử style này ra sao'.",
+      "localProblem": "Người vẽ AI anime/2D ở VN dùng model như Anima 2B hay các checkpoint tương thích Danbooru-tag thường phải mò tên hoạ sĩ bằng cách gõ thử prompt nhiều lần mới biết phong cách ra sao. Anima Style Explorer cho xem trước ảnh minh hoạ hơn 40.000 phong cách trước khi đưa vào prompt, tiết kiệm hẳn công thử-sai.",
+      "localEvidence": "Cộng đồng vẽ AI anime VN (nhóm Facebook, Discord Civitai VN, diễn đàn NovelAI/Stable Diffusion tiếng Việt) đã quen thao tác với danh sách artist tag Danbooru, nhưng chưa thấy nội dung tiếng Việt nào nhắc tới công cụ Anima Style Explorer hay model Anima 2B cụ thể.",
+      "usabilityRisk": "Chỉ hữu ích nếu bạn thực sự dùng model Anima 2B hoặc hệ sinh thái Danbooru-tag tương thích — đây không phải công cụ tạo ảnh, chỉ là thư viện tra cứu tên/phong cách để bạn tự đưa vào prompt ở nơi khác (ComfyUI, WebUI...). Dùng tên hoạ sĩ thật để định hướng phong cách AI vẽ vẫn là chủ đề gây tranh cãi bản quyền/đạo đức trong giới vẽ — cân nhắc kỹ trước khi dùng phong cách của một hoạ sĩ còn sống cho sản phẩm thương mại.",
+      "suggestedAngle": "Góc creator: 'Cách chọn phong cách hoạ sĩ cho AI vẽ anime bằng thư viện 40.000 style thay vì đoán mò tag' — dành cho kênh hướng dẫn vẽ AI/prompt engineering, nhớ nhắc rõ vấn đề bản quyền/đạo đức khi dùng tên hoạ sĩ còn sống.",
+      "paidToolReplaced": "Không có tool trả phí tương đương trực tiếp — thay thế công tự tra cứu/thử tay từng tên hoạ sĩ trên Danbooru hoặc wiki cộng đồng.",
+      "practitionerGuide": {
+        "outcome": "Sau guide này bạn có một danh sách 5-10 tên hoạ sĩ Danbooru phù hợp phong cách bạn muốn, đã xem ảnh minh hoạ trước, sẵn sàng dán vào prompt.",
+        "prerequisites": [
+          "Trình duyệt để mở trang tĩnh (không cần cài đặt, chạy được offline).",
+          "Đã có sẵn model Anima 2B hoặc pipeline ComfyUI/WebUI tương thích tag Danbooru để test prompt."
+        ],
+        "steps": [
+          "Mở trang Anima Style Explorer, dùng ô tìm kiếm hoặc bộ lọc Works/Uniqueness để lọc theo phong cách bạn hình dung.",
+          "Bật Swipe Mode để duyệt nhanh từng hoạ sĩ một, bấm mũi tên xuống để lưu những cái ưng vào Favorites.",
+          "Gộp các hoạ sĩ đã lưu vào một folder riêng theo dự án, xuất ra file .txt danh sách tên.",
+          "Copy tên hoạ sĩ (bấm trực tiếp vào card) rồi dán vào prompt ở ComfyUI/WebUI, test thử với model Anima 2B.",
+          "So sánh vài phong cách khác nhau trên cùng một bố cục ảnh để chọn ra phong cách ổn định nhất cho dự án."
+        ],
+        "expectedResult": "Bạn có sẵn danh sách hoạ sĩ đã xem trước phong cách, giảm hẳn số lần thử-sai khi viết prompt, và một bộ favorite lưu lại cho lần sau.",
+        "commonPitfalls": [
+          "Tưởng đây là công cụ tạo ảnh — thực ra chỉ là thư viện tra cứu tên, bạn vẫn phải tự generate ở nơi khác.",
+          "Chọn phong cách của hoạ sĩ còn sống rồi dùng cho sản phẩm thương mại mà không cân nhắc vấn đề bản quyền/đạo đức.",
+          "Dữ liệu Favorites lưu cục bộ trình duyệt (IndexedDB) — quên export sẽ mất khi đổi máy hoặc xoá cache."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 16,
+        "costAdvantage": 0,
+        "deployment": 15,
+        "documentation": 15
+      },
+      "altstackSignalScore": 64,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-02T00:00:00.000Z",
+      "tags": [
+        "creative",
+        "ai-art",
+        "anime",
+        "danbooru",
+        "prompt-engineering"
+      ],
+      "publishedAt": "2026-07-02T00:00:00.000Z",
+      "week": "2026-W27"
+    },
+    {
+      "slug": "zapier-gtm-cheat-codes",
+      "url": "/repos/zapier-gtm-cheat-codes",
+      "name": "GTM Cheat Codes",
+      "repoUrl": "https://github.com/zapier/gtm-cheat-codes",
+      "oneLiner": "GTM Cheat Codes là bộ skill Claude Code/Cursor cho team marketing-sales-CS: biến brief, dữ liệu CRM và ghi chú cuộc gọi thành campaign, danh sách ưu tiên account, bản tóm tắt... có nguồn dẫn chứng và bước duyệt của người, thay vì AI tự động gửi/đăng.",
+      "vertical": [
+        "agency"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 294,
+        "forks": 14,
+        "note": "~51 ngày tuổi, ~5.8 sao/ngày",
+        "starsPerDay": 5.8,
+        "ageDays": 51,
+        "pushedAt": "2026-06-29",
+        "archived": false,
+        "openIssues": 0
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/zapier/gtm-cheat-codes"
+        }
+      ],
+      "useCases": [
+        "Biến một brief campaign rời rạc thành gói campaign có cấu trúc và mockup trang, thay vì tự gom ghi chú từ nhiều nơi.",
+        "Xếp hạng account nào đáng ưu tiên tiếp cận dựa trên tín hiệu 'why-now' thật từ CRM, thay vì đoán theo cảm tính.",
+        "Soạn nháp outreach cá nhân hoá cho sale từ dữ liệu CRM và lịch sử dùng sản phẩm của khách, có nguồn dẫn để rep chỉnh lại trước khi gửi.",
+        "Lọc trước hộp thư báo chí/đối tác/khách hàng để không bỏ sót yêu cầu gấp, trước khi ai đó phải đọc thủ công cả hộp thư chung.",
+        "Tổng hợp một cuộc gọi hoặc bản ghi thành bản tóm tắt kèm hành động tiếp theo, có gắn nguồn để người duyệt kiểm lại nhanh."
+      ],
+      "workflowStepReplaced": "Khâu tự viết prompt rời rạc và tự gom dữ liệu CRM/docs/chat cho từng việc GTM (campaign, ưu tiên account, tóm tắt cuộc gọi) — thay bằng skill đóng gói sẵn có nguồn dẫn chứng và cổng duyệt.",
+      "timeOrCostSaved": "Không thay một SaaS cụ thể; tiết kiệm chủ yếu ở công tự viết prompt và tự gom dữ liệu cho từng việc GTM lặp lại — mức tiết kiệm còn phụ thuộc quy mô team và stack CRM sẵn có.",
+      "localProblem": "Team marketing/sales/CS ở agency và startup VN đang tự viết prompt rời rạc để làm báo cáo campaign, ưu tiên account hay tóm tắt cuộc gọi — mỗi người một kiểu, không ai review lại được nguồn dữ liệu. GTM Cheat Codes đóng gói sẵn quy trình có nguồn dẫn chứng và bước duyệt của người trước khi ghi vào hệ thống hoặc gửi email/tin nhắn.",
+      "localEvidence": "Chưa có bài tiếng Việt nào nhắc riêng repo gtm-cheat-codes hoặc bộ skill GTM của Zapier; nội dung về 'Zapier MCP + Claude Code cho GTM' hiện chỉ có bằng tiếng Anh (Databar.ai, Coffee.ai).",
+      "usabilityRisk": "Không phải công cụ đứng một mình — cần tài khoản Zapier (MCP/SDK) và ít nhất một CRM/hệ thống đã kết nối để skill có dữ liệu thật mà xử lý. Phần lớn ví dụ giả định stack SaaS kiểu Âu-Mỹ (HubSpot, Salesforce, Slack), team VN dùng Sheet/Base/Bitrix thuần sẽ phải tự map lại. Không có giao diện web — chạy trong Claude Code/Cursor/Codex, cần người quen làm việc với coding agent.",
+      "suggestedAngle": "Góc creator: '3 skill GTM của Zapier đáng cài nhất cho agency/SaaS Việt đã có CRM' — chọn lọc theo stack phổ biến ở VN thay vì giới thiệu cả 14 nhóm.",
+      "paidToolReplaced": "Một phần việc thuê thêm RevOps/marketing ops junior để làm báo cáo, ưu tiên account và tóm tắt cuộc gọi thủ công",
+      "practitionerGuide": {
+        "outcome": "Sau guide này bạn chạy được một skill GTM thật (vd ưu tiên account hoặc tìm customer proof) trên dữ liệu CRM/Sheet của mình, có bước duyệt trước khi ghi ngược hệ thống.",
+        "prerequisites": [
+          "Đã cài Claude Code, Cursor hoặc Codex.",
+          "Có tài khoản Zapier (MCP) đã kết nối ít nhất một CRM/Sheet/chat tool.",
+          "Một việc thật để test, vd danh sách account cần ưu tiên hoặc một campaign cần báo cáo."
+        ],
+        "steps": [
+          "Đọc `docs/vp-marketing-skill-breakdown.md` để chọn đúng 1-2 skill khớp việc bạn đang làm, thay vì cài cả 14 nhóm.",
+          "Mở `registry/skills.csv` để tìm skill cụ thể, rồi đọc README/SKILL.md/SETUP.md trong thư mục skill đó.",
+          "Kết nối skill với hệ thống thật qua Zapier MCP, dùng dữ liệu sanitize/thử trước khi chạy trên dữ liệu khách thật.",
+          "Chạy skill trên một việc thật, ví dụ ưu tiên 10 account hoặc tóm tắt một campaign vừa chạy.",
+          "Luôn giữ bước duyệt của người trước khi để skill gửi email, cập nhật CRM hoặc đăng nội dung ra ngoài."
+        ],
+        "expectedResult": "Bạn có một output GTM thật (báo cáo, danh sách ưu tiên, draft outreach...) kèm nguồn dữ liệu rõ ràng, sẵn sàng cho người duyệt trước khi dùng chính thức.",
+        "commonPitfalls": [
+          "Cài hết 14 nhóm skill cùng lúc rồi rối, không biết bắt đầu từ đâu.",
+          "Bỏ qua bước duyệt của người, để skill tự ghi thẳng vào CRM hoặc gửi ra ngoài.",
+          "Dùng thẳng dữ liệu khách hàng thật khi mới test skill lần đầu, thay vì dữ liệu sanitize."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 18,
+        "costAdvantage": 8,
+        "deployment": 6,
+        "documentation": 10
+      },
+      "altstackSignalScore": 60,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-02T00:00:00.000Z",
+      "tags": [
+        "agency",
+        "gtm",
+        "marketing-ops",
+        "claude-code",
+        "zapier",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-07-02T00:00:00.000Z",
+      "week": "2026-W27"
+    },
+    {
+      "slug": "dongbeixiaohuo-writing-agent",
+      "url": "/repos/dongbeixiaohuo-writing-agent",
+      "name": "Viết Agent (writing-agent)",
+      "repoUrl": "https://github.com/dongbeixiaohuo/writing-agent",
+      "oneLiner": "Viết Agent là quy trình viết bài dài chạy trong Claude Code: đi qua từng bước chọn lập trường, đào dẫn chứng, viết nháp, biên tập và khử giọng AI, kèm một cổng fact-check trước khi cho bài xuất bản.",
+      "vertical": [
+        "agency"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 301,
+        "forks": 56,
+        "note": "~193 ngày tuổi, ~1.6 sao/ngày",
+        "starsPerDay": 1.6,
+        "ageDays": 193,
+        "pushedAt": "2026-06-17",
+        "archived": false,
+        "openIssues": 3
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/dongbeixiaohuo/writing-agent"
+        }
+      ],
+      "useCases": [
+        "Chạy một bài dài qua nhiều bước có kiểm chứng — chọn lập trường, đào dẫn chứng, viết nháp, biên tập, khử giọng AI, fact-check — thay vì thả một prompt và cầu may.",
+        "Kiểm tra từng con số, tên người, tên tổ chức trong bài AI viết ra bằng sổ chứng cứ bắt buộc, tránh đăng bài rồi bị bắt lỗi bịa dữ kiện.",
+        "Chạy thử cả pipeline với model giá rẻ như DeepSeek-V3.2 trước khi quyết định đầu tư gói dùng dài hạn.",
+        "Xuất bài dưới dạng văn bản sạch để đăng ngay, hoặc thêm bản HTML đã lên khuôn cho bài đăng công chúng.",
+        "Dùng bộ demo có sẵn (một bài thật chạy hết quy trình) làm mẫu đào tạo nhanh cho copywriter mới trong team."
+      ],
+      "workflowStepReplaced": "Khâu tự lên dàn ý - viết nháp - biên tập - soát giọng AI cho bài dài (blog, bài quan điểm, PR): thay một prompt tổng bằng quy trình nhiều bước có chứng cứ và cổng fact-check.",
+      "timeOrCostSaved": "Không thay hẳn một SaaS cụ thể; tiết kiệm chủ yếu ở công sửa tay do giọng AI lộ liễu và công tự kiểm chứng số liệu. Chạy thử một bài đầy đủ với model rẻ như DeepSeek-V3.2 có thể chỉ tốn vài chục nghìn đồng.",
+      "localProblem": "Agency và freelancer viết content Việt làm bài dài bằng AI (blog, bài quan điểm, bài PR) thường bị chê 'đọc là biết AI viết' — câu sáo, không góc nhìn cá nhân, không dẫn chứng thật. Viết Agent ép AI phải có lập trường, dẫn chứng có nguồn, và một bước khử giọng AI + fact-check trước khi giao bài.",
+      "localEvidence": "Từ khoá như 'khử giọng AI', 'viết bài không lộ AI', 'AI viết bài tự nhiên như người' đã có nhu cầu tìm kiếm rõ ràng ở VN (nhiều bài so sánh công cụ AI viết content tiếng Việt như Laho AI, Jasper, Copy.ai), nhưng chưa ai viết tiếng Việt về riêng repo writing-agent.",
+      "usabilityRisk": "Đây không phải web app bấm nút ra bài — bạn phải chạy trong Claude Code (CLI), tự cấu hình model (DeepSeek/GLM/MiniMax hoặc tài khoản Claude) và làm quen với 4 tầng skills/agents/workflows/scripts của repo. Toàn bộ README, demo và log vận hành đều bằng tiếng Trung, phải tự dịch/thử để hiểu luồng. Bản desktop app Windows mới ở preview 0.1.0.",
+      "suggestedAngle": "Góc creator: 'Thử quy trình viết bài nhiều bước chạy trong Claude Code này để xem có thật sự hết mùi AI không' — dùng chính bài viết thật để test, so sánh trước/sau khử giọng.",
+      "paidToolReplaced": "Một phần công ghostwriter/biên tập viên cho bài dài, hoặc các gói AI viết content trả phí theo tháng khi cần bài sâu có kiểm chứng thay vì bài ngắn nhanh",
+      "practitionerGuide": {
+        "outcome": "Sau guide này bạn có một bài dài (nháp) chạy qua đủ các bước chọn đề tài, lập trường, dẫn chứng, viết, biên tập, khử giọng AI và fact-check, để so sánh với cách viết AI một phát bạn đang làm.",
+        "prerequisites": [
+          "Đã cài Node.js 18+ và Claude Code trên máy.",
+          "Một API key model chi phí thấp (DeepSeek-V3.2, Zhipu GLM hoặc MiniMax) hoặc tài khoản Claude Pro/Max.",
+          "Sẵn một đề tài bài viết thật (blog, bài quan điểm) để test thay vì đề tài ảo."
+        ],
+        "steps": [
+          "Clone repo hoặc cài qua plugin marketplace, cấu hình model rồi khởi động `claude` ngay trong thư mục dự án.",
+          "Đọc thử demo mẫu trong `demo/` để hiểu từng file giai đoạn (lập trường, dẫn chứng, dàn ý, bản nháp) trước khi chạy đề tài của bạn.",
+          "Chạy quy trình với đề tài thật của bạn, để hệ thống tự đi qua các bước lập trường, dẫn chứng, dàn ý, viết nháp.",
+          "Khi tới bước fact-check, đọc kỹ những chỗ bị gắn cờ mâu thuẫn hoặc thiếu nguồn — đây là chỗ AI có thể đang bịa, đừng bỏ qua.",
+          "Lấy bản văn bản sạch cuối cùng, đọc lại một lượt bằng giọng của bạn trước khi đăng — quy trình giảm giọng AI chứ không thay hoàn toàn biên tập con người."
+        ],
+        "expectedResult": "Bạn có một bài dài hoàn chỉnh kèm toàn bộ dấu vết trung gian (lập trường, dẫn chứng, các vòng nháp), đủ để đánh giá quy trình này có đáng thay cách viết hiện tại không.",
+        "commonPitfalls": [
+          "Bỏ qua bước fact-check vì nghĩ 'AI viết là xong' — đây là bước bắt lỗi bịa dữ kiện.",
+          "Chạy thẳng đề tài phức tạp lần đầu thay vì thử demo có sẵn để hiểu luồng trước.",
+          "Kỳ vọng ra bài tiếng Việt tự nhiên hoàn toàn mà không đọc lại — quy trình khử giọng AI nhưng gốc README/logic là tiếng Trung."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 16,
+        "costAdvantage": 8,
+        "deployment": 6,
+        "documentation": 10
+      },
+      "altstackSignalScore": 58,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-07-02T00:00:00.000Z",
+      "tags": [
+        "agency",
+        "content",
+        "claude-code",
+        "writing",
+        "ai-writing"
+      ],
+      "publishedAt": "2026-07-02T00:00:00.000Z",
+      "week": "2026-W27"
+    },
+    {
+      "slug": "msitarzewski-agency-agents",
+      "url": "/repos/msitarzewski-agency-agents",
+      "name": "Agency Agents",
+      "repoUrl": "https://github.com/msitarzewski/agency-agents",
+      "oneLiner": "Agency Agents là bộ 232 'nhân sự AI' chia theo 16 phòng ban (Marketing, SEO, Paid Media, Content, Sales...) — nạp vào Claude Code, Cursor, Copilot… để mỗi tác vụ có một chuyên gia AI riêng thay vì prompt chung chung.",
+      "vertical": [
+        "agency",
+        "seo",
+        "ecom"
+      ],
+      "maturity": "established",
+      "repoStats": {
+        "stars": 120429,
+        "forks": 19678,
+        "note": "~260 ngày tuổi, ~463 sao/ngày",
+        "starsPerDay": 463.2,
+        "ageDays": 260,
+        "pushedAt": "2026-06-30",
+        "archived": false,
+        "openIssues": 82
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/msitarzewski/agency-agents"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47347158"
+        }
+      ],
+      "useCases": [
+        "Nạp sẵn agent SEO, Content Creator và Social Media vào Claude Code hay Cursor để mỗi đầu việc có một 'chuyên gia' riêng, khỏi ngồi viết prompt lại từ đầu.",
+        "Dựng một 'agency ảo' cho team nhỏ: một người điều phối nhiều agent marketing thay vì thuê thêm freelancer cho từng mảng.",
+        "Kéo nhóm agent Paid Media (PPC, phân tích search query, ad creative) vào để soát nhanh một campaign trước khi lên tiền.",
+        "Dùng agent Cross-Border E-Commerce và nhóm thị trường Trung (Xiaohongshu, Douyin, Baidu) cho team bán hàng xuyên biên.",
+        "Lấy persona dựng sẵn làm khung, rồi chỉnh lại prompt cho đúng giọng và ngữ cảnh tiếng Việt — nhanh hơn nhiều so với viết mới."
+      ],
+      "workflowStepReplaced": "Khâu tự viết prompt/subagent từ đầu cho từng đầu việc marketing/SEO/content — thay bằng bộ persona dựng sẵn nạp thẳng vào Claude Code/Cursor.",
+      "timeOrCostSaved": "Không thay một SaaS trả phí cụ thể; tiết kiệm gián tiếp ở công viết và tinh chỉnh subagent từ đầu, và ở chỗ một team nhỏ ôm được nhiều đầu việc chuyên môn hơn thay vì thuê thêm freelancer cho từng mảng.",
+      "localProblem": "Dân agency/marketing VN đang đổ xô học subagents Claude Code nhưng phần lớn phải tự mò viết agent cho từng đầu việc. Thiếu một bộ persona marketing/SEO/paid-media dựng sẵn, đã chuẩn hoá để nạp vào là dùng.",
+      "localEvidence": "Có rất nhiều bài tiếng Việt về 'subagents Claude Code' (vietnix, azdigi, ongboit, ybox) và về Claude Code SEO skills — chứng tỏ nhu cầu agent hoá workflow marketing/SEO có thật và đang nóng. Nhưng KHÔNG có bài tiếng Việt nào về riêng repo agency-agents.",
+      "usabilityRisk": "Collection rất rộng (232 agent đủ ngành) — không nhắm 1 bài toán cụ thể, dễ loãng nếu không chọn lọc. Chất lượng từng agent không đồng đều và là prompt/persona, không phải tool chạy ra output; vẫn cần người dùng quen làm việc trong Claude Code/Cursor. Phần lớn agent viết theo bối cảnh thị trường Âu-Mỹ/Trung, cần điều chỉnh cho ngữ cảnh VN.",
+      "suggestedAngle": "Góc creator: '5 agent marketing đáng nạp nhất từ bộ 232 của agency-agents cho team Việt' — chọn lọc + Việt hoá prompt, thay vì review cả kho.",
+      "paidToolReplaced": "Một phần việc thuê freelancer/specialist hoặc agency con cho từng đầu việc marketing/SEO/content",
+      "practitionerGuide": {
+        "outcome": "Sau guide này bạn nạp được vài agent marketing chọn lọc vào Claude Code và chạy thử một đầu việc thật bằng tiếng Việt.",
+        "prerequisites": [
+          "Đã cài Claude Code, Cursor hoặc một công cụ tương thích (repo hỗ trợ 13+ công cụ).",
+          "Biết sơ cách subagent hoạt động trong Claude Code (có nhiều hướng dẫn tiếng Việt)."
+        ],
+        "steps": [
+          "Đừng nạp cả 232 agent. Chọn trước 3-5 cái đúng việc bạn làm: vd SEO Specialist, Content Creator, Social Media, PPC.",
+          "Cài bằng app desktop của repo hoặc chạy script convert/install, chọn đúng công cụ bạn dùng khi được hỏi.",
+          "Chạy thử một agent với một đầu việc thật, ra lệnh kiểu 'dùng agent SEO Specialist soát bài này'.",
+          "Đọc output rồi chỉnh lại prompt của agent cho đúng giọng và ngữ cảnh tiếng Việt — đây là bước quan trọng nhất.",
+          "Giữ lại agent nào hợp, bỏ agent nào trả kết quả chung chung; dựng dần bộ riêng cho team."
+        ],
+        "expectedResult": "Bạn có một nhóm nhỏ agent marketing chạy được trong công cụ quen, đã Việt hoá đủ để dùng cho việc thật.",
+        "commonPitfalls": [
+          "Nạp cả kho 232 agent rồi loạn, không biết dùng cái nào — chọn lọc trước.",
+          "Agent viết theo bối cảnh Âu-Mỹ/Trung; dùng thẳng cho khách Việt dễ lệch giọng và ví dụ.",
+          "Tưởng agent là tool ra output sẵn — thực ra là persona/prompt, chất lượng phụ thuộc cách bạn ra đề và chỉnh lại."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 12,
+        "projectHealth": 25,
+        "costAdvantage": 8,
+        "deployment": 15,
+        "documentation": 10
+      },
+      "altstackSignalScore": 70,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-30T00:00:00.000Z",
+      "tags": [
+        "agency",
+        "seo",
+        "ecom",
+        "marketing",
+        "claude-code",
+        "cursor",
+        "ai-agents"
+      ],
+      "publishedAt": "2026-06-30T00:00:00.000Z",
+      "week": "2026-W27"
+    },
+    {
+      "slug": "every-app-open-seo",
+      "url": "/repos/every-app-open-seo",
+      "name": "OpenSEO",
+      "repoUrl": "https://github.com/every-app/open-seo",
+      "oneLiner": "OpenSEO là bộ công cụ SEO mã nguồn mở: nghiên cứu từ khoá, theo dõi thứ hạng, phân tích đối thủ, kiểm tra backlink và audit site — bạn chỉ trả tiền theo lượng dữ liệu dùng thay vì thuê bao Semrush/Ahrefs.",
+      "vertical": [
+        "seo",
+        "agency",
+        "ecom"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 3873,
+        "forks": 421,
+        "note": "~123 ngày tuổi, ~31.5 sao/ngày",
+        "starsPerDay": 31.5,
+        "ageDays": 123,
+        "pushedAt": "2026-06-29",
+        "archived": false,
+        "openIssues": 8
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/every-app/open-seo"
+        },
+        {
+          "label": "Homepage",
+          "url": "https://openseo.so"
+        }
+      ],
+      "useCases": [
+        "Tự dựng tool SEO của riêng team trên VPS hoặc Cloudflare, không trả thuê bao tháng và không phụ thuộc account share Ahrefs/Semrush dễ bị khoá.",
+        "Nghiên cứu từ khoá, kiểm backlink và theo dõi thứ hạng cho nhiều site khách trong một chỗ, chỉ trả tiền theo số lần truy vấn thực tế.",
+        "Phân tích đối thủ và audit site trước khi nhận dự án, để báo giá dựa trên dữ liệu thật thay vì đoán.",
+        "Cắm vào Claude Code qua MCP để ra lệnh kiểu 'gom cụm 200 từ khoá này' hay 'tìm cơ hội backlink' ngay trong workflow AI, không phải mở dashboard riêng.",
+        "Fork và chỉnh lại đúng quy trình SEO của team — thêm bước, đổi báo cáo — điều mà tool đóng như Ahrefs không cho làm."
+      ],
+      "workflowStepReplaced": "Khâu nghiên cứu từ khoá, kiểm backlink, theo dõi rank và audit site — vốn đang phụ thuộc thuê bao Ahrefs/Semrush hoặc account share.",
+      "timeOrCostSaved": "Ahrefs/Semrush bản chính hãng ~$100–$200+/tháng. OpenSEO không thuê bao, trả theo lượng query qua DataForSEO (~$1–$11/100 request), nhưng phải nạp tối thiểu $50 và tự vận hành — tiết kiệm thật với team query ít/đều, nhưng không 'free'.",
+      "localProblem": "Team SEO/agency Việt phần lớn không mua Ahrefs/Semrush chính hãng vì giá cao, nên xài account share ('mua chung tool') — bấp bênh, hay bị khoá, không kiểm soát dữ liệu, không tích hợp được vào workflow/automation riêng.",
+      "localEvidence": "Tồn tại cả một thị trường 'mua chung tool Ahrefs/Semrush' tại VN (vd muachungtool.com) và hàng loạt bài 'công cụ thay thế Ahrefs' — cho thấy nhu cầu né phí thuê bao là có thật. OpenSEO chưa có nội dung tiếng Việt nào.",
+      "usabilityRisk": "Phụ thuộc DataForSEO API — vẫn tốn tiền theo query, top-up tối thiểu $50, và độ phủ dữ liệu/keyword cho thị trường tiếng Việt cần kiểm trước khi tin. Self-host Docker/Cloudflare cần người quen kỹ thuật; bản Docker mặc định single-user, không xác thực.",
+      "suggestedAngle": "Góc creator: 'Bỏ account share Ahrefs, tự dựng tool SEO của riêng team' — hướng dẫn self-host OpenSEO + cắm DataForSEO + nối MCP vào Claude Code, kèm đánh giá thật chất lượng data keyword tiếng Việt.",
+      "paidToolReplaced": "Semrush / Ahrefs",
+      "practitionerGuide": {
+        "outcome": "Sau guide này bạn có một bản OpenSEO chạy được, đã cắm DataForSEO, và làm được lượt nghiên cứu từ khoá đầu tiên cho một site thật.",
+        "prerequisites": [
+          "Một tài khoản DataForSEO đã nạp credit (tối thiểu $50) để lấy API key.",
+          "Một VPS hoặc tài khoản Cloudflare nếu muốn tự host; hoặc dùng thẳng bản hosted tại openseo.so nếu ngại kỹ thuật.",
+          "Người quen Docker/dòng lệnh nếu chọn tự host."
+        ],
+        "steps": [
+          "Quyết định trước: dùng bản hosted openseo.so cho nhanh, hay tự host bằng Docker/Cloudflare để giữ toàn quyền dữ liệu.",
+          "Lấy API key DataForSEO và nạp credit; đây là phần thực sự tốn tiền, OpenSEO chỉ là vỏ miễn phí bọc ngoài.",
+          "Cài theo README (Docker cho máy/VPS, hoặc deploy Cloudflare cho cả team), rồi dán API key vào cấu hình.",
+          "Chạy thử một truy vấn từ khoá tiếng Việt và một site VN bạn biết rõ, đối chiếu với số liệu Ahrefs/Search Console để xem data có đáng tin không.",
+          "Nếu định dùng trong AI workflow, bật MCP server và nối vào Claude Code rồi thử một lệnh kiểu gom cụm từ khoá."
+        ],
+        "expectedResult": "Bạn ra được báo cáo từ khoá/backlink cơ bản, và biết rõ data DataForSEO cho thị trường Việt đủ dùng tới đâu trước khi đổ việc thật vào.",
+        "commonPitfalls": [
+          "Tưởng OpenSEO miễn phí hoàn toàn — thực ra mọi truy vấn đều tốn tiền DataForSEO, top-up tối thiểu $50.",
+          "Data keyword/SERP tiếng Việt của DataForSEO có thể mỏng hơn Ahrefs ở vài ngách — phải kiểm trước khi tin tuyệt đối.",
+          "Bản Docker mặc định single-user, không xác thực; đừng phơi thẳng ra internet mà chưa khoá lại."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 21,
+        "costAdvantage": 14,
+        "deployment": 10,
+        "documentation": 15
+      },
+      "altstackSignalScore": 78,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-06-30T00:00:00.000Z",
+      "tags": [
+        "seo",
+        "agency",
+        "ecom",
+        "mcp",
+        "keyword-research",
+        "backlink",
+        "site-audit"
+      ],
+      "publishedAt": "2026-06-30T00:00:00.000Z",
+      "week": "2026-W27"
+    },
     {
       "slug": "minhnv0807-ai-business-skills",
       "url": "/repos/minhnv0807-ai-business-skills",

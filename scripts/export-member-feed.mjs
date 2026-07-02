@@ -1,31 +1,22 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { createRequire } from 'node:module';
+import { REPOS_DIR, readAllRepoRecords } from './lib/repo-frontmatter.mjs';
 
 const require = createRequire(import.meta.url);
-const yaml = require('js-yaml');
+const WEIGHTS = require('../src/lib/score-weights.json');
 
-const reposDir = path.resolve('src/content/repos');
 const outDir = path.resolve('functions/_generated');
 const outFile = path.join(outDir, 'member-feed.js');
 
-const files = (await fs.readdir(reposDir)).filter((file) => file.endsWith('.md') && !file.startsWith('_')).sort();
+const records = (await readAllRepoRecords(REPOS_DIR)).filter((record) => !record.draft);
 
 const items = [];
-for (const file of files) {
-  const raw = await fs.readFile(path.join(reposDir, file), 'utf8');
-  const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (!match) continue;
-
-  const data = yaml.load(match[1]) || {};
-  if (data.draft) continue;
-
-  const slug = file.replace(/\.md$/, '');
+for (const record of records) {
+  const { slug, data } = record;
   const guide = data.practitionerGuide || {};
 
   // Compute altstackSignalScore (derived, never stored in frontmatter)
-  // Weights must stay in sync with src/lib/score.ts WEIGHTS
-  const WEIGHTS = { useCaseFit: 25, projectHealth: 25, costAdvantage: 20, deployment: 15, documentation: 15 };
   const sb = data.scoreBreakdown;
   let altstackSignalScore = null;
   if (sb && Object.values(sb).some((v) => v != null)) {

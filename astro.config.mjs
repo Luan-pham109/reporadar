@@ -5,7 +5,8 @@ import sitemap from '@astrojs/sitemap';
 import { spawn } from 'node:child_process';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { buildReviewDeployArgs, updateDraftFrontmatter } from './scripts/lib/publish-flow.mjs';
+import { buildReviewDeployArgs } from './scripts/lib/publish-flow.mjs';
+import { updateDraftFrontmatter } from './scripts/lib/repo-frontmatter.mjs';
 
 const autoDeployProduction = process.env.REPO_RADAR_AUTO_DEPLOY === 'true';
 let deployQueue = Promise.resolve();

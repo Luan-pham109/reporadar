@@ -1,5 +1,6 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
+import { WEIGHTS } from '../lib/score';
 
 /**
  * "Bản tình báo tool" — NGUỒN SỰ THẬT của schema (structured-first, PRD §5).
@@ -149,11 +150,11 @@ const repos = defineCollection({
     /** Điểm thành phần — nguồn sự thật; tổng DERIVED qua computeScore(). */
     scoreBreakdown: z
       .object({
-        useCaseFit: z.number().int().min(0).max(25).optional(),
-        projectHealth: z.number().int().min(0).max(25).optional(),
-        costAdvantage: z.number().int().min(0).max(20).optional(),
-        deployment: z.number().int().min(0).max(15).optional(),
-        documentation: z.number().int().min(0).max(15).optional(),
+        useCaseFit: z.number().int().min(0).max(WEIGHTS.useCaseFit).optional(),
+        projectHealth: z.number().int().min(0).max(WEIGHTS.projectHealth).optional(),
+        costAdvantage: z.number().int().min(0).max(WEIGHTS.costAdvantage).optional(),
+        deployment: z.number().int().min(0).max(WEIGHTS.deployment).optional(),
+        documentation: z.number().int().min(0).max(WEIGHTS.documentation).optional(),
       })
       .optional(),
     /** Phiên bản rubric đã dùng để chấm, vd "v1". */

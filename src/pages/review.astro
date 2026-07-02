@@ -1,36 +1,14 @@
 ---
 import { getCollection } from 'astro:content';
-import fs from 'node:fs/promises';
-import path from 'node:path';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SignalBadge from '../components/SignalBadge.astro';
 import { industryShort } from '../lib/industries';
+import { readDraftStates } from '../../scripts/lib/repo-frontmatter.mjs';
 
 const canEdit = import.meta.env.DEV;
 const canList = canEdit || import.meta.env.PUBLIC_SHOW_DRAFTS === 'true';
 
-async function readDraftStates() {
-  if (!canEdit) return new Map<string, boolean>();
-
-  const reposDir = path.resolve(process.cwd(), 'src/content/repos');
-  const files = await fs.readdir(reposDir);
-  const states = new Map<string, boolean>();
-
-  await Promise.all(
-    files
-      .filter((file) => file.endsWith('.md') && !file.startsWith('_'))
-      .map(async (file) => {
-        const slug = file.replace(/\.md$/, '');
-        const text = await fs.readFile(path.join(reposDir, file), 'utf8');
-        const match = text.match(/^draft:\s*(true|false)\s*$/m);
-        states.set(slug, match ? match[1] === 'true' : false);
-      }),
-  );
-
-  return states;
-}
-
-const draftStates = await readDraftStates();
+const draftStates = canEdit ? await readDraftStates() : new Map<string, boolean>();
 const entries = canList
   ? (await getCollection('repos')).sort((a, b) => {
       const aDraft = draftStates.get(a.id) ?? a.data.draft;

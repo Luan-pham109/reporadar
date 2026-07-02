@@ -1,12 +1,11 @@
-export const WEIGHTS = {
-  useCaseFit: 25,
-  projectHealth: 25,
-  costAdvantage: 20,
-  deployment: 15,
-  documentation: 15,
-} as const;
+import weightsData from './score-weights.json';
 
-export const SCORE_LABELS: Record<keyof typeof WEIGHTS, string> = {
+/** Nguồn sự thật duy nhất cho trọng số điểm — xem src/lib/score-weights.json. */
+export type ScoreKey = 'useCaseFit' | 'projectHealth' | 'costAdvantage' | 'deployment' | 'documentation';
+
+export const WEIGHTS = weightsData as Record<ScoreKey, number>;
+
+export const SCORE_LABELS: Record<ScoreKey, string> = {
   useCaseFit: 'Use Case Fit',
   projectHealth: 'Project Health',
   costAdvantage: 'Cost Advantage',
@@ -14,7 +13,7 @@ export const SCORE_LABELS: Record<keyof typeof WEIGHTS, string> = {
   documentation: 'Docs',
 };
 
-export const SCORE_KIND: Record<keyof typeof WEIGHTS, 'judged' | 'auto'> = {
+export const SCORE_KIND: Record<ScoreKey, 'judged' | 'auto'> = {
   useCaseFit: 'judged',
   projectHealth: 'auto',
   costAdvantage: 'judged',
