@@ -18,6 +18,7 @@
     "smoke:auth": "node scripts/smoke-auth.mjs",
     "astro": "astro",
     "signals": "node scripts/fetch-signals.mjs",
+    "refresh:stats": "node scripts/refresh-stats.mjs",
     "daily": "node scripts/run-daily-pipeline.mjs",
     "dev:functions": "npm run build && wrangler pages dev dist"
   },

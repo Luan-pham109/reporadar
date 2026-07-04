@@ -16,15 +16,10 @@
  * Đặt GITHUB_TOKEN trong env để nâng rate-limit (tuỳ chọn).
  */
 
+import { parseRepoRef, fetchGitHubStats, healthScore } from './lib/github-stats.mjs';
+
 const SUBREDDITS = ['selfhosted', 'opensource', 'SideProject'];
 const UA = 'RepoRadarVN/0.1 (manual research tool)';
-
-function parseRepoArg(arg) {
-  if (!arg) return null;
-  const m = arg.match(/github\.com\/([^/]+)\/([^/?#]+)/i) || arg.match(/^([^/\s]+)\/([^/\s]+)$/);
-  if (!m) return null;
-  return { owner: m[1], repo: m[2].replace(/\.git$/, '') };
-}
 
 async function getJson(url, headers = {}) {
   const res = await fetch(url, { headers: { 'User-Agent': UA, ...headers } });
@@ -32,45 +27,10 @@ async function getJson(url, headers = {}) {
   return res.json();
 }
 
-async function fetchGitHub({ owner, repo }) {
-  const headers = process.env.GITHUB_TOKEN
-    ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
-    : {};
-  const data = await getJson(`https://api.github.com/repos/${owner}/${repo}`, headers);
-  const createdDays = Math.round((Date.now() - new Date(data.created_at)) / 86400000);
-  const starsPerDay = createdDays > 0 ? +(data.stargazers_count / createdDays).toFixed(1) : data.stargazers_count;
-  const gh = {
-    fullName: data.full_name,
-    description: data.description,
-    stars: data.stargazers_count,
-    forks: data.forks_count,
-    createdAt: data.created_at,
-    ageDays: createdDays,
-    starsPerDay,
-    pushedAt: data.pushed_at,
-    archived: data.archived ?? false,
-    openIssues: data.open_issues_count ?? 0,
-    topics: data.topics ?? [],
-    homepage: data.homepage,
-    language: data.language,
-  };
+async function fetchGitHub(repo) {
+  const gh = await fetchGitHubStats(repo, { token: process.env.GITHUB_TOKEN });
   gh.suggestedHealthScore = healthScore(gh);
   return gh;
-}
-
-function healthScore(gh) {
-  if (!gh) return 0;
-  if (gh.archived) return 3;
-  const daysSincePush = gh.pushedAt
-    ? Math.round((Date.now() - new Date(gh.pushedAt)) / 86400000)
-    : 999;
-  const liveness =
-    daysSincePush <= 30 ? 12 : daysSincePush <= 90 ? 9 : daysSincePush <= 180 ? 6 : daysSincePush <= 365 ? 3 : 0;
-  const adoption =
-    gh.stars >= 20000 ? 8 : gh.stars >= 5000 ? 6 : gh.stars >= 1000 ? 4 : gh.stars >= 200 ? 2 : 1;
-  const momentum =
-    gh.starsPerDay >= 20 ? 5 : gh.starsPerDay >= 5 ? 4 : gh.starsPerDay >= 1 ? 2 : 1;
-  return Math.min(25, liveness + adoption + momentum);
 }
 
 async function fetchHN({ owner, repo }) {
@@ -192,7 +152,7 @@ async function main() {
   const args = process.argv.slice(2);
   const asJson = args.includes('--json');
   const repoArg = args.find((a) => !a.startsWith('--'));
-  const repo = parseRepoArg(repoArg);
+  const repo = parseRepoRef(repoArg);
 
   if (!repo) {
     console.error('Dùng: node scripts/fetch-signals.mjs <owner/repo | github url> [--json]');

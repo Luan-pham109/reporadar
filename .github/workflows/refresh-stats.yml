@@ -1,0 +1,55 @@
+name: Weekly repo stats refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 02:00 UTC thứ Hai (~09:00 giờ VN)
+    - cron: "0 2 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh-stats
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    env:
+      GITHUB_TOKEN: ${{ secrets.REPO_RADAR_GITHUB_PAT || secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh repo stats
+        run: node scripts/refresh-stats.mjs
+
+      - name: Open pull request with refreshed stats
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/weekly-stats
+          base: main
+          commit-message: "chore: weekly repo stats refresh"
+          title: "chore: weekly repo stats refresh"
+          body: |
+            Cập nhật số liệu GitHub (`repoStats`) tự động hàng tuần cho các record đã publish.
+
+            Chỉ đụng số liệu khách quan (stars/forks/starsPerDay/ageDays/pushedAt/archived/openIssues).
+            Xem diff để xác nhận số liệu trước khi merge.
+          add-paths: |
+            src/content/repos/**
+          delete-branch: true
