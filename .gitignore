@@ -14,7 +14,12 @@ node_modules/
 .dev.vars
 
 # local automation / codex
-.codex/
+# Queue mới nhất được track để CI đẩy kết quả crawl vào repo cho bước draft;
+# các bản queue theo ngày vẫn là rác local.
+.codex/*
+!.codex/reporadar-daily-queue/
+.codex/reporadar-daily-queue/*
+!.codex/reporadar-daily-queue/latest.json
 
 # wrangler & temp
 .wrangler/

@@ -27,7 +27,7 @@ on:
     - cron: "30 1 * * *"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   discovery:
@@ -64,3 +64,17 @@ jobs:
         with:
           name: reporadar-daily-queue
           path: .codex/reporadar-daily-queue/latest.json
+
+      # Queue phải nằm trong repo thì bước draft ở local mới chỉ cần git pull.
+      # Artifact ở trên giữ lại làm bản lưu theo từng lượt chạy.
+      - name: Commit queue
+        run: |
+          if [ -z "$(git status --porcelain -- .codex/reporadar-daily-queue/latest.json)" ]; then
+            echo "Queue không đổi, bỏ qua commit."
+            exit 0
+          fi
+          git config user.name "RepoRadar Bot"
+          git config user.email "noreply@altstack.io.vn"
+          git add .codex/reporadar-daily-queue/latest.json
+          git commit -m "chore: cập nhật queue crawl daily [skip ci]"
+          git push

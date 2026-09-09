@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-09-08T06:17:49.790Z",
+  "args": {
+    "days": 365,
+    "limit": 60,
+    "pick": 5,
+    "source": "all",
+    "vertical": "all",
+    "dryRun": false
+  },
+  "count": 2,
+  "instructions": [
+    "Use repo-radar-hunt, repo-radar-synthesize, and repo-radar-edit semantics.",
+    "Create one draft markdown record per queued repo in src/content/repos.",
+    "Keep draft: true. Do not publish automatically.",
+    "Run npm.cmd run build after writing records."
+  ],
+  "items": [
+    {
+      "candidate": {
+        "key": "tombadash/mousecontrol",
+        "fullName": "tombadash/mousecontrol",
+        "url": "https://github.com/tombadash/mousecontrol",
+        "description": "Mouser: An open source alternative to Logi-Plus mouse software",
+        "sources": [
+          "hacker-news"
+        ],
+        "signals": [
+          "443▲ 151💬"
+        ],
+        "signalUrls": [
+          "https://news.ycombinator.com/item?id=47368033"
+        ],
+        "points": 443,
+        "verticals": []
+      },
+      "signals": {
+        "repo": {
+          "owner": "tombadash",
+          "repo": "mousecontrol"
+        },
+        "github": null,
+        "hackerNews": [
+          {
+            "title": "Mouser: An open source alternative to Logi-Plus mouse software",
+            "points": 443,
+            "comments": 151,
+            "createdAt": "2026-03-13T18:42:54Z",
+            "hnUrl": "https://news.ycombinator.com/item?id=47368033"
+          }
+        ],
+        "reddit": [
+          {
+            "subreddit": "selfhosted",
+            "error": "404 Not Found — https://old.reddit.com/r/selfhosted/search.json?q=mousecontrol&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=mousecontrol&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "opensource",
+            "error": "404 Not Found — https://old.reddit.com/r/opensource/search.json?q=mousecontrol&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=mousecontrol&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "SideProject",
+            "error": "404 Not Found — https://old.reddit.com/r/SideProject/search.json?q=mousecontrol&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=mousecontrol&restrict_sr=1&sort=new"
+          }
+        ],
+        "heuristic": {
+          "maturitySuggestion": "rising",
+          "reasons": [
+            "Đang được bàn ở HN/Reddit",
+            "Không lấy được dữ liệu GitHub"
+          ]
+        }
+      },
+      "readmeExcerpt": "",
+      "media": [],
+      "score": 1443
+    },
+    {
+      "candidate": {
+        "key": "opencharai/openchar",
+        "fullName": "OpenCharAI/OpenChar",
+        "url": "https://github.com/OpenCharAI/OpenChar",
+        "description": "AI character studio for portable identity. Build multi model consistent characters, train LoRAs, and generate on your own GPU.",
+        "stars": 290,
+        "sources": [
+          "github-search"
+        ],
+        "signals": [
+          "⭐ 290"
+        ],
+        "signalUrls": [],
+        "points": 0,
+        "verticals": [
+          "creative"
+        ]
+      },
+      "signals": {
+        "repo": {
+          "owner": "OpenCharAI",
+          "repo": "OpenChar"
+        },
+        "github": null,
+        "hackerNews": [],
+        "reddit": [
+          {
+            "subreddit": "selfhosted",
+            "error": "404 Not Found — https://old.reddit.com/r/selfhosted/search.json?q=OpenChar&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=OpenChar&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "opensource",
+            "error": "404 Not Found — https://old.reddit.com/r/opensource/search.json?q=OpenChar&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=OpenChar&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "SideProject",
+            "error": "404 Not Found — https://old.reddit.com/r/SideProject/search.json?q=OpenChar&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=OpenChar&restrict_sr=1&sort=new"
+          }
+        ],
+        "heuristic": {
+          "maturitySuggestion": "rising",
+          "reasons": [
+            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
+            "Không lấy được dữ liệu GitHub"
+          ]
+        }
+      },
+      "readmeExcerpt": "",
+      "media": [],
+      "score": 1114.5
+    }
+  ]
+}

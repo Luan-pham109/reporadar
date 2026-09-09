@@ -246,8 +246,8 @@ C5. ✅ Build sạch (9 trang) + verify DOM (3 figure ở detail, thumbnail trê
 - Automation mode: GitHub Actions prepares deterministic discovery queues; Codex scheduler/manual review turns queue items into draft records. `scripts/run-daily-pipeline.mjs` does not call an LLM API and does not need `OPENAI_API_KEY`.
 - Foundation defaults: `npm.cmd run daily -- --source all --days 365 --limit 60 --pick 5`.
 - Scheduler note: intended local scheduler is `reporadar-daily-codex-draft`, daily 09:15 Asia/Saigon, cwd `D:\RepoRadar`; verify scheduler config outside git before relying on it.
-- GitHub Action: `.github/workflows/discover-repos.yml`, daily at 08:30 Asia/Saigon, uploads `reporadar-daily-queue` artifact.
-- Queue path: `.codex/reporadar-daily-queue/latest.json` locally; directory is ignored by git.
+- GitHub Action: `.github/workflows/discover-repos.yml`, daily at 08:30 Asia/Saigon, uploads `reporadar-daily-queue` artifact and commits `latest.json` back to main.
+- Queue path: `.codex/reporadar-daily-queue/latest.json`, tracked in git so CI pushes crawl output back to the repo; dated snapshots in the same directory stay ignored.
 - Draft preview: `npm.cmd run dev` shows drafts; static draft preview uses `npm.cmd run preview:drafts`; production build `npm.cmd run build` hides `draft: true`.
 - Member/feed state: public nav now points to `/login`; `/feed.json` returns an empty `auth_required` payload and `public/_redirects` plus `scripts/serve-dist.mjs` redirect `/feed.json` to `/login`. This is a static lock, not real auth.
 - Last verification: `npm.cmd ci` restored a broken local Vite install; `npm.cmd run build` passed and generated 17 production pages; `npm.cmd run build:drafts` passed and generated 22 draft-preview pages.
@@ -259,7 +259,7 @@ C5. ✅ Build sạch (9 trang) + verify DOM (3 figure ở detail, thumbnail trê
 - `src/pages/review.astro`: local dev review screen can flip `draft` via Vite middleware.
 - `scripts/build-drafts.mjs` and `scripts/preview-drafts.mjs`: run Astro directly through Node, no Windows shell warning.
 - `scripts/serve-dist.mjs`: static dist preview helper; now uses `dist/` relative to cwd and redirects `/feed.json`.
-- `.gitignore`: ignores `.codex/reporadar-daily-queue/`.
+- `.gitignore`: ignores `.codex/` except `reporadar-daily-queue/latest.json`.
 
 ## Records Now
 
