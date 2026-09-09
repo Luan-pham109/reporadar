@@ -1,0 +1,51 @@
+name: Relock dependencies
+
+# package-lock.json sinh trên Windows thiếu nested optional deps của
+# @tailwindcss/oxide-wasm32-wasi, nên npm ci trên Linux (GitHub Actions và
+# Cloudflare Pages build) luôn báo lệch. Chạy workflow này để sinh lại lockfile
+# trên chính nền tảng đó rồi commit ngược về.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  relock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Regenerate lockfile
+        run: |
+          rm -f package-lock.json
+          npm install --no-audit --no-fund
+
+      - name: Verify npm ci works against the new lockfile
+        run: |
+          rm -rf node_modules
+          npm ci
+
+      - name: Verify the project still builds
+        run: npm run build
+
+      - name: Commit lockfile
+        run: |
+          if [ -z "$(git status --porcelain -- package-lock.json)" ]; then
+            echo "Lockfile không đổi."
+            exit 0
+          fi
+          git config user.name "RepoRadar Bot"
+          git config user.email "noreply@altstack.io.vn"
+          git add package-lock.json
+          git commit -m "fix: sinh lại package-lock.json trên Linux cho npm ci"
+          git push
