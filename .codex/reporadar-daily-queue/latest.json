@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T06:17:49.790Z",
+  "generatedAt": "2026-09-09T05:06:10.948Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -8,7 +8,7 @@
     "vertical": "all",
     "dryRun": false
   },
-  "count": 2,
+  "count": 5,
   "instructions": [
     "Use repo-radar-hunt, repo-radar-synthesize, and repo-radar-edit semantics.",
     "Create one draft markdown record per queued repo in src/content/repos.",
@@ -39,7 +39,41 @@
           "owner": "tombadash",
           "repo": "mousecontrol"
         },
-        "github": null,
+        "github": {
+          "fullName": "TomBadash/Mouser",
+          "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
+          "stars": 5217,
+          "forks": 193,
+          "createdAt": "2026-02-24T23:54:14Z",
+          "ageDays": 196,
+          "starsPerDay": 26.6,
+          "pushedAt": "2026-08-13T10:09:08Z",
+          "archived": false,
+          "openIssues": 121,
+          "topics": [
+            "automation",
+            "controler",
+            "free",
+            "linux",
+            "linux-app",
+            "logi",
+            "logitech",
+            "logitech-options",
+            "macos",
+            "macos-app",
+            "mouse",
+            "mouse-remapping",
+            "mx-master",
+            "mx-master-3s",
+            "mx-master-4",
+            "open-source",
+            "productivity",
+            "python"
+          ],
+          "homepage": "",
+          "language": "Python",
+          "suggestedHealthScore": 23
+        },
         "hackerNews": [
           {
             "title": "Mouser: An open source alternative to Logi-Plus mouse software",
@@ -52,86 +86,377 @@
         "reddit": [
           {
             "subreddit": "selfhosted",
-            "error": "404 Not Found — https://old.reddit.com/r/selfhosted/search.json?q=mousecontrol&restrict_sr=1&sort=new&limit=5",
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=mousecontrol&restrict_sr=1&sort=new&limit=5",
             "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=mousecontrol&restrict_sr=1&sort=new"
           },
           {
             "subreddit": "opensource",
-            "error": "404 Not Found — https://old.reddit.com/r/opensource/search.json?q=mousecontrol&restrict_sr=1&sort=new&limit=5",
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=mousecontrol&restrict_sr=1&sort=new&limit=5",
             "manualUrl": "https://www.reddit.com/r/opensource/search/?q=mousecontrol&restrict_sr=1&sort=new"
           },
           {
             "subreddit": "SideProject",
-            "error": "404 Not Found — https://old.reddit.com/r/SideProject/search.json?q=mousecontrol&restrict_sr=1&sort=new&limit=5",
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=mousecontrol&restrict_sr=1&sort=new&limit=5",
             "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=mousecontrol&restrict_sr=1&sort=new"
           }
         ],
         "heuristic": {
-          "maturitySuggestion": "rising",
+          "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "Không lấy được dữ liệu GitHub"
+            "5217 sao, 193 fork, ~26.6 sao/ngày, 196 ngày tuổi"
           ]
         }
       },
-      "readmeExcerpt": "",
+      "readmeExcerpt": "# Mouser — Logitech Mouse Remapper\n\n<p align=\"center\">\n  <img src=\"images/logo_icon.png\" width=\"128\" alt=\"Mouser logo\" />\n</p>\n\nEnglish | [中文文档](README_CN.md)\n\nA lightweight, open-source, fully local alternative to **Logitech Options+** for\nremapping Logitech HID++ mice. The current best experience is on the **MX Master**\nand **MX Anywhere** families, with detection and fallback UI support for additional\nLogitech models.\n\n**No telemetry. No cloud. No Logitech account required.**\n\n---\n\n## Contents\n\n- [Download & Run](#download--run)\n- [Screenshots](#screenshots)\n- [Features](#features)\n- [Device coverage](#device-coverage)\n- [Default mappings](#default-mappings)\n- [Available actions](#available-actions)\n- [Build from source](#build-from-source)\n- [Limitations](#limitations)\n- [Roadmap](#roadmap)\n- [Contributing](#contributing)\n- [Acknowledgments](#acknowledgments)\n- [License](#license)\n\n---\n\n## Download & Run\n\n> **No install required.** Just download, extract, and double-click.\n\n<p align=\"center\">\n  <a href=\"https://github.com/TomBadash/Mouser/releases/latest\">\n    <img src=\"https://img.shields.io/github/downloads/TomBadash/Mouser/latest/Mouser-Windows.zip?style=for-the-badge&color=00d4aa&logo=windows&label=Windows&displayAssetName=false\" alt=\"Windows Downloads\" />\n  </a>\n  <a href=\"https://github.com/TomBadash/Mouser/releases/latest\">\n    <img src=\"https://img.shields.io/github/downloads/TomBadash/Mouser/latest/Mouser-macOS.zip?style=for-the-badge&color=00d4aa&logo=apple&label=macOS%20Apple%20Silicon&displayAssetName=false\" alt=\"macOS Apple Silicon Downloads\" />\n  </a>\n  <a href=\"https://github.com/TomBadash/Mouser/releases/latest\">\n    <img src=\"https://img.shields.io/github/downloads/TomBadash/Mouser/latest/Mouser-macOS-intel.zip?style=for-the-badge&color=00d4aa&logo=apple&label=macOS%20Intel&displayAssetName=false\" alt=\"macOS Intel Downloads\" />\n  </a>\n  <a href=\"https://github.com/TomBadash/Mouser/releases/latest\">\n    <img src=\"https://img.shields.io/github/downloads/TomBadash/Mouser/latest/Mouser-Linux.zip?style=for-the-badge&color=00d4aa&logo=linux&label=Linux&displayAssetName=false\" alt=\"Linux Downloads\" />\n  </a>\n  <br />\n  <img src=\"https://img.shields.io/github/downloads/TomBadash/Mouser/total?style=for-the-badge&color=00d4aa&label=Total%20Downloads%20(all%20versions)\" alt=\"Downloads\" />\n</p>\n\n1. Open the [**latest release page**](https://github.com/TomBadash/Mouser/releases/latest).\n2. Download the zip for your platform:\n   - **Windows** — `Mouser-Windows.zip`\n   - **macOS (Apple Silicon)** — `Mouser-macOS.zip`\n   - **macOS (Intel)** — `Mouser-macOS-intel.zip`\n   - **Linux** — `Mouser-Linux.zip`\n3. Extract it anywhere (Desktop, Documents, `/Applications`, wherever).\n4. Run the executable: `Mouser.exe`, `Mouser.app`, or `./Mouser`.\n\nThat's it. The app opens, drops a tray / menu-bar icon, and starts remapping immediately.\n\n### What to expect on first launch\n\n- The settings window opens to the device-aware **Mouse & Profiles** page.\n- A tray icon appears (next to the clock on Windows / Linux, in the menu bar on macOS).\n- Closing the window keeps Mouser running in the tray. Right-click the tray icon → **Quit Mouser** to fully exit.\n- Mouser remembers language and startup behavior between runs.\n\n### First-time notes\n\n- **Windows SmartScreen** may warn the first time — click **More info** → **Run anyway**.\n- **Logitech Options+ must not be running.** Both apps fight over HID++ access; quit Options+ before launching Mouser.\n- **macOS** asks for **Accessibility** permission so the event tap can intercept mouse events. See [readme_mac_osx.md](readme_mac_osx.md) for the full setup walkthrough.\n- **Linux** needs read access to `/dev/hidraw*`, `/dev/input/event*`, and write access to `/dev/uinput`. Run the bundled helper once after extracting:\n  ```bash\n  cd /path/to/extracted/Mouser\n  ./install-linux-permissions.sh\n  ```\n  Reconnect the mouse, then relaunch.\n- Config is saved automatically to:\n  - `%APPDATA%\\Mouser\\config.json` (Windows)\n  - `~/Library/Application Support/Mouser/config.json` (macOS)\n  - `~/.config/Mouser/config.json` (Linux)\n- Logs rotate automatically (5 × 5 MB) under `%APPDATA%\\Mouser\\logs`, `~/Library/Logs/Mouser`, or `$XDG_STATE_HOME/Mouser/logs`.\n\n---\n\n## Screenshots\n\n| Mouse & Profiles | Point & Scroll |\n|---|---|\n| <img src=\"images/Screenshot_mouse.png\" alt=\"Mouser — Mouse & Profiles page\" /> | <img src=\"images/Screenshot_settings.png\" alt=\"Mouser — Point & Scroll settings\" /> |\n\n---\n\n## Features\n\n### Button remapping\n\n- **Remap any programmable button** — middle click, gesture button, back, forward, mode shift, DPI switch (MX Vertical), and horizontal scroll.\n- **Mouse-to-mouse remap** — bind any button to act as left, right, middle, back, or forward click.\n- **Per-application profiles** — Mouser auto-switches mappings when the foreground app changes (e.g. Chrome vs. VS Code).\n- **Custom keyboard shortcuts** — record any key combination (e.g. `Ctrl+Shift+P`) directly in the UI.\n- **40+ built-in actions** — navigation, browser, editing, media, scroll-mode, and DPI shortcuts that adapt per platform.\n\n### Device control\n\n- **DPI / pointer speed** — slider from 200 to the device max (8000 on MX Master) with quick presets, plus a `Cycle DPI Presets` action you can map to a button.\n- **Smart Shift** — toggle Logitech's ratchet ↔ free-spin scroll mode (HID++ `0x2111`), with a sensitivity threshold and a mappable `Toggle SmartShift` action.\n- **Switch scroll mode** — bind a button to flip ratchet / free-spin without opening the UI; defaults to mode-shift.\n- **Scroll direction inversion** — independent toggles for vertical and horizontal scroll.\n- **Gesture button + swipe actions** — tap for one action, swipe up/down/left/right for four others.\n\n### Cross-platform\n\n- **Windows, macOS, and Linux** — native hooks per platform (`WH_MOUSE_LL`, `CGEventTap`, `evdev` + `uinput`).\n- **Native Intel and Apple Silicon macOS builds** — separate `Mouser-macOS-intel.zip` and `Mouser-macOS.zip` artifacts; the menu-bar app runs as `LSUIElement` (no Dock icon).\n- **Resizable UI** — main window starts at 1060 × 700 with a 920 × 620 minimum; the mouse diagram and controls reflow as you resize.\n- **Start at login** — Windows registry key, macOS LaunchAgent, and Linux XDG autostart, with an independent **Start minimized** option that boots straight into the tray. Linux autostart intentionally waits about 15 seconds after login so Bluetooth / HID devices are usually ready before Mouser restores device settings.\n- **Single-instance guard** — launching a second copy brings the existing window to the front instead of starting a duplicate.\n\n### Smart connectivity\n\n- **Bluetooth and Logi Bolt** — both transports are supported on all three platforms; the UI labels the live connection (`Logi Bolt` only when the receiver PID is positively identified).\n- **Auto-reconnection** — Mouser watches for power-off / on cycles and rebinds HID++ + the OS mouse hook without a restart; SmartShift settings are replayed on every reconnect (including wake-from-sleep).\n- **Live connection status** — real-time Connected / Not Connected badge, model name, and active layout in the UI.\n- **Device-aware UI** — interactive MX Master and MX Anywhere diagrams with clickable hotspots; generic fallback card for other models, with an experimental layout-override picker.\n\n### Multi-language UI\n\n- **English / Simplified Chinese / Traditional Chinese** — switch instantly, no restart required.\n- Language preference is saved to `config.json` and restored on next launch.\n- Covers nav, mouse page, settings page, dialogs, system tray / menu bar, and permission prompts.\n\n### Privacy first\n\n- **Fully local** — config is a plain JSON file, all processing happens on your machine.\n- **System tray / menu bar** — runs quietly in the background.\n- **Zero telemetry, zero cloud, zero account required.**\n\n---\n\n## Device coverage\n\n| Family / model | Detection + HID++ probing | UI support |\n|---|---|---|\n| MX Master 4 / 3S / 3 / 2S / MX Master | Yes | Dedicated interactive per-model layouts |\n| MX Anywhere 3S / 3 / 2S | Yes | Dedicated interactive per-model layouts |\n| MX Vertical | Yes | Generic fallback card (with DPI switch button support) |\n| Unknown Logitech HID++ mice | Best effort by PID/name | Generic fallback card |\n\n> MX Master and MX Anywhere devices have dedicated visual overlays. Other devices are still detected, show their model name, and can opt into an experimental layout override — button positions just may not line up until a real overlay lands. See [CONTRIBUTING_DEVICES.md](CONTRIBUTING_DEVICES.md) to add yours.\n\n---\n\n## Default mappings\n\n| Button | Default action |\n|---|---|\n| Back button (XButton1) | Alt + Tab (Switch Windows) |\n| Forward button (XButton2) | Alt + Tab (Switch Windows) |\n| Middle click | Pass-through |\n| Gesture button | Pass-through |\n| Gesture swipes (up / down / left / right) | Pass-through |\n| Mode shift (scroll click) | Switch Scroll Mode (Ratchet / Free Spin) |\n| Horizontal scroll left | Browser Back |\n| Horizontal scroll right | Browser Forward |\n| DPI switch (MX Vertical) | Pass-through |\n\n---\n\n## Available actions\n\nAction labels adapt per platform. Windows exposes `Win+D` and `Task View`; macOS exposes `Mission Control`, `Show Desktop`, `App Exposé`, and `Launchpad`; Linux falls back to compositor-native equivalents.\n\n| Category | Actions |\n|---|---|\n| **Navigation** | Alt+Tab, Alt+Shift+Tab, Show Desktop, Previous Desktop, Next Desktop, Task View (Windows), Mission Control / App Exposé / Launchpad (macOS), Page Up / Page Down / Home / End |\n| **Browser** | Back, Forward, Close Tab (Ctrl+W), New Tab (Ctrl+T), Next Tab (Ctrl+Tab), Previous Tab (Ctrl+Shift+Tab) |\n| **Editing** | Copy, Paste, Cut, Undo, Select All, Save, Find |\n| **Media** | Volume Up, Volume Down, Volume Mute, Play / Pause, Next Track, Previous Track |\n| **Scroll** | Switch Scroll Mode (Ratchet / Free Spin), Toggle SmartShift, Cycle DPI Presets |\n| **Mouse** | Left Click, Right Click, Middle Click, Back (Mouse Button 4), Forward (Mouse Button 5) |\n| **Custom** | User-defined keyboard shortcuts (any key combination, captured in the UI) |\n| **Other** | Do Nothing (pass-through) |\n\n---\n\n## Build from source\n\nYou only need this if you want to hack on Mouser or run a development build. Most users should grab a release zip — see [Download & Run](#download--run).\n\n### Common prerequisites\n\n- **Windows 10/11**, **macOS 12+ (Monterey)**, or **Linux** (X11; KDE Wayland for app detection)\n- **Python 3.10+** (tested up to 3.14)\n- A supported Logitech HID++ mouse paired via Bluetooth or a USB receiver\n- **Logitech Options+ must NOT be running** — it conflicts with HID++ access\n- `git` and a working build toolchain\n\n```bash\ngit clone https://github.com/TomBadash/Mouser.git\ncd Mouser\npython -m venv .venv\n```\n\n<details>\n<summary><strong>Windows</strong></summary>\n\n```powershell\n.\\.venv\\Scripts\\activate\npip install -r requirements.txt\n\n# Run from source\npython main_qml.py\n\n# Or start straight into the tray\npython main_qml.py --start-hidden\n\n# Build a portable zip\nbuild.bat                # standard\nbuild.bat --clean        # force clean rebuild\n```\n\n`build.bat` installs requirements, verifies that `hidapi` is importable, and packages with PyInstaller. The output lives in `dist\\Mouser\\` — zip the folder and ship it.\n\nTo launch a source checkout without a console window, create a shortcut that uses `pythonw.exe`; see [DEVELOPMENT.md](DEVELOPMENT.md#desktop-shortcut-windows).\n\n</details>\n\n<details>\n<summary><strong>macOS</strong></summary>\n\n```bash\nsource .venv/bin/activate\npip install -r requirements.txt\n\n# Run from source\npython main_qml.py\npython main_qml.py --start-hidden     # launch directly to menu bar\n\n# Build the native menu-bar bundle\npip install pyinstaller\n./build_macos_app.sh\n```\n\nThe output is `dist/Mouser.app`. The script reuses `images/AppIcon.icns` when present, otherwise generates one from `images/logo_icon.png`. Signing depends on whether `MOUSER_SIGN_IDENTITY` is set in the environment:\n\n- **Unset (default)**: ad-hoc signs with `codesign --sign -`. Convenient for one-off builds, but the bundle's code identity can change on rebuild, so macOS may ask for Accessibility permission again.\n- **Set to a codesigning identity** (`security find-identity -v -p codesigning` to list them — SHA-1 form preferred): signs every nested `.dylib` / `.so` / `.framework` with hardened runtime options, then signs the outer app with the hardened-runtime exceptions at `build_resources/Mouser.entitlements`. This is a local developer signing path for repeated builds; stable macOS permission behavior depends on keeping the same source, resolved Python interpreter, dependency versions, architecture, signing identity, entitlements, and timestamp policy. A failing `codesign --verify --deep --strict` check aborts the build.\n\n```sh\nMOUSER_SIGN_IDENTITY=\"ABCD1234...\" ./build_macos_app.sh   # local signed build\n```\n\n- This is **not** a notarized release-signing flow. Public macOS release zips remain ad-hoc signed until a separate Developer ID signing, secure timestamp, notarization, stapling, and Gatekeeper validation workflow exists.\n- Build on the architecture you want to ship: an `arm64` Python produces an Apple Silicon bundle, an `x86_64` Python produces an Intel bundle. Set `PYINSTALLER_TARGET_ARCH=arm64|x86_64|universal2` to override.\n- Release CI publishes both `Mouser-macOS.zip` (Apple Silicon) and `Mouser-macOS-intel.zip` (Intel) automatically on tag pushes.\n- Accessibility permission is required. See [readme_mac_osx.md](readme_mac_osx.md) for the full grant flow and platform-specific notes.\n\n</details>\n\n<details>\n<summary><strong>Linux</strong></summary>\n\n```bash\nsource .venv/bin/activate\npip install -r requirements.txt\n\n# Run from source\npython main_qml.py\n\n# Install device permissions (only needed once, then reconnect the mouse)\n./packaging/linux/install-linux-permissions.sh\n\n# Build a portable bundle\nsudo apt-get install libhidapi-dev\npip install pyinstaller\npyinstaller Mouser-linux.spec --noconfirm\n```\n\nThe helper installs `69-mouser-logitech.rules`, reloads `udev`, and tries to `modprobe uinput`. After a successful run, reconnect the mouse, fully quit Mouser, and launch normally — no `sudo`. On systems without logind / `uaccess`, adding the user to the `input` group is the distro-specific fallback.\n\nThe first normal Linux launch creates or refreshes:\n\n```text\n~/.local/share/applications/io.github.tombadash.mouser.desktop\n```\n\nThe generated launcher uses absolute paths for the current portable app or source checkout, and syncs Mouser's app icon into the per-user hicolor icon theme when possible. If you move the checkout, launch Mouser once from the new path to refresh the app-menu entry. Enabling **Start at login** also manages:\n\n```text\n~/.config/autostart/io.github.tombadash.mouser.desktop\n```\n\nThat Linux autostart entry includes a short GNOME startup delay so Mouser does not race Bluetooth / HID initialization immediately after login.\n\n`xdotool` enables per-app profile switching on X11; `kdotool` adds KDE Wayland support. Other Wayland compositors fall back to the default profile.\n\n</details>\n\n> **Automated releases:** pushing a `v*` tag triggers [`.github/workflows/release.yml`](.github/workflows/release.yml), which builds Windows, macOS (Apple Silicon + Intel), and Linux artifacts in CI and uploads them to the GitHub Release.\n\nFor project layout, the architecture diagram, the HID++ gesture detector, the Engine + reconnection flow, debug CLI flags (`--hid-backend=iokit|hidapi|auto`), and how to run the test suite, see [DEVELOPMENT.md](DEVELOPMENT.md). To add a new device, see [CONTRIBUTING_DEVICES.md](CONTRIBUTING_DEVICES.md).\n\n---\n\n## Limitations\n\n- **Per-device mappings aren't fully separated yet** — layout overrides are stored per detected device, but profile mappings are still global.\n- **Conflicts with Logitech Options+** — both apps fight over HID++ ac",
       "media": [],
       "score": 1443
     },
     {
       "candidate": {
-        "key": "opencharai/openchar",
-        "fullName": "OpenCharAI/OpenChar",
-        "url": "https://github.com/OpenCharAI/OpenChar",
-        "description": "AI character studio for portable identity. Build multi model consistent characters, train LoRAs, and generate on your own GPU.",
-        "stars": 290,
+        "key": "agricidaniel/on-page-seo",
+        "fullName": "AgriciDaniel/on-page-seo",
+        "url": "https://github.com/AgriciDaniel/on-page-seo",
+        "description": "On-Page SEO Analyzer - Analyze your website's SEO performance",
+        "stars": 235,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 290"
+          "⭐ 235"
         ],
         "signalUrls": [],
         "points": 0,
         "verticals": [
-          "creative"
+          "seo",
+          "agency"
         ]
       },
       "signals": {
         "repo": {
-          "owner": "OpenCharAI",
-          "repo": "OpenChar"
+          "owner": "AgriciDaniel",
+          "repo": "on-page-seo"
         },
-        "github": null,
+        "github": {
+          "fullName": "AgriciDaniel/on-page-seo",
+          "description": "On-Page SEO Analyzer - Analyze your website's SEO performance",
+          "stars": 235,
+          "forks": 55,
+          "createdAt": "2026-01-03T16:13:09Z",
+          "ageDays": 249,
+          "starsPerDay": 0.9,
+          "pushedAt": "2026-06-06T05:02:38Z",
+          "archived": false,
+          "openIssues": 3,
+          "topics": [
+            "ai",
+            "ai-seo",
+            "claude-code",
+            "claude-code-skill",
+            "marketing-automation",
+            "open-source",
+            "seo"
+          ],
+          "homepage": "https://agricidaniel.com/blog/free-seo-audit-tools",
+          "language": "TypeScript",
+          "suggestedHealthScore": 9
+        },
         "hackerNews": [],
         "reddit": [
           {
             "subreddit": "selfhosted",
-            "error": "404 Not Found — https://old.reddit.com/r/selfhosted/search.json?q=OpenChar&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=OpenChar&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=on-page-seo&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=on-page-seo&restrict_sr=1&sort=new"
           },
           {
             "subreddit": "opensource",
-            "error": "404 Not Found — https://old.reddit.com/r/opensource/search.json?q=OpenChar&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=OpenChar&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=on-page-seo&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=on-page-seo&restrict_sr=1&sort=new"
           },
           {
             "subreddit": "SideProject",
-            "error": "404 Not Found — https://old.reddit.com/r/SideProject/search.json?q=OpenChar&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=OpenChar&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=on-page-seo&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=on-page-seo&restrict_sr=1&sort=new"
           }
         ],
         "heuristic": {
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "Không lấy được dữ liệu GitHub"
+            "235 sao, 55 fork, ~0.9 sao/ngày, 249 ngày tuổi"
           ]
         }
       },
-      "readmeExcerpt": "",
+      "readmeExcerpt": "# On-Page SEO Analyzer\n\nA comprehensive on-page SEO analysis tool that helps you audit and optimize your website's SEO performance. Analyze up to 500 pages at once with detailed insights on 74 SEO metrics.\n\n![On-Page SEO Dashboard](docs/screenshot.png)\n\n## How It Was Built\n\n[![Watch how it was built](https://img.youtube.com/vi/jRSx4q8AghU/maxresdefault.jpg)](https://youtu.be/jRSx4q8AghU)\n\n**[Watch the journey from n8n workflow to full app on YouTube](https://youtu.be/jRSx4q8AghU)**\n\n## Features\n\n- **Page Discovery**: Automatically discover pages on your website using Firecrawl\n- **Comprehensive Analysis**: Analyze 74 SEO metrics per page using DataForSEO\n- **Core Web Vitals**: Track LCP, FID, and CLS scores\n- **Real-time Progress**: Watch your audit progress with live updates\n- **Export Results**: Download reports as CSV or JSON\n- **Dark Mode**: Full dark mode support\n\n## Tech Stack\n\n**Frontend:**\n- React 19 with TypeScript\n- Vite for blazing fast builds\n- TanStack Router & React Query\n- Tailwind CSS with Shadcn/ui components\n- Recharts for data visualization\n\n**Backend:**\n- Node.js with Express\n- SQLite database (better-sqlite3)\n- TypeScript\n- Firecrawl API for page discovery\n- DataForSEO API for SEO analysis\n\n## Prerequisites\n\n- Node.js 18+\n- npm or yarn\n- [Firecrawl API Key](https://firecrawl.dev)\n- [DataForSEO Account](https://dataforseo.com)\n\n## Quick Start\n\n### 1. Clone the repository\n\n```bash\ngit clone https://github.com/AgriciDaniel/on-page-seo.git\ncd on-page-seo\n```\n\n### 2. Install dependencies\n\n```bash\n# Install all dependencies (root, client, and server)\nnpm run install:all\n```\n\n### 3. Configure environment\n\n```bash\ncp .env.example .env\n```\n\nEdit `.env` with your settings, or configure API keys through the app's settings page.\n\n### 4. Start development servers\n\n```bash\nnpm run dev\n```\n\nThis starts both the client (http://localhost:3005) and server (http://localhost:3001).\n\n## Scripts\n\n| Command | Description |\n|---------|-------------|\n| `npm run dev` | Start both client and server in development mode |\n| `npm run dev:client` | Start only the client |\n| `npm run dev:server` | Start only the server |\n| `npm run build` | Build both client and server for production |\n| `npm run start` | Start the production server |\n| `npm run install:all` | Install dependencies for root, client, and server |\n\n## Project Structure\n\n```\non-page-seo/\n├── client/             # React frontend\n│   ├── src/\n│   │   ├── components/ # Reusable UI components\n│   │   ├── features/   # Feature-based modules\n│   │   ├── lib/        # API client and utilities\n│   │   ├── routes/     # TanStack Router routes\n│   │   └── types/      # TypeScript types\n│   └── ...\n├── server/             # Express backend\n│   └── src/\n│       ├── routes/     # API routes\n│       ├── services/   # Business logic\n│       └── db/         # Database layer\n├── shared/             # Shared types\n│   └── types/\n├── data/               # SQLite database\n└── ...\n```\n\n## API Endpoints\n\n| Method | Endpoint | Description |\n|--------|----------|-------------|\n| POST | `/api/audits` | Start a new SEO audit |\n| GET | `/api/audits` | List all audits |\n| GET | `/api/audits/:id` | Get audit details with results |\n| GET | `/api/audits/:id/progress` | SSE stream for real-time progress |\n| GET | `/api/audits/:id/export` | Export audit as CSV or JSON |\n| DELETE | `/api/audits/:id` | Delete an audit |\n| GET | `/api/settings` | Get API configuration status |\n| PUT | `/api/settings` | Update API credentials |\n\n## Production Deployment\n\n### Build for production\n\n```bash\nnpm run build\n```\n\n### Start production server\n\n```bash\nNODE_ENV=production npm run start\n```\n\nThe server will serve the built client files and handle API requests on the same port.\n\n## Contributing\n\nContributions are welcome! Please feel free to submit a Pull Request.\n\n## License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\n\n---\n\n\n> For a full publishing pipeline from analysis to published content, see [Rankenstein](https://rankenstein.pro).\n\n## Author\n\nBuilt by [Agrici Daniel](https://agricidaniel.com/about) - AI Workflow Architect.\n\n- [Blog](https://agricidaniel.com/blog) - Deep dives on AI marketing automation\n- [AI Marketing Hub](https://www.skool.com/ai-marketing-hub) - Free community, 2,800+ members\n- [YouTube](https://www.youtube.com/@AgriciDaniel) - Tutorials and demos\n- [All open-source tools](https://github.com/AgriciDaniel)\n",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://img.youtube.com/vi/jRSx4q8AghU/maxresdefault.jpg",
+          "caption": ""
+        }
+      ],
+      "score": 1111.75
+    },
+    {
+      "candidate": {
+        "key": "avansaber/seo-monster",
+        "fullName": "avansaber/seo-monster",
+        "url": "https://github.com/avansaber/seo-monster",
+        "description": "SEOMonster: a local, user-credential-driven MCP server for SEO workflows over Google Search Console, GA4, PageSpeed Insights, and Cloudflare. Read-first, open source.",
+        "stars": 157,
+        "sources": [
+          "github-search"
+        ],
+        "signals": [
+          "⭐ 157"
+        ],
+        "signalUrls": [],
+        "points": 0,
+        "verticals": [
+          "seo",
+          "agency"
+        ]
+      },
+      "signals": {
+        "repo": {
+          "owner": "avansaber",
+          "repo": "seo-monster"
+        },
+        "github": {
+          "fullName": "avansaber/seo-monster",
+          "description": "SEOMonster: a local, user-credential-driven MCP server for SEO workflows over Google Search Console, GA4, PageSpeed Insights, and Cloudflare. Read-first, open source.",
+          "stars": 157,
+          "forks": 60,
+          "createdAt": "2026-05-28T04:53:53Z",
+          "ageDays": 104,
+          "starsPerDay": 1.5,
+          "pushedAt": "2026-09-01T17:23:40Z",
+          "archived": false,
+          "openIssues": 8,
+          "topics": [
+            "ai",
+            "anthropic",
+            "claude",
+            "cloudflare",
+            "core-web-vitals",
+            "crux",
+            "ga4",
+            "indexnow",
+            "mcp",
+            "model-context-protocol",
+            "pagespeed",
+            "search-console",
+            "seo",
+            "technical-seo"
+          ],
+          "homepage": "https://seomonster.avansaber.com/",
+          "language": "Python",
+          "suggestedHealthScore": 15
+        },
+        "hackerNews": [],
+        "reddit": [
+          {
+            "subreddit": "selfhosted",
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=seo-monster&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=seo-monster&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "opensource",
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=seo-monster&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=seo-monster&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "SideProject",
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=seo-monster&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=seo-monster&restrict_sr=1&sort=new"
+          }
+        ],
+        "heuristic": {
+          "maturitySuggestion": "rising",
+          "reasons": [
+            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
+            "157 sao, 60 fork, ~1.5 sao/ngày, 104 ngày tuổi"
+          ]
+        }
+      },
+      "readmeExcerpt": "<div align=\"center\">\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/wordmark-dark.svg\">\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"assets/wordmark-light.svg\">\n  <img alt=\"SEOMonster\" src=\"assets/wordmark-light.svg\" width=\"440\">\n</picture>\n\n<h3>Don't learn another SEO dashboard. Just ask.</h3>\n\n<p>The open-source SEO analyst that lives inside the AI assistant you already use —<br>working from <b>your own</b> Search Console, Analytics, and PageSpeed data, on your machine.</p>\n\n<p>\n  <a href=\"https://pypi.org/project/seo-monster/\"><img src=\"https://img.shields.io/pypi/v/seo-monster?color=2BD9A8&label=pypi\" alt=\"PyPI version\"></a>\n  <a href=\"https://pypi.org/project/seo-monster/\"><img src=\"https://img.shields.io/pypi/pyversions/seo-monster\" alt=\"Python versions\"></a>\n  <a href=\"https://pypi.org/project/seo-monster/\"><img src=\"https://img.shields.io/pypi/dm/seo-monster?color=2BD9A8\" alt=\"Downloads\"></a>\n  <a href=\"https://github.com/avansaber/seo-monster/actions\"><img src=\"https://img.shields.io/badge/tests-575%20passing-2BD9A8\" alt=\"Tests\"></a>\n  <img src=\"https://img.shields.io/badge/license-MIT-green\" alt=\"License: MIT\">\n  <a href=\"https://github.com/avansaber/seo-monster/stargazers\"><img src=\"https://img.shields.io/github/stars/avansaber/seo-monster?style=flat&color=2BD9A8\" alt=\"GitHub stars\"></a>\n</p>\n\n<p>\n  <a href=\"https://cursor.com/en/install-mcp?name=seomonster&amp;config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyJzZW8tbW9uc3RlciJdfQ==\"><img src=\"https://cursor.com/deeplink/mcp-install-dark.svg\" alt=\"Add to Cursor\" height=\"32\"></a>\n  &nbsp;\n  <a href=\"https://insiders.vscode.dev/redirect/mcp/install?name=seomonster&amp;config=%7B%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22seo-monster%22%5D%7D\"><img src=\"https://img.shields.io/badge/VS_Code-Install_server-0098FF?style=flat&logo=visualstudiocode&logoColor=white\" alt=\"Install in VS Code\" height=\"32\"></a>\n  &nbsp;\n  <a href=\"https://seomonster.avansaber.com\"><img src=\"https://img.shields.io/badge/Website-seomonster.avansaber.com-555\" alt=\"Website\" height=\"32\"></a>\n</p>\n\n</div>\n\n---\n\nYou don't open a new tool — you just ask, in plain English, inside **Claude** (or Cursor / Cline / Codex):\n\n> **You** &nbsp; *\"What should I write about next?\"*\n>\n> **🦖 SEOMonster** &nbsp; Pulls your Search Console and surfaces three topics you're *almost* ranking for — positions 8–20 with real demand — ranked by opportunity. Say the word and it drafts the brief.\n\n| You ask … | … SEOMonster does |\n| :-- | :-- |\n| *\"What should I write about next?\"* | Surfaces near-ranking topics from **your own** Search Console demand |\n| *\"Is this page ready to publish?\"* | Runs the technical-SEO + structured-data checks before you ship |\n| *\"Get this indexed.\"* | Nudges Google (Indexing API) and Bing / Yandex (IndexNow) |\n| *\"Did my change actually move rankings?\"* | Before/after attribution vs a matched control group — with a confidence interval, not a guess |\n| *\"Is ChatGPT recommending us, or our competitors?\"* | Tracks your brand's **share of voice** across the AI answer engines |\n\n**70 tools** across Search Console, GA4, PageSpeed, Cloudflare, AI-citation tracking, keyword discovery, and technical SEO — every one returning the same JSON result envelope, every one driven by your own credentials. No new dashboard to learn; you chat with the assistant you already use.\n\n> [!NOTE]\n> Published on PyPI as **`seo-monster`** (so the command is `uvx seo-monster`). The import package is `seo_mcp`; `seo-mcp` is a dev/local alias. The package ships **zero secrets** — every credential is resolved at runtime from your own environment or config file.\n\n- **Your data, your machine.** User-credential-driven; nothing is sent to any third party.\n- **Read-first, safe by default.** Reads always work; the two routine writes (sitemap submit, indexing request) are on by default; the Cloudflare write tools (cache purge, redirects, settings, managed robots.txt) are gated behind `SEO_MCP_ALLOW_DESTRUCTIVE`, and the riskier ones also need a per-call `confirm` token.\n- **Lean.** Standard library + the `mcp` SDK + the Google client libraries; PageSpeed and Cloudflare ride on `urllib`, no extra HTTP dependency.\n\n## Quickstart\n\n> [!TIP]\n> Fastest path: the **one-click install** buttons above. Or add it to any MCP client by hand:\n\n```json\n{\n  \"mcpServers\": {\n    \"seomonster\": { \"command\": \"uvx\", \"args\": [\"seo-monster\"] }\n  }\n}\n```\n\nRun the one-time Google sign-in once — `uvx --from seo-monster seo-monster auth` — then ask your assistant to call **`system_status`** to confirm what's connected. Full per-client setup and credentials are in [Install](#install) and [Auth](#auth).\n\n## How it works\n\n```mermaid\nflowchart LR\n  U[\"You — plain English\"] --> H[\"Claude · Cursor · Cline · Codex\"]\n  H -- \"MCP · stdio\" --> S[\"SEOMonster<br/>70 tools\"]\n  S --> GSC[\"Search Console · GA4\"]\n  S --> PSI[\"PageSpeed · CrUX\"]\n  S --> CF[\"Cloudflare · IndexNow\"]\n  S --> AI[\"AI engines · SERP<br/>(optional)\"]\n  S -. \"your creds · your machine\" .-> U\n```\n\nSEOMonster is a stdio **MCP server**: your AI host launches it, it calls Google / Cloudflare / the AI engines with *your* credentials, and returns a consistent JSON envelope the assistant reads back to you in plain language.\n\n## Requirements\n\nFor the **`.mcpb` bundle path** (Claude Desktop): just Claude Desktop on macOS\nor Windows. The bundle declares Python 3.11+ as a runtime; Claude Desktop\nmaterializes the environment for you. No prior `uv` install needed.\n\nFor the **`uvx` path** (Cursor, Cline, Codex, advanced Claude Desktop): Python\n3.11 or newer plus [`uv`](https://docs.astral.sh/uv/) (which provides `uvx`).\nFind the absolute path to `uvx` with `which uvx`; GUI hosts do not read your\nshell profile, so MCP configs need the full path.\n\n## Tools\n\n70 tools, grouped by service. All return the same result envelope (see\n[Result envelope](#result-envelope)). Call `system_status` first if unsure what\nis configured. The server also publishes thirteen named [workflow prompts](#workflow-prompts).\n\n**Cross-service**\n- `system_status` - which services are configured/reachable, the Google auth\n  method and scopes, whether destructive mode is on, the full tool catalog,\n  and the list of registered prompts.\n\n<details>\n<summary><b>📂 Browse all 70 tools</b> — grouped by service (GSC · GA4 · AI/GEO · keyword discovery · content · PageSpeed/CrUX · Cloudflare · IndexNow · technical · schema). Click to expand.</summary>\n<br>\n\n<a name=\"gsc\"></a>\n**Google Search Console (18)**\n\n*Workhorses*\n- `gsc_list_properties` - properties the credentials can see, with permission\n  level and a derived `writable` flag (true for `siteOwner` / `siteFullUser`).\n- `gsc_search_analytics` - the workhorse: clicks/impressions/CTR/position by\n  dimensions, date range, filters, and `data_state`.\n- `gsc_top_queries` / `gsc_top_pages` - convenience top-N wrappers.\n- `gsc_compare_periods` - current vs prior window with per-key deltas.\n  v0.2.0 added `sort_by`, `sort_dir`, `min_delta_clicks` / `_impressions` /\n  `_position`, `anomalies_only` + `sigma_threshold`, and `top` for one-call\n  movers / losers / outliers reporting.\n- `gsc_inspect_url` - URL Inspection (index verdict, coverage, canonicals).\n- `gsc_batch_inspect_urls` - inspect up to 25 URLs, per-URL failures collected.\n- `gsc_list_sitemaps` - registered sitemaps and their status.\n- `gsc_submit_sitemap` - submit a sitemap (write, un-gated; needs the writable\n  scope). Accepts either `sitemap_url` (friendly) or `feedpath` (raw API field).\n- `gsc_request_indexing` - request (re)crawl via the Indexing API (write,\n  un-gated). Accepts singular `url` or `urls`.\n\n*Query intelligence (v0.2.0)*\n- `gsc_query_opportunities` - queries already ranking top N with below-target\n  CTR. Title and meta optimization candidates.\n- `gsc_query_gaps` - queries that draw impressions but barely any clicks.\n  Content opportunity signal.\n- `gsc_new_queries` - queries appearing in the current window with no prior\n  impressions. Emerging topics.\n- `gsc_top_pages_by_query` - which pages rank for a specific query. The\n  cannibalization audit input.\n\n*Multi-property + lifecycle (v0.5.0)*\n- `gsc_portfolio_summary(days, include?, exclude?)` - multi-property fleet\n  view. Per-property one-row summary (clicks, impressions, CTR, position)\n  for the last N days, plus a portfolio-level rollup. Honors optional\n  `include` / `exclude` filters. The single fastest answer to \"how is the\n  whole portfolio doing?\" across agency or multi-brand setups.\n- `gsc_trending_pages(days, limit)` - pages whose impressions grew most over\n  the last N days vs the prior N days. Wrapper on `gsc_compare_periods` with\n  `dimensions=[\"page\"], sort_by=\"delta_impressions\", sort_dir=\"desc\"`.\n- `gsc_decaying_pages(days, limit)` - same wrapper, ascending sort. Pages\n  to rescue.\n- `gsc_coverage_audit(urls, site_url?)` - heuristic coverage audit. The GSC\n  Index Coverage report is not exposed in the API; this tool takes a user-\n  supplied URL list (typically pulled from a sitemap) and bulk-inspects\n  each, then rolls up verdicts (PASS / PARTIAL / FAIL) and coverage_state\n  frequencies.\n\n<a name=\"content\"></a>\n**Content intelligence (4)**\n- `content_opportunities(site_url?, days?, count?, impressions_min?)` - ranks\n  data-grounded content topics from your own Search Console data: fuses\n  CTR-vs-expected gap (curve self-calibrated from your own per-position CTR),\n  striking-distance position, demand, and momentum into a transparent\n  opportunity score; flags cannibalization. If a GA4 property is configured, it\n  also weights each topic by the organic conversions its top page already drives\n  (up to +50%), so topics that convert rank higher; `filters_applied.ga4_value_status`\n  reports whether that ran and why (`applied` / `no_ga4_property` /\n  `ga4_unreachable` / `no_conversions`). Prioritizes demand you already have;\n  does not do cold-start keyword research or write the content. Pairs with the\n  content workflow prompts below. (GA4 weighting v0.7.3) v0.9.0 adds an additive\n  per-candidate `winnability` block (banded: striking-distance + topical-\n  proximity, GSC-personalization tier; existing fields unchanged).\n- `content_brief_data(target_query, competitor_urls?, topic?, site_url?, days?)` -\n  data-wired backing for a content brief: fetches the competitor pages (or your\n  own GSC-ranking pages as a fallback) and returns the heading union, median\n  word-count floor, schema types, and entity coverage, plus the 2026 GEO writing\n  directives and validation rules. The host writes the prose; SEOMonster brings\n  rules + evidence. Backs the `content_brief` prompt. (v0.9.0)\n- `topic_cluster_map(cluster_path | pillar_url, site_url?, days?, impressions_min?)`\n  - maps a content cluster from your own GSC data and surfaces missing subtopics.\n  Classifies each cluster query into defend / optimize / create / monitor by\n  demand and best position; the create quadrant is your missing-subtopic list.\n  Flags cannibalization. GSC-only; honest about the ~47% query anonymization. (v0.9.0)\n- `rank_change_attribution(url | urls, change_date, query?, site_url?, pre_days?, post_days?, gap_days?, control_scope?)`\n  - estimates whether an on-site change moved a page's clicks via\n  difference-in-differences against a matched control group (never a naked\n  before/after). Returns an estimated lift with a 95% CI, a three-state verdict\n  (likely_positive / likely_negative / inconclusive), and a confounders block\n  that auto-detects the 2025 GSC data-regime breaks (impression bug, num=100) and\n  downgrades position reliability. Observational, not causal -- a server-side\n  split test is the only true causal test. GSC-only. (v0.9.0)\n\n<a name=\"ai\"></a>\n**AI / GEO citation (3, v0.9.0)** - whether the AI answer surfaces reach and cite you.\n- `ai_citation_readiness(url)` - is a page structured to be extracted/cited by\n  LLM answer engines? Leads with a render-blindness check (GPTBot / ClaudeBot /\n  PerplexityBot fetch but do not run JS, so a client-rendered SPA is invisible to\n  them), then scores evidence-backed signals (statistics, quotations, cited\n  sources, no keyword-stuffing). schema.org / FAQ / llms.txt are reported as\n  informational only -- the 2026 evidence does not support them as AI-citation\n  drivers, so they are not scored. Free, HTTP-only.\n- `ai_referral_overview(property_id?, site_url?, days?)` - first-party AI traffic:\n  GA4 referral sessions from AI apps (the native `ai-assistant` channel plus a\n  configurable source-host regex) and AI-crawler robots coverage (GPTBot,\n  ClaudeBot, PerplexityBot, ...). Surfaces the ~70% dark-traffic undercount and\n  keeps AI-Overview clicks (counted as Organic) separate. Free.\n- `ai_citation_track(prompts, brand, brand_domains?, competitors?, engines?, samples?)`\n  - sampled brand mention + citation share-of-voice across AI engines\n  (Perplexity / OpenAI / Anthropic / Gemini APIs + Google AI Overviews via\n  DataForSEO) for a managed prompt set, vs competitors. N samples/prompt (default\n  7) with a 95% CI, share-of-voice, and run-to-run volatility -- NOT an \"AI rank\"\n  (single runs are statistically meaningless). Discloses that developer-API output\n  differs from the logged-in consumer UI and that AIO has no API. Paid +\n  non-deterministic. Needs at least one engine key and/or DataForSEO.\n\n<a name=\"discovery\"></a>\n**Keyword discovery (3, v0.9.0)** - find terms you don't already rank for.\n- `gsc_keyword_expand(candidates, site_url?, days?, impressions_min?)` - you\n  (the host) brainstorm candidate terms from your winning queries; this grounds\n  each against your own Search Console data (footprint covered / thin / none) with\n  a sibling-strength confidence band. \"none\" = no VISIBLE footprint (GSC hides\n  ~75% of impressions), so net-new terms are scored hypotheses. Free.\n- `serp_adjacency_expand(seeds, include_paa?)` - expand seed terms into adjacent\n  terms. FREE core: Google Autocomplete (no key). Optional People-Also-Ask +\n  related searches via DataForSEO. Returns per-seed suggestions plus the\n  aggregated net-new terms; degrades gracefully without a key.\n- `keyword_universe(target_domain?, competitors?, keywords?, limit?)` - optional,\n  paid. Core value: the competitor keyword GAP (DataForSEO Domain Intersection;\n  no Google equivalent). Optional search volume / difficulty / intent via a\n  provider chain (DataForSEO, else Google Ads volume-only). External volume is a\n  degraded directional signal -- a tiebreaker, never a gate.\n\n<a name=\"ga4\"></a>\n**Google Analytics 4 (7)**\n- `ga4_run_report` - the workhorse: arbitrary dimensions/metrics/date range,\n  optional dimension filter and ordering.\n- `ga4_top_landing_pages` - top landing pages, organic-only by default.\n- `ga4_traffic_by_channel` - sessions/engagement/conversions by channel group.\n- `ga4_organic_search_overview` - organic totals plus a day-by-day trend.\n- `ga4_setup_audit(property_id?)` - read-only SEO-measurement-readiness audit:\n  web data stream, key events, data retention, content-group dimensions, and\n  (v0.7.4) enhanced measurement, internal site search, and Google Signals.\n  Severity-graded with a benign exception per finding. Uses the GA4 Admin API\n  over REST (analytics.readonly; no extra dependency). (v0.7.0)\n- `ga4_site_search(days?, limit?)` - internal site-search query report (a\n  direct content-gap signal); honest envelope when no real search terms. (v0.7.1)\n- `ga4_landing_page_conversions(days?, organic_only?, limit?)` - organic\n  landing pages ranked by conversions. (v0.7.1)\n\n<a name=\"psi\"></a>\n**PageSpeed Insights (2)**\n- `psi_analyze` - Lighthouse scores, lab Core Web Vitals, and field (CrUX) Core\n  Web Vitals for a URL. Defaults to the mobile strategy. Field data carries a\n  `field_data_note`: Google is deprecating PSI field data, so use `crux_snapshot`\n  / `crux_history` for durable field metrics.\n- `psi_opportunities(url, strategy?)` - the actionable Lighthouse \"opportunity\"\n  audits (with estimated savings) plu",
       "media": [],
-      "score": 1114.5
+      "score": 1107.85
+    },
+    {
+      "candidate": {
+        "key": "rubenmarcus/aeo.js",
+        "fullName": "rubenmarcus/aeo.js",
+        "url": "https://github.com/rubenmarcus/aeo.js",
+        "description": "Answer Engine Optimization for the modern web. Make your site discoverable by ChatGPT, Claude, Perplexity & AI search engines. Generates llms.txt, robots.txt, sitemap, JSON-LD & more.",
+        "stars": 133,
+        "sources": [
+          "github-search"
+        ],
+        "signals": [
+          "⭐ 133",
+          "⭐ 133"
+        ],
+        "signalUrls": [],
+        "points": 0,
+        "verticals": [
+          "seo"
+        ]
+      },
+      "signals": {
+        "repo": {
+          "owner": "rubenmarcus",
+          "repo": "aeo.js"
+        },
+        "github": {
+          "fullName": "rubenmarcus/aeo.js",
+          "description": "Answer Engine Optimization for the modern web. Make your site discoverable by ChatGPT, Claude, Perplexity & AI search engines. Generates llms.txt, robots.txt, sitemap, JSON-LD & more.",
+          "stars": 133,
+          "forks": 17,
+          "createdAt": "2026-02-20T14:03:10Z",
+          "ageDays": 201,
+          "starsPerDay": 0.7,
+          "pushedAt": "2026-09-09T04:15:28Z",
+          "archived": false,
+          "openIssues": 12,
+          "topics": [
+            "aeo",
+            "ai-crawlers",
+            "ai-search",
+            "answer-engine-optimization",
+            "astro",
+            "chatgpt",
+            "geo",
+            "json-ld",
+            "llm",
+            "llms-txt",
+            "nextjs",
+            "npm-package",
+            "nuxt",
+            "perplexity",
+            "robots-txt",
+            "seo",
+            "sitemap",
+            "structured-data",
+            "typescript",
+            "vite"
+          ],
+          "homepage": "https://aeojs.org",
+          "language": "TypeScript",
+          "suggestedHealthScore": 14
+        },
+        "hackerNews": [],
+        "reddit": [
+          {
+            "subreddit": "selfhosted",
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=aeo.js&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=aeo.js&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "opensource",
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=aeo.js&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=aeo.js&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "SideProject",
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=aeo.js&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=aeo.js&restrict_sr=1&sort=new"
+          }
+        ],
+        "heuristic": {
+          "maturitySuggestion": "rising",
+          "reasons": [
+            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
+            "133 sao, 17 fork, ~0.7 sao/ngày, 201 ngày tuổi"
+          ]
+        }
+      },
+      "readmeExcerpt": "<p align=\"center\">\n  <h1 align=\"center\">aeo.js</h1>\n  <p align=\"center\">Answer Engine Optimization for the modern web.<br/>Make your site discoverable by ChatGPT, Claude, Perplexity, and every AI answer engine.</p>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.npmjs.com/package/aeo.js\"><img src=\"https://img.shields.io/npm/v/aeo.js?style=flat&colorA=0d0d0d&colorB=1a1a1a\" alt=\"npm version\"></a>\n  <a href=\"https://www.npmjs.com/package/aeo.js\"><img src=\"https://img.shields.io/npm/dm/aeo.js?style=flat&colorA=0d0d0d&colorB=1a1a1a\" alt=\"npm downloads\"></a>\n  <a href=\"https://github.com/rubenmarcus/aeo.js\"><img src=\"https://img.shields.io/github/stars/rubenmarcus/aeo.js?style=flat&colorA=0d0d0d&colorB=1a1a1a\" alt=\"GitHub stars\"></a>\n  <a href=\"https://github.com/rubenmarcus/aeo.js/blob/main/LICENSE\"><img src=\"https://img.shields.io/github/license/rubenmarcus/aeo.js?style=flat&colorA=0d0d0d&colorB=1a1a1a\" alt=\"License\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://aeojs.org\">Documentation</a> · <a href=\"https://check.aeojs.org\">AEO Checker</a> · <a href=\"https://www.npmjs.com/package/aeo.js\">npm</a>\n</p>\n\n<p align=\"center\">\n  <img src=\"example.gif\" alt=\"aeo.js in action\" width=\"700\">\n</p>\n\n## Install\n\n```bash\nnpm install aeo.js\n```\n\n## Check any site in 10 seconds\n\nSee how visible a site is to ChatGPT, Claude, Perplexity & co — no install, no config:\n\n```bash\nnpx aeo.js check mysite.com\n```\n\nYou get a 0–100 GEO readiness score, an access matrix for 23 AI crawlers, average content citability, and the top fixes — for any deployed site. Also available in the browser at [check.aeojs.org](https://check.aeojs.org).\n\n## Quick Start\n\n### Astro\n\n```js\n// astro.config.mjs\nimport { defineConfig } from 'astro/config';\nimport { aeoAstroIntegration } from 'aeo.js/astro';\n\nexport default defineConfig({\n  site: 'https://mysite.com',\n  integrations: [\n    aeoAstroIntegration({\n      title: 'My Site',\n      description: 'A site optimized for AI discovery',\n      url: 'https://mysite.com',\n    }),\n  ],\n});\n```\n\n### Next.js\n\n```js\n// next.config.mjs\nimport { withAeo } from 'aeo.js/next';\n\nexport default withAeo({\n  aeo: {\n    title: 'My Site',\n    description: 'A site optimized for AI discovery',\n    url: 'https://mysite.com',\n  },\n});\n```\n\nAdd the post-build step to `package.json`:\n\n```json\n{\n  \"scripts\": {\n    \"postbuild\": \"node -e \\\"import('aeo.js/next').then(m => m.postBuild({ title: 'My Site', url: 'https://mysite.com' }))\\\"\"\n  }\n}\n```\n\n### Vite\n\n```js\n// vite.config.ts\nimport { defineConfig } from 'vite';\nimport { aeoVitePlugin } from 'aeo.js/vite';\n\nexport default defineConfig({\n  plugins: [\n    aeoVitePlugin({\n      title: 'My Site',\n      description: 'A site optimized for AI discovery',\n      url: 'https://mysite.com',\n    }),\n  ],\n});\n```\n\n### Nuxt\n\n```ts\n// nuxt.config.ts\nexport default defineNuxtConfig({\n  modules: ['aeo.js/nuxt'],\n  aeo: {\n    title: 'My Site',\n    description: 'A site optimized for AI discovery',\n    url: 'https://mysite.com',\n  },\n});\n```\n\n### Remix\n\n```json\n{\n  \"scripts\": {\n    \"postbuild\": \"node -e \\\"import('aeo.js/remix').then(m => m.postBuild({ title: 'My Site', url: 'https://mysite.com' }))\\\"\"\n  }\n}\n```\n\n### SvelteKit\n\n```json\n{\n  \"scripts\": {\n    \"postbuild\": \"node -e \\\"import('aeo.js/sveltekit').then(m => m.postBuild({ title: 'My Site', url: 'https://mysite.com' }))\\\"\"\n  }\n}\n```\n\n### TanStack Start\n\n```json\n{\n  \"scripts\": {\n    \"postbuild\": \"node -e \\\"import('aeo.js/tanstack-start').then(m => m.postBuild({ title: 'My Site', url: 'https://mysite.com' }))\\\"\"\n  }\n}\n```\n\nRoutes are discovered from `src/routes` (TanStack Router file conventions). No build output yet? Use `generate()` instead of `postBuild()` to emit files into `public/` from your source routes.\n\n### Docusaurus\n\n```js\n// docusaurus.config.js\nmodule.exports = {\n  plugins: [\n    ['aeo.js/docusaurus', { url: 'https://mysite.com', title: 'My Docs' }],\n  ],\n};\n```\n\n`url`, `title`, and `description` default to your Docusaurus `siteConfig` (including `baseUrl`) when omitted. AEO files are generated from the built HTML during `docusaurus build`, and the widget is injected on every page.\n\n### Eleventy\n\n```js\n// eleventy.config.js\nconst aeo = require('aeo.js/eleventy');\n\nmodule.exports = function (eleventyConfig) {\n  eleventyConfig.addPlugin(aeo, { url: 'https://mysite.com', title: 'My Site' });\n};\n```\n\nRequires Eleventy 2.0+. AEO files are generated from the rendered output into your Eleventy output directory (`_site` by default), and the widget is injected into every HTML page.\n\n### VitePress\n\n```ts\n// .vitepress/config.ts\nimport { defineConfig } from 'vitepress';\nimport { withAeo } from 'aeo.js/vitepress';\n\nexport default defineConfig(withAeo({\n  title: 'My Docs',\n  // …your VitePress config…\n}, { url: 'https://mysite.com' }));\n```\n\n`withAeo` wraps your config: it collects pages during `vitepress build`, injects the widget, and generates AEO files into the output directory. `url`, `title`, and `description` default from your VitePress site config (and `sitemap.hostname`).\n\n### Angular\n\n```json\n{\n  \"scripts\": {\n    \"postbuild\": \"node -e \\\"import('aeo.js/angular').then(m => m.postBuild({ title: 'My App', url: 'https://myapp.com' }))\\\"\"\n  }\n}\n```\n\n### Webpack\n\n```js\n// webpack.config.js\nconst { AeoWebpackPlugin } = require('aeo.js/webpack');\n\nmodule.exports = {\n  plugins: [\n    new AeoWebpackPlugin({\n      title: 'My Site',\n      description: 'A site optimized for AI discovery',\n      url: 'https://mysite.com',\n    }),\n  ],\n};\n```\n\n### CLI\n\nNo framework needed — run standalone:\n\n```bash\nnpx aeo.js generate --url https://mysite.com --title \"My Site\"\nnpx aeo.js init\nnpx aeo.js check\n```\n\n## Supported Frameworks\n\n| Framework | Import |\n|-----------|--------|\n| Astro | `aeo.js/astro` |\n| Next.js | `aeo.js/next` |\n| Vite | `aeo.js/vite` |\n| Nuxt | `aeo.js/nuxt` |\n| Remix | `aeo.js/remix` |\n| SvelteKit | `aeo.js/sveltekit` |\n| Angular | `aeo.js/angular` |\n| Webpack | `aeo.js/webpack` |\n| CLI | `npx aeo.js generate` |\n\n## Widget\n\nThe Human/AI widget lets visitors toggle between the normal page and its AI-readable markdown version.\n\n| Default | Small | Icon |\n|---------|-------|------|\n| <img src=\"widget-default.gif\" alt=\"Default widget\" width=\"220\"> | <img src=\"widget-small.gif\" alt=\"Small widget\" width=\"220\"> | <img src=\"widget-icon.gif\" alt=\"Icon widget\" width=\"220\"> |\n\nFramework plugins inject it automatically. For Next.js or manual setups:\n\n```tsx\n'use client';\nimport { useEffect } from 'react';\n\nexport function AeoWidgetLoader() {\n  useEffect(() => {\n    import('aeo.js/widget').then(({ AeoWidget }) => {\n      new AeoWidget({\n        config: {\n          title: 'My Site',\n          url: 'https://mysite.com',\n          widget: { enabled: true, position: 'bottom-right' },\n        },\n      });\n    });\n  }, []);\n  return null;\n}\n```\n\nReact and Vue wrapper components are also available:\n\n```tsx\nimport { AeoReactWidget } from 'aeo.js/react';\n\n<AeoReactWidget config={{ title: 'My Site', url: 'https://mysite.com' }} />\n```\n\n```vue\n<script setup>\nimport { AeoVueWidget } from 'aeo.js/vue';\n</script>\n\n<template>\n  <AeoVueWidget :config=\"{ title: 'My Site', url: 'https://mysite.com' }\" />\n</template>\n```\n\n## Generated Files\n\nAfter building, your output directory contains:\n\n```\npublic/\n├── robots.txt        # AI-crawler directives\n├── llms.txt          # Short LLM-readable summary\n├── llms-full.txt     # Full content for LLMs\n├── sitemap.xml       # Standard sitemap\n├── docs.json         # Documentation manifest\n├── ai-index.json     # AI content index\n├── index.md          # Markdown for /\n└── about.md          # Markdown for /about\n```\n\n## Configuration\n\n```js\nimport { defineConfig } from 'aeo.js';\n\nexport default defineConfig({\n  title: 'My Site',\n  url: 'https://mysite.com',\n  description: 'A description of your site',\n\n  generators: {\n    robotsTxt: true,\n    llmsTxt: true,\n    llmsFullTxt: true,\n    rawMarkdown: true,\n    sitemap: true,\n    aiIndex: true,\n    schema: true,\n  },\n\n  schema: {\n    enabled: true,\n    organization: { name: 'My Company', url: 'https://mysite.com' },\n    defaultType: 'WebPage',\n  },\n\n  og: {\n    enabled: true,\n    image: 'https://mysite.com/og.png',\n    twitterHandle: '@mycompany',\n  },\n\n  widget: {\n    enabled: true,\n    position: 'bottom-right',\n    theme: { accent: '#4ADE80', badge: '#4ADE80' },\n  },\n});\n```\n\nFull configuration reference → [aeojs.org/reference/configuration](https://aeojs.org/reference/configuration/)\n\n## Why AEO?\n\n- **58% of searches** end without a click — AI gives the answer directly\n- **40% of Gen Z** prefer AI assistants over traditional search engines\n- **97% of sites** have no `llms.txt` or structured data for AI crawlers\n- **1 minute** to set up with aeo.js\n\nIf your site isn't optimized for AI engines, you're invisible to a growing share of users who never open a search results page.\n\n## Links\n\n- [Documentation](https://aeojs.org)\n- [AEO Checker](https://check.aeojs.org)\n- [npm](https://www.npmjs.com/package/aeo.js)\n- [GitHub](https://github.com/rubenmarcus/aeo.js)\n\n## License\n\nMIT\n",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://mysite.com/og.png",
+          "caption": ""
+        }
+      ],
+      "score": 1106.65
+    },
+    {
+      "candidate": {
+        "key": "getopenpost/openpost",
+        "fullName": "getopenpost/openpost",
+        "url": "https://github.com/getopenpost/openpost",
+        "description": "Your socials, on steroids.",
+        "stars": 101,
+        "sources": [
+          "github-search"
+        ],
+        "signals": [
+          "⭐ 101"
+        ],
+        "signalUrls": [],
+        "points": 0,
+        "verticals": [
+          "agency"
+        ]
+      },
+      "signals": {
+        "repo": {
+          "owner": "getopenpost",
+          "repo": "openpost"
+        },
+        "github": {
+          "fullName": "getopenpost/openpost",
+          "description": "Your socials, on steroids.",
+          "stars": 101,
+          "forks": 14,
+          "createdAt": "2026-03-21T11:12:13Z",
+          "ageDays": 172,
+          "starsPerDay": 0.6,
+          "pushedAt": "2026-09-09T04:51:10Z",
+          "archived": false,
+          "openIssues": 0,
+          "topics": [
+            "automation",
+            "golang",
+            "self-hosted",
+            "single-binary",
+            "social-media",
+            "svelte"
+          ],
+          "homepage": "https://openpo.st",
+          "language": "TypeScript",
+          "suggestedHealthScore": 14
+        },
+        "hackerNews": [],
+        "reddit": [
+          {
+            "subreddit": "selfhosted",
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=openpost&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "opensource",
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=openpost&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "SideProject",
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=openpost&restrict_sr=1&sort=new"
+          }
+        ],
+        "heuristic": {
+          "maturitySuggestion": "rising",
+          "reasons": [
+            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
+            "101 sao, 14 fork, ~0.6 sao/ngày, 172 ngày tuổi"
+          ]
+        }
+      },
+      "readmeExcerpt": "<p align=\"center\">\n  <a href=\"https://openpo.st\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/brand/lockup-dark.svg\">\n      <source media=\"(prefers-color-scheme: light)\" srcset=\"./assets/brand/lockup.svg\">\n      <img alt=\"OpenPost\" src=\"./assets/brand/lockup.svg\" width=\"168\" height=\"42\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\"><strong>Create, adapt, schedule, and publish content across platforms.</strong></p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://shieldcn.dev/github/release/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=dark\">\n      <img src=\"https://shieldcn.dev/github/release/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=light\" alt=\"Latest release\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/actions/workflows/ci.yml\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://shieldcn.dev/github/ci/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=dark\">\n      <img src=\"https://shieldcn.dev/github/ci/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=light\" alt=\"Build status\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://shieldcn.dev/github/stars/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=dark\">\n      <img src=\"https://shieldcn.dev/github/stars/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=light\" alt=\"GitHub stars\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://shieldcn.dev/github/downloads/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=dark\">\n      <img src=\"https://shieldcn.dev/github/downloads/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=light\" alt=\"Release downloads\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://app.openpo.st/register?plan=founder&amp;billing_period=monthly\"><strong>Start a 14-day trial</strong></a>\n  ·\n  <a href=\"https://docs.openpo.st/self-hosting\"><strong>Self-host</strong></a>\n  ·\n  <a href=\"https://docs.openpo.st\"><strong>Docs</strong></a>\n  ·\n  <a href=\"https://discord.com/invite/u2QwukmY4W\"><strong>Discord</strong></a>\n</p>\n\n<div align=\"center\">\n  <img src=\"assets/postiz-socials/Instagram.svg\" alt=\"Instagram\" width=\"32\">\n  <img src=\"assets/postiz-socials/Facebook.svg\" alt=\"Facebook\" width=\"32\">\n  <img src=\"assets/postiz-socials/Linkedin.svg\" alt=\"LinkedIn\" width=\"32\">\n  <img src=\"assets/postiz-socials/X.svg\" alt=\"X\" width=\"32\">\n  <img src=\"assets/postiz-socials/TikTok.svg\" alt=\"TikTok\" width=\"32\">\n  <img src=\"assets/postiz-socials/Youtube.svg\" alt=\"YouTube\" width=\"32\">\n  <img src=\"assets/postiz-socials/Threads.svg\" alt=\"Threads\" width=\"32\">\n  <img src=\"assets/postiz-socials/Bluesky.svg\" alt=\"Bluesky\" width=\"32\">\n  <img src=\"assets/postiz-socials/Mastodon.svg\" alt=\"Mastodon\" width=\"32\">\n  <img src=\"assets/postiz-socials/Discord.svg\" alt=\"Discord\" width=\"32\">\n</div>\n\n<p align=\"center\">\n  <img alt=\"OpenPost composer with six social destinations and scheduling controls\" src=\"./assets/screenshots/readme-hero-dark.webp\" width=\"98%\">\n</p>\n\nOpenPost combines writing, media editing, scheduling, and results in one workspace. Keep a shared draft, then adjust the text, media, and timing for each account. Review every version before publishing.\n\n[Watch the product tour](https://www.youtube.com/watch?v=_mZf3HzQaN8) · [Explore the app](https://openpo.st/features)\n\n## What you can do\n\n- <img src=\"assets/brand/features/compose.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Compose for every channel.** Write posts and threads, preview each account's version, and reuse account groups with Social Sets.\n- <img src=\"assets/brand/features/image-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Image Editor](https://app.openpo.st/image-editor).** Create layered graphics and multi-page carousels without leaving OpenPost.\n- <img src=\"assets/brand/features/video-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Video Editor](https://app.openpo.st/video-editor), beta.** Record, trim, and edit videos with a multitrack timeline, captions, and audio.\n- **AI writing and Ideate.** Find an idea, compare directions, and build drafts for your selected channels. Review the result before publishing.\n- <img src=\"assets/brand/features/calendar.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Scheduling and queues.** Pick an exact time or the next free posting slot. Plan in the calendar, stagger destinations, and get reminders when your queue runs low.\n- **Auto repost.** Set delays and engagement rules for native reposts on supported networks, with per-post overrides.\n- **Memes and media.** Caption meme templates, replace images, and save the result alongside reusable templates, fonts, and brand assets. Find media with tags, collections, and favorites.\n- **Inbox and DMs.** Read and reply to supported comments and messages.\n- <img src=\"assets/brand/features/analytics.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Analytics and repurposing.** Compare results, track audience changes, and turn previous content into a new draft.\n- **Grow.** Discover accounts to follow on Bluesky and Mastodon. You choose who to follow.\n- **API, MCP, CLI, and n8n.** Draft, schedule, and inspect publications from your own scripts or AI tools.\n- **Teams and security.** Separate brands into workspaces with member roles. Protect accounts with passkeys, two-factor authentication, and session controls.\n\n### Create your media\n\nThe browser editors are free to try without an account. Exports have no watermark.\n\n<img src=\"assets/brand/features/image-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Image Editor](https://app.openpo.st/image-editor).** Layers, text, shapes, background removal, and color tools. Export one image or a multi-page carousel.\n\n![Image Editor with a Lisbon tram photo and editable layers](assets/screenshots/image-editor-dark.webp)\n\n<img src=\"assets/brand/features/video-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Video Editor](https://app.openpo.st/video-editor), beta.** Screen, camera, and microphone recording. Multitrack editing, captions, transitions, keyframes, color, and audio. Save projects locally or sync to your workspace. Use desktop Chromium for the full editor; mobile supports capture and project preparation.\n\n![Video Editor with a screen recording and multitrack timeline](assets/screenshots/video-editor-dark.webp)\n\n[Quick Cut for simple trims](https://docs.openpo.st/guides/quick-cut) · [Explore all features](https://openpo.st/features) · [Usage guides](https://docs.openpo.st/guides/quickstart) · [API reference](https://docs.openpo.st/api-reference)\n\n## Get started\n\n**Hosted.** We run it for you. [Start a 14-day trial](https://app.openpo.st/register?plan=founder&billing_period=monthly)\n\n| Plan   | Best for      | Monthly | Yearly |\n| ------ | ------------- | ------: | -----: |\n| Solo   | Solo founders |     $29 |   $290 |\n| Team   | Small teams   |     $59 |   $590 |\n| Agency | Client work   |     $99 |   $990 |\n\nEvery plan includes all features. Plans include 1, 3, or 10 workspaces, with 1, 5, or 10 people per workspace. No seat add-ons or automatic overage charges. [Compare plans and limits](https://openpo.st/pricing).\n\n**Self-host.** Run OpenPost with Docker on your server:\n\n```bash\ngit clone https://github.com/getopenpost/openpost.git\ncd openpost\ncp .env.example .env\n# set fresh secrets and OPENPOST_APP_URL, OPENPOST_PUBLIC_URL, OPENPOST_MEDIA_URL\ndocker compose up -d\n```\n\nOpen `http://localhost:8080`, create the first account, connect a social account. Default setup is one container, SQLite, local media.\n\n[Installation reference](https://docs.openpo.st/self-hosting/) · [Hosted or self-hosted?](https://openpo.st/self-hosting)\n\n**Automate.** [CLI guide](https://docs.openpo.st/guides/automation) · [MCP guide](https://docs.openpo.st/mcp/) · [API reference](https://docs.openpo.st/api-reference)\n\n## Supported platforms\n\nOpenPost has integrations for LinkedIn, Facebook, Instagram, X, TikTok, YouTube, Threads, Bluesky, Mastodon, and Discord webhooks. Publishing formats, messages, comments, analytics, and Grow support vary by platform. Some connections need app review or public media URLs.\n\n<!-- provider-certification:begin -->\n\nNo posting option has passed our final live check on OpenPost Hosted yet.\n\nA social app can appear in OpenPost before it is ready for real accounts.\n\n<!-- provider-certification:end -->\n\nPinterest, Discord bots, and Telegram bots are not public posting options yet.\n\n[Connect accounts](https://docs.openpo.st/guides/accounts) · [Self-hosted integrations](https://docs.openpo.st/self-hosting/integrations)\n\n## Contribute\n\nOpenPost uses Go, SvelteKit, and Expo. Development tools run through Devenv.\n\n```bash\ndirenv allow\ndevenv shell -- setup\nbun run verify\n```\n\nRead [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md) and the [development setup](https://github.com/getopenpost/openpost/blob/main/docs/development/setup.md) before opening a PR.\n\n## Star history\n\n<!-- star-history:start -->\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/star-history/star-history-dark.svg\">\n  <img alt=\"Star history\" src=\"assets/star-history/star-history-light.svg\">\n</picture>\n<!-- star-history:end -->\n\n## License and security\n\n[AGPL-3.0-only](LICENSE). See [third-party notices](licenses/README.md). Report vulnerabilities privately through the [security policy](.github/SECURITY.md).\n",
+      "media": [],
+      "score": 1105.05
     }
   ]
 }
