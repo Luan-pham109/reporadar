@@ -6,7 +6,7 @@ import { spawn } from 'node:child_process';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { buildReviewDeployArgs } from './scripts/lib/publish-flow.mjs';
-import { updateDraftFrontmatter } from './scripts/lib/repo-frontmatter.mjs';
+import { REPOS_DIR, readAllRepoRecords, updateDraftFrontmatter } from './scripts/lib/repo-frontmatter.mjs';
 
 const autoDeployProduction = process.env.REPO_RADAR_AUTO_DEPLOY === 'true';
 let deployQueue = Promise.resolve();
@@ -109,11 +109,21 @@ function draftReviewPlugin() {
 // Đổi `site` sang domain thật khi chốt tên (PRD §12.1) để RSS/JSON feed có URL tuyệt đối.
 const PRIVATE_PAGES = ['/login/', '/review/', '/account/'];
 
+// Draft có trang build sẵn nhưng nằm sau gate member — không được vào sitemap.
+const draftPaths = new Set(
+  (await readAllRepoRecords(REPOS_DIR))
+    .filter((record) => record.draft)
+    .map((record) => `/repos/${record.slug}/`),
+);
+
 export default defineConfig({
   site: 'https://altstack.io.vn',
   integrations: [
     sitemap({
-      filter: (url) => !PRIVATE_PAGES.some((p) => new URL(url).pathname === p),
+      filter: (url) => {
+        const { pathname } = new URL(url);
+        return !PRIVATE_PAGES.includes(pathname) && !draftPaths.has(pathname);
+      },
     }),
   ],
   server: {

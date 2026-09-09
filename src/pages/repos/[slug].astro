@@ -9,8 +9,12 @@ import { pageTitle } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const all = await getCollection('repos');
-  const entries = all.filter((e) => includeDraft(e.data));
-  const linkable = entries;
+  // Draft cũng được build ra trang để member duyệt được từ /review; edge gate
+  // ở functions/_middleware.js chặn khách vãng lai đọc chúng.
+  const entries = all;
+  // Nhưng chỉ record đã publish mới được xuất hiện ở khối "liên quan" — nếu
+  // không, trang công khai sẽ để lộ tên record chưa duyệt.
+  const linkable = all.filter((e) => includeDraft(e.data));
 
   return entries.map((entry) => {
     const related = linkable
@@ -107,7 +111,7 @@ const faqLd =
     : null;
 ---
 
-<BaseLayout title={seoTitle} description={r.oneLiner} image={heroImg} keywords={keywords} ogType="article">
+<BaseLayout title={seoTitle} description={r.oneLiner} image={heroImg} keywords={keywords} ogType="article" noindex={r.draft}>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />
     {faqLd && <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />}

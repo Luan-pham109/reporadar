@@ -2,9 +2,1189 @@
 export const memberFeed = {
   "title": "RepoRadar VN",
   "version": "0.3",
-  "generatedAt": "2026-07-02T03:06:39.757Z",
-  "count": 35,
+  "generatedAt": "2026-09-09T04:50:23.428Z",
+  "count": 49,
   "items": [
+    {
+      "slug": "lukilabs-beautiful-mermaid",
+      "url": "/repos/lukilabs-beautiful-mermaid",
+      "name": "beautiful-mermaid",
+      "repoUrl": "https://github.com/lukilabs/beautiful-mermaid",
+      "oneLiner": "beautiful-mermaid biến sơ đồ Mermaid (viết bằng chữ) thành ảnh SVG đẹp hoặc dạng ASCII cho terminal — nhanh, dễ đổi màu/theme, không phụ thuộc DOM, gọn cho các app và trợ lý AI.",
+      "vertical": [
+        "creative"
+      ],
+      "maturity": "pre-viral",
+      "repoStats": {
+        "stars": 10618,
+        "forks": 363,
+        "note": "~165 ngày tuổi, ~64.4 sao/ngày; đang được bàn ở Show HN (418 điểm)",
+        "starsPerDay": 64.4,
+        "ageDays": 165,
+        "pushedAt": "2026-05-06T10:53:19.000Z",
+        "archived": false,
+        "openIssues": 77
+      },
+      "signalSources": [
+        {
+          "label": "Show HN",
+          "url": "https://news.ycombinator.com/item?id=46804828"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/lukilabs/beautiful-mermaid"
+        }
+      ],
+      "useCases": [
+        "Tạo sơ đồ luồng/kiến trúc/sequence trông chuyên nghiệp cho tài liệu, slide, bài blog thay vì bản Mermaid mặc định hơi thô.",
+        "Nhúng sơ đồ đẹp, tự đổi màu theo theme sáng/tối vào web/app hay công cụ nội bộ mà không phải vật lộn với CSS của Mermaid.",
+        "Xuất sơ đồ dạng ASCII/Unicode để dán vào terminal, README, hoặc giao diện chat với trợ lý AI."
+      ],
+      "workflowStepReplaced": "Khâu chỉnh tay CSS/class của Mermaid để sơ đồ trông đẹp, hoặc vẽ lại sơ đồ bằng công cụ diagram thủ công.",
+      "timeOrCostSaved": "Tiết kiệm thời gian tinh chỉnh giao diện sơ đồ và thay được vài công cụ vẽ diagram trả phí cho nhu cầu sơ đồ dạng code; lợi ích rõ nhất với người/đội có sẵn kỹ năng dev để nhúng thư viện.",
+      "localProblem": "Team làm nội dung kỹ thuật, agency dựng tài liệu/đề xuất, hoặc dev viết blog ở VN thường cần sơ đồ minh hoạ nhưng bản Mermaid mặc định trông khô, còn vẽ tay bằng tool riêng thì tốn thời gian và khó đồng bộ theme sáng/tối.",
+      "localEvidence": "Show HN đạt 418 điểm, 66 bình luận — nhu cầu 'Mermaid nhưng đẹp và render được ra terminal' được quan tâm; craft.do dùng chính nó cho Craft Agents.",
+      "usabilityRisk": "Đây là THƯ VIỆN TypeScript (npm), không phải app bấm-là-chạy: muốn dùng cần biết code/nhúng vào dự án. Người làm nội dung không lập trình sẽ khó dùng trực tiếp. Có 77 issue mở; là dự án còn mới. Chưa có cộng đồng Việt. Điểm cộng: tài liệu README rất chi tiết, cài đặt đơn giản với dev.",
+      "suggestedAngle": "Góc 'làm sơ đồ Mermaid đẹp cho tài liệu/blog/slide' cho technical writer và agency — nhưng nói rõ đây là thư viện cho dev, người không code cần chờ bản đóng gói.",
+      "paidToolReplaced": "Công cụ vẽ diagram trả phí (cho nhu cầu sơ đồ dạng code) / renderer Mermaid mặc định",
+      "practitionerGuide": {
+        "outcome": "Bạn render được một sơ đồ Mermaid ra SVG đẹp (hoặc ASCII) với theme mình chọn, đủ để nhúng vào tài liệu/app.",
+        "prerequisites": [
+          "Môi trường Node/dự án dùng npm/bun/pnpm và biết chạy code TypeScript/JavaScript cơ bản.",
+          "Một đoạn sơ đồ Mermaid muốn render (flowchart, sequence...).",
+          "Không cần API key hay dịch vụ ngoài."
+        ],
+        "steps": [
+          "Cài thư viện: `npm install beautiful-mermaid`.",
+          "Gọi `renderMermaidSVG(code, options)` để lấy chuỗi SVG, hoặc `renderMermaidASCII(code)` cho terminal.",
+          "Chọn theme sẵn (vd `THEMES['tokyo-night']`) hoặc chỉ truyền 2 màu `bg`/`fg` để tự suy ra.",
+          "Nhúng chuỗi SVG vào trang/app; nếu React, dùng useMemo và truyền CSS variable để đổi theme sáng/tối tức thì."
+        ],
+        "expectedResult": "Một sơ đồ SVG gọn, đẹp, đúng theme (hoặc bản ASCII/Unicode) sẵn sàng nhúng vào tài liệu, web hoặc chat.",
+        "commonPitfalls": [
+          "Kỳ vọng đây là app/dịch vụ trực quan — thực chất là thư viện cần lập trình để dùng.",
+          "Quên rằng đổi theme sáng/tối tức thì cần truyền CSS variable thay vì mã màu hex cố định.",
+          "Dùng cú pháp Mermaid ngoài 6 loại được hỗ trợ — có thể không render đúng."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 14,
+        "projectHealth": 20,
+        "costAdvantage": 12,
+        "deployment": 8,
+        "documentation": 13
+      },
+      "altstackSignalScore": 67,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-12T00:00:00.000Z",
+      "tags": [
+        "mermaid",
+        "diagrams",
+        "svg",
+        "typescript",
+        "developer-tools"
+      ],
+      "publishedAt": "2026-07-12T00:00:00.000Z",
+      "week": "2026-W28"
+    },
+    {
+      "slug": "epicenter-so-epicenter",
+      "url": "/repos/epicenter-so-epicenter",
+      "name": "Whispering (Epicenter)",
+      "repoUrl": "https://github.com/epicenter-so/epicenter",
+      "oneLiner": "Whispering là app chuyển giọng nói thành văn bản (đọc chép chính tả) mã nguồn mở, ưu tiên chạy trên máy bạn — bấm ghi âm, nói, rồi lấy transcript để dán vào bất cứ đâu, dữ liệu là file bạn tự sở hữu.",
+      "vertical": [
+        "creative"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 4690,
+        "forks": 363,
+        "note": "~1214 ngày tuổi, ~3.9 sao/ngày; vừa có sóng Show HN cho Whispering (591 điểm)",
+        "starsPerDay": 3.9,
+        "ageDays": 1214,
+        "pushedAt": "2026-07-11T08:34:38.000Z",
+        "archived": false,
+        "openIssues": 214
+      },
+      "signalSources": [
+        {
+          "label": "Show HN",
+          "url": "https://news.ycombinator.com/item?id=44942731"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/epicenter-so/epicenter"
+        }
+      ],
+      "useCases": [
+        "Đọc chép nhanh ý tưởng nội dung, script video hoặc caption bằng giọng nói thay vì gõ, rồi dán transcript vào editor.",
+        "Phỏng vấn/ghi chú họp voice-to-text để lấy bản thô, sau đó biên tập lại thành bài.",
+        "Giữ audio nhạy cảm ở lại trên máy: dùng phiên âm GGUF local khi không muốn gửi file ghi âm lên dịch vụ đám mây."
+      ],
+      "workflowStepReplaced": "Khâu gõ tay bản thô nội dung/ghi chú, hoặc phải dùng app dictation trả phí để nói-thành-chữ.",
+      "timeOrCostSaved": "Thay được các app đọc-chép trả phí (Superwhisper, Otter, Dragon...) bằng bản mã nguồn mở; tiết kiệm phí thuê bao, còn thời gian tiết kiệm tuỳ mức bạn thật sự thay việc gõ bằng nói.",
+      "localProblem": "Người làm nội dung/creative VN hay có ý tưởng khi đang di chuyển và muốn 'nói ra' thành chữ để không quên; nhóm cần phiên âm phỏng vấn cũng ngại upload file ghi âm lên dịch vụ nước ngoài vì lo riêng tư/chi phí.",
+      "localEvidence": "Show HN của Whispering đạt 591 điểm, 152 bình luận — nhu cầu 'dictation đáng tin, chạy local' đang được quan tâm rõ ở cộng đồng kỹ thuật quốc tế.",
+      "usabilityRisk": "Đây là monorepo Epicenter khá phức tạp; muốn đủ tính năng native (shortcut toàn hệ thống, dán native, phiên âm GGUF local) phải dùng app desktop Epicenter (Tauri) chứ không chỉ bản web. Chất lượng phiên âm phụ thuộc model bạn chọn — TIẾNG VIỆT chưa có bằng chứng tốt. Dùng provider đám mây thì audio/transcript sẽ rời máy sang bên đó. Chưa có cộng đồng Việt; tài liệu và toolkit vẫn ở giai đoạn pre-1.0 (khuyến cáo 'fork-and-own').",
+      "suggestedAngle": "Góc 'công cụ đọc-chép mã nguồn mở, dữ liệu là file bạn tự giữ' cho người làm nội dung ngại phụ thuộc app trả phí — nhưng phải nói thẳng khâu cần kiểm chứng tiếng Việt.",
+      "paidToolReplaced": "Superwhisper / Otter / Dragon (dictation & phiên âm trả phí)",
+      "practitionerGuide": {
+        "outcome": "Bạn ghi âm giọng nói và nhận lại transcript văn bản để copy/dán, thử được cả chế độ phiên âm local lẫn provider đám mây.",
+        "prerequisites": [
+          "Trình duyệt để dùng bản hosted (whispering.epicenter.so), HOẶC cài app desktop Epicenter nếu muốn tính năng native.",
+          "Nếu muốn phiên âm đám mây: API key của provider bạn chọn.",
+          "Nếu muốn phiên âm local (GGUF): dùng app desktop và máy đủ khoẻ để chạy model trên máy."
+        ],
+        "steps": [
+          "Mở Whispering trên trình duyệt hoặc trong app Epicenter.",
+          "Chọn nguồn phiên âm: model local (GGUF, trong Epicenter) hoặc provider đám mây (nhập API key).",
+          "Bấm ghi âm, nói một đoạn tiếng Việt thử, dừng lại để lấy transcript.",
+          "Kiểm tra độ chính xác tiếng Việt; nếu cần, bật bước 'transform' để LLM chỉnh lại transcript, rồi copy/dán."
+        ],
+        "expectedResult": "Có transcript văn bản từ giọng nói của bạn; đánh giá được model nào cho tiếng Việt đủ dùng để làm bản thô.",
+        "commonPitfalls": [
+          "Kỳ vọng tiếng Việt chuẩn ngay — chất lượng phụ thuộc model Whisper phía sau, cần thử thực tế.",
+          "Nghĩ bản web đủ mọi tính năng — nhiều tính năng native chỉ có trong app desktop Epicenter.",
+          "Quên rằng dùng provider đám mây nghĩa là audio/văn bản sẽ gửi sang bên đó, mất tính 'local-first'."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 16,
+        "projectHealth": 18,
+        "costAdvantage": 15,
+        "deployment": 9,
+        "documentation": 12
+      },
+      "altstackSignalScore": 70,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-12T00:00:00.000Z",
+      "tags": [
+        "speech-to-text",
+        "dictation",
+        "local-first",
+        "open-source",
+        "productivity"
+      ],
+      "publishedAt": "2026-07-12T00:00:00.000Z",
+      "week": "2026-W28"
+    },
+    {
+      "slug": "puemos-craftplan",
+      "url": "/repos/puemos-craftplan",
+      "name": "Craftplan",
+      "repoUrl": "https://github.com/puemos/craftplan",
+      "oneLiner": "Craftplan là phần mềm quản lý gọn cho xưởng thủ công/D2C nhỏ: gom danh mục sản phẩm, định mức nguyên liệu (BOM), tồn kho, đơn hàng, kế hoạch sản xuất và CRM vào một chỗ, tự host trên máy chủ của bạn.",
+      "vertical": [
+        "ecom"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 1133,
+        "forks": 58,
+        "note": "~564 ngày tuổi, ~2 sao/ngày",
+        "starsPerDay": 2,
+        "ageDays": 564,
+        "pushedAt": "2026-06-30T11:36:42.000Z",
+        "archived": false,
+        "openIssues": 3
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/puemos/craftplan"
+        },
+        {
+          "label": "Live Demo",
+          "url": "https://craftplan.fly.dev"
+        }
+      ],
+      "useCases": [
+        "Quản lý xưởng nến thơm/xà phòng/đồ da/bánh handmade: khai báo công thức (BOM) rồi để phần mềm tự tính giá thành và trừ nguyên liệu khi lên lô sản xuất.",
+        "Theo dõi tồn kho nguyên liệu và thành phẩm ở một chỗ thay vì rải rác trên nhiều file Excel.",
+        "Nhận đơn khách, xếp lịch sản xuất theo calendar và xuất hoá đơn mà không cần mua thêm phần mềm kế toán/kho riêng."
+      ],
+      "workflowStepReplaced": "Khâu quản lý công thức + tính giá thành + tồn kho + đơn hàng đang làm tay trên nhiều file Excel rời của xưởng thủ công nhỏ.",
+      "timeOrCostSaved": "Thay cho việc mua 2-3 SaaS quản lý kho/đơn/CRM riêng lẻ; giá trị lớn nhất là tự tính giá thành theo BOM thay vì bấm máy tính thủ công mỗi lần đổi giá nguyên liệu.",
+      "localProblem": "Các xưởng/shop handmade Việt (nến thơm, xà phòng, đồ da, bánh, mỹ phẩm nhỏ) thường quản lý công thức và giá thành bằng Excel, mỗi lần nguyên liệu lên giá phải tính lại tay và dễ bán lỗ mà không biết.",
+      "localEvidence": "Cộng đồng handmade/D2C Việt trên Facebook thường xuyên hỏi nhau 'tính giá thành sản phẩm handmade thế nào', 'quản lý nguyên liệu ra sao' — nhu cầu có thật nhưng phần lớn vẫn dùng Excel vì các ERP thương mại quá nặng và đắt.",
+      "usabilityRisk": "Phải tự host: viết bằng Elixir/Phoenix, cần Docker và một máy chủ/VPS để chạy — không có bản SaaS bấm-là-dùng. Giao diện tiếng Anh, chưa có bản Việt hoá hay cộng đồng VN. Phù hợp với chủ shop có người kỹ thuật hỗ trợ, hoặc sẵn sàng thuê cài đặt. Dùng thử live demo trước khi quyết.",
+      "suggestedAngle": "Nếu viết, nhắm chủ xưởng handmade/D2C Việt với góc 'thoát Excel tính giá thành', không đóng gói như ERP doanh nghiệp lớn. Kèm cảnh báo phải tự host.",
+      "paidToolReplaced": "ERP/inventory SaaS trả phí (kiểu Katana MRP, Craftybase) ↔ Craftplan self-host",
+      "practitionerGuide": {
+        "outcome": "Có một bản Craftplan chạy được (qua live demo hoặc tự host) với vài sản phẩm mẫu, BOM và một lô sản xuất thử để đánh giá có hợp quy trình xưởng của bạn không.",
+        "prerequisites": [
+          "Muốn dùng thật: một VPS/máy chủ chạy Docker (hoặc tài khoản Fly.io như bản demo).",
+          "Danh sách nguyên liệu + công thức của 1-2 sản phẩm để nhập thử.",
+          "Người biết cơ bản về Docker/deploy, hoặc chấp nhận thuê cài."
+        ],
+        "steps": [
+          "Vào craftplan.fly.dev, đăng nhập bằng tài khoản demo (test@test.com) để xem trước toàn bộ tính năng.",
+          "Nhập một sản phẩm mẫu kèm BOM (nguyên liệu + số lượng) và xem phần mềm tự tính giá thành.",
+          "Tạo một đơn hàng và lên một lô sản xuất để kiểm tra việc tự trừ nguyên liệu.",
+          "Nếu ưng, làm theo hướng dẫn Docker trong repo để tự host bản riêng cho dữ liệu thật."
+        ],
+        "expectedResult": "Khi đổi giá một nguyên liệu, giá thành sản phẩm và snapshot chi phí lô tự cập nhật đúng — đây là dấu hiệu công cụ đang thay được bảng Excel tính tay.",
+        "commonPitfalls": [
+          "Kỳ vọng bản SaaS dùng ngay; thực tế phải tự host mới lưu được dữ liệu riêng.",
+          "Bỏ qua bước khai báo BOM đầy đủ nên tính giá thành thiếu, dẫn tới số liệu sai.",
+          "Dùng cho shop chỉ nhập-bán lại (không sản xuất) — khi đó phần BOM/sản xuất gần như thừa."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 16,
+        "projectHealth": 18,
+        "costAdvantage": 14,
+        "deployment": 7,
+        "documentation": 11
+      },
+      "altstackSignalScore": 66,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-11T00:00:00.000Z",
+      "tags": [
+        "erp",
+        "self-hosted",
+        "ecom",
+        "handmade",
+        "inventory",
+        "open-source"
+      ],
+      "publishedAt": "2026-07-11T00:00:00.000Z",
+      "week": "2026-W28"
+    },
+    {
+      "slug": "berriai-litellm",
+      "url": "/repos/berriai-litellm",
+      "name": "LiteLLM",
+      "repoUrl": "https://github.com/BerriAI/litellm",
+      "oneLiner": "LiteLLM là cổng AI (AI gateway) mã nguồn mở giúp gọi hơn 100 mô hình LLM (OpenAI, Anthropic, Gemini, Bedrock, Azure...) bằng một chuẩn API duy nhất theo format OpenAI, kèm theo dõi chi phí, virtual key, guardrail và cân bằng tải — self-host được.",
+      "vertical": [
+        "agency"
+      ],
+      "maturity": "established",
+      "repoStats": {
+        "stars": 53152,
+        "forks": 9631,
+        "note": "~1079 ngày tuổi, ~49.3 sao/ngày",
+        "starsPerDay": 49.3,
+        "ageDays": 1079,
+        "pushedAt": "2026-07-10T06:46:00.000Z",
+        "archived": false,
+        "openIssues": 3827
+      },
+      "signalSources": [
+        {
+          "label": "Hacker News (cảnh báo bảo mật)",
+          "url": "https://news.ycombinator.com/item?id=47501426"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/BerriAI/litellm"
+        },
+        {
+          "label": "Documentation",
+          "url": "https://docs.litellm.ai/docs/"
+        }
+      ],
+      "useCases": [
+        "Gắn một cổng chung cho team để gọi nhiều LLM (OpenAI, Claude, Gemini...) qua một API, đổi model không phải sửa code sản phẩm.",
+        "Cấp virtual key và theo dõi chi phí theo từng dự án/khách hàng thay vì chia sẻ thẳng API key gốc.",
+        "Cân bằng tải và fallback giữa nhiều nhà cung cấp để giảm rủi ro quá tải/rate limit khi chạy tính năng AI cho khách."
+      ],
+      "workflowStepReplaced": "Khâu tự viết và bảo trì lớp tích hợp riêng cho từng nhà cung cấp LLM, cộng phần quản lý key và tính chi phí thủ công.",
+      "timeOrCostSaved": "Gộp việc tích hợp nhiều LLM về một chuẩn và có sẵn quản lý key/chi phí; là bản self-host miễn phí thay cho một số AI gateway trả phí. Lợi ích thực tế phụ thuộc năng lực vận hành của team.",
+      "localProblem": "Agency/studio Việt bắt đầu nhận dự án có tính năng AI (chatbot, tạo nội dung, xử lý ảnh) và phải gọi nhiều LLM khác nhau cho từng khách. Không có lớp gateway chung thì mỗi dự án lại tích hợp và quản lý key/chi phí riêng, rất khó kiểm soát ngân sách token.",
+      "localEvidence": "Nhu cầu 'quản lý API key và chi phí khi dùng nhiều LLM' đang xuất hiện ở các team build sản phẩm AI; tuy nhiên tín hiệu đưa repo này vào queue lại là một sự cố bảo mật (xem cảnh báo bên dưới), không phải một câu chuyện tăng trưởng.",
+      "usabilityRisk": "CẢNH BÁO BẢO MẬT: các bản litellm 1.82.7 và 1.82.8 trên PyPI từng bị chèn mã độc đánh cắp credential (thảo luận Hacker News tháng 3/2026) — đây chính là tín hiệu đưa repo vào queue. Bản thân dự án là hợp pháp và rất phổ biến, nhưng ai dùng phải PIN đúng phiên bản sạch, kiểm tra nguồn cài và không cài bừa phiên bản mới nhất. Ngoài ra: đây là hạ tầng cho dev, cần Docker/vận hành để self-host, không phải tool bấm-là-chạy cho creative/ecom/seo. Repo có ~3800 issue mở.",
+      "suggestedAngle": "Nếu viết, khung an toàn nhất là 'bài học supply-chain: cách pin và kiểm tra package AI', không phải bài quảng bá tool. Nhắm nhóm dev/agency.",
+      "paidToolReplaced": "Một phần nhu cầu dùng AI gateway/LLM proxy trả phí (managed) ở khâu định tuyến và quản lý key",
+      "practitionerGuide": {
+        "outcome": "Bạn dựng được một gateway self-host gọi nhiều LLM qua một API OpenAI-format, có virtual key và theo dõi chi phí.",
+        "prerequisites": [
+          "Người biết Docker/vận hành server và một máy/VPS để self-host proxy.",
+          "API key của các nhà cung cấp LLM bạn muốn gắn (OpenAI, Anthropic...).",
+          "Kiểm tra kỹ phiên bản cài đặt để tránh dính bản PyPI từng bị compromise."
+        ],
+        "steps": [
+          "Pin một phiên bản litellm[proxy] sạch, đã kiểm chứng (KHÔNG cài mù bản mới nhất).",
+          "Chạy proxy với model muốn expose và cấu hình các nhà cung cấp trong config.",
+          "Tạo virtual key cho từng dự án/khách và bật spend tracking.",
+          "Trỏ code sản phẩm vào base_url của proxy thay vì gọi thẳng từng nhà cung cấp.",
+          "Theo dõi dashboard chi phí và đặt guardrail/limit theo nhu cầu."
+        ],
+        "expectedResult": "Các request AI của sản phẩm đi qua một endpoint chung, chi phí và key được quản lý tập trung theo virtual key.",
+        "commonPitfalls": [
+          "Cài đúng phiên bản bị compromise và rò rỉ credential — luôn kiểm tra version và nguồn.",
+          "Self-host mà không giới hạn quyền/secret, biến gateway thành điểm rò key tập trung.",
+          "Kỳ vọng đây là tool cho người non-tech; thực chất cần kỹ năng vận hành."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 13,
+        "projectHealth": 25,
+        "costAdvantage": 15,
+        "deployment": 9,
+        "documentation": 13
+      },
+      "altstackSignalScore": 75,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-10T00:00:00.000Z",
+      "tags": [
+        "llm",
+        "ai-gateway",
+        "openai",
+        "self-hosted",
+        "devtools",
+        "security-note"
+      ],
+      "publishedAt": "2026-07-10T00:00:00.000Z",
+      "week": "2026-W28"
+    },
+    {
+      "slug": "daymoondevelopment-post-for-me",
+      "url": "/repos/daymoondevelopment-post-for-me",
+      "name": "Post for Me",
+      "repoUrl": "https://github.com/DayMoonDevelopment/post-for-me",
+      "oneLiner": "Post for Me là nền tảng đăng/hẹn lịch bài lên nhiều mạng xã hội qua một API duy nhất (Twitter/X, Bluesky, Instagram, LinkedIn, TikTok, YouTube, Threads, Facebook, Pinterest), xây trên NestJS + Supabase + Trigger.dev, để dev cắm tính năng social vào app của mình.",
+      "vertical": [
+        "agency"
+      ],
+      "maturity": "pre-viral",
+      "repoStats": {
+        "stars": 58,
+        "forks": 17,
+        "note": "~330 ngày tuổi, ~0.2 sao/ngày",
+        "starsPerDay": 0.2,
+        "ageDays": 330,
+        "pushedAt": "2026-07-08T02:25:28.000Z",
+        "archived": false,
+        "openIssues": 12
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/DayMoonDevelopment/post-for-me"
+        }
+      ],
+      "useCases": [
+        "Cắm khả năng đăng/hẹn lịch bài đa nền tảng vào một app/dashboard có sẵn thay vì tự viết integration cho từng mạng xã hội.",
+        "Đánh giá kiến trúc của một social publishing API (NestJS + Supabase + Trigger.dev) trước khi build tính năng schedule nội bộ.",
+        "Cân nhắc phương án self-host thay cho API trả phí như Ayrshare khi muốn giữ dữ liệu và cấu hình trong hạ tầng của mình."
+      ],
+      "workflowStepReplaced": "Khâu tự viết và bảo trì integration đăng bài cho từng nền tảng mạng xã hội riêng lẻ.",
+      "timeOrCostSaved": "Một API gộp nhiều nền tảng có thể tiết kiệm nhiều tuần công viết integration cho X/IG/LinkedIn/TikTok/YouTube... — nhưng con số thực phụ thuộc bạn tự host hay dùng bản SaaS, README không nêu benchmark cụ thể.",
+      "localProblem": "Agency và team làm tool ở Việt Nam khi build sản phẩm social (dashboard quản lý fanpage, tool lên lịch content cho khách) thường phải tự đấu nối API từng nền tảng — vừa tốn công vừa dễ vỡ mỗi lần nền tảng đổi API. Một lớp API gộp sẵn nhiều kênh giải đúng nỗi đau đó.",
+      "localEvidence": "Nhu cầu 'tool lên lịch đăng bài đa nền tảng', 'API đăng bài mạng xã hội', 'self-host Buffer/Ayrshare' xuất hiện đều trong nhóm dev và agency VN. Cái thiếu thường là một backend publishing gọn để không phải nuôi integration cho từng mạng.",
+      "usabilityRisk": "Rủi ro lớn nhất là license: README nói dự án thuộc sở hữu hoàn toàn của Day Moon Development LLC — đây không phải open-source dùng lại tự do, cần đọc kỹ package.json và điều khoản trước khi tự host cho production. Về kỹ thuật, self-host là stack nặng (NestJS + Supabase + Trigger.dev + React Router, dùng Bun 1.3.3+), không phải cài một lệnh. Repo còn nhỏ (58 sao) và chưa có cộng đồng VN.",
+      "suggestedAngle": "Góc kể hợp lý: 'backend đăng bài đa nền tảng cho dev/agency' — so sánh tự host vs Ayrshare/Buffer API, kèm lưu ý license.",
+      "paidToolReplaced": "Ayrshare, các API publishing của Buffer/Hootsuite, phần backend đăng bài của Postiz",
+      "practitionerGuide": {
+        "outcome": "Sau guide này bạn xác định được nên tự host Post for Me, dùng bản SaaS postforme.dev, hay chọn giải pháp khác cho nhu cầu publishing của team.",
+        "prerequisites": [
+          "Đọc và xác nhận license/điều khoản dùng lại của repo trước tiên (không phải OSS tự do).",
+          "Nếu tự host: môi trường Bun 1.3.3+, Supabase CLI, tài khoản Trigger.dev và app/dev quen NestJS + React Router.",
+          "App/dashboard đích cần cắm tính năng đăng bài, và API key/quyền của các nền tảng mạng xã hội bạn muốn hỗ trợ."
+        ],
+        "steps": [
+          "Đọc phần license trong các package.json để chốt phạm vi được phép dùng.",
+          "Nếu chỉ cần dùng nhanh, thử bản SaaS tại postforme.dev trước khi bỏ công tự host.",
+          "Nếu tự host, cd vào từng sibling (api, trigger, dashboard) và chạy bun install + script riêng của nó — không chạy ở repo root.",
+          "Dựng Supabase local, chạy migration/seed, rồi test luồng đăng bài trên một nền tảng an toàn trước.",
+          "Cắm API vào app của bạn và đo độ ổn định trước khi mở cho khách hàng."
+        ],
+        "expectedResult": "Bạn gọi được API để đăng/hẹn lịch một bài test lên ít nhất một nền tảng, và có kết luận rõ về việc tự host có xứng công so với bản SaaS hay API khác.",
+        "commonPitfalls": [
+          "Tưởng đây là OSS tự do rồi tự host cho production mà chưa đọc license.",
+          "Chạy bun install ở repo root (README nói rõ là vô ích vì không có workspace chung).",
+          "Đánh giá thấp chi phí vận hành Supabase + Trigger.dev khi scale lượng bài đăng."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 15,
+        "projectHealth": 14,
+        "costAdvantage": 11,
+        "deployment": 6,
+        "documentation": 9
+      },
+      "altstackSignalScore": 55,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-08T00:00:00.000Z",
+      "tags": [
+        "social-media",
+        "publishing-api",
+        "scheduler",
+        "self-host",
+        "nestjs",
+        "agency"
+      ],
+      "publishedAt": "2026-07-08T00:00:00.000Z",
+      "week": "2026-W28"
+    },
+    {
+      "slug": "adolfousier-socialcrabs",
+      "url": "/repos/adolfousier-socialcrabs",
+      "name": "SocialCrabs",
+      "repoUrl": "https://github.com/adolfousier/socialcrabs",
+      "oneLiner": "SocialCrabs là tool tự động hóa mạng xã hội chạy trên Playwright, mô phỏng hành vi người thật để like/comment/follow/DM trên Instagram, Twitter/X và LinkedIn; nhưng vì nó xoay quanh stealth mode, chống phát hiện bot và né khóa tài khoản, đây là case cần cảnh báo mạnh hơn là một tool tăng trưởng sạch.",
+      "vertical": [
+        "agency"
+      ],
+      "maturity": "pre-viral",
+      "repoStats": {
+        "stars": 67,
+        "forks": 10,
+        "note": "~159 ngày tuổi, ~0.4 sao/ngày",
+        "starsPerDay": 0.4,
+        "ageDays": 159,
+        "pushedAt": "2026-03-29T03:04:08.000Z",
+        "archived": false,
+        "openIssues": 0
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/adolfousier/socialcrabs"
+        }
+      ],
+      "useCases": [
+        "Đọc code để hiểu một tool social automation hiện đại ghép Playwright, stealth mode và rate limit ra sao trước khi quyết định build hay mua.",
+        "So sánh trade-off giữa tự host bot mạng xã hội và các SaaS như PhantomBuster hay các tool schedule hợp lệ hơn.",
+        "Dùng làm ví dụ nội bộ để giải thích cho team vì sao stealth automation dễ dẫn tới khóa tài khoản."
+      ],
+      "workflowStepReplaced": "Khâu thao tác tay lặp lại trên tài khoản mạng xã hội: like, comment, follow, DM và cào follower.",
+      "timeOrCostSaved": "Nếu bỏ qua rủi ro policy thì class tool này có thể cắt nhiều giờ thao tác social lặp lại. Nhưng phần tiết kiệm đó đi kèm nguy cơ khóa tài khoản, mất uy tín brand và lệch chuẩn vận hành — nên không nên tính là lợi ích ròng.",
+      "localProblem": "Nhiều agency social và freelancer ở Việt Nam muốn tăng nhịp tương tác trên IG/X/LinkedIn mà không phải ngồi thao tác tay từng account. SocialCrabs chạm đúng nhu cầu đó, đồng thời chạm luôn vùng dễ bị nền tảng cấm vì nó tự động hóa tương tác theo hướng stealth và né phát hiện.",
+      "localEvidence": "Các truy vấn kiểu 'tool tăng tương tác Instagram', 'auto follow LinkedIn', 'bot seeding mạng xã hội' đều có tệp người tìm ở Việt Nam. Cái thiếu không phải ý tưởng growth hack, mà là lớp giải thích rõ hậu quả khóa tài khoản và vi phạm ToS khi dùng kiểu tool này ở scale thật.",
+      "usabilityRisk": "Rủi ro lớn nhất không phải cài khó mà là account safety và điều khoản nền tảng. README nói thẳng đây là tool thử nghiệm, có thể hỏng bất cứ lúc nào, và các platform đều để trạng thái 'use responsibly'. Twitter còn buộc dùng cookie auth (auth_token/ct0) lấy từ trình duyệt — tức là đưa credential nhạy cảm vào tool. Repo mới, ít sao, ~3 tháng không push và chưa có cộng đồng VN, nên gần như không có ai đỡ khi gặp sự cố.",
+      "suggestedAngle": "Nếu giữ record, nên kể như bài phân tích về social automation và ranh giới anti-detect, không nên kể như tool tăng trưởng sạch.",
+      "paidToolReplaced": "PhantomBuster, các tool auto-engage Instagram/LinkedIn tương tự",
+      "practitionerGuide": {
+        "outcome": "Sau khi đọc guide này, bạn phân biệt được team mình chỉ đang tò mò về social automation hay đang tiến vào vùng không hợp policy để dừng sớm.",
+        "prerequisites": [
+          "Một use case social cụ thể và tài liệu ToS của nền tảng mà team định tác động.",
+          "Người chịu trách nhiệm về account risk hoặc chủ tài khoản để chốt phạm vi thử nghiệm.",
+          "Nếu vẫn muốn đánh giá kỹ thuật: máy chạy Node 24, Playwright/Docker và account phụ tách hoàn toàn khỏi tài khoản production."
+        ],
+        "steps": [
+          "Đọc kỹ phần README về human simulation, stealth mode và các cảnh báo 'use responsibly' để hiểu repo đang tối ưu cho vấn đề gì.",
+          "Viết rõ tiêu chí: mục tiêu là học kiến trúc, benchmark SaaS hay thật sự chạy engagement.",
+          "Nếu chỉ nghiên cứu, dừng ở mức đọc code và flow; tuyệt đối không cắm tài khoản thật hay cookie thật chỉ vì tò mò.",
+          "Nếu buộc phải test kỹ thuật, chỉ dùng account rác và môi trường sandbox, log lại mọi rủi ro thấy được.",
+          "So sánh với lựa chọn ít rủi ro hơn: schedule bằng công cụ được nền tảng chấp nhận, hoặc quy trình seeding thủ công có kiểm soát."
+        ],
+        "expectedResult": "Bạn có kết luận rõ SocialCrabs là một bài học kiến trúc automation hay là thứ team bạn không nên chạm trong production.",
+        "commonPitfalls": [
+          "Lầm tưởng có rate limit và stealth mode là an toàn với ToS.",
+          "Dán cookie/credential tài khoản thật vào tool thử nghiệm ít người dùng.",
+          "Chỉ nhìn phần tiết kiệm công mà bỏ qua chi phí khóa tài khoản và tổn hại uy tín brand."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 5,
+        "projectHealth": 8,
+        "costAdvantage": 6,
+        "deployment": 6,
+        "documentation": 10
+      },
+      "altstackSignalScore": 35,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-08T00:00:00.000Z",
+      "tags": [
+        "social-media",
+        "automation",
+        "playwright",
+        "policy-risk",
+        "agency"
+      ],
+      "publishedAt": "2026-07-08T00:00:00.000Z",
+      "week": "2026-W28"
+    },
+    {
+      "slug": "gpt-img-2-ai-image-prompt-cookbook",
+      "url": "/repos/gpt-img-2-ai-image-prompt-cookbook",
+      "name": "AI Image Prompt Cookbook",
+      "repoUrl": "https://github.com/gpt-img-2/ai-image-prompt-cookbook",
+      "oneLiner": "AI Image Prompt Cookbook là thư viện prompt mẫu (tiếng Trung, có bản đa ngôn ngữ) để tạo ảnh AI cho thời trang nữ/trẻ em, ảnh main sản phẩm TMĐT, ảnh chụp sản phẩm, bìa Xiaohongshu và poster quảng cáo.",
+      "vertical": [
+        "ecom",
+        "creative"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 70,
+        "forks": 19,
+        "note": "~53 ngày tuổi, ~1.3 sao/ngày",
+        "starsPerDay": 1.3,
+        "ageDays": 53,
+        "pushedAt": "2026-06-07T10:24:30.000Z",
+        "archived": false,
+        "openIssues": 0
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/gpt-img-2/ai-image-prompt-cookbook"
+        }
+      ],
+      "useCases": [
+        "Copy prompt mẫu để tạo ảnh sản phẩm, ảnh thời trang nữ/trẻ em cho shop mà không phải thuê buổi chụp riêng.",
+        "Làm ảnh bìa kiểu Xiaohongshu và poster quảng cáo bằng cách thay biến trong template có sẵn.",
+        "Tạo ảnh main sản phẩm cho sàn TMĐT nhanh, thử nhiều phong cách trước khi chốt bản đăng.",
+        "Dùng bản tiếng Việt trong docs/languages/vi.md để tra cách viết prompt theo thói quen người Việt."
+      ],
+      "workflowStepReplaced": "Khâu nghĩ prompt từ đầu (và một phần khâu chụp ảnh sản phẩm/mẫu) khi làm ảnh cho shop và nội dung TMĐT.",
+      "timeOrCostSaved": "Giảm thời gian tự viết prompt và có thể thay một phần chi phí thuê chụp mẫu/sản phẩm; con số cụ thể phụ thuộc ngành hàng, model tạo ảnh dùng và yêu cầu độ thật của ảnh.",
+      "localProblem": "Shop thời trang và người bán trên Shopee/TikTok Shop ở Việt Nam tốn tiền và thời gian cho mỗi buổi chụp sản phẩm/mẫu, còn khi tự tạo ảnh AI thì lại bí prompt nên ảnh ra thiếu chuyên nghiệp, sai bố cục ảnh main.",
+      "localEvidence": "Nhu cầu tạo ảnh sản phẩm/thời trang bằng AI để tiết kiệm chi phí chụp đang rất nóng với shop TMĐT Việt. Cookbook này gom sẵn prompt theo đúng các ngách shop hay cần (ảnh main, ảnh mẫu, bìa MXH, poster), lại có sẵn bản tiếng Việt — nhưng cần Luan kiểm tra chất lượng ảnh thật khi chạy prompt qua model.",
+      "usabilityRisk": "Đây là thư viện prompt, không phải app tạo ảnh — bạn vẫn cần một model tạo ảnh (GPT Image/Nano Banana...) và tài khoản trả phí tương ứng để chạy. Nội dung gốc tiếng Trung, có nhiều link UTM về trang generator gptimg2.art (mang tính quảng bá). Cần cẩn trọng khi tạo ảnh mẫu người: tránh giả mạo người thật, trẻ em và nhầm lẫn thương hiệu như README đã lưu ý.",
+      "suggestedAngle": "Góc nên viết: bộ prompt tạo ảnh sản phẩm/mẫu cho shop Việt theo từng ngách (ảnh main, thời trang, bìa MXH), kèm mẹo giữ đúng sản phẩm thật bằng ảnh tham chiếu.",
+      "paidToolReplaced": "Thay một phần chi phí thuê chụp ảnh sản phẩm/mẫu và các gói prompt trả phí, bằng thư viện prompt mã nguồn mở (CC BY 4.0).",
+      "practitionerGuide": {
+        "outcome": "Bạn chọn được prompt theo đúng ngách (ảnh main, thời trang, bìa MXH), thay biến cho sản phẩm của mình và tạo ra vài ảnh nháp để đánh giá độ dùng được.",
+        "prerequisites": [
+          "Một công cụ tạo ảnh AI (GPT Image / Nano Banana hoặc model tương thích) và tài khoản/credit tương ứng.",
+          "Ảnh sản phẩm hoặc mô tả cụ thể (loại hàng, chất liệu, màu, bối cảnh muốn có).",
+          "Nếu cần giữ đúng sản phẩm/bao bì: ảnh tham chiếu để upload kèm prompt như README hướng dẫn."
+        ],
+        "steps": [
+          "Mở repo, chọn danh mục phù hợp (thời trang nữ, trẻ em, ảnh main TMĐT, ảnh chụp sản phẩm, bìa Xiaohongshu, poster).",
+          "Nếu tiện, xem thêm bản tiếng Việt trong docs/languages/vi.md để nắm cách viết prompt.",
+          "Copy template Markdown và thay các biến trong ngoặc bằng thông tin sản phẩm của bạn.",
+          "Chạy prompt qua model tạo ảnh; nếu cần giữ nguyên sản phẩm thật thì upload ảnh tham chiếu và nêu rõ chi tiết không được đổi.",
+          "So sánh vài ảnh, chỉnh biến (bối cảnh/màu/khung ảnh) rồi lặp lại tới khi đạt chuẩn ảnh đăng."
+        ],
+        "expectedResult": "Kết quả đạt là ảnh sản phẩm/mẫu đủ sạch để làm ảnh nháp cho listing hoặc post, với bố cục hợp ngách (ví dụ ảnh main gọn, nền sạch).",
+        "commonPitfalls": [
+          "Tưởng repo tự tạo ảnh, trong khi nó chỉ cung cấp prompt — vẫn cần model trả phí ở cuối chuỗi.",
+          "Dùng ảnh AI cho sản phẩm thật mà không upload ảnh tham chiếu, khiến chi tiết sản phẩm bị model bịa lệch.",
+          "Bỏ qua lưu ý về giả mạo người thật/trẻ em và bản quyền thương hiệu khi tạo ảnh mẫu."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 20,
+        "projectHealth": 15,
+        "costAdvantage": 15,
+        "deployment": 12,
+        "documentation": 12
+      },
+      "altstackSignalScore": 74,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-07T00:00:00.000Z",
+      "tags": [
+        "ai",
+        "ecommerce",
+        "image-generation",
+        "prompt-engineering",
+        "fashion",
+        "product-photography"
+      ],
+      "publishedAt": "2026-07-07T00:00:00.000Z",
+      "week": "2026-W28"
+    },
+    {
+      "slug": "nomie7-nano-banana-slides-prompter",
+      "url": "/repos/nomie7-nano-banana-slides-prompter",
+      "name": "Nano Banana Slides Prompter",
+      "repoUrl": "https://github.com/nomie7/nano-banana-slides-prompter",
+      "oneLiner": "Nano Banana Slides Prompter là công cụ web sinh prompt tối ưu để tạo slide bằng AI: bạn nhập nội dung, nó chọn kiểu slide phù hợp và viết prompt cho model ảnh (Nano Banana Pro / Gemini) làm ra từng slide.",
+      "vertical": [
+        "agency",
+        "creative"
+      ],
+      "maturity": "pre-viral",
+      "repoStats": {
+        "stars": 71,
+        "forks": 13,
+        "note": "~196 ngày tuổi, ~0.4 sao/ngày",
+        "starsPerDay": 0.4,
+        "ageDays": 196,
+        "pushedAt": "2026-01-10T21:39:36.000Z",
+        "archived": false,
+        "openIssues": 2
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/nomie7/nano-banana-slides-prompter"
+        }
+      ],
+      "useCases": [
+        "Sinh prompt tối ưu cho công cụ tạo slide bằng AI thay vì tự nghĩ prompt cho từng slide một.",
+        "Chọn nhanh trong 50+ loại slide (mở đầu, biểu đồ, quy trình, so sánh, case study, kết luận) hợp với nội dung đang có.",
+        "Thêm một nhân vật dẫn nhất quán qua cả bộ slide với 8 phong cách render.",
+        "Dán URL bài viết hoặc upload CSV để tự dựng nội dung slide theo dữ liệu."
+      ],
+      "workflowStepReplaced": "Khâu nghĩ prompt và bố cục cho từng slide khi tạo bộ slide bằng AI — thay bằng prompt đã tối ưu theo loại slide.",
+      "timeOrCostSaved": "Rút ngắn thời gian viết prompt cho từng slide và chọn layout; giá trị thật phụ thuộc bạn dùng model ảnh/slide nào phía sau và chi phí API tương ứng.",
+      "localProblem": "Người làm agency, marketing và giảng viên ở Việt Nam thường mất nhiều thời gian dựng slide đẹp; khi thử tạo slide bằng AI thì lại bí ở khâu viết prompt sao cho ra layout và phong cách nhất quán cho cả bộ.",
+      "localEvidence": "Xu hướng tạo slide bằng AI (Gamma, Nano Banana, Kimi Slides) đang được dân marketing/agency Việt thử nhiều, nhưng chất lượng phụ thuộc lớn vào prompt. Tool này gom sẵn 50+ kiểu slide và prompt mẫu, tuy nhiên repo push gần nhất từ tháng 1 nên cần Luan kiểm tra còn chạy tốt với model hiện tại không.",
+      "usabilityRisk": "Tool sinh prompt chứ không tự xuất ra file slide hoàn chỉnh — bạn vẫn cần một công cụ tạo slide/ảnh AI ở cuối chuỗi. Muốn tự host thì phải chạy Node/Bun hoặc Docker và cắm API key OpenAI-compatible. Repo nhỏ (71 sao), push gần nhất từ tháng 1/2026, chưa có cộng đồng Việt; nên coi là công cụ hỗ trợ prompt, không phải nền tảng slide trọn gói.",
+      "suggestedAngle": "Góc nên viết: quy trình tạo slide bằng AI cho dân marketing Việt, trong đó khâu prompt là mấu chốt, và một thư viện 50+ kiểu slide giúp gì so với gõ prompt tay.",
+      "paidToolReplaced": "Thay một phần khâu viết prompt/dựng bố cục khi dùng công cụ tạo slide AI trả phí (Gamma, Beautiful.ai, Tome), bằng bộ prompt mã nguồn mở tự host được.",
+      "practitionerGuide": {
+        "outcome": "Bạn nhập một chủ đề/nội dung và nhận về bộ prompt theo từng loại slide, thử dán sang một công cụ tạo slide-ảnh AI để xem chất lượng đầu ra.",
+        "prerequisites": [
+          "Dùng bản hosted (slides.jo3.ai) hoặc tự chạy: cần Node.js 18+, Bun và một API key OpenAI-compatible.",
+          "Một công cụ tạo slide/ảnh AI ở cuối chuỗi (Nano Banana Pro / Gemini image / công cụ tương thích) để nhận prompt.",
+          "Nội dung nguồn: chủ đề, dàn ý, URL bài viết hoặc file CSV nếu muốn slide theo dữ liệu."
+        ],
+        "steps": [
+          "Mở bản hosted hoặc cài local theo README (npm install + cd server && bun install), cấu hình LLM trong file .env.",
+          "Nhập chủ đề/nội dung, hoặc dán URL / upload CSV để tool phân tích và chọn loại slide.",
+          "Chọn phong cách và (tuỳ chọn) bật Character Presenter với phong cách render mong muốn.",
+          "Copy prompt từng slide và dán vào công cụ tạo ảnh/slide AI bạn dùng.",
+          "So sánh vài slide đầu ra, chỉnh nội dung nguồn hoặc phong cách rồi lặp lại tới khi đạt."
+        ],
+        "expectedResult": "Kết quả đạt là bộ prompt rõ ràng theo từng loại slide, và khi đưa qua model ảnh cho ra slide có bố cục và phong cách tương đối đồng bộ để dùng làm nháp.",
+        "commonPitfalls": [
+          "Tưởng tool tự xuất ra PPTX/slide hoàn chỉnh, trong khi nó chỉ sinh prompt.",
+          "Chất lượng slide phụ thuộc model ảnh phía sau; prompt tốt vẫn có thể ra ảnh lệch chữ tiếng Việt.",
+          "Repo lâu chưa cập nhật — cần kiểm tra prompt còn hợp với phiên bản model hiện tại không."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 16,
+        "projectHealth": 8,
+        "costAdvantage": 12,
+        "deployment": 9,
+        "documentation": 11
+      },
+      "altstackSignalScore": 56,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-07T00:00:00.000Z",
+      "tags": [
+        "ai",
+        "slides",
+        "prompt-engineering",
+        "presentation",
+        "nano-banana",
+        "gemini"
+      ],
+      "publishedAt": "2026-07-07T00:00:00.000Z",
+      "week": "2026-W28"
+    },
+    {
+      "slug": "multivmlabs-aeo-js",
+      "url": "/repos/multivmlabs-aeo-js",
+      "name": "aeo.js",
+      "repoUrl": "https://github.com/multivmlabs/aeo.js",
+      "oneLiner": "aeo.js là thư viện mã nguồn mở giúp website của bạn dễ được ChatGPT, Claude, Perplexity và các công cụ tìm kiếm AI đọc và trích dẫn — tự sinh llms.txt, robots.txt, sitemap và JSON-LD.",
+      "vertical": [
+        "seo"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 103,
+        "forks": 14,
+        "note": "~136 ngày tuổi, ~0.8 sao/ngày",
+        "starsPerDay": 0.8,
+        "ageDays": 136,
+        "pushedAt": "2026-06-20T10:12:53.000Z",
+        "archived": false,
+        "openIssues": 8
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/multivmlabs/aeo.js"
+        },
+        {
+          "label": "npm",
+          "url": "https://www.npmjs.com/package/aeo.js"
+        },
+        {
+          "label": "Documentation",
+          "url": "https://aeojs.org"
+        }
+      ],
+      "useCases": [
+        "Kiểm tra nhanh một website xem có bao nhiêu AI crawler đang được phép truy cập và điểm sẵn sàng GEO là bao nhiêu, chỉ với một lệnh npx.",
+        "Tự sinh llms.txt, robots.txt, sitemap và JSON-LD cho dự án Next.js, Nuxt, Astro hoặc Vite thay vì viết tay từng file.",
+        "Đưa vào pipeline build để mỗi lần deploy đều tái tạo các file giúp AI search hiểu cấu trúc nội dung.",
+        "Tạo baseline điểm số trước/sau khi tối ưu để chứng minh với khách rằng site đã dễ được AI trích dẫn hơn."
+      ],
+      "workflowStepReplaced": "Khâu viết tay và bảo trì llms.txt, robots.txt, sitemap, structured data rồi tự đoán liệu AI search có đọc được nội dung không.",
+      "timeOrCostSaved": "Rút khâu tạo và cập nhật các file cho AI crawler từ chỉnh tay từng dự án xuống một lệnh, kèm điểm số để ưu tiên; phần xác nhận được cite thật vẫn cần kiểm tra định kỳ.",
+      "localProblem": "SEO team và agency Việt bắt đầu nhận yêu cầu 'làm sao ChatGPT/Perplexity nhắc tới thương hiệu' nhưng phần lớn vẫn tối ưu thủ công và không có cách đo. aeo.js cho một điểm số cụ thể và bộ file chuẩn để bắt đầu, thay vì bàn AEO bằng cảm tính.",
+      "localEvidence": "Các cụm như AEO, GEO, llms.txt, tối ưu AI Overview đã xuất hiện trong nội dung SEO Việt gần đây, nhưng công cụ cụ thể như aeo.js gần như chưa được viết bằng tiếng Việt.",
+      "usabilityRisk": "Là thư viện JS/TypeScript nên cần người biết chạy npm/CLI và tích hợp vào codebase (Next.js, Nuxt, Astro, Vite). Repo còn nhỏ (~103 sao, ~0.8 sao/ngày), chưa có cộng đồng Việt. Điểm GEO là chỉ báo kỹ thuật, không phải cam kết được AI trích dẫn — vẫn phải kiểm chứng bằng truy vấn thật.",
+      "suggestedAngle": "Góc nên viết: hướng dẫn dùng một lệnh npx để chấm điểm AEO website Việt, kèm cách sinh llms.txt cho Next.js/Astro.",
+      "paidToolReplaced": "Một phần nhu cầu dùng nền tảng GEO/AEO audit trả phí ở vòng kiểm tra và tạo file ban đầu",
+      "practitionerGuide": {
+        "outcome": "Bạn có điểm sẵn sàng GEO đầu tiên cho một site và bộ file llms.txt/robots/sitemap/JSON-LD được sinh tự động để bắt đầu tối ưu.",
+        "prerequisites": [
+          "Node.js/npm trên máy để chạy npx và cài package.",
+          "Một website cần audit và quyền chỉnh file cấu hình hoặc thư mục public.",
+          "Danh sách vài truy vấn thật mà khách hàng sẽ hỏi AI search về ngành/thương hiệu."
+        ],
+        "steps": [
+          "Chạy npx aeo.js check <domain> để lấy điểm GEO và xem crawler nào đang bị chặn.",
+          "Cài aeo.js vào dự án và cấu hình theo framework đang dùng (Next.js, Nuxt, Astro hoặc Vite).",
+          "Sinh llms.txt, robots.txt, sitemap và JSON-LD, rồi deploy các file này lên site.",
+          "Chạy lại lệnh check để so sánh điểm trước/sau và lưu làm baseline.",
+          "Kiểm tra bằng truy vấn thật trên ChatGPT/Perplexity xem thương hiệu có được nhắc/cite không."
+        ],
+        "expectedResult": "Kết quả đúng là điểm GEO tăng lên sau khi thêm file, cùng một ma trận crawler cho thấy các AI engine chính được phép truy cập nội dung.",
+        "commonPitfalls": [
+          "Xem điểm GEO như cam kết được AI trích dẫn, trong khi citation còn phụ thuộc uy tín thương hiệu và nguồn ngoài.",
+          "Thêm llms.txt nhưng bỏ qua chất lượng nội dung và khả năng crawl thực tế.",
+          "Không lưu baseline trước/sau nên không chứng minh được tác dụng của việc tối ưu."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 20,
+        "projectHealth": 14,
+        "costAdvantage": 13,
+        "deployment": 13,
+        "documentation": 13
+      },
+      "altstackSignalScore": 73,
+      "evidenceLevel": "C",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-07-06T00:00:00.000Z",
+      "tags": [
+        "seo",
+        "aeo",
+        "geo",
+        "llms-txt",
+        "ai-search"
+      ],
+      "publishedAt": "2026-07-06T00:00:00.000Z",
+      "week": "2026-W28"
+    },
+    {
+      "slug": "mverab-egeoagents",
+      "url": "/repos/mverab-egeoagents",
+      "name": "eGEOagents (E-GEO)",
+      "repoUrl": "https://github.com/mverab/eGEOagents",
+      "oneLiner": "E-GEO là bộ agent AI mã nguồn mở tự động phân tích, chấm điểm và VIẾT LẠI nội dung website để tăng khả năng được ChatGPT, Perplexity, Gemini và Google AI Overviews trích dẫn — không chỉ audit như phần lớn tool GEO/AEO khác.",
+      "vertical": [
+        "seo",
+        "agency"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 125,
+        "forks": 37,
+        "note": "~174 ngày tuổi, ~0.7 sao/ngày",
+        "starsPerDay": 0.7,
+        "ageDays": 174,
+        "pushedAt": "2026-07-02T09:13:31.000Z",
+        "archived": false,
+        "openIssues": 4
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mverab/eGEOagents"
+        },
+        {
+          "label": "arXiv paper",
+          "url": "https://arxiv.org/abs/2511.20867"
+        },
+        {
+          "label": "skills.sh",
+          "url": "https://skills.sh/mverab/egeoagents"
+        }
+      ],
+      "useCases": [
+        "Chạy /geo <url> để có ngay báo cáo điểm GEO/AEO, bản nội dung đã viết lại tối ưu, và schema JSON-LD sẵn để dán vào trang.",
+        "Dùng /geo:audit khi chỉ cần biết trang đang thiếu gì mà chưa muốn sửa ngay — hợp lúc pitch khách.",
+        "Dùng /geo:batch để quét cả một thư mục nội dung (nhiều trang dịch vụ, nhiều bài blog) trong một lần thay vì làm tay từng trang.",
+        "Dùng /geo:compete để so sánh cách đối thủ đang được AI trích dẫn, tìm góc còn trống để viết đè lên."
+      ],
+      "workflowStepReplaced": "Khâu agency tự đọc từng trang, đoán xem ChatGPT/Perplexity có trích dẫn được không, rồi viết lại nội dung bằng tay theo cảm tính.",
+      "timeOrCostSaved": "Repo không công bố số giờ/tiền tiết kiệm cụ thể — giá trị chính là gộp 4 bước (audit, mô phỏng rank, viết lại, sinh schema) vào một lệnh thay vì làm tay tuần tự; mức tiết kiệm thật còn phụ thuộc số trang cần xử lý.",
+      "localProblem": "Agency SEO ở Việt Nam đang bắt đầu bán gói 'dịch vụ GEO/AEO' (ví dụ các gói GEO/SEO AIO đã thấy quảng cáo công khai) nhưng phần lớn dừng ở audit và viết tay lại nội dung — chưa có công cụ tự động hoá cả bước viết lại + sinh schema để giao khách nhanh hơn.",
+      "localEvidence": "Tìm kiếm tiếng Việt cho GEO/AEO/Claude Code cho thấy đã có ít nhất một bài viết tiếng Việt review một Claude Code skill GEO khác (geo-seo-claude, đăng trên Viblo và một blog cá nhân) — nghĩa là khái niệm 'Claude Code skill làm GEO' đã bắt đầu được cộng đồng dev Việt biết tới, dù chưa phải chính repo eGEOagents này.",
+      "usabilityRisk": "Cần cài Python (pip install -e .) hoặc copy thư mục .claude/ vào Claude Code — không phải công cụ web kéo-thả. Muốn dùng thật cần API key của một LLM provider (bản mock GEO_EVAL_MOCK=1 chỉ để test offline, không tạo nội dung thật). Điểm số ranking trong báo cáo là mô phỏng bằng LLM khác, KHÔNG phải số liệu ChatGPT/Perplexity thật — phải nói rõ với khách để tránh cam kết quá tay.",
+      "suggestedAngle": "Góc nên viết: so sánh eGEOagents với các tool GEO/AEO audit-only khác đã có trên RepoRadar — nhấn vào điểm khác biệt là tự động rewrite + sinh schema trong một lệnh.",
+      "paidToolReplaced": "Một phần công việc mà các nền tảng AI visibility/GEO trả phí (ví dụ Profound, Otterly.AI, add-on AI SEO của Semrush/Ahrefs) đang bán ở khâu audit + gợi ý sửa nội dung",
+      "practitionerGuide": {
+        "outcome": "Bạn có báo cáo GEO đầu tiên cho một URL, kèm bản nội dung đã viết lại và file schema JSON-LD sẵn để đưa cho dev dán vào trang.",
+        "prerequisites": [
+          "Máy có Python 3, cài được package qua pip; hoặc có sẵn Claude Code để copy thư mục .claude/.",
+          "API key của một LLM provider được hỗ trợ (theo README) để chạy pipeline thật, không phải chế độ mock.",
+          "Một URL trang dịch vụ hoặc bài blog quan trọng để thử trước."
+        ],
+        "steps": [
+          "Cài qua pip install -e . rồi chạy egeo optimize <url/file> --out-dir ./geo-output; hoặc copy .claude/ vào project và gõ /geo <url> trong Claude Code.",
+          "Đọc report.md để xem điểm GEO hiện tại và nhóm lỗi (crawlability, schema, cấu trúc nội dung).",
+          "So sánh bản gốc với optimized/*.md — kiểm tra AI có giữ đúng giọng thương hiệu không trước khi dùng.",
+          "Copy schema/*.json vào trang thật (qua dev) rồi kiểm tra lại bằng Rich Results Test hoặc công cụ kiểm schema khác.",
+          "Hỏi thử ChatGPT/Perplexity vài câu liên quan tới trang đó để xem có được nhắc/cite không — đây là bước xác nhận thật, không thay được bằng điểm số nội bộ của tool."
+        ],
+        "expectedResult": "Kết quả đúng là một bộ 3 file (report, nội dung viết lại, schema) đủ để dev/agency triển khai ngay, không phải chỉ một điểm số chung chung.",
+        "commonPitfalls": [
+          "Tin điểm ranking mô phỏng trong report như số liệu ranking ChatGPT/Perplexity thật — đây chỉ là proxy theo chính tài liệu evaluation.md của repo.",
+          "Dán thẳng bản Rewriter viết ra lên site mà không kiểm tra giọng thương hiệu, dễ bị lệch tone so với phần còn lại của site.",
+          "Bỏ qua bước xác nhận cite thật trên ChatGPT/Perplexity sau khi triển khai — nếu không đo, không biết tool có tác dụng hay không."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 14,
+        "costAdvantage": 14,
+        "deployment": 10,
+        "documentation": 15
+      },
+      "altstackSignalScore": 71,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-05T00:00:00.000Z",
+      "tags": [
+        "ai",
+        "seo",
+        "aeo",
+        "geo",
+        "content-optimization"
+      ],
+      "publishedAt": "2026-07-05T00:00:00.000Z",
+      "week": "2026-W28"
+    },
+    {
+      "slug": "heygen-com-hyperframes",
+      "url": "/repos/heygen-com-hyperframes",
+      "name": "HyperFrames",
+      "repoUrl": "https://github.com/heygen-com/hyperframes",
+      "oneLiner": "HyperFrames là framework mã nguồn mở của HeyGen biến file HTML/CSS + animation thành video MP4 cố định (cùng input ra cùng video), làm để AI agent như Claude Code tự viết, preview rồi render video mà không cần mở phần mềm dựng phim.",
+      "vertical": [
+        "creative",
+        "agency"
+      ],
+      "maturity": "established",
+      "repoStats": {
+        "stars": 33160,
+        "forks": 3086,
+        "note": "~117 ngày tuổi, ~283 sao/ngày",
+        "starsPerDay": 283.4,
+        "ageDays": 117,
+        "pushedAt": "2026-07-05T05:11:17Z",
+        "archived": false,
+        "openIssues": 96
+      },
+      "signalSources": [
+        {
+          "label": "Show HN",
+          "url": "https://news.ycombinator.com/item?id=47797513"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "useCases": [
+        "Dựng video ra mắt sản phẩm hoặc feature announcement từ một brief/URL, độ dài tới ~3 phút (sweet spot 30-90 giây), ngay trong Claude Code.",
+        "Biến một pull request GitHub thành video changelog có diff code animated, giọng đọc và phụ đề — hợp để khoe tính năng mới cho team hoặc khách.",
+        "Làm video data-viz, chart race, hoặc map animation từ số liệu mà không phải dựng tay từng khung trong After Effects.",
+        "Ghép video social có caption động, overlay và nhạc nền bám nhịp, xuất MP4 hoặc overlay nền trong suốt.",
+        "Chạy pipeline docs-to-video / website-to-video tự động: đưa nội dung vào, agent viết HTML rồi render hàng loạt cho content lặp lại."
+      ],
+      "workflowStepReplaced": "Khâu dựng và render video motion/explainer bằng phần mềm timeline (After Effects) hoặc code video kiểu React — thay bằng viết HTML để agent tự sinh và render qua CLI.",
+      "timeOrCostSaved": "README không nêu số giờ/tiền cụ thể; lợi ích rõ nhất là Apache 2.0 miễn phí, không phí theo lượt render — thay cho các tool video-as-code có phí bản quyền theo team; đổi lại bạn tự chịu chi phí máy/compute khi render (headless Chrome + FFmpeg).",
+      "localProblem": "Team creative/agency ở Việt Nam làm nhiều video lặp lại (video ra mắt sản phẩm, explainer, video social theo mẫu) thường kẹt ở khâu dựng tay trong After Effects hoặc CapCut — mỗi biến thể phải mở project sửa tay, khó tự động hoá và khó ghép vào quy trình content hàng loạt.",
+      "localEvidence": "Đã có vài bài tiếng Việt viết về HyperFrames (vnrom.net có hướng dẫn cài đặt→render MP4 khá đầy đủ, apidog.com/vi có bài giới thiệu 'chỉnh sửa video bằng AI') — cho thấy chủ đề đã bắt đầu được người Việt để ý, nhưng phần lớn dừng ở giới thiệu/cài đặt, chưa thấy nội dung đi sâu vào usecase ngành (agency dựng video sản phẩm hàng loạt) bằng tiếng Việt.",
+      "usabilityRisk": "Cần Node.js 22+ và FFmpeg, chạy qua CLI và render bằng headless Chrome — không phải app bấm-là-chạy, hợp người đã quen terminal/dev hoặc dùng agent code, không hợp editor thuần dùng giao diện. Render local ăn CPU/RAM (seek từng frame trong Chrome + encode FFmpeg); muốn nhẹ máy thì phải setup AWS Lambda (thêm bước kỹ thuật). README và docs hoàn toàn tiếng Anh.",
+      "suggestedAngle": "Góc cho creator/agency: quay clip 'bảo Claude Code dựng video changelog từ một PR GitHub rồi render ra MP4' — vừa lạ, vừa cho thấy điểm mạnh deterministic + built-for-agents mà tool text-to-video không làm được.",
+      "paidToolReplaced": "Remotion (dựng video bằng React/code — HyperFrames còn có skill remotion-to-hyperframes để chuyển qua), và một phần khâu motion/explainer thường làm trong After Effects.",
+      "practitionerGuide": {
+        "outcome": "Sau guide này, bạn render được một video MP4 đầu tiên từ HTML — hoặc bằng CLI thủ công, hoặc nhờ agent (Claude Code) dựng hộ.",
+        "prerequisites": [
+          "Máy đã cài Node.js 22+ và FFmpeg.",
+          "Nếu dùng qua agent: đã có Claude Code / Cursor / Gemini CLI / Codex."
+        ],
+        "steps": [
+          "Cách nhanh nhất: cài skill cho agent bằng `npx skills add heygen-com/hyperframes`, rồi mô tả video muốn làm (vd 'dùng /hyperframes tạo video giới thiệu sản phẩm 10 giây có tiêu đề fade-in').",
+          "Hoặc làm tay: `npx hyperframes init my-video` → `cd my-video`.",
+          "`npx hyperframes preview` để xem trước trong trình duyệt với live reload.",
+          "`npx hyperframes render` để xuất ra MP4.",
+          "Nếu render local nặng máy, xem phần AWS Lambda trong skill `/hyperframes-cli` để render trên cloud."
+        ],
+        "expectedResult": "Một file MP4 render đúng như preview; chạy lại cùng input phải ra cùng video (tính deterministic) — đủ để đánh giá có ghép vào pipeline content được không.",
+        "commonPitfalls": [
+          "Quên cài FFmpeg hoặc dùng Node dưới 22 → render lỗi ngay từ đầu.",
+          "Kỳ vọng nó là 'AI sinh video từ prompt' như Veo/Kling — thực chất phải có (hoặc để agent viết) HTML + animation trước.",
+          "Render local trên máy yếu bị chậm/nghẽn vì headless Chrome + FFmpeg ăn tài nguyên; video dài nên cân nhắc Lambda."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 25,
+        "costAdvantage": 14,
+        "deployment": 10,
+        "documentation": 15
+      },
+      "altstackSignalScore": 82,
+      "evidenceLevel": "B",
+      "confidence": "medium",
+      "lastReviewedAt": "2026-07-05T00:00:00.000Z",
+      "tags": [
+        "video",
+        "html",
+        "ai-agent",
+        "claude-code-skills",
+        "creative",
+        "open-source"
+      ],
+      "publishedAt": "2026-07-05T00:00:00.000Z",
+      "week": "2026-W27"
+    },
+    {
+      "slug": "onion99-kmp-minestablediffusion",
+      "url": "/repos/onion99-kmp-minestablediffusion",
+      "name": "Mine StableDiffusion (KMP)",
+      "repoUrl": "https://github.com/Onion99/KMP-MineStableDiffusion",
+      "oneLiner": "Mine StableDiffusion là app tạo ảnh AI (Stable Diffusion/SDXL/FLUX...) chạy thẳng trên máy hoặc điện thoại của bạn — không cần internet, không cần tài khoản, không mất phí theo lượt tạo.",
+      "vertical": [
+        "creative"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 109,
+        "forks": 10,
+        "note": "~235 ngày tuổi, ~0.5 sao/ngày",
+        "starsPerDay": 0.5,
+        "ageDays": 235,
+        "pushedAt": "2026-03-13T10:46:03.000Z",
+        "archived": false,
+        "openIssues": 4
+      },
+      "signalSources": [
+        {
+          "label": "GitHub Releases",
+          "url": "https://github.com/Onion99/KMP-MineStableDiffusion/releases"
+        },
+        {
+          "label": "Community Showcase",
+          "url": "https://github.com/Onion99/KMP-MineStableDiffusion/issues/13"
+        }
+      ],
+      "useCases": [
+        "Tạo ảnh AI ngay trên điện thoại hoặc laptop cá nhân mà không cần internet, không lo prompt/ảnh nhạy cảm bị gửi lên server người khác.",
+        "Chạy các model SDXL, FLUX, SD3, Chroma... trực tiếp trên máy có GPU đủ mạnh, không tốn phí credit theo mỗi lần tạo ảnh.",
+        "Áp nhiều LoRA cùng lúc với thanh chỉnh trọng số ngay trong app để ra đúng phong cách ảnh cần, không cần chỉnh file config tay.",
+        "Đọc lại thông số ảnh cũ (prompt, seed, model, LoRA) ngay từ file PNG đã lưu, dựng lại đúng công thức mà không cần ghi chú riêng."
+      ],
+      "workflowStepReplaced": "Khâu tạo ảnh AI phải phụ thuộc dịch vụ cloud, trả phí theo credit hoặc lo prompt/ảnh bị lưu trên server bên thứ ba.",
+      "timeOrCostSaved": "Repo không công bố số giờ/tiền cụ thể tiết kiệm; lợi thế chính là chi phí vận hành gần như bằng 0 sau khi tải model về máy (so với app cloud tính phí theo credit hoặc subscription hàng tháng), đổi lại phải có phần cứng đủ mạnh.",
+      "localProblem": "Người làm nội dung/marketing nhỏ lẻ hoặc freelancer thiết kế ở Việt Nam đôi khi cần tạo ảnh AI cho ý tưởng thương hiệu chưa công bố, hoặc muốn thử nghiệm riêng tư mà không gửi prompt/ảnh lên server nước ngoài, cũng không muốn trả subscription hàng tháng cho một app cloud.",
+      "localEvidence": "Tìm kiếm tiếng Việt về 'Stable Diffusion' hiện chủ yếu ra hướng dẫn cài trên máy tính qua ComfyUI/Automatic1111 (ví dụ bài hướng dẫn trên Tinh Tế), còn một app sẵn dùng ngay trên điện thoại/desktop (không cần biết code) gần như chưa có nội dung tiếng Việt nào nhắc tới.",
+      "usabilityRisk": "Cần máy/điện thoại có GPU hỗ trợ Vulkan 1.2+ (Android/Windows/Linux) hoặc Metal (macOS/iOS) — máy cũ hoặc yếu sẽ chạy chậm hoặc không tải nổi model lớn như FLUX/SD3. Người dùng phải tự tải file model .gguf/.safetensors nặng vài GB, app không có sẵn model đi kèm. Chưa thấy cộng đồng hỗ trợ tiếng Việt.",
+      "suggestedAngle": "Góc nên viết: so sánh trải nghiệm tạo ảnh AI offline trên điện thoại (Mine StableDiffusion) với việc tự cài ComfyUI/Automatic1111 trên máy tính — ai hợp dùng app nào.",
+      "paidToolReplaced": "Midjourney hoặc các app tạo ảnh AI di động tính phí theo credit, ở phần việc cần sự riêng tư/offline hơn là chất lượng ảnh cao nhất",
+      "practitionerGuide": {
+        "outcome": "Bạn cài được app lên điện thoại hoặc máy tính và tạo ra ảnh AI đầu tiên hoàn toàn offline.",
+        "prerequisites": [
+          "Điện thoại hoặc máy tính có GPU hỗ trợ Vulkan 1.2+ hoặc Metal.",
+          "Dung lượng trống vài GB để tải model (.gguf hoặc .safetensors) phù hợp.",
+          "Không cần tài khoản hay API key — chỉ cần tải app từ trang Releases."
+        ],
+        "steps": [
+          "Vào trang Releases, tải bản phù hợp thiết bị (.apk cho Android, .dmg cho macOS, .exe cho Windows).",
+          "Cài đặt và mở app, làm theo gợi ý bắt đầu với model nhẹ như SD-Turbo hoặc SD 1.5.",
+          "Tải model .gguf/.safetensors về đúng thư mục app yêu cầu.",
+          "Nhập prompt, chọn Sampler, bấm tạo ảnh và theo dõi tiến trình ngay trong app.",
+          "Nếu máy yếu, bật tuỳ chọn Offload to CPU / Keep VAE-CLIP on CPU trong phần cài đặt để tránh lỗi hết bộ nhớ."
+        ],
+        "expectedResult": "Kết quả đúng là một ảnh được tạo ra ngay trên thiết bị, không có kết nối mạng, và file PNG xuất ra có nhúng sẵn thông số (prompt, seed, model) để dùng lại về sau.",
+        "commonPitfalls": [
+          "Chọn thẳng model nặng (FLUX, SD3) khi máy yếu, dẫn tới lỗi hết bộ nhớ (OOM) hoặc treo app.",
+          "Không bật Offload to CPU / Keep VAE-CLIP on CPU khi cần, dù app đã có sẵn tuỳ chọn xử lý lỗi OOM.",
+          "Nhầm phiên bản build (Android/iOS/Desktop) khi tải từ Releases, khiến app không cài được."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 8,
+        "costAdvantage": 14,
+        "deployment": 3,
+        "documentation": 15
+      },
+      "altstackSignalScore": 58,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-05T00:00:00.000Z",
+      "tags": [
+        "ai",
+        "creative",
+        "stable-diffusion",
+        "offline",
+        "mobile"
+      ],
+      "publishedAt": "2026-07-05T00:00:00.000Z",
+      "week": "2026-W28"
+    },
+    {
+      "slug": "aaron-he-zhu-aaron-marketing-skills",
+      "url": "/repos/aaron-he-zhu-aaron-marketing-skills",
+      "name": "Aaron Marketing Skills",
+      "repoUrl": "https://github.com/aaron-he-zhu/aaron-marketing-skills",
+      "oneLiner": "Aaron Marketing Skills là một bộ 69 skill dùng trong Claude Code, biến agent AI thành cả một phòng marketing thu nhỏ — làm được SEO/GEO, chọn KOL, audit quảng cáo trả phí và email marketing, tất cả theo cùng một khung chấm điểm chất lượng.",
+      "vertical": [
+        "agency",
+        "seo"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 2308,
+        "forks": 318,
+        "note": "~198 ngày tuổi, ~11.7 sao/ngày",
+        "starsPerDay": 11.7,
+        "ageDays": 198,
+        "pushedAt": "2026-07-03T16:56:01Z",
+        "archived": false,
+        "openIssues": 1
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/aaron-he-zhu/aaron-marketing-skills"
+        }
+      ],
+      "useCases": [
+        "Audit tài khoản Google Ads/Facebook Ads trước khi tăng ngân sách, ra điểm RQS và danh sách lỗi cần sửa trước khi chạy tiếp.",
+        "Chấm điểm và lọc KOL/influencer theo 9 tiêu chí (độ phù hợp, chất lượng nội dung, hiệu quả chiến dịch) trước khi ký hợp đồng, thay vì chọn theo cảm tính follower.",
+        "Kiểm tra một bài viết SEO/GEO có đạt chuẩn E-E-A-T và khả năng được AI trích dẫn hay chưa, trước khi publish.",
+        "Rà soát một chiến dịch email trước khi gửi theo khung SEND (người gửi, tương tác, nuôi dưỡng, phản hồi trực tiếp) để tránh bị đánh dấu spam.",
+        "Gộp một brief sản phẩm thành SEO post, email bán hàng và caption mạng xã hội cùng giọng thương hiệu chỉ trong một phiên làm việc."
+      ],
+      "workflowStepReplaced": "Một phần khâu audit/chấm điểm chất lượng thủ công mà agency hay giao cho từng chuyên viên riêng (SEO, ads, KOL, email) — không thay được người ra quyết định cuối, nhưng gộp bước kiểm tra ban đầu.",
+      "timeOrCostSaved": "README không đưa ra số giờ/tiền cụ thể tiết kiệm được; lợi ích chính là gộp 4 vai trò chuyên môn (SEO/ads/KOL/email) vào một agent chạy miễn phí ở Tier 1, thay vì trả phí riêng cho từng tool SaaS chuyên biệt.",
+      "localProblem": "Agency nhỏ ở Việt Nam thường phải thuê/nuôi nhiều người khác nhau (SEO, chạy ads, quản lý KOL, viết email) hoặc dùng nhiều tool SaaS riêng biệt cho từng mảng — chi phí dồn lại khá nặng cho agency 5-10 người, và không có ai audit chéo chất lượng giữa các mảng trước khi giao khách.",
+      "localEvidence": "Chưa tìm thấy bài viết/thảo luận tiếng Việt nhắc trực tiếp tới repo này; bằng chứng gián tiếp là không gian 'SEO/GEO bằng Claude Code' đã khá đông ở Việt Nam (nhiều bài hướng dẫn từ AZDIGI, CentriX, viblo.asia về Claude Agent Skills nói chung, và ít nhất 2-3 repo SEO/GEO tương tự — kể cả một repo SEO/GEO khác của cùng tác giả — đã có mặt), cho thấy nhu cầu tự động hoá SEO/GEO là có thật, nhưng mảng gộp thêm ads + KOL + email như tool này thì chưa thấy ai bàn riêng.",
+      "usabilityRisk": "Đây là bộ skill Markdown cài trong Claude Code (không phải web app), nên cần biết dùng Claude Code trước; theo README chỉ có 1 script Bash + vài script Python chuẩn thư viện (không cần cài gì nặng), nhưng để dùng đúng 69 skill này hiệu quả cần hiểu rõ luồng 4 giai đoạn (research→build→optimize→monitor) mỗi mảng — không hợp cho người chưa quen Claude Code muốn 'bật là chạy ngay'. README hoàn toàn tiếng Anh.",
+      "suggestedAngle": "Góc cho agency: quay demo 'audit một tài khoản ads bằng /aaron-marketing:ad trong 5 phút' để cho thấy khung ROAS chấm điểm và veto hoạt động ra sao — vì đây là phần mới nhất, ít người viết.",
+      "paidToolReplaced": "Một phần việc mà agency hay thuê ngoài rời rạc cho SEO agency, KOL agency, ad agency, và nền tảng email (Klaviyo/Mailchimp) — vì bộ skill này gộp cả 4 mảng vào một agent, không thay hoàn toàn nhưng giảm số công cụ SaaS riêng lẻ phải trả phí.",
+      "practitionerGuide": {
+        "outcome": "Sau khi làm theo hướng dẫn, bạn có một báo cáo audit (SEO, ads, hoặc email) đầu tiên chấm theo đúng khung chất lượng của bộ skill, kèm verdict SHIP/FIX/BLOCK.",
+        "prerequisites": [
+          "Đã cài Claude Code (hoặc host Agent Skills tương thích).",
+          "Có dữ liệu thật để dán vào (vd export tài khoản ads, danh sách từ khoá, hoặc nội dung email) — không bắt buộc API key trả phí."
+        ],
+        "steps": [
+          "Cài plugin: `/plugin marketplace add aaron-he-zhu/aaron-marketing-skills` rồi `/plugin install aaron-marketing@aaron`.",
+          "Mô tả mục tiêu bằng ngôn ngữ tự nhiên (vd 'audit tài khoản Google Ads này trước khi tăng ngân sách') hoặc gọi thẳng lệnh, vd `/aaron-marketing:ad`.",
+          "Dán dữ liệu xuất từ nền tảng thật (CSV/export) khi skill hỏi — không cần kết nối API.",
+          "Đọc verdict cuối (SHIP/FIX/BLOCK) và các điểm bị veto để biết chỗ cần sửa trước."
+        ],
+        "expectedResult": "Một báo cáo có điểm số theo khung tương ứng (RQS/EQS/CVI...) và danh sách lỗi veto cụ thể — đủ để biết chiến dịch/tài khoản có nên chạy tiếp không.",
+        "commonPitfalls": [
+          "Không chạy `/aaron-marketing:auto` trước nên bỏ lỡ bước định tuyến đúng skill cần dùng.",
+          "Dán dữ liệu không đầy đủ (thiếu cột) khiến điểm chấm bị lệch.",
+          "Nhầm 'marketplace add' đã là cài xong — vẫn phải chạy thêm '/plugin install' mới thật sự bật skill."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 20,
+        "costAdvantage": 14,
+        "deployment": 15,
+        "documentation": 10
+      },
+      "altstackSignalScore": 77,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-04T00:00:00.000Z",
+      "tags": [
+        "claude-code-skills",
+        "seo",
+        "geo",
+        "marketing-automation",
+        "agency"
+      ],
+      "publishedAt": "2026-07-04T00:00:00.000Z",
+      "week": "2026-W27"
+    },
+    {
+      "slug": "stevenflanagan1-social-ai-team",
+      "url": "/repos/stevenflanagan1-social-ai-team",
+      "name": "Social AI Team",
+      "repoUrl": "https://github.com/stevenflanagan1/social-ai-team",
+      "oneLiner": "Social AI Team là một bộ skill Claude Code đóng vai cả một đội social media cho doanh nghiệp nhỏ — từ tìm hiểu thương hiệu, lên lịch nội dung tháng, viết caption riêng cho từng nền tảng, tạo ảnh quảng cáo tới báo cáo hiệu suất cuối tháng.",
+      "vertical": [
+        "agency"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 152,
+        "forks": 33,
+        "note": "~107 ngày tuổi, ~1.4 sao/ngày",
+        "starsPerDay": 1.4,
+        "ageDays": 107,
+        "pushedAt": "2026-05-07T23:01:16Z",
+        "archived": false,
+        "openIssues": 4
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/stevenflanagan1/social-ai-team"
+        }
+      ],
+      "useCases": [
+        "Chạy buổi onboarding thương hiệu đầu tiên cho khách mới bằng cách quét website + Instagram của họ, ra một file brand-style dùng chung cho mọi nội dung sau này.",
+        "Dựng lịch nội dung một tháng theo đúng tỉ lệ content pillar đã định, thay vì nghĩ ý tưởng từng bài một cách rời rạc.",
+        "Viết riêng caption cho LinkedIn, Threads và X từ cùng một lịch nội dung, mỗi nền tảng đúng giọng và đúng giới hạn ký tự của nền tảng đó.",
+        "Tạo ảnh mạng xã hội bám đúng brand — kể cả ghép ảnh sản phẩm thật của khách vào bối cảnh AI dựng, hoặc dựng chuỗi 6 khung stop-motion xuất ra video ngắn.",
+        "Làm báo cáo hiệu suất cuối tháng từ file CSV/screenshot khách gửi, chỉ ra bài nào chạy tốt/tệ và vì sao, để tháng sau viết đúng hướng hơn."
+      ],
+      "workflowStepReplaced": "Một phần việc social media manager phải tự làm tay: brief brand mới, lên lịch nội dung, viết caption riêng từng nền tảng, và tổng hợp báo cáo cuối tháng.",
+      "timeOrCostSaved": "README không đưa ra số giờ/tiền cụ thể; lợi ích chính là gộp một chuỗi công việc thường phải làm tay hoặc thuê ngoài từng phần (brand research, content calendar, copywriting đa nền tảng, thiết kế ảnh, báo cáo) vào một bộ skill chạy miễn phí trong Claude Code — phần tạo ảnh và lên lịch tự động vẫn cần thêm MCP trả phí (Nano Banana, Blotato).",
+      "localProblem": "Agency social media nhỏ (2-5 người) ở Việt Nam thường không đủ người để làm hết cả chuỗi: nghiên cứu brand khách mới, lên lịch nội dung tháng, viết caption riêng cho từng nền tảng, thiết kế ảnh, và làm báo cáo cuối tháng — nên hay bỏ bớt bước report hoặc dùng chung một mẫu caption cho mọi nền tảng.",
+      "localEvidence": "Chưa tìm thấy bài viết tiếng Việt nhắc trực tiếp tới social-ai-team; bằng chứng gián tiếp là nhiều bài hướng dẫn tiếng Việt về Claude Agent Skills nói chung (AZDIGI, CentriX, viblo.asia) đã nhấn mạnh lợi ích 'tạo bộ nhớ quy trình dùng chung cho cả đội' — đúng vấn đề mà bộ skill này giải quyết cho agency nhỏ.",
+      "usabilityRisk": "Repo còn khá non (152 sao, 33 fork, chưa tới 4 tháng tuổi). Phần tạo ảnh và lên lịch tự động phụ thuộc MCP Nano Banana + Blotato — đều là dịch vụ riêng, không tự động có sẵn khi cài skill; phần Stop-Motion cần cài thêm `pip install imageio[ffmpeg]` (cần Python). Nếu không cài các MCP này, bộ skill vẫn chạy được nhưng thiếu phần ảnh và lên lịch tự động. README hoàn toàn tiếng Anh, chưa thấy cộng đồng VN quanh tool.",
+      "suggestedAngle": "Góc cho creator: quay một clip 'chạy /social-media-manager cho một khách hàng mới từ đầu tới lúc ra content calendar tháng đầu' để cho thấy toàn bộ chuỗi điều phối hoạt động.",
+      "paidToolReplaced": "Một phần việc các agency nhỏ thường thuê ngoài social media manager hoặc dùng các tool lên lịch/caption AI trả phí (Buffer AI, Later, Ocoya...) — cần thêm MCP Nano Banana/Blotato mới thay được trọn vẹn phần ảnh và lên lịch.",
+      "practitionerGuide": {
+        "outcome": "Sau khi làm theo, bạn có bộ brand-style.md + content-calendar.md đầu tiên cho một khách hàng mẫu, sẵn sàng để viết caption thật.",
+        "prerequisites": [
+          "Đã cài Claude Code.",
+          "Chạy installer (`install.sh` hoặc `install.bat`) để copy skill vào `~/.claude/skills/`.",
+          "Tuỳ chọn: cài MCP Playwright (lấy evidence từ website/Instagram khách) và Nano Banana (tạo ảnh) nếu muốn dùng trọn bộ."
+        ],
+        "steps": [
+          "Tạo một thư mục riêng cho khách hàng, mở Claude Code trong thư mục đó.",
+          "Chạy `/social-media-manager` — vì chưa có brand-style.md, nó sẽ dẫn qua `/brand-onboarding` trước.",
+          "Chạy `/content-calendar` để dựng lịch nội dung tháng đầu.",
+          "Chạy `/caption-writer` (hoặc `/linkedin-writer`, `/x-writer`...) để ra caption theo từng nền tảng.",
+          "Cuối tháng chạy `/social-performance-review` để có báo cáo và cập nhật best-performers.md cho tháng sau."
+        ],
+        "expectedResult": "Một bộ file ngữ cảnh (brand-style, content-calendar) và ít nhất một batch caption sẵn sàng đăng — đủ để đánh giá xem quy trình có hợp với cách agency bạn làm việc không.",
+        "commonPitfalls": [
+          "Không chạy skill trong đúng thư mục khách hàng, khiến context bị lẫn giữa các khách.",
+          "Bỏ qua bước brand-onboarding nên caption ra sai giọng thương hiệu.",
+          "Kỳ vọng tool tự đăng bài dù chưa cấu hình Blotato."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 12,
+        "costAdvantage": 8,
+        "deployment": 10,
+        "documentation": 10
+      },
+      "altstackSignalScore": 58,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-04T00:00:00.000Z",
+      "tags": [
+        "claude-code-skills",
+        "social-media",
+        "agency",
+        "content-calendar",
+        "automation"
+      ],
+      "publishedAt": "2026-07-04T00:00:00.000Z",
+      "week": "2026-W27"
+    },
     {
       "slug": "thetacursed-anima-style-explorer",
       "url": "/repos/thetacursed-anima-style-explorer",

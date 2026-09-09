@@ -6,17 +6,15 @@ import { industryShort } from '../lib/industries';
 import { readDraftStates } from '../../scripts/lib/repo-frontmatter.mjs';
 
 const canEdit = import.meta.env.DEV;
-const canList = canEdit || import.meta.env.PUBLIC_SHOW_DRAFTS === 'true';
 
+// Prod cũng liệt kê draft — trang này nằm sau gate member ở functions/_middleware.js.
 const draftStates = canEdit ? await readDraftStates() : new Map<string, boolean>();
-const entries = canList
-  ? (await getCollection('repos')).sort((a, b) => {
-      const aDraft = draftStates.get(a.id) ?? a.data.draft;
-      const bDraft = draftStates.get(b.id) ?? b.data.draft;
-      if (aDraft !== bDraft) return aDraft ? -1 : 1;
-      return b.data.publishedAt.getTime() - a.data.publishedAt.getTime();
-    })
-  : [];
+const entries = (await getCollection('repos')).sort((a, b) => {
+  const aDraft = draftStates.get(a.id) ?? a.data.draft;
+  const bDraft = draftStates.get(b.id) ?? b.data.draft;
+  if (aDraft !== bDraft) return aDraft ? -1 : 1;
+  return b.data.publishedAt.getTime() - a.data.publishedAt.getTime();
+});
 
 const drafts = entries.filter((entry) => draftStates.get(entry.id) ?? entry.data.draft).length;
 const published = entries.length - drafts;
@@ -33,11 +31,9 @@ const deployHint = deployOnPublish
         <a href="/" class="text-sm text-[var(--rr-muted)] no-underline hover:text-[var(--rr-text)]">Trang chủ</a>
         <h1 class="mt-2 text-2xl font-bold tracking-tight">Duyệt draft</h1>
       </div>
-      {canList && (
-        <p class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface)] px-3 py-2 text-xs text-[var(--rr-muted)]">
-          {drafts} draft / {published} published
-        </p>
-      )}
+      <p class="rounded-md border border-[var(--rr-border)] bg-[var(--rr-surface)] px-3 py-2 text-xs text-[var(--rr-muted)]">
+        {drafts} draft / {published} published
+      </p>
     </div>
     <p class="mt-2 max-w-prose text-sm text-[var(--rr-muted)]">
       Mở bài để đọc và soát trạng thái. Nút Publish/Về draft chỉ hoạt động trong <code>npm run dev</code>.
@@ -46,15 +42,7 @@ const deployHint = deployOnPublish
     </p>
   </header>
 
-  {!canList ? (
-    <section class="rounded-lg border border-[var(--rr-warn)]/40 bg-[var(--rr-warn)]/5 p-4">
-      <p class="text-sm">
-        Production preview đang ẩn draft đúng thiết kế. Muốn xem danh sách duyệt, chạy draft preview bằng
-        <code>npm run preview:drafts</code> hoặc dev server bằng <code>npm run dev</code>.
-      </p>
-    </section>
-  ) : (
-    <section class="space-y-3">
+  <section class="space-y-3">
       {entries.map((entry) => {
         const r = entry.data;
         const isDraft = draftStates.get(entry.id) ?? r.draft;
@@ -111,9 +99,8 @@ const deployHint = deployOnPublish
             </div>
           </article>
         );
-      })}
-    </section>
-  )}
+    })}
+  </section>
 
   <p id="review-status" class="mt-4 text-sm text-[var(--rr-muted)]" aria-live="polite"></p>
 
