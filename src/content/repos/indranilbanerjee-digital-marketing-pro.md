@@ -87,7 +87,7 @@ lastReviewedAt: 2026-07-23
 nextReviewDueAt: 2026-10-21
 publishedAt: 2026-07-23
 week: "2026-W30"
-draft: true
+draft: false
 ---
 
 Draft từ daily pipeline (2026-07-23). Ứng viên duy nhất thực sự mới trong queue hôm nay; 4 ứng viên còn lại (ATH-MaaS/Pixelle-Video, tombadash/mousecontrol, Osmantic/ODS, kadevin/ilab-conjure) đều là bản đổi tên owner/repo của record đã có (aidc-ai-pixelle-video, tombadash-mouser, light-heart-labs-ods, kadevin-ilab-gpt-conjure) nên đã bỏ qua.
