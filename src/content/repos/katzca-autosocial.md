@@ -67,7 +67,7 @@ confidence: "low"
 tags: ["automation", "social-media", "agency", "self-hosted"]
 publishedAt: 2026-07-30
 week: "2026-W31"
-draft: true
+draft: false
 ---
 
 ## Ghi chú cho biên tập (Luan review)
