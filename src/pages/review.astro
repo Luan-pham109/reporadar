@@ -109,9 +109,10 @@ const deployHint = deployOnPublish
         const draft = button.dataset.draft === 'true';
         const liveDeployRequested = deployOnPublish;
         const needsConfirm = liveDeployRequested || !isDev;
+        // `draft` là trạng thái ĐÍCH sau thao tác: bấm Publish thì draft = false.
         const confirmationMessage = draft
-          ? `Publish "${slug}" lên production?\n\nThao tác này sẽ đổi draft:false và cập nhật live site.`
-          : `Đưa "${slug}" về draft?\n\nThao tác này sẽ gỡ record khỏi live site.`;
+          ? `Đưa "${slug}" về draft?\n\nThao tác này sẽ gỡ record khỏi live site.`
+          : `Publish "${slug}" lên production?\n\nThao tác này sẽ đổi draft:false và cập nhật live site.`;
 
         if (needsConfirm && !window.confirm(confirmationMessage)) {
           if (status) status.textContent = 'Đã hủy.';
