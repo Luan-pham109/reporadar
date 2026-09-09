@@ -92,7 +92,7 @@ lastReviewedAt: 2026-08-05
 nextReviewDueAt: 2026-11-03
 publishedAt: 2026-08-05
 week: "2026-W32"
-draft: true
+draft: false
 ---
 
 Record nháp foundation (daily pipeline). Cần Luan kiểm: (1) mức grey-hat/borderline và câu chữ cảnh báo content farm, (2) media hotlink có đúng đường dẫn ảnh trên branch main không, (3) thử dựng thật một lần trước khi publish. README gốc chủ yếu tiếng Trung.
