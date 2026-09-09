@@ -88,7 +88,7 @@ confidence: "low"
 tags: ["ai", "ecommerce", "product-photography", "claude-code", "agent-skills", "image-generation"]
 publishedAt: 2026-08-29
 week: "2026-W35"
-draft: true
+draft: false
 ---
 
 Draft foundation (auto). LƯU Ý CHO LUAN: ứng viên "tool thật" thú vị nhất lượt này cho ecom/creative cross-border. Điểm mạnh: đóng gói pipeline ảnh e-commerce thành Agent Skills mã nguồn mở, encode sẵn quy tắc ảnh chính Amazon. Điểm cần cân nhắc trước khi publish: repo mới alpha (35★, 6 fork), push gần nhất 08/06/2026 (~2.5 tháng không cập nhật, cần check còn sống không), và cần API key image-gen (tốn phí). README nhiều ảnh gallery nhưng mình chưa xác minh đường dẫn raw nên để `media: []` — Luan có thể bổ sung ảnh hero từ repo nếu muốn.
