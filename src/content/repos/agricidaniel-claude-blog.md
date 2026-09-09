@@ -94,7 +94,7 @@ lastReviewedAt: 2026-08-05
 nextReviewDueAt: 2026-11-03
 publishedAt: 2026-08-05
 week: "2026-W32"
-draft: true
+draft: false
 ---
 
 Record nháp foundation (daily pipeline). Cùng tác giả với `agricidaniel-claude-seo` và `agricidaniel-claude-ads` — đây là tool blog riêng, không trùng. Cần Luan kiểm: (1) media hotlink SVG/GIF có render ổn làm thumbnail không, (2) chạy thử /blog write một bài trước khi publish, (3) câu chữ nhấn 'điểm 90+ là heuristic, không phải chỉ số Google'.
