@@ -77,7 +77,7 @@ confidence: "low"
 tags: ["ai", "copywriting", "prompts", "marketing"]
 publishedAt: 2026-08-29
 week: "2026-W35"
-draft: true
+draft: false
 ---
 
 Draft foundation (auto). CẢNH BÁO CHO LUAN: README thực chất là bài PR cho công cụ trả phí "Slito EX", kết bằng CTA và link rút gọn (jmp9.com/5e643695) — dấu hiệu funnel tiếp thị chứ không phải thư viện prompt mở. Đã set `greyHatFlag: "borderline"`. Đề xuất không publish, hoặc nếu publish thì chỉ ở góc "framework hook để tự viết prompt" và bỏ hẳn phần quảng cáo. Repo rất mỏng (60★, 1 fork, 0 issue, không cập nhật sau ngày tạo).
