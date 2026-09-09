@@ -256,7 +256,10 @@ C5. ✅ Build sạch (9 trang) + verify DOM (3 figure ở detail, thumbnail trê
 
 - `scripts/run-daily-pipeline.mjs`: discovery -> shortlist -> signals -> README/media hints -> queue JSON.
 - `src/lib/drafts.ts`: shared draft visibility gate for dev/draft-preview vs production.
-- `src/pages/review.astro`: local dev review screen can flip `draft` via Vite middleware.
+- `src/pages/review.astro`: review screen. In dev it flips `draft` via Vite middleware; on production it posts to `/api/review/publish`, which commits the change through the GitHub Contents API.
+- `functions/_middleware.js`: edge gate. `/review` and `/repos/<draft-slug>` require a session; everything else is public. Draft slugs come from `scripts/export-draft-slugs.mjs` at build time.
+- `functions/api/review/publish.js`: admin-only publish endpoint. Needs Pages environment variables `REVIEW_ADMIN_EMAILS`, `GITHUB_CONTENT_REPO`, `GITHUB_CONTENT_TOKEN`, and optionally `GITHUB_CONTENT_BRANCH` (default `main`). The commit only reaches the live site once the Pages project is connected to the GitHub repo.
+- `scripts/sync-drafts.mjs` (`npm run drafts:sync`): commit + push new draft records, `--deploy` also builds and deploys.
 - `scripts/build-drafts.mjs` and `scripts/preview-drafts.mjs`: run Astro directly through Node, no Windows shell warning.
 - `scripts/serve-dist.mjs`: static dist preview helper; now uses `dist/` relative to cwd and redirects `/feed.json`.
 - `.gitignore`: ignores `.codex/` except `reporadar-daily-queue/latest.json`.

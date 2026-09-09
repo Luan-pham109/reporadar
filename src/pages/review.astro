@@ -76,25 +76,19 @@ const deployHint = deployOnPublish
                 >
                   Đọc
                 </a>
-                {canEdit ? (
-                  <button
-                    type="button"
-                    data-slug={entry.id}
-                    data-draft={isDraft ? 'false' : 'true'}
-                    class:list={[
-                      'rounded-md border px-3 py-2 text-sm font-medium',
-                      isDraft
-                        ? 'border-[var(--rr-core)] bg-[var(--rr-core)] text-white'
-                        : 'border-[var(--rr-border)] text-[var(--rr-muted)]',
-                    ]}
-                  >
-                    {isDraft ? 'Publish' : 'Về draft'}
-                  </button>
-                ) : (
-                  <span class="rounded-md border border-[var(--rr-border)] px-3 py-2 text-sm text-[var(--rr-muted)]">
-                    Chỉ đọc
-                  </span>
-                )}
+                <button
+                  type="button"
+                  data-slug={entry.id}
+                  data-draft={isDraft ? 'false' : 'true'}
+                  class:list={[
+                    'rounded-md border px-3 py-2 text-sm font-medium',
+                    isDraft
+                      ? 'border-[var(--rr-core)] bg-[var(--rr-core)] text-white'
+                      : 'border-[var(--rr-border)] text-[var(--rr-muted)]',
+                  ]}
+                >
+                  {isDraft ? 'Publish' : 'Về draft'}
+                </button>
               </div>
             </div>
           </article>
@@ -104,31 +98,37 @@ const deployHint = deployOnPublish
 
   <p id="review-status" class="mt-4 text-sm text-[var(--rr-muted)]" aria-live="polite"></p>
 
-  <script define:vars={{ deployOnPublish }}>
+  <script define:vars={{ deployOnPublish, isDev: canEdit }}>
     const status = document.querySelector('#review-status');
+    // Dev ghi thẳng file qua Vite middleware; prod commit qua GitHub Contents API.
+    const endpoint = isDev ? '/__drafts/publish' : '/api/review/publish';
+
     document.querySelectorAll('button[data-slug]').forEach((button) => {
       button.addEventListener('click', async () => {
         const slug = button.dataset.slug;
         const draft = button.dataset.draft === 'true';
         const liveDeployRequested = deployOnPublish;
+        const needsConfirm = liveDeployRequested || !isDev;
         const confirmationMessage = draft
-          ? `Publish "${slug}" lên production?\n\nThao tác này sẽ đổi draft:false, chạy production build và deploy live site.`
-          : `Đưa "${slug}" về draft và deploy lại production?\n\nThao tác này sẽ gỡ record khỏi live site sau khi build/deploy xong.`;
+          ? `Publish "${slug}" lên production?\n\nThao tác này sẽ đổi draft:false và cập nhật live site.`
+          : `Đưa "${slug}" về draft?\n\nThao tác này sẽ gỡ record khỏi live site.`;
 
-        if (liveDeployRequested && !window.confirm(confirmationMessage)) {
-          if (status) status.textContent = 'Đã hủy deploy production.';
+        if (needsConfirm && !window.confirm(confirmationMessage)) {
+          if (status) status.textContent = 'Đã hủy.';
           return;
         }
 
         button.setAttribute('disabled', 'true');
         if (status) {
-          status.textContent = liveDeployRequested
-            ? 'Đang ghi file, build production và deploy...'
-            : 'Đang ghi file...';
+          status.textContent = isDev
+            ? liveDeployRequested
+              ? 'Đang ghi file, build production và deploy...'
+              : 'Đang ghi file...'
+            : 'Đang commit lên GitHub...';
         }
 
         try {
-          const response = await fetch('/__drafts/publish', {
+          const response = await fetch(endpoint, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({
@@ -139,7 +139,7 @@ const deployHint = deployOnPublish
             }),
           });
           const result = await response.json();
-          if (!result.ok) throw new Error(result.error || 'Không ghi được file');
+          if (!result.ok) throw new Error(result.error || result.message || 'Không ghi được file');
           button.dataset.draft = draft ? 'false' : 'true';
           button.textContent = draft ? 'Publish' : 'Về draft';
           button.className = draft
@@ -154,7 +154,8 @@ const deployHint = deployOnPublish
           button.removeAttribute('disabled');
           if (status) {
             const localMessage = draft ? 'Đã đưa về draft.' : 'Đã publish.';
-            status.textContent = result.deployed ? `${localMessage} Production đã deploy xong.` : localMessage;
+            if (result.message) status.textContent = result.message;
+            else status.textContent = result.deployed ? `${localMessage} Production đã deploy xong.` : localMessage;
           }
         } catch (error) {
           button.removeAttribute('disabled');

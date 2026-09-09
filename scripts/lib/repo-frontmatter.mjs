@@ -43,15 +43,7 @@ export async function readDraftStates(reposDir = REPOS_DIR) {
   return new Map(records.map((record) => [record.slug, record.draft]));
 }
 
-export function updateDraftFrontmatter(source, draft) {
-  const nextDraft = `draft: ${draft ? 'true' : 'false'}`;
-
-  if (/^draft:\s*(true|false)\s*$/m.test(source)) {
-    return source.replace(/^draft:\s*(true|false)\s*$/m, nextDraft);
-  }
-
-  return source.replace(/^(---\r?\n)/, `$1${nextDraft}\n`);
-}
+export { updateDraftFrontmatter } from './draft-frontmatter.mjs';
 
 // Khớp header `repoStats:` + mọi dòng con thụt lề (dừng ở key cấp 0 kế tiếp).
 const REPO_STATS_BLOCK_RE = /^repoStats:.*(?:\r?\n[ \t].*)*/m;
