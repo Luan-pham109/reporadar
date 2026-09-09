@@ -98,7 +98,7 @@ nextReviewDueAt: 2026-11-05
 tags: ["ai", "marketing", "growth", "seo", "agent", "claude-code", "open-source"]
 publishedAt: 2026-08-07
 week: "2026-W32"
-draft: true
+draft: false
 ---
 
 ## Ghi chú cho biên tập (chưa publish)
