@@ -14,9 +14,14 @@ vertical: ["creative", "agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 1073
-  forks: 124
-  note: "~325 ngày tuổi, ~3.3 sao/ngày"
+  stars: 1195
+  forks: 142
+  note: "~398 ngày tuổi, ~3 sao/ngày"
+  starsPerDay: 3
+  ageDays: 398
+  pushedAt: "2026-09-05T02:40:31Z"
+  archived: false
+  openIssues: 58
 standoutFeatures:
   - "Tích hợp nhiều engine TTS và voice conversion như RVC, Echo-TTS, Qwen3-TTS, CozyVoice 3, IndexTTS-2, ChatterBox, F5-TTS, Higgs Audio và VibeVoice."
   - "README nhấn mạnh subtitle workflow: transcribe SRT, rebuild subtitle từ transcript đã chỉnh và ước lượng timing từ plain text."

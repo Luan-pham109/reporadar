@@ -14,9 +14,14 @@ vertical: ["agency", "ecom", "seo"]
 
 maturity: "rising"
 repoStats:
-  stars: 6845
-  forks: 1312
-  note: "~199 ngày tuổi, ~34.4 sao/ngày"
+  stars: 7606
+  forks: 1470
+  note: "~274 ngày tuổi, ~27.8 sao/ngày"
+  starsPerDay: 27.8
+  ageDays: 274
+  pushedAt: "2026-07-23T19:20:07Z"
+  archived: false
+  openIssues: 19
 standoutFeatures:
   - "Tập hợp hơn 10.000 API trong một repo, phù hợp để bắt đầu shortlist rất nhanh."
   - "Phủ nhiều nhóm bài toán như automation, ecommerce, lead generation, social media, scraping và data collection."

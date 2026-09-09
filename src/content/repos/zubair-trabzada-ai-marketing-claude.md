@@ -11,9 +11,14 @@ vertical: ["agency", "seo"]
 
 maturity: "rising"
 repoStats:
-  stars: 1992
-  forks: 611
-  note: "~117 ngày tuổi, ~17 sao/ngày"
+  stars: 2623
+  forks: 704
+  note: "~191 ngày tuổi, ~13.7 sao/ngày"
+  starsPerDay: 13.7
+  ageDays: 191
+  pushedAt: "2026-03-02T01:18:40Z"
+  archived: false
+  openIssues: 5
 standoutFeatures:
   - "Gom khoảng 15 skill marketing khác nhau trong cùng một repo, từ audit website tới viết email, social calendar, ads và proposal."
   - "Bài audit chính dùng nhiều subagent chạy song song rồi chấm điểm website theo 6 nhóm như messaging, CRO, SEO và positioning."
