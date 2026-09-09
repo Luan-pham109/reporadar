@@ -3,7 +3,7 @@ export const memberFeed = {
   "title": "RepoRadar VN",
   "version": "0.3",
   "updatedAt": "2026-08-29T00:00:00.000Z",
-  "count": 50,
+  "count": 61,
   "items": [
     {
       "slug": "archibaldys-ai-copywriting-prompts",
@@ -79,6 +79,749 @@ export const memberFeed = {
       ],
       "publishedAt": "2026-08-29T00:00:00.000Z",
       "week": "2026-W35"
+    },
+    {
+      "slug": "motiful-product-shots",
+      "url": "/repos/motiful-product-shots",
+      "name": "product-shots",
+      "repoUrl": "https://github.com/motiful/product-shots",
+      "oneLiner": "product-shots là bộ Claude Code skills mã nguồn mở biến MỘT ảnh sản phẩm thành cả dàn ảnh e-commerce: ảnh chính chuẩn Amazon, trang A+ detail, bộ ảnh model nhiều góc, ad creative và bài social — chạy ngay trong terminal, không khoá SaaS.",
+      "vertical": [
+        "ecom",
+        "creative",
+        "agency"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 35,
+        "forks": 6,
+        "note": "~85 ngày tuổi, ~0.4 sao/ngày. Push gần nhất 08/06/2026 (đã ~2.5 tháng không cập nhật), trạng thái tự nhận 'alpha'.",
+        "starsPerDay": 0.4,
+        "ageDays": 85,
+        "pushedAt": "2026-06-08",
+        "archived": false,
+        "openIssues": 0
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/motiful/product-shots"
+        }
+      ],
+      "useCases": [
+        "Từ 1 ảnh SKU dựng bộ ảnh listing Amazon (ảnh chính + phụ) đúng chuẩn nền trắng, không phải chỉnh tay từng cái.",
+        "Tạo bộ ảnh model nhiều góc cho một mẫu quần áo (front / 3-4 / side / back / detail / lifestyle) giữ nguyên nhận diện model và outfit.",
+        "Sinh ad creative theo từng nền tảng (Meta, TikTok, Google, YouTube...) đúng tỷ lệ, giữ nguyên copy người dùng nhập.",
+        "Dựng bài social (feed / story / reel / carousel) theo 'DNA' ngành hàng, tiết kiệm khâu prompt thủ công."
+      ],
+      "workflowStepReplaced": "Khâu chụp/dựng ảnh sản phẩm e-commerce đa kênh — thay việc thuê studio hoặc ngồi tinh chỉnh prompt Midjourney tay.",
+      "timeOrCostSaved": "Về lý thuyết cắt khâu thuê studio/SaaS cho ảnh listing + ad; chưa có số liệu đo thực tế, và vẫn tốn chi phí gọi API image-gen.",
+      "localProblem": "Seller cross-border Việt (Amazon, Shopify, TikTok Shop) và ekip creative phải dựng nhiều ảnh cho một SKU: ảnh chính chuẩn Amazon, A+ page, ảnh model nhiều góc, ad và social — làm tay thì lâu, thuê studio thì đắt và chậm, mà giữ cho ảnh 'cùng một sản phẩm' rất khó.",
+      "localEvidence": "Quan sát chung: cộng đồng bán cross-border Việt bàn nhiều về ảnh listing chuẩn Amazon và ảnh model AI cho thời trang. Nhu cầu 'dựng bộ ảnh SP bằng AI, giữ nhất quán' là thực. Chưa thấy nội dung tiếng Việt bám riêng repo này — cần Luan kiểm chứng.",
+      "usabilityRisk": "Cần biết setup Agent Skills (Claude Code/Codex/Cursor...) và một API key image-gen (OMNIMAAS/gpt-image-2/gemini) — vẫn TỐN chi phí gọi model dù skill là mã nguồn mở. Dự án còn 'alpha', chỉ 35★/6 fork, push gần nhất 08/06/2026 (đã ~2.5 tháng, có thể chững). Chất lượng ảnh phụ thuộc model backend và ảnh reference đầu vào; multi-angle mạnh nhất ở fashion-on-model, sản phẩm khác giảm độ chính xác. Chưa có cộng đồng VN.",
+      "suggestedAngle": "Góc cho seller/ekip ecom Việt: 'dựng bộ ảnh listing + ảnh model bằng Claude Code skills, giữ file của mình thay vì khoá SaaS' — kèm cảnh báo chi phí API và trạng thái alpha.",
+      "paidToolReplaced": "Một phần vai trò của SaaS chụp ảnh sản phẩm AI (SellerPic, ProductScope...) và tinh chỉnh prompt Midjourney tay; không thay được chi phí model image-gen.",
+      "practitionerGuide": {
+        "outcome": "Từ 1 ảnh sản phẩm, tạo được bộ ảnh listing hoặc bộ ảnh model nhiều góc đầu tiên để đánh giá chất lượng.",
+        "prerequisites": [
+          "Một harness Agent Skills (Claude Code, Codex, Cursor, Windsurf hoặc Copilot).",
+          "Một API key image-gen tương thích (OMNIMAAS / gpt-image-2 / gemini) và chấp nhận chi phí gọi model.",
+          "Một ảnh reference sản phẩm rõ nét (với thời trang: ảnh model + outfit)."
+        ],
+        "steps": [
+          "Cài skills: `npx skills add motiful/product-shots`.",
+          "Cấu hình backend image-gen qua biến môi trường (ví dụ OMNIMAAS_API_KEY).",
+          "Đưa ảnh reference vào và mô tả yêu cầu (ví dụ 'ảnh chính Amazon + 6 ảnh phụ' hoặc 'bộ 9 góc cho mẫu váy này').",
+          "Trả lời các câu hỏi làm rõ của intent router (ngành hàng, thị trường, brand voice).",
+          "Xem output theo từng skill, đánh giá độ nhất quán của SKU/model."
+        ],
+        "expectedResult": "Bộ ảnh (ví dụ ảnh chính nền trắng lấp ≥85% khung + ảnh phụ, hoặc bộ nhiều góc giữ nguyên model) đủ tốt để quyết định có dùng cho listing thật không.",
+        "commonPitfalls": [
+          "Quên rằng vẫn tốn phí gọi API image-gen — dựng số lượng lớn sẽ tốn kém.",
+          "Kỳ vọng multi-angle chuẩn cho mọi loại SP — mạnh nhất là fashion-on-model, hàng khác giảm độ nhất quán.",
+          "Ảnh reference mờ/xấu → output kém; chất lượng đầu vào quyết định đầu ra.",
+          "Bỏ qua kiểm tra compliance thực tế của sàn trước khi upload dù skill đã cố tuân quy tắc."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 19,
+        "projectHealth": 11,
+        "costAdvantage": 12,
+        "deployment": 10,
+        "documentation": 13
+      },
+      "altstackSignalScore": 65,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": null,
+      "tags": [
+        "ai",
+        "ecommerce",
+        "product-photography",
+        "claude-code",
+        "agent-skills",
+        "image-generation"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z",
+      "week": "2026-W35"
+    },
+    {
+      "slug": "tsingyuai-growth-lab",
+      "url": "/repos/tsingyuai-growth-lab",
+      "name": "Growth Lab",
+      "repoUrl": "https://github.com/tsingyuai/growth-lab",
+      "oneLiner": "Growth Lab là bộ Skill chạy trên Claude Code hoặc Codex để làm cả vòng tăng trưởng bằng ngôn ngữ tự nhiên: đọc hiểu sản phẩm, nghiên cứu thị trường, viết và xuất bản nội dung (SEO page, Xiaohongshu), rồi tự đọc kết quả để tính bước tiếp theo.",
+      "vertical": [
+        "agency",
+        "ecom",
+        "seo"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 667,
+        "forks": 59,
+        "note": "~14 ngày tuổi, ~47.6 sao/ngày",
+        "starsPerDay": 47.6,
+        "ageDays": 14,
+        "pushedAt": "2026-08-03T07:04:03.000Z",
+        "archived": false,
+        "openIssues": 0
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/tsingyuai/growth-lab"
+        }
+      ],
+      "useCases": [
+        "Chạy vòng SEO page: cho agent đọc sản phẩm, suy ra kịch bản người dùng sẽ search, rồi sinh trang SEO có thông tin thật và điều hướng về sản phẩm.",
+        "Nghiên cứu nội dung viral trên Xiaohongshu, chọn cấu trúc có thể tái sử dụng, và dựng bản nháp bài đăng + hình cho team tự chỉnh và tự đăng.",
+        "Giữ toàn bộ ngữ cảnh sản phẩm, dữ liệu vận hành và kết quả trong một workspace file để lần chạy sau không mất bối cảnh như khi nhảy giữa nhiều tool.",
+        "Cho một agency/ekip growth một khung 'quan sát → hành động → phục dựng' để làm việc lặp lại thay vì mỗi lần lại brief AI từ đầu."
+      ],
+      "workflowStepReplaced": "Khâu nối rời rạc giữa nghiên cứu thị trường, viết nội dung, xuất bản và đọc số liệu — thường mỗi khâu một tool khác nhau và mất ngữ cảnh sản phẩm.",
+      "timeOrCostSaved": "Có thể gộp nhiều bước brief-viết-đăng-báo cáo vào một luồng hội thoại; mức tiết kiệm thật phụ thuộc vào việc bạn đã có sẵn Claude Code/Codex và chi phí API, chưa có số đo cho thị trường VN.",
+      "localProblem": "Nhiều agency và team growth nhỏ ở VN chạy nội dung SEO + social bằng cách chắp vá: một người research, một người viết, một người đăng, số liệu nằm ở dashboard khác — ngữ cảnh sản phẩm rơi rụng qua từng khâu và khó lặp lại quy trình.",
+      "localEvidence": "Nhu cầu 'agent tự làm SEO/social', 'growth automation bằng Claude Code/Codex' đang được bàn nhiều trong nhóm làm growth và AI coding. Repo tăng ~47 sao/ngày trong 2 tuần đầu, nhưng phần social hiện chỉ mạnh cho Xiaohongshu — cần Luan kiểm chứng độ hợp với kênh VN (Facebook, TikTok, Threads) trước khi khuyên dùng.",
+      "usabilityRisk": "Cần biết dùng Claude Code hoặc Codex và chuẩn bị API key (OpenAI/Gemini cho phần tạo ảnh, MCP cho Xiaohongshu). Phần social hiện gắn với Xiaohongshu chứ chưa hỗ trợ Facebook/TikTok — team VN sẽ phải tự map sang kênh khác. Vòng 'phục dựng bài viral' và bước 'giảm AI味' dễ trượt sang copy nội dung — cần đặt ranh giới biên tập rõ ràng. Đăng thật vẫn do người làm.",
+      "suggestedAngle": "Creator/agency có thể kể góc 'dựng một growth agent bằng Claude Code' — quay lại quy trình đọc sản phẩm → ra trang SEO → đọc số, thay vì hứa hẹn tự động hoàn toàn.",
+      "paidToolReplaced": "Chắp vá các tool growth rời (research + viết content + lịch đăng + báo cáo) ↔ một luồng agent thống nhất.",
+      "practitionerGuide": {
+        "outcome": "Bạn chạy được vòng tăng trưởng đầu tiên: agent đọc hiểu sản phẩm, đề xuất một hành động growth (thường là một trang SEO), và ghi kết quả + bước tiếp theo vào workspace.",
+        "prerequisites": [
+          "Claude Code hoặc Codex cài sẵn và mở được thư mục repo.",
+          "API key cho phần cần dùng: OpenAI hoặc Gemini nếu muốn tạo ảnh; MCP xiaohongshu chạy local nếu làm phần Xiaohongshu.",
+          "Link repo/tài liệu sản phẩm của bạn để agent đọc được sự thật về sản phẩm."
+        ],
+        "steps": [
+          "Clone repo: `git clone https://github.com/tsingyuai/growth-lab.git` rồi mở thư mục bằng Claude Code hoặc Codex.",
+          "Hỏi agent 'bạn làm được gì?' và chạy onboarding Skill để nó audit xem còn thiếu cấu hình/API key nào.",
+          "Chỉ cho agent nguồn sản phẩm (repo hoặc tài liệu), yêu cầu nó chạy vòng SEO page đầu tiên; bỏ qua phần Xiaohongshu nếu không dùng.",
+          "Đọc lại output và Memory agent ghi ra, rồi yêu cầu nó phục dựng kết quả và đề xuất bước kế tiếp."
+        ],
+        "expectedResult": "Agent tạo được ít nhất một sản phẩm growth (vd một trang SEO nháp) kèm ghi chú lý do, và lưu ngữ cảnh + bước tiếp theo vào workspace để lần sau đọc lại.",
+        "commonPitfalls": [
+          "Kỳ vọng agent tự đăng và tự chạy nền — thực tế nó vẫn cần người xác nhận và tự đăng thật.",
+          "Bật phần Xiaohongshu dù không có nhu cầu, dẫn tới kẹt ở cấu hình MCP và đăng nhập tài khoản.",
+          "Để agent 'phục dựng' nội dung viral quá sát bản gốc — cần biên tập lại để tránh copy và giữ đúng brand."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 16,
+        "projectHealth": 19,
+        "costAdvantage": 12,
+        "deployment": 8,
+        "documentation": 11
+      },
+      "altstackSignalScore": 66,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-08-07T00:00:00.000Z",
+      "tags": [
+        "ai",
+        "marketing",
+        "growth",
+        "seo",
+        "agent",
+        "claude-code",
+        "open-source"
+      ],
+      "publishedAt": "2026-08-07T00:00:00.000Z",
+      "week": "2026-W32"
+    },
+    {
+      "slug": "affitor-affiliate-skills",
+      "url": "/repos/affitor-affiliate-skills",
+      "name": "affiliate-skills",
+      "repoUrl": "https://github.com/Affitor/affiliate-skills",
+      "oneLiner": "affiliate-skills là bộ skill dạng Markdown biến bất kỳ AI nào (Claude Code, ChatGPT, Gemini, Cursor...) thành 'team affiliate marketing': tìm chương trình, soi nội dung đang trending, viết bài có dữ liệu, dựng landing page và theo dõi hiệu quả.",
+      "vertical": [
+        "seo",
+        "agency"
+      ],
+      "maturity": "pre-viral",
+      "repoStats": {
+        "stars": 587,
+        "forks": 191,
+        "note": "~142 ngày tuổi, ~4.1 sao/ngày",
+        "starsPerDay": 4.1,
+        "ageDays": 142,
+        "pushedAt": "2026-06-14",
+        "archived": false,
+        "openIssues": 3
+      },
+      "signalSources": [
+        {
+          "label": "Show HN (Mar 2026)",
+          "url": "https://news.ycombinator.com/item?id=47420553"
+        },
+        {
+          "label": "Show HN (Apr 2026)",
+          "url": "https://news.ycombinator.com/item?id=47632530"
+        }
+      ],
+      "useCases": [
+        "Tìm và so sánh chương trình affiliate theo hoa hồng, cookie và độ khoẻ traffic trước khi quyết định promote.",
+        "Quét nội dung đang trending trên TikTok/YouTube để biết format và hook nào đang thắng rồi mới bắt tay viết.",
+        "Viết bài mạng xã hội, thread, script TikTok hoặc bài so sánh sản phẩm có kèm số liệu từ nguồn thật.",
+        "Dựng landing page/bio link thuần HTML rồi deploy, và theo dõi chuyển đổi bằng UTM để lặp lại cái nào chạy tốt."
+      ],
+      "workflowStepReplaced": "Khâu tự nghiên cứu chương trình, chọn góc, viết nội dung và dựng landing rời rạc bằng nhiều tool trong quy trình affiliate.",
+      "timeOrCostSaved": "Có thể gom nhiều khâu affiliate vào một pipeline AI, nhưng chất lượng phụ thuộc nguồn dữ liệu và người kiểm; chưa có số tiết kiệm cụ thể để dẫn.",
+      "localProblem": "Người làm affiliate và creator Việt thường chọn chương trình theo cảm tính, viết nội dung không biết format nào chạy, và tốn giờ dựng landing convert thấp. Bộ skill này ép quy trình đi theo dữ liệu và có sẵn khung compliance.",
+      "localEvidence": "Cộng đồng affiliate/MMO Việt rất đông và có nhu cầu chọn offer + làm content đa nền tảng. Riêng độ phổ biến của affiliate-skills ở VN thì chưa kiểm chứng (repo còn nhỏ, ~587 sao).",
+      "usabilityRisk": "Skill là Markdown nên cài dễ, nhưng nhiều skill phụ thuộc API/nguồn dữ liệu bên ngoài (openaffiliate.dev) — độ phủ cho offer Việt chưa rõ. Nội dung affiliate sản xuất hàng loạt dễ vi phạm luật quảng cáo/nền tảng nếu bỏ qua disclosure; repo có compliance-checker nhưng vẫn cần người chịu trách nhiệm.",
+      "suggestedAngle": "Góc nên viết: dùng affiliate-skills để chuyển từ 'chọn offer theo cảm tính' sang 'chọn theo dữ liệu trending + compliance', nhấn mạnh phần disclosure — không cổ vũ đẻ content rác.",
+      "paidToolReplaced": "Một phần các tool nghiên cứu affiliate + landing builder trả phí (kiểu ClickFunnels/Linktree + tool research offer)",
+      "practitionerGuide": {
+        "outcome": "Chạy xong guide, bạn có một góc nội dung được chọn theo dữ liệu trending + một chương trình affiliate đã so sánh, đủ để viết thử bài đầu tiên có disclosure.",
+        "prerequisites": [
+          "Một AI agent đọc được Markdown (Claude Code/Pi khuyến nghị, hoặc ChatGPT/Gemini/Cursor).",
+          "Kết nối mạng để các skill research gọi được nguồn dữ liệu (vd openaffiliate.dev).",
+          "Một ngách/sản phẩm cụ thể muốn promote để thử pipeline."
+        ],
+        "steps": [
+          "Cài skill: git clone vào ~/.claude/skills/affiliate-skills rồi chạy ./setup, hoặc dùng npx skills add theo README (hoặc dán bootstrap prompt cho AI không hỗ trợ skill).",
+          "Chạy trending-content-scout cho ngách của bạn để xem format, hook và khoảng trống nội dung đang có.",
+          "Chạy affiliate-program-search + traffic-analyzer để so sánh chương trình theo hoa hồng, cookie và độ khoẻ traffic.",
+          "Chọn một góc, chạy content-research-brief để gom nguồn + số liệu thật, rồi viết một bài (vd viral-post-writer) kèm disclosure FTC.",
+          "Chạy compliance-checker trước khi đăng để soát disclosure và luật nền tảng."
+        ],
+        "expectedResult": "Một bài nội dung có góc dựa trên dữ liệu, kèm nguồn và disclosure — thay vì viết theo cảm tính; đủ để đánh giá pipeline có hợp ngách của bạn không.",
+        "commonPitfalls": [
+          "Dựa hoàn toàn vào dữ liệu chương trình từ nguồn ngoài mà không kiểm xem có phủ offer/thị trường Việt không.",
+          "Sản xuất nội dung hàng loạt rồi quên bước compliance/disclosure — rủi ro với nền tảng và luật quảng cáo.",
+          "Tin thẳng số liệu 'engagement/benchmark' trong demo mà không kiểm lại trên nền tảng thật."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 13,
+        "costAdvantage": 8,
+        "deployment": 10,
+        "documentation": 10
+      },
+      "altstackSignalScore": 59,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-08-05T00:00:00.000Z",
+      "tags": [
+        "seo",
+        "agency",
+        "affiliate-marketing",
+        "agent-skills",
+        "content-marketing",
+        "ai"
+      ],
+      "publishedAt": "2026-08-05T00:00:00.000Z",
+      "week": "2026-W32"
+    },
+    {
+      "slug": "agricidaniel-claude-blog",
+      "url": "/repos/agricidaniel-claude-blog",
+      "name": "Claude Blog",
+      "repoUrl": "https://github.com/AgriciDaniel/claude-blog",
+      "oneLiner": "Claude Blog là bộ skill cho Claude Code giúp viết, tối ưu, audit và bản địa hoá bài blog theo dây chuyền: mỗi bài phải qua 5 cổng kiểm duyệt (chấm điểm, kiểm ảnh/link) trước khi giao cho bạn.",
+      "vertical": [
+        "seo",
+        "agency"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 1578,
+        "forks": 274,
+        "note": "~168 ngày tuổi, ~9.4 sao/ngày",
+        "starsPerDay": 9.4,
+        "ageDays": 168,
+        "pushedAt": "2026-07-23",
+        "archived": false,
+        "openIssues": 24
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/AgriciDaniel/claude-blog"
+        }
+      ],
+      "useCases": [
+        "Viết một bài blog mới bằng /blog write rồi để hệ thống tự chặn nếu điểm dưới 90 — mình không phải là người đầu tiên soi lỗi.",
+        "Audit một bài đang có bằng /blog analyze để nhận điểm 0-100 và danh sách việc cần sửa về SEO, E-E-A-T và schema.",
+        "Lập topic cluster hub-and-spoke rồi viết + dịch + gắn hreflang cho nhiều thị trường bằng /blog cluster và /blog multilingual.",
+        "Dò content decay từ dữ liệu Search Console để biết bài nào rớt traffic 20%+ cần refresh, gộp hay bỏ."
+      ],
+      "workflowStepReplaced": "Khâu viết bài, tự soi SEO/schema và QA định dạng trước khi đăng — thường phải làm tay qua nhiều checklist rời.",
+      "timeOrCostSaved": "Có thể rút ngắn vòng viết + QA cho từng bài, nhưng vẫn cần content lead kiểm nội dung, số liệu và mức độ đúng của fact-check. Chưa có số đo chuẩn.",
+      "localProblem": "Agency content và team SEO Việt đang phải vừa viết bài, vừa tự QA SEO/schema, vừa lo được AI Overview/ChatGPT trích dẫn. Claude Blog hợp để chuẩn hoá dây chuyền viết + kiểm cho những team đã dùng Claude Code.",
+      "localEvidence": "Nhu cầu viết blog chuẩn SEO + GEO/AEO ở VN có thật, nhiều agency đang trộn nhiều tool viết và checklist rời. Riêng mức người Việt bàn về Claude Blog thì chưa kiểm chứng.",
+      "usabilityRisk": "Cần Claude Code và Python 3.11+; một số cổng cần playwright/patchright để chụp màn hình và render. Điểm số chất lượng là heuristic của repo, không thay được biên tập người thật; fact-check vẫn cần đối chiếu lại nguồn.",
+      "suggestedAngle": "Góc nên viết: dùng Claude Blog để dựng dây chuyền viết blog 'không tự giao khi chưa đạt chuẩn' — nhấn cơ chế 5 cổng và AI Citation Readiness cho agency content Việt.",
+      "paidToolReplaced": "Một phần việc của Surfer / Frase / Jasper + các checklist QA SEO thủ công",
+      "practitionerGuide": {
+        "outcome": "Chạy xong guide, bạn có một bài blog draft đã qua 5 cổng (đủ .md/.html/.pdf + hero + screenshot) và một điểm chất lượng để quyết định publish hay sửa tiếp.",
+        "prerequisites": [
+          "Claude Code cài sẵn và quyền chạy skill trong project.",
+          "Python 3.11+; nếu cần cổng kiểm ảnh thì cài playwright hoặc patchright.",
+          "Một chủ đề bài cụ thể + (tuỳ chọn) API key ảnh (Gemini/stock) nếu muốn hero image thật."
+        ],
+        "steps": [
+          "Cài skill: git clone vào ~/.claude/skills/ hoặc dùng npx skills add theo README, rồi khởi động Claude Code.",
+          "Chạy /blog strategy <niche> để khoanh vùng site, sau đó /blog write <topic> để sinh bài đầu tiên.",
+          "Để Delivery Contract chạy đủ 5 cổng; nếu điểm dưới 90 nó sẽ tự lặp lại tối đa 3 lần trước khi báo.",
+          "Mở artifact folder xem bản .md, .html, hero và review.md để đọc điểm và các lỗi P0/P1.",
+          "Sửa theo review, hoặc chạy /blog analyze trên một bài cũ để so chuẩn, rồi mới quyết định đăng."
+        ],
+        "expectedResult": "Một bài blog có cấu trúc SEO/schema, hero image và báo cáo điểm rõ ràng — đủ để đánh giá chất lượng thay vì đọc một draft thô.",
+        "commonPitfalls": [
+          "Thiếu playwright/patchright khiến cổng kiểm ảnh (screenshot 3 khổ) không chạy được.",
+          "Tin thẳng điểm 90+ như chỉ số Google thật — thực ra là heuristic biên tập nội bộ.",
+          "Bỏ qua fact-check: số liệu trong bài vẫn cần đối chiếu lại nguồn gốc trước khi đăng."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 20,
+        "costAdvantage": 14,
+        "deployment": 10,
+        "documentation": 15
+      },
+      "altstackSignalScore": 77,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-08-05T00:00:00.000Z",
+      "tags": [
+        "seo",
+        "agency",
+        "geo",
+        "aeo",
+        "blog",
+        "content-creation",
+        "claude-code"
+      ],
+      "publishedAt": "2026-08-05T00:00:00.000Z",
+      "week": "2026-W32"
+    },
+    {
+      "slug": "yaojingang-geoflow",
+      "url": "/repos/yaojingang-geoflow",
+      "name": "GEOFlow",
+      "repoUrl": "https://github.com/yaojingang/GEOFlow",
+      "oneLiner": "GEOFlow là hệ thống mã nguồn mở giúp một team quản lý kho tài liệu, để AI viết bài, duyệt rồi tự đăng lên nhiều website cùng lúc — tất cả tối ưu cho việc được các công cụ AI trích dẫn (GEO).",
+      "vertical": [
+        "seo",
+        "agency"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 3124,
+        "forks": 719,
+        "note": "~114 ngày tuổi, ~27.4 sao/ngày",
+        "starsPerDay": 27.4,
+        "ageDays": 114,
+        "pushedAt": "2026-08-02",
+        "archived": false,
+        "openIssues": 2
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/yaojingang/GEOFlow"
+        }
+      ],
+      "useCases": [
+        "Gom tài liệu sản phẩm, FAQ, case study của một brand thành kho tri thức, rồi để AI viết bài đều đặn cho một site GEO/tin tức riêng.",
+        "Quản lý nhiều site hoặc nhiều chuyên mục bằng một hệ thống, đổi template và phân phối nội dung theo chuẩn thay vì làm thủ công từng nơi.",
+        "Đẩy bài đã duyệt sang site WordPress hoặc site tĩnh qua Agent, kèm sitemap, llms.txt và Schema để dễ được AI trích dẫn.",
+        "Theo dõi lượt truy cập, top nội dung và hành vi của AI crawler trong một trang phân tích tập trung."
+      ],
+      "workflowStepReplaced": "Khâu viết bài hàng loạt và đăng thủ công lên nhiều site trong quy trình content/GEO của agency.",
+      "timeOrCostSaved": "Có thể giảm công viết và đăng lặp lại khi vận hành nhiều site, nhưng phải trừ thời gian dựng hạ tầng (Docker, Postgres, Redis) và công biên tập/kiểm chứng nội dung. Chưa có số đo thực tế.",
+      "localProblem": "Agency và team SEO/GEO Việt đang phải quản lý nhiều site vệ tinh, nhiều chuyên mục và viết bài đều đặn bằng tay hoặc bằng nhiều tool rời. GEOFlow gom kho tri thức, sinh bài và phân phối vào một chỗ.",
+      "localEvidence": "Nhu cầu content automation và phân phối đa site ở Việt Nam có thật (nhiều team đang dùng WordPress + tool viết AI rời rạc). Riêng mức độ người Việt bàn về GEOFlow thì chưa kiểm chứng được.",
+      "usabilityRisk": "Cần kỹ thuật thật: PHP 8.3+, PostgreSQL (pgvector), Redis, các queue worker và Docker để chạy production ổn. README gốc chủ yếu tiếng Trung. Quan trọng nhất: đây là công cụ dễ bị lạm dụng để sản xuất nội dung hàng loạt — chất lượng và độ thật của kho tri thức quyết định tất cả.",
+      "suggestedAngle": "Góc nên viết: dùng GEOFlow như một 'content ops nội bộ' cho brand có kho tri thức thật, tối ưu llms.txt/Schema để được AI trích dẫn — KHÔNG phải để làm site vệ tinh rác.",
+      "paidToolReplaced": "Một phần các SaaS content automation + quản lý phân phối đa site (kiểu Byword / SurferSEO auto-write + WordPress content ops trả phí)",
+      "practitionerGuide": {
+        "outcome": "Chạy xong guide, bạn có một bản GEOFlow chạy local, một kho tri thức nhỏ và một vài bài draft do AI sinh để đánh giá chất lượng trước khi tính chuyện phân phối.",
+        "prerequisites": [
+          "Máy/VPS chạy được Docker Compose (hoặc PHP 8.3+, PostgreSQL có pgvector, Redis nếu cài tay).",
+          "Một API key cho model chat kiểu OpenAI hoặc Gemini; thêm một embedding model nếu muốn dùng RAG.",
+          "Một bộ tài liệu thật của brand (sản phẩm, FAQ, case study) để làm kho tri thức đầu tiên."
+        ],
+        "steps": [
+          "Clone repo, copy .env.example và chỉnh DB/Redis/APP_URL, rồi chạy docker compose build và up -d để khởi động bản dev.",
+          "Đăng nhập admin, làm theo 'ba bước bắt đầu': cấu hình API model, dựng kho tư liệu (kho tri thức, kho tiêu đề, keyword, ảnh, tác giả).",
+          "Nạp tài liệu thật vào kho tri thức và chọn chiến lược cắt chunk; thêm embedding model nếu cần truy hồi tài liệu.",
+          "Tạo một task với số lượng bài nhỏ, để nó chạy vào draft/duyệt trước — CHƯA bật auto-publish hay phân phối đa site.",
+          "Đọc kỹ vài bài draft: kiểm độ đúng, độ trùng lặp và giọng; chỉ khi chất lượng ổn mới tính tới đăng và phân phối."
+        ],
+        "expectedResult": "Vài bài draft bám theo kho tri thức thật, đủ để bạn đánh giá liệu quy trình này tạo ra nội dung dùng được hay chỉ ra chữ cho có.",
+        "commonPitfalls": [
+          "Nhảy thẳng vào bật auto-publish và phân phối đa site khi kho tri thức còn mỏng — dễ đẻ ra nội dung rác.",
+          "Bỏ qua bước dựng hạ tầng đúng (pgvector, queue worker) khiến RAG hoặc job sinh bài không chạy.",
+          "Tin thẳng bài AI viết mà không có người biên tập kiểm chứng số liệu và độ thật."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 21,
+        "costAdvantage": 14,
+        "deployment": 6,
+        "documentation": 10
+      },
+      "altstackSignalScore": 69,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-08-05T00:00:00.000Z",
+      "tags": [
+        "seo",
+        "agency",
+        "geo",
+        "content-automation",
+        "rag",
+        "wordpress",
+        "php"
+      ],
+      "publishedAt": "2026-08-05T00:00:00.000Z",
+      "week": "2026-W32"
+    },
+    {
+      "slug": "alisa0808-vox-director",
+      "url": "/repos/alisa0808-vox-director",
+      "name": "Vox Director",
+      "repoUrl": "https://github.com/Alisa0808/vox-director",
+      "oneLiner": "Vox Director là agent skill biến một chủ đề thành video explainer/quảng cáo phong cách 'paper-collage' kiểu Vox: tự viết kịch bản, dựng keyframe collage, thêm chuyển động, voice-over, nhạc và phụ đề rồi ghép ra mp4.",
+      "vertical": [
+        "creative",
+        "agency"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 932,
+        "forks": 135,
+        "note": "~23 ngày tuổi, ~40.5 sao/ngày",
+        "starsPerDay": 40.5,
+        "ageDays": 23,
+        "pushedAt": "2026-07-30T16:21:18.000Z",
+        "archived": false,
+        "openIssues": 0
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Alisa0808/vox-director"
+        }
+      ],
+      "useCases": [
+        "Biến một chủ đề thành video explainer 30-60 giây phong cách collage để đăng social hoặc làm content giáo dục.",
+        "Dựng nhanh video quảng cáo dạng giải thích cho sản phẩm/dịch vụ mà không cần ekip motion graphics.",
+        "Re-style một video talking-head có sẵn thành phong cách collage mà vẫn giữ mặt và khẩu hình thật (A-roll).",
+        "Từ một tấm ảnh (selfie, ảnh sản phẩm) dựng loạt poster collage quanh nhân vật đó, kèm voice-over nhân bản giọng (C-roll)."
+      ],
+      "workflowStepReplaced": "Cả chuỗi sản xuất video explainer collage: viết kịch bản, dựng keyframe, animate, lồng tiếng, nhạc, phụ đề và ghép.",
+      "timeOrCostSaved": "Có thể thay việc thuê ekip motion graphics cho video explainer ngắn, nhưng phát sinh chi phí gọi Atlas Cloud API (nano-banana, gemini, kling, tts, music...) tính theo lượt render.",
+      "localProblem": "Team content, agency và creator VN muốn ra video explainer/quảng cáo có phong cách riêng nhưng làm motion graphics thủ công rất tốn ekip và thời gian; các tool tạo video AI phổ thông thì cho ra clip generic, khó có 'gu' collage.",
+      "localEvidence": "Nhu cầu làm video ngắn explainer/quảng cáo ở VN rất lớn (TikTok, Reels, YouTube Shorts). Phong cách paper-collage kiểu Vox thì lạ và có nhận diện. Chưa thấy nội dung tiếng Việt về skill này; cần kiểm thêm chi phí thực tế của Atlas Cloud.",
+      "usabilityRisk": "Cần một coding agent (Claude Code/Codex), ffmpeg và đặc biệt là Atlas Cloud API key trả phí — đây là skill do chính Atlas Cloud làm để demo/bán API của họ, nên gần như buộc dùng hạ tầng của họ. Repo mới (23 ngày), chưa có cộng đồng VN, chưa rõ chi phí mỗi video.",
+      "suggestedAngle": "Góc nên viết: 'Dựng video explainer phong cách Vox chỉ từ một câu chủ đề' — nhấn phong cách collage có nhận diện, kèm cảnh báo rõ về Atlas Cloud API trả phí.",
+      "paidToolReplaced": "Ekip motion graphics / một phần công cụ làm explainer video trả phí",
+      "practitionerGuide": {
+        "outcome": "Sau guide này bạn có một video explainer collage (final.mp4) ngắn, đủ để đánh giá phong cách và quyết định có đưa vào quy trình không.",
+        "prerequisites": [
+          "Một coding agent (Claude Code / Codex) cài được skill.",
+          "Atlas Cloud API key (trả phí theo lượt render) — set biến ATLASCLOUD_API_KEY.",
+          "ffmpeg + ffprobe và Python 3 kèm Pillow (cho phụ đề/watermark)."
+        ],
+        "steps": [
+          "Cài skill: git clone repo vào ~/.claude/skills/vox-director (hoặc cài file .skill qua UI).",
+          "Đặt biến môi trường ATLASCLOUD_API_KEY với key lấy từ console Atlas Cloud.",
+          "Yêu cầu agent, ví dụ: 'Làm video collage kiểu Vox giới thiệu món ăn đường phố Mexico — tiếng Anh, 16:9, 15 giây.'",
+          "Duyệt beat map agent đề xuất, rồi chọn style trong bước bake-off (agent render cùng một beat ở 3-4 theme).",
+          "Để agent chạy tiếp keyframe → animate → voice → nhạc và ghép ra out/<project>/final.mp4, rồi xem lại."
+        ],
+        "expectedResult": "Ra một mp4 ngắn có phong cách collage rõ, có voice-over, nhạc nền và phụ đề; đủ để đánh giá chất lượng và chi phí.",
+        "commonPitfalls": [
+          "Chưa có/hết credit Atlas Cloud nên pipeline dừng giữa chừng ở bước gọi model.",
+          "Bỏ qua bước duyệt beat map/style nên video ra lệch ý ngay từ kịch bản.",
+          "Kỳ vọng miễn phí — thực tế mỗi video tốn phí API, cần thử một clip ngắn để ước lượng chi phí trước."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 15,
+        "projectHealth": 19,
+        "costAdvantage": 11,
+        "deployment": 6,
+        "documentation": 12
+      },
+      "altstackSignalScore": 63,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-08-02T00:00:00.000Z",
+      "tags": [
+        "video",
+        "explainer",
+        "collage",
+        "creative",
+        "agency",
+        "claude-skill",
+        "ffmpeg"
+      ],
+      "publishedAt": "2026-08-02T00:00:00.000Z",
+      "week": "2026-W31"
+    },
+    {
+      "slug": "katzca-autosocial",
+      "url": "/repos/katzca-autosocial",
+      "name": "AutoSocial",
+      "repoUrl": "https://github.com/Katzca/AutoSocial",
+      "oneLiner": "AutoSocial là dashboard chạy cục bộ để tự động hoá đăng/quản lý nội dung trên TikTok, Instagram và YouTube từ một chỗ, thay vì mở từng app đăng tay.",
+      "vertical": [
+        "agency"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 512,
+        "note": "GitHub search cho thấy ~512 sao; pipeline chưa lấy được forks/tuổi repo/health score ở lần này."
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Katzca/AutoSocial"
+        }
+      ],
+      "useCases": [
+        "Gom lịch đăng TikTok, Instagram và YouTube của nhiều kênh vào một dashboard cục bộ để đỡ mở từng app.",
+        "Tự động hoá các thao tác đăng/quản lý lặp đi lặp lại khi chạy nhiều tài khoản mạng xã hội cùng lúc.",
+        "Dựng thử một bảng điều khiển social nội bộ cho team, chạy trên máy mình thay vì phụ thuộc tool SaaS trả phí."
+      ],
+      "workflowStepReplaced": "Khâu đăng và quản lý bài thủ công trên từng nền tảng TikTok/Instagram/YouTube.",
+      "timeOrCostSaved": "Chưa đo được cụ thể ở giai đoạn discovery — kỳ vọng cắt thời gian đăng tay lặp lại khi vận hành nhiều kênh, nhưng cần thử thực tế mới ước lượng được.",
+      "localProblem": "Agency và team ecom VN chạy song song nhiều tài khoản TikTok/IG/YouTube thường phải đăng tay từng nền tảng, hoặc trả phí tool lập lịch nước ngoài; việc đăng lặp lại tốn giờ nhân sự mỗi ngày.",
+      "localEvidence": "Quan sát chung: nhiều team social/agency VN dùng Buffer/Later/Publer hoặc đăng tay khi tool không hỗ trợ tốt TikTok — đây là ghi nhận ngành, chưa phải case cụ thể đã kiểm chứng cho repo này.",
+      "usabilityRisk": "Chưa đọc được README nên chưa rõ yêu cầu cài đặt (Docker? cần khai báo API/token của từng nền tảng?), mức độ ổn định và cộng đồng. Rủi ro lớn hơn: tự động hoá đăng/tương tác trên TikTok/Instagram/YouTube có thể vi phạm điều khoản nền tảng và dẫn tới khoá/hạn chế tài khoản — cần kiểm tra kỹ trước khi dùng cho tài khoản thật. Chưa thấy cộng đồng VN quanh tool này.",
+      "suggestedAngle": "So sánh 'tự host một dashboard social miễn phí' với các tool lập lịch trả phí phổ biến ở VN — nhấn rõ đánh đổi giữa chi phí tool và rủi ro ToS/tự vận hành.",
+      "paidToolReplaced": "Buffer / Later / Publer (tool lập lịch social trả phí)",
+      "practitionerGuide": {
+        "outcome": "Dựng thử được dashboard AutoSocial trên máy cục bộ và kết nối tối thiểu một kênh để đánh giá có đáng đưa vào quy trình đăng đa nền tảng hay không.",
+        "prerequisites": [
+          "Đọc kỹ README/tài liệu repo để biết cách cài (nhiều khả năng cần môi trường dev hoặc Docker) và cách khai báo tài khoản/API của TikTok, Instagram, YouTube.",
+          "Dùng tài khoản phụ/thử nghiệm, KHÔNG kết nối tài khoản chính khi chưa rõ tool có vi phạm điều khoản nền tảng hay không."
+        ],
+        "steps": [
+          "Clone repo và cài theo hướng dẫn trong README.",
+          "Khởi động dashboard cục bộ và kết nối một kênh thử nghiệm.",
+          "Đăng thử một bài để kiểm chứng luồng hoạt động và độ ổn định."
+        ],
+        "expectedResult": "Dashboard chạy được cục bộ, kết nối và đăng thử thành công ít nhất một nền tảng mà không lỗi rõ ràng.",
+        "commonPitfalls": [
+          "Kết nối tài khoản chính rồi bị nền tảng gắn cờ tự động hoá/khoá tạm thời.",
+          "Yêu cầu API/token của từng nền tảng phức tạp hoặc thay đổi, khiến kết nối gãy."
+        ]
+      },
+      "scoreBreakdown": {
+        "costAdvantage": 12
+      },
+      "altstackSignalScore": 12,
+      "evidenceLevel": "D",
+      "confidence": "low",
+      "lastReviewedAt": null,
+      "tags": [
+        "automation",
+        "social-media",
+        "agency",
+        "self-hosted"
+      ],
+      "publishedAt": "2026-07-30T00:00:00.000Z",
+      "week": "2026-W31"
+    },
+    {
+      "slug": "indranilbanerjee-digital-marketing-pro",
+      "url": "/repos/indranilbanerjee-digital-marketing-pro",
+      "name": "Digital Marketing Pro",
+      "repoUrl": "https://github.com/indranilbanerjee/digital-marketing-pro",
+      "oneLiner": "Digital Marketing Pro là một plugin marketing mã nguồn mở cho Claude Code / Cowork / Codex: cài một dòng rồi chạy các lệnh như engagement, seo-audit, content-engine để chạy cả một quy trình chiến lược marketing 12 phần cho từng brand, sinh ra 50–60 file tài liệu chuẩn hoá.",
+      "vertical": [
+        "agency",
+        "seo",
+        "creative"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 554,
+        "forks": 98,
+        "note": "~162 ngày tuổi, ~3.4 sao/ngày",
+        "starsPerDay": 3.4,
+        "ageDays": 162,
+        "pushedAt": "2026-07-18T13:29:29.000Z",
+        "archived": false,
+        "openIssues": 1
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/indranilbanerjee/digital-marketing-pro"
+        }
+      ],
+      "useCases": [
+        "Chạy trọn một 'gói chiến lược marketing' cho một brand bằng lệnh engagement: intake, nghiên cứu thị trường, định vị, growth plan 12 tháng và channel plan — ra ~50–60 file để review, thay vì prompt tay rời rạc.",
+        "Chuẩn hoá quy trình cho agency quản nhiều brand: mỗi client chạy cùng một khung 12 phần nên bàn giao, audit chất lượng và onboarding nhân sự mới đồng đều hơn.",
+        "Gọi từng workflow lẻ khi cần: seo-audit (kỹ thuật + content + E-E-A-T + AI visibility), campaign-plan, content-engine, competitor-analysis, performance-report, email-sequence.",
+        "Dùng lệnh check làm cổng kiểm trước khi publish: soát hallucination, giọng brand, claim, và các nghĩa vụ disclosure (C2PA, deepfake, quy định theo vùng)."
+      ],
+      "workflowStepReplaced": "Khâu tự dựng khung chiến lược marketing và soạn tay từng tài liệu (research, positioning, growth plan, channel plan, SEO audit, content brief) cho mỗi brand.",
+      "timeOrCostSaved": "README nói một engagement 12 phần chạy ~60 phút trên Opus 4.8 với ~15–40 USD tiền API, và rút onboarding nhân sự mới 'từ 6 tuần còn 6 giờ'. Đây là lời tác giả tự khai, chưa có kiểm chứng độc lập; chi phí API thực tế phụ thuộc model, độ dài và số lần chạy lại.",
+      "localProblem": "Agency và team in-house ở Việt Nam quản nhiều nhãn hàng thường không có một khung chiến lược thống nhất: mỗi account chạy một kiểu, tài liệu tản mát, chất lượng phụ thuộc từng người, bàn giao và onboarding tốn thời gian. Một plugin ép mọi brand qua cùng một quy trình có thể giúp chuẩn hoá phần khung này.",
+      "localEvidence": "Nhu cầu 'quy trình marketing chuẩn cho agency', 'SEO audit', 'AEO/GEO cho AI Overview', 'content brief theo brand' rất phổ biến trong nhóm agency/marketing VN. Điểm plugin này thêm được là đóng gói cả chuỗi tài liệu chiến lược vào các lệnh chạy được trên Claude Code/Cowork.",
+      "usabilityRisk": "Không phải tool web bấm-là-chạy: cần một agent harness (Claude Code, Cowork, Codex, Cursor...) để cài và chạy, và tốn tiền API mỗi lần chạy (README ước tính ~15–40 USD cho một engagement đầy đủ). Toàn bộ nội dung, khung và tài liệu là tiếng Anh, chuẩn tuân thủ theo EU/US/India — không có bản địa hoá tiếng Việt, phải tự chỉnh cho ngữ cảnh VN. Rất nhiều con số trong README là tác giả tự khai (skills/agents/tests/thời gian/chi phí) và repo mang tính self-promotion mạnh; output vẫn là bản nháp cần người kiểm sự thật và độ chính xác trước khi dùng cho khách. Repo do một cá nhân duy trì, chưa có cộng đồng VN.",
+      "suggestedAngle": "Góc kể hợp lý: 'plugin biến quy trình chiến lược marketing của agency thành các lệnh chạy được trên Claude Code/Cowork' — nhấn giá trị chuẩn hoá khung 12 phần và bộ workflow lẻ (SEO audit, content, campaign), đồng thời nói thẳng rằng con số trong README là tự khai và output là bản nháp cần người kiểm.",
+      "paidToolReplaced": "Một phần các bộ template/quy trình marketing trả phí và tool AI marketing SaaS (ở mức dựng khung chiến lược + bản nháp tài liệu).",
+      "practitionerGuide": {
+        "outcome": "Sau guide này bạn cài được plugin trên một agent harness, thiết lập một brand mẫu và chạy được một workflow (ví dụ seo-audit hoặc engagement) để đánh giá khung tài liệu nó sinh ra có hợp quy trình agency của bạn không.",
+        "prerequisites": [
+          "Một agent harness hỗ trợ plugin: Claude Code (CLI/IDE) hoặc Anthropic Cowork là đường chính; Codex/Cursor/Copilot CLI/Antigravity là lựa chọn thay thế.",
+          "Tài khoản Claude / API key và ngân sách API (README ước tính ~15–40 USD cho một engagement đầy đủ; nên bắt đầu bằng một workflow nhỏ để đo chi phí thực).",
+          "Thông tin một brand để nhập: giọng, đối tượng, kênh, ngành, khu vực pháp lý, đối thủ."
+        ],
+        "steps": [
+          "Cài marketplace và plugin: `/plugin marketplace add indranilbanerjee/neels-plugins` rồi `/plugin install digital-marketing-pro@neels-plugins` (hoặc dùng UI Plugins nếu ở app Claude).",
+          "Bật auto-update cho marketplace `neels-plugins` (mặc định marketplace bên thứ ba TẮT auto-update trên Claude Code).",
+          "Thiết lập brand mẫu: `/digital-marketing-pro:brand-setup` và trả lời phần profiling (voice, audience, jurisdiction, competitors).",
+          "Chạy thử một workflow lẻ trước cho rẻ, ví dụ `/digital-marketing-pro:seo-audit`, để xem chất lượng và độ dài output; sau đó mới cân nhắc chạy `:engagement` đầy đủ.",
+          "Người biên tập rà lại toàn bộ số liệu, claim và tính hợp lệ của tài liệu (nhất là phần tuân thủ/disclosure) trước khi đưa cho khách."
+        ],
+        "expectedResult": "Một bộ file Markdown/tài liệu theo cấu trúc thư mục chuẩn của plugin (research, four-core, growth-plan, channels...) — đủ tốt làm bản nháp khung chiến lược để biên tập, không phải bản cuối đưa khách ngay.",
+        "commonPitfalls": [
+          "Chạy `:engagement` đầy đủ ngay lần đầu → tốn API và thời gian trước khi biết output có hợp mình không; nên thử workflow lẻ trước.",
+          "Tin thẳng các con số và claim trong README/output (skills/agents/tests/thời gian, phần compliance) mà bỏ qua khâu kiểm sự thật.",
+          "Dùng nguyên khung EU AI Act / disclosure cho khách VN mà không kiểm lại có đúng ngữ cảnh pháp lý và ngành của mình không.",
+          "Quên rằng toàn bộ là tiếng Anh — cần chỉnh giọng và bản địa hoá trước khi dùng cho brand VN."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 15,
+        "projectHealth": 16,
+        "costAdvantage": 13,
+        "deployment": 10,
+        "documentation": 12
+      },
+      "altstackSignalScore": 66,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-23T00:00:00.000Z",
+      "tags": [
+        "marketing",
+        "agency",
+        "seo",
+        "aeo",
+        "geo",
+        "claude-plugin",
+        "agent-skills",
+        "marketing-automation",
+        "content-marketing"
+      ],
+      "publishedAt": "2026-07-23T00:00:00.000Z",
+      "week": "2026-W30"
+    },
+    {
+      "slug": "rediumvex-seo-blog-writer-claude",
+      "url": "/repos/rediumvex-seo-blog-writer-claude",
+      "name": "SEO Blog Writer — Claude Skill",
+      "repoUrl": "https://github.com/rediumvex/seo-blog-writer-claude",
+      "oneLiner": "SEO Blog Writer là một skill cho Claude Code: đưa vào một URL, ghi chú hay chủ đề, nó trả về bài blog hoàn chỉnh kèm đủ trường SEO (title, meta description, focus keyword, FAQ schema, mục lục) với giọng văn cố tình 'nghe như người viết'.",
+      "vertical": [
+        "agency",
+        "seo"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 36,
+        "forks": 2,
+        "note": "~95 ngày tuổi, ~0.4 sao/ngày",
+        "starsPerDay": 0.4,
+        "ageDays": 95,
+        "pushedAt": "2026-06-11T11:17:09.000Z",
+        "archived": false,
+        "openIssues": 0
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/rediumvex/seo-blog-writer-claude"
+        }
+      ],
+      "useCases": [
+        "Biến một URL/ghi chú/chủ đề thành bản nháp blog đã điền sẵn title, meta, FAQ schema và mục lục để dán thẳng vào CMS.",
+        "Chuẩn hoá quy trình viết blog SEO cho một team/agency bằng một skill dùng chung, thay vì mỗi người tự prompt kiểu khác nhau.",
+        "Lấy khung SKILL.md làm điểm khởi đầu rồi fork thành skill viết bài riêng cho brand của mình (đổi giọng, pillar, internal link)."
+      ],
+      "workflowStepReplaced": "Khâu prompt tay nhiều lần để ra bài blog và điền thủ công các trường SEO (meta, FAQ schema, mục lục).",
+      "timeOrCostSaved": "Tác giả nói trước đây mất ~4 giờ/bài để tự sửa output AI cho 'nghe như người'; skill gộp lại còn một prompt — nhưng đây là lời tác giả tự khai, chưa có kiểm chứng độc lập.",
+      "localProblem": "Người làm content/SEO và agency nhỏ ở Việt Nam thường tốn nhiều thời gian biên tập lại bài do AI viết để bớt sáo rỗng và điền đủ trường SEO (meta, FAQ schema, mục lục). Một skill đóng khung sẵn quy trình đó giúp rút ngắn khâu 'từ bản thô đến bản đăng được'.",
+      "localEvidence": "Nhu cầu 'viết bài chuẩn SEO bằng AI', 'humanize nội dung AI', 'tạo FAQ schema' rất phổ biến trong nhóm SEO/content VN. Cái skill này thêm được là gói toàn bộ trường SEO + quy tắc giọng vào một lệnh Claude Code.",
+      "usabilityRisk": "Cần Claude Code để dùng (không phải tool web bấm là chạy). Bản gốc cấu hình sẵn cho blog cá nhân của tác giả (tên, pillar, internal link) — phải sửa SKILL.md trước khi dùng cho brand khác. Định vị 'vượt máy dò AI' là con dao hai lưỡi: nội dung vẫn phải người kiểm về sự thật/độ chính xác, và chiến lược 'né detector' không đảm bảo thứ hạng Google. Repo nhỏ, một tác giả, chưa có cộng đồng VN.",
+      "suggestedAngle": "Góc kể hợp lý: 'skill Claude Code chuẩn hoá quy trình nháp blog SEO' — nhấn mạnh giá trị điền sẵn trường SEO + fork được, đồng thời nói thẳng vì sao 'né máy dò AI' không phải chiến lược SEO bền vững.",
+      "paidToolReplaced": "Jasper, Copy.ai, Surfer AI writer và các tool viết bài SEO trả phí (ở mức tạo bản nháp).",
+      "practitionerGuide": {
+        "outcome": "Sau guide này bạn có một bản nháp blog đã điền đủ trường SEO từ một chủ đề/URL, và biết cần sửa gì trong skill để hợp brand mình.",
+        "prerequisites": [
+          "Đã cài Claude Code và có thư mục ~/.claude/skills.",
+          "Một URL/ghi chú/chủ đề đầu vào để viết bài.",
+          "Sẵn sàng sửa SKILL.md (Voice & Tone, Content Pillars, Internal Links) sang thông tin brand của bạn."
+        ],
+        "steps": [
+          "Clone vào skills: `cd ~/.claude/skills && git clone https://github.com/rediumvex/seo-blog-writer-claude.git seo-blog-writer`.",
+          "Khởi động lại Claude Code để skill `/seo-blog-writer` xuất hiện.",
+          "Mở SKILL.md, đổi tên/positioning, content pillars và internal links sang blog của bạn (xoá phần của tác giả gốc).",
+          "Chạy thử: `/seo-blog-writer <url hoặc chủ đề>` và kiểm tra bản nháp trả về.",
+          "Người biên tập rà lại sự thật, số liệu, và tính hợp lệ của FAQ schema trước khi đăng."
+        ],
+        "expectedResult": "Một bản nháp blog Markdown kèm SEO title/meta/focus keyword/FAQ schema/mục lục — đủ tốt để biên tập nhanh rồi đăng, không phải bản cuối tự động.",
+        "commonPitfalls": [
+          "Đăng nguyên bản chưa sửa cấu hình gốc → dính tên/pillar/link của tác giả khác.",
+          "Tin vào lời 'beats AI detectors' mà bỏ qua khâu kiểm sự thật và E-E-A-T thật — Google chấm chất lượng, không chấm việc né detector.",
+          "Quên xác thực FAQ schema/meta trước khi publish khiến rich snippet không hợp lệ."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 12,
+        "projectHealth": 11,
+        "costAdvantage": 12,
+        "deployment": 12,
+        "documentation": 8
+      },
+      "altstackSignalScore": 55,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-14T00:00:00.000Z",
+      "tags": [
+        "seo",
+        "content",
+        "claude-skill",
+        "blog-writer",
+        "ai-writing",
+        "agency"
+      ],
+      "publishedAt": "2026-07-14T00:00:00.000Z",
+      "week": "2026-W29"
     },
     {
       "slug": "lukilabs-beautiful-mermaid",
@@ -326,6 +1069,90 @@ export const memberFeed = {
         "handmade",
         "inventory",
         "open-source"
+      ],
+      "publishedAt": "2026-07-11T00:00:00.000Z",
+      "week": "2026-W28"
+    },
+    {
+      "slug": "kittenml-kittentts",
+      "url": "/repos/kittenml-kittentts",
+      "name": "Kitten TTS",
+      "repoUrl": "https://github.com/KittenML/KittenTTS",
+      "oneLiner": "Kitten TTS là thư viện chuyển văn bản thành giọng nói (text-to-speech) siêu nhẹ, mã nguồn mở: model chỉ 25-80 MB, chạy được trên CPU không cần GPU, dùng để tự sinh giọng đọc cho video/nội dung.",
+      "vertical": [
+        "creative"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 15063,
+        "forks": 864,
+        "note": "~340 ngày tuổi, ~44.3 sao/ngày",
+        "starsPerDay": 44.3,
+        "ageDays": 340,
+        "pushedAt": "2026-06-11T00:04:42.000Z",
+        "archived": false,
+        "openIssues": 123
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/KittenML/KittenTTS"
+        },
+        {
+          "label": "Hugging Face Demo",
+          "url": "https://huggingface.co/spaces/KittenML/KittenTTS-Demo"
+        }
+      ],
+      "useCases": [
+        "Tự sinh giọng đọc (voiceover) cho video ngắn/nội dung mà không cần thuê người đọc hay trả phí dịch vụ TTS đám mây.",
+        "Nhúng TTS vào ứng dụng/tool chạy offline trên máy yếu vì model chỉ 25-80 MB và chạy trên CPU.",
+        "Thử nghiệm nhanh chất lượng giọng qua demo Hugging Face trước khi quyết định đưa vào quy trình sản xuất nội dung."
+      ],
+      "workflowStepReplaced": "Khâu thu âm/thuê đọc hoặc trả phí TTS đám mây khi làm voiceover cho video/nội dung.",
+      "timeOrCostSaved": "Bỏ phí thuê bao TTS đám mây (ElevenLabs, cloud TTS) cho khối lượng lớn; chạy local nên không tính phí theo ký tự — với điều kiện chất lượng và ngôn ngữ đáp ứng nhu cầu.",
+      "localProblem": "Creator/team nội dung Việt làm video hàng loạt (review, kể chuyện, tin tức) cần voiceover rẻ và nhanh, nhưng các dịch vụ TTS chất lượng cao thường tính phí theo ký tự và đội chi phí khi làm nhiều.",
+      "localEvidence": "Nhiều kênh YouTube/TikTok Việt dạng 'giọng đọc AI' đang dùng các dịch vụ TTS trả phí hoặc giọng máy miễn phí chất lượng thấp; nhu cầu giọng đọc rẻ, chạy local là có thật trong giới làm content số lượng lớn.",
+      "usabilityRisk": "Rủi ro lớn nhất: nhiều khả năng CHƯA hỗ trợ giọng tiếng Việt tự nhiên (các model TTS siêu nhẹ thường tối ưu cho tiếng Anh) — cần kiểm tra trực tiếp trên demo. Còn ở trạng thái 'developer preview', API có thể đổi giữa các bản. Cài đặt cần biết Python/pip. Nếu chỉ cần giọng Việt, các dịch vụ Việt hoá sẵn có thể phù hợp hơn.",
+      "suggestedAngle": "Nếu viết, đặt thẳng câu hỏi 'Kitten TTS có đọc được tiếng Việt không?' và test thật, thay vì quảng bá chung chung. Góc trung thực này chính là giá trị cho creator Việt.",
+      "paidToolReplaced": "Dịch vụ TTS trả phí theo ký tự (ElevenLabs, cloud TTS) ↔ Kitten TTS chạy local",
+      "practitionerGuide": {
+        "outcome": "Tự tạo được một file giọng đọc từ đoạn văn bản bằng Kitten TTS trên máy CPU, và tự đánh giá chất lượng giọng (đặc biệt là tiếng Việt) có đủ dùng cho nội dung của bạn không.",
+        "prerequisites": [
+          "Python và pip trên máy (không cần GPU).",
+          "Một đoạn văn bản mẫu — nên thử cả tiếng Việt để kiểm tra hỗ trợ ngôn ngữ.",
+          "Kết nối mạng để tải model (25-80 MB) lần đầu."
+        ],
+        "steps": [
+          "Vào demo Hugging Face Spaces, dán thử một đoạn tiếng Việt để nghe giọng trước khi cài.",
+          "Nếu chất lượng ổn, cài thư viện theo Quick Start trong README và tải model.",
+          "Chạy sinh giọng cho một đoạn văn bản ngắn, xuất ra file audio.",
+          "So sánh giọng với công cụ bạn đang dùng để quyết định có đưa vào quy trình không."
+        ],
+        "expectedResult": "Ra được file audio rõ tiếng từ văn bản; với tiếng Anh chất lượng thường tốt. Với tiếng Việt, hãy nghe kỹ độ tự nhiên và dấu thanh trước khi tin dùng.",
+        "commonPitfalls": [
+          "Giả định có giọng Việt tự nhiên mà không kiểm tra trước — dễ mất công cài xong mới thấy không dùng được cho nội dung Việt.",
+          "Kỳ vọng chất lượng ngang dịch vụ trả phí cao cấp; đây là model nhẹ, đổi lại chất lượng có giới hạn.",
+          "Bỏ qua cảnh báo 'developer preview' nên bị lỗi khi bản mới đổi API."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 12,
+        "projectHealth": 23,
+        "costAdvantage": 13,
+        "deployment": 11,
+        "documentation": 12
+      },
+      "altstackSignalScore": 71,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-11T00:00:00.000Z",
+      "tags": [
+        "tts",
+        "text-to-speech",
+        "ai",
+        "creative",
+        "onnx",
+        "voiceover"
       ],
       "publishedAt": "2026-07-11T00:00:00.000Z",
       "week": "2026-W28"
@@ -1258,6 +2085,88 @@ export const memberFeed = {
         "automation"
       ],
       "publishedAt": "2026-07-04T00:00:00.000Z",
+      "week": "2026-W27"
+    },
+    {
+      "slug": "gbessoni-seobuild-onpage",
+      "url": "/repos/gbessoni-seobuild-onpage",
+      "name": "SEOBuild Onpage",
+      "repoUrl": "https://github.com/gbessoni/seobuild-onpage",
+      "oneLiner": "SEOBuild Onpage là agent AI (chạy qua Claude Code/Codex) nhận một từ khoá, tự kéo dữ liệu SERP và đối thủ đang xếp hạng rồi viết ra một trang landing/blog hoàn chỉnh có heading, FAQ và schema, nhắm cả xếp hạng Google lẫn được AI Overview/ChatGPT trích dẫn.",
+      "vertical": [
+        "seo"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 222,
+        "forks": 37,
+        "note": "~107 ngày tuổi, ~2.1 sao/ngày",
+        "starsPerDay": 2.1,
+        "ageDays": 107,
+        "pushedAt": "2026-06-25T12:40:00Z",
+        "archived": false,
+        "openIssues": 0
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/gbessoni/seobuild-onpage"
+        }
+      ],
+      "useCases": [
+        "Nhập một từ khoá đang nhắm (ví dụ dịch vụ hoặc sản phẩm chủ lực) và nhận về một bản nháp trang landing/blog đầy đủ heading, FAQ, schema — dựa trên đúng những gì top 10 Google đang xếp hạng.",
+        "Kiểm tra nhanh những 'khoảng trống' mà đối thủ đang xếp hạng chưa nói tới, để viết trang bao quát hơn thay vì đoán ý người tìm.",
+        "Viết lại một trang cũ đang xếp hạng kém: agent so nó với top 3 đối thủ hiện tại và liệt kê chính xác đang thiếu phần nào.",
+        "Dùng danh sách gợi ý liên kết nội bộ tự trích từ đối thủ để bổ sung các trang 'còn thiếu' trong cụm chủ đề của mình.",
+        "Chạy checklist 55 điểm để tự chấm điểm một trang trước khi xuất bản, thay vì đăng lên rồi mới biết thiếu gì."
+      ],
+      "workflowStepReplaced": "Khâu viết brief SEO + soạn nội dung on-page: kéo dữ liệu SERP, phân tích đối thủ, viết brief, viết bài, gắn schema — vốn thường tách thành nhiều bước/nhiều người.",
+      "timeOrCostSaved": "Có thể gộp một quy trình vốn cần SEO + content writer làm nhiều giờ (brief + viết + schema) thành một lệnh; README không nêu số giờ cụ thể, và bạn vẫn phải trả phí API cho DataForSEO/Search Console theo lượng dùng.",
+      "localProblem": "Agency SEO và đội content ở Việt Nam đang phải làm thêm một lớp việc mới — viết sao để vừa lên Google vừa được ChatGPT/AI Overview trích dẫn — nhưng phần lớn tài liệu tiếng Việt về GEO vẫn dừng ở mức khái niệm, thiếu công cụ thao tác cụ thể.",
+      "localEvidence": "Có hàng loạt agency Việt (SEO Center, SEO Dao, Phố SEO, Fast Marketing, GOHA...) đã mở dịch vụ GEO/AIO ngay trong 2026, cho thấy nhu cầu 'được AI trích dẫn' đang thành dịch vụ thật ở thị trường Việt — nhưng phần lớn đang bán dưới dạng dịch vụ trọn gói hơn là công cụ tự chạy.",
+      "usabilityRisk": "Đây là script Python cần tự cấu hình: API key DataForSEO (trả phí theo lượng dùng), quyền Google Search Console, và chạy qua Claude Code/Codex — không hợp với người không quen dòng lệnh. Đáng chú ý hơn: một số kỹ thuật trong changelog (như tự chèn schema Organization/Person lên trang bên thứ ba để tác động thứ hạng, hay cố tình xếp thương hiệu của khách #1 trong một bài listicle) là các chiến thuật SEO/GEO khá rắn — nếu dùng sai khung, đây là vùng dễ bị Google coi là spam hoặc thao túng, không phải content marketing sạch thuần tuý. Nên đọc kỹ và cân nhắc trước khi áp dụng nguyên văn.",
+      "suggestedAngle": "Nên kể theo khung 'công cụ tăng tốc brief + viết content SEO/GEO cho người đã hiểu SEO', không kể như phép màu SEO tự động — và nên nói rõ ranh giới giữa phần viết nội dung sạch với các chiến thuật rắn trong changelog.",
+      "paidToolReplaced": "Agency viết content SEO/GEO, hoặc các tool brief nội dung như Surfer SEO/Clearscope kết hợp thuê ngoài viết bài",
+      "practitionerGuide": {
+        "outcome": "Chạy xong guide này, bạn có một bản nháp trang landing/blog đầy đủ heading + FAQ + schema cho một từ khoá cụ thể, dựa trên dữ liệu SERP thật.",
+        "prerequisites": [
+          "Máy có Python và đã cài Claude Code hoặc Codex CLI.",
+          "API key DataForSEO (trả phí) và quyền truy cập Google Search Console cho domain cần tối ưu.",
+          "Một từ khoá/chủ đề cụ thể muốn nhắm, kèm điểm khác biệt thật của thương hiệu (để agent không viết chung chung)."
+        ],
+        "steps": [
+          "Cài skill theo hướng dẫn (`claude install-skill gbessoni/seobuild-onpage`) và điền API key vào file cấu hình.",
+          "Chạy `/seoagi \"từ khoá của bạn\"` và để agent kéo SERP, phân tích top 10 đối thủ.",
+          "Cung cấp cho agent điểm khác biệt thật của thương hiệu khi được hỏi, thay vì để nó tự bịa ưu điểm chung chung.",
+          "Đọc bản nháp trang được sinh ra, đối chiếu checklist 55 điểm và tự quyết có xuất bản không.",
+          "Với trang cũ cần viết lại, chạy agent ở chế độ rewrite để nhận khuyến nghị 301/410 trước khi sửa thật trên site."
+        ],
+        "expectedResult": "Bạn có một bản nháp trang chi tiết, đã đối chiếu với đối thủ thật, kèm điểm chấm chất lượng — đủ để biên tập viên duyệt tiếp thay vì viết từ số 0.",
+        "commonPitfalls": [
+          "Đăng thẳng bản nháp AI sinh ra mà không có ai đọc lại giọng văn và tính chính xác của thông tin.",
+          "Dùng các chiến thuật rắn (schema bên thứ ba, tự xếp hạng #1 trong listicle) mà không hiểu rủi ro bị Google coi là thao túng.",
+          "Bỏ qua chi phí API DataForSEO khi tính toán mức tiết kiệm so với thuê ngoài."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 18,
+        "projectHealth": 16,
+        "costAdvantage": 14,
+        "deployment": 6,
+        "documentation": 10
+      },
+      "altstackSignalScore": 64,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": "2026-07-03T00:00:00.000Z",
+      "tags": [
+        "seo",
+        "geo",
+        "ai-agent",
+        "claude-code-skill",
+        "content-generation"
+      ],
+      "publishedAt": "2026-07-03T00:00:00.000Z",
       "week": "2026-W27"
     },
     {
