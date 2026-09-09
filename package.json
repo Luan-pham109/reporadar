@@ -10,6 +10,7 @@
     "build": "node scripts/export-member-feed.mjs && node scripts/export-draft-slugs.mjs && astro build && node scripts/check-seo.mjs",
     "build:drafts": "node scripts/build-drafts.mjs",
     "seo": "node scripts/check-seo.mjs",
+    "pretest": "node scripts/export-member-feed.mjs && node scripts/export-draft-slugs.mjs",
     "test": "node --test tests/*.test.mjs",
     "test:auth": "node --test tests/auth.unit.test.mjs",
     "preview": "astro preview",

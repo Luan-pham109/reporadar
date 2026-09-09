@@ -8,6 +8,11 @@ node_modules/
 # astro
 .astro/
 
+# file sinh lúc build — mọi lệnh build/test đều tạo lại trước khi cần tới.
+# Track chúng chỉ tổ thành rác: commit publish từ /review chỉ sửa .md nên
+# bản trong git cũ dần, và hai người cùng build là conflict.
+functions/_generated/
+
 # env
 .env
 .env.production
