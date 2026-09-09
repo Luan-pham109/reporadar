@@ -20,6 +20,7 @@
     "signals": "node scripts/fetch-signals.mjs",
     "refresh:stats": "node scripts/refresh-stats.mjs",
     "daily": "node scripts/run-daily-pipeline.mjs",
+    "drafts:sync": "node scripts/sync-drafts.mjs",
     "dev:functions": "npm run build && wrangler pages dev dist"
   },
   "dependencies": {
