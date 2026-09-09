@@ -87,7 +87,7 @@ lastReviewedAt: 2026-08-05
 nextReviewDueAt: 2026-11-03
 publishedAt: 2026-08-05
 week: "2026-W32"
-draft: true
+draft: false
 ---
 
 Record nháp foundation (daily pipeline). Cần Luan kiểm: (1) mức grey-hat/borderline và câu chữ về nội dung affiliate hàng loạt, (2) độ phủ dữ liệu openaffiliate.dev cho offer Việt, (3) projectHealth thấp (13) vì repo còn nhỏ và 2 lần Show HN điểm thấp. Chưa có media demo dạng ảnh trong README nên để media rỗng.
