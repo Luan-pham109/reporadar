@@ -91,7 +91,7 @@ nextReviewDueAt: 2026-10-09
 tags: ["tts", "text-to-speech", "ai", "creative", "onnx", "voiceover"]
 publishedAt: 2026-07-11
 week: "2026-W28"
-draft: true
+draft: false
 ---
 
 Draft foundation từ daily queue. Fit creative (voiceover). CẢNH BÁO chính: chưa xác nhận hỗ trợ tiếng Việt — đây là yếu tố quyết định giá trị cho tệp Việt và cần Luan/skill test trực tiếp trên demo Hugging Face trước khi publish. Trạng thái repo là 'developer preview'.
