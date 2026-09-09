@@ -2,9 +2,84 @@
 export const memberFeed = {
   "title": "RepoRadar VN",
   "version": "0.3",
-  "generatedAt": "2026-09-09T05:08:00.951Z",
-  "count": 49,
+  "updatedAt": "2026-08-29T00:00:00.000Z",
+  "count": 50,
   "items": [
+    {
+      "slug": "archibaldys-ai-copywriting-prompts",
+      "url": "/repos/archibaldys-ai-copywriting-prompts",
+      "name": "AI Copywriting Prompts",
+      "repoUrl": "https://github.com/Archibaldys/ai-copywriting-prompts",
+      "oneLiner": "Repo tự giới thiệu là bộ prompt AI cho copywriting social media, nhưng nội dung README thực chất là bài quảng cáo cho một công cụ trả phí (Slito EX) kèm link tiếp thị rút gọn.",
+      "vertical": [
+        "creative",
+        "agency"
+      ],
+      "maturity": "rising",
+      "repoStats": {
+        "stars": 60,
+        "forks": 1,
+        "note": "~21 ngày tuổi, ~2.9 sao/ngày. Repo mới, gần như không cập nhật sau ngày tạo.",
+        "starsPerDay": 2.9,
+        "ageDays": 21,
+        "pushedAt": "2026-08-08",
+        "archived": false,
+        "openIssues": 0
+      },
+      "signalSources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Archibaldys/ai-copywriting-prompts"
+        }
+      ],
+      "useCases": [
+        "Đọc lướt để nắm các framework hook quen thuộc (PAS, AIDA, Hook-Value-CTA) mà tool nhắc tới.",
+        "Tham khảo cách một sản phẩm định vị 'AI viết caption đa nền tảng' — dưới góc nghiên cứu thị trường."
+      ],
+      "workflowStepReplaced": "Về lý thuyết là khâu tự viết prompt copywriting; thực tế README không cung cấp thư viện prompt đủ dùng.",
+      "timeOrCostSaved": "Không rõ — README không đưa prompt cụ thể có thể tái sử dụng, chủ yếu điều hướng sang tool trả phí.",
+      "localProblem": "Team content/agency Việt hay tìm bộ prompt copywriting sẵn để rút ngắn thời gian viết caption đa nền tảng. Repo này đánh trúng nhu cầu đó ở phần tiêu đề nhưng không giao đúng thứ hứa hẹn.",
+      "localEvidence": "Quan sát chung: nhu cầu 'prompt viết content bằng AI' rất phổ biến trong cộng đồng marketing Việt. Nhưng nội dung repo là bài PR cho Slito EX, không phải kho prompt — cần Luan kiểm chứng trước khi cân nhắc.",
+      "usabilityRisk": "Nội dung không phải thư viện prompt dùng được ngay mà là bài quảng cáo cho tool trả phí bên thứ ba (Slito EX) — kèm link rút gọn nên không rõ đích đến. Repo rất mỏng (60★, 1 fork, không cập nhật). Không có cộng đồng VN. Rủi ro giá trị thực thấp và mang tính tiếp thị trá hình.",
+      "suggestedAngle": "Nếu dùng, chỉ nên ở góc 'các framework hook để tự viết prompt content' — bỏ hẳn phần quảng cáo tool.",
+      "paidToolReplaced": "Không thay được gì rõ ràng; README ngược lại đang bán một tool trả phí.",
+      "practitionerGuide": {
+        "outcome": "Nhận diện được đây là advertorial, và biết các framework hook cơ bản để tự viết prompt thay vì phụ thuộc tool.",
+        "prerequisites": [
+          "Một tài khoản ChatGPT/Claude để tự thử prompt.",
+          "Một bài toán content cụ thể (ví dụ caption cho một sản phẩm)."
+        ],
+        "steps": [
+          "Đọc README để tách phần 'framework' (PAS/AIDA/Hook-Value-CTA) khỏi phần quảng cáo tool.",
+          "Tự viết prompt dựa trên các framework đó, không cần dùng tool trả phí.",
+          "Không click link rút gọn nếu chưa rõ đích đến."
+        ],
+        "expectedResult": "Có vài prompt tự viết theo framework, không bị dẫn vào funnel bán hàng.",
+        "commonPitfalls": [
+          "Tưởng repo là kho prompt mở → mất thời gian tìm cái không có.",
+          "Click link tiếp thị rút gọn mà không kiểm tra đích đến."
+        ]
+      },
+      "scoreBreakdown": {
+        "useCaseFit": 6,
+        "projectHealth": 15,
+        "costAdvantage": 4,
+        "deployment": 8,
+        "documentation": 6
+      },
+      "altstackSignalScore": 39,
+      "evidenceLevel": "C",
+      "confidence": "low",
+      "lastReviewedAt": null,
+      "tags": [
+        "ai",
+        "copywriting",
+        "prompts",
+        "marketing"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z",
+      "week": "2026-W35"
+    },
     {
       "slug": "lukilabs-beautiful-mermaid",
       "url": "/repos/lukilabs-beautiful-mermaid",

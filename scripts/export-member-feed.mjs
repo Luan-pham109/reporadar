@@ -79,10 +79,13 @@ if (warnings.length > 0) {
 
 items.sort((a, b) => String(b.publishedAt).localeCompare(String(a.publishedAt)) || a.name.localeCompare(b.name));
 
+// Không dùng thời điểm build: file này được track trong git nên một timestamp
+// đổi mỗi lần chạy sẽ làm working tree bẩn sau mỗi `npm run build`. Mốc tươi
+// lấy từ record mới nhất — vừa có ý nghĩa hơn, vừa chỉ đổi khi nội dung đổi.
 const feed = {
   title: 'RepoRadar VN',
   version: '0.3',
-  generatedAt: new Date().toISOString(),
+  updatedAt: items[0]?.publishedAt || '',
   count: items.length,
   items,
 };

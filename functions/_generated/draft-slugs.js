@@ -8,7 +8,6 @@ export const draftSlugs = new Set([
   "ajbeckliy-synvow-prompt",
   "alisa0808-vox-director",
   "antoinezambelli-forge",
-  "archibaldys-ai-copywriting-prompts",
   "arcreel-arcreel",
   "artokun-comfyui-mcp",
   "aryamantodkar-oneglanse",
