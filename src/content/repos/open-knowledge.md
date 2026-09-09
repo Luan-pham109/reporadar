@@ -8,9 +8,14 @@ vertical: ["creative", "agency"]
 # Pre-viral: CÓ. ~790 sao, mới ~23 ngày tuổi, Show HN 25/06 đang nóng (229▲/111💬), chưa lên GitHub Trending.
 maturity: "pre-viral"
 repoStats:
-  stars: 790
-  forks: 23
-  note: "~23 ngày tuổi, ~34 sao/ngày"
+  stars: 4093
+  forks: 272
+  note: "~98 ngày tuổi, ~41.8 sao/ngày"
+  starsPerDay: 41.8
+  ageDays: 98
+  pushedAt: "2026-09-09T01:52:58Z"
+  archived: false
+  openIssues: 36
 standoutFeatures:
   - "AI-native: Claude/Codex/Cursor đọc–sửa note trực tiếp trong vault của bạn."
   - "Lưu dạng markdown/git — bạn sở hữu dữ liệu, không khoá vendor."

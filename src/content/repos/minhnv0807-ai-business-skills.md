@@ -8,12 +8,12 @@ vertical: ["agency", "creative", "ecom"]
 
 maturity: "rising"
 repoStats:
-  stars: 478
-  forks: 205
-  note: "~75 ngày tuổi, ~6.4 sao/ngày"
-  starsPerDay: 6.4
-  ageDays: 75
-  pushedAt: 2026-06-20T03:06:14Z
+  stars: 571
+  forks: 226
+  note: "~147 ngày tuổi, ~3.9 sao/ngày"
+  starsPerDay: 3.9
+  ageDays: 147
+  pushedAt: "2026-08-17T03:04:30Z"
   archived: false
   openIssues: 3
 standoutFeatures:

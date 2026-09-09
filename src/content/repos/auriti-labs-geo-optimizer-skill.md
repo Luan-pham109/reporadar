@@ -8,14 +8,14 @@ vertical: ["seo"]
 
 maturity: "rising"
 repoStats:
-  stars: 506
-  forks: 60
-  note: "~131 ngày tuổi, ~3.9 sao/ngày"
-  starsPerDay: 3.9
-  ageDays: 131
-  pushedAt: 2026-06-27T04:57:44Z
+  stars: 780
+  forks: 95
+  note: "~203 ngày tuổi, ~3.8 sao/ngày"
+  starsPerDay: 3.8
+  ageDays: 203
+  pushedAt: "2026-09-05T06:38:39Z"
   archived: false
-  openIssues: 3
+  openIssues: 12
 standoutFeatures:
   - "Tập trung vào Answer Engine Optimization và Generative Engine Optimization, tức đo khả năng được AI search hiểu và cite chứ không chỉ SEO truyền thống."
   - "README mô tả nhiều bề mặt dùng: CLI, Python, MCP và Astro, phù hợp cả SEO practitioner lẫn team kỹ thuật."

@@ -18,9 +18,14 @@ vertical: ["agency", "creative", "ecom"]
 # Đã kiểm chứng: 32k sao, ~3 năm tuổi. Không còn pre-viral nhưng tệp rộng vẫn rất đáng dùng.
 maturity: "established"
 repoStats:
-  stars: 32378
-  forks: 6024
-  note: "~3 năm tuổi"
+  stars: 35625
+  forks: 6800
+  note: "~1158 ngày tuổi, ~30.8 sao/ngày"
+  starsPerDay: 30.8
+  ageDays: 1158
+  pushedAt: "2026-09-09T03:10:31Z"
+  archived: false
+  openIssues: 284
 standoutFeatures:
   - "Gom nhiều mạng xã hội vào một lịch: Facebook, TikTok, Threads, YouTube, LinkedIn, X..."
   - "AI viết & gợi ý nội dung tích hợp sẵn."

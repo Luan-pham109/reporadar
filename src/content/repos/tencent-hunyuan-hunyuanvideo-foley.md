@@ -11,9 +11,14 @@ vertical: ["creative", "agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 1049
-  forks: 101
-  note: "~317 ngày tuổi, ~3.3 sao/ngày"
+  stars: 1057
+  forks: 104
+  note: "~390 ngày tuổi, ~2.7 sao/ngày"
+  starsPerDay: 2.7
+  ageDays: 390
+  pushedAt: "2025-09-28T17:48:49Z"
+  archived: false
+  openIssues: 24
 standoutFeatures:
   - "Sinh Foley audio từ video và mô tả text, tập trung vào đồng bộ hình ảnh, ngữ nghĩa và thời gian."
   - "README nêu output 48kHz và các benchmark so với FoleyGrafter, V-AURA, Frieren, MMAudio và ThinkSound."
