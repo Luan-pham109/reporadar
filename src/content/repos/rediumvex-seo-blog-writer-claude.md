@@ -87,7 +87,7 @@ lastReviewedAt: 2026-07-14
 nextReviewDueAt: 2026-10-12
 publishedAt: 2026-07-14
 week: "2026-W29"
-draft: true
+draft: false
 ---
 
 Draft từ daily pipeline (2026-07-14). Điểm cần Luan quyết trước khi publish: repo bán mạnh thông điệp "beats AI detectors / vượt máy dò AI" (đã gắn greyHatFlag: "borderline") và mang tính self-promotion cho community của tác giả — cần cân nhắc có hợp định hướng nội dung sạch của RepoRadar không, hoặc kể lại với cảnh báo rõ về E-E-A-T. Repo nhỏ (36 sao), một tác giả, chưa có tín hiệu HN/Reddit.
