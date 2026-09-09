@@ -85,7 +85,7 @@ lastReviewedAt: 2026-07-03
 nextReviewDueAt: 2026-10-01
 publishedAt: 2026-07-03
 week: "2026-W27"
-draft: true
+draft: false
 ---
 
 Draft foundation sinh trong round pipeline ngày 2026-07-03. Cần Luan quyết định có publish record này hay chỉ giữ ở mức cảnh báo, vì repo có vài kỹ thuật SEO/GEO khá rắn (greyHatFlag: borderline) cần khung kể rõ ràng.
