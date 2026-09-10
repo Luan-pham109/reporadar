@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T05:06:10.948Z",
+  "generatedAt": "2026-09-10T06:08:09.939Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -42,11 +42,11 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5217,
+          "stars": 5218,
           "forks": 193,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 196,
-          "starsPerDay": 26.6,
+          "ageDays": 197,
+          "starsPerDay": 26.5,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
           "openIssues": 121,
@@ -104,7 +104,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5217 sao, 193 fork, ~26.6 sao/ngày, 196 ngày tuổi"
+            "5218 sao, 193 fork, ~26.5 sao/ngày, 197 ngày tuổi"
           ]
         }
       },
@@ -118,12 +118,12 @@
         "fullName": "AgriciDaniel/on-page-seo",
         "url": "https://github.com/AgriciDaniel/on-page-seo",
         "description": "On-Page SEO Analyzer - Analyze your website's SEO performance",
-        "stars": 235,
+        "stars": 244,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 235"
+          "⭐ 244"
         ],
         "signalUrls": [],
         "points": 0,
@@ -140,11 +140,11 @@
         "github": {
           "fullName": "AgriciDaniel/on-page-seo",
           "description": "On-Page SEO Analyzer - Analyze your website's SEO performance",
-          "stars": 235,
-          "forks": 55,
+          "stars": 244,
+          "forks": 57,
           "createdAt": "2026-01-03T16:13:09Z",
-          "ageDays": 249,
-          "starsPerDay": 0.9,
+          "ageDays": 250,
+          "starsPerDay": 1,
           "pushedAt": "2026-06-06T05:02:38Z",
           "archived": false,
           "openIssues": 3,
@@ -159,7 +159,7 @@
           ],
           "homepage": "https://agricidaniel.com/blog/free-seo-audit-tools",
           "language": "TypeScript",
-          "suggestedHealthScore": 9
+          "suggestedHealthScore": 10
         },
         "hackerNews": [],
         "reddit": [
@@ -183,7 +183,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "235 sao, 55 fork, ~0.9 sao/ngày, 249 ngày tuổi"
+            "244 sao, 57 fork, ~1 sao/ngày, 250 ngày tuổi"
           ]
         }
       },
@@ -195,7 +195,7 @@
           "caption": ""
         }
       ],
-      "score": 1111.75
+      "score": 1112.2
     },
     {
       "candidate": {
@@ -228,7 +228,7 @@
           "stars": 157,
           "forks": 60,
           "createdAt": "2026-05-28T04:53:53Z",
-          "ageDays": 104,
+          "ageDays": 105,
           "starsPerDay": 1.5,
           "pushedAt": "2026-09-01T17:23:40Z",
           "archived": false,
@@ -275,7 +275,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "157 sao, 60 fork, ~1.5 sao/ngày, 104 ngày tuổi"
+            "157 sao, 60 fork, ~1.5 sao/ngày, 105 ngày tuổi"
           ]
         }
       },
@@ -289,13 +289,13 @@
         "fullName": "rubenmarcus/aeo.js",
         "url": "https://github.com/rubenmarcus/aeo.js",
         "description": "Answer Engine Optimization for the modern web. Make your site discoverable by ChatGPT, Claude, Perplexity & AI search engines. Generates llms.txt, robots.txt, sitemap, JSON-LD & more.",
-        "stars": 133,
+        "stars": 134,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 133",
-          "⭐ 133"
+          "⭐ 134",
+          "⭐ 134"
         ],
         "signalUrls": [],
         "points": 0,
@@ -311,14 +311,14 @@
         "github": {
           "fullName": "rubenmarcus/aeo.js",
           "description": "Answer Engine Optimization for the modern web. Make your site discoverable by ChatGPT, Claude, Perplexity & AI search engines. Generates llms.txt, robots.txt, sitemap, JSON-LD & more.",
-          "stars": 133,
+          "stars": 134,
           "forks": 17,
           "createdAt": "2026-02-20T14:03:10Z",
-          "ageDays": 201,
+          "ageDays": 202,
           "starsPerDay": 0.7,
-          "pushedAt": "2026-09-09T04:15:28Z",
+          "pushedAt": "2026-09-10T00:47:46Z",
           "archived": false,
-          "openIssues": 12,
+          "openIssues": 13,
           "topics": [
             "aeo",
             "ai-crawlers",
@@ -367,7 +367,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "133 sao, 17 fork, ~0.7 sao/ngày, 201 ngày tuổi"
+            "134 sao, 17 fork, ~0.7 sao/ngày, 202 ngày tuổi"
           ]
         }
       },
@@ -379,84 +379,95 @@
           "caption": ""
         }
       ],
-      "score": 1106.65
+      "score": 1106.7
     },
     {
       "candidate": {
-        "key": "getopenpost/openpost",
-        "fullName": "getopenpost/openpost",
-        "url": "https://github.com/getopenpost/openpost",
-        "description": "Your socials, on steroids.",
-        "stars": 101,
+        "key": "pngtrid/anvilwiki",
+        "fullName": "PNGTRID/AnvilWiki",
+        "url": "https://github.com/PNGTRID/AnvilWiki",
+        "description": "⚒️ Open-source game wiki template. Astro + Cloudflare Pages. Free, fast, beginner-friendly. Static-first, zero-JS, AI-native content workflow, unlimited bandwidth.",
+        "stars": 133,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 101"
+          "⭐ 133"
         ],
         "signalUrls": [],
         "points": 0,
         "verticals": [
+          "seo",
           "agency"
         ]
       },
       "signals": {
         "repo": {
-          "owner": "getopenpost",
-          "repo": "openpost"
+          "owner": "PNGTRID",
+          "repo": "AnvilWiki"
         },
         "github": {
-          "fullName": "getopenpost/openpost",
-          "description": "Your socials, on steroids.",
-          "stars": 101,
-          "forks": 14,
-          "createdAt": "2026-03-21T11:12:13Z",
-          "ageDays": 172,
-          "starsPerDay": 0.6,
-          "pushedAt": "2026-09-09T04:51:10Z",
+          "fullName": "PNGTRID/AnvilWiki",
+          "description": "⚒️ Open-source game wiki template. Astro + Cloudflare Pages. Free, fast, beginner-friendly. Static-first, zero-JS, AI-native content workflow, unlimited bandwidth.",
+          "stars": 133,
+          "forks": 110,
+          "createdAt": "2026-08-11T15:25:42Z",
+          "ageDays": 30,
+          "starsPerDay": 4.4,
+          "pushedAt": "2026-09-09T19:06:54Z",
           "archived": false,
-          "openIssues": 0,
+          "openIssues": 4,
           "topics": [
-            "automation",
-            "golang",
-            "self-hosted",
-            "single-binary",
-            "social-media",
-            "svelte"
+            "ai-agents",
+            "astro",
+            "cloudflare-pages",
+            "game-wiki",
+            "giscus",
+            "giscus-comments",
+            "i18n",
+            "lighthouse-100",
+            "llm",
+            "mcp",
+            "mdx",
+            "open-source",
+            "seo",
+            "static-site",
+            "tailwindcss",
+            "wiki-template"
           ],
-          "homepage": "https://openpo.st",
+          "homepage": "anvilwiki.pages.dev/landing",
           "language": "TypeScript",
-          "suggestedHealthScore": 14
+          "suggestedHealthScore": 15
         },
         "hackerNews": [],
         "reddit": [
           {
             "subreddit": "selfhosted",
-            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=openpost&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=AnvilWiki&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=AnvilWiki&restrict_sr=1&sort=new"
           },
           {
             "subreddit": "opensource",
-            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=openpost&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=AnvilWiki&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=AnvilWiki&restrict_sr=1&sort=new"
           },
           {
             "subreddit": "SideProject",
-            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=openpost&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=AnvilWiki&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=AnvilWiki&restrict_sr=1&sort=new"
           }
         ],
         "heuristic": {
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "101 sao, 14 fork, ~0.6 sao/ngày, 172 ngày tuổi"
+            "133 sao, 110 fork, ~4.4 sao/ngày, 30 ngày tuổi"
           ]
         }
       },
-      "readmeExcerpt": "<p align=\"center\">\n  <a href=\"https://openpo.st\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/brand/lockup-dark.svg\">\n      <source media=\"(prefers-color-scheme: light)\" srcset=\"./assets/brand/lockup.svg\">\n      <img alt=\"OpenPost\" src=\"./assets/brand/lockup.svg\" width=\"168\" height=\"42\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\"><strong>Create, adapt, schedule, and publish content across platforms.</strong></p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://shieldcn.dev/github/release/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=dark\">\n      <img src=\"https://shieldcn.dev/github/release/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=light\" alt=\"Latest release\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/actions/workflows/ci.yml\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://shieldcn.dev/github/ci/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=dark\">\n      <img src=\"https://shieldcn.dev/github/ci/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=light\" alt=\"Build status\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://shieldcn.dev/github/stars/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=dark\">\n      <img src=\"https://shieldcn.dev/github/stars/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=light\" alt=\"GitHub stars\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://shieldcn.dev/github/downloads/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=dark\">\n      <img src=\"https://shieldcn.dev/github/downloads/getopenpost/openpost.svg?variant=outline&amp;size=sm&amp;font=geist&amp;mode=light\" alt=\"Release downloads\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://app.openpo.st/register?plan=founder&amp;billing_period=monthly\"><strong>Start a 14-day trial</strong></a>\n  ·\n  <a href=\"https://docs.openpo.st/self-hosting\"><strong>Self-host</strong></a>\n  ·\n  <a href=\"https://docs.openpo.st\"><strong>Docs</strong></a>\n  ·\n  <a href=\"https://discord.com/invite/u2QwukmY4W\"><strong>Discord</strong></a>\n</p>\n\n<div align=\"center\">\n  <img src=\"assets/postiz-socials/Instagram.svg\" alt=\"Instagram\" width=\"32\">\n  <img src=\"assets/postiz-socials/Facebook.svg\" alt=\"Facebook\" width=\"32\">\n  <img src=\"assets/postiz-socials/Linkedin.svg\" alt=\"LinkedIn\" width=\"32\">\n  <img src=\"assets/postiz-socials/X.svg\" alt=\"X\" width=\"32\">\n  <img src=\"assets/postiz-socials/TikTok.svg\" alt=\"TikTok\" width=\"32\">\n  <img src=\"assets/postiz-socials/Youtube.svg\" alt=\"YouTube\" width=\"32\">\n  <img src=\"assets/postiz-socials/Threads.svg\" alt=\"Threads\" width=\"32\">\n  <img src=\"assets/postiz-socials/Bluesky.svg\" alt=\"Bluesky\" width=\"32\">\n  <img src=\"assets/postiz-socials/Mastodon.svg\" alt=\"Mastodon\" width=\"32\">\n  <img src=\"assets/postiz-socials/Discord.svg\" alt=\"Discord\" width=\"32\">\n</div>\n\n<p align=\"center\">\n  <img alt=\"OpenPost composer with six social destinations and scheduling controls\" src=\"./assets/screenshots/readme-hero-dark.webp\" width=\"98%\">\n</p>\n\nOpenPost combines writing, media editing, scheduling, and results in one workspace. Keep a shared draft, then adjust the text, media, and timing for each account. Review every version before publishing.\n\n[Watch the product tour](https://www.youtube.com/watch?v=_mZf3HzQaN8) · [Explore the app](https://openpo.st/features)\n\n## What you can do\n\n- <img src=\"assets/brand/features/compose.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Compose for every channel.** Write posts and threads, preview each account's version, and reuse account groups with Social Sets.\n- <img src=\"assets/brand/features/image-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Image Editor](https://app.openpo.st/image-editor).** Create layered graphics and multi-page carousels without leaving OpenPost.\n- <img src=\"assets/brand/features/video-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Video Editor](https://app.openpo.st/video-editor), beta.** Record, trim, and edit videos with a multitrack timeline, captions, and audio.\n- **AI writing and Ideate.** Find an idea, compare directions, and build drafts for your selected channels. Review the result before publishing.\n- <img src=\"assets/brand/features/calendar.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Scheduling and queues.** Pick an exact time or the next free posting slot. Plan in the calendar, stagger destinations, and get reminders when your queue runs low.\n- **Auto repost.** Set delays and engagement rules for native reposts on supported networks, with per-post overrides.\n- **Memes and media.** Caption meme templates, replace images, and save the result alongside reusable templates, fonts, and brand assets. Find media with tags, collections, and favorites.\n- **Inbox and DMs.** Read and reply to supported comments and messages.\n- <img src=\"assets/brand/features/analytics.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Analytics and repurposing.** Compare results, track audience changes, and turn previous content into a new draft.\n- **Grow.** Discover accounts to follow on Bluesky and Mastodon. You choose who to follow.\n- **API, MCP, CLI, and n8n.** Draft, schedule, and inspect publications from your own scripts or AI tools.\n- **Teams and security.** Separate brands into workspaces with member roles. Protect accounts with passkeys, two-factor authentication, and session controls.\n\n### Create your media\n\nThe browser editors are free to try without an account. Exports have no watermark.\n\n<img src=\"assets/brand/features/image-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Image Editor](https://app.openpo.st/image-editor).** Layers, text, shapes, background removal, and color tools. Export one image or a multi-page carousel.\n\n![Image Editor with a Lisbon tram photo and editable layers](assets/screenshots/image-editor-dark.webp)\n\n<img src=\"assets/brand/features/video-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Video Editor](https://app.openpo.st/video-editor), beta.** Screen, camera, and microphone recording. Multitrack editing, captions, transitions, keyframes, color, and audio. Save projects locally or sync to your workspace. Use desktop Chromium for the full editor; mobile supports capture and project preparation.\n\n![Video Editor with a screen recording and multitrack timeline](assets/screenshots/video-editor-dark.webp)\n\n[Quick Cut for simple trims](https://docs.openpo.st/guides/quick-cut) · [Explore all features](https://openpo.st/features) · [Usage guides](https://docs.openpo.st/guides/quickstart) · [API reference](https://docs.openpo.st/api-reference)\n\n## Get started\n\n**Hosted.** We run it for you. [Start a 14-day trial](https://app.openpo.st/register?plan=founder&billing_period=monthly)\n\n| Plan   | Best for      | Monthly | Yearly |\n| ------ | ------------- | ------: | -----: |\n| Solo   | Solo founders |     $29 |   $290 |\n| Team   | Small teams   |     $59 |   $590 |\n| Agency | Client work   |     $99 |   $990 |\n\nEvery plan includes all features. Plans include 1, 3, or 10 workspaces, with 1, 5, or 10 people per workspace. No seat add-ons or automatic overage charges. [Compare plans and limits](https://openpo.st/pricing).\n\n**Self-host.** Run OpenPost with Docker on your server:\n\n```bash\ngit clone https://github.com/getopenpost/openpost.git\ncd openpost\ncp .env.example .env\n# set fresh secrets and OPENPOST_APP_URL, OPENPOST_PUBLIC_URL, OPENPOST_MEDIA_URL\ndocker compose up -d\n```\n\nOpen `http://localhost:8080`, create the first account, connect a social account. Default setup is one container, SQLite, local media.\n\n[Installation reference](https://docs.openpo.st/self-hosting/) · [Hosted or self-hosted?](https://openpo.st/self-hosting)\n\n**Automate.** [CLI guide](https://docs.openpo.st/guides/automation) · [MCP guide](https://docs.openpo.st/mcp/) · [API reference](https://docs.openpo.st/api-reference)\n\n## Supported platforms\n\nOpenPost has integrations for LinkedIn, Facebook, Instagram, X, TikTok, YouTube, Threads, Bluesky, Mastodon, and Discord webhooks. Publishing formats, messages, comments, analytics, and Grow support vary by platform. Some connections need app review or public media URLs.\n\n<!-- provider-certification:begin -->\n\nNo posting option has passed our final live check on OpenPost Hosted yet.\n\nA social app can appear in OpenPost before it is ready for real accounts.\n\n<!-- provider-certification:end -->\n\nPinterest, Discord bots, and Telegram bots are not public posting options yet.\n\n[Connect accounts](https://docs.openpo.st/guides/accounts) · [Self-hosted integrations](https://docs.openpo.st/self-hosting/integrations)\n\n## Contribute\n\nOpenPost uses Go, SvelteKit, and Expo. Development tools run through Devenv.\n\n```bash\ndirenv allow\ndevenv shell -- setup\nbun run verify\n```\n\nRead [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md) and the [development setup](https://github.com/getopenpost/openpost/blob/main/docs/development/setup.md) before opening a PR.\n\n## Star history\n\n<!-- star-history:start -->\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/star-history/star-history-dark.svg\">\n  <img alt=\"Star history\" src=\"assets/star-history/star-history-light.svg\">\n</picture>\n<!-- star-history:end -->\n\n## License and security\n\n[AGPL-3.0-only](LICENSE). See [third-party notices](licenses/README.md). Report vulnerabilities privately through the [security policy](.github/SECURITY.md).\n",
+      "readmeExcerpt": "# AnvilWiki ⚒️\n\n> 带 AI 内容工作流的游戏 wiki 模板——广告收入 100% 归你。\n> 开源、Cloudflare Pages 原生优化、零成本免费部署上线。\n> fork 后 5 条命令 + 一次点选部署上线;唯一必要开销是一个域名——不会编程也走得完(双手册带路)。\n>\n> The game wiki template with an AI-native content workflow — 100% of your ad revenue.\n> Open source, natively optimized for Cloudflare Pages, free to deploy.\n> Five commands and one dashboard click from fork to live; the only required spend is a domain — no coding needed.\n\n**[📖 中文文档](#-中文文档) · [English Documentation](#-english-documentation)**\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)\n[![Astro](https://img.shields.io/badge/Astro-5.x-FF5D01?logo=astro&logoColor=white)](https://astro.build)\n[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages-F38020?logo=cloudflare&logoColor=white)](https://pages.cloudflare.com)\n[![Release](https://img.shields.io/github/v/release/PNGTRID/AnvilWiki?label=Release&color=brightgreen)](https://github.com/PNGTRID/AnvilWiki/releases)\n[![CI](https://github.com/PNGTRID/AnvilWiki/actions/workflows/ci.yml/badge.svg)](https://github.com/PNGTRID/AnvilWiki/actions/workflows/ci.yml)\n[![Live Demo](https://img.shields.io/badge/Demo-anvilwiki.pages.dev-brightgreen)](https://anvilwiki.pages.dev/)\n[![Docs](https://img.shields.io/badge/Docs-/landing/docs-8b5cf6)](https://anvilwiki.pages.dev/landing/docs)\n[![Works with](https://img.shields.io/badge/Works_with-Claude_Code_%7C_Codex_%7C_Cursor_%7C_ZCode-blueviolet)](.agent/skills/)\n\n[![Demo site homepage](public/images/showcase/demo-home.webp)](https://anvilwiki.pages.dev/)\n\n<p align=\"center\">\n  <a href=\"https://anvilwiki.pages.dev/bosses/emberfang/\"><img src=\"public/images/showcase/demo-article.webp\" width=\"32%\" alt=\"Boss stat card\"></a>\n  <a href=\"https://anvilwiki.pages.dev/codes/all-codes/\"><img src=\"public/images/showcase/demo-codes.webp\" width=\"32%\" alt=\"Codes page — tap to copy\"></a>\n  <a href=\"https://anvilwiki.pages.dev/guides/weapon-tier-list/\"><img src=\"public/images/showcase/demo-tier-list.webp\" width=\"32%\" alt=\"Weapon tier list\"></a>\n</p>\n\n> Boss 数据卡 · 兑换码一键复制 · 武器强度榜——wiki 级呈现的其中三页,点图直达对应页面。Boss stat cards, tap-to-copy codes, tier lists — three of the wiki-grade page types; click through to the live pages.\n\n> Lighthouse 4×100 — 实测于 [anvilwiki.pages.dev](https://anvilwiki.pages.dev/)（2026-09-03）\n> \n> [![Performance 100](https://img.shields.io/badge/Performance-100-058627?style=flat-square&logo=lighthouse&logoColor=white)](https://anvilwiki.pages.dev/)\n> [![Accessibility 100](https://img.shields.io/badge/Accessibility-100-058627?style=flat-square&logo=lighthouse&logoColor=white)](https://anvilwiki.pages.dev/)\n> [![Best Practices 100](https://img.shields.io/badge/Best_Practices-100-058627?style=flat-square&logo=lighthouse&logoColor=white)](https://anvilwiki.pages.dev/)\n> [![SEO 100](https://img.shields.io/badge/SEO-100-058627?style=flat-square&logo=lighthouse&logoColor=white)](https://anvilwiki.pages.dev/)\n\n---\n\n## 🚀 快速链接\n\n| 你想… | 去这里 |\n|---|---|\n| **零基础从零做一个赚钱的游戏站** | 📚 [学习手册](https://anvilwiki.pages.dev/zh/landing/docs/learn)——每步写明「做什么/怎么做/你会看到什么」,含可复制的 AI 提示词 |\n| 看「从零到赚钱」的全部工作量 | 🗺️ [文档中心首页](https://anvilwiki.pages.dev/zh/landing/docs)——10 件事全景清单,逐项点入 |\n| 深度定制 / 给模板写代码 | 🔧 [开发手册](https://anvilwiki.pages.dev/zh/landing/docs/dev) |\n| 看看做出来长什么样 | 🎮 [在线 Demo](https://anvilwiki.pages.dev/)——虚构游戏「Anvil Quest」的完整 wiki |\n| 对比 Fandom / Wiki.js / 其他方案 | ⚖️ [完整对比页](https://anvilwiki.pages.dev/zh/landing/comparison)——三种物种、自托管引擎数据表、什么时候不该选 AnvilWiki |\n\n## 📖 中文文档\n\n### 5 分钟快速开始\n\n**跑完这一节你会得到**:一个跑在 Cloudflare 免费版上、属于你自己的 wiki 站(先以 demo 内容上线,换成你的游戏、清掉 demo,随时可以做)。\n\n**开始前需要**:[Node.js 22+](https://nodejs.org) 和 pnpm(没装 pnpm?终端跑 `npm install -g pnpm`;或跟着[学习手册「装好 6 样工具」一课](https://anvilwiki.pages.dev/zh/landing/docs/install-tools)把 6 样工具一次装齐)。\n\n```bash\n# 1. Fork 本仓库(仓库右上角 Fork 按钮),然后克隆你的 fork(换成你的 GitHub 用户名)\ngit clone https://github.com/<你的用户名>/AnvilWiki.git\ncd AnvilWiki\n\n# 2. 安装依赖并本地预览\npnpm install\npnpm dev            # 打开 http://localhost:4321,能看到 demo 站 = 环境通了\n\n# 3. 一条问答式命令,把 demo 站换成你的游戏(游戏名/主题色/域名/语言…)\npnpm apply-template\n\n# 4. 把改动推回你的 fork\ngit add .\ngit commit -m \"Apply my game\"\ngit push           # 第 5 步 Cloudflare 连的是 GitHub 远端仓库,不推上去它连到的还是 demo\n\n# 5. 部署:cloudflare.com → Workers & Pages → Create → Pages → Connect to Git → 选你的 fork\n#    构建命令 pnpm build、输出目录 dist 会自动识别;环境变量加 NODE_VERSION=22\n```\n\n> 💡 **SITE_URL 不用去 dashboard 配**:第 3 步已经把它写进 `wrangler.toml` 的 `[vars]`——只要这个文件存在,它就是 Cloudflare Pages 环境变量的**唯一真相源**,dashboard 里配的同名变量会被忽略。以后换域名,改 `[vars]` 里的 `SITE_URL`(必须含 `https://`)即可;也可以删掉该文件改用 dashboard 配置。完整说明 + 踩坑诊断见 [docs/deployment.md](docs/deployment.md)。\n\n**不想碰终端?有一条零命令路径**:fork 后打开你仓库的 **Actions** 页签 → 左侧选 **Initialize AnvilWiki** → **Run workflow**(填你的域名)→ 合并它开好的 PR → 直接做上面的第 5 步。游戏名、主题色等之后随时可以让 AI 助手帮你改。\n\n**完全新手?别从这里开始**——先去[学习手册](https://anvilwiki.pages.dev/zh/landing/docs/learn):「选品找词」一个阶段帮你把游戏选对,「装好 6 样工具」把终端、Node、Git、AI 助手怎么装、每步会看到什么全部写清,然后「把站跑起来」才动手建站。手册源码在 [`docs/handbook/`](docs/handbook/),fork 后依然保留(但站内文档中心页面会自动移除,属正常)。\n\n### 这是什么？\n\nAnvilWiki 是一个**游戏 SEO 内容站模板**——用来快速搭建围绕某款游戏(Roblox、Steam 新游等)的攻略内容站,通过 SEO 获取流量,通过广告变现。**广告收入 100% 归你**:无平台抽成、无收入分成(对比 Fandom 等托管 wiki 的平台分成模式)。\n\n技术栈是 **Astro + Cloudflare Pages**:纯静态输出、零适配器、免费无限带宽、全球 CDN、零 JS 优先(首屏极快)。\n\n**适合谁**:想靠游戏内容做副业、会用浏览器但**不会编程**的人(学习手册就是按这个标准写的),以及想被 AI 工作流加速的内容创作者。\n\n### 核心特性\n\n- 📚 **零基础双手册**:学习手册(6 阶段 29 课+3 附录)+ 开发手册(9 课),中英双语,从选游戏到赚到钱,每步 SOP + 可复制 AI 提示词([站内阅读](https://anvilwiki.pages.dev/zh/landing/docs))\n- 🤖 **AI 对话即产页**:内容技能随仓库分发(`.agent/skills/`),对 ZCode / Claude Code / Codex 说「根据这些笔记写篇攻略」,产出自动通过构建质检;批量产页走 **PR 门控管道**——AI 写、八道质量门禁验、你审完才合并([docs/content-pipeline.md](docs/content-pipeline.md))\n- 🧭 **一套工具管 N 个站**:`anvilwiki-ops`(npx 免安装 + MCP)让 AI 替你拉 GSC/Cloudflare 数据、给优化清单,并追踪 ChatGPT/Perplexity 等 **AI 引用来路**([docs/multi-site.md](docs/multi-site.md))\n- 🧰 **产能三件套**:`pnpm template-audit` 检查「这个站还能不能干净复制成下一个」、`pnpm bulk-new-posts` 从关键词清单批量铺内页草稿、`pnpm gen-covers` 自动生成 1200×675 封面(中日文标题自动配字体)\n- 💰 **变现三件套**:AdSense 广告位 ×3 + 联盟链接组件 + 文末建议位,全部默认关闭、env/config 驱动,收入 100% 归你([docs/ads.md](docs/ads.md))\n- 🔍 **SEO 工程化**:sitemap(含 lastmod)/ JSON-LD 全套 / hreflang / Quick Answer 摘要块 / llms.txt(AI 搜索),全部自动生成\n- ⚡ **Lighthouse 4×100 开箱即得**:Astro 零 JS 优先,开了广告也不掉分\n- 🆓 **零成本**:Cloudflare Pages 免费无限带宽 + 全球 CDN + SSL,永远没有服务器账单\n- 🌍 **多语言开箱即用**:英文无前缀(SEO 最优),缺失内容自动回退英文,直链永不 404\n- 🎮 **wiki 级呈现**:Boss 数据卡、兑换码一键复制、TOC 滚动高亮、画廊灯箱、Giscus 评论(默认关)\n\n### 用 AI 直接生成内容(无需脚本)\n\nfork 后用 ZCode / Claude Code / Codex / Cursor 打开仓库,直接对话即可产页。Agent 会自动加载仓库里的内容规范,生成后自动跑 `pnpm check-content && pnpm build` 自检。内置 6 个技能:\n\n| 技能 | 用途 |\n|---|---|\n| `anvil-find-keywords` | 挖词选品:9 渠道自动挖候选 → SERP 快验+意图满足度 → 判决打分,落盘决策管理表(含复查日) |\n| `anvil-new-article` | 任意素材(口述/视频字幕/原始数据)→ 合规 MDX 文章,支持 YouTube 视频转攻略 |\n| `anvil-batch-articles` | 关键词清单 → 批量生成一批内页(意图归类 → `bulk-new-posts` 脚手架 → 统一提示词填充) |\n| `anvil-update-codes` | 新兑换码/过期码 → 更新 codes 页并同步多语言 |\n| `anvil-refresh` | 新鲜度巡检 → 输出「该更新什么」优先级清单 |\n| `anvil-adsense-audit` | AdSense 申请前逐项体检(22 项政策清单,模板已解决的项自动给证据) |\n\n完整的提示词库(选品分析、产页、批量产页、翻译、SEO 体检、关键词选题等模板)在[学习手册](https://anvilwiki.pages.dev/zh/landing/docs/learn)里,整段复制就能用。\n\n### 文档在哪里?\n\n| 入口 | 内容 |\n|---|---|\n| 📚 [站内文档中心](https://anvilwiki.pages.dev/zh/landing/docs) | **首选**:双手册 + 「从零到赚钱 10 件事」全景清单,中英双语 |\n| 🗂️ [docs/README.md](docs/README.md) | 仓库内全部参考文档索引(选品/挖词/部署/SEO/广告/内容管道/多站运营…),按角色与时机分类,附四条阅读路径 |\n| 📋 [requirements/](requirements/) | 建站前素材准备模板:事实来源表 + 对标参考表 |\n| 🏗️ [docs/PRD.md](docs/PRD.md) | 架构唯一真相源:想知道「为什么这么设计」看这里 |\n\n### 为什么不用 Fandom / 自建 Next.js?\n\n| | AnvilWiki | Fandom 类平台 | 自建 Next.js |\n| --- | --- | --- | --- |\n| 广告收入 | **100% 归你**(自带 AdSense 位) | 平台抽成 | 归你,但要自己接 |\n| 每月成本 | **¥0**(Cloudflare Pages 免费无限带宽) | 免费(代价是失去控制权) | Vercel 免费额度有限 |\n| Lighthouse | **4×100 开箱即得** | 平台决定 | 自己调优数周 |\n| AI 产页 | **技能随仓库分发,对话即产页** | 无 | 自己搭 |\n| 上手门槛 | **零基础引导式双手册** | 低但受制于人 | 高 |\n\n更完整的选型对比——含 Wiki.js、BookStack、MediaWiki、DokuWiki、Docmost 五个自托管引擎的数据表,以及「什么时候不该选 AnvilWiki」:见[完整对比页](https://anvilwiki.pages.dev/zh/landing/comparison)。\n\n### 常见问题\n\n- **要花多少钱?** 托管 ¥0;唯一必要开销是域名(一年几十块,AdSense 审核需要)。\n- **不会编程能做吗?** 能。学习手册按「完全零基础」标准写,每步都有「你会看到什么」;所有代码活交给 AI 助手。\n- **多久有收入?** 黄金窗口是游戏爆发后 2-8 周,头 1-2 周收入为零是正常的——手册「第一周读数」「每周 30 分钟」两课讲怎么经营预期。\n- **模板更新了,我的站会被覆盖吗?** 不会。三层分离设计,合并上游时你的游戏配置和文章永远保留(见 [docs/staying-up-to-date.md](docs/staying-up-to-date.md))。\n\n### 用 AnvilWiki 建了站?欢迎提交 Showcase\n\n真实案例是这个模板最有力的证明(按提交顺序排列):\n\n| 站点 | 游戏 | 简介 |\n| --- | --- | --- |\n| [Aniimo Wiki](https://aniimo.wiki/) | Aniimo(Roblox) | 攻略、强度榜与最新兑换码 |\n| [No Man's Sky Wiki](https://nomanssky.wiki/) | 无人深空(Steam) | 机制资料与版本更新攻略 |\n| [Steal an Egg Wiki](https://steal-anegg.wiki/) | Steal an Egg(Roblox) | 宠物、蛋、兑换码与玩法攻略 |\n| [Jujutsu Shenanigans Player Guide](https://jjs-player-guide.pages.dev/) | Jujutsu Shenanigans(Roblox) | 中英日三语玩家 wiki：角色路线、Black Flash、地图、兑换码与版本更新 |\n| [Mortal Shell II Wiki](https://mortalshell2.space/) | Mortal Shell II | Shell、武器、Boss、地点、物品与 Open Beta 攻略 |\n| [Sephiria Builds](https://sephiriabuilds.xyz/) | Sephiria | 动作肉鸽 Sephiria 的 build 数据库——带版本戳的武器强度榜与证据分级的 build 攻略 |\n| [Resonance Wiki](https://resonanceplaguetale.wiki/) | Resonance: A Plague Tale Legacy | 全章节流程攻略、全部收集品位置、奖杯路线图、谜题解法与技能推荐 |\n\n提 PR 在 `src/config/landing.ts` 的 `COMMUNITY_SITES` 追加一条即可——官网([/landing](https://anvilwiki.pages.dev/landing) 与 [/zh/landing](https://anvilwiki.pages.dev/zh/landing))的「Built with AnvilWiki」区块会自动展示。\n\n### 交流群 / 技术栈 / 许可\n\n微信扫码添加主理人好友,拉你进群交流讨论(部署问题、功能建议、游戏内容站经验都欢迎;[项目官网](https://anvilwiki.pages.dev/zh/landing)右下角也有同款悬浮扫码按钮):\n\n<p align=\"center\">\n  <img src=\"public/images/wechat-qr.jpg\" width=\"200\" alt=\"微信二维码——扫码添加好友进群交流\" />\n</p>\n\n技术栈:Astro 5(静态输出)+ Tailwind CSS 3 + MDX 4 + astro-icon/lucide + Content Layer API(Zod)+ Pagefind 搜索 + pnpm 11 / Node 22。\n\n许可:**MIT**,见 [LICENSE](LICENSE)。\n\n致谢:选品判决框架([docs/sourcing.md](docs/sourcing.md) 第四节)参考了 [yan-labs/yan-skills](https://github.com/yan-labs/yan-skills)(MIT)的 game-opportunity 技能;AdSense 申请前审计技能(`/anvil-adsense-audit`)的审计框架受 [yantoumu/adsense-site-auditor-skill](https://github.com/yantoumu/adsense-site-auditor-skill) 启发(清单为模板特化重写,未复制其文本);视频转攻略工作流(`anvil-new-article` Step 0)的管线设计参考 [kennyzir/7deer_skills](https://github.com/kennyzir/7deer_skills/tree/main/youtube-content-gen)(MIT)的 youtube-content-gen 技能。感谢三个项目把方法论开源出来。\n\n---\n\n## 📖 English Documentation\n\n| I want to… | Go here |\n|---|---|\n| **Build a money-making game site from zero** | 📚 [Learning Manual](https://anvilwiki.pages.dev/landing/docs/learn) — every step a SOP with copy-paste AI prompts |\n| See the whole journey first | 🗺️ [Docs hub](https://anvilwiki.pages.dev/landing/docs) — a 10-job whole-picture checklist |\n| Customize deeply / contribute code | 🔧 [Development Manual](https://anvilwiki.pages.dev/landing/docs/dev) |\n| See what it looks like | 🎮 [Live demo](https://anvilwiki.pages.dev/) — a complete wiki for the fictional game \"Anvil Quest\" |\n| Compare Fandom / Wiki.js / alternatives | ⚖️ [Full comparison](https://anvilwiki.pages.dev/landing/comparison) |\n\n### Quick Start (5 min)\n\n**What you'll have when this section is done**: your own wiki live on Cloudflare's free tier (it ships with demo content first — rebranding and demo removal come whenever you're ready).\n\n**Prerequisites**: [Node.js 22+](https://nodejs.org) and pnpm (no pnpm? run `npm install -g pnpm` — or let [the \"Install the 6 Tools\" lesson](https://anvilwiki.pages.dev/landing/docs/install-tools) walk you through all six tools).\n\n```bash\n# 1. Fork this repo (Fork button, top right), then clone YOUR fork (replace the username)\ngit clone https://github.com/<your-username>/AnvilWiki.git\ncd AnvilWiki\n\n# 2. Install & preview locally\npnpm install\npnpm dev            # open http://localhost:4321 — seeing the demo site means your env works\n\n# 3. One guided Q&A command swaps the demo for your game (name/theme/domain/locales…)\npnpm apply-template\n\n# 4. Push the changes back to your fork\ngit add .\ngit commit -m \"Apply my game\"\ngit push           # step 5 connects Cloudflare to the REMOTE repo — skip this and it deploys the demo\n\n# 5. Deploy: cloudflare.com → Workers & Pages → Create → Pages → Connect to Git → pick your fork\n#    Build `pnpm build` and output `dist` are auto-detected; add env NODE_VERSION=22\n```\n\n> 💡 **No need to set SITE_URL in the dashboard**: step 3 already wrote it into `[vars]` in `wrangler.toml` — while that file exists it is the **sole source of truth** for Cloudflare Pages env, and same-named dashboard variables are ignored. To change domains later, edit `SITE_URL` in `[vars]` (must include `https://`), or delete the file and use the dashboard instead. Full explanation + troubleshooting: [docs/deployment.md](docs/deployment.md).\n\n**Prefer zero terminal?** There's a no-command path: open your fork's **Actions** tab → **Initialize AnvilWiki** → **Run workflow** (enter your domain) → merge the PR it opens → jump straight to step 5 above. Game name, theme color and more can be changed later with your AI assistant.\n\n**Complete beginner?** Don't start here — start with the [Learning Manual](https://anvilwiki.pages.dev/landing/docs/learn): the Pick & Validate stage picks your game, \"Install the 6 Tools\" walks you through every install with \"what you'll see\" on each step, and \"Run Your Site\" is where the site gets built. The handbook source lives in [`docs/handbook/`](docs/handbook/) and stays in your fork (the in-site docs center pages are auto-removed for forks — that's expected).\n\n### What is this?\n\nAnvilWiki is an **open-source game wiki site template**: build a content site around a game (Roblox, Steam new releases…), pull traffic via SEO, monetize with ads — **100% of the ad revenue is yours**. Built on Astro + Cloudflare Pages: pure static, zero adapters, free unlimited bandwidth, Lighthouse 4×100 out of the box.\n\n### Key Features\n\n- 📚 **Two beginner manuals**: Learning (6 stages, 29 lessons + 3 appendices) + Development (9 lessons), bilingual, zero to revenue, every step a SOP with copy-paste AI prompts ([read online](https://anvilwiki.pages.dev/landing/docs))\n- 🤖 **Talk to generate pages**: agent skills ship inside the repo (`.agent/skills/`) — say \"write a boss guide from these notes\" and get a build-check-passing page; batches go through a **PR-gated pipeline** — AI writes, 8 quality gates verify, you review and merge ([docs/content-pipeline.md](docs/content-pipeline.md))\n- 🧭 **Run N sites from one toolkit**: `anvilwiki-ops` (npx + MCP) lets your AI pull GSC/Cloudflare data, rank SEO actions, and track **AI referrals** from ChatGPT/Perplexity ([docs/multi-site.md](docs/multi-site.md))\n- 🧰 **Production trio**: `pnpm template-audit` scores how cleanly this site can be copied into the next game's, `pnpm bulk-new-posts` scaffolds a batch of inner pages from a keyword list, `pnpm gen-covers` auto-generates 1200×675 covers (CJK titles auto-fonted)\n- 💰 **Monetization trio**: 3 AdSense slots + affiliate link component + end-of-article suggestion cards — all off by default, env/config-gated, 100% revenue yours ([docs/ads.md](docs/ads.md))\n- 🔍 **SEO engineering**: sitemap (lastmod) / JSON-LD suite / hreflang / Quick Answer blocks / llms.txt — all automatic\n- ⚡ **Lighthouse 4×100 out of the box**: zero-JS-first Astro, stays green with ads on\n- 🆓 **Free forever**: Cloudflare Pages, unlimited bandwidth, global CDN, SSL\n- 🌍 **i18n built in**: English at root (SEO-optimal), English fallback, URLs never 404\n- 🎮 **Wiki-grade presentation**: boss stat cards, tap-to-copy codes, TOC scroll-spy, gallery lightbox, Giscus comments (off by default)\n\n### Generate content by talking to your AI (no scripts needed)\n\nAfter forking, open the repo in ZCode / Claude Code / Codex / Cursor and just talk. Agents auto-load the content spec shipped in the repo and self-check with `pnpm check-content && pnpm build` after generating. Six skills are built in:\n\n| Skill | What it does |\n|---|---|\n| `anvil-find-keywords` | Keyword & game sourcing: mine candidates across 9 channels → SERP + intent checks → scoring framework, outputs a decision pipeline table with review dates |\n| `anvil-new-article` | Any source material (",
       "media": [],
-      "score": 1105.05
+      "score": 1106.65
     }
   ]
 }
