@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T06:08:09.939Z",
+  "generatedAt": "2026-09-11T06:10:56.239Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -42,11 +42,11 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5218,
-          "forks": 193,
+          "stars": 5225,
+          "forks": 194,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 197,
-          "starsPerDay": 26.5,
+          "ageDays": 198,
+          "starsPerDay": 26.4,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
           "openIssues": 121,
@@ -104,7 +104,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5218 sao, 193 fork, ~26.5 sao/ngày, 197 ngày tuổi"
+            "5225 sao, 194 fork, ~26.4 sao/ngày, 198 ngày tuổi"
           ]
         }
       },
@@ -118,12 +118,12 @@
         "fullName": "AgriciDaniel/on-page-seo",
         "url": "https://github.com/AgriciDaniel/on-page-seo",
         "description": "On-Page SEO Analyzer - Analyze your website's SEO performance",
-        "stars": 244,
+        "stars": 247,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 244"
+          "⭐ 247"
         ],
         "signalUrls": [],
         "points": 0,
@@ -140,10 +140,10 @@
         "github": {
           "fullName": "AgriciDaniel/on-page-seo",
           "description": "On-Page SEO Analyzer - Analyze your website's SEO performance",
-          "stars": 244,
+          "stars": 247,
           "forks": 57,
           "createdAt": "2026-01-03T16:13:09Z",
-          "ageDays": 250,
+          "ageDays": 251,
           "starsPerDay": 1,
           "pushedAt": "2026-06-06T05:02:38Z",
           "archived": false,
@@ -183,7 +183,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "244 sao, 57 fork, ~1 sao/ngày, 250 ngày tuổi"
+            "247 sao, 57 fork, ~1 sao/ngày, 251 ngày tuổi"
           ]
         }
       },
@@ -195,7 +195,116 @@
           "caption": ""
         }
       ],
-      "score": 1112.2
+      "score": 1112.35
+    },
+    {
+      "candidate": {
+        "key": "evolinkai/gpt-image-2.5-for-e-commerce",
+        "fullName": "EvoLinkAI/gpt-image-2.5-for-e-commerce",
+        "url": "https://github.com/EvoLinkAI/gpt-image-2.5-for-e-commerce",
+        "description": "GPT Image 2.5 for e-commerce: prompt cookbook for listing photos, model try-on, product showcases, interaction scenes, and social commerce creatives.",
+        "stars": 177,
+        "sources": [
+          "github-search"
+        ],
+        "signals": [
+          "⭐ 177"
+        ],
+        "signalUrls": [],
+        "points": 0,
+        "verticals": [
+          "ecom",
+          "creative",
+          "agency"
+        ]
+      },
+      "signals": {
+        "repo": {
+          "owner": "EvoLinkAI",
+          "repo": "gpt-image-2.5-for-e-commerce"
+        },
+        "github": {
+          "fullName": "EvoLinkAI/gpt-image-2.5-for-e-commerce",
+          "description": "GPT Image 2.5 for e-commerce: prompt cookbook for listing photos, model try-on, product showcases, interaction scenes, and social commerce creatives.",
+          "stars": 177,
+          "forks": 39,
+          "createdAt": "2026-05-08T02:50:26Z",
+          "ageDays": 126,
+          "starsPerDay": 1.4,
+          "pushedAt": "2026-09-09T16:34:49Z",
+          "archived": false,
+          "openIssues": 0,
+          "topics": [
+            "ai-design",
+            "ai-image-generation",
+            "catalog-images",
+            "creative-automation",
+            "e-commerce",
+            "ecommerce-tools",
+            "evolink",
+            "gpt-image-2",
+            "gpt-image-2-api",
+            "image-editing",
+            "image-generation",
+            "marketing-assets",
+            "merchant-tools",
+            "model-tryon",
+            "openai",
+            "product-photography",
+            "prompt-engineering",
+            "retail-tech",
+            "text-to-image",
+            "visual-commerce"
+          ],
+          "homepage": "https://evolink.ai/gpt-image-2-5-sunburst",
+          "language": null,
+          "suggestedHealthScore": 15
+        },
+        "hackerNews": [],
+        "reddit": [
+          {
+            "subreddit": "selfhosted",
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=gpt-image-2.5-for-e-commerce&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=gpt-image-2.5-for-e-commerce&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "opensource",
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=gpt-image-2.5-for-e-commerce&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=gpt-image-2.5-for-e-commerce&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "SideProject",
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=gpt-image-2.5-for-e-commerce&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=gpt-image-2.5-for-e-commerce&restrict_sr=1&sort=new"
+          }
+        ],
+        "heuristic": {
+          "maturitySuggestion": "rising",
+          "reasons": [
+            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
+            "177 sao, 39 fork, ~1.4 sao/ngày, 126 ngày tuổi"
+          ]
+        }
+      },
+      "readmeExcerpt": "<div align=\"center\">\n\n<a href=\"https://evolink.ai/gpt-image-2-5-sunburst?utm_source=github&utm_medium=readme&utm_campaign=gpt-image-2-for-e-commerce\"><img src=\"https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/0c24174093e85c9572f7df4cf99d175d1d177b3dd92874ea4491938527925e50.png\" alt=\"GPT Image 2.5 for E-commerce\"></a>\n\n[![Prompts Library](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/59378b5b6f8faec8fc98d4d89cb41afc9d74092aefeae96aa9f8bb9d40783eee.svg)](https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts?utm_source=github&utm_medium=readme&utm_campaign=gpt-image-2-for-e-commerce)\n[![License: CC BY 4.0](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/632a4166db121cbc74659105383a3e0ecbb52ac5f33cea7dd43dc6daaf932a52.svg)](LICENSE)\n[![Try it on Evolink](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/c8ae3522d89f7df322b8a7a05589e01eb85fbcf11f9525275d1995321f6c8c1c.svg)](https://evolink.ai/gpt-image-2-5-sunburst?utm_source=github&utm_medium=readme&utm_campaign=gpt-image-2-for-e-commerce)\n[![Website](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/9147d286266dcc597d447f12b0dff2a4190acdbe53b38d17e5e3b111ab7fb8d4.svg)](https://evolink.ai/gpt-image-2-5-sunburst?utm_source=github&utm_medium=readme&utm_campaign=gpt-image-2-for-e-commerce)\n[![Docs](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/be0b35053d336e9bef3e1025d0c1e9d6a6bbc1faca0a52360df2afb14023d6e7.svg)](https://evolink.ai/docs/en/api-manual/image-series/gpt-image-2.5/gpt-image-2.5-image-generation)\n[![Model](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/f22a35c1fedd773917da4636ade57318a04da68c62e712d0ba332d7feee8af84.svg)](https://evolink.ai/gpt-image-2-5-sunburst?utm_source=github&utm_medium=readme&utm_campaign=gpt-image-2-for-e-commerce)\n\n[![🇺🇸 English](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/93602026b7fdbf1ebbf03df643aacc93b2885c5f6435baf1dac880076a6867f4.svg)](README.md)\n[![🇪🇸 Español](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/71c116effd0e23678af50034024ae175c5a87b91b7efeebb3b199ddf9152527f.svg)](README_es.md)\n[![🇵🇹 Português](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/44020e566d7f3440fbb06af5777cec4ea56e85e4a01a86e55d3881c9bf82b2ab.svg)](README_pt.md)\n[![🇯🇵 日本語](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/4e61f72d0dd72f7a20a14c244496d884661130c58a71aa86ca779afa57a15411.svg)](README_ja.md)\n[![🇰🇷 한국어](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/9f9713a3baabe43050a016c1954809c5cdc5f5429e18174fe5aa29431cb4b306.svg)](README_ko.md)\n[![🇩🇪 Deutsch](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/651976983313db363537124f174a001a972ceb3b85b2bd56f1a082d8864b2ccb.svg)](README_de.md)\n[![🇫🇷 Français](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/e76ed4a5d4635124ed7c26adf15de5eba6df48c8740838ff6ccd3bd6b3c94532.svg)](README_fr.md)\n[![🇹🇷 Türkçe](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/95031898ae48c8f599cc0c85ecede77b74551f0cc2e8a2b834eda3bd1a555b20.svg)](README_tr.md)\n[![🇹🇼 繁體中文](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/a3b82546916a92d618397fcb91b72acdaae99c368a68847e29acdace0f1312c3.svg)](README_zh-TW.md)\n[![🇨🇳 简体中文](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/05040ab55dc8c63104ffc3dbc377d878e3e0ca6c7d303fc24f56eb57aa1631ce.svg)](README_zh-CN.md)\n[![🇷🇺 Русский](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/5571741d737d44e1916416a68e054ea7a41b9e1ae5427c7e67ad1388fb5a4db8.svg)](README_ru.md)\n\n</div>\n\n# How to Use GPT Image 2.5 for E-commerce\n\n> A prompt cookbook for creating e-commerce images with **GPT Image 2.5** — listing photos, model try-on, product showcases, interaction scenes, and social commerce creatives.\n\n## 🍌 Introduction\n\nThis repository shows you **how to use GPT Image 2.5 to create e-commerce images** — listing photos, multi-country main images, A+ detail visuals, model try-on, product showcases, interaction scenes, and social commerce creatives — at production scale.\n\n**Every case below is a recipe:** an input product photo, the exact prompt to paste into GPT Image 2.5, and real output examples. Replace the `{placeholders}` with your product, language, country, and selling points.\n\nIf you find it useful, please give us a Star ⭐\n\n> [!NOTE]\n> This repository focuses on reusable prompt templates for ecommerce creatives. Replace the placeholders inside curly braces before use, and adjust to fit your actual platform, market, language, product, material, model type, and selling points.\n\n## How to Use These Prompts\n\n1. **Pick a case** below that matches your e-commerce goal (listing main image, model try-on, multi-angle product, A+ detail visuals, etc.).\n2. **Upload your product photo** and **copy the prompt** from that case — replace `{placeholders}` with your product, language, country, platform, and selling points.\n3. **Run it on GPT Image 2.5** — either through the [Evolink workflow UI](https://evolink.ai/gpt-image-2-5-sunburst?utm_source=github&utm_medium=readme&utm_campaign=gpt-image-2-for-e-commerce) for one-off creatives, or via the [Evolink API](#-batch-generation-via-evolink-api) for bulk SKUs and multi-language rollouts.\n\n## 📑 Menu\n\n- [✨ GPT Image 2.5: One Product, Three E-commerce Workflows](#gpt-image-25-workflows)\n  - [Change the Scene, Keep the Product](#gpt-image-25-case-1)\n  - [UGC-style Product Promotion](#gpt-image-25-case-2)\n  - [E-commerce Visuals for Different Language Markets](#gpt-image-25-case-3)\n\n- [🍌 Introduction](#-introduction)\n- [How to Use These Prompts](#how-to-use-these-prompts)\n- [📑 Menu](#-menu)\n- [🖼️ Ecommerce Listing Image Prompts](#️-ecommerce-listing-image-prompts)\n  - [Case 1: Marketplace Listing Image Set](#case-1-marketplace-listing-image-set)\n  - [Case 2: Multi-Country Listing Image Set](#case-2-multi-country-listing-image-set)\n  - [Case 3: A+ Product Detail Visuals](#case-3-a-product-detail-visuals)\n  - [Case 4: Bulk Amazon Listing Generation](#case-4-bulk-amazon-listing-generation)\n  - [Case 5: Bulk Product Main Image Replacement](#case-5-bulk-product-main-image-replacement)\n  - [Case 6: Bulk Listing Translation](#case-6-bulk-listing-translation)\n- [👗 Model Try-On and Apparel Prompts](#-model-try-on-and-apparel-prompts)\n  - [Case 1: Apparel Try-On Image Set](#case-1-apparel-try-on-image-set)\n  - [Case 2: Model and Pet Try-On](#case-2-model-and-pet-try-on)\n  - [Case 3: Model Pose Expansion](#case-3-model-pose-expansion)\n  - [Case 4: Model Swap with Appearance Control](#case-4-model-swap-with-appearance-control)\n  - [Case 5: Reference-Based Model Replacement](#case-5-reference-based-model-replacement)\n  - [Case 6: Background Concepts for Apparel Sales](#case-6-background-concepts-for-apparel-sales)\n  - [Case 7: Accessory Try-On](#case-7-accessory-try-on)\n  - [Case 8: Nail Application](#case-8-nail-application)\n  - [Case 9: Model Shoe Try-On](#case-9-model-shoe-try-on)\n- [📦 Product Showcase Prompts](#-product-showcase-prompts)\n  - [Case 1: Clean White Background Product Retouch](#case-1-clean-white-background-product-retouch)\n  - [Case 2: Multi-Angle Product Views](#case-2-multi-angle-product-views)\n  - [Case 3: Material and Color Variants](#case-3-material-and-color-variants)\n  - [Case 4: Smart Background Generation](#case-4-smart-background-generation)\n  - [Case 5: Background Replacement with Custom Description](#case-5-background-replacement-with-custom-description)\n  - [Case 6: Reference-Based Product Background](#case-6-reference-based-product-background)\n- [🤝 Product Interaction Prompts](#-product-interaction-prompts)\n  - [Case 1: Handheld Product Close-Up](#case-1-handheld-product-close-up)\n  - [Case 2: Generated Human Interaction Scene](#case-2-generated-human-interaction-scene)\n  - [Case 3: Reference Character Product Interaction](#case-3-reference-character-product-interaction)\n  - [Case 4: Pet and Product Interaction](#case-4-pet-and-product-interaction)\n- [🛍️ Social Commerce Prompts](#️-social-commerce-prompts)\n  - [Case 1: Fashion Studio Sales Set](#case-1-fashion-studio-sales-set)\n  - [Case 2: Mirror Outfit Sales Video](#case-2-mirror-outfit-sales-video)\n  - [Case 3: Gift Box Styling for Apparel](#case-3-gift-box-styling-for-apparel)\n  - [Case 4: Fresh Food Sales Scene Set](#case-4-fresh-food-sales-scene-set)\n  - [Case 5: General Food Sales Creative Set](#case-5-general-food-sales-creative-set)\n- [🚀 Batch Generation via Evolink API](#-batch-generation-via-evolink-api)\n- [🙏 Acknowledge](#-acknowledge)\n\n<a id=\"gpt-image-25-workflows\"></a>\n## ✨ GPT Image 2.5: One Product, Three E-commerce Workflows\n\nEvoLink-created examples using the same yellow skincare product: replace a photographed scene, create UGC-style promotion, and adapt visuals for different language markets.\n\n*Examples and images supplied by EvoLink · 2026-09-09*\n\n**Product reference**\n\n<table>\n  <tr>\n    <td align=\"center\"><img loading=\"lazy\" src=\"https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/3f93f078be25efbc86b244fccd38cb771601cce6e2af182252bd0ce2df35739b.png\" width=\"280\" alt=\"White-background product photo\"><br><sub>White-background product photo</sub></td>\n  </tr>\n</table>\n\n<a id=\"gpt-image-25-case-1\"></a>\n### Case 31: Change the Scene, Keep the Product\n\nReplace the surroundings of the photographed product while keeping its shape, packaging and label consistent.\n\n**Prompt**\n\n```text\nEdit the supplied real product photograph. Replace only the surrounding scene with {scene_description}. Keep the product itself unchanged: preserve its exact shape, proportions, yellow packaging, cap, logo, label text, material and visible details. Match the new background lighting and contact shadows naturally. Do not redesign, relabel, duplicate or obscure the product.\n```\n\n<table>\n  <tr>\n    <td align=\"center\"><img loading=\"lazy\" src=\"https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/1fce6dd6ef96719f1df31ca877454dcb01faa9c258f58196a35b5bffb3d82743.png\" width=\"280\" alt=\"Input\"><br><sub>Input</sub></td>\n    <td align=\"center\"><img loading=\"lazy\" src=\"https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/bbe9236ef819e9d482d893771869c8e74f3f5f5bb1e3481dd5f5f620eb60988d.png\" width=\"280\" alt=\"Output · Scene 1\"><br><sub>Output · Scene 1</sub></td>\n    <td align=\"center\"><img loading=\"lazy\" src=\"https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/aaa7d06817e79603fccbd4b219485e4cd596d50b2a5656adb6972da61b59b42b.png\" width=\"280\" alt=\"Output · Scene 2\"><br><sub>Output · Scene 2</sub></td>\n  </tr>\n  <tr>\n    <td align=\"center\"><img loading=\"lazy\" src=\"https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/efeef5411f7748670a6a2ae6189a16f9ff0ee54618813a1a5333d94d1cf8e1b2.png\" width=\"280\" alt=\"Output · Scene 3\"><br><sub>Output · Scene 3</sub></td>\n    <td align=\"center\"><img loading=\"lazy\" src=\"https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/6009fe4530420b44da15762282751ccfcc5086e3b6e329761c8b655bc67edbbe.png\" width=\"280\" alt=\"Output · Scene 4\"><br><sub>Output · Scene 4</sub></td>\n    <td align=\"center\"><img loading=\"lazy\" src=\"https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/c757a80035c30c48246e098a9b561aa1f210e513a2271ad91a7e36f3db876e6c.png\" width=\"280\" alt=\"Output · Scene 5\"><br><sub>Output · Scene 5</sub></td>\n  </tr>\n</table>\n\n<a id=\"gpt-image-25-case-2\"></a>\n### Case 32: UGC-style Product Promotion\n\nCreate creator-style product demonstrations and a multi-market UGC campaign board from the product reference.\n\n**Prompt**\n\n```text\nUsing the supplied white-background product photo as the product reference, create a UGC-style skincare promotion image for {target_market}. Show an adult creator naturally holding the same product in a believable everyday setting. Preserve the exact product packaging, color, proportions, logo and label. Use a casual phone-camera composition and natural lighting. If text is needed, use only {approved_copy} in {language}. Do not invent testimonials, certifications or product benefits.\n```\n\n<table>\n  <tr>\n    <td align=\"center\"><img loading=\"lazy\" src=\"https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/8e0e663162b920f28780f5c46404f132ba2e34028555408fb804fea4c74603f1.png\" width=\"280\" alt=\"UGC hero image\"><br><sub>UGC hero image</sub></td>\n    <td align=\"center\"><img loading=\"lazy\" src=\"https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/f0e3dbe5097ba1c18fe764591311102b7290d322a1f8b049694d3de78c70071f.png\" width=\"280\" alt=\"Multi-market UGC board\"><br><sub>Multi-market UGC board</sub></td>\n  </tr>\n</table>\n\n<a id=\"gpt-image-25-case-3\"></a>\n### Case 33: E-commerce Visuals for Different Language Markets\n\nA Japanese listing image set, alongside localized social creatives for France, Spain, Korea, Taiwan and Thailand.\n\n**Prompt**\n\n```text\nCreate an e-commerce image for {target_market} in {language}, using the supplied white-background product photo as the reference. Preserve the product shape, color, packaging, logo and label. Build a clear {asset_type} layout with a prominent product, readable local-language typography and {approved_product_copy}. Adapt the composition to the target market. Use only supplied product facts; do not invent specifications, ingredient claims or endorsements.\n```\n\n<table>\n  <tr>\n    <td align=\"center\"><img loading=\"lazy\" src=\"https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/0b9d8ff48c3c5e48ce36489c3d75463dac55e5ba0b218283623344fb75b6cb80.png\" width=\"280\" alt=\"Japanese listing image 1\"><br><sub>Japanese listing image 1</sub></td>\n    <td align=\"center\"><img loading=\"lazy\" src=\"https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/facfce223e33fa0e6dc6773fbea0a4a1c2593d91baf39851cbeece2b42448301.png\" width=\"280\" alt=\"Japanese listing image 2\"><br><sub>Japanese listing image 2</sub></td>\n    <td align=\"cen",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/0c24174093e85c9572f7df4cf99d175d1d177b3dd92874ea4491938527925e50.png",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/3f93f078be25efbc86b244fccd38cb771601cce6e2af182252bd0ce2df35739b.png",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/gpt-image-2-for-e-commerce/.codex/gpt-image-2.5-migration/media/1fce6dd6ef96719f1df31ca877454dcb01faa9c258f58196a35b5bffb3d82743.png",
+          "caption": ""
+        }
+      ],
+      "score": 1108.85
     },
     {
       "candidate": {
@@ -228,7 +337,7 @@
           "stars": 157,
           "forks": 60,
           "createdAt": "2026-05-28T04:53:53Z",
-          "ageDays": 105,
+          "ageDays": 106,
           "starsPerDay": 1.5,
           "pushedAt": "2026-09-01T17:23:40Z",
           "archived": false,
@@ -275,7 +384,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "157 sao, 60 fork, ~1.5 sao/ngày, 105 ngày tuổi"
+            "157 sao, 60 fork, ~1.5 sao/ngày, 106 ngày tuổi"
           ]
         }
       },
@@ -314,11 +423,11 @@
           "stars": 134,
           "forks": 17,
           "createdAt": "2026-02-20T14:03:10Z",
-          "ageDays": 202,
+          "ageDays": 203,
           "starsPerDay": 0.7,
-          "pushedAt": "2026-09-10T00:47:46Z",
+          "pushedAt": "2026-09-11T00:43:23Z",
           "archived": false,
-          "openIssues": 13,
+          "openIssues": 14,
           "topics": [
             "aeo",
             "ai-crawlers",
@@ -367,7 +476,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "134 sao, 17 fork, ~0.7 sao/ngày, 202 ngày tuổi"
+            "134 sao, 17 fork, ~0.7 sao/ngày, 203 ngày tuổi"
           ]
         }
       },
@@ -380,94 +489,6 @@
         }
       ],
       "score": 1106.7
-    },
-    {
-      "candidate": {
-        "key": "pngtrid/anvilwiki",
-        "fullName": "PNGTRID/AnvilWiki",
-        "url": "https://github.com/PNGTRID/AnvilWiki",
-        "description": "⚒️ Open-source game wiki template. Astro + Cloudflare Pages. Free, fast, beginner-friendly. Static-first, zero-JS, AI-native content workflow, unlimited bandwidth.",
-        "stars": 133,
-        "sources": [
-          "github-search"
-        ],
-        "signals": [
-          "⭐ 133"
-        ],
-        "signalUrls": [],
-        "points": 0,
-        "verticals": [
-          "seo",
-          "agency"
-        ]
-      },
-      "signals": {
-        "repo": {
-          "owner": "PNGTRID",
-          "repo": "AnvilWiki"
-        },
-        "github": {
-          "fullName": "PNGTRID/AnvilWiki",
-          "description": "⚒️ Open-source game wiki template. Astro + Cloudflare Pages. Free, fast, beginner-friendly. Static-first, zero-JS, AI-native content workflow, unlimited bandwidth.",
-          "stars": 133,
-          "forks": 110,
-          "createdAt": "2026-08-11T15:25:42Z",
-          "ageDays": 30,
-          "starsPerDay": 4.4,
-          "pushedAt": "2026-09-09T19:06:54Z",
-          "archived": false,
-          "openIssues": 4,
-          "topics": [
-            "ai-agents",
-            "astro",
-            "cloudflare-pages",
-            "game-wiki",
-            "giscus",
-            "giscus-comments",
-            "i18n",
-            "lighthouse-100",
-            "llm",
-            "mcp",
-            "mdx",
-            "open-source",
-            "seo",
-            "static-site",
-            "tailwindcss",
-            "wiki-template"
-          ],
-          "homepage": "anvilwiki.pages.dev/landing",
-          "language": "TypeScript",
-          "suggestedHealthScore": 15
-        },
-        "hackerNews": [],
-        "reddit": [
-          {
-            "subreddit": "selfhosted",
-            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=AnvilWiki&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=AnvilWiki&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "opensource",
-            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=AnvilWiki&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=AnvilWiki&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "SideProject",
-            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=AnvilWiki&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=AnvilWiki&restrict_sr=1&sort=new"
-          }
-        ],
-        "heuristic": {
-          "maturitySuggestion": "rising",
-          "reasons": [
-            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "133 sao, 110 fork, ~4.4 sao/ngày, 30 ngày tuổi"
-          ]
-        }
-      },
-      "readmeExcerpt": "# AnvilWiki ⚒️\n\n> 带 AI 内容工作流的游戏 wiki 模板——广告收入 100% 归你。\n> 开源、Cloudflare Pages 原生优化、零成本免费部署上线。\n> fork 后 5 条命令 + 一次点选部署上线;唯一必要开销是一个域名——不会编程也走得完(双手册带路)。\n>\n> The game wiki template with an AI-native content workflow — 100% of your ad revenue.\n> Open source, natively optimized for Cloudflare Pages, free to deploy.\n> Five commands and one dashboard click from fork to live; the only required spend is a domain — no coding needed.\n\n**[📖 中文文档](#-中文文档) · [English Documentation](#-english-documentation)**\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)\n[![Astro](https://img.shields.io/badge/Astro-5.x-FF5D01?logo=astro&logoColor=white)](https://astro.build)\n[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages-F38020?logo=cloudflare&logoColor=white)](https://pages.cloudflare.com)\n[![Release](https://img.shields.io/github/v/release/PNGTRID/AnvilWiki?label=Release&color=brightgreen)](https://github.com/PNGTRID/AnvilWiki/releases)\n[![CI](https://github.com/PNGTRID/AnvilWiki/actions/workflows/ci.yml/badge.svg)](https://github.com/PNGTRID/AnvilWiki/actions/workflows/ci.yml)\n[![Live Demo](https://img.shields.io/badge/Demo-anvilwiki.pages.dev-brightgreen)](https://anvilwiki.pages.dev/)\n[![Docs](https://img.shields.io/badge/Docs-/landing/docs-8b5cf6)](https://anvilwiki.pages.dev/landing/docs)\n[![Works with](https://img.shields.io/badge/Works_with-Claude_Code_%7C_Codex_%7C_Cursor_%7C_ZCode-blueviolet)](.agent/skills/)\n\n[![Demo site homepage](public/images/showcase/demo-home.webp)](https://anvilwiki.pages.dev/)\n\n<p align=\"center\">\n  <a href=\"https://anvilwiki.pages.dev/bosses/emberfang/\"><img src=\"public/images/showcase/demo-article.webp\" width=\"32%\" alt=\"Boss stat card\"></a>\n  <a href=\"https://anvilwiki.pages.dev/codes/all-codes/\"><img src=\"public/images/showcase/demo-codes.webp\" width=\"32%\" alt=\"Codes page — tap to copy\"></a>\n  <a href=\"https://anvilwiki.pages.dev/guides/weapon-tier-list/\"><img src=\"public/images/showcase/demo-tier-list.webp\" width=\"32%\" alt=\"Weapon tier list\"></a>\n</p>\n\n> Boss 数据卡 · 兑换码一键复制 · 武器强度榜——wiki 级呈现的其中三页,点图直达对应页面。Boss stat cards, tap-to-copy codes, tier lists — three of the wiki-grade page types; click through to the live pages.\n\n> Lighthouse 4×100 — 实测于 [anvilwiki.pages.dev](https://anvilwiki.pages.dev/)（2026-09-03）\n> \n> [![Performance 100](https://img.shields.io/badge/Performance-100-058627?style=flat-square&logo=lighthouse&logoColor=white)](https://anvilwiki.pages.dev/)\n> [![Accessibility 100](https://img.shields.io/badge/Accessibility-100-058627?style=flat-square&logo=lighthouse&logoColor=white)](https://anvilwiki.pages.dev/)\n> [![Best Practices 100](https://img.shields.io/badge/Best_Practices-100-058627?style=flat-square&logo=lighthouse&logoColor=white)](https://anvilwiki.pages.dev/)\n> [![SEO 100](https://img.shields.io/badge/SEO-100-058627?style=flat-square&logo=lighthouse&logoColor=white)](https://anvilwiki.pages.dev/)\n\n---\n\n## 🚀 快速链接\n\n| 你想… | 去这里 |\n|---|---|\n| **零基础从零做一个赚钱的游戏站** | 📚 [学习手册](https://anvilwiki.pages.dev/zh/landing/docs/learn)——每步写明「做什么/怎么做/你会看到什么」,含可复制的 AI 提示词 |\n| 看「从零到赚钱」的全部工作量 | 🗺️ [文档中心首页](https://anvilwiki.pages.dev/zh/landing/docs)——10 件事全景清单,逐项点入 |\n| 深度定制 / 给模板写代码 | 🔧 [开发手册](https://anvilwiki.pages.dev/zh/landing/docs/dev) |\n| 看看做出来长什么样 | 🎮 [在线 Demo](https://anvilwiki.pages.dev/)——虚构游戏「Anvil Quest」的完整 wiki |\n| 对比 Fandom / Wiki.js / 其他方案 | ⚖️ [完整对比页](https://anvilwiki.pages.dev/zh/landing/comparison)——三种物种、自托管引擎数据表、什么时候不该选 AnvilWiki |\n\n## 📖 中文文档\n\n### 5 分钟快速开始\n\n**跑完这一节你会得到**:一个跑在 Cloudflare 免费版上、属于你自己的 wiki 站(先以 demo 内容上线,换成你的游戏、清掉 demo,随时可以做)。\n\n**开始前需要**:[Node.js 22+](https://nodejs.org) 和 pnpm(没装 pnpm?终端跑 `npm install -g pnpm`;或跟着[学习手册「装好 6 样工具」一课](https://anvilwiki.pages.dev/zh/landing/docs/install-tools)把 6 样工具一次装齐)。\n\n```bash\n# 1. Fork 本仓库(仓库右上角 Fork 按钮),然后克隆你的 fork(换成你的 GitHub 用户名)\ngit clone https://github.com/<你的用户名>/AnvilWiki.git\ncd AnvilWiki\n\n# 2. 安装依赖并本地预览\npnpm install\npnpm dev            # 打开 http://localhost:4321,能看到 demo 站 = 环境通了\n\n# 3. 一条问答式命令,把 demo 站换成你的游戏(游戏名/主题色/域名/语言…)\npnpm apply-template\n\n# 4. 把改动推回你的 fork\ngit add .\ngit commit -m \"Apply my game\"\ngit push           # 第 5 步 Cloudflare 连的是 GitHub 远端仓库,不推上去它连到的还是 demo\n\n# 5. 部署:cloudflare.com → Workers & Pages → Create → Pages → Connect to Git → 选你的 fork\n#    构建命令 pnpm build、输出目录 dist 会自动识别;环境变量加 NODE_VERSION=22\n```\n\n> 💡 **SITE_URL 不用去 dashboard 配**:第 3 步已经把它写进 `wrangler.toml` 的 `[vars]`——只要这个文件存在,它就是 Cloudflare Pages 环境变量的**唯一真相源**,dashboard 里配的同名变量会被忽略。以后换域名,改 `[vars]` 里的 `SITE_URL`(必须含 `https://`)即可;也可以删掉该文件改用 dashboard 配置。完整说明 + 踩坑诊断见 [docs/deployment.md](docs/deployment.md)。\n\n**不想碰终端?有一条零命令路径**:fork 后打开你仓库的 **Actions** 页签 → 左侧选 **Initialize AnvilWiki** → **Run workflow**(填你的域名)→ 合并它开好的 PR → 直接做上面的第 5 步。游戏名、主题色等之后随时可以让 AI 助手帮你改。\n\n**完全新手?别从这里开始**——先去[学习手册](https://anvilwiki.pages.dev/zh/landing/docs/learn):「选品找词」一个阶段帮你把游戏选对,「装好 6 样工具」把终端、Node、Git、AI 助手怎么装、每步会看到什么全部写清,然后「把站跑起来」才动手建站。手册源码在 [`docs/handbook/`](docs/handbook/),fork 后依然保留(但站内文档中心页面会自动移除,属正常)。\n\n### 这是什么？\n\nAnvilWiki 是一个**游戏 SEO 内容站模板**——用来快速搭建围绕某款游戏(Roblox、Steam 新游等)的攻略内容站,通过 SEO 获取流量,通过广告变现。**广告收入 100% 归你**:无平台抽成、无收入分成(对比 Fandom 等托管 wiki 的平台分成模式)。\n\n技术栈是 **Astro + Cloudflare Pages**:纯静态输出、零适配器、免费无限带宽、全球 CDN、零 JS 优先(首屏极快)。\n\n**适合谁**:想靠游戏内容做副业、会用浏览器但**不会编程**的人(学习手册就是按这个标准写的),以及想被 AI 工作流加速的内容创作者。\n\n### 核心特性\n\n- 📚 **零基础双手册**:学习手册(6 阶段 29 课+3 附录)+ 开发手册(9 课),中英双语,从选游戏到赚到钱,每步 SOP + 可复制 AI 提示词([站内阅读](https://anvilwiki.pages.dev/zh/landing/docs))\n- 🤖 **AI 对话即产页**:内容技能随仓库分发(`.agent/skills/`),对 ZCode / Claude Code / Codex 说「根据这些笔记写篇攻略」,产出自动通过构建质检;批量产页走 **PR 门控管道**——AI 写、八道质量门禁验、你审完才合并([docs/content-pipeline.md](docs/content-pipeline.md))\n- 🧭 **一套工具管 N 个站**:`anvilwiki-ops`(npx 免安装 + MCP)让 AI 替你拉 GSC/Cloudflare 数据、给优化清单,并追踪 ChatGPT/Perplexity 等 **AI 引用来路**([docs/multi-site.md](docs/multi-site.md))\n- 🧰 **产能三件套**:`pnpm template-audit` 检查「这个站还能不能干净复制成下一个」、`pnpm bulk-new-posts` 从关键词清单批量铺内页草稿、`pnpm gen-covers` 自动生成 1200×675 封面(中日文标题自动配字体)\n- 💰 **变现三件套**:AdSense 广告位 ×3 + 联盟链接组件 + 文末建议位,全部默认关闭、env/config 驱动,收入 100% 归你([docs/ads.md](docs/ads.md))\n- 🔍 **SEO 工程化**:sitemap(含 lastmod)/ JSON-LD 全套 / hreflang / Quick Answer 摘要块 / llms.txt(AI 搜索),全部自动生成\n- ⚡ **Lighthouse 4×100 开箱即得**:Astro 零 JS 优先,开了广告也不掉分\n- 🆓 **零成本**:Cloudflare Pages 免费无限带宽 + 全球 CDN + SSL,永远没有服务器账单\n- 🌍 **多语言开箱即用**:英文无前缀(SEO 最优),缺失内容自动回退英文,直链永不 404\n- 🎮 **wiki 级呈现**:Boss 数据卡、兑换码一键复制、TOC 滚动高亮、画廊灯箱、Giscus 评论(默认关)\n\n### 用 AI 直接生成内容(无需脚本)\n\nfork 后用 ZCode / Claude Code / Codex / Cursor 打开仓库,直接对话即可产页。Agent 会自动加载仓库里的内容规范,生成后自动跑 `pnpm check-content && pnpm build` 自检。内置 6 个技能:\n\n| 技能 | 用途 |\n|---|---|\n| `anvil-find-keywords` | 挖词选品:9 渠道自动挖候选 → SERP 快验+意图满足度 → 判决打分,落盘决策管理表(含复查日) |\n| `anvil-new-article` | 任意素材(口述/视频字幕/原始数据)→ 合规 MDX 文章,支持 YouTube 视频转攻略 |\n| `anvil-batch-articles` | 关键词清单 → 批量生成一批内页(意图归类 → `bulk-new-posts` 脚手架 → 统一提示词填充) |\n| `anvil-update-codes` | 新兑换码/过期码 → 更新 codes 页并同步多语言 |\n| `anvil-refresh` | 新鲜度巡检 → 输出「该更新什么」优先级清单 |\n| `anvil-adsense-audit` | AdSense 申请前逐项体检(22 项政策清单,模板已解决的项自动给证据) |\n\n完整的提示词库(选品分析、产页、批量产页、翻译、SEO 体检、关键词选题等模板)在[学习手册](https://anvilwiki.pages.dev/zh/landing/docs/learn)里,整段复制就能用。\n\n### 文档在哪里?\n\n| 入口 | 内容 |\n|---|---|\n| 📚 [站内文档中心](https://anvilwiki.pages.dev/zh/landing/docs) | **首选**:双手册 + 「从零到赚钱 10 件事」全景清单,中英双语 |\n| 🗂️ [docs/README.md](docs/README.md) | 仓库内全部参考文档索引(选品/挖词/部署/SEO/广告/内容管道/多站运营…),按角色与时机分类,附四条阅读路径 |\n| 📋 [requirements/](requirements/) | 建站前素材准备模板:事实来源表 + 对标参考表 |\n| 🏗️ [docs/PRD.md](docs/PRD.md) | 架构唯一真相源:想知道「为什么这么设计」看这里 |\n\n### 为什么不用 Fandom / 自建 Next.js?\n\n| | AnvilWiki | Fandom 类平台 | 自建 Next.js |\n| --- | --- | --- | --- |\n| 广告收入 | **100% 归你**(自带 AdSense 位) | 平台抽成 | 归你,但要自己接 |\n| 每月成本 | **¥0**(Cloudflare Pages 免费无限带宽) | 免费(代价是失去控制权) | Vercel 免费额度有限 |\n| Lighthouse | **4×100 开箱即得** | 平台决定 | 自己调优数周 |\n| AI 产页 | **技能随仓库分发,对话即产页** | 无 | 自己搭 |\n| 上手门槛 | **零基础引导式双手册** | 低但受制于人 | 高 |\n\n更完整的选型对比——含 Wiki.js、BookStack、MediaWiki、DokuWiki、Docmost 五个自托管引擎的数据表,以及「什么时候不该选 AnvilWiki」:见[完整对比页](https://anvilwiki.pages.dev/zh/landing/comparison)。\n\n### 常见问题\n\n- **要花多少钱?** 托管 ¥0;唯一必要开销是域名(一年几十块,AdSense 审核需要)。\n- **不会编程能做吗?** 能。学习手册按「完全零基础」标准写,每步都有「你会看到什么」;所有代码活交给 AI 助手。\n- **多久有收入?** 黄金窗口是游戏爆发后 2-8 周,头 1-2 周收入为零是正常的——手册「第一周读数」「每周 30 分钟」两课讲怎么经营预期。\n- **模板更新了,我的站会被覆盖吗?** 不会。三层分离设计,合并上游时你的游戏配置和文章永远保留(见 [docs/staying-up-to-date.md](docs/staying-up-to-date.md))。\n\n### 用 AnvilWiki 建了站?欢迎提交 Showcase\n\n真实案例是这个模板最有力的证明(按提交顺序排列):\n\n| 站点 | 游戏 | 简介 |\n| --- | --- | --- |\n| [Aniimo Wiki](https://aniimo.wiki/) | Aniimo(Roblox) | 攻略、强度榜与最新兑换码 |\n| [No Man's Sky Wiki](https://nomanssky.wiki/) | 无人深空(Steam) | 机制资料与版本更新攻略 |\n| [Steal an Egg Wiki](https://steal-anegg.wiki/) | Steal an Egg(Roblox) | 宠物、蛋、兑换码与玩法攻略 |\n| [Jujutsu Shenanigans Player Guide](https://jjs-player-guide.pages.dev/) | Jujutsu Shenanigans(Roblox) | 中英日三语玩家 wiki：角色路线、Black Flash、地图、兑换码与版本更新 |\n| [Mortal Shell II Wiki](https://mortalshell2.space/) | Mortal Shell II | Shell、武器、Boss、地点、物品与 Open Beta 攻略 |\n| [Sephiria Builds](https://sephiriabuilds.xyz/) | Sephiria | 动作肉鸽 Sephiria 的 build 数据库——带版本戳的武器强度榜与证据分级的 build 攻略 |\n| [Resonance Wiki](https://resonanceplaguetale.wiki/) | Resonance: A Plague Tale Legacy | 全章节流程攻略、全部收集品位置、奖杯路线图、谜题解法与技能推荐 |\n\n提 PR 在 `src/config/landing.ts` 的 `COMMUNITY_SITES` 追加一条即可——官网([/landing](https://anvilwiki.pages.dev/landing) 与 [/zh/landing](https://anvilwiki.pages.dev/zh/landing))的「Built with AnvilWiki」区块会自动展示。\n\n### 交流群 / 技术栈 / 许可\n\n微信扫码添加主理人好友,拉你进群交流讨论(部署问题、功能建议、游戏内容站经验都欢迎;[项目官网](https://anvilwiki.pages.dev/zh/landing)右下角也有同款悬浮扫码按钮):\n\n<p align=\"center\">\n  <img src=\"public/images/wechat-qr.jpg\" width=\"200\" alt=\"微信二维码——扫码添加好友进群交流\" />\n</p>\n\n技术栈:Astro 5(静态输出)+ Tailwind CSS 3 + MDX 4 + astro-icon/lucide + Content Layer API(Zod)+ Pagefind 搜索 + pnpm 11 / Node 22。\n\n许可:**MIT**,见 [LICENSE](LICENSE)。\n\n致谢:选品判决框架([docs/sourcing.md](docs/sourcing.md) 第四节)参考了 [yan-labs/yan-skills](https://github.com/yan-labs/yan-skills)(MIT)的 game-opportunity 技能;AdSense 申请前审计技能(`/anvil-adsense-audit`)的审计框架受 [yantoumu/adsense-site-auditor-skill](https://github.com/yantoumu/adsense-site-auditor-skill) 启发(清单为模板特化重写,未复制其文本);视频转攻略工作流(`anvil-new-article` Step 0)的管线设计参考 [kennyzir/7deer_skills](https://github.com/kennyzir/7deer_skills/tree/main/youtube-content-gen)(MIT)的 youtube-content-gen 技能。感谢三个项目把方法论开源出来。\n\n---\n\n## 📖 English Documentation\n\n| I want to… | Go here |\n|---|---|\n| **Build a money-making game site from zero** | 📚 [Learning Manual](https://anvilwiki.pages.dev/landing/docs/learn) — every step a SOP with copy-paste AI prompts |\n| See the whole journey first | 🗺️ [Docs hub](https://anvilwiki.pages.dev/landing/docs) — a 10-job whole-picture checklist |\n| Customize deeply / contribute code | 🔧 [Development Manual](https://anvilwiki.pages.dev/landing/docs/dev) |\n| See what it looks like | 🎮 [Live demo](https://anvilwiki.pages.dev/) — a complete wiki for the fictional game \"Anvil Quest\" |\n| Compare Fandom / Wiki.js / alternatives | ⚖️ [Full comparison](https://anvilwiki.pages.dev/landing/comparison) |\n\n### Quick Start (5 min)\n\n**What you'll have when this section is done**: your own wiki live on Cloudflare's free tier (it ships with demo content first — rebranding and demo removal come whenever you're ready).\n\n**Prerequisites**: [Node.js 22+](https://nodejs.org) and pnpm (no pnpm? run `npm install -g pnpm` — or let [the \"Install the 6 Tools\" lesson](https://anvilwiki.pages.dev/landing/docs/install-tools) walk you through all six tools).\n\n```bash\n# 1. Fork this repo (Fork button, top right), then clone YOUR fork (replace the username)\ngit clone https://github.com/<your-username>/AnvilWiki.git\ncd AnvilWiki\n\n# 2. Install & preview locally\npnpm install\npnpm dev            # open http://localhost:4321 — seeing the demo site means your env works\n\n# 3. One guided Q&A command swaps the demo for your game (name/theme/domain/locales…)\npnpm apply-template\n\n# 4. Push the changes back to your fork\ngit add .\ngit commit -m \"Apply my game\"\ngit push           # step 5 connects Cloudflare to the REMOTE repo — skip this and it deploys the demo\n\n# 5. Deploy: cloudflare.com → Workers & Pages → Create → Pages → Connect to Git → pick your fork\n#    Build `pnpm build` and output `dist` are auto-detected; add env NODE_VERSION=22\n```\n\n> 💡 **No need to set SITE_URL in the dashboard**: step 3 already wrote it into `[vars]` in `wrangler.toml` — while that file exists it is the **sole source of truth** for Cloudflare Pages env, and same-named dashboard variables are ignored. To change domains later, edit `SITE_URL` in `[vars]` (must include `https://`), or delete the file and use the dashboard instead. Full explanation + troubleshooting: [docs/deployment.md](docs/deployment.md).\n\n**Prefer zero terminal?** There's a no-command path: open your fork's **Actions** tab → **Initialize AnvilWiki** → **Run workflow** (enter your domain) → merge the PR it opens → jump straight to step 5 above. Game name, theme color and more can be changed later with your AI assistant.\n\n**Complete beginner?** Don't start here — start with the [Learning Manual](https://anvilwiki.pages.dev/landing/docs/learn): the Pick & Validate stage picks your game, \"Install the 6 Tools\" walks you through every install with \"what you'll see\" on each step, and \"Run Your Site\" is where the site gets built. The handbook source lives in [`docs/handbook/`](docs/handbook/) and stays in your fork (the in-site docs center pages are auto-removed for forks — that's expected).\n\n### What is this?\n\nAnvilWiki is an **open-source game wiki site template**: build a content site around a game (Roblox, Steam new releases…), pull traffic via SEO, monetize with ads — **100% of the ad revenue is yours**. Built on Astro + Cloudflare Pages: pure static, zero adapters, free unlimited bandwidth, Lighthouse 4×100 out of the box.\n\n### Key Features\n\n- 📚 **Two beginner manuals**: Learning (6 stages, 29 lessons + 3 appendices) + Development (9 lessons), bilingual, zero to revenue, every step a SOP with copy-paste AI prompts ([read online](https://anvilwiki.pages.dev/landing/docs))\n- 🤖 **Talk to generate pages**: agent skills ship inside the repo (`.agent/skills/`) — say \"write a boss guide from these notes\" and get a build-check-passing page; batches go through a **PR-gated pipeline** — AI writes, 8 quality gates verify, you review and merge ([docs/content-pipeline.md](docs/content-pipeline.md))\n- 🧭 **Run N sites from one toolkit**: `anvilwiki-ops` (npx + MCP) lets your AI pull GSC/Cloudflare data, rank SEO actions, and track **AI referrals** from ChatGPT/Perplexity ([docs/multi-site.md](docs/multi-site.md))\n- 🧰 **Production trio**: `pnpm template-audit` scores how cleanly this site can be copied into the next game's, `pnpm bulk-new-posts` scaffolds a batch of inner pages from a keyword list, `pnpm gen-covers` auto-generates 1200×675 covers (CJK titles auto-fonted)\n- 💰 **Monetization trio**: 3 AdSense slots + affiliate link component + end-of-article suggestion cards — all off by default, env/config-gated, 100% revenue yours ([docs/ads.md](docs/ads.md))\n- 🔍 **SEO engineering**: sitemap (lastmod) / JSON-LD suite / hreflang / Quick Answer blocks / llms.txt — all automatic\n- ⚡ **Lighthouse 4×100 out of the box**: zero-JS-first Astro, stays green with ads on\n- 🆓 **Free forever**: Cloudflare Pages, unlimited bandwidth, global CDN, SSL\n- 🌍 **i18n built in**: English at root (SEO-optimal), English fallback, URLs never 404\n- 🎮 **Wiki-grade presentation**: boss stat cards, tap-to-copy codes, TOC scroll-spy, gallery lightbox, Giscus comments (off by default)\n\n### Generate content by talking to your AI (no scripts needed)\n\nAfter forking, open the repo in ZCode / Claude Code / Codex / Cursor and just talk. Agents auto-load the content spec shipped in the repo and self-check with `pnpm check-content && pnpm build` after generating. Six skills are built in:\n\n| Skill | What it does |\n|---|---|\n| `anvil-find-keywords` | Keyword & game sourcing: mine candidates across 9 channels → SERP + intent checks → scoring framework, outputs a decision pipeline table with review dates |\n| `anvil-new-article` | Any source material (",
-      "media": [],
-      "score": 1106.65
     }
   ]
 }
