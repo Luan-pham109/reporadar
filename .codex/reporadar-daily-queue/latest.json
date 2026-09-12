@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T06:10:56.239Z",
+  "generatedAt": "2026-09-12T05:58:27.944Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -42,14 +42,14 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5225,
-          "forks": 194,
+          "stars": 5228,
+          "forks": 193,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 198,
-          "starsPerDay": 26.4,
+          "ageDays": 199,
+          "starsPerDay": 26.3,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
-          "openIssues": 121,
+          "openIssues": 119,
           "topics": [
             "automation",
             "controler",
@@ -104,7 +104,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5225 sao, 194 fork, ~26.4 sao/ngày, 198 ngày tuổi"
+            "5228 sao, 193 fork, ~26.3 sao/ngày, 199 ngày tuổi"
           ]
         }
       },
@@ -118,12 +118,12 @@
         "fullName": "AgriciDaniel/on-page-seo",
         "url": "https://github.com/AgriciDaniel/on-page-seo",
         "description": "On-Page SEO Analyzer - Analyze your website's SEO performance",
-        "stars": 247,
+        "stars": 250,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 247"
+          "⭐ 250"
         ],
         "signalUrls": [],
         "points": 0,
@@ -140,10 +140,10 @@
         "github": {
           "fullName": "AgriciDaniel/on-page-seo",
           "description": "On-Page SEO Analyzer - Analyze your website's SEO performance",
-          "stars": 247,
+          "stars": 250,
           "forks": 57,
           "createdAt": "2026-01-03T16:13:09Z",
-          "ageDays": 251,
+          "ageDays": 252,
           "starsPerDay": 1,
           "pushedAt": "2026-06-06T05:02:38Z",
           "archived": false,
@@ -183,7 +183,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "247 sao, 57 fork, ~1 sao/ngày, 251 ngày tuổi"
+            "250 sao, 57 fork, ~1 sao/ngày, 252 ngày tuổi"
           ]
         }
       },
@@ -195,7 +195,7 @@
           "caption": ""
         }
       ],
-      "score": 1112.35
+      "score": 1112.5
     },
     {
       "candidate": {
@@ -203,12 +203,12 @@
         "fullName": "EvoLinkAI/gpt-image-2.5-for-e-commerce",
         "url": "https://github.com/EvoLinkAI/gpt-image-2.5-for-e-commerce",
         "description": "GPT Image 2.5 for e-commerce: prompt cookbook for listing photos, model try-on, product showcases, interaction scenes, and social commerce creatives.",
-        "stars": 177,
+        "stars": 183,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 177"
+          "⭐ 183"
         ],
         "signalUrls": [],
         "points": 0,
@@ -226,10 +226,10 @@
         "github": {
           "fullName": "EvoLinkAI/gpt-image-2.5-for-e-commerce",
           "description": "GPT Image 2.5 for e-commerce: prompt cookbook for listing photos, model try-on, product showcases, interaction scenes, and social commerce creatives.",
-          "stars": 177,
-          "forks": 39,
+          "stars": 183,
+          "forks": 40,
           "createdAt": "2026-05-08T02:50:26Z",
-          "ageDays": 126,
+          "ageDays": 127,
           "starsPerDay": 1.4,
           "pushedAt": "2026-09-09T16:34:49Z",
           "archived": false,
@@ -282,7 +282,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "177 sao, 39 fork, ~1.4 sao/ngày, 126 ngày tuổi"
+            "183 sao, 40 fork, ~1.4 sao/ngày, 127 ngày tuổi"
           ]
         }
       },
@@ -304,7 +304,7 @@
           "caption": ""
         }
       ],
-      "score": 1108.85
+      "score": 1109.15
     },
     {
       "candidate": {
@@ -337,7 +337,7 @@
           "stars": 157,
           "forks": 60,
           "createdAt": "2026-05-28T04:53:53Z",
-          "ageDays": 106,
+          "ageDays": 107,
           "starsPerDay": 1.5,
           "pushedAt": "2026-09-01T17:23:40Z",
           "archived": false,
@@ -384,7 +384,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "157 sao, 60 fork, ~1.5 sao/ngày, 106 ngày tuổi"
+            "157 sao, 60 fork, ~1.5 sao/ngày, 107 ngày tuổi"
           ]
         }
       },
@@ -394,101 +394,88 @@
     },
     {
       "candidate": {
-        "key": "rubenmarcus/aeo.js",
-        "fullName": "rubenmarcus/aeo.js",
-        "url": "https://github.com/rubenmarcus/aeo.js",
-        "description": "Answer Engine Optimization for the modern web. Make your site discoverable by ChatGPT, Claude, Perplexity & AI search engines. Generates llms.txt, robots.txt, sitemap, JSON-LD & more.",
-        "stars": 134,
+        "key": "getopenpost/openpost",
+        "fullName": "getopenpost/openpost",
+        "url": "https://github.com/getopenpost/openpost",
+        "description": "Your socials, on steroids.",
+        "stars": 139,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 134",
-          "⭐ 134"
+          "⭐ 139"
         ],
         "signalUrls": [],
         "points": 0,
         "verticals": [
-          "seo"
+          "agency"
         ]
       },
       "signals": {
         "repo": {
-          "owner": "rubenmarcus",
-          "repo": "aeo.js"
+          "owner": "getopenpost",
+          "repo": "openpost"
         },
         "github": {
-          "fullName": "rubenmarcus/aeo.js",
-          "description": "Answer Engine Optimization for the modern web. Make your site discoverable by ChatGPT, Claude, Perplexity & AI search engines. Generates llms.txt, robots.txt, sitemap, JSON-LD & more.",
-          "stars": 134,
+          "fullName": "getopenpost/openpost",
+          "description": "Your socials, on steroids.",
+          "stars": 139,
           "forks": 17,
-          "createdAt": "2026-02-20T14:03:10Z",
-          "ageDays": 203,
-          "starsPerDay": 0.7,
-          "pushedAt": "2026-09-11T00:43:23Z",
+          "createdAt": "2026-03-21T11:12:13Z",
+          "ageDays": 175,
+          "starsPerDay": 0.8,
+          "pushedAt": "2026-09-11T14:54:08Z",
           "archived": false,
-          "openIssues": 14,
+          "openIssues": 2,
           "topics": [
-            "aeo",
-            "ai-crawlers",
-            "ai-search",
-            "answer-engine-optimization",
-            "astro",
-            "chatgpt",
-            "geo",
-            "json-ld",
-            "llm",
-            "llms-txt",
-            "nextjs",
-            "npm-package",
-            "nuxt",
-            "perplexity",
-            "robots-txt",
-            "seo",
-            "sitemap",
-            "structured-data",
-            "typescript",
-            "vite"
+            "automation",
+            "golang",
+            "self-hosted",
+            "single-binary",
+            "social-media",
+            "svelte"
           ],
-          "homepage": "https://aeojs.org",
+          "homepage": "https://openpo.st",
           "language": "TypeScript",
           "suggestedHealthScore": 14
         },
-        "hackerNews": [],
+        "hackerNews": [
+          {
+            "title": "Show HN: OpenPost, an open-source alternative to Buffer, CapCut, and Canva",
+            "points": 3,
+            "comments": 2,
+            "createdAt": "2026-09-09T13:24:28Z",
+            "hnUrl": "https://news.ycombinator.com/item?id=49626154"
+          }
+        ],
         "reddit": [
           {
             "subreddit": "selfhosted",
-            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=aeo.js&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=aeo.js&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=openpost&restrict_sr=1&sort=new"
           },
           {
             "subreddit": "opensource",
-            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=aeo.js&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=aeo.js&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=openpost&restrict_sr=1&sort=new"
           },
           {
             "subreddit": "SideProject",
-            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=aeo.js&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=aeo.js&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=openpost&restrict_sr=1&sort=new"
           }
         ],
         "heuristic": {
-          "maturitySuggestion": "rising",
+          "maturitySuggestion": "pre-viral",
           "reasons": [
-            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "134 sao, 17 fork, ~0.7 sao/ngày, 203 ngày tuổi"
+            "Đang được bàn ở HN/Reddit",
+            "139 sao, 17 fork, ~0.8 sao/ngày, 175 ngày tuổi"
           ]
         }
       },
-      "readmeExcerpt": "<p align=\"center\">\n  <h1 align=\"center\">aeo.js</h1>\n  <p align=\"center\">Answer Engine Optimization for the modern web.<br/>Make your site discoverable by ChatGPT, Claude, Perplexity, and every AI answer engine.</p>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.npmjs.com/package/aeo.js\"><img src=\"https://img.shields.io/npm/v/aeo.js?style=flat&colorA=0d0d0d&colorB=1a1a1a\" alt=\"npm version\"></a>\n  <a href=\"https://www.npmjs.com/package/aeo.js\"><img src=\"https://img.shields.io/npm/dm/aeo.js?style=flat&colorA=0d0d0d&colorB=1a1a1a\" alt=\"npm downloads\"></a>\n  <a href=\"https://github.com/rubenmarcus/aeo.js\"><img src=\"https://img.shields.io/github/stars/rubenmarcus/aeo.js?style=flat&colorA=0d0d0d&colorB=1a1a1a\" alt=\"GitHub stars\"></a>\n  <a href=\"https://github.com/rubenmarcus/aeo.js/blob/main/LICENSE\"><img src=\"https://img.shields.io/github/license/rubenmarcus/aeo.js?style=flat&colorA=0d0d0d&colorB=1a1a1a\" alt=\"License\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://aeojs.org\">Documentation</a> · <a href=\"https://check.aeojs.org\">AEO Checker</a> · <a href=\"https://www.npmjs.com/package/aeo.js\">npm</a>\n</p>\n\n<p align=\"center\">\n  <img src=\"example.gif\" alt=\"aeo.js in action\" width=\"700\">\n</p>\n\n## Install\n\n```bash\nnpm install aeo.js\n```\n\n## Check any site in 10 seconds\n\nSee how visible a site is to ChatGPT, Claude, Perplexity & co — no install, no config:\n\n```bash\nnpx aeo.js check mysite.com\n```\n\nYou get a 0–100 GEO readiness score, an access matrix for 23 AI crawlers, average content citability, and the top fixes — for any deployed site. Also available in the browser at [check.aeojs.org](https://check.aeojs.org).\n\n## Quick Start\n\n### Astro\n\n```js\n// astro.config.mjs\nimport { defineConfig } from 'astro/config';\nimport { aeoAstroIntegration } from 'aeo.js/astro';\n\nexport default defineConfig({\n  site: 'https://mysite.com',\n  integrations: [\n    aeoAstroIntegration({\n      title: 'My Site',\n      description: 'A site optimized for AI discovery',\n      url: 'https://mysite.com',\n    }),\n  ],\n});\n```\n\n### Next.js\n\n```js\n// next.config.mjs\nimport { withAeo } from 'aeo.js/next';\n\nexport default withAeo({\n  aeo: {\n    title: 'My Site',\n    description: 'A site optimized for AI discovery',\n    url: 'https://mysite.com',\n  },\n});\n```\n\nAdd the post-build step to `package.json`:\n\n```json\n{\n  \"scripts\": {\n    \"postbuild\": \"node -e \\\"import('aeo.js/next').then(m => m.postBuild({ title: 'My Site', url: 'https://mysite.com' }))\\\"\"\n  }\n}\n```\n\n### Vite\n\n```js\n// vite.config.ts\nimport { defineConfig } from 'vite';\nimport { aeoVitePlugin } from 'aeo.js/vite';\n\nexport default defineConfig({\n  plugins: [\n    aeoVitePlugin({\n      title: 'My Site',\n      description: 'A site optimized for AI discovery',\n      url: 'https://mysite.com',\n    }),\n  ],\n});\n```\n\n### Nuxt\n\n```ts\n// nuxt.config.ts\nexport default defineNuxtConfig({\n  modules: ['aeo.js/nuxt'],\n  aeo: {\n    title: 'My Site',\n    description: 'A site optimized for AI discovery',\n    url: 'https://mysite.com',\n  },\n});\n```\n\n### Remix\n\n```json\n{\n  \"scripts\": {\n    \"postbuild\": \"node -e \\\"import('aeo.js/remix').then(m => m.postBuild({ title: 'My Site', url: 'https://mysite.com' }))\\\"\"\n  }\n}\n```\n\n### SvelteKit\n\n```json\n{\n  \"scripts\": {\n    \"postbuild\": \"node -e \\\"import('aeo.js/sveltekit').then(m => m.postBuild({ title: 'My Site', url: 'https://mysite.com' }))\\\"\"\n  }\n}\n```\n\n### TanStack Start\n\n```json\n{\n  \"scripts\": {\n    \"postbuild\": \"node -e \\\"import('aeo.js/tanstack-start').then(m => m.postBuild({ title: 'My Site', url: 'https://mysite.com' }))\\\"\"\n  }\n}\n```\n\nRoutes are discovered from `src/routes` (TanStack Router file conventions). No build output yet? Use `generate()` instead of `postBuild()` to emit files into `public/` from your source routes.\n\n### Docusaurus\n\n```js\n// docusaurus.config.js\nmodule.exports = {\n  plugins: [\n    ['aeo.js/docusaurus', { url: 'https://mysite.com', title: 'My Docs' }],\n  ],\n};\n```\n\n`url`, `title`, and `description` default to your Docusaurus `siteConfig` (including `baseUrl`) when omitted. AEO files are generated from the built HTML during `docusaurus build`, and the widget is injected on every page.\n\n### Eleventy\n\n```js\n// eleventy.config.js\nconst aeo = require('aeo.js/eleventy');\n\nmodule.exports = function (eleventyConfig) {\n  eleventyConfig.addPlugin(aeo, { url: 'https://mysite.com', title: 'My Site' });\n};\n```\n\nRequires Eleventy 2.0+. AEO files are generated from the rendered output into your Eleventy output directory (`_site` by default), and the widget is injected into every HTML page.\n\n### VitePress\n\n```ts\n// .vitepress/config.ts\nimport { defineConfig } from 'vitepress';\nimport { withAeo } from 'aeo.js/vitepress';\n\nexport default defineConfig(withAeo({\n  title: 'My Docs',\n  // …your VitePress config…\n}, { url: 'https://mysite.com' }));\n```\n\n`withAeo` wraps your config: it collects pages during `vitepress build`, injects the widget, and generates AEO files into the output directory. `url`, `title`, and `description` default from your VitePress site config (and `sitemap.hostname`).\n\n### Angular\n\n```json\n{\n  \"scripts\": {\n    \"postbuild\": \"node -e \\\"import('aeo.js/angular').then(m => m.postBuild({ title: 'My App', url: 'https://myapp.com' }))\\\"\"\n  }\n}\n```\n\n### Webpack\n\n```js\n// webpack.config.js\nconst { AeoWebpackPlugin } = require('aeo.js/webpack');\n\nmodule.exports = {\n  plugins: [\n    new AeoWebpackPlugin({\n      title: 'My Site',\n      description: 'A site optimized for AI discovery',\n      url: 'https://mysite.com',\n    }),\n  ],\n};\n```\n\n### CLI\n\nNo framework needed — run standalone:\n\n```bash\nnpx aeo.js generate --url https://mysite.com --title \"My Site\"\nnpx aeo.js init\nnpx aeo.js check\n```\n\n## Supported Frameworks\n\n| Framework | Import |\n|-----------|--------|\n| Astro | `aeo.js/astro` |\n| Next.js | `aeo.js/next` |\n| Vite | `aeo.js/vite` |\n| Nuxt | `aeo.js/nuxt` |\n| Remix | `aeo.js/remix` |\n| SvelteKit | `aeo.js/sveltekit` |\n| Angular | `aeo.js/angular` |\n| Webpack | `aeo.js/webpack` |\n| CLI | `npx aeo.js generate` |\n\n## Widget\n\nThe Human/AI widget lets visitors toggle between the normal page and its AI-readable markdown version.\n\n| Default | Small | Icon |\n|---------|-------|------|\n| <img src=\"widget-default.gif\" alt=\"Default widget\" width=\"220\"> | <img src=\"widget-small.gif\" alt=\"Small widget\" width=\"220\"> | <img src=\"widget-icon.gif\" alt=\"Icon widget\" width=\"220\"> |\n\nFramework plugins inject it automatically. For Next.js or manual setups:\n\n```tsx\n'use client';\nimport { useEffect } from 'react';\n\nexport function AeoWidgetLoader() {\n  useEffect(() => {\n    import('aeo.js/widget').then(({ AeoWidget }) => {\n      new AeoWidget({\n        config: {\n          title: 'My Site',\n          url: 'https://mysite.com',\n          widget: { enabled: true, position: 'bottom-right' },\n        },\n      });\n    });\n  }, []);\n  return null;\n}\n```\n\nReact and Vue wrapper components are also available:\n\n```tsx\nimport { AeoReactWidget } from 'aeo.js/react';\n\n<AeoReactWidget config={{ title: 'My Site', url: 'https://mysite.com' }} />\n```\n\n```vue\n<script setup>\nimport { AeoVueWidget } from 'aeo.js/vue';\n</script>\n\n<template>\n  <AeoVueWidget :config=\"{ title: 'My Site', url: 'https://mysite.com' }\" />\n</template>\n```\n\n## Generated Files\n\nAfter building, your output directory contains:\n\n```\npublic/\n├── robots.txt        # AI-crawler directives\n├── llms.txt          # Short LLM-readable summary\n├── llms-full.txt     # Full content for LLMs\n├── sitemap.xml       # Standard sitemap\n├── docs.json         # Documentation manifest\n├── ai-index.json     # AI content index\n├── index.md          # Markdown for /\n└── about.md          # Markdown for /about\n```\n\n## Configuration\n\n```js\nimport { defineConfig } from 'aeo.js';\n\nexport default defineConfig({\n  title: 'My Site',\n  url: 'https://mysite.com',\n  description: 'A description of your site',\n\n  generators: {\n    robotsTxt: true,\n    llmsTxt: true,\n    llmsFullTxt: true,\n    rawMarkdown: true,\n    sitemap: true,\n    aiIndex: true,\n    schema: true,\n  },\n\n  schema: {\n    enabled: true,\n    organization: { name: 'My Company', url: 'https://mysite.com' },\n    defaultType: 'WebPage',\n  },\n\n  og: {\n    enabled: true,\n    image: 'https://mysite.com/og.png',\n    twitterHandle: '@mycompany',\n  },\n\n  widget: {\n    enabled: true,\n    position: 'bottom-right',\n    theme: { accent: '#4ADE80', badge: '#4ADE80' },\n  },\n});\n```\n\nFull configuration reference → [aeojs.org/reference/configuration](https://aeojs.org/reference/configuration/)\n\n## Why AEO?\n\n- **58% of searches** end without a click — AI gives the answer directly\n- **40% of Gen Z** prefer AI assistants over traditional search engines\n- **97% of sites** have no `llms.txt` or structured data for AI crawlers\n- **1 minute** to set up with aeo.js\n\nIf your site isn't optimized for AI engines, you're invisible to a growing share of users who never open a search results page.\n\n## Links\n\n- [Documentation](https://aeojs.org)\n- [AEO Checker](https://check.aeojs.org)\n- [npm](https://www.npmjs.com/package/aeo.js)\n- [GitHub](https://github.com/rubenmarcus/aeo.js)\n\n## License\n\nMIT\n",
-      "media": [
-        {
-          "type": "image",
-          "url": "https://mysite.com/og.png",
-          "caption": ""
-        }
-      ],
-      "score": 1106.7
+      "readmeExcerpt": "<p align=\"center\">\n  <a href=\"https://openpo.st\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/brand/lockup-dark.svg\">\n      <img src=\"./assets/brand/lockup.svg\" alt=\"OpenPost\" width=\"240\" height=\"60\">\n    </picture>\n  </a>\n</p>\n\n<h3 align=\"center\">An open-source alternative to Buffer, Canva, and CapCut.</h3>\n\n<p align=\"center\">\n  Write posts, design images and carousels, edit videos, and schedule your content in one app.<br>\n  Self-host OpenPost or use OpenPost Hosted.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/downloads-dark.svg\">\n      <img src=\"./assets/badges/downloads-light.svg\" alt=\"Release downloads\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/release-dark.svg\">\n      <img src=\"./assets/badges/release-light.svg\" alt=\"Latest release\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/actions/workflows/ci.yml\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/build-dark.svg\">\n      <img src=\"./assets/badges/build-light.svg\" alt=\"Build status\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/stargazers\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/stars-dark.svg\">\n      <img src=\"./assets/badges/stars-light.svg\" alt=\"GitHub stars\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://app.openpo.st/image-editor\"><strong>Try the image editor</strong></a>\n  ·\n  <a href=\"https://app.openpo.st/video-editor\"><strong>Try the video editor</strong></a>\n  ·\n  <a href=\"#self-host\"><strong>Self-host</strong></a>\n  ·\n  <a href=\"https://docs.openpo.st\"><strong>Docs</strong></a>\n</p>\n\n<p align=\"center\">\n  Both editors are free to use without an account or watermark.<br>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">\n    <img src=\"./assets/screenshots/readme-hero-dark.webp\" alt=\"OpenPost composer with platform-specific drafts, previews, and scheduling controls\" width=\"100%\">\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">Watch the product tour</a>\n  ·\n  <a href=\"https://openpo.st/#features\">See all features</a>\n</p>\n\n<table>\n  <tr>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/image-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/image-editor-dark.webp\">\n          <img src=\"./assets/screenshots/image-editor-light.webp\" alt=\"OpenPost image editor with a design canvas, layers, and editing controls\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Design images and carousels</strong>\n    </td>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/video-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/video-editor-dark.webp\">\n          <img src=\"./assets/screenshots/video-editor-light.webp\" alt=\"OpenPost video editor with a video preview and multitrack timeline\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Edit and caption videos</strong>\n    </td>\n  </tr>\n</table>\n\n## What you can do\n\n- <img src=\"./assets/brand/features/accounts.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Connect accounts](https://docs.openpo.st/guides/accounts).** Manage your social connections in one workspace. Each provider keeps its own capabilities and publishing limits.\n- <img src=\"./assets/brand/features/compose.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Compose for each platform](https://docs.openpo.st/guides/publishing).** Write posts and threads, then adjust the text and media for each account. Preview each version before publishing. Save account groups as Social Sets to reuse them.\n- <img src=\"./assets/brand/features/image-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Image editor](https://docs.openpo.st/guides/image-editor).** Design images and multi-page carousels with layers, templates, and custom fonts. Remove backgrounds in your browser. Export individual pages or the full carousel, or attach them to your post.\n- <img src=\"./assets/brand/features/video-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Video editor](https://docs.openpo.st/guides/video-editor).** Trim and arrange clips on a multitrack timeline. Add captions, transitions, effects, and audio. Cut footage by selecting words in its transcript.\n- <img src=\"./assets/brand/features/recorder.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Recorder](https://docs.openpo.st/guides/recording).** Capture your screen, camera, and microphone, then bring the recording into your video edit.\n- <img src=\"./assets/brand/features/calendar.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Calendar and queues](https://docs.openpo.st/guides/scheduling).** Choose a publishing time or the next free slot in a queue. Plan your posts in the calendar, stagger publishing across accounts, and get reminders when your queue runs low.\n- <img src=\"./assets/brand/features/repost.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Auto repost.** Set delays and engagement rules for native reposts on supported networks. Override the defaults for individual posts.\n- <img src=\"./assets/brand/features/media.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Media library](https://docs.openpo.st/guides/media-library).** Keep reusable images, videos, fonts, and brand assets in your workspace. Organize files with tags, collections, and favorites. Attach saved media without uploading it again.\n- <img src=\"./assets/brand/features/memes.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Meme maker](https://docs.openpo.st/guides/media-library#add-media-to-a-post).** Pick a template, edit its captions, and replace its images. Save the result to your media library or attach it to a post.\n- <img src=\"./assets/brand/features/inbox.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Inbox and messages](https://docs.openpo.st/guides/inbox).** Read and reply to supported comments and direct messages without switching between social apps.\n- <img src=\"./assets/brand/features/analytics.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Analytics and repurposing](https://docs.openpo.st/guides/analytics).** Compare post results and track audience changes across your accounts. Use a previous post as the starting point for a new draft.\n- <img src=\"./assets/brand/features/grow.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Find people.** Find accounts to follow on Bluesky and Mastodon. Review the suggestions and choose who to follow.\n- <img src=\"./assets/brand/features/ideas.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **AI writing and ideas.** Generate ideas, compare draft directions, and adapt posts for your selected platforms. You review the result before publishing. AI writing is optional. [Self-hosted AI setup](https://docs.openpo.st/self-hosting/ai).\n- <img src=\"./assets/brand/features/automation.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[API, CLI, MCP, and n8n](https://docs.openpo.st/guides/automation).** Create drafts, schedule posts, and check publishing results from your scripts, agents, or n8n workflows. See the [API reference](https://docs.openpo.st/api-reference) for endpoints.\n- <img src=\"./assets/brand/features/workspaces.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Teams and workspaces](https://docs.openpo.st/guides/workspaces).** Keep brands and clients in separate workspaces and control who can edit them. Protect your account with passkeys, two-factor authentication, and session controls.\n\n## Get started\n\n### OpenPost Hosted\n\nUse OpenPost to create and schedule posts without running your own server.\n\n[Start a 14-day trial](https://app.openpo.st/register?plan=founder&billing_period=monthly) · [View plans](https://openpo.st/pricing)\n\n### Self-host\n\nRun OpenPost with Docker Compose. The default setup uses one container with SQLite and local media storage.\n\n[Get started with self-hosting →](https://docs.openpo.st/self-hosting/) · [Configure integrations](https://docs.openpo.st/self-hosting/integrations) · [Backups and upgrades](https://docs.openpo.st/self-hosting/maintenance)\n\n## Supported platforms\n\n<p>\n  <img src=\"./assets/postiz-socials/Instagram.svg\" alt=\"Instagram\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Facebook.svg\" alt=\"Facebook\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Linkedin.svg\" alt=\"LinkedIn\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/X.svg\" alt=\"X\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/TikTok.svg\" alt=\"TikTok\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Youtube.svg\" alt=\"YouTube\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Threads.svg\" alt=\"Threads\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Bluesky.svg\" alt=\"Bluesky\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Mastodon.svg\" alt=\"Mastodon\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Discord.svg\" alt=\"Discord\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Pinterest.svg\" alt=\"Pinterest\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Telegram.svg\" alt=\"Telegram\" width=\"32\" height=\"32\">\n</p>\n\nOpenPost has integrations for Instagram, Facebook, LinkedIn, X, TikTok, YouTube, Threads, Bluesky, Mastodon, Discord, Pinterest, and Telegram. Discord supports incoming webhooks and a bot integration; Telegram uses a bot.\n\nPinterest, Telegram, and Discord bot integrations are not yet certified for general Hosted use.\n\nPosting formats, inbox features, and analytics vary by platform. Some integrations require provider app approval or publicly reachable media URLs.\n\n[Connect accounts](https://docs.openpo.st/guides/accounts) · [Integration requirements](https://docs.openpo.st/self-hosting/integrations)\n\n## Contributing\n\nReport bugs, improve the docs, or send a pull request. For larger changes, open an issue first so we can agree on the approach.\n\nOpenPost uses Go, SvelteKit, and Expo, with a Devenv development environment. Start with the [contributing guide](./.github/CONTRIBUTING.md) and [development setup](https://docs.openpo.st/development/setup).\n\n[Report a bug](https://github.com/getopenpost/openpost/issues) · [Join Discord](https://discord.com/invite/u2QwukmY4W)\n\n## Star history\n\nSupport OpenPost with a [GitHub star](https://github.com/getopenpost/openpost/stargazers).\n\n<!-- star-history:start -->\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/star-history/star-history-dark.svg\">\n  <img alt=\"Star history\" src=\"assets/star-history/star-history-light.svg\">\n</picture>\n<!-- star-history:end -->\n\n## License and security\n\nOpenPost uses the [AGPL-3.0-only license](./LICENSE). See the [third-party notices](./licenses/README.md) for dependency licenses and attribution.\n\nReport vulnerabilities privately through the [security policy](./.github/SECURITY.md).\n",
+      "media": [],
+      "score": 1106.95
     }
   ]
 }
