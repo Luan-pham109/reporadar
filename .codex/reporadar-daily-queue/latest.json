@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T06:22:15.636Z",
+  "generatedAt": "2026-09-14T06:31:31.179Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -42,14 +42,14 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5231,
+          "stars": 5234,
           "forks": 194,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 200,
-          "starsPerDay": 26.2,
+          "ageDays": 201,
+          "starsPerDay": 26,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
-          "openIssues": 119,
+          "openIssues": 120,
           "topics": [
             "automation",
             "controler",
@@ -104,7 +104,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5231 sao, 194 fork, ~26.2 sao/ngày, 200 ngày tuổi"
+            "5234 sao, 194 fork, ~26 sao/ngày, 201 ngày tuổi"
           ]
         }
       },
@@ -114,16 +114,109 @@
     },
     {
       "candidate": {
-        "key": "agricidaniel/on-page-seo",
-        "fullName": "AgriciDaniel/on-page-seo",
-        "url": "https://github.com/AgriciDaniel/on-page-seo",
-        "description": "On-Page SEO Analyzer - Analyze your website's SEO performance",
-        "stars": 250,
+        "key": "getopenpost/openpost",
+        "fullName": "getopenpost/openpost",
+        "url": "https://github.com/getopenpost/openpost",
+        "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
+        "stars": 414,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 250"
+          "⭐ 414"
+        ],
+        "signalUrls": [],
+        "points": 0,
+        "verticals": [
+          "agency"
+        ]
+      },
+      "signals": {
+        "repo": {
+          "owner": "getopenpost",
+          "repo": "openpost"
+        },
+        "github": {
+          "fullName": "getopenpost/openpost",
+          "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
+          "stars": 414,
+          "forks": 51,
+          "createdAt": "2026-03-21T11:12:13Z",
+          "ageDays": 177,
+          "starsPerDay": 2.3,
+          "pushedAt": "2026-09-14T06:23:24Z",
+          "archived": false,
+          "openIssues": 0,
+          "topics": [
+            "automation",
+            "buffer-alternative",
+            "content-creation",
+            "cross-posting",
+            "golang",
+            "mcp-server",
+            "self-hosted",
+            "single-binary",
+            "social-media",
+            "social-media-automation",
+            "social-media-management",
+            "social-media-scheduler",
+            "svelte",
+            "sveltekit"
+          ],
+          "homepage": "https://openpo.st",
+          "language": "TypeScript",
+          "suggestedHealthScore": 16
+        },
+        "hackerNews": [
+          {
+            "title": "Show HN: OpenPost, an open-source alternative to Buffer, CapCut, and Canva",
+            "points": 3,
+            "comments": 2,
+            "createdAt": "2026-09-09T13:24:28Z",
+            "hnUrl": "https://news.ycombinator.com/item?id=49626154"
+          }
+        ],
+        "reddit": [
+          {
+            "subreddit": "selfhosted",
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=openpost&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "opensource",
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=openpost&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "SideProject",
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=openpost&restrict_sr=1&sort=new"
+          }
+        ],
+        "heuristic": {
+          "maturitySuggestion": "pre-viral",
+          "reasons": [
+            "Đang được bàn ở HN/Reddit",
+            "414 sao, 51 fork, ~2.3 sao/ngày, 177 ngày tuổi"
+          ]
+        }
+      },
+      "readmeExcerpt": "<p align=\"center\">\n  <a href=\"https://openpo.st\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/brand/lockup-dark.svg\">\n      <img src=\"./assets/brand/lockup.svg\" alt=\"OpenPost\" width=\"240\" height=\"60\">\n    </picture>\n  </a>\n</p>\n\n<h3 align=\"center\">An open-source alternative to Buffer, Canva, and CapCut.</h3>\n\n<p align=\"center\">\n  Write posts, design images and carousels, edit videos, and schedule your content in one app.<br>\n  Self-host OpenPost or use OpenPost Hosted.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/downloads-dark.svg\">\n      <img src=\"./assets/badges/downloads-light.svg\" alt=\"Release downloads\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/release-dark.svg\">\n      <img src=\"./assets/badges/release-light.svg\" alt=\"Latest release\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/stargazers\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/stars-dark.svg\">\n      <img src=\"./assets/badges/stars-light.svg\" alt=\"GitHub stars\">\n    </picture>\n  </a>\n  <a href=\"https://url.rgo.pt/x\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/follow-dev-dark.svg\">\n      <img src=\"./assets/badges/follow-dev-light.svg\" alt=\"Follow the developer on X\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://app.openpo.st/image-editor\"><strong>Try the image editor</strong></a>\n  ·\n  <a href=\"https://app.openpo.st/video-editor\"><strong>Try the video editor</strong></a>\n  ·\n  <a href=\"#self-host\"><strong>Self-host</strong></a>\n  ·\n  <a href=\"https://docs.openpo.st\"><strong>Docs</strong></a>\n</p>\n\n<p align=\"center\">\n  Both editors are free to use without an account or watermark.<br>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">\n    <img src=\"./assets/screenshots/readme-hero-dark.webp\" alt=\"OpenPost composer with platform-specific drafts, previews, and scheduling controls\" width=\"100%\">\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">Watch the product tour</a>\n  ·\n  <a href=\"https://openpo.st/#features\">See all features</a>\n</p>\n\n<table>\n  <tr>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/image-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/image-editor-dark.webp\">\n          <img src=\"./assets/screenshots/image-editor-light.webp\" alt=\"OpenPost image editor with a design canvas, layers, and editing controls\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Design images and carousels</strong>\n    </td>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/video-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/video-editor-dark.webp\">\n          <img src=\"./assets/screenshots/video-editor-light.webp\" alt=\"OpenPost video editor with a video preview and multitrack timeline\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Edit and caption videos</strong>\n    </td>\n  </tr>\n</table>\n\n## What you can do\n\n- <img src=\"./assets/brand/features/accounts.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Connect accounts](https://docs.openpo.st/guides/accounts).** Manage your social connections in one workspace. Each provider keeps its own capabilities and publishing limits.\n- <img src=\"./assets/brand/features/compose.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Compose for each platform](https://docs.openpo.st/guides/publishing).** Write posts and threads, then adjust the text and media for each account. Preview each version before publishing. Save account groups as Social Sets to reuse them.\n- <img src=\"./assets/brand/features/image-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Image editor](https://docs.openpo.st/guides/image-editor).** Design images and multi-page carousels with layers, templates, and custom fonts. Remove backgrounds in your browser. Export individual pages or the full carousel, or attach them to your post.\n- <img src=\"./assets/brand/features/video-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Video editor](https://docs.openpo.st/guides/video-editor).** Trim and arrange clips on a multitrack timeline. Add captions, transitions, effects, and audio. Cut footage by selecting words in its transcript.\n- <img src=\"./assets/brand/features/recorder.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Recorder](https://docs.openpo.st/guides/recording).** Capture your screen, camera, and microphone, then bring the recording into your video edit.\n- <img src=\"./assets/brand/features/calendar.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Calendar and queues](https://docs.openpo.st/guides/scheduling).** Choose a publishing time or the next free slot in a queue. Plan your posts in the calendar, stagger publishing across accounts, and get reminders when your queue runs low.\n- <img src=\"./assets/brand/features/repost.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Auto repost.** Set delays and engagement rules for native reposts on supported networks. Override the defaults for individual posts.\n- <img src=\"./assets/brand/features/media.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Media library](https://docs.openpo.st/guides/media-library).** Keep reusable images, videos, fonts, and brand assets in your workspace. Organize files with tags, collections, and favorites. Attach saved media without uploading it again.\n- <img src=\"./assets/brand/features/memes.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Meme maker](https://docs.openpo.st/guides/media-library#add-media-to-a-post).** Pick a template, edit its captions, and replace its images. Save the result to your media library or attach it to a post.\n- <img src=\"./assets/brand/features/inbox.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Inbox and messages](https://docs.openpo.st/guides/inbox).** Read and reply to supported comments and direct messages without switching between social apps.\n- <img src=\"./assets/brand/features/analytics.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Analytics and repurposing](https://docs.openpo.st/guides/analytics).** Compare post results and track audience changes across your accounts. Use a previous post as the starting point for a new draft.\n- <img src=\"./assets/brand/features/grow.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Find people.** Find accounts to follow on Bluesky and Mastodon. Review the suggestions and choose who to follow.\n- <img src=\"./assets/brand/features/ideas.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **AI writing and ideas.** Generate ideas, compare draft directions, and adapt posts for your selected platforms. You review the result before publishing. AI writing is optional. [Self-hosted AI setup](https://docs.openpo.st/self-hosting/ai).\n- <img src=\"./assets/brand/features/automation.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[API, CLI, MCP, and n8n](https://docs.openpo.st/guides/automation).** Create drafts, schedule posts, and check publishing results from your scripts, agents, or n8n workflows. See the [API reference](https://docs.openpo.st/api-reference) for endpoints.\n- <img src=\"./assets/brand/features/workspaces.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Teams and workspaces](https://docs.openpo.st/guides/workspaces).** Keep brands and clients in separate workspaces and control who can edit them. Protect your account with passkeys, two-factor authentication, and session controls.\n\n## Get started\n\n### OpenPost Hosted\n\nUse OpenPost to create and schedule posts without running your own server.\n\n<a href=\"https://app.openpo.st/register?plan=founder&billing_period=monthly\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/start-trial-dark.svg\">\n    <img src=\"./assets/buttons/start-trial-light.svg\" alt=\"Start a 14-day trial\" height=\"36\">\n  </picture>\n</a>\n\n[View plans](https://openpo.st/pricing)\n\n### Self-host\n\nRun OpenPost with Docker Compose. The default setup uses one container with SQLite and local media storage.\n\n<a href=\"https://docs.openpo.st/self-hosting/\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/self-host-dark.svg\">\n    <img src=\"./assets/buttons/self-host-light.svg\" alt=\"Get started with self-hosting\" height=\"36\">\n  </picture>\n</a>\n\n[Configure integrations](https://docs.openpo.st/self-hosting/integrations) · [Backups and upgrades](https://docs.openpo.st/self-hosting/maintenance)\n\n## Supported platforms\n\n<p>\n  <img src=\"./assets/postiz-socials/Instagram.svg\" alt=\"Instagram\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Facebook.svg\" alt=\"Facebook\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Linkedin.svg\" alt=\"LinkedIn\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/X.svg\" alt=\"X\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/TikTok.svg\" alt=\"TikTok\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Youtube.svg\" alt=\"YouTube\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Threads.svg\" alt=\"Threads\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Bluesky.svg\" alt=\"Bluesky\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Mastodon.svg\" alt=\"Mastodon\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Discord.svg\" alt=\"Discord\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Pinterest.svg\" alt=\"Pinterest\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Telegram.svg\" alt=\"Telegram\" width=\"32\" height=\"32\">\n</p>\n\nOpenPost has integrations for Instagram, Facebook, LinkedIn, X, TikTok, YouTube, Threads, Bluesky, Mastodon, Discord, Pinterest, and Telegram. Discord supports incoming webhooks and a bot integration; Telegram uses a bot.\n\nPosting formats, inbox features, and analytics vary by platform. Some integrations require provider app approval or publicly reachable media URLs.\n\n[Connect accounts](https://docs.openpo.st/guides/accounts) · [Integration requirements](https://docs.openpo.st/self-hosting/integrations)\n\n## Contributing\n\nReport bugs, improve the docs, or send a pull request. For larger changes, open an issue first so we can agree on the approach.\n\nOpenPost uses Go, SvelteKit, and Expo, with a Devenv development environment. Start with the [contributing guide](./.github/CONTRIBUTING.md) and [development setup](https://docs.openpo.st/development/setup).\n\n<a href=\"https://github.com/getopenpost/openpost/issues\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/report-bug-dark.svg\">\n    <img src=\"./assets/buttons/report-bug-light.svg\" alt=\"Report a bug\" height=\"36\">\n  </picture>\n</a>\n<a href=\"https://discord.com/invite/u2QwukmY4W\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/join-discord-dark.svg\">\n    <img src=\"./assets/buttons/join-discord-light.svg\" alt=\"Join Discord\" height=\"36\">\n  </picture>\n</a>\n\n## Star history\n\nSupport OpenPost with a [GitHub star](https://github.com/getopenpost/openpost/stargazers).\n\n<!-- star-history:start -->\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/star-history/star-history-dark.svg\">\n  <img alt=\"Star history\" src=\"assets/star-history/star-history-light.svg\">\n</picture>\n<!-- star-history:end -->\n\n## License and security\n\nOpenPost uses the [AGPL-3.0-only license](./LICENSE). See the [third-party notices](./licenses/README.md) for dependency licenses and attribution.\n\nReport vulnerabilities privately through the [security policy](./.github/SECURITY.md).\n",
+      "media": [],
+      "score": 1120.7
+    },
+    {
+      "candidate": {
+        "key": "agricidaniel/on-page-seo",
+        "fullName": "AgriciDaniel/on-page-seo",
+        "url": "https://github.com/AgriciDaniel/on-page-seo",
+        "description": "On-Page SEO Analyzer - Analyze your website's SEO performance",
+        "stars": 251,
+        "sources": [
+          "github-search"
+        ],
+        "signals": [
+          "⭐ 251"
         ],
         "signalUrls": [],
         "points": 0,
@@ -140,10 +233,10 @@
         "github": {
           "fullName": "AgriciDaniel/on-page-seo",
           "description": "On-Page SEO Analyzer - Analyze your website's SEO performance",
-          "stars": 250,
+          "stars": 251,
           "forks": 57,
           "createdAt": "2026-01-03T16:13:09Z",
-          "ageDays": 253,
+          "ageDays": 254,
           "starsPerDay": 1,
           "pushedAt": "2026-06-06T05:02:38Z",
           "archived": false,
@@ -183,7 +276,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "250 sao, 57 fork, ~1 sao/ngày, 253 ngày tuổi"
+            "251 sao, 57 fork, ~1 sao/ngày, 254 ngày tuổi"
           ]
         }
       },
@@ -195,7 +288,7 @@
           "caption": ""
         }
       ],
-      "score": 1112.5
+      "score": 1112.55
     },
     {
       "candidate": {
@@ -203,12 +296,12 @@
         "fullName": "EvoLinkAI/gpt-image-2.5-for-e-commerce",
         "url": "https://github.com/EvoLinkAI/gpt-image-2.5-for-e-commerce",
         "description": "GPT Image 2.5 for e-commerce: prompt cookbook for listing photos, model try-on, product showcases, interaction scenes, and social commerce creatives.",
-        "stars": 190,
+        "stars": 194,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 190"
+          "⭐ 194"
         ],
         "signalUrls": [],
         "points": 0,
@@ -226,10 +319,10 @@
         "github": {
           "fullName": "EvoLinkAI/gpt-image-2.5-for-e-commerce",
           "description": "GPT Image 2.5 for e-commerce: prompt cookbook for listing photos, model try-on, product showcases, interaction scenes, and social commerce creatives.",
-          "stars": 190,
+          "stars": 194,
           "forks": 41,
           "createdAt": "2026-05-08T02:50:26Z",
-          "ageDays": 128,
+          "ageDays": 129,
           "starsPerDay": 1.5,
           "pushedAt": "2026-09-09T16:34:49Z",
           "archived": false,
@@ -282,7 +375,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "190 sao, 41 fork, ~1.5 sao/ngày, 128 ngày tuổi"
+            "194 sao, 41 fork, ~1.5 sao/ngày, 129 ngày tuổi"
           ]
         }
       },
@@ -304,100 +397,7 @@
           "caption": ""
         }
       ],
-      "score": 1109.5
-    },
-    {
-      "candidate": {
-        "key": "getopenpost/openpost",
-        "fullName": "getopenpost/openpost",
-        "url": "https://github.com/getopenpost/openpost",
-        "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
-        "stars": 187,
-        "sources": [
-          "github-search"
-        ],
-        "signals": [
-          "⭐ 187"
-        ],
-        "signalUrls": [],
-        "points": 0,
-        "verticals": [
-          "agency"
-        ]
-      },
-      "signals": {
-        "repo": {
-          "owner": "getopenpost",
-          "repo": "openpost"
-        },
-        "github": {
-          "fullName": "getopenpost/openpost",
-          "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
-          "stars": 187,
-          "forks": 23,
-          "createdAt": "2026-03-21T11:12:13Z",
-          "ageDays": 176,
-          "starsPerDay": 1.1,
-          "pushedAt": "2026-09-13T05:42:10Z",
-          "archived": false,
-          "openIssues": 0,
-          "topics": [
-            "automation",
-            "buffer-alternative",
-            "content-creation",
-            "cross-posting",
-            "golang",
-            "mcp-server",
-            "self-hosted",
-            "single-binary",
-            "social-media",
-            "social-media-automation",
-            "social-media-management",
-            "social-media-scheduler",
-            "svelte",
-            "sveltekit"
-          ],
-          "homepage": "https://openpo.st",
-          "language": "TypeScript",
-          "suggestedHealthScore": 15
-        },
-        "hackerNews": [
-          {
-            "title": "Show HN: OpenPost, an open-source alternative to Buffer, CapCut, and Canva",
-            "points": 3,
-            "comments": 2,
-            "createdAt": "2026-09-09T13:24:28Z",
-            "hnUrl": "https://news.ycombinator.com/item?id=49626154"
-          }
-        ],
-        "reddit": [
-          {
-            "subreddit": "selfhosted",
-            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=openpost&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "opensource",
-            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=openpost&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "SideProject",
-            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=openpost&restrict_sr=1&sort=new"
-          }
-        ],
-        "heuristic": {
-          "maturitySuggestion": "pre-viral",
-          "reasons": [
-            "Đang được bàn ở HN/Reddit",
-            "187 sao, 23 fork, ~1.1 sao/ngày, 176 ngày tuổi"
-          ]
-        }
-      },
-      "readmeExcerpt": "<p align=\"center\">\n  <a href=\"https://openpo.st\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/brand/lockup-dark.svg\">\n      <img src=\"./assets/brand/lockup.svg\" alt=\"OpenPost\" width=\"240\" height=\"60\">\n    </picture>\n  </a>\n</p>\n\n<h3 align=\"center\">An open-source alternative to Buffer, Canva, and CapCut.</h3>\n\n<p align=\"center\">\n  Write posts, design images and carousels, edit videos, and schedule your content in one app.<br>\n  Self-host OpenPost or use OpenPost Hosted.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/downloads-dark.svg\">\n      <img src=\"./assets/badges/downloads-light.svg\" alt=\"Release downloads\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/release-dark.svg\">\n      <img src=\"./assets/badges/release-light.svg\" alt=\"Latest release\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/stargazers\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/stars-dark.svg\">\n      <img src=\"./assets/badges/stars-light.svg\" alt=\"GitHub stars\">\n    </picture>\n  </a>\n  <a href=\"https://url.rgo.pt/x\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/follow-dev-dark.svg\">\n      <img src=\"./assets/badges/follow-dev-light.svg\" alt=\"Follow the developer on X\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://app.openpo.st/image-editor\"><strong>Try the image editor</strong></a>\n  ·\n  <a href=\"https://app.openpo.st/video-editor\"><strong>Try the video editor</strong></a>\n  ·\n  <a href=\"#self-host\"><strong>Self-host</strong></a>\n  ·\n  <a href=\"https://docs.openpo.st\"><strong>Docs</strong></a>\n</p>\n\n<p align=\"center\">\n  Both editors are free to use without an account or watermark.<br>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">\n    <img src=\"./assets/screenshots/readme-hero-dark.webp\" alt=\"OpenPost composer with platform-specific drafts, previews, and scheduling controls\" width=\"100%\">\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">Watch the product tour</a>\n  ·\n  <a href=\"https://openpo.st/#features\">See all features</a>\n</p>\n\n<table>\n  <tr>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/image-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/image-editor-dark.webp\">\n          <img src=\"./assets/screenshots/image-editor-light.webp\" alt=\"OpenPost image editor with a design canvas, layers, and editing controls\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Design images and carousels</strong>\n    </td>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/video-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/video-editor-dark.webp\">\n          <img src=\"./assets/screenshots/video-editor-light.webp\" alt=\"OpenPost video editor with a video preview and multitrack timeline\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Edit and caption videos</strong>\n    </td>\n  </tr>\n</table>\n\n## What you can do\n\n- <img src=\"./assets/brand/features/accounts.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Connect accounts](https://docs.openpo.st/guides/accounts).** Manage your social connections in one workspace. Each provider keeps its own capabilities and publishing limits.\n- <img src=\"./assets/brand/features/compose.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Compose for each platform](https://docs.openpo.st/guides/publishing).** Write posts and threads, then adjust the text and media for each account. Preview each version before publishing. Save account groups as Social Sets to reuse them.\n- <img src=\"./assets/brand/features/image-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Image editor](https://docs.openpo.st/guides/image-editor).** Design images and multi-page carousels with layers, templates, and custom fonts. Remove backgrounds in your browser. Export individual pages or the full carousel, or attach them to your post.\n- <img src=\"./assets/brand/features/video-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Video editor](https://docs.openpo.st/guides/video-editor).** Trim and arrange clips on a multitrack timeline. Add captions, transitions, effects, and audio. Cut footage by selecting words in its transcript.\n- <img src=\"./assets/brand/features/recorder.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Recorder](https://docs.openpo.st/guides/recording).** Capture your screen, camera, and microphone, then bring the recording into your video edit.\n- <img src=\"./assets/brand/features/calendar.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Calendar and queues](https://docs.openpo.st/guides/scheduling).** Choose a publishing time or the next free slot in a queue. Plan your posts in the calendar, stagger publishing across accounts, and get reminders when your queue runs low.\n- <img src=\"./assets/brand/features/repost.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Auto repost.** Set delays and engagement rules for native reposts on supported networks. Override the defaults for individual posts.\n- <img src=\"./assets/brand/features/media.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Media library](https://docs.openpo.st/guides/media-library).** Keep reusable images, videos, fonts, and brand assets in your workspace. Organize files with tags, collections, and favorites. Attach saved media without uploading it again.\n- <img src=\"./assets/brand/features/memes.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Meme maker](https://docs.openpo.st/guides/media-library#add-media-to-a-post).** Pick a template, edit its captions, and replace its images. Save the result to your media library or attach it to a post.\n- <img src=\"./assets/brand/features/inbox.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Inbox and messages](https://docs.openpo.st/guides/inbox).** Read and reply to supported comments and direct messages without switching between social apps.\n- <img src=\"./assets/brand/features/analytics.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Analytics and repurposing](https://docs.openpo.st/guides/analytics).** Compare post results and track audience changes across your accounts. Use a previous post as the starting point for a new draft.\n- <img src=\"./assets/brand/features/grow.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Find people.** Find accounts to follow on Bluesky and Mastodon. Review the suggestions and choose who to follow.\n- <img src=\"./assets/brand/features/ideas.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **AI writing and ideas.** Generate ideas, compare draft directions, and adapt posts for your selected platforms. You review the result before publishing. AI writing is optional. [Self-hosted AI setup](https://docs.openpo.st/self-hosting/ai).\n- <img src=\"./assets/brand/features/automation.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[API, CLI, MCP, and n8n](https://docs.openpo.st/guides/automation).** Create drafts, schedule posts, and check publishing results from your scripts, agents, or n8n workflows. See the [API reference](https://docs.openpo.st/api-reference) for endpoints.\n- <img src=\"./assets/brand/features/workspaces.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Teams and workspaces](https://docs.openpo.st/guides/workspaces).** Keep brands and clients in separate workspaces and control who can edit them. Protect your account with passkeys, two-factor authentication, and session controls.\n\n## Get started\n\n### OpenPost Hosted\n\nUse OpenPost to create and schedule posts without running your own server.\n\n[Start a 14-day trial](https://app.openpo.st/register?plan=founder&billing_period=monthly) · [View plans](https://openpo.st/pricing)\n\n### Self-host\n\nRun OpenPost with Docker Compose. The default setup uses one container with SQLite and local media storage.\n\n[Get started with self-hosting →](https://docs.openpo.st/self-hosting/) · [Configure integrations](https://docs.openpo.st/self-hosting/integrations) · [Backups and upgrades](https://docs.openpo.st/self-hosting/maintenance)\n\n## Supported platforms\n\n<p>\n  <img src=\"./assets/postiz-socials/Instagram.svg\" alt=\"Instagram\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Facebook.svg\" alt=\"Facebook\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Linkedin.svg\" alt=\"LinkedIn\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/X.svg\" alt=\"X\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/TikTok.svg\" alt=\"TikTok\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Youtube.svg\" alt=\"YouTube\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Threads.svg\" alt=\"Threads\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Bluesky.svg\" alt=\"Bluesky\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Mastodon.svg\" alt=\"Mastodon\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Discord.svg\" alt=\"Discord\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Pinterest.svg\" alt=\"Pinterest\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Telegram.svg\" alt=\"Telegram\" width=\"32\" height=\"32\">\n</p>\n\nOpenPost has integrations for Instagram, Facebook, LinkedIn, X, TikTok, YouTube, Threads, Bluesky, Mastodon, Discord, Pinterest, and Telegram. Discord supports incoming webhooks and a bot integration; Telegram uses a bot.\n\nPinterest, Telegram, and Discord bot integrations are not yet certified for general Hosted use.\n\nPosting formats, inbox features, and analytics vary by platform. Some integrations require provider app approval or publicly reachable media URLs.\n\n[Connect accounts](https://docs.openpo.st/guides/accounts) · [Integration requirements](https://docs.openpo.st/self-hosting/integrations)\n\n## Contributing\n\nReport bugs, improve the docs, or send a pull request. For larger changes, open an issue first so we can agree on the approach.\n\nOpenPost uses Go, SvelteKit, and Expo, with a Devenv development environment. Start with the [contributing guide](./.github/CONTRIBUTING.md) and [development setup](https://docs.openpo.st/development/setup).\n\n[Report a bug](https://github.com/getopenpost/openpost/issues) · [Join Discord](https://discord.com/invite/u2QwukmY4W)\n\n## Star history\n\nSupport OpenPost with a [GitHub star](https://github.com/getopenpost/openpost/stargazers).\n\n<!-- star-history:start -->\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/star-history/star-history-dark.svg\">\n  <img alt=\"Star history\" src=\"assets/star-history/star-history-light.svg\">\n</picture>\n<!-- star-history:end -->\n\n## License and security\n\nOpenPost uses the [AGPL-3.0-only license](./LICENSE). See the [third-party notices](./licenses/README.md) for dependency licenses and attribution.\n\nReport vulnerabilities privately through the [security policy](./.github/SECURITY.md).\n",
-      "media": [],
-      "score": 1109.35
+      "score": 1109.7
     },
     {
       "candidate": {
@@ -405,12 +405,12 @@
         "fullName": "avansaber/seo-monster",
         "url": "https://github.com/avansaber/seo-monster",
         "description": "SEOMonster: a local, user-credential-driven MCP server for SEO workflows over Google Search Console, GA4, PageSpeed Insights, and Cloudflare. Read-first, open source.",
-        "stars": 157,
+        "stars": 156,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 157"
+          "⭐ 156"
         ],
         "signalUrls": [],
         "points": 0,
@@ -427,11 +427,11 @@
         "github": {
           "fullName": "avansaber/seo-monster",
           "description": "SEOMonster: a local, user-credential-driven MCP server for SEO workflows over Google Search Console, GA4, PageSpeed Insights, and Cloudflare. Read-first, open source.",
-          "stars": 157,
+          "stars": 156,
           "forks": 60,
           "createdAt": "2026-05-28T04:53:53Z",
-          "ageDays": 108,
-          "starsPerDay": 1.5,
+          "ageDays": 109,
+          "starsPerDay": 1.4,
           "pushedAt": "2026-09-01T17:23:40Z",
           "archived": false,
           "openIssues": 8,
@@ -477,13 +477,13 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "157 sao, 60 fork, ~1.5 sao/ngày, 108 ngày tuổi"
+            "156 sao, 60 fork, ~1.4 sao/ngày, 109 ngày tuổi"
           ]
         }
       },
       "readmeExcerpt": "<div align=\"center\">\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/wordmark-dark.svg\">\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"assets/wordmark-light.svg\">\n  <img alt=\"SEOMonster\" src=\"assets/wordmark-light.svg\" width=\"440\">\n</picture>\n\n<h3>Don't learn another SEO dashboard. Just ask.</h3>\n\n<p>The open-source SEO analyst that lives inside the AI assistant you already use —<br>working from <b>your own</b> Search Console, Analytics, and PageSpeed data, on your machine.</p>\n\n<p>\n  <a href=\"https://pypi.org/project/seo-monster/\"><img src=\"https://img.shields.io/pypi/v/seo-monster?color=2BD9A8&label=pypi\" alt=\"PyPI version\"></a>\n  <a href=\"https://pypi.org/project/seo-monster/\"><img src=\"https://img.shields.io/pypi/pyversions/seo-monster\" alt=\"Python versions\"></a>\n  <a href=\"https://pypi.org/project/seo-monster/\"><img src=\"https://img.shields.io/pypi/dm/seo-monster?color=2BD9A8\" alt=\"Downloads\"></a>\n  <a href=\"https://github.com/avansaber/seo-monster/actions\"><img src=\"https://img.shields.io/badge/tests-575%20passing-2BD9A8\" alt=\"Tests\"></a>\n  <img src=\"https://img.shields.io/badge/license-MIT-green\" alt=\"License: MIT\">\n  <a href=\"https://github.com/avansaber/seo-monster/stargazers\"><img src=\"https://img.shields.io/github/stars/avansaber/seo-monster?style=flat&color=2BD9A8\" alt=\"GitHub stars\"></a>\n</p>\n\n<p>\n  <a href=\"https://cursor.com/en/install-mcp?name=seomonster&amp;config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyJzZW8tbW9uc3RlciJdfQ==\"><img src=\"https://cursor.com/deeplink/mcp-install-dark.svg\" alt=\"Add to Cursor\" height=\"32\"></a>\n  &nbsp;\n  <a href=\"https://insiders.vscode.dev/redirect/mcp/install?name=seomonster&amp;config=%7B%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22seo-monster%22%5D%7D\"><img src=\"https://img.shields.io/badge/VS_Code-Install_server-0098FF?style=flat&logo=visualstudiocode&logoColor=white\" alt=\"Install in VS Code\" height=\"32\"></a>\n  &nbsp;\n  <a href=\"https://seomonster.avansaber.com\"><img src=\"https://img.shields.io/badge/Website-seomonster.avansaber.com-555\" alt=\"Website\" height=\"32\"></a>\n</p>\n\n</div>\n\n---\n\nYou don't open a new tool — you just ask, in plain English, inside **Claude** (or Cursor / Cline / Codex):\n\n> **You** &nbsp; *\"What should I write about next?\"*\n>\n> **🦖 SEOMonster** &nbsp; Pulls your Search Console and surfaces three topics you're *almost* ranking for — positions 8–20 with real demand — ranked by opportunity. Say the word and it drafts the brief.\n\n| You ask … | … SEOMonster does |\n| :-- | :-- |\n| *\"What should I write about next?\"* | Surfaces near-ranking topics from **your own** Search Console demand |\n| *\"Is this page ready to publish?\"* | Runs the technical-SEO + structured-data checks before you ship |\n| *\"Get this indexed.\"* | Nudges Google (Indexing API) and Bing / Yandex (IndexNow) |\n| *\"Did my change actually move rankings?\"* | Before/after attribution vs a matched control group — with a confidence interval, not a guess |\n| *\"Is ChatGPT recommending us, or our competitors?\"* | Tracks your brand's **share of voice** across the AI answer engines |\n\n**70 tools** across Search Console, GA4, PageSpeed, Cloudflare, AI-citation tracking, keyword discovery, and technical SEO — every one returning the same JSON result envelope, every one driven by your own credentials. No new dashboard to learn; you chat with the assistant you already use.\n\n> [!NOTE]\n> Published on PyPI as **`seo-monster`** (so the command is `uvx seo-monster`). The import package is `seo_mcp`; `seo-mcp` is a dev/local alias. The package ships **zero secrets** — every credential is resolved at runtime from your own environment or config file.\n\n- **Your data, your machine.** User-credential-driven; nothing is sent to any third party.\n- **Read-first, safe by default.** Reads always work; the two routine writes (sitemap submit, indexing request) are on by default; the Cloudflare write tools (cache purge, redirects, settings, managed robots.txt) are gated behind `SEO_MCP_ALLOW_DESTRUCTIVE`, and the riskier ones also need a per-call `confirm` token.\n- **Lean.** Standard library + the `mcp` SDK + the Google client libraries; PageSpeed and Cloudflare ride on `urllib`, no extra HTTP dependency.\n\n## Quickstart\n\n> [!TIP]\n> Fastest path: the **one-click install** buttons above. Or add it to any MCP client by hand:\n\n```json\n{\n  \"mcpServers\": {\n    \"seomonster\": { \"command\": \"uvx\", \"args\": [\"seo-monster\"] }\n  }\n}\n```\n\nRun the one-time Google sign-in once — `uvx --from seo-monster seo-monster auth` — then ask your assistant to call **`system_status`** to confirm what's connected. Full per-client setup and credentials are in [Install](#install) and [Auth](#auth).\n\n## How it works\n\n```mermaid\nflowchart LR\n  U[\"You — plain English\"] --> H[\"Claude · Cursor · Cline · Codex\"]\n  H -- \"MCP · stdio\" --> S[\"SEOMonster<br/>70 tools\"]\n  S --> GSC[\"Search Console · GA4\"]\n  S --> PSI[\"PageSpeed · CrUX\"]\n  S --> CF[\"Cloudflare · IndexNow\"]\n  S --> AI[\"AI engines · SERP<br/>(optional)\"]\n  S -. \"your creds · your machine\" .-> U\n```\n\nSEOMonster is a stdio **MCP server**: your AI host launches it, it calls Google / Cloudflare / the AI engines with *your* credentials, and returns a consistent JSON envelope the assistant reads back to you in plain language.\n\n## Requirements\n\nFor the **`.mcpb` bundle path** (Claude Desktop): just Claude Desktop on macOS\nor Windows. The bundle declares Python 3.11+ as a runtime; Claude Desktop\nmaterializes the environment for you. No prior `uv` install needed.\n\nFor the **`uvx` path** (Cursor, Cline, Codex, advanced Claude Desktop): Python\n3.11 or newer plus [`uv`](https://docs.astral.sh/uv/) (which provides `uvx`).\nFind the absolute path to `uvx` with `which uvx`; GUI hosts do not read your\nshell profile, so MCP configs need the full path.\n\n## Tools\n\n70 tools, grouped by service. All return the same result envelope (see\n[Result envelope](#result-envelope)). Call `system_status` first if unsure what\nis configured. The server also publishes thirteen named [workflow prompts](#workflow-prompts).\n\n**Cross-service**\n- `system_status` - which services are configured/reachable, the Google auth\n  method and scopes, whether destructive mode is on, the full tool catalog,\n  and the list of registered prompts.\n\n<details>\n<summary><b>📂 Browse all 70 tools</b> — grouped by service (GSC · GA4 · AI/GEO · keyword discovery · content · PageSpeed/CrUX · Cloudflare · IndexNow · technical · schema). Click to expand.</summary>\n<br>\n\n<a name=\"gsc\"></a>\n**Google Search Console (18)**\n\n*Workhorses*\n- `gsc_list_properties` - properties the credentials can see, with permission\n  level and a derived `writable` flag (true for `siteOwner` / `siteFullUser`).\n- `gsc_search_analytics` - the workhorse: clicks/impressions/CTR/position by\n  dimensions, date range, filters, and `data_state`.\n- `gsc_top_queries` / `gsc_top_pages` - convenience top-N wrappers.\n- `gsc_compare_periods` - current vs prior window with per-key deltas.\n  v0.2.0 added `sort_by`, `sort_dir`, `min_delta_clicks` / `_impressions` /\n  `_position`, `anomalies_only` + `sigma_threshold`, and `top` for one-call\n  movers / losers / outliers reporting.\n- `gsc_inspect_url` - URL Inspection (index verdict, coverage, canonicals).\n- `gsc_batch_inspect_urls` - inspect up to 25 URLs, per-URL failures collected.\n- `gsc_list_sitemaps` - registered sitemaps and their status.\n- `gsc_submit_sitemap` - submit a sitemap (write, un-gated; needs the writable\n  scope). Accepts either `sitemap_url` (friendly) or `feedpath` (raw API field).\n- `gsc_request_indexing` - request (re)crawl via the Indexing API (write,\n  un-gated). Accepts singular `url` or `urls`.\n\n*Query intelligence (v0.2.0)*\n- `gsc_query_opportunities` - queries already ranking top N with below-target\n  CTR. Title and meta optimization candidates.\n- `gsc_query_gaps` - queries that draw impressions but barely any clicks.\n  Content opportunity signal.\n- `gsc_new_queries` - queries appearing in the current window with no prior\n  impressions. Emerging topics.\n- `gsc_top_pages_by_query` - which pages rank for a specific query. The\n  cannibalization audit input.\n\n*Multi-property + lifecycle (v0.5.0)*\n- `gsc_portfolio_summary(days, include?, exclude?)` - multi-property fleet\n  view. Per-property one-row summary (clicks, impressions, CTR, position)\n  for the last N days, plus a portfolio-level rollup. Honors optional\n  `include` / `exclude` filters. The single fastest answer to \"how is the\n  whole portfolio doing?\" across agency or multi-brand setups.\n- `gsc_trending_pages(days, limit)` - pages whose impressions grew most over\n  the last N days vs the prior N days. Wrapper on `gsc_compare_periods` with\n  `dimensions=[\"page\"], sort_by=\"delta_impressions\", sort_dir=\"desc\"`.\n- `gsc_decaying_pages(days, limit)` - same wrapper, ascending sort. Pages\n  to rescue.\n- `gsc_coverage_audit(urls, site_url?)` - heuristic coverage audit. The GSC\n  Index Coverage report is not exposed in the API; this tool takes a user-\n  supplied URL list (typically pulled from a sitemap) and bulk-inspects\n  each, then rolls up verdicts (PASS / PARTIAL / FAIL) and coverage_state\n  frequencies.\n\n<a name=\"content\"></a>\n**Content intelligence (4)**\n- `content_opportunities(site_url?, days?, count?, impressions_min?)` - ranks\n  data-grounded content topics from your own Search Console data: fuses\n  CTR-vs-expected gap (curve self-calibrated from your own per-position CTR),\n  striking-distance position, demand, and momentum into a transparent\n  opportunity score; flags cannibalization. If a GA4 property is configured, it\n  also weights each topic by the organic conversions its top page already drives\n  (up to +50%), so topics that convert rank higher; `filters_applied.ga4_value_status`\n  reports whether that ran and why (`applied` / `no_ga4_property` /\n  `ga4_unreachable` / `no_conversions`). Prioritizes demand you already have;\n  does not do cold-start keyword research or write the content. Pairs with the\n  content workflow prompts below. (GA4 weighting v0.7.3) v0.9.0 adds an additive\n  per-candidate `winnability` block (banded: striking-distance + topical-\n  proximity, GSC-personalization tier; existing fields unchanged).\n- `content_brief_data(target_query, competitor_urls?, topic?, site_url?, days?)` -\n  data-wired backing for a content brief: fetches the competitor pages (or your\n  own GSC-ranking pages as a fallback) and returns the heading union, median\n  word-count floor, schema types, and entity coverage, plus the 2026 GEO writing\n  directives and validation rules. The host writes the prose; SEOMonster brings\n  rules + evidence. Backs the `content_brief` prompt. (v0.9.0)\n- `topic_cluster_map(cluster_path | pillar_url, site_url?, days?, impressions_min?)`\n  - maps a content cluster from your own GSC data and surfaces missing subtopics.\n  Classifies each cluster query into defend / optimize / create / monitor by\n  demand and best position; the create quadrant is your missing-subtopic list.\n  Flags cannibalization. GSC-only; honest about the ~47% query anonymization. (v0.9.0)\n- `rank_change_attribution(url | urls, change_date, query?, site_url?, pre_days?, post_days?, gap_days?, control_scope?)`\n  - estimates whether an on-site change moved a page's clicks via\n  difference-in-differences against a matched control group (never a naked\n  before/after). Returns an estimated lift with a 95% CI, a three-state verdict\n  (likely_positive / likely_negative / inconclusive), and a confounders block\n  that auto-detects the 2025 GSC data-regime breaks (impression bug, num=100) and\n  downgrades position reliability. Observational, not causal -- a server-side\n  split test is the only true causal test. GSC-only. (v0.9.0)\n\n<a name=\"ai\"></a>\n**AI / GEO citation (3, v0.9.0)** - whether the AI answer surfaces reach and cite you.\n- `ai_citation_readiness(url)` - is a page structured to be extracted/cited by\n  LLM answer engines? Leads with a render-blindness check (GPTBot / ClaudeBot /\n  PerplexityBot fetch but do not run JS, so a client-rendered SPA is invisible to\n  them), then scores evidence-backed signals (statistics, quotations, cited\n  sources, no keyword-stuffing). schema.org / FAQ / llms.txt are reported as\n  informational only -- the 2026 evidence does not support them as AI-citation\n  drivers, so they are not scored. Free, HTTP-only.\n- `ai_referral_overview(property_id?, site_url?, days?)` - first-party AI traffic:\n  GA4 referral sessions from AI apps (the native `ai-assistant` channel plus a\n  configurable source-host regex) and AI-crawler robots coverage (GPTBot,\n  ClaudeBot, PerplexityBot, ...). Surfaces the ~70% dark-traffic undercount and\n  keeps AI-Overview clicks (counted as Organic) separate. Free.\n- `ai_citation_track(prompts, brand, brand_domains?, competitors?, engines?, samples?)`\n  - sampled brand mention + citation share-of-voice across AI engines\n  (Perplexity / OpenAI / Anthropic / Gemini APIs + Google AI Overviews via\n  DataForSEO) for a managed prompt set, vs competitors. N samples/prompt (default\n  7) with a 95% CI, share-of-voice, and run-to-run volatility -- NOT an \"AI rank\"\n  (single runs are statistically meaningless). Discloses that developer-API output\n  differs from the logged-in consumer UI and that AIO has no API. Paid +\n  non-deterministic. Needs at least one engine key and/or DataForSEO.\n\n<a name=\"discovery\"></a>\n**Keyword discovery (3, v0.9.0)** - find terms you don't already rank for.\n- `gsc_keyword_expand(candidates, site_url?, days?, impressions_min?)` - you\n  (the host) brainstorm candidate terms from your winning queries; this grounds\n  each against your own Search Console data (footprint covered / thin / none) with\n  a sibling-strength confidence band. \"none\" = no VISIBLE footprint (GSC hides\n  ~75% of impressions), so net-new terms are scored hypotheses. Free.\n- `serp_adjacency_expand(seeds, include_paa?)` - expand seed terms into adjacent\n  terms. FREE core: Google Autocomplete (no key). Optional People-Also-Ask +\n  related searches via DataForSEO. Returns per-seed suggestions plus the\n  aggregated net-new terms; degrades gracefully without a key.\n- `keyword_universe(target_domain?, competitors?, keywords?, limit?)` - optional,\n  paid. Core value: the competitor keyword GAP (DataForSEO Domain Intersection;\n  no Google equivalent). Optional search volume / difficulty / intent via a\n  provider chain (DataForSEO, else Google Ads volume-only). External volume is a\n  degraded directional signal -- a tiebreaker, never a gate.\n\n<a name=\"ga4\"></a>\n**Google Analytics 4 (7)**\n- `ga4_run_report` - the workhorse: arbitrary dimensions/metrics/date range,\n  optional dimension filter and ordering.\n- `ga4_top_landing_pages` - top landing pages, organic-only by default.\n- `ga4_traffic_by_channel` - sessions/engagement/conversions by channel group.\n- `ga4_organic_search_overview` - organic totals plus a day-by-day trend.\n- `ga4_setup_audit(property_id?)` - read-only SEO-measurement-readiness audit:\n  web data stream, key events, data retention, content-group dimensions, and\n  (v0.7.4) enhanced measurement, internal site search, and Google Signals.\n  Severity-graded with a benign exception per finding. Uses the GA4 Admin API\n  over REST (analytics.readonly; no extra dependency). (v0.7.0)\n- `ga4_site_search(days?, limit?)` - internal site-search query report (a\n  direct content-gap signal); honest envelope when no real search terms. (v0.7.1)\n- `ga4_landing_page_conversions(days?, organic_only?, limit?)` - organic\n  landing pages ranked by conversions. (v0.7.1)\n\n<a name=\"psi\"></a>\n**PageSpeed Insights (2)**\n- `psi_analyze` - Lighthouse scores, lab Core Web Vitals, and field (CrUX) Core\n  Web Vitals for a URL. Defaults to the mobile strategy. Field data carries a\n  `field_data_note`: Google is deprecating PSI field data, so use `crux_snapshot`\n  / `crux_history` for durable field metrics.\n- `psi_opportunities(url, strategy?)` - the actionable Lighthouse \"opportunity\"\n  audits (with estimated savings) plu",
       "media": [],
-      "score": 1107.85
+      "score": 1107.8
     }
   ]
 }
