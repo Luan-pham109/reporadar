@@ -11,14 +11,14 @@ vertical: ["ecom"]
 
 maturity: "rising"
 repoStats:
-  stars: 1133
-  forks: 58
-  note: "~564 ngày tuổi, ~2 sao/ngày"
-  starsPerDay: 2
-  ageDays: 564
-  pushedAt: 2026-06-30T11:36:42Z
+  stars: 1148
+  forks: 64
+  note: "~629 ngày tuổi, ~1.8 sao/ngày"
+  starsPerDay: 1.8
+  ageDays: 629
+  pushedAt: "2026-09-05T12:03:14Z"
   archived: false
-  openIssues: 3
+  openIssues: 1
 standoutFeatures:
   - "Gom nhiều nghiệp vụ vào một nền tảng: danh mục sản phẩm, BOM (định mức nguyên liệu), tồn kho, đơn hàng, sản xuất theo lô và CRM — thay vì trả tiền cho nhiều SaaS rời."
   - "BOM có phiên bản và tự tính giá thành theo tầng (nested BOM), kèm bước công (labor) có thời gian và chi phí — hợp với sản phẩm handmade nhiều nguyên liệu."

@@ -8,14 +8,14 @@ vertical: ["agency"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 58
-  forks: 17
-  note: "~330 ngày tuổi, ~0.2 sao/ngày"
+  stars: 76
+  forks: 22
+  note: "~398 ngày tuổi, ~0.2 sao/ngày"
   starsPerDay: 0.2
-  ageDays: 330
-  pushedAt: 2026-07-08T02:25:28Z
+  ageDays: 398
+  pushedAt: "2026-09-10T23:55:24Z"
   archived: false
-  openIssues: 12
+  openIssues: 56
 standoutFeatures:
   - "Một API để đăng/hẹn lịch bài lên nhiều nền tảng cùng lúc: X, Bluesky, Instagram, LinkedIn, TikTok, YouTube, Threads, Facebook, Pinterest."
   - "Kiến trúc rõ ràng theo 'dumb monorepo': tách api (NestJS), trigger (Trigger.dev background jobs), dashboard và marketing thành các surface độc lập."

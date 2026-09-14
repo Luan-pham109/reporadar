@@ -11,9 +11,14 @@ vertical: ["agency"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 3378
-  forks: 256
-  note: "~310 ngày tuổi, ~10.9 sao/ngày"
+  stars: 3475
+  forks: 263
+  note: "~389 ngày tuổi, ~8.9 sao/ngày"
+  starsPerDay: 8.9
+  ageDays: 389
+  pushedAt: "2025-10-13T05:36:00Z"
+  archived: false
+  openIssues: 10
 standoutFeatures:
   - "Thiết kế API-first và có nhắc rõ n8n, Make, Zapier nên hợp với người thích ghép automation vào stack outbound sẵn có."
   - "Có cơ chế điều tiết concurrency và working hours để không bắn nhiều hành động cùng lúc trên cùng một account."

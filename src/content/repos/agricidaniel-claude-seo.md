@@ -8,9 +8,14 @@ vertical: ["agency", "ecom", "seo"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 9851
-  forks: 1414
-  note: "~139 ngày tuổi, ~70.9 sao/ngày"
+  stars: 16877
+  forks: 2476
+  note: "~219 ngày tuổi, ~77.1 sao/ngày"
+  starsPerDay: 77.1
+  ageDays: 219
+  pushedAt: "2026-09-11T13:46:21Z"
+  archived: false
+  openIssues: 19
 standoutFeatures:
   - "Bao phủ nhiều mảng SEO trong một skill: technical, content quality, schema, GEO/AEO, local, ecommerce và international SEO."
   - "Dùng nhiều sub-agent chuyên biệt để chạy audit song song và trả về action plan ưu tiên."

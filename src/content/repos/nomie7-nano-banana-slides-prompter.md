@@ -8,12 +8,12 @@ vertical: ["agency", "creative"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 71
-  forks: 13
-  note: "~196 ngày tuổi, ~0.4 sao/ngày"
-  starsPerDay: 0.4
-  ageDays: 196
-  pushedAt: 2026-01-10T21:39:36Z
+  stars: 70
+  forks: 12
+  note: "~265 ngày tuổi, ~0.3 sao/ngày"
+  starsPerDay: 0.3
+  ageDays: 265
+  pushedAt: "2026-01-10T21:39:36Z"
   archived: false
   openIssues: 2
 standoutFeatures:
