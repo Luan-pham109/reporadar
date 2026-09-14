@@ -11,14 +11,14 @@ vertical: ["creative"]
 
 maturity: "rising"
 repoStats:
-  stars: 4690
-  forks: 363
-  note: "~1214 ngày tuổi, ~3.9 sao/ngày; vừa có sóng Show HN cho Whispering (591 điểm)"
-  starsPerDay: 3.9
-  ageDays: 1214
-  pushedAt: 2026-07-11T08:34:38Z
+  stars: 4799
+  forks: 379
+  note: "~1278 ngày tuổi, ~3.8 sao/ngày"
+  starsPerDay: 3.8
+  ageDays: 1278
+  pushedAt: "2026-09-08T08:38:26Z"
   archived: false
-  openIssues: 214
+  openIssues: 211
 standoutFeatures:
   - "Whispering là app speech-to-text (SPA) chạy được cả trên trình duyệt lẫn dạng native trong app desktop Epicenter; bấm ghi âm → nói → tuỳ chọn 'transform' transcript → copy hoặc dán thẳng."
   - "Local-first: có thể chạy phiên âm bằng model GGUF ngay trên máy (audio không rời máy), hoặc chọn provider đám mây/tự host tuỳ mức tin cậy bạn muốn."

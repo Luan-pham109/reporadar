@@ -14,14 +14,14 @@ vertical: ["seo", "agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 3124
-  forks: 719
-  note: "~114 ngày tuổi, ~27.4 sao/ngày"
-  starsPerDay: 27.4
-  ageDays: 114
-  pushedAt: "2026-08-02"
+  stars: 3629
+  forks: 822
+  note: "~154 ngày tuổi, ~23.6 sao/ngày"
+  starsPerDay: 23.6
+  ageDays: 154
+  pushedAt: "2026-09-14T05:12:32Z"
   archived: false
-  openIssues: 2
+  openIssues: 7
 standoutFeatures:
   - "Nối cả chuỗi: kho tri thức → AI sinh nội dung → duyệt → đăng, rồi phân phối ra nhiều site qua GEOFlow Agent, WordPress REST và HTTP API."
   - "Có RAG với cắt (chunk) theo quy tắc và tuỳ chọn quy hoạch ngữ nghĩa bằng LLM, truy hồi tài liệu liên quan khi sinh bài."

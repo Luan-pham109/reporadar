@@ -17,14 +17,14 @@ vertical: ["creative"]
 
 maturity: "rising"
 repoStats:
-  stars: 554
-  forks: 47
-  note: "~245 ngày tuổi, ~2.3 sao/ngày"
-  starsPerDay: 2.3
-  ageDays: 245
-  pushedAt: 2025-12-09T13:40:24Z
+  stars: 625
+  forks: 54
+  note: "~321 ngày tuổi, ~1.9 sao/ngày"
+  starsPerDay: 1.9
+  ageDays: 321
+  pushedAt: "2026-09-11T20:34:15Z"
   archived: false
-  openIssues: 27
+  openIssues: 7
 standoutFeatures:
   - "Custom node triển khai DyPE, một cách training-free để DiT model tạo ảnh vượt độ phân giải gốc mà không tăng sampling cost."
   - "README nêu rõ hướng dùng với FLUX, Qwen Image, Z-Image và Nunchaku, đúng nhóm model đang phổ biến trong cộng đồng ComfyUI."

@@ -14,14 +14,14 @@ vertical: ["creative"]
 
 maturity: "rising"
 repoStats:
-  stars: 15063
-  forks: 864
-  note: "~340 ngày tuổi, ~44.3 sao/ngày"
-  starsPerDay: 44.3
-  ageDays: 340
-  pushedAt: 2026-06-11T00:04:42Z
+  stars: 15447
+  forks: 887
+  note: "~405 ngày tuổi, ~38.1 sao/ngày"
+  starsPerDay: 38.1
+  ageDays: 405
+  pushedAt: "2026-08-19T00:12:38Z"
   archived: false
-  openIssues: 123
+  openIssues: 121
 standoutFeatures:
   - "Cực nhẹ: các model từ 15M đến 80M tham số, dung lượng 25-80 MB, xây trên ONNX nên chạy được trên CPU mà không cần GPU."
   - "Có bản v0.8 với 3 kích cỡ model (15M, 40M, 80M) để cân bằng giữa nhẹ và chất lượng giọng."

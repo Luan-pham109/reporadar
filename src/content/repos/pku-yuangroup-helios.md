@@ -14,9 +14,14 @@ vertical: ["creative"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 1937
-  forks: 152
-  note: "~118 ngày tuổi, ~16.4 sao/ngày"
+  stars: 2146
+  forks: 181
+  note: "~196 ngày tuổi, ~10.9 sao/ngày"
+  starsPerDay: 10.9
+  ageDays: 196
+  pushedAt: "2026-08-24T07:26:04Z"
+  archived: false
+  openIssues: 42
 standoutFeatures:
   - "README mô tả Helios là model 14B tạo video dài, đạt khoảng 19.5 FPS trên một GPU H100 và khoảng 10 FPS trên một Ascend NPU."
   - "Hỗ trợ text-to-video, image-to-video, video-to-video và chế độ interactive, với các checkpoint Base, Mid và Distilled."

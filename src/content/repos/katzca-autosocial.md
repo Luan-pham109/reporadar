@@ -8,8 +8,14 @@ vertical: ["agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 512
-  note: "GitHub search cho thấy ~512 sao; pipeline chưa lấy được forks/tuổi repo/health score ở lần này."
+  stars: 1125
+  forks: 209
+  note: "~187 ngày tuổi, ~6 sao/ngày"
+  starsPerDay: 6
+  ageDays: 187
+  pushedAt: "2026-06-10T13:28:54Z"
+  archived: false
+  openIssues: 2
 standoutFeatures:
   - "Dashboard tự host, chạy cục bộ để gom quản lý nhiều kênh TikTok, Instagram, YouTube."
   - "Định hướng tự động hoá thao tác đăng/quản lý nội dung mạng xã hội thay vì làm tay từng nền tảng."
