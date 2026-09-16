@@ -86,7 +86,7 @@ nextReviewDueAt: 2026-10-11
 tags: ["productivity", "time-tracking", "local-first", "macos", "ai"]
 publishedAt: 2026-07-13
 week: "2026-W29"
-draft: true
+draft: false
 ---
 
 Draft foundation từ daily queue (Show HN ~480 điểm). CẢNH BÁO FIT & NỀN TẢNG: tool hay nhưng CHỈ chạy macOS, loại phần lớn người dùng Windows ở VN; đặt tạm `vertical: ["agency"]` ở nhánh freelancer/quản lý thời gian. Điểm nhạy cảm: app quay màn hình liên tục — cần nhấn mạnh tuỳ chọn chạy AI cục bộ. Confidence thấp. Cần Luan xác nhận scope trước khi publish.
