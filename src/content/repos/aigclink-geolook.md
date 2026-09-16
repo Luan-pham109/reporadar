@@ -103,7 +103,7 @@ nextReviewDueAt: 2026-11-09
 tags: ["geo", "aeo", "ai-search", "ai-visibility", "seo", "self-hosted", "llm"]
 publishedAt: 2026-08-11
 week: "2026-W33"
-draft: true
+draft: false
 ---
 
 Draft foundation từ pipeline ngày 2026-08-11. Repo rất mới (13 ngày, 437 sao) và README cực chi tiết — cần Luan kiểm hai điều trước khi nâng confidence: (1) GeoLook xử lý câu hỏi/engine tiếng Việt tới đâu, vì ma trận mặc định nghiêng về engine phương Tây + Trung Quốc; (2) ma sát cài đặt thực tế trên máy Windows (phải qua WSL vì fcntl). Media lấy từ đường dẫn ảnh trong README (docs/demo.en.gif, docs/screenshots-en/*) — nên xác nhận ảnh còn sống trước khi publish.
