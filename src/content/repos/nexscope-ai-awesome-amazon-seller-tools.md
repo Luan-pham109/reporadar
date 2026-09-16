@@ -80,7 +80,7 @@ confidence: "low"
 tags: ["ecommerce", "amazon", "seller-tools", "awesome-list", "fba"]
 publishedAt: 2026-08-29
 week: "2026-W35"
-draft: true
+draft: false
 ---
 
 Draft foundation (auto). LƯU Ý CHO LUAN: repo hữu ích cho seller Amazon (mảng ecom cross-border Việt) và vẫn được cập nhật (push 26/08/2026). Nhưng do nexscope-ai duy trì và đặt sản phẩm của họ (Nexscope, Nexscope Amazon Skills) ở đầu danh sách → có yếu tố tự quảng bá, đã ghi rõ trong standoutFeatures/usabilityRisk. Đây là ứng viên hợp ngành nhất trong lượt quét này. Chưa fetch chi tiết ngoài README/queue.
