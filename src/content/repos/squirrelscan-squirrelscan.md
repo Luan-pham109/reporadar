@@ -80,7 +80,7 @@ nextReviewDueAt: 2026-11-11
 tags: ["seo", "website-audit", "technical-seo", "ai-ready", "mcp", "cli"]
 publishedAt: 2026-08-13
 week: "2026-W33"
-draft: true
+draft: false
 ---
 
 Draft foundation (auto). Nguồn dữ liệu: description + số sao từ queue discovery, đối chiếu trang GitHub công khai (star 253). GitHub API chưa fetch trong pipeline nên chưa có tuổi repo, sao/ngày, forks chính thức trong record. Cần Luan: (1) chạy thử một site Việt thật để xác nhận chất lượng báo cáo và claim '260+ rules / agent experience', (2) kiểm tra script cài curl/PowerShell trước khi khuyến nghị, (3) bổ sung repoStats đầy đủ bằng fetch-signals trước khi nâng confidence/publish.
