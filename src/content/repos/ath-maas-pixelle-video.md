@@ -93,7 +93,7 @@ lastReviewedAt: 2026-08-23
 nextReviewDueAt: 2026-11-21
 publishedAt: 2026-08-23
 week: "2026-W34"
-draft: true
+draft: false
 ---
 
 Record nháp foundation (pipeline 2026-08-23).
