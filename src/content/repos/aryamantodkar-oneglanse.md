@@ -99,7 +99,7 @@ nextReviewDueAt: 2026-11-17
 tags: ["geo", "aeo", "ai-visibility", "ai-search", "seo", "brand-monitoring", "self-hosted", "llm", "typescript"]
 publishedAt: 2026-08-19
 week: "2026-W34"
-draft: true
+draft: false
 ---
 
 Draft foundation từ pipeline ngày 2026-08-19. Media lấy từ 3 ảnh github user-attachments trong README (đường dẫn có sẵn trong queue) — nên xác nhận ảnh còn sống trước khi publish.
