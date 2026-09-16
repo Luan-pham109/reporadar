@@ -83,7 +83,7 @@ nextReviewDueAt: 2026-11-11
 tags: ["seo", "claude-skills", "ai-content", "content-brief", "eeat", "agency"]
 publishedAt: 2026-08-13
 week: "2026-W33"
-draft: true
+draft: false
 ---
 
 Draft foundation (auto). Nguồn dữ liệu: description + số sao từ queue discovery, đối chiếu trang GitHub công khai (star 251, license Apache-2.0). GitHub API chưa fetch trong pipeline nên chưa có tuổi repo/sao-ngày/forks chính thức. Media dùng đường dẫn GIF demo trong README repo. Cần Luan: (1) test một chủ đề tiếng Việt để đánh giá chất lượng thật (skill viết cho ngữ cảnh SEO tiếng Anh), (2) rà lại skill linkbuilding về mặt IN/OUT, (3) bổ sung repoStats đầy đủ bằng fetch-signals trước khi nâng confidence/publish.
