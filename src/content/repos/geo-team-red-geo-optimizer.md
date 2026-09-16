@@ -80,7 +80,7 @@ nextReviewDueAt: 2026-11-11
 tags: ["seo", "geo", "generative-engine-optimization", "golang", "framework", "developer-tool"]
 publishedAt: 2026-08-13
 week: "2026-W33"
-draft: true
+draft: false
 ---
 
 Draft foundation (auto). Nguồn dữ liệu: description + số sao từ queue discovery, đối chiếu trang GitHub công khai (star 200, license MIT). LƯU Ý cho Luan: repo được discovery ở owner `geo-team-red/geo-optimizer`, nhưng module path trong README lại là `github.com/Lin-Jiong-HDU/geo-optimizer` — nhiều khả năng là fork/di chuyển org; cần xác minh đâu là repo gốc/chính chủ trước khi publish. Đây là tool cho nhánh kỹ thuật (khác hẳn record `auriti-labs-geo-optimizer-skill` vốn là skill audit AEO cho người làm SEO), nên KHÔNG phải trùng lặp. GitHub API chưa fetch trong pipeline nên thiếu tuổi repo/sao-ngày/forks; cần fetch-signals và đánh giá code trước khi nâng confidence/publish.
