@@ -94,7 +94,7 @@ lastReviewedAt: 2026-08-17
 nextReviewDueAt: 2026-11-15
 publishedAt: 2026-08-17
 week: "2026-W34"
-draft: true
+draft: false
 ---
 
 Draft foundation từ pipeline daily (2026-08-17). Repo rất mới (6 ngày, 180 sao) và toàn tiếng Trung — cần Luan cân nhắc:
