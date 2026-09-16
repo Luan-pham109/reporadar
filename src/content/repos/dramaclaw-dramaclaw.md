@@ -96,7 +96,7 @@ nextReviewDueAt: 2026-10-07
 tags: ["creative", "agency", "ecom", "ai-video", "short-drama", "aigc", "self-hosted"]
 publishedAt: 2026-07-09
 week: "2026-W28"
-draft: true
+draft: false
 ---
 
 Record nháp sinh trong daily pipeline ngày 2026-07-09 (nguồn: github-search, 787 sao, ~7.6 sao/ngày, 104 ngày tuổi). Gộp cả 3 tầng hunt/synthesize/edit trong một lượt vì đây là job tự động.
