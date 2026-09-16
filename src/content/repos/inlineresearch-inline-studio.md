@@ -107,7 +107,7 @@ nextReviewDueAt: 2026-10-18
 tags: ["ai", "creative", "video", "filmmaking", "node-editor", "self-host"]
 publishedAt: 2026-07-20
 week: "2026-W30"
-draft: true
+draft: false
 ---
 
 Draft từ pipeline daily ngày 2026-07-20, viết hoàn toàn từ README + metadata GitHub, chưa cài thử.
