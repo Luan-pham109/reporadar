@@ -93,7 +93,7 @@ nextReviewDueAt: 2026-10-07
 tags: ["ecom", "creative", "product-photography", "ai-image", "self-hosted", "marketing-assets"]
 publishedAt: 2026-07-09
 week: "2026-W28"
-draft: true
+draft: false
 ---
 
 Record nháp sinh trong daily pipeline ngày 2026-07-09 (nguồn: github-search, 45 sao, ~0.8 sao/ngày, 54 ngày tuổi). Gộp cả 3 tầng hunt/synthesize/edit trong một lượt vì đây là job tự động.
