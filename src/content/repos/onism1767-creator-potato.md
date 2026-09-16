@@ -88,7 +88,7 @@ nextReviewDueAt: 2026-11-17
 tags: ["geo", "aeo", "ai-visibility", "ai-search", "seo", "brand-monitoring", "claude", "self-hosted", "llm"]
 publishedAt: 2026-08-19
 week: "2026-W34"
-draft: true
+draft: false
 ---
 
 Draft foundation từ pipeline ngày 2026-08-19. Repo mới (58 ngày, 168 sao, 0 fork), tác giả một mình — cộng đồng chưa hình thành, nên để confidence "low".
