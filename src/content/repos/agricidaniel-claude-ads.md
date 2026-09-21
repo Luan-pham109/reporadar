@@ -11,9 +11,14 @@ vertical: ["agency", "ecom"]
 
 maturity: "rising"
 repoStats:
-  stars: 6518
-  forks: 966
-  note: "~135 ngày tuổi, ~48.3 sao/ngày"
+  stars: 9448
+  forks: 1395
+  note: "~222 ngày tuổi, ~42.6 sao/ngày"
+  starsPerDay: 42.6
+  ageDays: 222
+  pushedAt: "2026-09-18T21:06:40Z"
+  archived: false
+  openIssues: 19
 standoutFeatures:
   - "Audit hơn 250 đầu việc trên nhiều nền tảng quảng cáo thay vì chỉ soi mỗi Google Ads."
   - "Chấm điểm theo thang có trọng số và trả ra action plan ưu tiên, hợp với cách agency báo cáo cho khách."

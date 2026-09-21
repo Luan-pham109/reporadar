@@ -11,9 +11,14 @@ vertical: ["agency", "ecom"]
 
 maturity: "rising"
 repoStats:
-  stars: 1028
-  forks: 46
-  note: "~83 ngày tuổi, ~12.4 sao/ngày"
+  stars: 2021
+  forks: 361
+  note: "~168 ngày tuổi, ~12 sao/ngày"
+  starsPerDay: 12
+  ageDays: 168
+  pushedAt: "2026-09-19T05:23:28Z"
+  archived: false
+  openIssues: 2
 standoutFeatures:
   - "Gom Google Ads, Meta Ads và Google Analytics 4 vào một MCP server thay vì cài riêng từng connector."
   - "README nói có hơn 250 công cụ cho quản lý chiến dịch, keyword, ngân sách, audience, creative, báo cáo và GA4."

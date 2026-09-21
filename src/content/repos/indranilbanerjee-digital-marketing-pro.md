@@ -8,14 +8,14 @@ vertical: ["agency", "seo", "creative"]
 
 maturity: "rising"
 repoStats:
-  stars: 554
-  forks: 98
-  note: "~162 ngày tuổi, ~3.4 sao/ngày"
-  starsPerDay: 3.4
-  ageDays: 162
-  pushedAt: 2026-07-18T13:29:29Z
+  stars: 828
+  forks: 135
+  note: "~222 ngày tuổi, ~3.7 sao/ngày"
+  starsPerDay: 3.7
+  ageDays: 222
+  pushedAt: "2026-09-07T10:21:26Z"
   archived: false
-  openIssues: 1
+  openIssues: 2
 standoutFeatures:
   - "Là một agent plugin cài qua marketplace: `/plugin marketplace add indranilbanerjee/neels-plugins` rồi `/plugin install digital-marketing-pro@neels-plugins`; chạy trên Claude Code, Cowork, Codex, Cursor, Copilot CLI, Antigravity, Hermes và OpenClaw (theo README)."
   - "Trục sản phẩm là một '12-Part Strategy Flow' 61 bước: mỗi brand chạy qua cùng một chuỗi phần và sinh ra ~50–60 file tài liệu chuẩn hoá theo thư mục (research, four-core, analysis, validation, growth-plan, channels, execution, creative-briefs...)."

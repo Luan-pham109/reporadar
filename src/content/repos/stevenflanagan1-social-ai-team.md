@@ -8,14 +8,14 @@ vertical: ["agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 152
-  forks: 33
-  note: "~107 ngày tuổi, ~1.4 sao/ngày"
-  starsPerDay: 1.4
-  ageDays: 107
-  pushedAt: "2026-05-07T23:01:16Z"
+  stars: 216
+  forks: 45
+  note: "~186 ngày tuổi, ~1.2 sao/ngày"
+  starsPerDay: 1.2
+  ageDays: 186
+  pushedAt: "2026-08-24T09:30:21Z"
   archived: false
-  openIssues: 4
+  openIssues: 3
 standoutFeatures:
   - "9-10 skill nối tiếp nhau theo đúng quy trình một agency social thật làm: brand onboarding → content calendar → viết caption/LinkedIn/Threads/X riêng biệt → tạo ảnh → lên lịch đăng → review hiệu suất cuối tháng."
   - "Từng skill ghi ra file trung gian (brand-style.md, content-calendar.md, best-performers.md...) để skill sau đọc lại, nên một agency có thể chạy lặp lại quy trình cho nhiều khách hàng mà không mất ngữ cảnh."

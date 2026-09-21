@@ -17,9 +17,14 @@ vertical: ["creative", "agency"]
 
 maturity: "established"
 repoStats:
-  stars: 23668
-  forks: 3392
-  note: "~231 ngày tuổi, ~102.5 sao/ngày"
+  stars: 28287
+  forks: 4115
+  note: "~318 ngày tuổi, ~89 sao/ngày"
+  starsPerDay: 89
+  ageDays: 318
+  pushedAt: "2026-06-14T12:40:58Z"
+  archived: false
+  openIssues: 169
 standoutFeatures:
   - "Tự động hóa cả chuỗi tạo video: viết kịch bản, sinh hình/clip, tổng hợp giọng đọc, thêm nhạc nền và ghép video."
   - "Có giao diện WebUI và bản Windows đóng gói sẵn, giảm bớt phần cài Python/ffmpeg cho người dùng phổ thông."

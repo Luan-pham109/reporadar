@@ -8,14 +8,14 @@ vertical: ["seo"]
 
 maturity: "rising"
 repoStats:
-  stars: 103
-  forks: 14
-  note: "~136 ngày tuổi, ~0.8 sao/ngày"
-  starsPerDay: 0.8
-  ageDays: 136
-  pushedAt: 2026-06-20T10:12:53Z
+  stars: 134
+  forks: 17
+  note: "~213 ngày tuổi, ~0.6 sao/ngày"
+  starsPerDay: 0.6
+  ageDays: 213
+  pushedAt: "2026-09-18T01:43:08Z"
   archived: false
-  openIssues: 8
+  openIssues: 15
 standoutFeatures:
   - "Tập trung vào Answer Engine Optimization: đo và cải thiện khả năng site được các AI answer engine crawl, hiểu và cite chứ không chỉ SEO Google truyền thống."
   - "Có lệnh check nhanh không cần cài đặt (npx aeo.js check <domain>) trả về điểm sẵn sàng GEO 0-100 và ma trận truy cập cho nhiều AI crawler."
