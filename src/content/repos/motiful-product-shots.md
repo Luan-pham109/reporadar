@@ -8,12 +8,12 @@ vertical: ["ecom", "creative", "agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 35
-  forks: 6
-  note: "~85 ngày tuổi, ~0.4 sao/ngày. Push gần nhất 08/06/2026 (đã ~2.5 tháng không cập nhật), trạng thái tự nhận 'alpha'."
-  starsPerDay: 0.4
-  ageDays: 85
-  pushedAt: "2026-06-08"
+  stars: 76
+  forks: 14
+  note: "~108 ngày tuổi, ~0.7 sao/ngày"
+  starsPerDay: 0.7
+  ageDays: 108
+  pushedAt: "2026-06-08T05:41:43Z"
   archived: false
   openIssues: 0
 standoutFeatures:

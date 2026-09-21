@@ -17,12 +17,12 @@ vertical: ["creative"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 168
-  forks: 35
-  note: "~39 ngày tuổi, ~4.3 sao/ngày"
-  starsPerDay: 4.3
-  ageDays: 39
-  pushedAt: 2026-07-20T05:14:20Z
+  stars: 305
+  forks: 43
+  note: "~102 ngày tuổi, ~3 sao/ngày"
+  starsPerDay: 3
+  ageDays: 102
+  pushedAt: "2026-09-19T08:01:54Z"
   archived: false
   openIssues: 0
 standoutFeatures:

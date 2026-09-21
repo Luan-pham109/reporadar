@@ -8,14 +8,14 @@ vertical: ["agency"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 67
+  stars: 78
   forks: 10
-  note: "~159 ngày tuổi, ~0.4 sao/ngày"
-  starsPerDay: 0.4
-  ageDays: 159
-  pushedAt: 2026-03-29T03:04:08Z
+  note: "~234 ngày tuổi, ~0.3 sao/ngày"
+  starsPerDay: 0.3
+  ageDays: 234
+  pushedAt: "2026-03-29T03:04:08Z"
   archived: false
-  openIssues: 0
+  openIssues: 3
 standoutFeatures:
   - "Gộp CLI, REST API (port 3847) và WebSocket (port 3848) trong một tool, kèm SDK TypeScript để cắm vào automation có sẵn."
   - "README mô tả rõ lớp mô phỏng hành vi người dùng: warm-up scroll, delay ngẫu nhiên, tốc độ gõ tự nhiên và cooldown giữa các hành động."

@@ -11,8 +11,14 @@ vertical: ["seo", "agency", "creative", "ecom"]
 
 maturity: "rising"
 repoStats:
-  stars: 251
-  note: "Số sao lấy từ snapshot discovery của pipeline (GitHub API chưa fetch được trong lần soi này, chưa có tuổi repo/sao/ngày)."
+  stars: 330
+  forks: 38
+  note: "~161 ngày tuổi, ~2 sao/ngày"
+  starsPerDay: 2
+  ageDays: 161
+  pushedAt: "2026-09-03T17:08:05Z"
+  archived: false
+  openIssues: 2
 standoutFeatures:
   - "11 skill SEO đóng gói sẵn: page-audit, content-brief, write-content, improve-content, keyword-deep-dive, semantic-gap-analysis, eeat-audit, topic-cluster-planning, featured-snippet-optimizer, linkbuilding, expert-interview."
   - "Mỗi skill 'một input, agent tự làm phần nghiên cứu', kèm tài liệu tham chiếu nạp theo nhu cầu."

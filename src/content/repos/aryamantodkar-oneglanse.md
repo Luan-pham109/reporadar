@@ -15,14 +15,14 @@ vertical: ["seo", "agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 152
-  forks: 27
-  note: "~344 ngày tuổi, ~0.4 sao/ngày"
-  starsPerDay: 0.4
-  ageDays: 344
-  pushedAt: 2026-05-10T07:47:10Z
+  stars: 181
+  forks: 31
+  note: "~377 ngày tuổi, ~0.5 sao/ngày"
+  starsPerDay: 0.5
+  ageDays: 377
+  pushedAt: "2026-05-10T07:47:10Z"
   archived: false
-  openIssues: 3
+  openIssues: 4
 standoutFeatures:
   - "Đo trên 5 bề mặt AI thật: ChatGPT, Gemini, Perplexity, Claude và Google AI Overview — không gọi model API mà mở đúng giao diện sản phẩm trong trình duyệt thật (qua Camoufox) như một người dùng."
   - "Điểm khác biệt cốt lõi: câu trả lời hiển thị trên UI thường khác với output API thô (UI có thể thêm/bớt trích dẫn, sắp lại thứ tự, đổi cách trình bày đối thủ) — OneGlanse bắt đúng cái người dùng thật nhìn thấy."

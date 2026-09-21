@@ -8,14 +8,14 @@ vertical: ["ecom"]
 
 maturity: "rising"
 repoStats:
-  stars: 38
-  forks: 15
-  note: "~169 ngày tuổi, ~0.2 sao/ngày. Vẫn được cập nhật (push gần nhất 26/08/2026)."
+  stars: 45
+  forks: 18
+  note: "~192 ngày tuổi, ~0.2 sao/ngày"
   starsPerDay: 0.2
-  ageDays: 169
-  pushedAt: "2026-08-26"
+  ageDays: 192
+  pushedAt: "2026-08-26T08:10:24Z"
   archived: false
-  openIssues: 9
+  openIssues: 11
 standoutFeatures:
   - "Danh mục rộng theo chức năng: all-in-one, product research, keyword, listing, PPC, repricing, tồn kho, lợi nhuận, reimbursement, sourcing (theo README)."
   - "Có mục riêng 'AI Agents & Skills' cho làn sóng công cụ mới — hợp với hướng agent-first."

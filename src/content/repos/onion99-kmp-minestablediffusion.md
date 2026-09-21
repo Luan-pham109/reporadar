@@ -14,14 +14,14 @@ vertical: ["creative"]
 
 maturity: "rising"
 repoStats:
-  stars: 109
-  forks: 10
-  note: "~235 ngày tuổi, ~0.5 sao/ngày"
-  starsPerDay: 0.5
-  ageDays: 235
-  pushedAt: 2026-03-13T10:46:03Z
+  stars: 127
+  forks: 11
+  note: "~313 ngày tuổi, ~0.4 sao/ngày"
+  starsPerDay: 0.4
+  ageDays: 313
+  pushedAt: "2026-07-14T04:02:53Z"
   archived: false
-  openIssues: 4
+  openIssues: 5
 standoutFeatures:
   - "Tạo ảnh AI (Stable Diffusion, SDXL, FLUX, SD3, Chroma...) chạy 100% offline — không cần server, không cần tài khoản, không mất phí theo lượt."
   - "Một codebase Kotlin Multiplatform chạy được trên cả Android, iOS, Windows, macOS và Linux, không phải viết riêng từng nền tảng."

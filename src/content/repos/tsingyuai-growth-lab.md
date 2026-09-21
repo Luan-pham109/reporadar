@@ -11,12 +11,12 @@ vertical: ["agency", "ecom", "seo"]
 # === HUNT: độ chín + dữ liệu khách quan ===
 maturity: "rising"
 repoStats:
-  stars: 667
-  forks: 59
-  note: "~14 ngày tuổi, ~47.6 sao/ngày"
-  starsPerDay: 47.6
-  ageDays: 14
-  pushedAt: 2026-08-03T07:04:03Z
+  stars: 1990
+  forks: 171
+  note: "~59 ngày tuổi, ~33.7 sao/ngày"
+  starsPerDay: 33.7
+  ageDays: 59
+  pushedAt: "2026-08-11T04:56:57Z"
   archived: false
   openIssues: 0
 standoutFeatures:
