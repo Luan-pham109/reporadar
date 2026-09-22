@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T06:36:01.412Z",
+  "generatedAt": "2026-09-22T06:24:46.220Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -22,12 +22,12 @@
         "fullName": "hypit-ai/hypit",
         "url": "https://github.com/hypit-ai/hypit",
         "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-        "stars": 12105,
+        "stars": 13048,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 12105"
+          "⭐ 13048"
         ],
         "signalUrls": [],
         "points": 0,
@@ -44,14 +44,14 @@
         "github": {
           "fullName": "hypit-ai/hypit",
           "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-          "stars": 12105,
-          "forks": 1458,
+          "stars": 13048,
+          "forks": 1547,
           "createdAt": "2026-07-29T18:49:19Z",
-          "ageDays": 53,
-          "starsPerDay": 228.4,
-          "pushedAt": "2026-09-21T06:03:34Z",
+          "ageDays": 54,
+          "starsPerDay": 241.6,
+          "pushedAt": "2026-09-21T09:42:55Z",
           "archived": false,
-          "openIssues": 9,
+          "openIssues": 14,
           "topics": [
             "agentic-ai",
             "ai",
@@ -100,7 +100,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "12105 sao, 1458 fork, ~228.4 sao/ngày, 53 ngày tuổi"
+            "13048 sao, 1547 fork, ~241.6 sao/ngày, 54 ngày tuổi"
           ]
         }
       },
@@ -122,7 +122,7 @@
           "caption": ""
         }
       ],
-      "score": 1705.25
+      "score": 1752.4
     },
     {
       "candidate": {
@@ -150,11 +150,11 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5255,
-          "forks": 198,
+          "stars": 5256,
+          "forks": 199,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 208,
-          "starsPerDay": 25.3,
+          "ageDays": 209,
+          "starsPerDay": 25.1,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
           "openIssues": 126,
@@ -212,7 +212,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5255 sao, 198 fork, ~25.3 sao/ngày, 208 ngày tuổi"
+            "5256 sao, 199 fork, ~25.1 sao/ngày, 209 ngày tuổi"
           ]
         }
       },
@@ -226,12 +226,12 @@
         "fullName": "getopenpost/openpost",
         "url": "https://github.com/getopenpost/openpost",
         "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
-        "stars": 594,
+        "stars": 597,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 594"
+          "⭐ 597"
         ],
         "signalUrls": [],
         "points": 0,
@@ -247,26 +247,22 @@
         "github": {
           "fullName": "getopenpost/openpost",
           "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
-          "stars": 594,
+          "stars": 597,
           "forks": 71,
           "createdAt": "2026-03-21T11:12:13Z",
-          "ageDays": 184,
+          "ageDays": 185,
           "starsPerDay": 3.2,
-          "pushedAt": "2026-09-20T20:55:10Z",
+          "pushedAt": "2026-09-22T06:07:30Z",
           "archived": false,
-          "openIssues": 0,
+          "openIssues": 2,
           "topics": [
             "automation",
-            "buffer-alternative",
             "content-creation",
-            "cross-posting",
             "golang",
             "mcp-server",
             "self-hosted",
-            "single-binary",
             "social-media",
             "social-media-automation",
-            "social-media-management",
             "social-media-scheduler",
             "svelte",
             "sveltekit"
@@ -305,13 +301,13 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "594 sao, 71 fork, ~3.2 sao/ngày, 184 ngày tuổi"
+            "597 sao, 71 fork, ~3.2 sao/ngày, 185 ngày tuổi"
           ]
         }
       },
       "readmeExcerpt": "<p align=\"center\">\n  <a href=\"https://openpo.st\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/brand/lockup-dark.svg\">\n      <img src=\"./assets/brand/lockup.svg\" alt=\"OpenPost\" width=\"240\" height=\"60\">\n    </picture>\n  </a>\n</p>\n\n<h3 align=\"center\">An open-source alternative to Buffer, Canva, and CapCut.</h3>\n\n<p align=\"center\">\n  Write posts, design images and carousels, edit videos, and schedule your content in one app.<br>\n  Self-host OpenPost or use OpenPost Hosted.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/downloads-dark.svg\">\n      <img src=\"./assets/badges/downloads-light.svg\" alt=\"Total downloads\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/release-dark.svg\">\n      <img src=\"./assets/badges/release-light.svg\" alt=\"Latest release\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/stargazers\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/stars-dark.svg\">\n      <img src=\"./assets/badges/stars-light.svg\" alt=\"GitHub stars\">\n    </picture>\n  </a>\n  <a href=\"https://url.rgo.pt/x\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/follow-dev-dark.svg\">\n      <img src=\"./assets/badges/follow-dev-light.svg\" alt=\"Follow the developer on X\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://app.openpo.st/image-editor\"><strong>Try the image editor</strong></a>\n  ·\n  <a href=\"https://app.openpo.st/video-editor\"><strong>Try the video editor</strong></a>\n  ·\n  <a href=\"#self-host\"><strong>Self-host</strong></a>\n  ·\n  <a href=\"https://openpo.st/docs\"><strong>Docs</strong></a>\n</p>\n\n<p align=\"center\">\n  Both editors are free to use without an account or watermark.<br>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">\n    <img src=\"./assets/screenshots/readme-hero-dark.webp\" alt=\"OpenPost composer with platform-specific drafts, previews, and scheduling controls\" width=\"100%\">\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">Watch the product tour</a>\n  ·\n  <a href=\"https://openpo.st/#features\">See all features</a>\n</p>\n\n<table>\n  <tr>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/image-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/image-editor-dark.webp\">\n          <img src=\"./assets/screenshots/image-editor-light.webp\" alt=\"OpenPost image editor with a design canvas, layers, and editing controls\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Design images and carousels</strong>\n    </td>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/video-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/video-editor-dark.webp\">\n          <img src=\"./assets/screenshots/video-editor-light.webp\" alt=\"OpenPost video editor with a video preview and multitrack timeline\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Edit and caption videos</strong>\n    </td>\n  </tr>\n</table>\n\n## What you can do\n\n- <img src=\"./assets/brand/features/accounts.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Connect accounts](https://openpo.st/docs/guides/accounts).** Manage your social connections in one workspace. Each provider keeps its own capabilities and publishing limits.\n- <img src=\"./assets/brand/features/compose.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Compose for each platform](https://openpo.st/docs/guides/publishing).** Write posts and threads, then adjust the text and media for each account. Preview each version before publishing. Save account groups as Social Sets to reuse them.\n- <img src=\"./assets/brand/features/image-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Image editor](https://openpo.st/docs/image-editor).** Design images and multi-page carousels with layers, templates, and custom fonts. Remove backgrounds in your browser. Export individual pages or the full carousel, or attach them to your post.\n- <img src=\"./assets/brand/features/video-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Video editor](https://openpo.st/docs/video-editor).** Trim and arrange clips on a multitrack timeline. Add captions, transitions, effects, and audio. Cut footage by selecting words in its transcript.\n- <img src=\"./assets/brand/features/recorder.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Recorder](https://openpo.st/docs/video-editor/quick-cut-and-recorder).** Capture your screen, camera, and microphone, then bring the recording into your video edit.\n- <img src=\"./assets/brand/features/calendar.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Calendar and queues](https://openpo.st/docs/guides/scheduling).** Choose a publishing time or the next free slot in a queue. Plan your posts in the calendar, stagger publishing across accounts, and get reminders when your queue runs low.\n- <img src=\"./assets/brand/features/repost.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Auto repost.** Set delays and engagement rules for native reposts on supported networks. Override the defaults for individual posts.\n- <img src=\"./assets/brand/features/media.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Media library](https://openpo.st/docs/guides/media-library).** Keep reusable images, videos, fonts, and brand assets in your workspace. Organize files with tags, collections, and favorites. Attach saved media without uploading it again.\n- <img src=\"./assets/brand/features/memes.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Meme maker](https://openpo.st/docs/guides/media-library#add-media-to-a-post).** Pick a template, edit its captions, and replace its images. Save the result to your media library or attach it to a post.\n- <img src=\"./assets/brand/features/inbox.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Inbox and messages](https://openpo.st/docs/guides/inbox).** Read and reply to supported comments and direct messages without switching between social apps.\n- <img src=\"./assets/brand/features/analytics.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Analytics and repurposing](https://openpo.st/docs/guides/analytics).** Compare post results and track audience changes across your accounts. Use a previous post as the starting point for a new draft.\n- <img src=\"./assets/brand/features/grow.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Find people.** Find accounts to follow on Bluesky and Mastodon. Review the suggestions and choose who to follow.\n- <img src=\"./assets/brand/features/ideas.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **AI writing and ideas.** Generate ideas, compare draft directions, and adapt posts for your selected platforms. You review the result before publishing. AI writing is optional. [Self-hosted AI setup](https://openpo.st/docs/self-hosting/ai).\n- <img src=\"./assets/brand/features/automation.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[API, SDK, CLI, MCP, and n8n](https://openpo.st/docs/automate).** Create drafts, schedule posts, and check publishing results from your scripts, agents, or n8n workflows. Install the [TypeScript SDK](https://www.npmjs.com/package/@getopenpost/sdk) or the [CLI](https://www.npmjs.com/package/@getopenpost/cli) from npm. See the [API reference](https://openpo.st/docs/api-reference) for endpoints.\n- <img src=\"./assets/brand/features/workspaces.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Teams and workspaces](https://openpo.st/docs/guides/workspaces).** Keep brands and clients in separate workspaces and control who can edit them. Protect your account with passkeys, two-factor authentication, and session controls.\n\n## Get started\n\n### OpenPost Hosted\n\nUse OpenPost to create and schedule posts without running your own server.\n\n<a href=\"https://app.openpo.st/register?plan=founder&billing_period=monthly\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/start-trial-dark.svg\">\n    <img src=\"./assets/buttons/start-trial-light.svg\" alt=\"Start a 14-day trial\" height=\"36\">\n  </picture>\n</a>\n\n[View plans](https://openpo.st/pricing)\n\n### Self-host\n\nRun OpenPost with Docker Compose. The default setup uses one container with SQLite and local media storage.\n\n<a href=\"https://openpo.st/docs/self-hosting/\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/self-host-dark.svg\">\n    <img src=\"./assets/buttons/self-host-light.svg\" alt=\"Get started with self-hosting\" height=\"36\">\n  </picture>\n</a>\n\n[Configure integrations](https://openpo.st/docs/self-hosting/integrations) · [Backups and upgrades](https://openpo.st/docs/self-hosting/maintenance)\n\n## Supported platforms\n\n<p>\n  <img src=\"./assets/postiz-socials/Instagram.svg\" alt=\"Instagram\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Facebook.svg\" alt=\"Facebook\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Linkedin.svg\" alt=\"LinkedIn\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/X.svg\" alt=\"X\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/TikTok.svg\" alt=\"TikTok\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Youtube.svg\" alt=\"YouTube\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Threads.svg\" alt=\"Threads\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Bluesky.svg\" alt=\"Bluesky\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Mastodon.svg\" alt=\"Mastodon\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Pixelfed.svg\" alt=\"Pixelfed\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Peertube.svg\" alt=\"PeerTube\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Lemmy.svg\" alt=\"Lemmy\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/PieFed.svg\" alt=\"PieFed\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Discord.svg\" alt=\"Discord\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Pinterest.svg\" alt=\"Pinterest\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Telegram.svg\" alt=\"Telegram\" width=\"32\" height=\"32\">\n</p>\n\nOpenPost has integrations for Instagram, Facebook, LinkedIn, X, TikTok, YouTube, Threads, Bluesky, Mastodon, Pixelfed, PeerTube, Lemmy, PieFed, Discord, Pinterest, and Telegram. Mastodon and Pixelfed connect per instance over OAuth; PeerTube, Lemmy, and PieFed connect with instance credentials. Discord supports incoming webhooks and a bot integration; Telegram uses a bot.\n\nPosting formats, inbox features, and analytics vary by platform. Some integrations require provider app approval or publicly reachable media URLs.\n\n[Connect accounts](https://openpo.st/docs/guides/accounts) · [Integration requirements](https://openpo.st/docs/self-hosting/integrations)\n\n## Contributing\n\nReport bugs, improve the docs, or send a pull request. For larger changes, open an issue first so we can agree on the approach.\n\nOpenPost uses Go, SvelteKit, and Expo, with a Devenv development environment. Start with the [contributing guide](./.github/CONTRIBUTING.md) and [development setup](https://openpo.st/docs/development/setup).\n\n<a href=\"https://github.com/getopenpost/openpost/issues\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/report-bug-dark.svg\">\n    <img src=\"./assets/buttons/report-bug-light.svg\" alt=\"Report a bug\" height=\"36\">\n  </picture>\n</a>\n<a href=\"https://discord.com/invite/u2QwukmY4W\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/join-discord-dark.svg\">\n    <img src=\"./assets/buttons/join-discord-light.svg\" alt=\"Join Discord\" height=\"36\">\n  </picture>\n</a>\n\n## Star history\n\nSupport OpenPost with a [GitHub star](https://github.com/getopenpost/openpost/stargazers).\n\n<!-- star-history:start -->\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/star-history/star-history-dark.svg\">\n  <img alt=\"Star history\" src=\"assets/star-history/star-history-light.svg\">\n</picture>\n<!-- star-history:end -->\n\n## License and security\n\nOpenPost uses the [AGPL-3.0-only license](./LICENSE). See the [third-party notices](./licenses/README.md) for dependency licenses and attribution.\n\nReport vulnerabilities privately through the [security policy](./.github/SECURITY.md).\n",
       "media": [],
-      "score": 1129.7
+      "score": 1129.85
     },
     {
       "candidate": {
@@ -319,12 +315,12 @@
         "fullName": "omnichar/OmniChar",
         "url": "https://github.com/omnichar/OmniChar",
         "description": "AI character studio for portable identity. Build multi model consistent characters, train LoRAs, and generate on your own GPU.",
-        "stars": 305,
+        "stars": 332,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 305"
+          "⭐ 332"
         ],
         "signalUrls": [],
         "points": 0,
@@ -340,12 +336,12 @@
         "github": {
           "fullName": "omnichar/OmniChar",
           "description": "AI character studio for portable identity. Build multi model consistent characters, train LoRAs, and generate on your own GPU.",
-          "stars": 305,
-          "forks": 43,
+          "stars": 332,
+          "forks": 50,
           "createdAt": "2026-06-11T07:13:32Z",
-          "ageDays": 102,
-          "starsPerDay": 3,
-          "pushedAt": "2026-09-19T08:01:54Z",
+          "ageDays": 103,
+          "starsPerDay": 3.2,
+          "pushedAt": "2026-09-22T03:34:38Z",
           "archived": false,
           "openIssues": 0,
           "topics": [
@@ -396,7 +392,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "305 sao, 43 fork, ~3 sao/ngày, 102 ngày tuổi"
+            "332 sao, 50 fork, ~3.2 sao/ngày, 103 ngày tuổi"
           ]
         }
       },
@@ -418,20 +414,20 @@
           "caption": ""
         }
       ],
-      "score": 1115.25
+      "score": 1116.6
     },
     {
       "candidate": {
-        "key": "agricidaniel/on-page-seo",
-        "fullName": "AgriciDaniel/on-page-seo",
-        "url": "https://github.com/AgriciDaniel/on-page-seo",
-        "description": "On-Page SEO Analyzer - Analyze your website's SEO performance",
-        "stars": 256,
+        "key": "avansaber/seo-monster",
+        "fullName": "avansaber/seo-monster",
+        "url": "https://github.com/avansaber/seo-monster",
+        "description": "SEOMonster: a local, user-credential-driven MCP server for SEO workflows over Google Search Console, GA4, PageSpeed Insights, and Cloudflare. Read-first, open source.",
+        "stars": 260,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 256"
+          "⭐ 260"
         ],
         "signalUrls": [],
         "points": 0,
@@ -442,68 +438,69 @@
       },
       "signals": {
         "repo": {
-          "owner": "AgriciDaniel",
-          "repo": "on-page-seo"
+          "owner": "avansaber",
+          "repo": "seo-monster"
         },
         "github": {
-          "fullName": "AgriciDaniel/on-page-seo",
-          "description": "On-Page SEO Analyzer - Analyze your website's SEO performance",
-          "stars": 256,
-          "forks": 59,
-          "createdAt": "2026-01-03T16:13:09Z",
-          "ageDays": 261,
-          "starsPerDay": 1,
-          "pushedAt": "2026-06-06T05:02:38Z",
+          "fullName": "avansaber/seo-monster",
+          "description": "SEOMonster: a local, user-credential-driven MCP server for SEO workflows over Google Search Console, GA4, PageSpeed Insights, and Cloudflare. Read-first, open source.",
+          "stars": 260,
+          "forks": 57,
+          "createdAt": "2026-05-28T04:53:53Z",
+          "ageDays": 117,
+          "starsPerDay": 2.2,
+          "pushedAt": "2026-09-01T17:23:40Z",
           "archived": false,
-          "openIssues": 3,
+          "openIssues": 9,
           "topics": [
             "ai",
-            "ai-seo",
-            "claude-code",
-            "claude-code-skill",
-            "marketing-automation",
-            "open-source",
-            "seo"
+            "anthropic",
+            "claude",
+            "cloudflare",
+            "core-web-vitals",
+            "crux",
+            "ga4",
+            "indexnow",
+            "mcp",
+            "model-context-protocol",
+            "pagespeed",
+            "search-console",
+            "seo",
+            "technical-seo"
           ],
-          "homepage": "https://agricidaniel.com/blog/free-seo-audit-tools",
-          "language": "TypeScript",
-          "suggestedHealthScore": 10
+          "homepage": "https://seomonster.avansaber.com/",
+          "language": "Python",
+          "suggestedHealthScore": 16
         },
         "hackerNews": [],
         "reddit": [
           {
             "subreddit": "selfhosted",
-            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=on-page-seo&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=on-page-seo&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=seo-monster&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=seo-monster&restrict_sr=1&sort=new"
           },
           {
             "subreddit": "opensource",
-            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=on-page-seo&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=on-page-seo&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=seo-monster&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=seo-monster&restrict_sr=1&sort=new"
           },
           {
             "subreddit": "SideProject",
-            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=on-page-seo&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=on-page-seo&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=seo-monster&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=seo-monster&restrict_sr=1&sort=new"
           }
         ],
         "heuristic": {
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "256 sao, 59 fork, ~1 sao/ngày, 261 ngày tuổi"
+            "260 sao, 57 fork, ~2.2 sao/ngày, 117 ngày tuổi"
           ]
         }
       },
-      "readmeExcerpt": "# On-Page SEO Analyzer\n\nA comprehensive on-page SEO analysis tool that helps you audit and optimize your website's SEO performance. Analyze up to 500 pages at once with detailed insights on 74 SEO metrics.\n\n![On-Page SEO Dashboard](docs/screenshot.png)\n\n## How It Was Built\n\n[![Watch how it was built](https://img.youtube.com/vi/jRSx4q8AghU/maxresdefault.jpg)](https://youtu.be/jRSx4q8AghU)\n\n**[Watch the journey from n8n workflow to full app on YouTube](https://youtu.be/jRSx4q8AghU)**\n\n## Features\n\n- **Page Discovery**: Automatically discover pages on your website using Firecrawl\n- **Comprehensive Analysis**: Analyze 74 SEO metrics per page using DataForSEO\n- **Core Web Vitals**: Track LCP, FID, and CLS scores\n- **Real-time Progress**: Watch your audit progress with live updates\n- **Export Results**: Download reports as CSV or JSON\n- **Dark Mode**: Full dark mode support\n\n## Tech Stack\n\n**Frontend:**\n- React 19 with TypeScript\n- Vite for blazing fast builds\n- TanStack Router & React Query\n- Tailwind CSS with Shadcn/ui components\n- Recharts for data visualization\n\n**Backend:**\n- Node.js with Express\n- SQLite database (better-sqlite3)\n- TypeScript\n- Firecrawl API for page discovery\n- DataForSEO API for SEO analysis\n\n## Prerequisites\n\n- Node.js 18+\n- npm or yarn\n- [Firecrawl API Key](https://firecrawl.dev)\n- [DataForSEO Account](https://dataforseo.com)\n\n## Quick Start\n\n### 1. Clone the repository\n\n```bash\ngit clone https://github.com/AgriciDaniel/on-page-seo.git\ncd on-page-seo\n```\n\n### 2. Install dependencies\n\n```bash\n# Install all dependencies (root, client, and server)\nnpm run install:all\n```\n\n### 3. Configure environment\n\n```bash\ncp .env.example .env\n```\n\nEdit `.env` with your settings, or configure API keys through the app's settings page.\n\n### 4. Start development servers\n\n```bash\nnpm run dev\n```\n\nThis starts both the client (http://localhost:3005) and server (http://localhost:3001).\n\n## Scripts\n\n| Command | Description |\n|---------|-------------|\n| `npm run dev` | Start both client and server in development mode |\n| `npm run dev:client` | Start only the client |\n| `npm run dev:server` | Start only the server |\n| `npm run build` | Build both client and server for production |\n| `npm run start` | Start the production server |\n| `npm run install:all` | Install dependencies for root, client, and server |\n\n## Project Structure\n\n```\non-page-seo/\n├── client/             # React frontend\n│   ├── src/\n│   │   ├── components/ # Reusable UI components\n│   │   ├── features/   # Feature-based modules\n│   │   ├── lib/        # API client and utilities\n│   │   ├── routes/     # TanStack Router routes\n│   │   └── types/      # TypeScript types\n│   └── ...\n├── server/             # Express backend\n│   └── src/\n│       ├── routes/     # API routes\n│       ├── services/   # Business logic\n│       └── db/         # Database layer\n├── shared/             # Shared types\n│   └── types/\n├── data/               # SQLite database\n└── ...\n```\n\n## API Endpoints\n\n| Method | Endpoint | Description |\n|--------|----------|-------------|\n| POST | `/api/audits` | Start a new SEO audit |\n| GET | `/api/audits` | List all audits |\n| GET | `/api/audits/:id` | Get audit details with results |\n| GET | `/api/audits/:id/progress` | SSE stream for real-time progress |\n| GET | `/api/audits/:id/export` | Export audit as CSV or JSON |\n| DELETE | `/api/audits/:id` | Delete an audit |\n| GET | `/api/settings` | Get API configuration status |\n| PUT | `/api/settings` | Update API credentials |\n\n## Production Deployment\n\n### Build for production\n\n```bash\nnpm run build\n```\n\n### Start production server\n\n```bash\nNODE_ENV=production npm run start\n```\n\nThe server will serve the built client files and handle API requests on the same port.\n\n## Contributing\n\nContributions are welcome! Please feel free to submit a Pull Request.\n\n## License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.\n\n---\n\n\n> For a full publishing pipeline from analysis to published content, see [Rankenstein](https://rankenstein.pro).\n\n## Author\n\nBuilt by [Agrici Daniel](https://agricidaniel.com/about) - AI Workflow Architect.\n\n- [Blog](https://agricidaniel.com/blog) - Deep dives on AI marketing automation\n- [AI Marketing Hub](https://www.skool.com/ai-marketing-hub) - Free community, 2,800+ members\n- [YouTube](https://www.youtube.com/@AgriciDaniel) - Tutorials and demos\n- [All open-source tools](https://github.com/AgriciDaniel)\n",
-      "media": [
-        {
-          "type": "image",
-          "url": "https://img.youtube.com/vi/jRSx4q8AghU/maxresdefault.jpg",
-          "caption": ""
-        }
-      ],
-      "score": 1112.8
+      "readmeExcerpt": "<div align=\"center\">\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/wordmark-dark.svg\">\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"assets/wordmark-light.svg\">\n  <img alt=\"SEOMonster\" src=\"assets/wordmark-light.svg\" width=\"440\">\n</picture>\n\n<h3>Don't learn another SEO dashboard. Just ask.</h3>\n\n<p>The open-source SEO analyst that lives inside the AI assistant you already use —<br>working from <b>your own</b> Search Console, Analytics, and PageSpeed data, on your machine.</p>\n\n<p>\n  <a href=\"https://pypi.org/project/seo-monster/\"><img src=\"https://img.shields.io/pypi/v/seo-monster?color=2BD9A8&label=pypi\" alt=\"PyPI version\"></a>\n  <a href=\"https://pypi.org/project/seo-monster/\"><img src=\"https://img.shields.io/pypi/pyversions/seo-monster\" alt=\"Python versions\"></a>\n  <a href=\"https://pypi.org/project/seo-monster/\"><img src=\"https://img.shields.io/pypi/dm/seo-monster?color=2BD9A8\" alt=\"Downloads\"></a>\n  <a href=\"https://github.com/avansaber/seo-monster/actions\"><img src=\"https://img.shields.io/badge/tests-575%20passing-2BD9A8\" alt=\"Tests\"></a>\n  <img src=\"https://img.shields.io/badge/license-MIT-green\" alt=\"License: MIT\">\n  <a href=\"https://github.com/avansaber/seo-monster/stargazers\"><img src=\"https://img.shields.io/github/stars/avansaber/seo-monster?style=flat&color=2BD9A8\" alt=\"GitHub stars\"></a>\n</p>\n\n<p>\n  <a href=\"https://cursor.com/en/install-mcp?name=seomonster&amp;config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyJzZW8tbW9uc3RlciJdfQ==\"><img src=\"https://cursor.com/deeplink/mcp-install-dark.svg\" alt=\"Add to Cursor\" height=\"32\"></a>\n  &nbsp;\n  <a href=\"https://insiders.vscode.dev/redirect/mcp/install?name=seomonster&amp;config=%7B%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22seo-monster%22%5D%7D\"><img src=\"https://img.shields.io/badge/VS_Code-Install_server-0098FF?style=flat&logo=visualstudiocode&logoColor=white\" alt=\"Install in VS Code\" height=\"32\"></a>\n  &nbsp;\n  <a href=\"https://seomonster.avansaber.com\"><img src=\"https://img.shields.io/badge/Website-seomonster.avansaber.com-555\" alt=\"Website\" height=\"32\"></a>\n</p>\n\n</div>\n\n---\n\nYou don't open a new tool — you just ask, in plain English, inside **Claude** (or Cursor / Cline / Codex):\n\n> **You** &nbsp; *\"What should I write about next?\"*\n>\n> **🦖 SEOMonster** &nbsp; Pulls your Search Console and surfaces three topics you're *almost* ranking for — positions 8–20 with real demand — ranked by opportunity. Say the word and it drafts the brief.\n\n| You ask … | … SEOMonster does |\n| :-- | :-- |\n| *\"What should I write about next?\"* | Surfaces near-ranking topics from **your own** Search Console demand |\n| *\"Is this page ready to publish?\"* | Runs the technical-SEO + structured-data checks before you ship |\n| *\"Get this indexed.\"* | Nudges Google (Indexing API) and Bing / Yandex (IndexNow) |\n| *\"Did my change actually move rankings?\"* | Before/after attribution vs a matched control group — with a confidence interval, not a guess |\n| *\"Is ChatGPT recommending us, or our competitors?\"* | Tracks your brand's **share of voice** across the AI answer engines |\n\n**70 tools** across Search Console, GA4, PageSpeed, Cloudflare, AI-citation tracking, keyword discovery, and technical SEO — every one returning the same JSON result envelope, every one driven by your own credentials. No new dashboard to learn; you chat with the assistant you already use.\n\n> [!NOTE]\n> Published on PyPI as **`seo-monster`** (so the command is `uvx seo-monster`). The import package is `seo_mcp`; `seo-mcp` is a dev/local alias. The package ships **zero secrets** — every credential is resolved at runtime from your own environment or config file.\n\n- **Your data, your machine.** User-credential-driven; nothing is sent to any third party.\n- **Read-first, safe by default.** Reads always work; the two routine writes (sitemap submit, indexing request) are on by default; the Cloudflare write tools (cache purge, redirects, settings, managed robots.txt) are gated behind `SEO_MCP_ALLOW_DESTRUCTIVE`, and the riskier ones also need a per-call `confirm` token.\n- **Lean.** Standard library + the `mcp` SDK + the Google client libraries; PageSpeed and Cloudflare ride on `urllib`, no extra HTTP dependency.\n\n## Quickstart\n\n> [!TIP]\n> Fastest path: the **one-click install** buttons above. Or add it to any MCP client by hand:\n\n```json\n{\n  \"mcpServers\": {\n    \"seomonster\": { \"command\": \"uvx\", \"args\": [\"seo-monster\"] }\n  }\n}\n```\n\nRun the one-time Google sign-in once — `uvx --from seo-monster seo-monster auth` — then ask your assistant to call **`system_status`** to confirm what's connected. Full per-client setup and credentials are in [Install](#install) and [Auth](#auth).\n\n## How it works\n\n```mermaid\nflowchart LR\n  U[\"You — plain English\"] --> H[\"Claude · Cursor · Cline · Codex\"]\n  H -- \"MCP · stdio\" --> S[\"SEOMonster<br/>70 tools\"]\n  S --> GSC[\"Search Console · GA4\"]\n  S --> PSI[\"PageSpeed · CrUX\"]\n  S --> CF[\"Cloudflare · IndexNow\"]\n  S --> AI[\"AI engines · SERP<br/>(optional)\"]\n  S -. \"your creds · your machine\" .-> U\n```\n\nSEOMonster is a stdio **MCP server**: your AI host launches it, it calls Google / Cloudflare / the AI engines with *your* credentials, and returns a consistent JSON envelope the assistant reads back to you in plain language.\n\n## Requirements\n\nFor the **`.mcpb` bundle path** (Claude Desktop): just Claude Desktop on macOS\nor Windows. The bundle declares Python 3.11+ as a runtime; Claude Desktop\nmaterializes the environment for you. No prior `uv` install needed.\n\nFor the **`uvx` path** (Cursor, Cline, Codex, advanced Claude Desktop): Python\n3.11 or newer plus [`uv`](https://docs.astral.sh/uv/) (which provides `uvx`).\nFind the absolute path to `uvx` with `which uvx`; GUI hosts do not read your\nshell profile, so MCP configs need the full path.\n\n## Tools\n\n70 tools, grouped by service. All return the same result envelope (see\n[Result envelope](#result-envelope)). Call `system_status` first if unsure what\nis configured. The server also publishes thirteen named [workflow prompts](#workflow-prompts).\n\n**Cross-service**\n- `system_status` - which services are configured/reachable, the Google auth\n  method and scopes, whether destructive mode is on, the full tool catalog,\n  and the list of registered prompts.\n\n<details>\n<summary><b>📂 Browse all 70 tools</b> — grouped by service (GSC · GA4 · AI/GEO · keyword discovery · content · PageSpeed/CrUX · Cloudflare · IndexNow · technical · schema). Click to expand.</summary>\n<br>\n\n<a name=\"gsc\"></a>\n**Google Search Console (18)**\n\n*Workhorses*\n- `gsc_list_properties` - properties the credentials can see, with permission\n  level and a derived `writable` flag (true for `siteOwner` / `siteFullUser`).\n- `gsc_search_analytics` - the workhorse: clicks/impressions/CTR/position by\n  dimensions, date range, filters, and `data_state`.\n- `gsc_top_queries` / `gsc_top_pages` - convenience top-N wrappers.\n- `gsc_compare_periods` - current vs prior window with per-key deltas.\n  v0.2.0 added `sort_by`, `sort_dir`, `min_delta_clicks` / `_impressions` /\n  `_position`, `anomalies_only` + `sigma_threshold`, and `top` for one-call\n  movers / losers / outliers reporting.\n- `gsc_inspect_url` - URL Inspection (index verdict, coverage, canonicals).\n- `gsc_batch_inspect_urls` - inspect up to 25 URLs, per-URL failures collected.\n- `gsc_list_sitemaps` - registered sitemaps and their status.\n- `gsc_submit_sitemap` - submit a sitemap (write, un-gated; needs the writable\n  scope). Accepts either `sitemap_url` (friendly) or `feedpath` (raw API field).\n- `gsc_request_indexing` - request (re)crawl via the Indexing API (write,\n  un-gated). Accepts singular `url` or `urls`.\n\n*Query intelligence (v0.2.0)*\n- `gsc_query_opportunities` - queries already ranking top N with below-target\n  CTR. Title and meta optimization candidates.\n- `gsc_query_gaps` - queries that draw impressions but barely any clicks.\n  Content opportunity signal.\n- `gsc_new_queries` - queries appearing in the current window with no prior\n  impressions. Emerging topics.\n- `gsc_top_pages_by_query` - which pages rank for a specific query. The\n  cannibalization audit input.\n\n*Multi-property + lifecycle (v0.5.0)*\n- `gsc_portfolio_summary(days, include?, exclude?)` - multi-property fleet\n  view. Per-property one-row summary (clicks, impressions, CTR, position)\n  for the last N days, plus a portfolio-level rollup. Honors optional\n  `include` / `exclude` filters. The single fastest answer to \"how is the\n  whole portfolio doing?\" across agency or multi-brand setups.\n- `gsc_trending_pages(days, limit)` - pages whose impressions grew most over\n  the last N days vs the prior N days. Wrapper on `gsc_compare_periods` with\n  `dimensions=[\"page\"], sort_by=\"delta_impressions\", sort_dir=\"desc\"`.\n- `gsc_decaying_pages(days, limit)` - same wrapper, ascending sort. Pages\n  to rescue.\n- `gsc_coverage_audit(urls, site_url?)` - heuristic coverage audit. The GSC\n  Index Coverage report is not exposed in the API; this tool takes a user-\n  supplied URL list (typically pulled from a sitemap) and bulk-inspects\n  each, then rolls up verdicts (PASS / PARTIAL / FAIL) and coverage_state\n  frequencies.\n\n<a name=\"content\"></a>\n**Content intelligence (4)**\n- `content_opportunities(site_url?, days?, count?, impressions_min?)` - ranks\n  data-grounded content topics from your own Search Console data: fuses\n  CTR-vs-expected gap (curve self-calibrated from your own per-position CTR),\n  striking-distance position, demand, and momentum into a transparent\n  opportunity score; flags cannibalization. If a GA4 property is configured, it\n  also weights each topic by the organic conversions its top page already drives\n  (up to +50%), so topics that convert rank higher; `filters_applied.ga4_value_status`\n  reports whether that ran and why (`applied` / `no_ga4_property` /\n  `ga4_unreachable` / `no_conversions`). Prioritizes demand you already have;\n  does not do cold-start keyword research or write the content. Pairs with the\n  content workflow prompts below. (GA4 weighting v0.7.3) v0.9.0 adds an additive\n  per-candidate `winnability` block (banded: striking-distance + topical-\n  proximity, GSC-personalization tier; existing fields unchanged).\n- `content_brief_data(target_query, competitor_urls?, topic?, site_url?, days?)` -\n  data-wired backing for a content brief: fetches the competitor pages (or your\n  own GSC-ranking pages as a fallback) and returns the heading union, median\n  word-count floor, schema types, and entity coverage, plus the 2026 GEO writing\n  directives and validation rules. The host writes the prose; SEOMonster brings\n  rules + evidence. Backs the `content_brief` prompt. (v0.9.0)\n- `topic_cluster_map(cluster_path | pillar_url, site_url?, days?, impressions_min?)`\n  - maps a content cluster from your own GSC data and surfaces missing subtopics.\n  Classifies each cluster query into defend / optimize / create / monitor by\n  demand and best position; the create quadrant is your missing-subtopic list.\n  Flags cannibalization. GSC-only; honest about the ~47% query anonymization. (v0.9.0)\n- `rank_change_attribution(url | urls, change_date, query?, site_url?, pre_days?, post_days?, gap_days?, control_scope?)`\n  - estimates whether an on-site change moved a page's clicks via\n  difference-in-differences against a matched control group (never a naked\n  before/after). Returns an estimated lift with a 95% CI, a three-state verdict\n  (likely_positive / likely_negative / inconclusive), and a confounders block\n  that auto-detects the 2025 GSC data-regime breaks (impression bug, num=100) and\n  downgrades position reliability. Observational, not causal -- a server-side\n  split test is the only true causal test. GSC-only. (v0.9.0)\n\n<a name=\"ai\"></a>\n**AI / GEO citation (3, v0.9.0)** - whether the AI answer surfaces reach and cite you.\n- `ai_citation_readiness(url)` - is a page structured to be extracted/cited by\n  LLM answer engines? Leads with a render-blindness check (GPTBot / ClaudeBot /\n  PerplexityBot fetch but do not run JS, so a client-rendered SPA is invisible to\n  them), then scores evidence-backed signals (statistics, quotations, cited\n  sources, no keyword-stuffing). schema.org / FAQ / llms.txt are reported as\n  informational only -- the 2026 evidence does not support them as AI-citation\n  drivers, so they are not scored. Free, HTTP-only.\n- `ai_referral_overview(property_id?, site_url?, days?)` - first-party AI traffic:\n  GA4 referral sessions from AI apps (the native `ai-assistant` channel plus a\n  configurable source-host regex) and AI-crawler robots coverage (GPTBot,\n  ClaudeBot, PerplexityBot, ...). Surfaces the ~70% dark-traffic undercount and\n  keeps AI-Overview clicks (counted as Organic) separate. Free.\n- `ai_citation_track(prompts, brand, brand_domains?, competitors?, engines?, samples?)`\n  - sampled brand mention + citation share-of-voice across AI engines\n  (Perplexity / OpenAI / Anthropic / Gemini APIs + Google AI Overviews via\n  DataForSEO) for a managed prompt set, vs competitors. N samples/prompt (default\n  7) with a 95% CI, share-of-voice, and run-to-run volatility -- NOT an \"AI rank\"\n  (single runs are statistically meaningless). Discloses that developer-API output\n  differs from the logged-in consumer UI and that AIO has no API. Paid +\n  non-deterministic. Needs at least one engine key and/or DataForSEO.\n\n<a name=\"discovery\"></a>\n**Keyword discovery (3, v0.9.0)** - find terms you don't already rank for.\n- `gsc_keyword_expand(candidates, site_url?, days?, impressions_min?)` - you\n  (the host) brainstorm candidate terms from your winning queries; this grounds\n  each against your own Search Console data (footprint covered / thin / none) with\n  a sibling-strength confidence band. \"none\" = no VISIBLE footprint (GSC hides\n  ~75% of impressions), so net-new terms are scored hypotheses. Free.\n- `serp_adjacency_expand(seeds, include_paa?)` - expand seed terms into adjacent\n  terms. FREE core: Google Autocomplete (no key). Optional People-Also-Ask +\n  related searches via DataForSEO. Returns per-seed suggestions plus the\n  aggregated net-new terms; degrades gracefully without a key.\n- `keyword_universe(target_domain?, competitors?, keywords?, limit?)` - optional,\n  paid. Core value: the competitor keyword GAP (DataForSEO Domain Intersection;\n  no Google equivalent). Optional search volume / difficulty / intent via a\n  provider chain (DataForSEO, else Google Ads volume-only). External volume is a\n  degraded directional signal -- a tiebreaker, never a gate.\n\n<a name=\"ga4\"></a>\n**Google Analytics 4 (7)**\n- `ga4_run_report` - the workhorse: arbitrary dimensions/metrics/date range,\n  optional dimension filter and ordering.\n- `ga4_top_landing_pages` - top landing pages, organic-only by default.\n- `ga4_traffic_by_channel` - sessions/engagement/conversions by channel group.\n- `ga4_organic_search_overview` - organic totals plus a day-by-day trend.\n- `ga4_setup_audit(property_id?)` - read-only SEO-measurement-readiness audit:\n  web data stream, key events, data retention, content-group dimensions, and\n  (v0.7.4) enhanced measurement, internal site search, and Google Signals.\n  Severity-graded with a benign exception per finding. Uses the GA4 Admin API\n  over REST (analytics.readonly; no extra dependency). (v0.7.0)\n- `ga4_site_search(days?, limit?)` - internal site-search query report (a\n  direct content-gap signal); honest envelope when no real search terms. (v0.7.1)\n- `ga4_landing_page_conversions(days?, organic_only?, limit?)` - organic\n  landing pages ranked by conversions. (v0.7.1)\n\n<a name=\"psi\"></a>\n**PageSpeed Insights (2)**\n- `psi_analyze` - Lighthouse scores, lab Core Web Vitals, and field (CrUX) Core\n  Web Vitals for a URL. Defaults to the mobile strategy. Field data carries a\n  `field_data_note`: Google is deprecating PSI field data, so use `crux_snapshot`\n  / `crux_history` for durable field metrics.\n- `psi_opportunities(url, strategy?)` - the actionable Lighthouse \"opportunity\"\n  audits (with estimated savings) plu",
+      "media": [],
+      "score": 1113
     }
   ]
 }
