@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T06:09:14.300Z",
+  "generatedAt": "2026-09-24T06:18:08.244Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -22,12 +22,12 @@
         "fullName": "hypit-ai/hypit",
         "url": "https://github.com/hypit-ai/hypit",
         "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-        "stars": 14626,
+        "stars": 15682,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 14626"
+          "⭐ 15682"
         ],
         "signalUrls": [],
         "points": 0,
@@ -44,14 +44,14 @@
         "github": {
           "fullName": "hypit-ai/hypit",
           "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-          "stars": 14626,
-          "forks": 1727,
+          "stars": 15682,
+          "forks": 1861,
           "createdAt": "2026-07-29T18:49:19Z",
-          "ageDays": 55,
-          "starsPerDay": 265.9,
-          "pushedAt": "2026-09-23T05:11:27Z",
+          "ageDays": 56,
+          "starsPerDay": 280,
+          "pushedAt": "2026-09-23T17:31:53Z",
           "archived": false,
-          "openIssues": 9,
+          "openIssues": 12,
           "topics": [
             "agentic-ai",
             "ai",
@@ -100,7 +100,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "14626 sao, 1727 fork, ~265.9 sao/ngày, 55 ngày tuổi"
+            "15682 sao, 1861 fork, ~280 sao/ngày, 56 ngày tuổi"
           ]
         }
       },
@@ -122,7 +122,7 @@
           "caption": ""
         }
       ],
-      "score": 1831.3
+      "score": 1884.1
     },
     {
       "candidate": {
@@ -150,11 +150,11 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5257,
+          "stars": 5261,
           "forks": 199,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 210,
-          "starsPerDay": 25,
+          "ageDays": 211,
+          "starsPerDay": 24.9,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
           "openIssues": 126,
@@ -212,7 +212,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5257 sao, 199 fork, ~25 sao/ngày, 210 ngày tuổi"
+            "5261 sao, 199 fork, ~24.9 sao/ngày, 211 ngày tuổi"
           ]
         }
       },
@@ -226,12 +226,12 @@
         "fullName": "getopenpost/openpost",
         "url": "https://github.com/getopenpost/openpost",
         "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
-        "stars": 603,
+        "stars": 612,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 603"
+          "⭐ 612"
         ],
         "signalUrls": [],
         "points": 0,
@@ -247,12 +247,12 @@
         "github": {
           "fullName": "getopenpost/openpost",
           "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
-          "stars": 603,
-          "forks": 73,
+          "stars": 612,
+          "forks": 75,
           "createdAt": "2026-03-21T11:12:13Z",
-          "ageDays": 186,
-          "starsPerDay": 3.2,
-          "pushedAt": "2026-09-22T13:09:00Z",
+          "ageDays": 187,
+          "starsPerDay": 3.3,
+          "pushedAt": "2026-09-24T06:12:20Z",
           "archived": false,
           "openIssues": 1,
           "topics": [
@@ -301,13 +301,116 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "603 sao, 73 fork, ~3.2 sao/ngày, 186 ngày tuổi"
+            "612 sao, 75 fork, ~3.3 sao/ngày, 187 ngày tuổi"
           ]
         }
       },
       "readmeExcerpt": "<p align=\"center\">\n  <a href=\"https://openpo.st\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/brand/lockup-dark.svg\">\n      <img src=\"./assets/brand/lockup.svg\" alt=\"OpenPost\" width=\"240\" height=\"60\">\n    </picture>\n  </a>\n</p>\n\n<h3 align=\"center\">An open-source alternative to Buffer, Canva, and CapCut.</h3>\n\n<p align=\"center\">\n  Write posts, design images and carousels, edit videos, and schedule your content in one app.<br>\n  Self-host OpenPost or use OpenPost Hosted.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/downloads-dark.svg\">\n      <img src=\"./assets/badges/downloads-light.svg\" alt=\"Total downloads\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/release-dark.svg\">\n      <img src=\"./assets/badges/release-light.svg\" alt=\"Latest release\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/stargazers\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/stars-dark.svg\">\n      <img src=\"./assets/badges/stars-light.svg\" alt=\"GitHub stars\">\n    </picture>\n  </a>\n  <a href=\"https://url.rgo.pt/x\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/follow-dev-dark.svg\">\n      <img src=\"./assets/badges/follow-dev-light.svg\" alt=\"Follow the developer on X\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://app.openpo.st/image-editor\"><strong>Try the image editor</strong></a>\n  ·\n  <a href=\"https://app.openpo.st/video-editor\"><strong>Try the video editor</strong></a>\n  ·\n  <a href=\"#self-host\"><strong>Self-host</strong></a>\n  ·\n  <a href=\"https://openpo.st/docs\"><strong>Docs</strong></a>\n</p>\n\n<p align=\"center\">\n  Both editors are free to use without an account or watermark.<br>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">\n    <img src=\"./assets/screenshots/readme-hero-dark.webp\" alt=\"OpenPost composer with platform-specific drafts, previews, and scheduling controls\" width=\"100%\">\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">Watch the product tour</a>\n  ·\n  <a href=\"https://openpo.st/#features\">See all features</a>\n</p>\n\n<table>\n  <tr>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/image-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/image-editor-dark.webp\">\n          <img src=\"./assets/screenshots/image-editor-light.webp\" alt=\"OpenPost image editor with a design canvas, layers, and editing controls\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Design images and carousels</strong>\n    </td>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/video-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/video-editor-dark.webp\">\n          <img src=\"./assets/screenshots/video-editor-light.webp\" alt=\"OpenPost video editor with a video preview and multitrack timeline\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Edit and caption videos</strong>\n    </td>\n  </tr>\n</table>\n\n## What you can do\n\n- <img src=\"./assets/brand/features/accounts.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Connect accounts](https://openpo.st/docs/guides/accounts).** Manage your social connections in one workspace. Each provider keeps its own capabilities and publishing limits.\n- <img src=\"./assets/brand/features/compose.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Compose for each platform](https://openpo.st/docs/guides/publishing).** Write posts and threads, then adjust the text and media for each account. Preview each version before publishing. Save account groups as Social Sets to reuse them.\n- <img src=\"./assets/brand/features/image-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Image editor](https://openpo.st/docs/image-editor).** Design images and multi-page carousels with layers, templates, and custom fonts. Remove backgrounds in your browser. Export individual pages or the full carousel, or attach them to your post.\n- <img src=\"./assets/brand/features/video-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Video editor](https://openpo.st/docs/video-editor).** Trim and arrange clips on a multitrack timeline. Add captions, transitions, effects, and audio. Cut footage by selecting words in its transcript.\n- <img src=\"./assets/brand/features/recorder.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Recorder](https://openpo.st/docs/video-editor/quick-cut-and-recorder).** Capture your screen, camera, and microphone, then bring the recording into your video edit.\n- <img src=\"./assets/brand/features/calendar.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Calendar and queues](https://openpo.st/docs/guides/scheduling).** Choose a publishing time or the next free slot in a queue. Plan your posts in the calendar, stagger publishing across accounts, and get reminders when your queue runs low.\n- <img src=\"./assets/brand/features/repost.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Auto repost.** Set delays and engagement rules for native reposts on supported networks. Override the defaults for individual posts.\n- <img src=\"./assets/brand/features/media.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Media library](https://openpo.st/docs/guides/media-library).** Keep reusable images, videos, fonts, and brand assets in your workspace. Organize files with tags, collections, and favorites. Attach saved media without uploading it again.\n- <img src=\"./assets/brand/features/memes.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Meme maker](https://openpo.st/docs/guides/media-library#add-media-to-a-post).** Pick a template, edit its captions, and replace its images. Save the result to your media library or attach it to a post.\n- <img src=\"./assets/brand/features/inbox.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Inbox and messages](https://openpo.st/docs/guides/inbox).** Read and reply to supported comments and direct messages without switching between social apps.\n- <img src=\"./assets/brand/features/analytics.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Analytics and repurposing](https://openpo.st/docs/guides/analytics).** Compare post results and track audience changes across your accounts. Use a previous post as the starting point for a new draft.\n- <img src=\"./assets/brand/features/grow.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Find people.** Find accounts to follow on Bluesky and Mastodon. Review the suggestions and choose who to follow.\n- <img src=\"./assets/brand/features/ideas.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **AI writing and ideas.** Generate ideas, compare draft directions, and adapt posts for your selected platforms. You review the result before publishing. AI writing is optional. [Self-hosted AI setup](https://openpo.st/docs/self-hosting/ai).\n- <img src=\"./assets/brand/features/automation.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[API, SDK, CLI, MCP, and n8n](https://openpo.st/docs/automate).** Create drafts, schedule posts, and check publishing results from your scripts, agents, or n8n workflows. Install the [TypeScript SDK](https://www.npmjs.com/package/@getopenpost/sdk) or the [CLI](https://www.npmjs.com/package/@getopenpost/cli) from npm. See the [API reference](https://openpo.st/docs/api-reference) for endpoints.\n- <img src=\"./assets/brand/features/workspaces.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Teams and workspaces](https://openpo.st/docs/guides/workspaces).** Keep brands and clients in separate workspaces and control who can edit them. Protect your account with passkeys, two-factor authentication, and session controls.\n\n## Get started\n\n### OpenPost Hosted\n\nUse OpenPost to create and schedule posts without running your own server.\n\n<a href=\"https://app.openpo.st/register?plan=founder&billing_period=monthly\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/start-trial-dark.svg\">\n    <img src=\"./assets/buttons/start-trial-light.svg\" alt=\"Start a 14-day trial\" height=\"36\">\n  </picture>\n</a>\n\n[View plans](https://openpo.st/pricing)\n\n### Self-host\n\nRun OpenPost with Docker Compose. The default setup uses one container with SQLite and local media storage.\n\n<a href=\"https://openpo.st/docs/self-hosting/\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/self-host-dark.svg\">\n    <img src=\"./assets/buttons/self-host-light.svg\" alt=\"Get started with self-hosting\" height=\"36\">\n  </picture>\n</a>\n\n[Configure integrations](https://openpo.st/docs/self-hosting/integrations) · [Backups and upgrades](https://openpo.st/docs/self-hosting/maintenance)\n\n## Supported platforms\n\n<p>\n  <img src=\"./assets/postiz-socials/Instagram.svg\" alt=\"Instagram\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Facebook.svg\" alt=\"Facebook\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Linkedin.svg\" alt=\"LinkedIn\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/X.svg\" alt=\"X\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/TikTok.svg\" alt=\"TikTok\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Youtube.svg\" alt=\"YouTube\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Threads.svg\" alt=\"Threads\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Bluesky.svg\" alt=\"Bluesky\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Mastodon.svg\" alt=\"Mastodon\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Pixelfed.svg\" alt=\"Pixelfed\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Peertube.svg\" alt=\"PeerTube\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Lemmy.svg\" alt=\"Lemmy\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/PieFed.svg\" alt=\"PieFed\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Discord.svg\" alt=\"Discord\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Pinterest.svg\" alt=\"Pinterest\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Telegram.svg\" alt=\"Telegram\" width=\"32\" height=\"32\">\n</p>\n\nOpenPost has integrations for Instagram, Facebook, LinkedIn, X, TikTok, YouTube, Threads, Bluesky, Mastodon, Pixelfed, PeerTube, Lemmy, PieFed, Discord, Pinterest, and Telegram. Mastodon and Pixelfed connect per instance over OAuth; PeerTube, Lemmy, and PieFed connect with instance credentials. Discord supports incoming webhooks and a bot integration; Telegram uses a bot.\n\nPosting formats, inbox features, and analytics vary by platform. Some integrations require provider app approval or publicly reachable media URLs.\n\n[Connect accounts](https://openpo.st/docs/guides/accounts) · [Integration requirements](https://openpo.st/docs/self-hosting/integrations)\n\n## Contributing\n\nReport bugs, improve the docs, or send a pull request. For larger changes, open an issue first so we can agree on the approach.\n\nOpenPost uses Go, SvelteKit, and Expo, with a Devenv development environment. Start with the [contributing guide](./.github/CONTRIBUTING.md) and [development setup](https://openpo.st/docs/development/setup).\n\n<a href=\"https://github.com/getopenpost/openpost/issues\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/report-bug-dark.svg\">\n    <img src=\"./assets/buttons/report-bug-light.svg\" alt=\"Report a bug\" height=\"36\">\n  </picture>\n</a>\n<a href=\"https://discord.com/invite/u2QwukmY4W\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/join-discord-dark.svg\">\n    <img src=\"./assets/buttons/join-discord-light.svg\" alt=\"Join Discord\" height=\"36\">\n  </picture>\n</a>\n\n## Star history\n\nSupport OpenPost with a [GitHub star](https://github.com/getopenpost/openpost/stargazers).\n\n<!-- star-history:start -->\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/star-history/star-history-dark.svg\">\n  <img alt=\"Star history\" src=\"assets/star-history/star-history-light.svg\">\n</picture>\n<!-- star-history:end -->\n\n## License and security\n\nOpenPost uses the [AGPL-3.0-only license](./LICENSE). See the [third-party notices](./licenses/README.md) for dependency licenses and attribution.\n\nReport vulnerabilities privately through the [security policy](./.github/SECURITY.md).\n",
       "media": [],
-      "score": 1130.15
+      "score": 1130.6
+    },
+    {
+      "candidate": {
+        "key": "samuraigpt/vibe-workflow",
+        "fullName": "SamurAIGPT/Vibe-Workflow",
+        "url": "https://github.com/SamurAIGPT/Vibe-Workflow",
+        "description": "Free, open-source alternative to Weavy AI, Krea Nodes, Freepik Spaces & FloraFauna AI — node-based AI workflow builder for generative image & video pipelines",
+        "stars": 595,
+        "sources": [
+          "github-search"
+        ],
+        "signals": [
+          "⭐ 595"
+        ],
+        "signalUrls": [],
+        "points": 0,
+        "verticals": [
+          "creative",
+          "agency"
+        ]
+      },
+      "signals": {
+        "repo": {
+          "owner": "SamurAIGPT",
+          "repo": "Vibe-Workflow"
+        },
+        "github": {
+          "fullName": "SamurAIGPT/Vibe-Workflow",
+          "description": "Free, open-source alternative to Weavy AI, Krea Nodes, Freepik Spaces & FloraFauna AI — node-based AI workflow builder for generative image & video pipelines",
+          "stars": 595,
+          "forks": 151,
+          "createdAt": "2025-12-30T08:03:14Z",
+          "ageDays": 268,
+          "starsPerDay": 2.2,
+          "pushedAt": "2026-09-17T15:37:33Z",
+          "archived": false,
+          "openIssues": 1,
+          "topics": [
+            "ai",
+            "ai-workflow-builder",
+            "artistic-intelligence",
+            "comfyui",
+            "creative-tools",
+            "fastapi",
+            "florafauna-ai-alternative",
+            "freepik-spaces-alternative",
+            "generative-ai",
+            "image-generation",
+            "krea-nodes-alternative",
+            "nextjs",
+            "node-editor",
+            "open-source",
+            "self-hosted-ai",
+            "video-generation",
+            "weavy",
+            "weavy-ai-alternative",
+            "weavyai",
+            "workflow-automation"
+          ],
+          "homepage": "https://muapi.ai/workflow",
+          "language": "JavaScript",
+          "suggestedHealthScore": 16
+        },
+        "hackerNews": [],
+        "reddit": [
+          {
+            "subreddit": "selfhosted",
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=Vibe-Workflow&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=Vibe-Workflow&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "opensource",
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=Vibe-Workflow&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=Vibe-Workflow&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "SideProject",
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=Vibe-Workflow&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=Vibe-Workflow&restrict_sr=1&sort=new"
+          }
+        ],
+        "heuristic": {
+          "maturitySuggestion": "rising",
+          "reasons": [
+            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
+            "595 sao, 151 fork, ~2.2 sao/ngày, 268 ngày tuổi"
+          ]
+        }
+      },
+      "readmeExcerpt": "# Vibe Workflow — Open-Source Alternative to Weavy AI, Freepik Spaces, Krea Nodes & FloraFauna AI\n\n**Vibe Workflow** is a free, open-source node-based AI workflow builder — the self-hostable alternative to Weavy AI, Freepik Spaces, Krea Nodes, and FloraFauna AI. Designed around \"Artistic Intelligence,\" it gives creators and developers a visual, modular pipeline editor for designing, editing, and composing AI-generated images and video — with no vendor lock-in. Read the full story: [I built Open Weavy because paid AI creative tools were getting ridiculously expensive](https://medium.com/@anilmatcha/i-built-open-weavy-because-paid-ai-creative-tools-were-getting-ridiculously-expensive-f67b088e06fb).\n\n> 🚀 **Prefer a hosted version?** Try Vibe Workflow instantly at **[muapi.ai/workflow](https://muapi.ai/workflow)** — fully managed, with **API** and **embed** support to plug node-based AI workflows directly into your own platform. See [Hosted Version](#hosted-version) below.\n\n<img width=\"1024\" height=\"1024\" alt=\"Vibe Workflow — open-source AI workflow builder alternative to Weavy AI, Krea Nodes, Freepik Spaces, FloraFauna AI\" src=\"https://github.com/user-attachments/assets/f603eb13-3b4f-4c9a-9a6a-c4cc3a94f7a6\" />\n\n> **Looking for a Weavy AI alternative? A Krea Nodes alternative? A Freepik Spaces alternative? A FloraFauna AI alternative?**\n> Vibe Workflow is fully open-source, self-hostable, and free — with the same node-based visual editor you know and love.\n\n---\n\n## Related Projects\n\n- [awesome-vibecoded-saas](https://github.com/Anil-matcha/awesome-vibecoded-saas) — broader catalog of open-source SaaS alternatives featuring Vibe Workflow.\n- [Muapi open-source alternatives](https://muapi.ai/open-source/alternative/krea) — compare this workflow editor with the Krea workflow and its honest scope.\n- [Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI) — Free self-hosted AI media studio — model backend for your pipelines\n- [Open-AI-Design-Agent](https://github.com/Anil-matcha/Open-AI-Design-Agent) — Autonomous AI design agent to embed in your workflows\n\n## Sample Workflow UI\n\n<img width=\"1468\" height=\"764\" alt=\"Screenshot 2026-04-01 at 4 03 29 PM\" src=\"https://github.com/user-attachments/assets/0eeff00f-7850-4d53-bbc9-68f6b1f8b7a4\" />\n\n\n---\n\n## Hosted Version\n\nDon't want to self-host? A fully managed, hosted version of Vibe Workflow is available at **[muapi.ai/workflow](https://muapi.ai/workflow)** — zero setup, ready to use in the browser.\n\nThe hosted version also ships with:\n- **API support** — programmatically run workflows and integrate generative pipelines into your own apps and backends.\n- **Embed support** — drop the workflow builder directly into your own platform or product via an embeddable widget, so your users get a node-based AI editor without leaving your UI.\n\nUse the hosted version if you want to skip infra and add node-based AI workflows to your own platform in minutes.\n\n---\n\n## Why Vibe Workflow Over Weavy AI / Krea Nodes / Freepik Spaces / FloraFauna AI?\n\n| Feature | Vibe Workflow | Weavy AI | Krea Nodes | Freepik Spaces | FloraFauna AI |\n|---|---|---|---|---|---|\n| Open Source | ✅ MIT | ❌ | ❌ | ❌ | ❌ |\n| Self-Hostable | ✅ | ❌ | ❌ | ❌ | ❌ |\n| Node-Based Editor | ✅ | ✅ | ✅ | Partial | ✅ |\n| Custom AI Models | ✅ | Limited | Limited | ❌ | Limited |\n| No Subscription | ✅ | ❌ | ❌ | ❌ | ❌ |\n| Extendable / API | ✅ | Limited | Limited | ❌ | Limited |\n\nPaid AI creative tools have become [ridiculously expensive](https://medium.com/@anilmatcha/i-built-open-weavy-because-paid-ai-creative-tools-were-getting-ridiculously-expensive-f67b088e06fb). Vibe Workflow bridges the gap between complex generative AI capabilities and intuitive visual design. Where tools like Weavy AI and Krea Nodes offer powerful node-based systems behind paywalls, Vibe Workflow gives you the same power — open-source, flexible, and extendable:\n\n- **Creative Professionals**: Build custom AI pipelines for high-volume asset production.\n- **Studios**: Maintain brand consistency across hundreds of generative variations.\n- **Developers**: Extend and integrate generative AI into any existing workflow via API.\n- **Researchers**: Self-host and experiment with any AI model stack — no usage caps.\n\n---\n\n## Features\n\n- **Node-Based AI Workflow Editor** — Visual, modular pipelines for generative AI, similar in spirit to Krea Nodes and Weavy AI workflows but fully open-source (inspired by Blender Nodes and ComfyUI).\n- **Artistic Intelligence** — A design philosophy bridging human creativity and AI automation; the same creative-first approach seen in FloraFauna AI and Freepik Spaces.\n- **Generative Image & Video** — Integrated support for image and video generation powered by **MuAPI** (Vadoo AI).\n- **Self-Hosted & Private** — Run entirely on your own infrastructure. No data sent to third-party SaaS platforms.\n- **Extensible Architecture** — Add new AI model nodes, connect external APIs, and build reusable workflow templates.\n- **No Vendor Lock-in** — Swap AI providers freely. Unlike Freepik Spaces or FloraFauna AI, you own your stack.\n\n---\n\n## Use Cases\n\n- **AI Image Generation Pipelines** — Build workflows comparable to Freepik Spaces AI tools or FloraFauna AI canvas, on your own server.\n- **Video Generation Workflows** — Sequence and automate video generation jobs just like Krea Workflows.\n- **Brand Asset Automation** — Replicate what Weavy AI does for enterprise content production, without the SaaS subscription.\n- **Custom Model Integration** — Connect LoRAs, custom diffusion models, or any external API as a workflow node.\n- **Creative Exploration** — Experiment with generative art pipelines in the same visual style as Krea Nodes or FloraFauna's node canvas.\n\n---\n\n## Project Structure\n\n```text\nVibe-Workflow/\n├── client/              # Next.js frontend application\n├── packages/\n│   └── workflow-builder/ # Shared UI library — the core node editor\n└── server/              # FastAPI backend\n```\n\n---\n\n## Getting Started\n\n### Prerequisites\n\nFor local development:\n- **Node.js** (v20+)\n- **Python** (v3.10+)\n- **npm** (v7+ for workspaces support)\n\nOr use **Docker** (see [Running with Docker](#running-with-docker)).\n\n### Installation\n\n1. **Clone the repository**:\n   ```bash\n   git clone https://github.com/samuraigpt/vibe-workflow.git\n   cd vibe-workflow\n   ```\n\n2. **Install all dependencies** (root directory):\n   ```bash\n   npm install\n   ```\n   This installs dependencies for the client, the workflow-builder library, and links them via npm workspaces.\n\n### Configuration\n\nVibe Workflow uses **MuAPI** (Vadoo AI) for generative AI capabilities. You need an API key.\n\n1. **Get your API Key** from [muapi.ai](https://muapi.ai) — sign up, navigate to **API Keys**, generate a key.\n\n2. **Configure the Backend**:\n   ```bash\n   cd server\n   cp .env.example .env\n   # Open .env and set:\n   # MU_API_KEY=your_actual_api_key_here\n   ```\n\n### Running the Project\n\n**Frontend (Next.js):**\n```bash\nnpm run dev:app\n# Available at http://localhost:3000\n```\n\n**Backend (FastAPI):**\n```bash\ncd server\npython -m venv venv\nsource venv/bin/activate   # Windows: venv\\Scripts\\activate\npip install -r requirements.txt\n\n# Run the server\nuvicorn app.main:app --reload --host 0.0.0.0 --port 8000\n```\n\n---\n\n## Running with Docker\n\nThe easiest way to run Vibe Workflow is with Docker Compose.\n\n### Prerequisites\n\n- **Docker** (v20+)\n- **Docker Compose** (v2+)\n\n### Quick Start\n\n1. **Configure environment**:\n   ```bash\n   cp .env.example .env\n   ```\n   Edit `.env` and add your MuAPI key:\n   ```bash\n   MU_API_KEY=your_actual_api_key_here\n   ```\n\n2. **Start all services**:\n   ```bash\n   docker compose up --build\n   ```\n\n3. **Access the application**:\n   - Frontend: [http://localhost:3000](http://localhost:3000)\n   - Backend API: [http://localhost:8000](http://localhost:8000)\n   - API Docs: [http://localhost:8000/docs](http://localhost:8000/docs)\n\n### Services\n\n| Service | Image | Port |\n|---------|-------|------|\n| client | Node.js 24 Alpine | 3000 |\n| server | Python 3.13 | 8000 |\n\n### Stopping\n\n```bash\ndocker compose down\n```\n\n---\n\n## Development\n\n- **Workflow-Builder Library** — To rebuild the core node editor:\n  ```bash\n  npm run build:lib\n  ```\n- **Client App** — Uses the local library. Rebuild the library after changes if not using a watcher:\n  ```bash\n  npm run dev:app\n  ```\n\n---\n\n## Comparisons\n\n### Vibe Workflow vs Weavy AI\nWeavy AI is a proprietary node-based creative AI platform. Vibe Workflow is its open-source equivalent — same visual workflow paradigm, fully self-hostable, MIT licensed, with no subscription fees.\n\n### Vibe Workflow vs Krea Nodes / Krea Workflows\nKrea Nodes offers a powerful real-time generative canvas. Vibe Workflow brings a comparable node-based editor that is open-source, customizable, and extendable with any AI backend.\n\n### Vibe Workflow vs Freepik Spaces\nFreepik Spaces is a cloud-based AI creative suite integrated with Freepik's asset library. Vibe Workflow provides the workflow and pipeline layer as open-source infrastructure you control, with no asset-library lock-in.\n\n### Vibe Workflow vs FloraFauna AI\nFloraFauna AI offers a creative node canvas for generative media. Vibe Workflow replicates and extends that concept in an open-source, self-hosted package with full extensibility.\n\n---\n\n## Keywords / Tags\n\n`weavy-ai-alternative` · `krea-nodes-alternative` · `freepik-spaces-alternative` · `florafauna-ai-alternative` · `open-source-ai-workflow` · `node-based-ai-editor` · `generative-ai-pipeline` · `comfyui-alternative` · `visual-ai-workflow` · `self-hosted-ai` · `ai-image-generation` · `ai-video-generation` · `no-code-ai` · `artistic-intelligence`\n\n---\n\n## Contributing\n\nContributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.\n\n## License\n\n[MIT](LICENSE)\n",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://github.com/user-attachments/assets/f603eb13-3b4f-4c9a-9a6a-c4cc3a94f7a6",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "url": "https://github.com/user-attachments/assets/0eeff00f-7850-4d53-bbc9-68f6b1f8b7a4",
+          "caption": ""
+        }
+      ],
+      "score": 1129.75
     },
     {
       "candidate": {
@@ -315,12 +418,12 @@
         "fullName": "omnichar/OmniChar",
         "url": "https://github.com/omnichar/OmniChar",
         "description": "AI character studio for portable identity. Build multi model consistent characters, train LoRAs, and generate on your own GPU.",
-        "stars": 377,
+        "stars": 386,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 377"
+          "⭐ 386"
         ],
         "signalUrls": [],
         "points": 0,
@@ -336,12 +439,12 @@
         "github": {
           "fullName": "omnichar/OmniChar",
           "description": "AI character studio for portable identity. Build multi model consistent characters, train LoRAs, and generate on your own GPU.",
-          "stars": 377,
+          "stars": 386,
           "forks": 54,
           "createdAt": "2026-06-11T07:13:32Z",
-          "ageDays": 104,
-          "starsPerDay": 3.6,
-          "pushedAt": "2026-09-22T09:41:26Z",
+          "ageDays": 105,
+          "starsPerDay": 3.7,
+          "pushedAt": "2026-09-24T06:11:30Z",
           "archived": false,
           "openIssues": 0,
           "topics": [
@@ -392,7 +495,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "377 sao, 54 fork, ~3.6 sao/ngày, 104 ngày tuổi"
+            "386 sao, 54 fork, ~3.7 sao/ngày, 105 ngày tuổi"
           ]
         }
       },
@@ -414,93 +517,7 @@
           "caption": ""
         }
       ],
-      "score": 1118.85
-    },
-    {
-      "candidate": {
-        "key": "avansaber/seo-monster",
-        "fullName": "avansaber/seo-monster",
-        "url": "https://github.com/avansaber/seo-monster",
-        "description": "SEOMonster: a local, user-credential-driven MCP server for SEO workflows over Google Search Console, GA4, PageSpeed Insights, and Cloudflare. Read-first, open source.",
-        "stars": 285,
-        "sources": [
-          "github-search"
-        ],
-        "signals": [
-          "⭐ 285"
-        ],
-        "signalUrls": [],
-        "points": 0,
-        "verticals": [
-          "seo",
-          "agency"
-        ]
-      },
-      "signals": {
-        "repo": {
-          "owner": "avansaber",
-          "repo": "seo-monster"
-        },
-        "github": {
-          "fullName": "avansaber/seo-monster",
-          "description": "SEOMonster: a local, user-credential-driven MCP server for SEO workflows over Google Search Console, GA4, PageSpeed Insights, and Cloudflare. Read-first, open source.",
-          "stars": 285,
-          "forks": 58,
-          "createdAt": "2026-05-28T04:53:53Z",
-          "ageDays": 118,
-          "starsPerDay": 2.4,
-          "pushedAt": "2026-09-01T17:23:40Z",
-          "archived": false,
-          "openIssues": 9,
-          "topics": [
-            "ai",
-            "anthropic",
-            "claude",
-            "cloudflare",
-            "core-web-vitals",
-            "crux",
-            "ga4",
-            "indexnow",
-            "mcp",
-            "model-context-protocol",
-            "pagespeed",
-            "search-console",
-            "seo",
-            "technical-seo"
-          ],
-          "homepage": "https://seomonster.avansaber.com/",
-          "language": "Python",
-          "suggestedHealthScore": 16
-        },
-        "hackerNews": [],
-        "reddit": [
-          {
-            "subreddit": "selfhosted",
-            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=seo-monster&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=seo-monster&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "opensource",
-            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=seo-monster&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=seo-monster&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "SideProject",
-            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=seo-monster&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=seo-monster&restrict_sr=1&sort=new"
-          }
-        ],
-        "heuristic": {
-          "maturitySuggestion": "rising",
-          "reasons": [
-            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "285 sao, 58 fork, ~2.4 sao/ngày, 118 ngày tuổi"
-          ]
-        }
-      },
-      "readmeExcerpt": "<div align=\"center\">\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/wordmark-dark.svg\">\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"assets/wordmark-light.svg\">\n  <img alt=\"SEOMonster\" src=\"assets/wordmark-light.svg\" width=\"440\">\n</picture>\n\n<h3>Don't learn another SEO dashboard. Just ask.</h3>\n\n<p>The open-source SEO analyst that lives inside the AI assistant you already use —<br>working from <b>your own</b> Search Console, Analytics, and PageSpeed data, on your machine.</p>\n\n<p>\n  <a href=\"https://pypi.org/project/seo-monster/\"><img src=\"https://img.shields.io/pypi/v/seo-monster?color=2BD9A8&label=pypi\" alt=\"PyPI version\"></a>\n  <a href=\"https://pypi.org/project/seo-monster/\"><img src=\"https://img.shields.io/pypi/pyversions/seo-monster\" alt=\"Python versions\"></a>\n  <a href=\"https://pypi.org/project/seo-monster/\"><img src=\"https://img.shields.io/pypi/dm/seo-monster?color=2BD9A8\" alt=\"Downloads\"></a>\n  <a href=\"https://github.com/avansaber/seo-monster/actions\"><img src=\"https://img.shields.io/badge/tests-575%20passing-2BD9A8\" alt=\"Tests\"></a>\n  <img src=\"https://img.shields.io/badge/license-MIT-green\" alt=\"License: MIT\">\n  <a href=\"https://github.com/avansaber/seo-monster/stargazers\"><img src=\"https://img.shields.io/github/stars/avansaber/seo-monster?style=flat&color=2BD9A8\" alt=\"GitHub stars\"></a>\n</p>\n\n<p>\n  <a href=\"https://cursor.com/en/install-mcp?name=seomonster&amp;config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyJzZW8tbW9uc3RlciJdfQ==\"><img src=\"https://cursor.com/deeplink/mcp-install-dark.svg\" alt=\"Add to Cursor\" height=\"32\"></a>\n  &nbsp;\n  <a href=\"https://insiders.vscode.dev/redirect/mcp/install?name=seomonster&amp;config=%7B%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22seo-monster%22%5D%7D\"><img src=\"https://img.shields.io/badge/VS_Code-Install_server-0098FF?style=flat&logo=visualstudiocode&logoColor=white\" alt=\"Install in VS Code\" height=\"32\"></a>\n  &nbsp;\n  <a href=\"https://seomonster.avansaber.com\"><img src=\"https://img.shields.io/badge/Website-seomonster.avansaber.com-555\" alt=\"Website\" height=\"32\"></a>\n</p>\n\n</div>\n\n---\n\nYou don't open a new tool — you just ask, in plain English, inside **Claude** (or Cursor / Cline / Codex):\n\n> **You** &nbsp; *\"What should I write about next?\"*\n>\n> **🦖 SEOMonster** &nbsp; Pulls your Search Console and surfaces three topics you're *almost* ranking for — positions 8–20 with real demand — ranked by opportunity. Say the word and it drafts the brief.\n\n| You ask … | … SEOMonster does |\n| :-- | :-- |\n| *\"What should I write about next?\"* | Surfaces near-ranking topics from **your own** Search Console demand |\n| *\"Is this page ready to publish?\"* | Runs the technical-SEO + structured-data checks before you ship |\n| *\"Get this indexed.\"* | Nudges Google (Indexing API) and Bing / Yandex (IndexNow) |\n| *\"Did my change actually move rankings?\"* | Before/after attribution vs a matched control group — with a confidence interval, not a guess |\n| *\"Is ChatGPT recommending us, or our competitors?\"* | Tracks your brand's **share of voice** across the AI answer engines |\n\n**70 tools** across Search Console, GA4, PageSpeed, Cloudflare, AI-citation tracking, keyword discovery, and technical SEO — every one returning the same JSON result envelope, every one driven by your own credentials. No new dashboard to learn; you chat with the assistant you already use.\n\n> [!NOTE]\n> Published on PyPI as **`seo-monster`** (so the command is `uvx seo-monster`). The import package is `seo_mcp`; `seo-mcp` is a dev/local alias. The package ships **zero secrets** — every credential is resolved at runtime from your own environment or config file.\n\n- **Your data, your machine.** User-credential-driven; nothing is sent to any third party.\n- **Read-first, safe by default.** Reads always work; the two routine writes (sitemap submit, indexing request) are on by default; the Cloudflare write tools (cache purge, redirects, settings, managed robots.txt) are gated behind `SEO_MCP_ALLOW_DESTRUCTIVE`, and the riskier ones also need a per-call `confirm` token.\n- **Lean.** Standard library + the `mcp` SDK + the Google client libraries; PageSpeed and Cloudflare ride on `urllib`, no extra HTTP dependency.\n\n## Quickstart\n\n> [!TIP]\n> Fastest path: the **one-click install** buttons above. Or add it to any MCP client by hand:\n\n```json\n{\n  \"mcpServers\": {\n    \"seomonster\": { \"command\": \"uvx\", \"args\": [\"seo-monster\"] }\n  }\n}\n```\n\nRun the one-time Google sign-in once — `uvx --from seo-monster seo-monster auth` — then ask your assistant to call **`system_status`** to confirm what's connected. Full per-client setup and credentials are in [Install](#install) and [Auth](#auth).\n\n## How it works\n\n```mermaid\nflowchart LR\n  U[\"You — plain English\"] --> H[\"Claude · Cursor · Cline · Codex\"]\n  H -- \"MCP · stdio\" --> S[\"SEOMonster<br/>70 tools\"]\n  S --> GSC[\"Search Console · GA4\"]\n  S --> PSI[\"PageSpeed · CrUX\"]\n  S --> CF[\"Cloudflare · IndexNow\"]\n  S --> AI[\"AI engines · SERP<br/>(optional)\"]\n  S -. \"your creds · your machine\" .-> U\n```\n\nSEOMonster is a stdio **MCP server**: your AI host launches it, it calls Google / Cloudflare / the AI engines with *your* credentials, and returns a consistent JSON envelope the assistant reads back to you in plain language.\n\n## Requirements\n\nFor the **`.mcpb` bundle path** (Claude Desktop): just Claude Desktop on macOS\nor Windows. The bundle declares Python 3.11+ as a runtime; Claude Desktop\nmaterializes the environment for you. No prior `uv` install needed.\n\nFor the **`uvx` path** (Cursor, Cline, Codex, advanced Claude Desktop): Python\n3.11 or newer plus [`uv`](https://docs.astral.sh/uv/) (which provides `uvx`).\nFind the absolute path to `uvx` with `which uvx`; GUI hosts do not read your\nshell profile, so MCP configs need the full path.\n\n## Tools\n\n70 tools, grouped by service. All return the same result envelope (see\n[Result envelope](#result-envelope)). Call `system_status` first if unsure what\nis configured. The server also publishes thirteen named [workflow prompts](#workflow-prompts).\n\n**Cross-service**\n- `system_status` - which services are configured/reachable, the Google auth\n  method and scopes, whether destructive mode is on, the full tool catalog,\n  and the list of registered prompts.\n\n<details>\n<summary><b>📂 Browse all 70 tools</b> — grouped by service (GSC · GA4 · AI/GEO · keyword discovery · content · PageSpeed/CrUX · Cloudflare · IndexNow · technical · schema). Click to expand.</summary>\n<br>\n\n<a name=\"gsc\"></a>\n**Google Search Console (18)**\n\n*Workhorses*\n- `gsc_list_properties` - properties the credentials can see, with permission\n  level and a derived `writable` flag (true for `siteOwner` / `siteFullUser`).\n- `gsc_search_analytics` - the workhorse: clicks/impressions/CTR/position by\n  dimensions, date range, filters, and `data_state`.\n- `gsc_top_queries` / `gsc_top_pages` - convenience top-N wrappers.\n- `gsc_compare_periods` - current vs prior window with per-key deltas.\n  v0.2.0 added `sort_by`, `sort_dir`, `min_delta_clicks` / `_impressions` /\n  `_position`, `anomalies_only` + `sigma_threshold`, and `top` for one-call\n  movers / losers / outliers reporting.\n- `gsc_inspect_url` - URL Inspection (index verdict, coverage, canonicals).\n- `gsc_batch_inspect_urls` - inspect up to 25 URLs, per-URL failures collected.\n- `gsc_list_sitemaps` - registered sitemaps and their status.\n- `gsc_submit_sitemap` - submit a sitemap (write, un-gated; needs the writable\n  scope). Accepts either `sitemap_url` (friendly) or `feedpath` (raw API field).\n- `gsc_request_indexing` - request (re)crawl via the Indexing API (write,\n  un-gated). Accepts singular `url` or `urls`.\n\n*Query intelligence (v0.2.0)*\n- `gsc_query_opportunities` - queries already ranking top N with below-target\n  CTR. Title and meta optimization candidates.\n- `gsc_query_gaps` - queries that draw impressions but barely any clicks.\n  Content opportunity signal.\n- `gsc_new_queries` - queries appearing in the current window with no prior\n  impressions. Emerging topics.\n- `gsc_top_pages_by_query` - which pages rank for a specific query. The\n  cannibalization audit input.\n\n*Multi-property + lifecycle (v0.5.0)*\n- `gsc_portfolio_summary(days, include?, exclude?)` - multi-property fleet\n  view. Per-property one-row summary (clicks, impressions, CTR, position)\n  for the last N days, plus a portfolio-level rollup. Honors optional\n  `include` / `exclude` filters. The single fastest answer to \"how is the\n  whole portfolio doing?\" across agency or multi-brand setups.\n- `gsc_trending_pages(days, limit)` - pages whose impressions grew most over\n  the last N days vs the prior N days. Wrapper on `gsc_compare_periods` with\n  `dimensions=[\"page\"], sort_by=\"delta_impressions\", sort_dir=\"desc\"`.\n- `gsc_decaying_pages(days, limit)` - same wrapper, ascending sort. Pages\n  to rescue.\n- `gsc_coverage_audit(urls, site_url?)` - heuristic coverage audit. The GSC\n  Index Coverage report is not exposed in the API; this tool takes a user-\n  supplied URL list (typically pulled from a sitemap) and bulk-inspects\n  each, then rolls up verdicts (PASS / PARTIAL / FAIL) and coverage_state\n  frequencies.\n\n<a name=\"content\"></a>\n**Content intelligence (4)**\n- `content_opportunities(site_url?, days?, count?, impressions_min?)` - ranks\n  data-grounded content topics from your own Search Console data: fuses\n  CTR-vs-expected gap (curve self-calibrated from your own per-position CTR),\n  striking-distance position, demand, and momentum into a transparent\n  opportunity score; flags cannibalization. If a GA4 property is configured, it\n  also weights each topic by the organic conversions its top page already drives\n  (up to +50%), so topics that convert rank higher; `filters_applied.ga4_value_status`\n  reports whether that ran and why (`applied` / `no_ga4_property` /\n  `ga4_unreachable` / `no_conversions`). Prioritizes demand you already have;\n  does not do cold-start keyword research or write the content. Pairs with the\n  content workflow prompts below. (GA4 weighting v0.7.3) v0.9.0 adds an additive\n  per-candidate `winnability` block (banded: striking-distance + topical-\n  proximity, GSC-personalization tier; existing fields unchanged).\n- `content_brief_data(target_query, competitor_urls?, topic?, site_url?, days?)` -\n  data-wired backing for a content brief: fetches the competitor pages (or your\n  own GSC-ranking pages as a fallback) and returns the heading union, median\n  word-count floor, schema types, and entity coverage, plus the 2026 GEO writing\n  directives and validation rules. The host writes the prose; SEOMonster brings\n  rules + evidence. Backs the `content_brief` prompt. (v0.9.0)\n- `topic_cluster_map(cluster_path | pillar_url, site_url?, days?, impressions_min?)`\n  - maps a content cluster from your own GSC data and surfaces missing subtopics.\n  Classifies each cluster query into defend / optimize / create / monitor by\n  demand and best position; the create quadrant is your missing-subtopic list.\n  Flags cannibalization. GSC-only; honest about the ~47% query anonymization. (v0.9.0)\n- `rank_change_attribution(url | urls, change_date, query?, site_url?, pre_days?, post_days?, gap_days?, control_scope?)`\n  - estimates whether an on-site change moved a page's clicks via\n  difference-in-differences against a matched control group (never a naked\n  before/after). Returns an estimated lift with a 95% CI, a three-state verdict\n  (likely_positive / likely_negative / inconclusive), and a confounders block\n  that auto-detects the 2025 GSC data-regime breaks (impression bug, num=100) and\n  downgrades position reliability. Observational, not causal -- a server-side\n  split test is the only true causal test. GSC-only. (v0.9.0)\n\n<a name=\"ai\"></a>\n**AI / GEO citation (3, v0.9.0)** - whether the AI answer surfaces reach and cite you.\n- `ai_citation_readiness(url)` - is a page structured to be extracted/cited by\n  LLM answer engines? Leads with a render-blindness check (GPTBot / ClaudeBot /\n  PerplexityBot fetch but do not run JS, so a client-rendered SPA is invisible to\n  them), then scores evidence-backed signals (statistics, quotations, cited\n  sources, no keyword-stuffing). schema.org / FAQ / llms.txt are reported as\n  informational only -- the 2026 evidence does not support them as AI-citation\n  drivers, so they are not scored. Free, HTTP-only.\n- `ai_referral_overview(property_id?, site_url?, days?)` - first-party AI traffic:\n  GA4 referral sessions from AI apps (the native `ai-assistant` channel plus a\n  configurable source-host regex) and AI-crawler robots coverage (GPTBot,\n  ClaudeBot, PerplexityBot, ...). Surfaces the ~70% dark-traffic undercount and\n  keeps AI-Overview clicks (counted as Organic) separate. Free.\n- `ai_citation_track(prompts, brand, brand_domains?, competitors?, engines?, samples?)`\n  - sampled brand mention + citation share-of-voice across AI engines\n  (Perplexity / OpenAI / Anthropic / Gemini APIs + Google AI Overviews via\n  DataForSEO) for a managed prompt set, vs competitors. N samples/prompt (default\n  7) with a 95% CI, share-of-voice, and run-to-run volatility -- NOT an \"AI rank\"\n  (single runs are statistically meaningless). Discloses that developer-API output\n  differs from the logged-in consumer UI and that AIO has no API. Paid +\n  non-deterministic. Needs at least one engine key and/or DataForSEO.\n\n<a name=\"discovery\"></a>\n**Keyword discovery (3, v0.9.0)** - find terms you don't already rank for.\n- `gsc_keyword_expand(candidates, site_url?, days?, impressions_min?)` - you\n  (the host) brainstorm candidate terms from your winning queries; this grounds\n  each against your own Search Console data (footprint covered / thin / none) with\n  a sibling-strength confidence band. \"none\" = no VISIBLE footprint (GSC hides\n  ~75% of impressions), so net-new terms are scored hypotheses. Free.\n- `serp_adjacency_expand(seeds, include_paa?)` - expand seed terms into adjacent\n  terms. FREE core: Google Autocomplete (no key). Optional People-Also-Ask +\n  related searches via DataForSEO. Returns per-seed suggestions plus the\n  aggregated net-new terms; degrades gracefully without a key.\n- `keyword_universe(target_domain?, competitors?, keywords?, limit?)` - optional,\n  paid. Core value: the competitor keyword GAP (DataForSEO Domain Intersection;\n  no Google equivalent). Optional search volume / difficulty / intent via a\n  provider chain (DataForSEO, else Google Ads volume-only). External volume is a\n  degraded directional signal -- a tiebreaker, never a gate.\n\n<a name=\"ga4\"></a>\n**Google Analytics 4 (7)**\n- `ga4_run_report` - the workhorse: arbitrary dimensions/metrics/date range,\n  optional dimension filter and ordering.\n- `ga4_top_landing_pages` - top landing pages, organic-only by default.\n- `ga4_traffic_by_channel` - sessions/engagement/conversions by channel group.\n- `ga4_organic_search_overview` - organic totals plus a day-by-day trend.\n- `ga4_setup_audit(property_id?)` - read-only SEO-measurement-readiness audit:\n  web data stream, key events, data retention, content-group dimensions, and\n  (v0.7.4) enhanced measurement, internal site search, and Google Signals.\n  Severity-graded with a benign exception per finding. Uses the GA4 Admin API\n  over REST (analytics.readonly; no extra dependency). (v0.7.0)\n- `ga4_site_search(days?, limit?)` - internal site-search query report (a\n  direct content-gap signal); honest envelope when no real search terms. (v0.7.1)\n- `ga4_landing_page_conversions(days?, organic_only?, limit?)` - organic\n  landing pages ranked by conversions. (v0.7.1)\n\n<a name=\"psi\"></a>\n**PageSpeed Insights (2)**\n- `psi_analyze` - Lighthouse scores, lab Core Web Vitals, and field (CrUX) Core\n  Web Vitals for a URL. Defaults to the mobile strategy. Field data carries a\n  `field_data_note`: Google is deprecating PSI field data, so use `crux_snapshot`\n  / `crux_history` for durable field metrics.\n- `psi_opportunities(url, strategy?)` - the actionable Lighthouse \"opportunity\"\n  audits (with estimated savings) plu",
-      "media": [],
-      "score": 1114.25
+      "score": 1119.3
     }
   ]
 }
