@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T06:18:08.244Z",
+  "generatedAt": "2026-09-25T06:14:09.691Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -22,12 +22,12 @@
         "fullName": "hypit-ai/hypit",
         "url": "https://github.com/hypit-ai/hypit",
         "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-        "stars": 15682,
+        "stars": 16191,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 15682"
+          "⭐ 16191"
         ],
         "signalUrls": [],
         "points": 0,
@@ -44,14 +44,14 @@
         "github": {
           "fullName": "hypit-ai/hypit",
           "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-          "stars": 15682,
-          "forks": 1861,
+          "stars": 16191,
+          "forks": 1921,
           "createdAt": "2026-07-29T18:49:19Z",
-          "ageDays": 56,
-          "starsPerDay": 280,
-          "pushedAt": "2026-09-23T17:31:53Z",
+          "ageDays": 57,
+          "starsPerDay": 284.1,
+          "pushedAt": "2026-09-24T11:12:27Z",
           "archived": false,
-          "openIssues": 12,
+          "openIssues": 16,
           "topics": [
             "agentic-ai",
             "ai",
@@ -100,7 +100,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "15682 sao, 1861 fork, ~280 sao/ngày, 56 ngày tuổi"
+            "16191 sao, 1921 fork, ~284.1 sao/ngày, 57 ngày tuổi"
           ]
         }
       },
@@ -122,7 +122,7 @@
           "caption": ""
         }
       ],
-      "score": 1884.1
+      "score": 1909.55
     },
     {
       "candidate": {
@@ -150,14 +150,14 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5261,
-          "forks": 199,
+          "stars": 5265,
+          "forks": 200,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 211,
-          "starsPerDay": 24.9,
+          "ageDays": 212,
+          "starsPerDay": 24.8,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
-          "openIssues": 126,
+          "openIssues": 127,
           "topics": [
             "automation",
             "controler",
@@ -212,7 +212,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5261 sao, 199 fork, ~24.9 sao/ngày, 211 ngày tuổi"
+            "5265 sao, 200 fork, ~24.8 sao/ngày, 212 ngày tuổi"
           ]
         }
       },
@@ -222,16 +222,185 @@
     },
     {
       "candidate": {
-        "key": "getopenpost/openpost",
-        "fullName": "getopenpost/openpost",
-        "url": "https://github.com/getopenpost/openpost",
-        "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
-        "stars": 612,
+        "key": "flowglad/flowglad",
+        "fullName": "flowglad/flowglad",
+        "url": "https://github.com/flowglad/flowglad",
+        "description": "Show HN: We built an open source, zero webhooks payment processor",
+        "sources": [
+          "hacker-news"
+        ],
+        "signals": [
+          "405▲ 223💬"
+        ],
+        "signalUrls": [
+          "https://news.ycombinator.com/item?id=46048252"
+        ],
+        "points": 405,
+        "verticals": []
+      },
+      "signals": {
+        "repo": {
+          "owner": "flowglad",
+          "repo": "flowglad"
+        },
+        "github": null,
+        "hackerNews": [
+          {
+            "title": "Show HN: We built an open source, zero webhooks payment processor",
+            "points": 405,
+            "comments": 223,
+            "createdAt": "2025-11-25T17:33:50Z",
+            "hnUrl": "https://news.ycombinator.com/item?id=46048252"
+          },
+          {
+            "title": "Open source payments and billing infrastructure",
+            "points": 15,
+            "comments": 6,
+            "createdAt": "2025-03-15T01:21:34Z",
+            "hnUrl": "https://news.ycombinator.com/item?id=43369064"
+          }
+        ],
+        "reddit": [
+          {
+            "subreddit": "selfhosted",
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=flowglad&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=flowglad&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "opensource",
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=flowglad&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=flowglad&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "SideProject",
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=flowglad&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=flowglad&restrict_sr=1&sort=new"
+          }
+        ],
+        "heuristic": {
+          "maturitySuggestion": "rising",
+          "reasons": [
+            "Đang được bàn ở HN/Reddit",
+            "Không lấy được dữ liệu GitHub"
+          ]
+        }
+      },
+      "readmeExcerpt": "",
+      "media": [],
+      "score": 1405
+    },
+    {
+      "candidate": {
+        "key": "vincentwei1021/anything2explainer",
+        "fullName": "Vincentwei1021/anything2explainer",
+        "url": "https://github.com/Vincentwei1021/anything2explainer",
+        "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
+        "stars": 2049,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 612"
+          "⭐ 2049"
+        ],
+        "signalUrls": [],
+        "points": 0,
+        "verticals": [
+          "creative"
+        ]
+      },
+      "signals": {
+        "repo": {
+          "owner": "Vincentwei1021",
+          "repo": "anything2explainer"
+        },
+        "github": {
+          "fullName": "Vincentwei1021/anything2explainer",
+          "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
+          "stars": 2049,
+          "forks": 289,
+          "createdAt": "2026-09-08T17:19:54Z",
+          "ageDays": 17,
+          "starsPerDay": 120.5,
+          "pushedAt": "2026-09-18T11:52:13Z",
+          "archived": false,
+          "openIssues": 3,
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "ai-video",
+            "claude-code",
+            "claude-code-skill",
+            "codex",
+            "edge-tts",
+            "educational-video",
+            "explainer-video",
+            "kokoro",
+            "motion-graphics",
+            "multi-agent",
+            "react",
+            "remotion",
+            "text-to-video",
+            "tts",
+            "typescript",
+            "video-generation"
+          ],
+          "homepage": null,
+          "language": "TypeScript",
+          "suggestedHealthScore": 21
+        },
+        "hackerNews": [],
+        "reddit": [
+          {
+            "subreddit": "selfhosted",
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=anything2explainer&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=anything2explainer&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "opensource",
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=anything2explainer&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=anything2explainer&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "SideProject",
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=anything2explainer&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=anything2explainer&restrict_sr=1&sort=new"
+          }
+        ],
+        "heuristic": {
+          "maturitySuggestion": "rising",
+          "reasons": [
+            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
+            "2049 sao, 289 fork, ~120.5 sao/ngày, 17 ngày tuổi"
+          ]
+        }
+      },
+      "readmeExcerpt": "# anything2explainer\n\n[![Claude Code](https://img.shields.io/badge/Claude%20Code-skill-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)\n[![Codex](https://img.shields.io/badge/Codex-skill-000000)](https://openai.com/codex)\n[![Remotion](https://img.shields.io/badge/Remotion-4.0-0B84F3)](https://remotion.dev)\n[![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial-informational)](LICENSE)\n\n**English** | [简体中文](README_ZH.md)\n\n**Topic in, narrated explainer video out.** anything2explainer is a [Claude Code](https://claude.com/claude-code) / [Codex](https://openai.com/codex) skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar, in Chinese or English. Every frame is drawn in code with [Remotion](https://remotion.dev) (React + TypeScript). No stock footage, no generative video model, no frames lifted from anyone else's work.\n\nIt is not a CLI. What ships here is the whole method an AI coding agent needs to finish the film: a compilable Remotion template, a primitives and lighting library, tooling for voiceover / storyboard / rendering / quantitative QC, written style and motion specs, a multi-agent division-of-labour protocol, and one complete reference film as the quality bar.\n\n**English cut** — *RAG & Knowledge Bases*, 5′02″, 44 lines / 785 words, voiced by kokoro-82m `am_liam` at natural speed:\n\nhttps://github.com/user-attachments/assets/e2771c68-a28c-4459-ac5a-a5b685181eeb\n\n**Chinese cut** — *RAG 与知识库* v2, 4′54″, 44 lines / 1490 characters, dot-field backdrop (`bg: 'dots'`), voiced through the bring-your-own-TTS path (Volcengine TTS 2.0 + forced alignment):\n\nhttps://github.com/user-attachments/assets/5c213990-cbba-439e-8371-fbb3aa348e05\n\nBoth cuts share one storyboard and 44 shots; the English cut re-times every shot to the English voiceover. The full paper trail of the original Chinese cut (4′35″, star-field backdrop, 8 build agents in parallel for 40 minutes, two QC rounds) lives in [`examples/rag/`](examples/rag/) (research → narration → storyboard → shot source → QC reports → delivery notes); rendered frames are in [`examples/rag/frames/`](examples/rag/frames/).\n\n## What it does\n\n- **Input**: a topic (\"explain vector databases\"), or an article / document you want turned into a video. You also pick the length and the language.\n- **Output**: a 1280×720 H.264 MP4 with synchronized voiceover, word-boundary-aligned subtitles, chapter cards, a top HUD and a bottom chapter progress bar, plus the full paper trail (research doc with sources, narration, storyboard, per-shot source code, QC reports).\n- **How**: the agent researches the topic with sources, writes the narration, generates the voiceover and frame-accurate timeline, storyboards every shot, then dispatches parallel build agents that write one Remotion component per shot. QC agents review the rendered frames against written criteria before delivery.\n- **Time**: roughly 1 to 3 hours of wall clock depending on length, most of it agents building shots in parallel. You are consulted at exactly four checkpoints.\n\n## Output spec\n\n| | |\n|---|---|\n| Frame / rate | 1280×720 @ 30fps, H.264 |\n| Length | your call (see table below); 2–8 minutes all work |\n| Language | Chinese or English (`lang` in `src/config.ts`); typography, subtitle budgets and TTS switch with it |\n| Look | black canvas with one of two backdrops, star field + fog gradient or dot-field wave (`bg` in `src/config.ts`; the dot-field wave is ported from video-talkcraft); white line art + purple accents; ultra-bold headline type |\n| Persistent layers | 44px white-on-black-stroke subtitles, bottom chapter progress bar, top capsule HUD, optional pipeline rail, `built by Anything2Explainer skill` end credit (`builtBy`, set to `''` to drop) |\n| Voiceover | Chinese: edge-tts `zh-CN-YunxiNeural` (Yunxi, male, unmodified rate ≈5.5 chars/s). English: kokoro-82m `am_liam` (Liam, male). Or bring your own TTS / finished audio |\n\nLength drives how much ground the film covers, and the size of the whole pipeline:\n\n| Length | Chinese chars | English words | Lines / shots | Build agents | Wall clock | Disk |\n|---|---|---|---|---|---|---|\n| 2–3 min | 650–880 | 280–420 | 24–32 | 4–6 | ≈1 h | ≈2 GB |\n| 3–5 min (reference tier) | 1100–1400 | 420–700 | 40–50 | 8 | ≈2 h | ≈2 GB |\n| 5–8 min | 1650–2200 | 700–1150 | 60–80 | 10–14 | ≈2–3 h | ≈3 GB |\n\nChapter count follows the content, within limits set by length: under 3 minutes use a single chapter (no chapter cards), 3–5 minutes 3–4 chapters of at least 60 s each, 5–8 minutes 4–6. The progress bar splits evenly across however many chapters the narration declares. A blank line in the narration marks a paragraph, which is also one shot: sentences inside a paragraph are separated by 10 frames, paragraph ends by 30, so the pause lands where the picture changes and every shot holds 1–1.5 s after its last element lands. The finished video runs 5–8% longer than the raw speech by design.\n\n## Install\n\n```bash\ngit clone https://github.com/Vincentwei1021/anything2explainer.git\nln -s \"$PWD/anything2explainer\" ~/.claude/skills/anything2explainer   # Claude Code\nln -s \"$PWD/anything2explainer\" ~/.codex/skills/anything2explainer    # Codex\n```\n\nDependencies:\n\n```bash\n# Node ≥18 (the template's npm install pulls remotion 4.0.507 / react 19)\nbrew install ffmpeg          # frame extraction / transcoding, required\n\npython3 -m venv ~/.venvs/a2e && source ~/.venvs/a2e/bin/activate\npip install 'edge-tts==7.2.8' numpy pillow scipy   # pin edge-tts: it tracks a Microsoft endpoint and breaks across upgrades (7.2.0+ needs word boundaries requested explicitly; the script does)\n\n# only needed for English narration (kokoro-82m runs locally)\npip install kokoro soundfile && brew install espeak-ng\n```\n\n`scipy` is only used by the QC script `frame_metrics.py`. The shell scripts are zsh + Python 3, developed and verified on macOS; Linux should work, Windows is untested.\n\n### Linux / Raspberry Pi (ARM)\n\nVerified on a Raspberry Pi 5 (ARM64, Python 3.13). Three things differ from macOS:\n\n```bash\nsudo apt install zsh espeak-ng                 # scripts are #!/bin/zsh; espeak-ng for kokoro/piper G2P\n\n# Remotion has no linux-arm64 headless browser → point it at system Chromium:\nsudo apt install chromium                       # or chromium-browser\nexport REMOTION_BROWSER_EXECUTABLE=/usr/bin/chromium   # read by template/remotion.config.ts (no-op on macOS)\n```\n\n**TTS on Linux/ARM.** `kokoro` (the default English engine) is hard to install on ARM/Python 3.13 (it pins an old numpy and pulls spaCy → blis, which lack aarch64 wheels). Two local engines that install cleanly instead — pass one via `TTS_ENGINE`:\n\n```bash\n# kokoro_onnx — natural voice, onnxruntime (no torch/spaCy). Download model + voices from\n#   github.com/thewh1teagle/kokoro-onnx releases (kokoro-v1.0.onnx, voices-v1.0.bin)\npip install kokoro-onnx\nTTS_ENGINE=kokoro_onnx KOKORO_ONNX_MODEL=…/kokoro-v1.0.onnx KOKORO_ONNX_VOICES=…/voices-v1.0.bin \\\n  KOKORO_ONNX_VOICE=am_michael python3 scripts/tts_build.py\n\n# piper — fastest local, robotic; a Pi-native fallback. Voice .onnx from github.com/rhasspy/piper\npip install piper-tts\nTTS_ENGINE=piper PIPER_MODEL=…/en_US-ryan-medium.onnx python3 scripts/tts_build.py\n```\n\nThe `edge` engine (natural, free, word-boundary timing) also works on Linux and needs no local model — it's a cloud call to Microsoft: `TTS_ENGINE=edge VOICE=en-US-AndrewNeural python3 scripts/tts_build.py`.\n\n## Usage\n\nIn Claude Code or Codex, just say what you want. The skill triggers itself:\n\n> Make me an explainer video about vector databases.\n\n> 讲一下向量数据库，做成一条讲解视频\n\nIt then walks the 9 stages in `SKILL.md`:\n\n1. **Scaffold** the Remotion project from the template.\n2. **Research** (1 agent): a sourced research doc with a list of numbers and analogies, every item with a URL.\n3. **Narration & timeline**: the script, then TTS voiceover with per-word boundaries turned into a frame-accurate timeline and subtitle table.\n4. **Storyboard**: one line per shot with frame range, beat, visuals, motion, hero element and lighting.\n5. **Overlays & primitives**: title, chapter cards, HUD, pipeline rail, plus 2–5 topic-specific icons.\n6. **Pilot** (1 agent): the first shot group, then a 30-second cut for you to judge the look.\n7. **Parallel build**: the remaining groups, 5–7 shots per agent, each writing pure-function Remotion components.\n8. **Render** the full film and run quantitative frame metrics.\n9. **QC & fixes**: one QC agent per chapter, fix agents per group, re-verification, then delivery notes.\n\nYou can also drive the template by hand:\n\n```bash\ntemplate/scripts/new_project.sh ~/work/my-video myslug\ncd ~/work/my-video\n# 1. research/调研.md          2. script/narration.txt → python3 scripts/tts_build.py\n# 3. script/storyboard_src.md → python3 scripts/render_storyboard.py     4. edit src/config.ts\n# 5. src/shots/G1..Gn          6. scripts/preview.sh 30   (first 30 seconds)\n# 7. VER=v1 scripts/render.sh + python3 scripts/frame_metrics.py         8. QC → fix → v2/v3\n```\n\n## Four checkpoints\n\nThe run stops and waits for you at exactly four points instead of ploughing through (details in `SKILL.md`):\n\n1. **Length and language**: before the script is written. Length decides the line count, shot count and how many agents run in parallel, i.e. how much the film can actually cover; language flips `lang` in `src/config.ts`, which drives typography, subtitle budgets and the default voice.\n2. **Narration sign-off**: before voiceover. Once locked, frame numbers are hard-coded into every shot; changing one word re-times the whole film. This is the cheapest place to intervene.\n3. **Voiceover**: before TTS runs you get asked whether you have a preferred engine. If not, defaults apply (edge-tts Yunxi for Chinese, kokoro-82m Liam for English). You can also hand over finished audio and fill the per-line timeline yourself.\n4. **First 30 seconds**: only the first build group is done, then 30 seconds get rendered for you to judge the look. Fixing the style here costs one group; after the full render it costs every group.\n\n## How it compares\n\n| Tool class | What it produces | Where anything2explainer differs |\n|---|---|---|\n| Generative video models (Sora, Veo, Runway) | Footage synthesized from a prompt | Deterministic code, not pixels. Every number on screen traces to a source URL, and any frame can be fixed by editing one shot file |\n| Avatar / presenter tools (HeyGen, Synthesia) | A digital presenter reading a script | No presenter. Motion-graphics diagrams that show the mechanism, with the narration driving the visuals |\n| Remotion or Motion Canvas by hand | A programmable video canvas | Ships the method on top of the canvas: research → narration → storyboard → parallel build → QC, with style specs, motion vocabulary and a reference film to match |\n| Manim | Python mathematical animations | An agent-driven end-to-end pipeline with TTS-aligned subtitles, chapters and QC; React / TypeScript rather than Python |\n\n## FAQ\n\n**Which AI coding agents does it work with?**\nIt is written for Claude Code and Codex, and those two are what it has been run with. The skill itself is plain Markdown plus a Remotion project, so any agent that reads `SKILL.md`-style skill folders and can run shell commands should be able to follow it.\n\n**Does it need a GPU?**\nNo. Remotion renders through headless Chromium on the CPU. The Chinese default voice (edge-tts) is a cloud call to a Microsoft endpoint; the English default (kokoro-82m) is an 82M-parameter model that runs locally on CPU.\n\n**Can I use my own voice or a different TTS?**\nYes. Put the finished audio at `public/assets/<slug>/audio.wav` and fill `src/common/timeline.ts` and `subs.ts` by hand (format documented at the top of `tts_build.py`). Everything downstream is unchanged.\n\n**Can I change the visual style?**\nThere is one visual style, on purpose, with a single switch: the backdrop, `bg` in `src/config.ts` (`'dots'` dot-field wave by default, `'stars'` star field with fog). To change anything else, edit `reference/style-guide.md` and `src/ui.tsx`; the shot code only uses those primitives.\n\n**Are the renders reproducible?**\nYes. Every animation is a pure function of the frame number with seeded randomness, and text fitting is computed rather than measured in the DOM, so re-rendering produces identical frames.\n\n**Can I use it commercially?**\nThe toolkit is licensed under PolyForm Noncommercial: free for noncommercial use, commercial use requires prior authorization from the author. The videos you make with it are yours. See [License](#license).\n\n**Does it do vertical (9:16) video?**\nNot currently. The template and every safe-area rule assume 1280×720 landscape.\n\n**Which languages?**\nChinese and English. Each has its own pacing model, subtitle budget and default voice. Both cuts are embedded at the top of this page; the written paper trail in `examples/rag/` is from the Chinese cut.\n\n## Repo layout\n\n```\nSKILL.md                  the process: 9 stages, four checkpoints, quality bar\nreference/                specs written for the main session and the agents\n  style-guide.md            safe areas, palette, fonts, primitive catalogue, layout habits\n  motion-vocabulary.md      entrance / emphasis / light / exit / camera formulas and frame counts\n  composition-and-light.md  three size tiers, light follows the hero, set-piece choreography, QC metrics\n  narration-storyboard.md   how to write narration, voiceover params, storyboard tokens, shot pattern table\n  research-brief.md         researcher prompt and fact rules\n  agent-build-rules.md      build-agent protocol\n  agent-qc-rules.md         QC-agent protocol\n  prompts.md                six prompt templates: research / build / QC / fix / recheck / final pass\n  lessons.md                every trap hit across three films, with root causes\ntemplate/                 the compilable Remotion 4 project (copy it with scripts/new_project.sh)\n  src/common/               fog, star field, dot-field wave, glitch, easings, subtitles, progress bar, footage layer\n  src/ui.tsx  src/fx.tsx    primitives and palette / light, depth and camera primitives\n  src/overlay/              title, chapter cards, HUD, pipeline rail, ending\n  scripts/                  voiceover, storyboard, stills, test render, 30s preview, full render, QC metrics\n  public/fonts/             four fonts + their OFL license\nexamples/rag/             the reference film's full paper trail and rendered frames\nexamples/contrast/        6 bad/good frame pairs — the yardstick for composition and light\n```\n\n## Acknowledgements\n\nThe visual language and the quality bar are inspired by the Douyin creator **@图灵宇宙** — black canvas, white line art with purple accents, ultra-bold headline type: that vocabulary was learned from their videos. Everything in this repo is drawn from scratch in code; none of their frames, assets or project files are used. If you feel this crosses a line, please open an issue.\n\n## Originality\n\n- **Every frame is drawn in code.** No frames or clips from existing videos. Optional live-action B-roll must come from royalty-free sources and be logged in a MANIFEST (sha256 / source URL / license / usage).\n- **Every fact is sourced.** Every number, year, organisation and English term shown on screen must trace back to a source URL in that film's research document. Anything unverified stays off the screen and out of the narration.\n\n## License\n\nThe toolkit: [PolyForm Noncommercial 1.0.0](LICENSE) — free for noncommercial use; commercial use requires prior authorization from the author. **Videos you make with it are yours.**\nThe four bundled fonts (Noto Sans SC / Orbitron / Exo 2 / Audiowide) are licensed separately under SIL OFL 1.1; see [`template/public/fonts/LICENSE.md`](template/public/fonts/LICENSE.md).\nRemotion itself has its own license terms for companies — see [remotion.dev/license](https://remotion.dev/license",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://github.com/user-attachments/assets/e2771c68-a28c-4459-ac5a-a5b685181eeb",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "url": "https://github.com/user-attachments/assets/5c213990-cbba-439e-8371-fbb3aa348e05",
+          "caption": ""
+        }
+      ],
+      "score": 1202.45
+    },
+    {
+      "candidate": {
+        "key": "getopenpost/openpost",
+        "fullName": "getopenpost/openpost",
+        "url": "https://github.com/getopenpost/openpost",
+        "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
+        "stars": 615,
+        "sources": [
+          "github-search"
+        ],
+        "signals": [
+          "⭐ 615"
         ],
         "signalUrls": [],
         "points": 0,
@@ -247,14 +416,14 @@
         "github": {
           "fullName": "getopenpost/openpost",
           "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
-          "stars": 612,
-          "forks": 75,
+          "stars": 615,
+          "forks": 76,
           "createdAt": "2026-03-21T11:12:13Z",
-          "ageDays": 187,
+          "ageDays": 188,
           "starsPerDay": 3.3,
-          "pushedAt": "2026-09-24T06:12:20Z",
+          "pushedAt": "2026-09-25T06:10:49Z",
           "archived": false,
-          "openIssues": 1,
+          "openIssues": 0,
           "topics": [
             "automation",
             "content-creation",
@@ -301,223 +470,13 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "612 sao, 75 fork, ~3.3 sao/ngày, 187 ngày tuổi"
+            "615 sao, 76 fork, ~3.3 sao/ngày, 188 ngày tuổi"
           ]
         }
       },
       "readmeExcerpt": "<p align=\"center\">\n  <a href=\"https://openpo.st\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/brand/lockup-dark.svg\">\n      <img src=\"./assets/brand/lockup.svg\" alt=\"OpenPost\" width=\"240\" height=\"60\">\n    </picture>\n  </a>\n</p>\n\n<h3 align=\"center\">An open-source alternative to Buffer, Canva, and CapCut.</h3>\n\n<p align=\"center\">\n  Write posts, design images and carousels, edit videos, and schedule your content in one app.<br>\n  Self-host OpenPost or use OpenPost Hosted.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/downloads-dark.svg\">\n      <img src=\"./assets/badges/downloads-light.svg\" alt=\"Total downloads\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/release-dark.svg\">\n      <img src=\"./assets/badges/release-light.svg\" alt=\"Latest release\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/stargazers\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/stars-dark.svg\">\n      <img src=\"./assets/badges/stars-light.svg\" alt=\"GitHub stars\">\n    </picture>\n  </a>\n  <a href=\"https://url.rgo.pt/x\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/follow-dev-dark.svg\">\n      <img src=\"./assets/badges/follow-dev-light.svg\" alt=\"Follow the developer on X\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://app.openpo.st/image-editor\"><strong>Try the image editor</strong></a>\n  ·\n  <a href=\"https://app.openpo.st/video-editor\"><strong>Try the video editor</strong></a>\n  ·\n  <a href=\"#self-host\"><strong>Self-host</strong></a>\n  ·\n  <a href=\"https://openpo.st/docs\"><strong>Docs</strong></a>\n</p>\n\n<p align=\"center\">\n  Both editors are free to use without an account or watermark.<br>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">\n    <img src=\"./assets/screenshots/readme-hero-dark.webp\" alt=\"OpenPost composer with platform-specific drafts, previews, and scheduling controls\" width=\"100%\">\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">Watch the product tour</a>\n  ·\n  <a href=\"https://openpo.st/#features\">See all features</a>\n</p>\n\n<table>\n  <tr>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/image-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/image-editor-dark.webp\">\n          <img src=\"./assets/screenshots/image-editor-light.webp\" alt=\"OpenPost image editor with a design canvas, layers, and editing controls\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Design images and carousels</strong>\n    </td>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/video-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/video-editor-dark.webp\">\n          <img src=\"./assets/screenshots/video-editor-light.webp\" alt=\"OpenPost video editor with a video preview and multitrack timeline\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Edit and caption videos</strong>\n    </td>\n  </tr>\n</table>\n\n## What you can do\n\n- <img src=\"./assets/brand/features/accounts.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Connect accounts](https://openpo.st/docs/guides/accounts).** Manage your social connections in one workspace. Each provider keeps its own capabilities and publishing limits.\n- <img src=\"./assets/brand/features/compose.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Compose for each platform](https://openpo.st/docs/guides/publishing).** Write posts and threads, then adjust the text and media for each account. Preview each version before publishing. Save account groups as Social Sets to reuse them.\n- <img src=\"./assets/brand/features/image-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Image editor](https://openpo.st/docs/image-editor).** Design images and multi-page carousels with layers, templates, and custom fonts. Remove backgrounds in your browser. Export individual pages or the full carousel, or attach them to your post.\n- <img src=\"./assets/brand/features/video-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Video editor](https://openpo.st/docs/video-editor).** Trim and arrange clips on a multitrack timeline. Add captions, transitions, effects, and audio. Cut footage by selecting words in its transcript.\n- <img src=\"./assets/brand/features/recorder.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Recorder](https://openpo.st/docs/video-editor/quick-cut-and-recorder).** Capture your screen, camera, and microphone, then bring the recording into your video edit.\n- <img src=\"./assets/brand/features/calendar.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Calendar and queues](https://openpo.st/docs/guides/scheduling).** Choose a publishing time or the next free slot in a queue. Plan your posts in the calendar, stagger publishing across accounts, and get reminders when your queue runs low.\n- <img src=\"./assets/brand/features/repost.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Auto repost.** Set delays and engagement rules for native reposts on supported networks. Override the defaults for individual posts.\n- <img src=\"./assets/brand/features/media.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Media library](https://openpo.st/docs/guides/media-library).** Keep reusable images, videos, fonts, and brand assets in your workspace. Organize files with tags, collections, and favorites. Attach saved media without uploading it again.\n- <img src=\"./assets/brand/features/memes.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Meme maker](https://openpo.st/docs/guides/media-library#add-media-to-a-post).** Pick a template, edit its captions, and replace its images. Save the result to your media library or attach it to a post.\n- <img src=\"./assets/brand/features/inbox.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Inbox and messages](https://openpo.st/docs/guides/inbox).** Read and reply to supported comments and direct messages without switching between social apps.\n- <img src=\"./assets/brand/features/analytics.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Analytics and repurposing](https://openpo.st/docs/guides/analytics).** Compare post results and track audience changes across your accounts. Use a previous post as the starting point for a new draft.\n- <img src=\"./assets/brand/features/grow.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Find people.** Find accounts to follow on Bluesky and Mastodon. Review the suggestions and choose who to follow.\n- <img src=\"./assets/brand/features/ideas.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **AI writing and ideas.** Generate ideas, compare draft directions, and adapt posts for your selected platforms. You review the result before publishing. AI writing is optional. [Self-hosted AI setup](https://openpo.st/docs/self-hosting/ai).\n- <img src=\"./assets/brand/features/automation.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[API, SDK, CLI, MCP, and n8n](https://openpo.st/docs/automate).** Create drafts, schedule posts, and check publishing results from your scripts, agents, or n8n workflows. Install the [TypeScript SDK](https://www.npmjs.com/package/@getopenpost/sdk) or the [CLI](https://www.npmjs.com/package/@getopenpost/cli) from npm. See the [API reference](https://openpo.st/docs/api-reference) for endpoints.\n- <img src=\"./assets/brand/features/workspaces.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Teams and workspaces](https://openpo.st/docs/guides/workspaces).** Keep brands and clients in separate workspaces and control who can edit them. Protect your account with passkeys, two-factor authentication, and session controls.\n\n## Get started\n\n### OpenPost Hosted\n\nUse OpenPost to create and schedule posts without running your own server.\n\n<a href=\"https://app.openpo.st/register?plan=founder&billing_period=monthly\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/start-trial-dark.svg\">\n    <img src=\"./assets/buttons/start-trial-light.svg\" alt=\"Start a 14-day trial\" height=\"36\">\n  </picture>\n</a>\n\n[View plans](https://openpo.st/pricing)\n\n### Self-host\n\nRun OpenPost with Docker Compose. The default setup uses one container with SQLite and local media storage.\n\n<a href=\"https://openpo.st/docs/self-hosting/\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/self-host-dark.svg\">\n    <img src=\"./assets/buttons/self-host-light.svg\" alt=\"Get started with self-hosting\" height=\"36\">\n  </picture>\n</a>\n\n[Configure integrations](https://openpo.st/docs/self-hosting/integrations) · [Backups and upgrades](https://openpo.st/docs/self-hosting/maintenance)\n\n## Supported platforms\n\n<p>\n  <img src=\"./assets/postiz-socials/Instagram.svg\" alt=\"Instagram\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Facebook.svg\" alt=\"Facebook\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Linkedin.svg\" alt=\"LinkedIn\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/X.svg\" alt=\"X\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/TikTok.svg\" alt=\"TikTok\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Youtube.svg\" alt=\"YouTube\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Threads.svg\" alt=\"Threads\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Bluesky.svg\" alt=\"Bluesky\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Mastodon.svg\" alt=\"Mastodon\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Pixelfed.svg\" alt=\"Pixelfed\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Peertube.svg\" alt=\"PeerTube\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Lemmy.svg\" alt=\"Lemmy\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/PieFed.svg\" alt=\"PieFed\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Discord.svg\" alt=\"Discord\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Pinterest.svg\" alt=\"Pinterest\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Telegram.svg\" alt=\"Telegram\" width=\"32\" height=\"32\">\n</p>\n\nOpenPost has integrations for Instagram, Facebook, LinkedIn, X, TikTok, YouTube, Threads, Bluesky, Mastodon, Pixelfed, PeerTube, Lemmy, PieFed, Discord, Pinterest, and Telegram. Mastodon and Pixelfed connect per instance over OAuth; PeerTube, Lemmy, and PieFed connect with instance credentials. Discord supports incoming webhooks and a bot integration; Telegram uses a bot.\n\nPosting formats, inbox features, and analytics vary by platform. Some integrations require provider app approval or publicly reachable media URLs.\n\n[Connect accounts](https://openpo.st/docs/guides/accounts) · [Integration requirements](https://openpo.st/docs/self-hosting/integrations)\n\n## Contributing\n\nReport bugs, improve the docs, or send a pull request. For larger changes, open an issue first so we can agree on the approach.\n\nOpenPost uses Go, SvelteKit, and Expo, with a Devenv development environment. Start with the [contributing guide](./.github/CONTRIBUTING.md) and [development setup](https://openpo.st/docs/development/setup).\n\n<a href=\"https://github.com/getopenpost/openpost/issues\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/report-bug-dark.svg\">\n    <img src=\"./assets/buttons/report-bug-light.svg\" alt=\"Report a bug\" height=\"36\">\n  </picture>\n</a>\n<a href=\"https://discord.com/invite/u2QwukmY4W\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/join-discord-dark.svg\">\n    <img src=\"./assets/buttons/join-discord-light.svg\" alt=\"Join Discord\" height=\"36\">\n  </picture>\n</a>\n\n## Star history\n\nSupport OpenPost with a [GitHub star](https://github.com/getopenpost/openpost/stargazers).\n\n<!-- star-history:start -->\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/star-history/star-history-dark.svg\">\n  <img alt=\"Star history\" src=\"assets/star-history/star-history-light.svg\">\n</picture>\n<!-- star-history:end -->\n\n## License and security\n\nOpenPost uses the [AGPL-3.0-only license](./LICENSE). See the [third-party notices](./licenses/README.md) for dependency licenses and attribution.\n\nReport vulnerabilities privately through the [security policy](./.github/SECURITY.md).\n",
       "media": [],
-      "score": 1130.6
-    },
-    {
-      "candidate": {
-        "key": "samuraigpt/vibe-workflow",
-        "fullName": "SamurAIGPT/Vibe-Workflow",
-        "url": "https://github.com/SamurAIGPT/Vibe-Workflow",
-        "description": "Free, open-source alternative to Weavy AI, Krea Nodes, Freepik Spaces & FloraFauna AI — node-based AI workflow builder for generative image & video pipelines",
-        "stars": 595,
-        "sources": [
-          "github-search"
-        ],
-        "signals": [
-          "⭐ 595"
-        ],
-        "signalUrls": [],
-        "points": 0,
-        "verticals": [
-          "creative",
-          "agency"
-        ]
-      },
-      "signals": {
-        "repo": {
-          "owner": "SamurAIGPT",
-          "repo": "Vibe-Workflow"
-        },
-        "github": {
-          "fullName": "SamurAIGPT/Vibe-Workflow",
-          "description": "Free, open-source alternative to Weavy AI, Krea Nodes, Freepik Spaces & FloraFauna AI — node-based AI workflow builder for generative image & video pipelines",
-          "stars": 595,
-          "forks": 151,
-          "createdAt": "2025-12-30T08:03:14Z",
-          "ageDays": 268,
-          "starsPerDay": 2.2,
-          "pushedAt": "2026-09-17T15:37:33Z",
-          "archived": false,
-          "openIssues": 1,
-          "topics": [
-            "ai",
-            "ai-workflow-builder",
-            "artistic-intelligence",
-            "comfyui",
-            "creative-tools",
-            "fastapi",
-            "florafauna-ai-alternative",
-            "freepik-spaces-alternative",
-            "generative-ai",
-            "image-generation",
-            "krea-nodes-alternative",
-            "nextjs",
-            "node-editor",
-            "open-source",
-            "self-hosted-ai",
-            "video-generation",
-            "weavy",
-            "weavy-ai-alternative",
-            "weavyai",
-            "workflow-automation"
-          ],
-          "homepage": "https://muapi.ai/workflow",
-          "language": "JavaScript",
-          "suggestedHealthScore": 16
-        },
-        "hackerNews": [],
-        "reddit": [
-          {
-            "subreddit": "selfhosted",
-            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=Vibe-Workflow&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=Vibe-Workflow&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "opensource",
-            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=Vibe-Workflow&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=Vibe-Workflow&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "SideProject",
-            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=Vibe-Workflow&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=Vibe-Workflow&restrict_sr=1&sort=new"
-          }
-        ],
-        "heuristic": {
-          "maturitySuggestion": "rising",
-          "reasons": [
-            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "595 sao, 151 fork, ~2.2 sao/ngày, 268 ngày tuổi"
-          ]
-        }
-      },
-      "readmeExcerpt": "# Vibe Workflow — Open-Source Alternative to Weavy AI, Freepik Spaces, Krea Nodes & FloraFauna AI\n\n**Vibe Workflow** is a free, open-source node-based AI workflow builder — the self-hostable alternative to Weavy AI, Freepik Spaces, Krea Nodes, and FloraFauna AI. Designed around \"Artistic Intelligence,\" it gives creators and developers a visual, modular pipeline editor for designing, editing, and composing AI-generated images and video — with no vendor lock-in. Read the full story: [I built Open Weavy because paid AI creative tools were getting ridiculously expensive](https://medium.com/@anilmatcha/i-built-open-weavy-because-paid-ai-creative-tools-were-getting-ridiculously-expensive-f67b088e06fb).\n\n> 🚀 **Prefer a hosted version?** Try Vibe Workflow instantly at **[muapi.ai/workflow](https://muapi.ai/workflow)** — fully managed, with **API** and **embed** support to plug node-based AI workflows directly into your own platform. See [Hosted Version](#hosted-version) below.\n\n<img width=\"1024\" height=\"1024\" alt=\"Vibe Workflow — open-source AI workflow builder alternative to Weavy AI, Krea Nodes, Freepik Spaces, FloraFauna AI\" src=\"https://github.com/user-attachments/assets/f603eb13-3b4f-4c9a-9a6a-c4cc3a94f7a6\" />\n\n> **Looking for a Weavy AI alternative? A Krea Nodes alternative? A Freepik Spaces alternative? A FloraFauna AI alternative?**\n> Vibe Workflow is fully open-source, self-hostable, and free — with the same node-based visual editor you know and love.\n\n---\n\n## Related Projects\n\n- [awesome-vibecoded-saas](https://github.com/Anil-matcha/awesome-vibecoded-saas) — broader catalog of open-source SaaS alternatives featuring Vibe Workflow.\n- [Muapi open-source alternatives](https://muapi.ai/open-source/alternative/krea) — compare this workflow editor with the Krea workflow and its honest scope.\n- [Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI) — Free self-hosted AI media studio — model backend for your pipelines\n- [Open-AI-Design-Agent](https://github.com/Anil-matcha/Open-AI-Design-Agent) — Autonomous AI design agent to embed in your workflows\n\n## Sample Workflow UI\n\n<img width=\"1468\" height=\"764\" alt=\"Screenshot 2026-04-01 at 4 03 29 PM\" src=\"https://github.com/user-attachments/assets/0eeff00f-7850-4d53-bbc9-68f6b1f8b7a4\" />\n\n\n---\n\n## Hosted Version\n\nDon't want to self-host? A fully managed, hosted version of Vibe Workflow is available at **[muapi.ai/workflow](https://muapi.ai/workflow)** — zero setup, ready to use in the browser.\n\nThe hosted version also ships with:\n- **API support** — programmatically run workflows and integrate generative pipelines into your own apps and backends.\n- **Embed support** — drop the workflow builder directly into your own platform or product via an embeddable widget, so your users get a node-based AI editor without leaving your UI.\n\nUse the hosted version if you want to skip infra and add node-based AI workflows to your own platform in minutes.\n\n---\n\n## Why Vibe Workflow Over Weavy AI / Krea Nodes / Freepik Spaces / FloraFauna AI?\n\n| Feature | Vibe Workflow | Weavy AI | Krea Nodes | Freepik Spaces | FloraFauna AI |\n|---|---|---|---|---|---|\n| Open Source | ✅ MIT | ❌ | ❌ | ❌ | ❌ |\n| Self-Hostable | ✅ | ❌ | ❌ | ❌ | ❌ |\n| Node-Based Editor | ✅ | ✅ | ✅ | Partial | ✅ |\n| Custom AI Models | ✅ | Limited | Limited | ❌ | Limited |\n| No Subscription | ✅ | ❌ | ❌ | ❌ | ❌ |\n| Extendable / API | ✅ | Limited | Limited | ❌ | Limited |\n\nPaid AI creative tools have become [ridiculously expensive](https://medium.com/@anilmatcha/i-built-open-weavy-because-paid-ai-creative-tools-were-getting-ridiculously-expensive-f67b088e06fb). Vibe Workflow bridges the gap between complex generative AI capabilities and intuitive visual design. Where tools like Weavy AI and Krea Nodes offer powerful node-based systems behind paywalls, Vibe Workflow gives you the same power — open-source, flexible, and extendable:\n\n- **Creative Professionals**: Build custom AI pipelines for high-volume asset production.\n- **Studios**: Maintain brand consistency across hundreds of generative variations.\n- **Developers**: Extend and integrate generative AI into any existing workflow via API.\n- **Researchers**: Self-host and experiment with any AI model stack — no usage caps.\n\n---\n\n## Features\n\n- **Node-Based AI Workflow Editor** — Visual, modular pipelines for generative AI, similar in spirit to Krea Nodes and Weavy AI workflows but fully open-source (inspired by Blender Nodes and ComfyUI).\n- **Artistic Intelligence** — A design philosophy bridging human creativity and AI automation; the same creative-first approach seen in FloraFauna AI and Freepik Spaces.\n- **Generative Image & Video** — Integrated support for image and video generation powered by **MuAPI** (Vadoo AI).\n- **Self-Hosted & Private** — Run entirely on your own infrastructure. No data sent to third-party SaaS platforms.\n- **Extensible Architecture** — Add new AI model nodes, connect external APIs, and build reusable workflow templates.\n- **No Vendor Lock-in** — Swap AI providers freely. Unlike Freepik Spaces or FloraFauna AI, you own your stack.\n\n---\n\n## Use Cases\n\n- **AI Image Generation Pipelines** — Build workflows comparable to Freepik Spaces AI tools or FloraFauna AI canvas, on your own server.\n- **Video Generation Workflows** — Sequence and automate video generation jobs just like Krea Workflows.\n- **Brand Asset Automation** — Replicate what Weavy AI does for enterprise content production, without the SaaS subscription.\n- **Custom Model Integration** — Connect LoRAs, custom diffusion models, or any external API as a workflow node.\n- **Creative Exploration** — Experiment with generative art pipelines in the same visual style as Krea Nodes or FloraFauna's node canvas.\n\n---\n\n## Project Structure\n\n```text\nVibe-Workflow/\n├── client/              # Next.js frontend application\n├── packages/\n│   └── workflow-builder/ # Shared UI library — the core node editor\n└── server/              # FastAPI backend\n```\n\n---\n\n## Getting Started\n\n### Prerequisites\n\nFor local development:\n- **Node.js** (v20+)\n- **Python** (v3.10+)\n- **npm** (v7+ for workspaces support)\n\nOr use **Docker** (see [Running with Docker](#running-with-docker)).\n\n### Installation\n\n1. **Clone the repository**:\n   ```bash\n   git clone https://github.com/samuraigpt/vibe-workflow.git\n   cd vibe-workflow\n   ```\n\n2. **Install all dependencies** (root directory):\n   ```bash\n   npm install\n   ```\n   This installs dependencies for the client, the workflow-builder library, and links them via npm workspaces.\n\n### Configuration\n\nVibe Workflow uses **MuAPI** (Vadoo AI) for generative AI capabilities. You need an API key.\n\n1. **Get your API Key** from [muapi.ai](https://muapi.ai) — sign up, navigate to **API Keys**, generate a key.\n\n2. **Configure the Backend**:\n   ```bash\n   cd server\n   cp .env.example .env\n   # Open .env and set:\n   # MU_API_KEY=your_actual_api_key_here\n   ```\n\n### Running the Project\n\n**Frontend (Next.js):**\n```bash\nnpm run dev:app\n# Available at http://localhost:3000\n```\n\n**Backend (FastAPI):**\n```bash\ncd server\npython -m venv venv\nsource venv/bin/activate   # Windows: venv\\Scripts\\activate\npip install -r requirements.txt\n\n# Run the server\nuvicorn app.main:app --reload --host 0.0.0.0 --port 8000\n```\n\n---\n\n## Running with Docker\n\nThe easiest way to run Vibe Workflow is with Docker Compose.\n\n### Prerequisites\n\n- **Docker** (v20+)\n- **Docker Compose** (v2+)\n\n### Quick Start\n\n1. **Configure environment**:\n   ```bash\n   cp .env.example .env\n   ```\n   Edit `.env` and add your MuAPI key:\n   ```bash\n   MU_API_KEY=your_actual_api_key_here\n   ```\n\n2. **Start all services**:\n   ```bash\n   docker compose up --build\n   ```\n\n3. **Access the application**:\n   - Frontend: [http://localhost:3000](http://localhost:3000)\n   - Backend API: [http://localhost:8000](http://localhost:8000)\n   - API Docs: [http://localhost:8000/docs](http://localhost:8000/docs)\n\n### Services\n\n| Service | Image | Port |\n|---------|-------|------|\n| client | Node.js 24 Alpine | 3000 |\n| server | Python 3.13 | 8000 |\n\n### Stopping\n\n```bash\ndocker compose down\n```\n\n---\n\n## Development\n\n- **Workflow-Builder Library** — To rebuild the core node editor:\n  ```bash\n  npm run build:lib\n  ```\n- **Client App** — Uses the local library. Rebuild the library after changes if not using a watcher:\n  ```bash\n  npm run dev:app\n  ```\n\n---\n\n## Comparisons\n\n### Vibe Workflow vs Weavy AI\nWeavy AI is a proprietary node-based creative AI platform. Vibe Workflow is its open-source equivalent — same visual workflow paradigm, fully self-hostable, MIT licensed, with no subscription fees.\n\n### Vibe Workflow vs Krea Nodes / Krea Workflows\nKrea Nodes offers a powerful real-time generative canvas. Vibe Workflow brings a comparable node-based editor that is open-source, customizable, and extendable with any AI backend.\n\n### Vibe Workflow vs Freepik Spaces\nFreepik Spaces is a cloud-based AI creative suite integrated with Freepik's asset library. Vibe Workflow provides the workflow and pipeline layer as open-source infrastructure you control, with no asset-library lock-in.\n\n### Vibe Workflow vs FloraFauna AI\nFloraFauna AI offers a creative node canvas for generative media. Vibe Workflow replicates and extends that concept in an open-source, self-hosted package with full extensibility.\n\n---\n\n## Keywords / Tags\n\n`weavy-ai-alternative` · `krea-nodes-alternative` · `freepik-spaces-alternative` · `florafauna-ai-alternative` · `open-source-ai-workflow` · `node-based-ai-editor` · `generative-ai-pipeline` · `comfyui-alternative` · `visual-ai-workflow` · `self-hosted-ai` · `ai-image-generation` · `ai-video-generation` · `no-code-ai` · `artistic-intelligence`\n\n---\n\n## Contributing\n\nContributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.\n\n## License\n\n[MIT](LICENSE)\n",
-      "media": [
-        {
-          "type": "image",
-          "url": "https://github.com/user-attachments/assets/f603eb13-3b4f-4c9a-9a6a-c4cc3a94f7a6",
-          "caption": ""
-        },
-        {
-          "type": "image",
-          "url": "https://github.com/user-attachments/assets/0eeff00f-7850-4d53-bbc9-68f6b1f8b7a4",
-          "caption": ""
-        }
-      ],
-      "score": 1129.75
-    },
-    {
-      "candidate": {
-        "key": "omnichar/omnichar",
-        "fullName": "omnichar/OmniChar",
-        "url": "https://github.com/omnichar/OmniChar",
-        "description": "AI character studio for portable identity. Build multi model consistent characters, train LoRAs, and generate on your own GPU.",
-        "stars": 386,
-        "sources": [
-          "github-search"
-        ],
-        "signals": [
-          "⭐ 386"
-        ],
-        "signalUrls": [],
-        "points": 0,
-        "verticals": [
-          "creative"
-        ]
-      },
-      "signals": {
-        "repo": {
-          "owner": "omnichar",
-          "repo": "OmniChar"
-        },
-        "github": {
-          "fullName": "omnichar/OmniChar",
-          "description": "AI character studio for portable identity. Build multi model consistent characters, train LoRAs, and generate on your own GPU.",
-          "stars": 386,
-          "forks": 54,
-          "createdAt": "2026-06-11T07:13:32Z",
-          "ageDays": 105,
-          "starsPerDay": 3.7,
-          "pushedAt": "2026-09-24T06:11:30Z",
-          "archived": false,
-          "openIssues": 0,
-          "topics": [
-            "ai-art",
-            "ai-film",
-            "ai-filmmaking",
-            "ai-video",
-            "character-ai",
-            "character-generator",
-            "character-sheet",
-            "characters",
-            "creative-tools",
-            "diffusion-models",
-            "fal-ai",
-            "filmmaking",
-            "flux2",
-            "generative-ai",
-            "generative-video",
-            "krea2",
-            "lora",
-            "lora-training",
-            "nvidia-gpu",
-            "open-source"
-          ],
-          "homepage": "https://omnichar.org",
-          "language": "Python",
-          "suggestedHealthScore": 16
-        },
-        "hackerNews": [],
-        "reddit": [
-          {
-            "subreddit": "selfhosted",
-            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=OmniChar&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=OmniChar&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "opensource",
-            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=OmniChar&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=OmniChar&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "SideProject",
-            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=OmniChar&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=OmniChar&restrict_sr=1&sort=new"
-          }
-        ],
-        "heuristic": {
-          "maturitySuggestion": "rising",
-          "reasons": [
-            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "386 sao, 54 fork, ~3.7 sao/ngày, 105 ngày tuổi"
-          ]
-        }
-      },
-      "readmeExcerpt": "<div align=\"center\">\n\n# Omnichar Studio\n\n**Open-source studio for AI characters. One portable .char, working across every model.**\n\nA free, open-source app for AI generation where your characters stay the same. Build a character once and keep the same face across shots and models, generate locally on your own GPU or with hosted models, train your own LoRAs, and keep every render as a versioned take.\n\n[![Website][website-shield]][website-url]\n[![License: GPLv3][license-shield]][license-url]\n[![Python 3.11+][python-shield]][python-url]\n[![Latest release][release-shield]][release-url]\n<br>\n[![Discord][discord-shield]][discord-url]\n[![Reddit][reddit-shield]][reddit-url]\n\n<img width=\"1590\" alt=\"Inline Studio Screenshot\" src=\"https://raw.githubusercontent.com/omnichar/OmniChar/main/screenshots/hero.png\" />\n\n</div>\n\n[website-shield]: https://img.shields.io/badge/Website-omnichar.org-blue?style=flat\n[website-url]: https://omnichar.org\n[license-shield]: https://img.shields.io/badge/License-GPLv3-blue?style=flat\n[license-url]: LICENSE\n[python-shield]: https://img.shields.io/badge/Python-3.11%2B-blue?style=flat&logo=python&logoColor=white\n[python-url]: https://www.python.org/downloads/\n[release-shield]: https://img.shields.io/github/v/release/omnichar/OmniChar?style=flat&label=Release&color=blue\n[release-url]: ../../releases/latest\n[discord-shield]: https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?logo=discord&logoColor=white&style=flat\n[discord-url]: https://discord.gg/cSUS88VdY9\n[reddit-shield]: https://img.shields.io/badge/Reddit-r%2Fomnichar-FF4500?logo=reddit&logoColor=white&style=flat\n[reddit-url]: https://www.reddit.com/r/omnichar/\n\n[**New here? Start with the getting started guide →**](https://omnichar.org/getting-started)\n\n[**Explore workflows →**](https://omnichar.org/workflows)\n\n## Supported models\n\n<!-- The VRAM column mirrors TRAINING.md#benchmark-results, which is the source of truth. Change it\n     there first, then here. It is the only figure this file repeats from another. -->\n\n| Model                                                                    | Train | Generate | Trains on a 16GB card   |\n| ------------------------------------------------------------------------ | ----- | -------- | ----------------------- |\n| [FLUX.2](https://bfl.ai/blog/flux-2) (klein Base 4B / 9B)                | yes   | yes      | yes, ~8.6GB             |\n| [FLUX.1](https://bfl.ai/blog/flux-1) dev (4-bit)                         | yes   | yes      | yes, ~10.4GB            |\n| [Krea 2](https://www.krea.ai/) (RAW, 4-bit)                              | yes   | yes      | yes, ~11.9GB            |\n| Z-Image Turbo                                                            | yes   | yes      | yes, ~13.4GB            |\n| [MiniMax H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) (video, sound) | yes   | yes      | yes but slowly, ~12.7GB |\n| [LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) (video, sound)      | yes   | yes      | no, wants 48GB          |\n| Hosted models (API Nodes)                                                | no    | yes      | no GPU needed           |\n\nThose are training peaks at 512px. Training is cheaper than generating, and a LoRA trained at 512\napplies at any generation resolution. On a 16GB card H3 moves its text encoder to the CPU, which is\nwhy it costs the least VRAM and the most time, and it wants 64GB of system RAM to do that. Not every\nrow has been run on a 16GB card, and\n[Benchmark results](TRAINING.md#benchmark-results) says which were measured and which are\ninterpolated, alongside the full per-card matrix and timings.\n\n## Install\n\nYou need [Python 3.11+](https://python.org). The web UI ships as a Python package, so there is no\nNode step. `--install --extra all` installs everything: the engine, the model runtime, the trainer\nand the UI.\n\n**macOS / Linux:**\n\n```bash\ngit clone https://github.com/omnichar/OmniChar\ncd OmniChar/core\n./webui.sh --install --extra all\n./webui.sh                         # http://127.0.0.1:8848\n```\n\n**Windows** (use `webui.bat`; `webui.sh` is a bash script and will not run in PowerShell):\n\n```powershell\ngit clone https://github.com/omnichar/OmniChar\ncd OmniChar/core\n.\\webui.bat --install --extra all\n.\\webui.bat\n\nrem If the CUDA build is wrong for your card, name the index yourself:\n.\\webui.bat --install --extra all --torch-index cu130\n```\n\nOn NVIDIA, `--install` reads your GPU's compute capability and pulls the matching CUDA build of\nPyTorch, RTX 50-series included. Everything lands in `core/.venv`, which Inline Studio owns; an\nenvironment already activated in your shell is never touched. Re-running `--install` is safe, and\nit is also how you update: it upgrades the prebuilt web UI package, so `git pull` followed by\n`--install` moves both halves forward.\n\nBoth versions are printed at launch, and Inline Studio checks PyPI once a day in the background and\nsays so when either half is behind:\n\n```\nVersions: omnichar-core 1.3.16, omnichar-frontend 1.3.15\nUPDATE AVAILABLE: omnichar-frontend 1.3.15 -> 1.3.16\n  Update with: ./webui.sh --install  (or: pip install -U omnichar-frontend)\n```\n\nSet `INLINE_NO_UPDATE_CHECK=1` to skip the check.\n\nPrefer pip? `pip install -r requirements.txt` from the repo root installs the whole app from PyPI,\nthen run `inline-studio`.\n\n[**No GPU? Deploy Inline Studio on RunPod →**](https://console.runpod.io/hub/template/c0qkyaypuv)\n\n<details>\n<summary><b>Hardware support, RTX 50-series, AMD ROCm, Apple Silicon</b></summary>\n\nWhat has been run, and what has a code path nobody has verified:\n\n| Hardware                | Status                                                                                           | Extra steps                                                                                    |\n| ----------------------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |\n| **NVIDIA, Linux**       | **Tested**, Z-Image Turbo 1024² on a T4 (16GB); Krea 2 1024² and LoRA training on an L40S (48GB) | None                                                                                           |\n| **NVIDIA, Windows**     | Supported                                                                                        | PyPI's default torch is CPU-only on Windows, so `--install` picks the CUDA build for your card |\n| **Apple Silicon (MPS)** | Code path exists, **untested**                                                                   | None. int8 does not apply on MPS, so a model too big for unified memory will not fit           |\n| **AMD (ROCm), Linux**   | **Untested**, reports welcome                                                                    | Needs a ROCm build of PyTorch, see below                                                       |\n| **CPU only**            | Works, very slow                                                                                 | `./webui.sh --cpu`                                                                             |\n\n#### RTX 50-series (Blackwell)\n\nRTX 50-series cards are compute capability `sm_120`, and no wheel built for CUDA 12.4 or 12.6 has\nkernels for them. `--install` reads the capability off the driver and picks `cu130`, so a plain\n`.\\webui.bat --install --extra all` is all you need.\n\n**Old driver?** CUDA 13 needs driver R580 or newer. If yours predates it, `--install` picks `cu128`\nand says so: cu128 still has `sm_120` but is frozen at torch 2.11 and will never update, so update\nthe driver when you can.\n\n`--torch-index` takes a short name (`cu130`, `cu128`, `cu126`), a full index URL, or `cpu`. Naming it\nexplicitly also **replaces** an already-installed torch, which a plain re-run will not do, so you\nrarely need `--recreate`. `INLINE_TORCH_INDEX` does the same thing.\n\nNot sure what you have? `.\\webui.bat --print-torch-index` prints what the driver reported and which\nindex would be used, and installs nothing. That one line is what to paste into a bug report.\n\n#### AMD (ROCm)\n\nNobody has verified this yet, so treat it as a starting point. Install normally **first**, then\nreplace PyTorch, so nothing can overwrite your ROCm build afterwards:\n\n```bash\ncd core\n./webui.sh --install --extra runtime\n\n# Pick the index matching YOUR ROCm version: https://pytorch.org/get-started/locally/\nuv pip install --python .venv/bin/python --force-reinstall \\\n  --index-url https://download.pytorch.org/whl/rocm6.2 torch\n\n# hip should print a version, not None\n.venv/bin/python -c \"import torch; print(torch.cuda.is_available(), torch.version.hip)\"\n```\n\nDo not run `uv sync` or pass `--recreate` afterwards; both put the PyPI torch back over your ROCm\nbuild. The dtype heuristics key off NVIDIA compute capability, which is meaningless on RDNA and\nCDNA, so [open an issue](https://github.com/omnichar/OmniChar/issues) either way.\n\n#### Generation VRAM, so you can judge before downloading\n\nKrea 2 is 26GB on disk and generation peaks near 36GB at 1024, so a 40GB card is the practical floor\nfor **inference**. Training is far cheaper, see the table above. Z-Image Turbo is the low-VRAM path\nfor generation: it is distilled to run CFG-free, so 1024² fits in about 11.5GB.\n\n</details>\n\n<details>\n<summary><b>Command-line options</b></summary>\n\n`webui.sh` (macOS/Linux) and `webui.bat` (Windows) map friendly flags onto the engine's `INLINE_*`\nenvironment variables. `core/main.py` takes the same flags. Run `--help` for the full list.\n\n| Flag                  | Env var                  | What it does                                                 |\n| --------------------- | ------------------------ | ------------------------------------------------------------ |\n| `--listen`            | `INLINE_HOST=0.0.0.0`    | Bind all interfaces so other machines can reach it           |\n| `--port N`            | `INLINE_PORT`            | Port to serve on (default 8848)                              |\n| `--models-dir PATH`   | `INLINE_MODELS_DIR`      | Where weights are scanned from (default `./models`)          |\n| `--data-dir PATH`     | `INLINE_DATA_DIR`        | Where runs and takes are written                             |\n| `--lowvram`           | `INLINE_PROFILE=lowvram` | Tight-VRAM profile (tiling, slicing, int8)                   |\n| `--cpu`               | `INLINE_PROFILE=cpu`     | Force CPU generation                                         |\n| `--vram-budget GB`    | `INLINE_VRAM_BUDGET_GB`  | Treat the GPU as having GB of usable VRAM                    |\n| `--multi-gpu [SPEC]`  | `INLINE_PARALLEL`        | Split one image's denoise across GPUs; auto with 2+ GPUs     |\n| `--torch-index WHICH` | `INLINE_TORCH_INDEX`     | With `--install`, override the PyTorch wheel index           |\n| `--print-torch-index` | n/a                      | Print the GPU probe and chosen index, then exit              |\n| `--extra NAME`        | n/a                      | Add an install extra: `runtime`, `server`, `training`, `all` |\n| `--recreate`          | n/a                      | Rebuild `.venv` from scratch                                 |\n| `--dev` / `--rebuild` | n/a                      | Live-reload dev loop / force a fresh SPA build               |\n\n**From source (UI development):** build the SPA with `npm ci && npm run build:spa`, then serve it\nwith `cd core && uv run python main.py --front-end-root ../dist-web`. Or `./webui.sh --dev` for\nVite HMR on `:5173`.\n\n</details>\n\n## Characters\n\nGetting the same person across shots normally means training a LoRA for each one, or re-wiring the\nsame reference photos into every node by hand. Build a character once instead, then pick it from a\ndropdown.\n\n[![Body, face, shirt and jeans wired in as separate references on the canvas, and the same person generated walking a street in that outfit](https://raw.githubusercontent.com/omnichar/OmniChar/main/screenshots/char-mm-poster.png)](https://omnichar.org/workflows/minimax-h3-guided-consistent-characters-via-reference-identity-face-body-cloths)\n\n[**Workflow: Minimax H3. Consistent face, body & cloths via reference identity →**](https://omnichar.org/workflows/minimax-h3-guided-consistent-characters-via-reference-identity-face-body-cloths)\n\nDrop in a photo or two and Inline Studio compiles a **`.char`**: one portable file holding your\nreferences and an identity fingerprint. Describe the scene, and the references carry the likeness.\nOn MiniMax H3 the same person moves and speaks, in video with sound. Every take comes back with a\ncontinuity score out of 100, so drift shows up as a number. On a clip the score carries the worst\nframe and the second it happened, so a dip cannot hide behind an average.\n\n- **FLUX.2** applies a character with no training at all. The references ride in the prompt's token\n  sequence, so picking one costs nothing but the render.\n- **Krea 2** has no reference channel, so it trains a small adapter for the character once,\n  then reuses it on every render.\n- **MiniMax H3** does both. Reference to Video reads the references directly, and its other three\n  nodes have no reference channel, so they take a trained adapter instead.\n- **Hosted models** take a character too. Wire one into Nano Banana Pro or MiniMax H3 Reference to\n  Video on fal and the references and locked description go out with the request, the same as on a\n  local node.\n\nNot every hosted model will take a face. Seedance 2.0 rejects any reference image with one in it, so\na character reaches it as build and wardrobe only. The node says so before you run, rather than\nafter you have paid for a video of somebody else.\n\n[**How characters work, in detail →**](https://omnichar.org/characters)\n\n## Train a LoRA\n\nTrain on your own images, or on short video clips, on your own GPU with no cloud step. The training\nnodes sit on the same canvas as everything else: wire them up, press Start, watch it run. The\nfinished `.safetensors` lands in `models/loras/`, where the LoRA loader node picks it up, so you can\ngenerate with it straight away.\n\n![Inline Studio showing the LoRA training node graph with a dataset, live logs, and a loss curve](https://raw.githubusercontent.com/omnichar/OmniChar/main/screenshots/lora-trainer.png)\n\n```\n[ Load Dataset ] --> [ Caption ] --> [ Train LoRA ] --> [ Graph ]\n                                          |\n                                          +--> Resources (VRAM monitor)\n```\n\nHyperparameters sit behind an Adjust button, so the node face stays a status surface. MiniMax H3\ntrains on stills for look and style, or on clips to learn motion as well, and one dataset can hold\nboth. LTX-2.5 trains on clips, and can also learn a transform between a reference clip and a target\none, which upstream calls an IC-LoRA.\n\nThe image models train on stills. **FLUX.1** trains on dev - it is guidance-distilled rather than\nstep-distilled, so it is its own training base and needs no adapter, and 4-bit puts it on a 12GB\ncard at 512px. **FLUX.2** trains on a klein Base build, 4B or 9B, and the adapter still loads on the\ndistilled build afterwards. **Krea 2** and **Z-Image** are covered in TRAINING.md.\n\nAlready installed with `--extra all`? The trainer is ready. Otherwise\n`./webui.sh --install --extra training`.\n\n**[TRAINING.md](TRAINING.md) is the full reference:**\n[which base to train on](TRAINING.md#architecture-and-base-model-modes) ·\n[benchmarks](TRAINING.md#benchmark-results) ·\n[training on clips](TRAINING.md#training-on-clips) ·\n[control LoRAs](TRAINING.md#control-loras) ·\n[datasets and outputs](TRAINING.md#datasets-and-outputs) ·\n[stop and resume](TRAINING.md#stop-and-resume) ·\n[trigger words](TRAINING.md#trigger-words)\n\nA worked example: [`skin-lora-krea-2-raw`](https://huggingface.co/inlineresearch/skin-lora-krea-2-raw),\ntrained here on Krea 2 RAW from the 26 pairs published as\n[`krea2-skin-lora`](https://huggingface.co/datasets/inlineresearch/krea2-skin-lora).\n\n## Generate\n\nDrop ",
-      "media": [
-        {
-          "type": "image",
-          "url": "https://raw.githubusercontent.com/omnichar/OmniChar/main/screenshots/hero.png",
-          "caption": ""
-        },
-        {
-          "type": "image",
-          "url": "https://raw.githubusercontent.com/omnichar/OmniChar/main/screenshots/char-mm-poster.png",
-          "caption": ""
-        },
-        {
-          "type": "image",
-          "url": "https://raw.githubusercontent.com/omnichar/OmniChar/main/screenshots/lora-trainer.png",
-          "caption": ""
-        }
-      ],
-      "score": 1119.3
+      "score": 1130.75
     }
   ]
 }
