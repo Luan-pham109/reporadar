@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T06:41:41.971Z",
+  "generatedAt": "2026-09-28T07:06:46.748Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -22,12 +22,12 @@
         "fullName": "hypit-ai/hypit",
         "url": "https://github.com/hypit-ai/hypit",
         "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-        "stars": 16436,
+        "stars": 16933,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 16436"
+          "⭐ 16933"
         ],
         "signalUrls": [],
         "points": 0,
@@ -44,14 +44,14 @@
         "github": {
           "fullName": "hypit-ai/hypit",
           "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-          "stars": 16436,
-          "forks": 1985,
+          "stars": 16933,
+          "forks": 2033,
           "createdAt": "2026-07-29T18:49:19Z",
-          "ageDays": 59,
-          "starsPerDay": 278.6,
+          "ageDays": 61,
+          "starsPerDay": 277.6,
           "pushedAt": "2026-09-26T12:02:24Z",
           "archived": false,
-          "openIssues": 15,
+          "openIssues": 16,
           "topics": [
             "agentic-ai",
             "ai",
@@ -100,7 +100,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "16436 sao, 1985 fork, ~278.6 sao/ngày, 59 ngày tuổi"
+            "16933 sao, 2033 fork, ~277.6 sao/ngày, 61 ngày tuổi"
           ]
         }
       },
@@ -122,7 +122,7 @@
           "caption": ""
         }
       ],
-      "score": 1921.8
+      "score": 1946.65
     },
     {
       "candidate": {
@@ -134,12 +134,12 @@
           "hacker-news"
         ],
         "signals": [
-          "411▲ 141💬"
+          "419▲ 141💬"
         ],
         "signalUrls": [
           "https://news.ycombinator.com/item?id=49833867"
         ],
-        "points": 411,
+        "points": 419,
         "verticals": [
           "creative"
         ]
@@ -152,14 +152,14 @@
         "github": {
           "fullName": "devdotfast/whiteboard",
           "description": "open-source canvas for thoughtful software design",
-          "stars": 1664,
-          "forks": 76,
+          "stars": 1969,
+          "forks": 89,
           "createdAt": "2026-08-18T15:06:04Z",
-          "ageDays": 40,
-          "starsPerDay": 41.6,
-          "pushedAt": "2026-09-26T17:53:13Z",
+          "ageDays": 41,
+          "starsPerDay": 48,
+          "pushedAt": "2026-09-28T05:52:56Z",
           "archived": false,
-          "openIssues": 34,
+          "openIssues": 41,
           "topics": [],
           "homepage": "https://whiteboard.dev.fast/",
           "language": "TypeScript",
@@ -168,7 +168,7 @@
         "hackerNews": [
           {
             "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
-            "points": 411,
+            "points": 419,
             "comments": 141,
             "createdAt": "2026-09-24T17:21:36Z",
             "hnUrl": "https://news.ycombinator.com/item?id=49833867"
@@ -195,13 +195,13 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "1664 sao, 76 fork, ~41.6 sao/ngày, 40 ngày tuổi"
+            "1969 sao, 89 fork, ~48 sao/ngày, 41 ngày tuổi"
           ]
         }
       },
-      "readmeExcerpt": "<div align=\"center\">\n  <img\n    src=\"docs/assets/review-logo.png\"\n    width=\"96\"\n    alt=\"Whiteboard logo\"\n  />\n  <h1>Whiteboard</h1>\n  <p><strong>an open-source canvas for thoughtful software design</strong></p>\n  <p>\n    <a href=\"https://install.dev.fast\">Download for macOS</a> ·\n    <a href=\"https://install.dev.fast/windows\">Windows</a> ·\n    <a href=\"https://install.dev.fast/linux/ubuntu\">Ubuntu</a> ·\n    <a href=\"https://install.dev.fast/linux\">Fedora</a> ·\n    <a href=\"https://dev.fast\">Website</a> ·\n    <a href=\"https://discord.gg/wYvd2cpMQg\">Discord</a>\n  </p>\n</div>\n\nWhiteboard is an open-source desktop app where humans and agents can architect software together in a common workspace.\n\nWhiteboard plugs into the tools you already use - e.g. Claude Code, Codex, etc. – and gives your agent an SDK to draw on an in-app canvas to describe its work.\n\n<p align=\"center\">\n  <img\n    src=\"docs/assets/whiteboard-demo.gif\"\n    width=\"880\"\n    alt=\"An agent writes a Whiteboard review from a terminal prompt, which includes a sequence diagram\"\n  />\n</p>\n\nHere’s a 1 min demo video explaining more: https://www.youtube.com/watch?v=ChPn3ftULWE\n\n## Quickstart\n\n1. [Download Whiteboard](https://install.dev.fast) and open the app.\n2. Connect Claude Code, Codex, or another coding agent from the welcome screen.\n3. Ask your agent to review your current branch against up-to-date main and\n   open the result in Whiteboard.\n\n## Guidance\n\nIn our experience, Whiteboard works best with models like GPT-6 Sol and Claude Opus 5.5 for their intelligence, cost, and speed tradeoff.\n\nHere are a few example prompts of how to use Whiteboard effectively. We are working hard to make sure the right choices are baked in by default to the system prompt - part of why this system is open source! - but in the meantime:\n\n### For a new API change\n\n> hey, this stack of commits is set up so i can get an [api] to do [objective]\n>\n> i'd like to see:\n>\n> - proposed api\n> - examples\n> - motivations for this (if available to you in context/in the repo)\n>\n> and then we can dive into implementation + explaining how things worked.\n\n### For a change to add telemetry:\n\n> cna you explain to me the telemetry changes form the newest posthog pr https://github.com/devdotfast/whiteboard/commit/4837e107946e27ebad50c282eb0f2585210d2a35 -- what are we tracking, how can we build good dashboards or product waterfalls from it? what do we do for hangs, errors, crashes etc... use whiteboard\n\nIf you see anything you don't like, highlight it in your clipboard and give it your agent, and it can re-draw on the Whiteboard to suit your needs!\n\n## Why does this exist?\n\n### Diagrams that lead to code\n\nPure HTML tools didn’t provide easy affordances to connect a spec or diagram to code; this is especially tricky since tradeoffs are often only discovered after a first pass at implementation. In Whiteboard, when you click on visualizations like a sequence diagram, an entity relationship diagram, or a quote from the agent’s trace, you can jump to the underlying code directly. When navigating code, you get keybindings and LSP support from VSCode out of the box.\n\n### Semantic diff viewer\n\nRaw diff views can be very noisy, so we wrote a semantic, AST-aware diff viewer in Rust so you can only view the code changes which are relevant to you. We’ve set up some sane defaults: large added functions are summarized as pseudocode, and things like unit tests and documentation changes are collapsed / hidden. This is all customizable with a WASM-based plugin system.\n\n### Decision log\n\nWe found it difficult to reason about what set of decisions our agents made autonomously & how that impacts a change. So we built tools for agents to query and link their own traces on the Whiteboard, so you can visualize the requirements that you set, understand how they were implemented, and understand what decisions the agent made autonomously.\n\n\n## Open source, on your machine\n\nWhiteboard is MIT-licensed and runs against your local checkouts. A hosted\nproduct for teams is planned, and everything will always remain self-hostable.\n\n## Known limitations\n\n- You cannot currently edit files in Whiteboard. If this is something that you find yourself wanting to do, please file an issue!\n\n- Working and browsing files across multiple repos in a single review isn't well supported.\n\n- While you can share reviews between machines with the share button, updates made after a review is shared don't appear for others. You would need to re-share the review.\n\n## Contributing\n\nContributions and feedback are welcome.\n\nRead [CONTRIBUTING.md](CONTRIBUTING.md) for setup and the pull request workflow,\nand follow the [Code of Conduct](CODE_OF_CONDUCT.md). Report vulnerabilities as\ndescribed in [SECURITY.md](SECURITY.md). Questions? Ask on\n[Discord](https://discord.gg/wYvd2cpMQg).\n\n## Privacy\n\nWhiteboard runs against local checkouts. Anonymous telemetry does not include\nyour code, diffs, Whiteboard text, prompts, or model output. Read the\n[privacy overview](docs/privacy.md), inspect the complete\n[telemetry reference](docs/telemetry.md), or turn telemetry off at any time.\n\n## License\n\nWhiteboard is available under the [MIT License](LICENSE). The vendored Code -\nOSS fork retains Microsoft's MIT license and third-party notices; see\n[`apps/review-desktop/LICENSE`](apps/review-desktop/LICENSE) and\n[`apps/review-desktop/UPSTREAM`](apps/review-desktop/UPSTREAM).\n\n## On vendoring Code OSS\n\nWith everyone using dedicated agent TUIs and desktop apps, we only use our text editors for reviewing line-by-line diffs now, so we figured why not have a text editor meant for reviewing code. In that case, might as well start off with the most successful open source editor out there as a baseline.\n\nWe vendor Code OSS unlike other forks that maintain patches because coding agents have a hard time with patches and there's a lot of stuff from stock VS Code (i.e., ~45% of the codebase is Copilot these days 😬) that we don't need.\n\nWe regularly monitor upstream Code OSS and merge in security/feature patches as they come in.\n\n## Influences\n\n- <https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck>\n  — a great overview of the constraints of modern software engineering.\n- <https://maggieappleton.com/2025-08-vibe-legacy-code/> and\n  <https://blog.val.town/vibe-code> — do a great job describing how AI-generated\n  code fits into the pre-2025 notion of software engineering.\n- Karpathy on agents:\n  - On LLM agents: <https://x.com/karpathy/status/1979644538185752935>\n  - On agents as \"junior engineer savants\":\n    <https://x.com/karpathy/status/1915581920022585597>\n",
+      "readmeExcerpt": "<div align=\"center\">\n  <img\n    src=\"docs/assets/review-logo.png\"\n    width=\"96\"\n    alt=\"Whiteboard logo\"\n  />\n  <h1>Whiteboard</h1>\n  <p><strong>an open-source canvas for thoughtful software design</strong></p>\n  <p>\n    <a href=\"https://dev.fast/install\">Download for macOS, Windows, and Linux</a> ·\n    <a href=\"https://dev.fast\">Website</a> ·\n    <a href=\"https://discord.gg/wYvd2cpMQg\">Discord</a>\n  </p>\n</div>\n\nWhiteboard is an open-source desktop app where humans and agents can architect software together in a common workspace.\n\nWhiteboard plugs into the tools you already use - e.g. Claude Code, Codex, etc. – and gives your agent an SDK to draw on an in-app canvas to describe its work.\n\n<p align=\"center\">\n  <img\n    src=\"docs/assets/whiteboard-demo.gif\"\n    width=\"880\"\n    alt=\"An agent writes a Whiteboard review from a terminal prompt, which includes a sequence diagram\"\n  />\n</p>\n\nHere’s a 1 min demo video explaining more: https://www.youtube.com/watch?v=ChPn3ftULWE\n\n## Quickstart\n\n1. [Download Whiteboard](https://dev.fast/install) and open the app.\n2. Connect Claude Code, Codex, or another coding agent from the welcome screen.\n3. Ask your agent to review your current branch against up-to-date main and\n   open the result in Whiteboard.\n\n## Guidance\n\nIn our experience, Whiteboard works best with models like GPT-6 Sol and Claude Opus 5.5 for their intelligence, cost, and speed tradeoff.\n\nHere are a few example prompts of how to use Whiteboard effectively. We are working hard to make sure the right choices are baked in by default to the system prompt - part of why this system is open source! - but in the meantime:\n\n### For a new API change\n\n> hey, this stack of commits is set up so i can get an [api] to do [objective]\n>\n> i'd like to see:\n>\n> - proposed api\n> - examples\n> - motivations for this (if available to you in context/in the repo)\n>\n> and then we can dive into implementation + explaining how things worked.\n\n### For a change to add telemetry:\n\n> cna you explain to me the telemetry changes form the newest posthog pr https://github.com/devdotfast/whiteboard/commit/4837e107946e27ebad50c282eb0f2585210d2a35 -- what are we tracking, how can we build good dashboards or product waterfalls from it? what do we do for hangs, errors, crashes etc... use whiteboard\n\nIf you see anything you don't like, highlight it in your clipboard and give it your agent, and it can re-draw on the Whiteboard to suit your needs!\n\n## Why does this exist?\n\n### Diagrams that lead to code\n\nPure HTML tools didn’t provide easy affordances to connect a spec or diagram to code; this is especially tricky since tradeoffs are often only discovered after a first pass at implementation. In Whiteboard, when you click on visualizations like a sequence diagram, an entity relationship diagram, or a quote from the agent’s trace, you can jump to the underlying code directly. When navigating code, you get keybindings and LSP support from VSCode out of the box.\n\n### Semantic diff viewer\n\nRaw diff views can be very noisy, so we wrote a semantic, AST-aware diff viewer in Rust so you can only view the code changes which are relevant to you. We’ve set up some sane defaults: large added functions are summarized as pseudocode, and things like unit tests and documentation changes are collapsed / hidden. This is all customizable with a WASM-based plugin system.\n\n### Decision log\n\nWe found it difficult to reason about what set of decisions our agents made autonomously & how that impacts a change. So we built tools for agents to query and link their own traces on the Whiteboard, so you can visualize the requirements that you set, understand how they were implemented, and understand what decisions the agent made autonomously.\n\n\n## Open source, on your machine\n\nWhiteboard is MIT-licensed and runs against your local checkouts. A hosted\nproduct for teams is planned, and everything will always remain self-hostable.\n\n## Known limitations\n\n- You cannot currently edit files in Whiteboard. If this is something that you find yourself wanting to do, please file an issue!\n\n- Working and browsing files across multiple repos in a single review isn't well supported.\n\n- While you can share reviews between machines with the share button, updates made after a review is shared don't appear for others. You would need to re-share the review.\n\n## Contributing\n\nContributions and feedback are welcome.\n\nRead [CONTRIBUTING.md](CONTRIBUTING.md) for setup and the pull request workflow,\nand follow the [Code of Conduct](CODE_OF_CONDUCT.md). Report vulnerabilities as\ndescribed in [SECURITY.md](SECURITY.md). Questions? Ask on\n[Discord](https://discord.gg/wYvd2cpMQg).\n\n## Privacy\n\nWhiteboard runs against local checkouts. Anonymous telemetry does not include\nyour code, diffs, Whiteboard text, prompts, or model output. Read the\n[privacy overview](docs/privacy.md), inspect the complete\n[telemetry reference](docs/telemetry.md), or turn telemetry off at any time.\n\n## License\n\nWhiteboard is available under the [MIT License](LICENSE). The vendored Code -\nOSS fork retains Microsoft's MIT license and third-party notices; see\n[`apps/review-desktop/LICENSE`](apps/review-desktop/LICENSE) and\n[`apps/review-desktop/UPSTREAM`](apps/review-desktop/UPSTREAM).\n\n## On vendoring Code OSS\n\nWith everyone using dedicated agent TUIs and desktop apps, we only use our text editors for reviewing line-by-line diffs now, so we figured why not have a text editor meant for reviewing code. In that case, might as well start off with the most successful open source editor out there as a baseline.\n\nWe vendor Code OSS unlike other forks that maintain patches because coding agents have a hard time with patches and there's a lot of stuff from stock VS Code (i.e., ~45% of the codebase is Copilot these days 😬) that we don't need.\n\nWe regularly monitor upstream Code OSS and merge in security/feature patches as they come in.\n\n## Influences\n\n- <https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck>\n  — a great overview of the constraints of modern software engineering.\n- <https://maggieappleton.com/2025-08-vibe-legacy-code/> and\n  <https://blog.val.town/vibe-code> — do a great job describing how AI-generated\n  code fits into the pre-2025 notion of software engineering.\n- Karpathy on agents:\n  - On LLM agents: <https://x.com/karpathy/status/1979644538185752935>\n  - On agents as \"junior engineer savants\":\n    <https://x.com/karpathy/status/1915581920022585597>\n",
       "media": [],
-      "score": 1511
+      "score": 1519
     },
     {
       "candidate": {
@@ -229,11 +229,11 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5270,
+          "stars": 5267,
           "forks": 200,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 214,
-          "starsPerDay": 24.6,
+          "ageDays": 215,
+          "starsPerDay": 24.5,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
           "openIssues": 127,
@@ -291,7 +291,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5270 sao, 200 fork, ~24.6 sao/ngày, 214 ngày tuổi"
+            "5267 sao, 200 fork, ~24.5 sao/ngày, 215 ngày tuổi"
           ]
         }
       },
@@ -305,12 +305,12 @@
         "fullName": "Vincentwei1021/anything2explainer",
         "url": "https://github.com/Vincentwei1021/anything2explainer",
         "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-        "stars": 2096,
+        "stars": 2114,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 2096"
+          "⭐ 2114"
         ],
         "signalUrls": [],
         "points": 0,
@@ -326,14 +326,14 @@
         "github": {
           "fullName": "Vincentwei1021/anything2explainer",
           "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-          "stars": 2096,
-          "forks": 296,
+          "stars": 2114,
+          "forks": 297,
           "createdAt": "2026-09-08T17:19:54Z",
-          "ageDays": 19,
-          "starsPerDay": 110.3,
+          "ageDays": 20,
+          "starsPerDay": 105.7,
           "pushedAt": "2026-09-18T11:52:13Z",
           "archived": false,
-          "openIssues": 3,
+          "openIssues": 4,
           "topics": [
             "agent-skills",
             "ai-agents",
@@ -380,7 +380,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "2096 sao, 296 fork, ~110.3 sao/ngày, 19 ngày tuổi"
+            "2114 sao, 297 fork, ~105.7 sao/ngày, 20 ngày tuổi"
           ]
         }
       },
@@ -397,96 +397,84 @@
           "caption": ""
         }
       ],
-      "score": 1204.8
+      "score": 1205.7
     },
     {
       "candidate": {
-        "key": "getopenpost/openpost",
-        "fullName": "getopenpost/openpost",
-        "url": "https://github.com/getopenpost/openpost",
-        "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
-        "stars": 622,
+        "key": "alesha-pro/tools",
+        "fullName": "alesha-pro/tools",
+        "url": "https://github.com/alesha-pro/tools",
+        "description": "Tools, ComfyUI workflows and benchmark configs from a 4x RTX 3090 local-inference rig",
+        "stars": 631,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 622"
+          "⭐ 631"
         ],
         "signalUrls": [],
         "points": 0,
         "verticals": [
-          "agency"
+          "creative"
         ]
       },
       "signals": {
         "repo": {
-          "owner": "getopenpost",
-          "repo": "openpost"
+          "owner": "alesha-pro",
+          "repo": "tools"
         },
         "github": {
-          "fullName": "getopenpost/openpost",
-          "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
-          "stars": 622,
-          "forks": 78,
-          "createdAt": "2026-03-21T11:12:13Z",
-          "ageDays": 190,
-          "starsPerDay": 3.3,
-          "pushedAt": "2026-09-26T22:26:46Z",
+          "fullName": "alesha-pro/tools",
+          "description": "Tools, ComfyUI workflows and benchmark configs from a 4x RTX 3090 local-inference rig",
+          "stars": 631,
+          "forks": 68,
+          "createdAt": "2026-08-07T12:05:59Z",
+          "ageDays": 52,
+          "starsPerDay": 12.1,
+          "pushedAt": "2026-09-27T22:25:28Z",
           "archived": false,
-          "openIssues": 7,
+          "openIssues": 0,
           "topics": [
-            "automation",
-            "content-creation",
-            "golang",
-            "mcp-server",
-            "self-hosted",
-            "social-media",
-            "social-media-automation",
-            "social-media-scheduler",
-            "svelte",
-            "sveltekit"
+            "comfyui",
+            "local-inference",
+            "lora",
+            "minimax-h3",
+            "rtx-3090",
+            "video-generation"
           ],
-          "homepage": "https://openpo.st",
-          "language": "TypeScript",
-          "suggestedHealthScore": 16
+          "homepage": null,
+          "language": "HTML",
+          "suggestedHealthScore": 18
         },
-        "hackerNews": [
-          {
-            "title": "Show HN: OpenPost, an open-source alternative to Buffer, CapCut, and Canva",
-            "points": 4,
-            "comments": 2,
-            "createdAt": "2026-09-09T13:24:28Z",
-            "hnUrl": "https://news.ycombinator.com/item?id=49626154"
-          }
-        ],
+        "hackerNews": [],
         "reddit": [
           {
             "subreddit": "selfhosted",
-            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=openpost&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=tools&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=tools&restrict_sr=1&sort=new"
           },
           {
             "subreddit": "opensource",
-            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=openpost&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=tools&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=tools&restrict_sr=1&sort=new"
           },
           {
             "subreddit": "SideProject",
-            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=openpost&restrict_sr=1&sort=new"
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=tools&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=tools&restrict_sr=1&sort=new"
           }
         ],
         "heuristic": {
-          "maturitySuggestion": "pre-viral",
+          "maturitySuggestion": "rising",
           "reasons": [
-            "Đang được bàn ở HN/Reddit",
-            "622 sao, 78 fork, ~3.3 sao/ngày, 190 ngày tuổi"
+            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
+            "631 sao, 68 fork, ~12.1 sao/ngày, 52 ngày tuổi"
           ]
         }
       },
-      "readmeExcerpt": "<p align=\"center\">\n  <a href=\"https://openpo.st\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/brand/lockup-dark.svg\">\n      <img src=\"./assets/brand/lockup.svg\" alt=\"OpenPost\" width=\"240\" height=\"60\">\n    </picture>\n  </a>\n</p>\n\n<h3 align=\"center\">An open-source alternative to Buffer, Canva, and CapCut.</h3>\n\n<p align=\"center\">\n  Write posts, design images and carousels, edit videos, and schedule your content in one app.<br>\n  Self-host OpenPost or use OpenPost Hosted.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/downloads-dark.svg\">\n      <img src=\"./assets/badges/downloads-light.svg\" alt=\"Total downloads\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/release-dark.svg\">\n      <img src=\"./assets/badges/release-light.svg\" alt=\"Latest release\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/stargazers\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/stars-dark.svg\">\n      <img src=\"./assets/badges/stars-light.svg\" alt=\"GitHub stars\">\n    </picture>\n  </a>\n  <a href=\"https://url.rgo.pt/x\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/follow-dev-dark.svg\">\n      <img src=\"./assets/badges/follow-dev-light.svg\" alt=\"Follow the developer on X\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://app.openpo.st/image-editor\"><strong>Try the image editor</strong></a>\n  ·\n  <a href=\"https://app.openpo.st/video-editor\"><strong>Try the video editor</strong></a>\n  ·\n  <a href=\"#self-host\"><strong>Self-host</strong></a>\n  ·\n  <a href=\"https://openpo.st/docs\"><strong>Docs</strong></a>\n</p>\n\n<p align=\"center\">\n  Both editors are free to use without an account or watermark.<br>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">\n    <img src=\"./assets/screenshots/readme-hero-dark.webp\" alt=\"OpenPost composer with platform-specific drafts, previews, and scheduling controls\" width=\"100%\">\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">Watch the product tour</a>\n  ·\n  <a href=\"https://openpo.st/#features\">See all features</a>\n</p>\n\n<table>\n  <tr>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/image-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/image-editor-dark.webp\">\n          <img src=\"./assets/screenshots/image-editor-light.webp\" alt=\"OpenPost image editor with a design canvas, layers, and editing controls\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Design images and carousels</strong>\n    </td>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/video-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/video-editor-dark.webp\">\n          <img src=\"./assets/screenshots/video-editor-light.webp\" alt=\"OpenPost video editor with a video preview and multitrack timeline\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Edit and caption videos</strong>\n    </td>\n  </tr>\n</table>\n\n## What you can do\n\n- <img src=\"./assets/brand/features/accounts.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Connect accounts](https://openpo.st/docs/guides/accounts).** Manage your social connections in one workspace. Each provider keeps its own capabilities and publishing limits.\n- <img src=\"./assets/brand/features/compose.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Compose for each platform](https://openpo.st/docs/guides/publishing).** Write posts and threads, then adjust the text and media for each account. Preview each version before publishing. Save account groups as Social Sets to reuse them.\n- <img src=\"./assets/brand/features/image-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Image editor](https://openpo.st/docs/image-editor).** Design images and multi-page carousels with layers, templates, and custom fonts. Remove backgrounds in your browser. Export individual pages or the full carousel, or attach them to your post.\n- <img src=\"./assets/brand/features/video-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Video editor](https://openpo.st/docs/video-editor).** Trim and arrange clips on a multitrack timeline. Add captions, transitions, effects, and audio. Cut footage by selecting words in its transcript.\n- <img src=\"./assets/brand/features/recorder.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Recorder](https://openpo.st/docs/video-editor/quick-cut-and-recorder).** Capture your screen, camera, and microphone, then bring the recording into your video edit.\n- <img src=\"./assets/brand/features/calendar.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Calendar and queues](https://openpo.st/docs/guides/scheduling).** Choose a publishing time or the next free slot in a queue. Plan your posts in the calendar, stagger publishing across accounts, and get reminders when your queue runs low.\n- <img src=\"./assets/brand/features/repost.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Auto repost.** Set delays and engagement rules for native reposts on supported networks. Override the defaults for individual posts.\n- <img src=\"./assets/brand/features/media.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Media library](https://openpo.st/docs/guides/media-library).** Keep reusable images, videos, fonts, and brand assets in your workspace. Organize files with tags, collections, and favorites. Attach saved media without uploading it again.\n- <img src=\"./assets/brand/features/memes.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Meme maker](https://openpo.st/docs/guides/media-library#add-media-to-a-post).** Pick a template, edit its captions, and replace its images. Save the result to your media library or attach it to a post.\n- <img src=\"./assets/brand/features/inbox.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Inbox and messages](https://openpo.st/docs/guides/inbox).** Read and reply to supported comments and direct messages without switching between social apps.\n- <img src=\"./assets/brand/features/analytics.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Analytics and repurposing](https://openpo.st/docs/guides/analytics).** Compare post results and track audience changes across your accounts. Use a previous post as the starting point for a new draft.\n- <img src=\"./assets/brand/features/grow.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Find people.** Find accounts to follow on Bluesky and Mastodon. Review the suggestions and choose who to follow.\n- <img src=\"./assets/brand/features/ideas.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **AI writing and ideas.** Generate ideas, compare draft directions, and adapt posts for your selected platforms. You review the result before publishing. AI writing is optional. [Self-hosted AI setup](https://openpo.st/docs/self-hosting/ai).\n- <img src=\"./assets/brand/features/automation.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[API, SDK, CLI, MCP, and n8n](https://openpo.st/docs/automate).** Create drafts, schedule posts, and check publishing results from your scripts, agents, or n8n workflows. Install the [TypeScript SDK](https://www.npmjs.com/package/@getopenpost/sdk) or the [CLI](https://www.npmjs.com/package/@getopenpost/cli) from npm. See the [API reference](https://openpo.st/docs/api-reference) for endpoints.\n- <img src=\"./assets/brand/features/workspaces.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Teams and workspaces](https://openpo.st/docs/guides/workspaces).** Keep brands and clients in separate workspaces and control who can edit them. Protect your account with passkeys, two-factor authentication, and session controls.\n\n## Get started\n\n### OpenPost Hosted\n\nUse OpenPost to create and schedule posts without running your own server.\n\n<a href=\"https://app.openpo.st/register?plan=founder&billing_period=monthly\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/start-trial-dark.svg\">\n    <img src=\"./assets/buttons/start-trial-light.svg\" alt=\"Start a 14-day trial\" height=\"36\">\n  </picture>\n</a>\n\n[View plans](https://openpo.st/pricing)\n\n### Self-host\n\nRun OpenPost with Docker Compose. The default setup uses one container with SQLite and local media storage.\n\n<a href=\"https://openpo.st/docs/self-hosting/\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/self-host-dark.svg\">\n    <img src=\"./assets/buttons/self-host-light.svg\" alt=\"Get started with self-hosting\" height=\"36\">\n  </picture>\n</a>\n\n[Configure integrations](https://openpo.st/docs/self-hosting/integrations) · [Backups and upgrades](https://openpo.st/docs/self-hosting/maintenance)\n\n## Supported platforms\n\n<p>\n  <img src=\"./assets/postiz-socials/Instagram.svg\" alt=\"Instagram\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Facebook.svg\" alt=\"Facebook\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Linkedin.svg\" alt=\"LinkedIn\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/X.svg\" alt=\"X\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/TikTok.svg\" alt=\"TikTok\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Youtube.svg\" alt=\"YouTube\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Threads.svg\" alt=\"Threads\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Bluesky.svg\" alt=\"Bluesky\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Mastodon.svg\" alt=\"Mastodon\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Pixelfed.svg\" alt=\"Pixelfed\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Peertube.svg\" alt=\"PeerTube\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Lemmy.svg\" alt=\"Lemmy\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/PieFed.svg\" alt=\"PieFed\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Discord.svg\" alt=\"Discord\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Pinterest.svg\" alt=\"Pinterest\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Telegram.svg\" alt=\"Telegram\" width=\"32\" height=\"32\">\n</p>\n\nOpenPost has integrations for Instagram, Facebook, LinkedIn, X, TikTok, YouTube, Threads, Bluesky, Mastodon, Pixelfed, PeerTube, Lemmy, PieFed, Discord, Pinterest, and Telegram. Mastodon and Pixelfed connect per instance over OAuth; PeerTube, Lemmy, and PieFed connect with instance credentials. Discord supports incoming webhooks and a bot integration; Telegram uses a bot.\n\nPosting formats, inbox features, and analytics vary by platform. Some integrations require provider app approval or publicly reachable media URLs.\n\n[Connect accounts](https://openpo.st/docs/guides/accounts) · [Integration requirements](https://openpo.st/docs/self-hosting/integrations)\n\n## Contributing\n\nReport bugs, improve the docs, or send a pull request. For larger changes, open an issue first so we can agree on the approach.\n\nOpenPost uses Go, SvelteKit, and Expo, with a Devenv development environment. Start with the [contributing guide](./.github/CONTRIBUTING.md) and [development setup](https://openpo.st/docs/development/setup).\n\n<a href=\"https://github.com/getopenpost/openpost/issues\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/report-bug-dark.svg\">\n    <img src=\"./assets/buttons/report-bug-light.svg\" alt=\"Report a bug\" height=\"36\">\n  </picture>\n</a>\n<a href=\"https://discord.com/invite/u2QwukmY4W\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/join-discord-dark.svg\">\n    <img src=\"./assets/buttons/join-discord-light.svg\" alt=\"Join Discord\" height=\"36\">\n  </picture>\n</a>\n\n## Star history\n\nSupport OpenPost with a [GitHub star](https://github.com/getopenpost/openpost/stargazers).\n\n<!-- star-history:start -->\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/star-history/star-history-dark.svg\">\n  <img alt=\"Star history\" src=\"assets/star-history/star-history-light.svg\">\n</picture>\n<!-- star-history:end -->\n\n## License and security\n\nOpenPost uses the [AGPL-3.0-only license](./LICENSE). See the [third-party notices](./licenses/README.md) for dependency licenses and attribution.\n\nReport vulnerabilities privately through the [security policy](./.github/SECURITY.md).\n",
+      "readmeExcerpt": "<div align=\"center\">\n\n# tools\n\nThings I build while running models on my own hardware,\ncleaned up enough for other people to use.\n\n[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Rig](https://img.shields.io/badge/measured%20on-4x%20RTX%203090-76b900.svg)](https://x.com/superalesha)\n[![X](https://img.shields.io/badge/@superalesha-follow-black.svg)](https://x.com/superalesha)\n\n</div>\n\n---\n\n## Sections\n\nEvery section stands on its own, with its own installer and its own docs. There\nis no shared setup to get through first.\n\n### [minimax-h3](minimax-h3)\n\nVideo with sound, generated at home.\n[MiniMax H3](https://huggingface.co/Comfy-Org/MiniMax-H3) writes the picture and\nthe synchronized audio in one pass, so voice, effects and music come out of the\nsame generation as the frames. Open weights.\n\nThirteen ComfyUI workflows in two sets. One set runs on any single 24 GB card. The\nother puts every card in a multi-GPU box to work and hits **3.12x on four\ncards**, taking a 15-second shot from 19 minutes of sampling down to 6:41.\n\nShips with the custom nodes, the patch that makes the turbo LoRA actually load,\nand a three-command installer.\n\n```bash\ncd minimax-h3 && ./install/setup.sh check\n```\n\n### [qwen-image-2.1](qwen-image-2.1)\n\nImage generation, editing and transparent PNGs on **one GPU**. The baseline is\nan RTX 3090 with 24 GB VRAM, using official INT8 ConvRot weights.\n\nFive native ComfyUI workflows, an isolated installer, SHA-256 model verification,\nand a script that submits a generation and checks the resulting PNG. Includes\nan [English guide](qwen-image-2.1/README.md), a\n[Russian guide](qwen-image-2.1/README.ru.md), and an\n[installation brief for an agent](qwen-image-2.1/INSTALL-WITH-AGENT.md).\n\nFor smaller GPUs, use the **[low-VRAM guide](qwen-image-2.1/LOW-VRAM.md)**:\nGGUF Q4_K_M, CPU offloading, 7 workflows, and measured memory requirements.\n\n```bash\ncd qwen-image-2.1\npython3 install/setup.py check\n```\n\n### [skills](skills)\n\nAgent skills that stand on their own.\n\n**[hand-drawn-canvas-animation](skills/hand-drawn-canvas-animation)** makes short\nfilms with authored poses and expressive strokes in JavaScript and Canvas 2D.\nIt covers pencil, ink, risograph, screen print and drawings interacting with\nreal photos, plus sand animation and projected paper. The\n[60-second phoenix film](skills/hand-drawn-canvas-animation/examples/becoming-phoenix/)\ncombines the materials through one story, including a moving storm and wings\nthat unfold from a book. The skill includes editable examples, original sound,\nan MP4 renderer and browser regression checks. No Blender or video-generation\nmodel is required.\n\n```bash\ncp -r skills/hand-drawn-canvas-animation ~/.agents/skills/\n```\n\n**[motion-reel](skills/motion-reel)** makes product films, showreels and UI morphs\nfrom a brief and visual references. It includes a Canvas renderer, spring motion,\noriginal music and SFX, beat analysis, contact sheets and MP4 checks. The skill\ncovers planning, animation, review and export, with source files you can edit.\n\nMore lands here as I clean it up.\n\n---\n\n## The rig everything is measured on\n\n4x RTX 3090, 96 GB VRAM total, PCIe 3.0 x16, no NVLink, 320 W per card. Ubuntu.\n\nNumbers in these READMEs come from real runs on that machine, not from\ndatasheets. Your absolute times will differ, the ratios usually hold.\n\nThere is one thing worth checking on your own box before anything else. Cards\nship at whatever power limit the vendor set, and it is often well under the\ndefault. Mine were at 220 W against a 350 W default, and raising them to 320\ntook an identical run from 220 seconds down to 170.\n\n```bash\nnvidia-smi --query-gpu=name,power.limit,power.default_limit --format=csv\n```\n\n---\n\n<div align=\"center\">\n\nI post the benchmarks behind all of this. Local inference on 4x RTX 3090,\nopen-weights models, argv and raw logs attached.\n\n**[@superalesha](https://x.com/superalesha)**\n\nMIT. Take it, change it, ship it.\n\n</div>\n",
       "media": [],
-      "score": 1131.1
+      "score": 1131.55
     }
   ]
 }
