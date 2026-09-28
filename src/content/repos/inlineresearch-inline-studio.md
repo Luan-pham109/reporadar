@@ -17,14 +17,14 @@ vertical: ["creative"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 168
-  forks: 35
-  note: "~39 ngày tuổi, ~4.3 sao/ngày"
-  starsPerDay: 4.3
-  ageDays: 39
-  pushedAt: 2026-07-20T05:14:20Z
+  stars: 433
+  forks: 65
+  note: "~109 ngày tuổi, ~4 sao/ngày"
+  starsPerDay: 4
+  ageDays: 109
+  pushedAt: "2026-09-28T05:56:18Z"
   archived: false
-  openIssues: 0
+  openIssues: 1
 standoutFeatures:
   - "Mọi lần render đều được giữ thành một 'take' riêng có đánh version — tạo lại là thêm bản mới, không ghi đè bản cũ."
   - "Nối output của khung này thành input của khung kia; sửa một cảnh gốc thì các cảnh phía sau chạy lại theo."
