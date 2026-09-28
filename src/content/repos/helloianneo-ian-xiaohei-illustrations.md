@@ -17,9 +17,14 @@ vertical: ["creative", "agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 6270
-  forks: 749
-  note: "~30 ngày tuổi, ~209 sao/ngày"
+  stars: 12162
+  forks: 1411
+  note: "~123 ngày tuổi, ~98.9 sao/ngày"
+  starsPerDay: 98.9
+  ageDays: 123
+  pushedAt: "2026-09-24T22:14:01Z"
+  archived: false
+  openIssues: 19
 standoutFeatures:
   - "Không phải prompt minh họa chung chung mà là skill chuyên cho ảnh cài trong thân bài viết."
   - "Giữ một visual language rất rõ: nền trắng, nét tay đen, ít màu nhấn và nhân vật Xiaohei tham gia vào hành động chính."

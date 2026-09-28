@@ -11,14 +11,14 @@ vertical: ["seo", "agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 125
-  forks: 37
-  note: "~174 ngày tuổi, ~0.7 sao/ngày"
+  stars: 194
+  forks: 56
+  note: "~259 ngày tuổi, ~0.7 sao/ngày"
   starsPerDay: 0.7
-  ageDays: 174
-  pushedAt: 2026-07-02T09:13:31Z
+  ageDays: 259
+  pushedAt: "2026-09-26T13:56:04Z"
   archived: false
-  openIssues: 4
+  openIssues: 5
 standoutFeatures:
   - "Một lệnh /geo <url> chạy trọn pipeline 4 agent: Analyzer (phân tích) → Ranker (mô phỏng xếp hạng AI) → Rewriter (viết lại nội dung) → Indexer (sinh JSON-LD schema) — khác các tool GEO khác chỉ dừng ở audit."
   - "Có CLI độc lập (egeo) chạy ngoài Claude Code, dùng chung lõi xử lý với agent — không khoá cứng vào một runtime."
