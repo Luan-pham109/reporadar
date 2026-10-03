@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T07:07:22.821Z",
+  "generatedAt": "2026-10-03T06:40:35.563Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -22,12 +22,12 @@
         "fullName": "hypit-ai/hypit",
         "url": "https://github.com/hypit-ai/hypit",
         "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-        "stars": 18680,
+        "stars": 18953,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 18680"
+          "⭐ 18953"
         ],
         "signalUrls": [],
         "points": 0,
@@ -44,14 +44,14 @@
         "github": {
           "fullName": "hypit-ai/hypit",
           "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-          "stars": 18680,
-          "forks": 2121,
+          "stars": 18953,
+          "forks": 2135,
           "createdAt": "2026-07-29T18:49:19Z",
           "ageDays": 65,
-          "starsPerDay": 287.4,
+          "starsPerDay": 291.6,
           "pushedAt": "2026-10-01T03:24:21Z",
           "archived": false,
-          "openIssues": 25,
+          "openIssues": 26,
           "topics": [
             "agentic-ai",
             "ai",
@@ -100,7 +100,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "18680 sao, 2121 fork, ~287.4 sao/ngày, 65 ngày tuổi"
+            "18953 sao, 2135 fork, ~291.6 sao/ngày, 65 ngày tuổi"
           ]
         }
       },
@@ -122,7 +122,7 @@
           "caption": ""
         }
       ],
-      "score": 2034
+      "score": 2047.65
     },
     {
       "candidate": {
@@ -152,14 +152,14 @@
         "github": {
           "fullName": "devdotfast/whiteboard",
           "description": "open-source canvas for thoughtful software design",
-          "stars": 2555,
+          "stars": 2601,
           "forks": 121,
           "createdAt": "2026-08-18T15:06:04Z",
-          "ageDays": 45,
-          "starsPerDay": 56.8,
-          "pushedAt": "2026-10-02T06:49:09Z",
+          "ageDays": 46,
+          "starsPerDay": 56.5,
+          "pushedAt": "2026-10-03T04:35:23Z",
           "archived": false,
-          "openIssues": 39,
+          "openIssues": 53,
           "topics": [],
           "homepage": "https://whiteboard.dev.fast/",
           "language": "TypeScript",
@@ -195,7 +195,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "2555 sao, 121 fork, ~56.8 sao/ngày, 45 ngày tuổi"
+            "2601 sao, 121 fork, ~56.5 sao/ngày, 46 ngày tuổi"
           ]
         }
       },
@@ -229,11 +229,11 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5273,
-          "forks": 201,
+          "stars": 5274,
+          "forks": 200,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 219,
-          "starsPerDay": 24.1,
+          "ageDays": 220,
+          "starsPerDay": 24,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
           "openIssues": 132,
@@ -291,7 +291,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5273 sao, 201 fork, ~24.1 sao/ngày, 219 ngày tuổi"
+            "5274 sao, 200 fork, ~24 sao/ngày, 220 ngày tuổi"
           ]
         }
       },
@@ -301,116 +301,16 @@
     },
     {
       "candidate": {
-        "key": "vincentwei1021/anything2explainer",
-        "fullName": "Vincentwei1021/anything2explainer",
-        "url": "https://github.com/Vincentwei1021/anything2explainer",
-        "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-        "stars": 2228,
-        "sources": [
-          "github-search"
-        ],
-        "signals": [
-          "⭐ 2228"
-        ],
-        "signalUrls": [],
-        "points": 0,
-        "verticals": [
-          "creative"
-        ]
-      },
-      "signals": {
-        "repo": {
-          "owner": "Vincentwei1021",
-          "repo": "anything2explainer"
-        },
-        "github": {
-          "fullName": "Vincentwei1021/anything2explainer",
-          "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-          "stars": 2228,
-          "forks": 309,
-          "createdAt": "2026-09-08T17:19:54Z",
-          "ageDays": 24,
-          "starsPerDay": 92.8,
-          "pushedAt": "2026-09-18T11:52:13Z",
-          "archived": false,
-          "openIssues": 4,
-          "topics": [
-            "agent-skills",
-            "ai-agents",
-            "ai-video",
-            "claude-code",
-            "claude-code-skill",
-            "codex",
-            "edge-tts",
-            "educational-video",
-            "explainer-video",
-            "kokoro",
-            "motion-graphics",
-            "multi-agent",
-            "react",
-            "remotion",
-            "text-to-video",
-            "tts",
-            "typescript",
-            "video-generation"
-          ],
-          "homepage": null,
-          "language": "TypeScript",
-          "suggestedHealthScore": 21
-        },
-        "hackerNews": [],
-        "reddit": [
-          {
-            "subreddit": "selfhosted",
-            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=anything2explainer&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=anything2explainer&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "opensource",
-            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=anything2explainer&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=anything2explainer&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "SideProject",
-            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=anything2explainer&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=anything2explainer&restrict_sr=1&sort=new"
-          }
-        ],
-        "heuristic": {
-          "maturitySuggestion": "rising",
-          "reasons": [
-            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "2228 sao, 309 fork, ~92.8 sao/ngày, 24 ngày tuổi"
-          ]
-        }
-      },
-      "readmeExcerpt": "# anything2explainer\n\n[![Claude Code](https://img.shields.io/badge/Claude%20Code-skill-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)\n[![Codex](https://img.shields.io/badge/Codex-skill-000000)](https://openai.com/codex)\n[![Remotion](https://img.shields.io/badge/Remotion-4.0-0B84F3)](https://remotion.dev)\n[![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial-informational)](LICENSE)\n\n**English** | [简体中文](README_ZH.md)\n\n**Topic in, narrated explainer video out.** anything2explainer is a [Claude Code](https://claude.com/claude-code) / [Codex](https://openai.com/codex) skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar, in Chinese or English. Every frame is drawn in code with [Remotion](https://remotion.dev) (React + TypeScript). No stock footage, no generative video model, no frames lifted from anyone else's work.\n\nIt is not a CLI. What ships here is the whole method an AI coding agent needs to finish the film: a compilable Remotion template, a primitives and lighting library, tooling for voiceover / storyboard / rendering / quantitative QC, written style and motion specs, a multi-agent division-of-labour protocol, and one complete reference film as the quality bar.\n\n**English cut** — *RAG & Knowledge Bases*, 5′02″, 44 lines / 785 words, voiced by kokoro-82m `am_liam` at natural speed:\n\nhttps://github.com/user-attachments/assets/e2771c68-a28c-4459-ac5a-a5b685181eeb\n\n**Chinese cut** — *RAG 与知识库* v2, 4′54″, 44 lines / 1490 characters, dot-field backdrop (`bg: 'dots'`), voiced through the bring-your-own-TTS path (Volcengine TTS 2.0 + forced alignment):\n\nhttps://github.com/user-attachments/assets/5c213990-cbba-439e-8371-fbb3aa348e05\n\nBoth cuts share one storyboard and 44 shots; the English cut re-times every shot to the English voiceover. The full paper trail of the original Chinese cut (4′35″, star-field backdrop, 8 build agents in parallel for 40 minutes, two QC rounds) lives in [`examples/rag/`](examples/rag/) (research → narration → storyboard → shot source → QC reports → delivery notes); rendered frames are in [`examples/rag/frames/`](examples/rag/frames/).\n\n## What it does\n\n- **Input**: a topic (\"explain vector databases\"), or an article / document you want turned into a video. You also pick the length and the language.\n- **Output**: a 1280×720 H.264 MP4 with synchronized voiceover, word-boundary-aligned subtitles, chapter cards, a top HUD and a bottom chapter progress bar, plus the full paper trail (research doc with sources, narration, storyboard, per-shot source code, QC reports).\n- **How**: the agent researches the topic with sources, writes the narration, generates the voiceover and frame-accurate timeline, storyboards every shot, then dispatches parallel build agents that write one Remotion component per shot. QC agents review the rendered frames against written criteria before delivery.\n- **Time**: roughly 1 to 3 hours of wall clock depending on length, most of it agents building shots in parallel. You are consulted at exactly four checkpoints.\n\n## Output spec\n\n| | |\n|---|---|\n| Frame / rate | 1280×720 @ 30fps, H.264 |\n| Length | your call (see table below); 2–8 minutes all work |\n| Language | Chinese or English (`lang` in `src/config.ts`); typography, subtitle budgets and TTS switch with it |\n| Look | black canvas with one of two backdrops, star field + fog gradient or dot-field wave (`bg` in `src/config.ts`; the dot-field wave is ported from video-talkcraft); white line art + purple accents; ultra-bold headline type |\n| Persistent layers | 44px white-on-black-stroke subtitles, bottom chapter progress bar, top capsule HUD, optional pipeline rail, `built by Anything2Explainer skill` end credit (`builtBy`, set to `''` to drop) |\n| Voiceover | Chinese: edge-tts `zh-CN-YunxiNeural` (Yunxi, male, unmodified rate ≈5.5 chars/s). English: kokoro-82m `am_liam` (Liam, male). Or bring your own TTS / finished audio |\n\nLength drives how much ground the film covers, and the size of the whole pipeline:\n\n| Length | Chinese chars | English words | Lines / shots | Build agents | Wall clock | Disk |\n|---|---|---|---|---|---|---|\n| 2–3 min | 650–880 | 280–420 | 24–32 | 4–6 | ≈1 h | ≈2 GB |\n| 3–5 min (reference tier) | 1100–1400 | 420–700 | 40–50 | 8 | ≈2 h | ≈2 GB |\n| 5–8 min | 1650–2200 | 700–1150 | 60–80 | 10–14 | ≈2–3 h | ≈3 GB |\n\nChapter count follows the content, within limits set by length: under 3 minutes use a single chapter (no chapter cards), 3–5 minutes 3–4 chapters of at least 60 s each, 5–8 minutes 4–6. The progress bar splits evenly across however many chapters the narration declares. A blank line in the narration marks a paragraph, which is also one shot: sentences inside a paragraph are separated by 10 frames, paragraph ends by 30, so the pause lands where the picture changes and every shot holds 1–1.5 s after its last element lands. The finished video runs 5–8% longer than the raw speech by design.\n\n## Install\n\n```bash\ngit clone https://github.com/Vincentwei1021/anything2explainer.git\nln -s \"$PWD/anything2explainer\" ~/.claude/skills/anything2explainer   # Claude Code\nln -s \"$PWD/anything2explainer\" ~/.codex/skills/anything2explainer    # Codex\n```\n\nDependencies:\n\n```bash\n# Node ≥18 (the template's npm install pulls remotion 4.0.507 / react 19)\nbrew install ffmpeg          # frame extraction / transcoding, required\n\npython3 -m venv ~/.venvs/a2e && source ~/.venvs/a2e/bin/activate\npip install 'edge-tts==7.2.8' numpy pillow scipy   # pin edge-tts: it tracks a Microsoft endpoint and breaks across upgrades (7.2.0+ needs word boundaries requested explicitly; the script does)\n\n# only needed for English narration (kokoro-82m runs locally)\npip install kokoro soundfile && brew install espeak-ng\n```\n\n`scipy` is only used by the QC script `frame_metrics.py`. The shell scripts are zsh + Python 3, developed and verified on macOS; Linux should work, Windows is untested.\n\n### Linux / Raspberry Pi (ARM)\n\nVerified on a Raspberry Pi 5 (ARM64, Python 3.13). Three things differ from macOS:\n\n```bash\nsudo apt install zsh espeak-ng                 # scripts are #!/bin/zsh; espeak-ng for kokoro/piper G2P\n\n# Remotion has no linux-arm64 headless browser → point it at system Chromium:\nsudo apt install chromium                       # or chromium-browser\nexport REMOTION_BROWSER_EXECUTABLE=/usr/bin/chromium   # read by template/remotion.config.ts (no-op on macOS)\n```\n\n**TTS on Linux/ARM.** `kokoro` (the default English engine) is hard to install on ARM/Python 3.13 (it pins an old numpy and pulls spaCy → blis, which lack aarch64 wheels). Two local engines that install cleanly instead — pass one via `TTS_ENGINE`:\n\n```bash\n# kokoro_onnx — natural voice, onnxruntime (no torch/spaCy). Download model + voices from\n#   github.com/thewh1teagle/kokoro-onnx releases (kokoro-v1.0.onnx, voices-v1.0.bin)\npip install kokoro-onnx\nTTS_ENGINE=kokoro_onnx KOKORO_ONNX_MODEL=…/kokoro-v1.0.onnx KOKORO_ONNX_VOICES=…/voices-v1.0.bin \\\n  KOKORO_ONNX_VOICE=am_michael python3 scripts/tts_build.py\n\n# piper — fastest local, robotic; a Pi-native fallback. Voice .onnx from github.com/rhasspy/piper\npip install piper-tts\nTTS_ENGINE=piper PIPER_MODEL=…/en_US-ryan-medium.onnx python3 scripts/tts_build.py\n```\n\nThe `edge` engine (natural, free, word-boundary timing) also works on Linux and needs no local model — it's a cloud call to Microsoft: `TTS_ENGINE=edge VOICE=en-US-AndrewNeural python3 scripts/tts_build.py`.\n\n## Usage\n\nIn Claude Code or Codex, just say what you want. The skill triggers itself:\n\n> Make me an explainer video about vector databases.\n\n> 讲一下向量数据库，做成一条讲解视频\n\nIt then walks the 9 stages in `SKILL.md`:\n\n1. **Scaffold** the Remotion project from the template.\n2. **Research** (1 agent): a sourced research doc with a list of numbers and analogies, every item with a URL.\n3. **Narration & timeline**: the script, then TTS voiceover with per-word boundaries turned into a frame-accurate timeline and subtitle table.\n4. **Storyboard**: one line per shot with frame range, beat, visuals, motion, hero element and lighting.\n5. **Overlays & primitives**: title, chapter cards, HUD, pipeline rail, plus 2–5 topic-specific icons.\n6. **Pilot** (1 agent): the first shot group, then a 30-second cut for you to judge the look.\n7. **Parallel build**: the remaining groups, 5–7 shots per agent, each writing pure-function Remotion components.\n8. **Render** the full film and run quantitative frame metrics.\n9. **QC & fixes**: one QC agent per chapter, fix agents per group, re-verification, then delivery notes.\n\nYou can also drive the template by hand:\n\n```bash\ntemplate/scripts/new_project.sh ~/work/my-video myslug\ncd ~/work/my-video\n# 1. research/调研.md          2. script/narration.txt → python3 scripts/tts_build.py\n# 3. script/storyboard_src.md → python3 scripts/render_storyboard.py     4. edit src/config.ts\n# 5. src/shots/G1..Gn          6. scripts/preview.sh 30   (first 30 seconds)\n# 7. VER=v1 scripts/render.sh + python3 scripts/frame_metrics.py         8. QC → fix → v2/v3\n```\n\n## Four checkpoints\n\nThe run stops and waits for you at exactly four points instead of ploughing through (details in `SKILL.md`):\n\n1. **Length and language**: before the script is written. Length decides the line count, shot count and how many agents run in parallel, i.e. how much the film can actually cover; language flips `lang` in `src/config.ts`, which drives typography, subtitle budgets and the default voice.\n2. **Narration sign-off**: before voiceover. Once locked, frame numbers are hard-coded into every shot; changing one word re-times the whole film. This is the cheapest place to intervene.\n3. **Voiceover**: before TTS runs you get asked whether you have a preferred engine. If not, defaults apply (edge-tts Yunxi for Chinese, kokoro-82m Liam for English). You can also hand over finished audio and fill the per-line timeline yourself.\n4. **First 30 seconds**: only the first build group is done, then 30 seconds get rendered for you to judge the look. Fixing the style here costs one group; after the full render it costs every group.\n\n## How it compares\n\n| Tool class | What it produces | Where anything2explainer differs |\n|---|---|---|\n| Generative video models (Sora, Veo, Runway) | Footage synthesized from a prompt | Deterministic code, not pixels. Every number on screen traces to a source URL, and any frame can be fixed by editing one shot file |\n| Avatar / presenter tools (HeyGen, Synthesia) | A digital presenter reading a script | No presenter. Motion-graphics diagrams that show the mechanism, with the narration driving the visuals |\n| Remotion or Motion Canvas by hand | A programmable video canvas | Ships the method on top of the canvas: research → narration → storyboard → parallel build → QC, with style specs, motion vocabulary and a reference film to match |\n| Manim | Python mathematical animations | An agent-driven end-to-end pipeline with TTS-aligned subtitles, chapters and QC; React / TypeScript rather than Python |\n\n## FAQ\n\n**Which AI coding agents does it work with?**\nIt is written for Claude Code and Codex, and those two are what it has been run with. The skill itself is plain Markdown plus a Remotion project, so any agent that reads `SKILL.md`-style skill folders and can run shell commands should be able to follow it.\n\n**Does it need a GPU?**\nNo. Remotion renders through headless Chromium on the CPU. The Chinese default voice (edge-tts) is a cloud call to a Microsoft endpoint; the English default (kokoro-82m) is an 82M-parameter model that runs locally on CPU.\n\n**Can I use my own voice or a different TTS?**\nYes. Put the finished audio at `public/assets/<slug>/audio.wav` and fill `src/common/timeline.ts` and `subs.ts` by hand (format documented at the top of `tts_build.py`). Everything downstream is unchanged.\n\n**Can I change the visual style?**\nThere is one visual style, on purpose, with a single switch: the backdrop, `bg` in `src/config.ts` (`'dots'` dot-field wave by default, `'stars'` star field with fog). To change anything else, edit `reference/style-guide.md` and `src/ui.tsx`; the shot code only uses those primitives.\n\n**Are the renders reproducible?**\nYes. Every animation is a pure function of the frame number with seeded randomness, and text fitting is computed rather than measured in the DOM, so re-rendering produces identical frames.\n\n**Can I use it commercially?**\nThe toolkit is licensed under PolyForm Noncommercial: free for noncommercial use, commercial use requires prior authorization from the author. The videos you make with it are yours. See [License](#license).\n\n**Does it do vertical (9:16) video?**\nNot currently. The template and every safe-area rule assume 1280×720 landscape.\n\n**Which languages?**\nChinese and English. Each has its own pacing model, subtitle budget and default voice. Both cuts are embedded at the top of this page; the written paper trail in `examples/rag/` is from the Chinese cut.\n\n## Repo layout\n\n```\nSKILL.md                  the process: 9 stages, four checkpoints, quality bar\nreference/                specs written for the main session and the agents\n  style-guide.md            safe areas, palette, fonts, primitive catalogue, layout habits\n  motion-vocabulary.md      entrance / emphasis / light / exit / camera formulas and frame counts\n  composition-and-light.md  three size tiers, light follows the hero, set-piece choreography, QC metrics\n  narration-storyboard.md   how to write narration, voiceover params, storyboard tokens, shot pattern table\n  research-brief.md         researcher prompt and fact rules\n  agent-build-rules.md      build-agent protocol\n  agent-qc-rules.md         QC-agent protocol\n  prompts.md                six prompt templates: research / build / QC / fix / recheck / final pass\n  lessons.md                every trap hit across three films, with root causes\ntemplate/                 the compilable Remotion 4 project (copy it with scripts/new_project.sh)\n  src/common/               fog, star field, dot-field wave, glitch, easings, subtitles, progress bar, footage layer\n  src/ui.tsx  src/fx.tsx    primitives and palette / light, depth and camera primitives\n  src/overlay/              title, chapter cards, HUD, pipeline rail, ending\n  scripts/                  voiceover, storyboard, stills, test render, 30s preview, full render, QC metrics\n  public/fonts/             four fonts + their OFL license\nexamples/rag/             the reference film's full paper trail and rendered frames\nexamples/contrast/        6 bad/good frame pairs — the yardstick for composition and light\n```\n\n## Acknowledgements\n\nThe visual language and the quality bar are inspired by the Douyin creator **@图灵宇宙** — black canvas, white line art with purple accents, ultra-bold headline type: that vocabulary was learned from their videos. Everything in this repo is drawn from scratch in code; none of their frames, assets or project files are used. If you feel this crosses a line, please open an issue.\n\n## Originality\n\n- **Every frame is drawn in code.** No frames or clips from existing videos. Optional live-action B-roll must come from royalty-free sources and be logged in a MANIFEST (sha256 / source URL / license / usage).\n- **Every fact is sourced.** Every number, year, organisation and English term shown on screen must trace back to a source URL in that film's research document. Anything unverified stays off the screen and out of the narration.\n\n## License\n\nThe toolkit: [PolyForm Noncommercial 1.0.0](LICENSE) — free for noncommercial use; commercial use requires prior authorization from the author. **Videos you make with it are yours.**\nThe four bundled fonts (Noto Sans SC / Orbitron / Exo 2 / Audiowide) are licensed separately under SIL OFL 1.1; see [`template/public/fonts/LICENSE.md`](template/public/fonts/LICENSE.md).\nRemotion itself has its own license terms for companies — see [remotion.dev/license](https://remotion.dev/license",
-      "media": [
-        {
-          "type": "image",
-          "url": "https://github.com/user-attachments/assets/e2771c68-a28c-4459-ac5a-a5b685181eeb",
-          "caption": ""
-        },
-        {
-          "type": "image",
-          "url": "https://github.com/user-attachments/assets/5c213990-cbba-439e-8371-fbb3aa348e05",
-          "caption": ""
-        }
-      ],
-      "score": 1211.4
-    },
-    {
-      "candidate": {
         "key": "alesha-pro/tools",
         "fullName": "alesha-pro/tools",
         "url": "https://github.com/alesha-pro/tools",
         "description": "Tools, ComfyUI workflows and benchmark configs from a 4x RTX 3090 local-inference rig",
-        "stars": 657,
+        "stars": 660,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 657"
+          "⭐ 660"
         ],
         "signalUrls": [],
         "points": 0,
@@ -426,11 +326,11 @@
         "github": {
           "fullName": "alesha-pro/tools",
           "description": "Tools, ComfyUI workflows and benchmark configs from a 4x RTX 3090 local-inference rig",
-          "stars": 657,
-          "forks": 74,
+          "stars": 660,
+          "forks": 75,
           "createdAt": "2026-08-07T12:05:59Z",
-          "ageDays": 56,
-          "starsPerDay": 11.7,
+          "ageDays": 57,
+          "starsPerDay": 11.6,
           "pushedAt": "2026-09-28T12:49:14Z",
           "archived": false,
           "openIssues": 0,
@@ -468,13 +368,102 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "657 sao, 74 fork, ~11.7 sao/ngày, 56 ngày tuổi"
+            "660 sao, 75 fork, ~11.6 sao/ngày, 57 ngày tuổi"
           ]
         }
       },
       "readmeExcerpt": "<div align=\"center\">\n\n# tools\n\nThings I build while running models on my own hardware,\ncleaned up enough for other people to use.\n\n[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Rig](https://img.shields.io/badge/measured%20on-4x%20RTX%203090-76b900.svg)](https://x.com/superalesha)\n[![X](https://img.shields.io/badge/@superalesha-follow-black.svg)](https://x.com/superalesha)\n\n</div>\n\n---\n\n## Sections\n\nEvery section stands on its own, with its own installer and its own docs. There\nis no shared setup to get through first.\n\n### [minimax-h3](minimax-h3)\n\nVideo with sound, generated at home.\n[MiniMax H3](https://huggingface.co/Comfy-Org/MiniMax-H3) writes the picture and\nthe synchronized audio in one pass, so voice, effects and music come out of the\nsame generation as the frames. Open weights.\n\nThirteen ComfyUI workflows in two sets. One set runs on any single 24 GB card. The\nother puts every card in a multi-GPU box to work and hits **3.12x on four\ncards**, taking a 15-second shot from 19 minutes of sampling down to 6:41.\n\nShips with the custom nodes, the patch that makes the turbo LoRA actually load,\nand a three-command installer.\n\n```bash\ncd minimax-h3 && ./install/setup.sh check\n```\n\n### [qwen-image-2.1](qwen-image-2.1)\n\nImage generation, editing and transparent PNGs on **one GPU**. The baseline is\nan RTX 3090 with 24 GB VRAM, using official INT8 ConvRot weights.\n\nFive native ComfyUI workflows, an isolated installer, SHA-256 model verification,\nand a script that submits a generation and checks the resulting PNG. Includes\nan [English guide](qwen-image-2.1/README.md), a\n[Russian guide](qwen-image-2.1/README.ru.md), and an\n[installation brief for an agent](qwen-image-2.1/INSTALL-WITH-AGENT.md).\n\nFor smaller GPUs, use the **[low-VRAM guide](qwen-image-2.1/LOW-VRAM.md)**:\nGGUF Q4_K_M, CPU offloading, 7 workflows, and measured memory requirements.\n\n```bash\ncd qwen-image-2.1\npython3 install/setup.py check\n```\n\n### [skills](skills)\n\nAgent skills that stand on their own.\n\n**[hand-drawn-canvas-animation](skills/hand-drawn-canvas-animation)** makes short\nfilms with authored poses and expressive strokes in JavaScript and Canvas 2D.\nIt covers pencil, ink, risograph, screen print and drawings interacting with\nreal photos, plus sand animation and projected paper. The\n[60-second phoenix film](skills/hand-drawn-canvas-animation/examples/becoming-phoenix/)\ncombines the materials through one story, including a moving storm and wings\nthat unfold from a book. The skill includes editable examples, original sound,\nan MP4 renderer and browser regression checks. No Blender or video-generation\nmodel is required.\n\n```bash\ncp -r skills/hand-drawn-canvas-animation ~/.agents/skills/\n```\n\n**[motion-reel](skills/motion-reel)** makes product films, showreels and UI morphs\nfrom a brief and visual references. It includes a Canvas renderer, spring motion,\noriginal music and SFX, beat analysis, contact sheets and MP4 checks. The skill\ncovers planning, animation, review and export, with source files you can edit.\n\nMore lands here as I clean it up.\n\n---\n\n## The rig everything is measured on\n\n4x RTX 3090, 96 GB VRAM total, PCIe 3.0 x16, no NVLink, 320 W per card. Ubuntu.\n\nNumbers in these READMEs come from real runs on that machine, not from\ndatasheets. Your absolute times will differ, the ratios usually hold.\n\nThere is one thing worth checking on your own box before anything else. Cards\nship at whatever power limit the vendor set, and it is often well under the\ndefault. Mine were at 220 W against a 350 W default, and raising them to 320\ntook an identical run from 220 seconds down to 170.\n\n```bash\nnvidia-smi --query-gpu=name,power.limit,power.default_limit --format=csv\n```\n\n---\n\n<div align=\"center\">\n\nI post the benchmarks behind all of this. Local inference on 4x RTX 3090,\nopen-weights models, argv and raw logs attached.\n\n**[@superalesha](https://x.com/superalesha)**\n\nMIT. Take it, change it, ship it.\n\n</div>\n",
       "media": [],
-      "score": 1132.85
+      "score": 1133
+    },
+    {
+      "candidate": {
+        "key": "getopenpost/openpost",
+        "fullName": "getopenpost/openpost",
+        "url": "https://github.com/getopenpost/openpost",
+        "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
+        "stars": 647,
+        "sources": [
+          "github-search"
+        ],
+        "signals": [
+          "⭐ 647"
+        ],
+        "signalUrls": [],
+        "points": 0,
+        "verticals": [
+          "agency"
+        ]
+      },
+      "signals": {
+        "repo": {
+          "owner": "getopenpost",
+          "repo": "openpost"
+        },
+        "github": {
+          "fullName": "getopenpost/openpost",
+          "description": "Create, adapt, schedule, and track social posts. Open-source, hosted or self-hosted.",
+          "stars": 647,
+          "forks": 82,
+          "createdAt": "2026-03-21T11:12:13Z",
+          "ageDays": 196,
+          "starsPerDay": 3.3,
+          "pushedAt": "2026-10-01T16:25:27Z",
+          "archived": false,
+          "openIssues": 2,
+          "topics": [
+            "automation",
+            "content-creation",
+            "golang",
+            "mcp-server",
+            "self-hosted",
+            "social-media",
+            "social-media-automation",
+            "social-media-scheduler",
+            "svelte",
+            "sveltekit"
+          ],
+          "homepage": "https://openpo.st",
+          "language": "TypeScript",
+          "suggestedHealthScore": 16
+        },
+        "hackerNews": [
+          {
+            "title": "Show HN: OpenPost, an open-source alternative to Buffer, CapCut, and Canva",
+            "points": 4,
+            "comments": 2,
+            "createdAt": "2026-09-09T13:24:28Z",
+            "hnUrl": "https://news.ycombinator.com/item?id=49626154"
+          }
+        ],
+        "reddit": [
+          {
+            "subreddit": "selfhosted",
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=openpost&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "opensource",
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=openpost&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "SideProject",
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=openpost&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=openpost&restrict_sr=1&sort=new"
+          }
+        ],
+        "heuristic": {
+          "maturitySuggestion": "pre-viral",
+          "reasons": [
+            "Đang được bàn ở HN/Reddit",
+            "647 sao, 82 fork, ~3.3 sao/ngày, 196 ngày tuổi"
+          ]
+        }
+      },
+      "readmeExcerpt": "<p align=\"center\">\n  <a href=\"https://openpo.st\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/brand/lockup-dark.svg\">\n      <img src=\"./assets/brand/lockup.svg\" alt=\"OpenPost\" width=\"240\" height=\"60\">\n    </picture>\n  </a>\n</p>\n\n<h3 align=\"center\">An open-source alternative to Buffer, Canva, and CapCut.</h3>\n\n<p align=\"center\">\n  Write posts, design images and carousels, edit videos, and schedule your content in one app.<br>\n  Self-host OpenPost or use OpenPost Hosted.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/downloads-dark.svg\">\n      <img src=\"./assets/badges/downloads-light.svg\" alt=\"Total downloads\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/releases\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/release-dark.svg\">\n      <img src=\"./assets/badges/release-light.svg\" alt=\"Latest release\">\n    </picture>\n  </a>\n  <a href=\"https://github.com/getopenpost/openpost/stargazers\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/stars-dark.svg\">\n      <img src=\"./assets/badges/stars-light.svg\" alt=\"GitHub stars\">\n    </picture>\n  </a>\n  <a href=\"https://url.rgo.pt/x\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/badges/follow-dev-dark.svg\">\n      <img src=\"./assets/badges/follow-dev-light.svg\" alt=\"Follow the developer on X\">\n    </picture>\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://app.openpo.st/image-editor\"><strong>Try the image editor</strong></a>\n  ·\n  <a href=\"https://app.openpo.st/video-editor\"><strong>Try the video editor</strong></a>\n  ·\n  <a href=\"#self-host\"><strong>Self-host</strong></a>\n  ·\n  <a href=\"https://openpo.st/docs\"><strong>Docs</strong></a>\n</p>\n\n<p align=\"center\">\n  Both editors are free to use without an account or watermark.<br>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">\n    <img src=\"./assets/screenshots/readme-hero-dark.webp\" alt=\"OpenPost composer with platform-specific drafts, previews, and scheduling controls\" width=\"100%\">\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.youtube.com/watch?v=_mZf3HzQaN8\">Watch the product tour</a>\n  ·\n  <a href=\"https://openpo.st/#features\">See all features</a>\n</p>\n\n<table>\n  <tr>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/image-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/image-editor-dark.webp\">\n          <img src=\"./assets/screenshots/image-editor-light.webp\" alt=\"OpenPost image editor with a design canvas, layers, and editing controls\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Design images and carousels</strong>\n    </td>\n    <td width=\"50%\" align=\"center\">\n      <a href=\"https://app.openpo.st/video-editor\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/screenshots/video-editor-dark.webp\">\n          <img src=\"./assets/screenshots/video-editor-light.webp\" alt=\"OpenPost video editor with a video preview and multitrack timeline\" width=\"100%\">\n        </picture>\n      </a>\n      <br><strong>Edit and caption videos</strong>\n    </td>\n  </tr>\n</table>\n\n## What you can do\n\n- <img src=\"./assets/brand/features/accounts.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Connect accounts](https://openpo.st/docs/guides/accounts).** Manage your social connections in one workspace. Each provider keeps its own capabilities and publishing limits.\n- <img src=\"./assets/brand/features/compose.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Compose for each platform](https://openpo.st/docs/guides/publishing).** Write posts and threads, then adjust the text and media for each account. Preview each version before publishing. Save account groups as Social Sets to reuse them.\n- <img src=\"./assets/brand/features/image-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Image editor](https://openpo.st/docs/image-editor).** Design images and multi-page carousels with layers, templates, and custom fonts. Remove backgrounds in your browser. Export individual pages or the full carousel, or attach them to your post.\n- <img src=\"./assets/brand/features/video-editor.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Video editor](https://openpo.st/docs/video-editor).** Trim and arrange clips on a multitrack timeline. Add captions, transitions, effects, and audio. Cut footage by selecting words in its transcript.\n- <img src=\"./assets/brand/features/recorder.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Recorder](https://openpo.st/docs/video-editor/quick-cut-and-recorder).** Capture your screen, camera, and microphone, then bring the recording into your video edit.\n- <img src=\"./assets/brand/features/calendar.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Calendar and queues](https://openpo.st/docs/guides/scheduling).** Choose a publishing time or the next free slot in a queue. Plan your posts in the calendar, stagger publishing across accounts, and get reminders when your queue runs low.\n- <img src=\"./assets/brand/features/workflows.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Workflows](https://openpo.st/docs/automate/workflows).** Turn GitHub releases, RSS feeds, and scheduled prompts into drafts. Connect steps on a visual canvas, add AI or conditions, review posts before scheduling, and inspect each run. Use HTTP requests and JavaScript for custom data.\n- <img src=\"./assets/brand/features/repost.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Auto repost.** Set delays and engagement rules for native reposts on supported networks. Override the defaults for individual posts.\n- <img src=\"./assets/brand/features/media.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Media library](https://openpo.st/docs/guides/media-library).** Keep reusable images, videos, fonts, and brand assets in your workspace. Organize files with tags, collections, and favorites. Attach saved media without uploading it again.\n- <img src=\"./assets/brand/features/memes.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Meme maker](https://openpo.st/docs/guides/media-library#add-media-to-a-post).** Pick a template, edit its captions, and replace its images. Save the result to your media library or attach it to a post.\n- <img src=\"./assets/brand/features/inbox.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Inbox and messages](https://openpo.st/docs/guides/inbox).** Read and reply to supported comments and direct messages without switching between social apps.\n- <img src=\"./assets/brand/features/analytics.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Analytics and repurposing](https://openpo.st/docs/guides/analytics).** Compare post results and track audience changes across your accounts. Use a previous post as the starting point for a new draft.\n- <img src=\"./assets/brand/features/grow.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **Find people.** Find accounts to follow on Bluesky and Mastodon. Review the suggestions and choose who to follow.\n- <img src=\"./assets/brand/features/ideas.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **AI writing and ideas.** Generate ideas, compare draft directions, and adapt posts for your selected platforms. You review the result before publishing. AI writing is optional. [Self-hosted AI setup](https://openpo.st/docs/self-hosting/ai).\n- <img src=\"./assets/brand/features/automation.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[API, SDK, CLI, MCP, and n8n](https://openpo.st/docs/automate).** Create drafts, schedule posts, and check publishing results from your scripts, agents, or n8n workflows. Install the [TypeScript SDK](https://www.npmjs.com/package/@getopenpost/sdk) or the [CLI](https://www.npmjs.com/package/@getopenpost/cli) from npm. See the [API reference](https://openpo.st/docs/api-reference) for endpoints.\n- <img src=\"./assets/brand/features/workspaces.svg\" alt=\"\" width=\"24\" height=\"24\" align=\"top\"> **[Teams and workspaces](https://openpo.st/docs/guides/workspaces).** Keep brands and clients in separate workspaces and control who can edit them. Protect your account with passkeys, two-factor authentication, and session controls.\n\n## Get started\n\n### OpenPost Hosted\n\nHosted signups are temporarily on a waitlist while we finish the remaining social platform approvals. Existing accounts can still sign in.\n\n[Join the waitlist](https://app.openpo.st/register)\n\n[View plans](https://openpo.st/pricing)\n\n### Self-host\n\nRun OpenPost with Docker Compose. The default setup uses one container with SQLite and local media storage.\n\n<a href=\"https://openpo.st/docs/self-hosting/\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/self-host-dark.svg\">\n    <img src=\"./assets/buttons/self-host-light.svg\" alt=\"Get started with self-hosting\" height=\"36\">\n  </picture>\n</a>\n\n[Configure integrations](https://openpo.st/docs/self-hosting/integrations) · [Backups and upgrades](https://openpo.st/docs/self-hosting/maintenance)\n\n## Supported platforms\n\n<p>\n  <img src=\"./assets/postiz-socials/Instagram.svg\" alt=\"Instagram\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Facebook.svg\" alt=\"Facebook\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Linkedin.svg\" alt=\"LinkedIn\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/X.svg\" alt=\"X\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/TikTok.svg\" alt=\"TikTok\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Youtube.svg\" alt=\"YouTube\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Threads.svg\" alt=\"Threads\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Bluesky.svg\" alt=\"Bluesky\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Mastodon.svg\" alt=\"Mastodon\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Pixelfed.svg\" alt=\"Pixelfed\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Peertube.svg\" alt=\"PeerTube\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Lemmy.svg\" alt=\"Lemmy\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/PieFed.svg\" alt=\"PieFed\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Discord.svg\" alt=\"Discord\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Pinterest.svg\" alt=\"Pinterest\" width=\"32\" height=\"32\">\n  <img src=\"./assets/postiz-socials/Telegram.svg\" alt=\"Telegram\" width=\"32\" height=\"32\">\n</p>\n\nOpenPost has integrations for Instagram, Facebook, LinkedIn, X, TikTok, YouTube, Threads, Bluesky, Mastodon, Pixelfed, PeerTube, Lemmy, PieFed, Discord, Pinterest, and Telegram. Mastodon and Pixelfed connect per instance over OAuth; PeerTube, Lemmy, and PieFed connect with instance credentials. Discord supports incoming webhooks and a bot integration; Telegram uses a bot.\n\nPosting formats, inbox features, and analytics vary by platform. Some integrations require provider app approval or publicly reachable media URLs.\n\n[Connect accounts](https://openpo.st/docs/guides/accounts) · [Integration requirements](https://openpo.st/docs/self-hosting/integrations)\n\n## Contributing\n\nReport bugs, improve the docs, or send a pull request. For larger changes, open an issue first so we can agree on the approach.\n\nOpenPost uses Go, SvelteKit, and Expo, with a Devenv development environment. Start with the [contributing guide](./.github/CONTRIBUTING.md) and [development setup](https://openpo.st/docs/development/setup).\n\n<a href=\"https://github.com/getopenpost/openpost/issues\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/report-bug-dark.svg\">\n    <img src=\"./assets/buttons/report-bug-light.svg\" alt=\"Report a bug\" height=\"36\">\n  </picture>\n</a>\n<a href=\"https://discord.com/invite/u2QwukmY4W\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/buttons/join-discord-dark.svg\">\n    <img src=\"./assets/buttons/join-discord-light.svg\" alt=\"Join Discord\" height=\"36\">\n  </picture>\n</a>\n\n## Star history\n\nSupport OpenPost with a [GitHub star](https://github.com/getopenpost/openpost/stargazers).\n\n<!-- star-history:start -->\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/star-history/star-history-dark.svg\">\n  <img alt=\"Star history\" src=\"assets/star-history/star-history-light.svg\">\n</picture>\n<!-- star-history:end -->\n\n## License and security\n\nOpenPost uses the [AGPL-3.0-only license](./LICENSE). See the [third-party notices](./licenses/README.md) for dependency licenses and attribution.\n\nReport vulnerabilities privately through the [security policy](./.github/SECURITY.md).\n",
+      "media": [],
+      "score": 1132.35
     }
   ]
 }
