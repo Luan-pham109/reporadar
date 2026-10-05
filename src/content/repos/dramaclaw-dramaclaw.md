@@ -14,14 +14,14 @@ vertical: ["creative", "agency", "ecom"]
 
 maturity: "rising"
 repoStats:
-  stars: 787
-  forks: 96
-  note: "~104 ngày tuổi, ~7.6 sao/ngày"
-  starsPerDay: 7.6
-  ageDays: 104
-  pushedAt: "2026-07-09"
+  stars: 6665
+  forks: 805
+  note: "~192 ngày tuổi, ~34.7 sao/ngày"
+  starsPerDay: 34.7
+  ageDays: 192
+  pushedAt: "2026-10-01T16:46:44Z"
   archived: false
-  openIssues: 7
+  openIssues: 107
 standoutFeatures:
   - "Một pipeline liền mạch từ bản thảo tới thành phim: tách nhân vật & story graph, chia tập/nhịp truyện, sinh kịch bản, storyboard + khung hình đầu, lồng tiếng và dựng phim + xuất phụ đề."
   - "Giữ nhất quán nhân vật/bối cảnh xuyên tập nhờ Asset Library (nhân vật, cảnh, đạo cụ, giọng) và 'Director World / 3GS' khoá cấu trúc không gian, vị trí nhân vật và góc máy cho cùng một bối cảnh."

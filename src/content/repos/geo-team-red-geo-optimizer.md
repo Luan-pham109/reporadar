@@ -8,8 +8,14 @@ vertical: ["seo", "agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 200
-  note: "Số sao lấy từ snapshot discovery của pipeline (GitHub API chưa fetch được trong lần soi này, chưa có tuổi repo/sao/ngày)."
+  stars: 181
+  forks: 14
+  note: "~247 ngày tuổi, ~0.7 sao/ngày"
+  starsPerDay: 0.7
+  ageDays: 247
+  pushedAt: "2026-03-27T04:16:15Z"
+  archived: false
+  openIssues: 2
 standoutFeatures:
   - "5 chiến lược tối ưu dựng sẵn: Structure, Schema, AnswerFirst, Authority, FAQ."
   - "Kiến trúc mở rộng: dev có thể tự đăng ký (register) chiến lược tuỳ biến của riêng mình."
