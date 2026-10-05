@@ -17,9 +17,14 @@ vertical: ["creative"]
 
 maturity: "established"
 repoStats:
-  stars: 12674
-  forks: 1378
-  note: "~215 ngày tuổi, ~58.9 sao/ngày"
+  stars: 13537
+  forks: 1435
+  note: "~316 ngày tuổi, ~42.8 sao/ngày"
+  starsPerDay: 42.8
+  ageDays: 316
+  pushedAt: "2026-10-05T08:14:39Z"
+  archived: false
+  openIssues: 1
 standoutFeatures:
   - "Tập hợp hơn 10.000 prompt có ảnh preview cho Nano Banana Pro."
   - "Có nhiều ngôn ngữ và nhiều nhóm style, tiện để tìm ý tưởng visual nhanh."

@@ -9,13 +9,13 @@ vertical: ["agency", "creative"]
 maturity: "pre-viral"
 repoStats:
   stars: 71
-  forks: 13
-  note: "~196 ngày tuổi, ~0.4 sao/ngày"
-  starsPerDay: 0.4
-  ageDays: 196
-  pushedAt: 2026-01-10T21:39:36Z
+  forks: 12
+  note: "~286 ngày tuổi, ~0.2 sao/ngày"
+  starsPerDay: 0.2
+  ageDays: 286
+  pushedAt: "2026-01-10T21:39:36Z"
   archived: false
-  openIssues: 2
+  openIssues: 3
 standoutFeatures:
   - "README mô tả tool sinh prompt cho việc tạo slide bằng AI, với 50+ loại slide theo nội dung (mở đầu, biểu đồ, timeline, so sánh, case study, CTA...)."
   - "Có tính năng Character Presenter: thêm một nhân vật dẫn nhất quán qua các slide với 8 phong cách render (Pixar, Real, Anime, Cartoon...)."
