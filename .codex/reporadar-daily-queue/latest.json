@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T07:41:05.694Z",
+  "generatedAt": "2026-10-07T07:21:51.022Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -22,12 +22,12 @@
         "fullName": "hypit-ai/hypit",
         "url": "https://github.com/hypit-ai/hypit",
         "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-        "stars": 19554,
+        "stars": 19817,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 19554"
+          "⭐ 19817"
         ],
         "signalUrls": [],
         "points": 0,
@@ -44,14 +44,14 @@
         "github": {
           "fullName": "hypit-ai/hypit",
           "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-          "stars": 19554,
-          "forks": 2186,
+          "stars": 19817,
+          "forks": 2197,
           "createdAt": "2026-07-29T18:49:19Z",
-          "ageDays": 69,
-          "starsPerDay": 283.4,
+          "ageDays": 70,
+          "starsPerDay": 283.1,
           "pushedAt": "2026-10-04T13:43:32Z",
           "archived": false,
-          "openIssues": 25,
+          "openIssues": 27,
           "topics": [
             "agentic-ai",
             "ai",
@@ -100,7 +100,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "19554 sao, 2186 fork, ~283.4 sao/ngày, 69 ngày tuổi"
+            "19817 sao, 2197 fork, ~283.1 sao/ngày, 70 ngày tuổi"
           ]
         }
       },
@@ -122,7 +122,7 @@
           "caption": ""
         }
       ],
-      "score": 2077.7
+      "score": 2090.85
     },
     {
       "candidate": {
@@ -152,14 +152,14 @@
         "github": {
           "fullName": "devdotfast/whiteboard",
           "description": "open-source canvas for thoughtful software design",
-          "stars": 2861,
-          "forks": 134,
+          "stars": 2894,
+          "forks": 141,
           "createdAt": "2026-08-18T15:06:04Z",
-          "ageDays": 49,
-          "starsPerDay": 58.4,
-          "pushedAt": "2026-10-06T04:33:28Z",
+          "ageDays": 50,
+          "starsPerDay": 57.9,
+          "pushedAt": "2026-10-07T07:16:39Z",
           "archived": false,
-          "openIssues": 33,
+          "openIssues": 35,
           "topics": [],
           "homepage": "https://whiteboard.dev.fast/",
           "language": "TypeScript",
@@ -195,7 +195,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "2861 sao, 134 fork, ~58.4 sao/ngày, 49 ngày tuổi"
+            "2894 sao, 141 fork, ~57.9 sao/ngày, 50 ngày tuổi"
           ]
         }
       },
@@ -229,11 +229,11 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5283,
+          "stars": 5280,
           "forks": 200,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 223,
-          "starsPerDay": 23.7,
+          "ageDays": 224,
+          "starsPerDay": 23.6,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
           "openIssues": 136,
@@ -291,7 +291,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5283 sao, 200 fork, ~23.7 sao/ngày, 223 ngày tuổi"
+            "5280 sao, 200 fork, ~23.6 sao/ngày, 224 ngày tuổi"
           ]
         }
       },
@@ -305,12 +305,12 @@
         "fullName": "Vincentwei1021/anything2explainer",
         "url": "https://github.com/Vincentwei1021/anything2explainer",
         "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-        "stars": 2262,
+        "stars": 2286,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 2262"
+          "⭐ 2286"
         ],
         "signalUrls": [],
         "points": 0,
@@ -326,11 +326,11 @@
         "github": {
           "fullName": "Vincentwei1021/anything2explainer",
           "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-          "stars": 2262,
-          "forks": 314,
+          "stars": 2286,
+          "forks": 317,
           "createdAt": "2026-09-08T17:19:54Z",
-          "ageDays": 28,
-          "starsPerDay": 80.8,
+          "ageDays": 29,
+          "starsPerDay": 78.8,
           "pushedAt": "2026-09-18T11:52:13Z",
           "archived": false,
           "openIssues": 5,
@@ -380,7 +380,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "2262 sao, 314 fork, ~80.8 sao/ngày, 28 ngày tuổi"
+            "2286 sao, 317 fork, ~78.8 sao/ngày, 29 ngày tuổi"
           ]
         }
       },
@@ -397,7 +397,7 @@
           "caption": ""
         }
       ],
-      "score": 1213.1
+      "score": 1214.3
     },
     {
       "candidate": {
@@ -405,12 +405,12 @@
         "fullName": "alesha-pro/tools",
         "url": "https://github.com/alesha-pro/tools",
         "description": "Tools, ComfyUI workflows and benchmark configs from a 4x RTX 3090 local-inference rig",
-        "stars": 672,
+        "stars": 673,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 672"
+          "⭐ 673"
         ],
         "signalUrls": [],
         "points": 0,
@@ -426,11 +426,11 @@
         "github": {
           "fullName": "alesha-pro/tools",
           "description": "Tools, ComfyUI workflows and benchmark configs from a 4x RTX 3090 local-inference rig",
-          "stars": 672,
+          "stars": 673,
           "forks": 76,
           "createdAt": "2026-08-07T12:05:59Z",
-          "ageDays": 60,
-          "starsPerDay": 11.2,
+          "ageDays": 61,
+          "starsPerDay": 11,
           "pushedAt": "2026-09-28T12:49:14Z",
           "archived": false,
           "openIssues": 0,
@@ -468,13 +468,13 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "672 sao, 76 fork, ~11.2 sao/ngày, 60 ngày tuổi"
+            "673 sao, 76 fork, ~11 sao/ngày, 61 ngày tuổi"
           ]
         }
       },
       "readmeExcerpt": "<div align=\"center\">\n\n# tools\n\nThings I build while running models on my own hardware,\ncleaned up enough for other people to use.\n\n[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Rig](https://img.shields.io/badge/measured%20on-4x%20RTX%203090-76b900.svg)](https://x.com/superalesha)\n[![X](https://img.shields.io/badge/@superalesha-follow-black.svg)](https://x.com/superalesha)\n\n</div>\n\n---\n\n## Sections\n\nEvery section stands on its own, with its own installer and its own docs. There\nis no shared setup to get through first.\n\n### [minimax-h3](minimax-h3)\n\nVideo with sound, generated at home.\n[MiniMax H3](https://huggingface.co/Comfy-Org/MiniMax-H3) writes the picture and\nthe synchronized audio in one pass, so voice, effects and music come out of the\nsame generation as the frames. Open weights.\n\nThirteen ComfyUI workflows in two sets. One set runs on any single 24 GB card. The\nother puts every card in a multi-GPU box to work and hits **3.12x on four\ncards**, taking a 15-second shot from 19 minutes of sampling down to 6:41.\n\nShips with the custom nodes, the patch that makes the turbo LoRA actually load,\nand a three-command installer.\n\n```bash\ncd minimax-h3 && ./install/setup.sh check\n```\n\n### [qwen-image-2.1](qwen-image-2.1)\n\nImage generation, editing and transparent PNGs on **one GPU**. The baseline is\nan RTX 3090 with 24 GB VRAM, using official INT8 ConvRot weights.\n\nFive native ComfyUI workflows, an isolated installer, SHA-256 model verification,\nand a script that submits a generation and checks the resulting PNG. Includes\nan [English guide](qwen-image-2.1/README.md), a\n[Russian guide](qwen-image-2.1/README.ru.md), and an\n[installation brief for an agent](qwen-image-2.1/INSTALL-WITH-AGENT.md).\n\nFor smaller GPUs, use the **[low-VRAM guide](qwen-image-2.1/LOW-VRAM.md)**:\nGGUF Q4_K_M, CPU offloading, 7 workflows, and measured memory requirements.\n\n```bash\ncd qwen-image-2.1\npython3 install/setup.py check\n```\n\n### [skills](skills)\n\nAgent skills that stand on their own.\n\n**[hand-drawn-canvas-animation](skills/hand-drawn-canvas-animation)** makes short\nfilms with authored poses and expressive strokes in JavaScript and Canvas 2D.\nIt covers pencil, ink, risograph, screen print and drawings interacting with\nreal photos, plus sand animation and projected paper. The\n[60-second phoenix film](skills/hand-drawn-canvas-animation/examples/becoming-phoenix/)\ncombines the materials through one story, including a moving storm and wings\nthat unfold from a book. The skill includes editable examples, original sound,\nan MP4 renderer and browser regression checks. No Blender or video-generation\nmodel is required.\n\n```bash\ncp -r skills/hand-drawn-canvas-animation ~/.agents/skills/\n```\n\n**[motion-reel](skills/motion-reel)** makes product films, showreels and UI morphs\nfrom a brief and visual references. It includes a Canvas renderer, spring motion,\noriginal music and SFX, beat analysis, contact sheets and MP4 checks. The skill\ncovers planning, animation, review and export, with source files you can edit.\n\nMore lands here as I clean it up.\n\n---\n\n## The rig everything is measured on\n\n4x RTX 3090, 96 GB VRAM total, PCIe 3.0 x16, no NVLink, 320 W per card. Ubuntu.\n\nNumbers in these READMEs come from real runs on that machine, not from\ndatasheets. Your absolute times will differ, the ratios usually hold.\n\nThere is one thing worth checking on your own box before anything else. Cards\nship at whatever power limit the vendor set, and it is often well under the\ndefault. Mine were at 220 W against a 350 W default, and raising them to 320\ntook an identical run from 220 seconds down to 170.\n\n```bash\nnvidia-smi --query-gpu=name,power.limit,power.default_limit --format=csv\n```\n\n---\n\n<div align=\"center\">\n\nI post the benchmarks behind all of this. Local inference on 4x RTX 3090,\nopen-weights models, argv and raw logs attached.\n\n**[@superalesha](https://x.com/superalesha)**\n\nMIT. Take it, change it, ship it.\n\n</div>\n",
       "media": [],
-      "score": 1133.6
+      "score": 1133.65
     }
   ]
 }
