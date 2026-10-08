@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T07:21:51.022Z",
+  "generatedAt": "2026-10-08T07:36:41.914Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -18,16 +18,123 @@
   "items": [
     {
       "candidate": {
-        "key": "hypit-ai/hypit",
-        "fullName": "hypit-ai/hypit",
-        "url": "https://github.com/hypit-ai/hypit",
-        "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-        "stars": 19817,
+        "key": "coreyhaines31/marketingskills",
+        "fullName": "coreyhaines31/marketingskills",
+        "url": "https://github.com/coreyhaines31/marketingskills",
+        "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+        "stars": 53633,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 19817"
+          "⭐ 53633"
+        ],
+        "signalUrls": [],
+        "points": 0,
+        "verticals": [
+          "agency",
+          "seo"
+        ]
+      },
+      "signals": {
+        "repo": {
+          "owner": "coreyhaines31",
+          "repo": "marketingskills"
+        },
+        "github": {
+          "fullName": "coreyhaines31/marketingskills",
+          "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+          "stars": 53633,
+          "forks": 7979,
+          "createdAt": "2026-01-15T19:45:23Z",
+          "ageDays": 265,
+          "starsPerDay": 202.4,
+          "pushedAt": "2026-10-08T00:15:39Z",
+          "archived": false,
+          "openIssues": 155,
+          "topics": [
+            "agent-skills",
+            "ai-agents",
+            "ai-seo",
+            "claude",
+            "claude-code",
+            "claude-code-plugin",
+            "claude-skills",
+            "codex",
+            "content-marketing",
+            "conversion-rate-optimization",
+            "copywriting",
+            "cursor",
+            "email-marketing",
+            "generative-engine-optimization",
+            "growth-marketing",
+            "marketing",
+            "marketing-automation",
+            "saas-marketing",
+            "seo",
+            "skill-md"
+          ],
+          "homepage": "https://marketing-skills.com",
+          "language": "JavaScript",
+          "suggestedHealthScore": 25
+        },
+        "hackerNews": [
+          {
+            "title": "Claude Code Skills for Marketing",
+            "points": 1,
+            "comments": 0,
+            "createdAt": "2026-01-27T14:46:33Z",
+            "hnUrl": "https://news.ycombinator.com/item?id=46780666"
+          },
+          {
+            "title": "Marketing Skills for Claude Code",
+            "points": 1,
+            "comments": 0,
+            "createdAt": "2026-01-22T15:15:35Z",
+            "hnUrl": "https://news.ycombinator.com/item?id=46720299"
+          }
+        ],
+        "reddit": [
+          {
+            "subreddit": "selfhosted",
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=marketingskills&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=marketingskills&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "opensource",
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=marketingskills&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=marketingskills&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "SideProject",
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=marketingskills&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=marketingskills&restrict_sr=1&sort=new"
+          }
+        ],
+        "heuristic": {
+          "maturitySuggestion": "established",
+          "reasons": [
+            "Đang được bàn ở HN/Reddit",
+            "53633 sao, 7979 fork, ~202.4 sao/ngày, 265 ngày tuổi"
+          ]
+        }
+      },
+      "readmeExcerpt": "# Marketing Skills for AI Agents\n\nA collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the [Agent Skills spec](https://agentskills.io).\n\nBuilt by [Corey Haines](https://corey.co?ref=marketingskills). Need hands-on help? Check out [Conversion Factory](https://conversionfactory.co?ref=marketingskills) — Corey's agency for conversion optimization, landing pages, and growth strategy. Want to learn more about marketing? Subscribe to [Swipe Files](https://swipefiles.com?ref=marketingskills). Want to get dangerously good at using AI for marketing? Check out [AI Marketing Training](https://conversionfactory.co/offers/ai-marketing-training?ref=marketingskills). Want an autonomous AI agent that uses these skills to be your CMO? Try [Magister](https://magistermarketing.com?ref=marketingskills).\n\nNew to the terminal and coding agents? Check out the companion guide [Coding for Marketers](https://codingformarketers.com?ref=marketingskills).\n\n**Contributions welcome!** Found a way to improve a skill or have a new one to add? [Open a PR](#contributing).\n\nRun into a problem or have a question? [Open an issue](https://github.com/coreyhaines31/marketingskills/issues) — we're happy to help.\n\n## Partners\n\nThe library is free and MIT-licensed. [Verified Partners](tools/REGISTRY.md#verified-partners) fund the work — vetted, disclosed tool integrations, listed alongside the neutral options and never influencing what the core skills recommend. The full rules and boundaries are in [tools/PARTNERS.md](tools/PARTNERS.md). [Become a partner →](https://marketing-skills.com/sponsorship)\n\n<!-- PARTNERS:START -->\n> ◆ **[Converly](https://converly.io?ref=marketingskills)** — *Conversion tracking / attribution.* Server-side conversion tracking that fires when someone submits a form, books a meeting, or starts a chat — passing click IDs and identifiers for Enhanced Conversions (Google) and high EMQ match rates (Meta), across 100+ tools. CLI + MCP so your agent sets it up in minutes. → [Integration guide](tools/integrations/converly.md)\n\n> ◆ **[Ploy](https://ploy.ai?ref=marketingskills)** — *AI website & growth platform.* AI marketing platform built around a hosted website builder — an in-app agent that builds and publishes pages, PloyDB for pages at scale, routing to add pages to an existing site, built-in analytics and visitor identification, and a CLI for coding agents. → [Integration guide](tools/integrations/ploy.md)\n<!-- PARTNERS:END -->\n\n<!-- The Partners block above is generated from partners.json — run `node scripts/sync-partners.mjs` after editing it. -->\n\n## What are Skills?\n\nSkills are markdown files that give AI agents specialized knowledge and workflows for specific tasks. When you add these to your project, your agent can recognize when you're working on a marketing task and apply the right frameworks and best practices.\n\n## How Skills Work Together\n\nSkills reference each other and build on shared context. The `product-marketing` skill is the foundation — every other skill checks it first to understand your product, audience, and positioning before doing anything.\n\n```\n                            ┌──────────────────────────────────────┐\n                            │          product-marketing           │\n                            │    (read by all other skills first)  │\n                            └──────────────────┬───────────────────┘\n                                               │\n    ┌──────────────┬─────────────┬─────────────┼─────────────┬──────────────┬──────────────┐\n    ▼              ▼             ▼             ▼             ▼              ▼              ▼\n┌──────────┐ ┌──────────┐ ┌──────────┐ ┌────────────┐ ┌──────────┐ ┌─────────────┐ ┌───────────┐\n│  SEO &   │ │   CRO    │ │Content & │ │  Paid &    │ │ Growth & │ │  Sales &    │ │ Strategy  │\n│ Content  │ │          │ │   Copy   │ │Measurement │ │Retention │ │    GTM      │ │           │\n├──────────┤ ├──────────┤ ├──────────┤ ├────────────┤ ├──────────┤ ├─────────────┤ ├───────────┤\n│seo-audit │ │cro       │ │copywritin│ │ads         │ │referrals │ │revops       │ │mktg-ideas │\n│ai-seo    │ │signup    │ │copy-edit │ │ad-creative │ │free-tools│ │sales-enable │ │mktg-psych │\n│site-arch │ │onboarding│ │cold-email│ │ab-testing  │ │churn-    │ │launch       │ │customer-  │\n│programm  │ │popups    │ │emails    │ │analytics   │ │ prevent  │ │pricing      │ │ research  │\n│schema    │ │paywalls  │ │social    │ │            │ │community │ │competitors  │ │           │\n│content   │ │          │ │video     │ │            │ │lead-magnt│ │comp-profile │ │           │\n│aso       │ │          │ │image     │ │            │ │co-mktg   │ │directory    │ │           │\n│          │ │          │ │sms       │ │            │ │          │ │prospecting  │ │           │\n└────┬─────┘ └────┬─────┘ └────┬─────┘ └─────┬──────┘ └────┬─────┘ └──────┬──────┘ └─────┬─────┘\n     │            │            │              │             │              │              │\n     └────────────┴─────┬──────┴──────────────┴─────────────┴──────────────┴──────────────┘\n                        │\n         Skills cross-reference each other:\n           copywriting ↔ cro ↔ ab-testing\n           revops ↔ sales-enablement ↔ cold-email\n           seo-audit ↔ schema ↔ ai-seo\n           customer-research → copywriting, cro, competitors\n```\n\nSee each skill's **Related Skills** section for the full dependency map.\n\n## Available Skills\n\n<!-- SKILLS:START -->\n| Skill | Description |\n|-------|-------------|\n| [ab-testing](skills/ab-testing/) | When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program.... |\n| [ad-creative](skills/ad-creative/) | When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad... |\n| [ads](skills/ads/) | When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X,... |\n| [ai-seo](skills/ai-seo/) | When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers.... |\n| [analytics](skills/analytics/) | When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions... |\n| [aso](skills/aso/) | When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO... |\n| [attribution](skills/attribution/) | When the user wants to figure out which marketing actually drives conversions and revenue, choose or interpret an... |\n| [churn-prevention](skills/churn-prevention/) | When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or... |\n| [co-marketing](skills/co-marketing/) | When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use... |\n| [cold-email](skills/cold-email/) | Write and run B2B cold outbound that gets replies, from cold emails and follow-ups to sending setup, LinkedIn,... |\n| [community-marketing](skills/community-marketing/) | Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a... |\n| [competitor-profiling](skills/competitor-profiling/) | When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions... |\n| [competitors](skills/competitors/) | When the user wants to create competitor comparison or alternative pages for SEO and buyer-facing use. Also use when... |\n| [content-strategy](skills/content-strategy/) | When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also... |\n| [copy-editing](skills/copy-editing/) | When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content. Also use when the... |\n| [copywriting](skills/copywriting/) | When the user wants to write, rewrite, or improve marketing copy for any page, including homepage, landing pages,... |\n| [cro](skills/cro/) | When the user wants to optimize, improve, or increase conversions on any marketing page or form — including homepage,... |\n| [customer-research](skills/customer-research/) | When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions \"customer... |\n| [directory-submissions](skills/directory-submissions/) | When the user wants to submit their product to startup, SaaS, AI, agent, MCP, no-code, or review directories for... |\n| [emails](skills/emails/) | When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email... |\n| [events](skills/events/) | When the user wants to plan, run, sponsor, speak at, or get pipeline from events — webinars, conferences, trade shows,... |\n| [free-tools](skills/free-tools/) | When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or... |\n| [image](skills/image/) | When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product... |\n| [influencer-marketing](skills/influencer-marketing/) | When the user wants to run influencer, creator, or ambassador partnerships to promote their product — finding and... |\n| [launch](skills/launch/) | When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user... |\n| [lead-magnets](skills/lead-magnets/) | When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the... |\n| [marketing-council](skills/marketing-council/) | When the user wants multiple expert perspectives on a marketing question — a simulated board of advisors staffed by... |\n| [marketing-ideas](skills/marketing-ideas/) | When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the... |\n| [marketing-loops](skills/marketing-loops/) | When the user wants to set up a recurring, self-running marketing workflow — a repeatable loop an AI agent runs on a... |\n| [marketing-plan](skills/marketing-plan/) | When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use... |\n| [marketing-psychology](skills/marketing-psychology/) | When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when... |\n| [offers](skills/offers/) | When the user wants to design, construct, or improve an offer — the thing they actually sell — including value framing,... |\n| [onboarding](skills/onboarding/) | When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also... |\n| [paywalls](skills/paywalls/) | When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use... |\n| [popups](skills/popups/) | When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes. Also... |\n| [pricing](skills/pricing/) | When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions... |\n| [product-marketing](skills/product-marketing/) | When the user wants to create or update their product marketing context document. Also use when the user mentions... |\n| [programmatic-seo](skills/programmatic-seo/) | When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions... |\n| [prospecting](skills/prospecting/) | When the user wants to find, qualify, and build a list of prospects to reach out to, across B2B SaaS, general B2B, or... |\n| [public-relations](skills/public-relations/) | When the user wants help with public relations, earned media, press coverage, journalist outreach, or media strategy... |\n| [referrals](skills/referrals/) | When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy.... |\n| [revops](skills/revops/) | When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes.... |\n| [sales-enablement](skills/sales-enablement/) | When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also... |\n| [schema](skills/schema/) | When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user... |\n| [seo-audit](skills/seo-audit/) | When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions \"SEO... |\n| [signup](skills/signup/) | When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the... |\n| [site-architecture](skills/site-architecture/) | When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal... |\n| [sms](skills/sms/) | When the user wants to plan, build, or optimize SMS, MMS, or WhatsApp marketing — including welcome flows, abandoned... |\n| [social](skills/social/) | When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram,... |\n| [video](skills/video/) | When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use... |\n<!-- SKILLS:END -->\n\n## Installation\n\n### Option 1: CLI Install (Recommended)\n\nUse [npx skills](https://github.com/vercel-labs/skills) to install skills directly:\n\n```bash\n# Install all skills\nnpx skills add coreyhaines31/marketingskills\n\n# Install specific skills\nnpx skills add coreyhaines31/marketingskills --skill cro copywriting\n\n# List available skills\nnpx skills add coreyhaines31/marketingskills --list\n```\n\nThe CLI detects which agents you have installed and asks where to install. For Claude Code it installs into `.claude/skills/`; universal agents share `.agents/skills/`.\n\n> [!TIP]\n> If you run the command from **inside** an agent session (e.g., asking Claude Code to install the skills for you), the CLI runs non-interactively and may only install to the universal `.agents/skills/` directory, which Claude Code does not read. Pass the agent explicitly:\n>\n> ```bash\n> npx skills add coreyhaines31/marketingskills -a claude-code\n> ```\n\n### Option 2: Claude Code Plugin\n\nInstall via Claude Code's built-in plugin system:\n\n```bash\n# Add the marketplace\n/plugin marketplace add coreyhaines31/marketingskills\n\n# Install all marketing skills\n/plugin install marketing-skills\n```\n\n> **Note:** `/plugin` is only available in an interactive Claude Code CLI session. It is **not** available in Claude Code on the web, GitHub Actions, or other non-interactive/remote environments — in those cases you'll see `/plugin isn't available in this environment`. Use **Option 1 (`npx skills`)** instead, or the equivalent CLI commands:\n>\n> ```bash\n> claude plugin marketplace add coreyhaines31/marketingskills\n> claude plugin install marketing-skills@marketingskills\n> ```\n\n### Option 3: OpenAI Codex Plugin\n\nInstall via Codex's plugin system:\n\n```bash\n# Add the marketplace\ncodex plugin marketplace add coreyhaines31/marketingskills\n\n# Then browse and install from inside a Codex session\n/plugins\n```\n\nSelect **marketing-skills** to install all skills. To pick up new releases later, run `codex plugin marketplace upgrade`.\n\n### Option 4: Clone and Copy\n\nClone the entire repo and copy the skills folder:\n\n```bash\ngit clone https://github.com/coreyhaines31/marketingskills.git\ncp -r marketingskills/skills/* .agents/skills/\n",
+      "media": [],
+      "score": 2100
+    },
+    {
+      "candidate": {
+        "key": "hypit-ai/hypit",
+        "fullName": "hypit-ai/hypit",
+        "url": "https://github.com/hypit-ai/hypit",
+        "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
+        "stars": 20180,
+        "sources": [
+          "github-search"
+        ],
+        "signals": [
+          "⭐ 20180"
         ],
         "signalUrls": [],
         "points": 0,
@@ -44,11 +151,11 @@
         "github": {
           "fullName": "hypit-ai/hypit",
           "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-          "stars": 19817,
-          "forks": 2197,
+          "stars": 20180,
+          "forks": 2223,
           "createdAt": "2026-07-29T18:49:19Z",
-          "ageDays": 70,
-          "starsPerDay": 283.1,
+          "ageDays": 71,
+          "starsPerDay": 284.2,
           "pushedAt": "2026-10-04T13:43:32Z",
           "archived": false,
           "openIssues": 27,
@@ -76,7 +183,7 @@
           ],
           "homepage": "https://hypit.ai",
           "language": "TypeScript",
-          "suggestedHealthScore": 23
+          "suggestedHealthScore": 25
         },
         "hackerNews": [],
         "reddit": [
@@ -100,7 +207,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "19817 sao, 2197 fork, ~283.1 sao/ngày, 70 ngày tuổi"
+            "20180 sao, 2223 fork, ~284.2 sao/ngày, 71 ngày tuổi"
           ]
         }
       },
@@ -122,7 +229,7 @@
           "caption": ""
         }
       ],
-      "score": 2090.85
+      "score": 2100
     },
     {
       "candidate": {
@@ -152,14 +259,14 @@
         "github": {
           "fullName": "devdotfast/whiteboard",
           "description": "open-source canvas for thoughtful software design",
-          "stars": 2894,
-          "forks": 141,
+          "stars": 2946,
+          "forks": 147,
           "createdAt": "2026-08-18T15:06:04Z",
-          "ageDays": 50,
-          "starsPerDay": 57.9,
-          "pushedAt": "2026-10-07T07:16:39Z",
+          "ageDays": 51,
+          "starsPerDay": 57.8,
+          "pushedAt": "2026-10-08T07:19:23Z",
           "archived": false,
-          "openIssues": 35,
+          "openIssues": 40,
           "topics": [],
           "homepage": "https://whiteboard.dev.fast/",
           "language": "TypeScript",
@@ -195,7 +302,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "2894 sao, 141 fork, ~57.9 sao/ngày, 50 ngày tuổi"
+            "2946 sao, 147 fork, ~57.8 sao/ngày, 51 ngày tuổi"
           ]
         }
       },
@@ -229,11 +336,11 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5280,
+          "stars": 5279,
           "forks": 200,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 224,
-          "starsPerDay": 23.6,
+          "ageDays": 225,
+          "starsPerDay": 23.5,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
           "openIssues": 136,
@@ -291,7 +398,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5280 sao, 200 fork, ~23.6 sao/ngày, 224 ngày tuổi"
+            "5279 sao, 200 fork, ~23.5 sao/ngày, 225 ngày tuổi"
           ]
         }
       },
@@ -305,12 +412,12 @@
         "fullName": "Vincentwei1021/anything2explainer",
         "url": "https://github.com/Vincentwei1021/anything2explainer",
         "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-        "stars": 2286,
+        "stars": 2318,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 2286"
+          "⭐ 2318"
         ],
         "signalUrls": [],
         "points": 0,
@@ -326,11 +433,11 @@
         "github": {
           "fullName": "Vincentwei1021/anything2explainer",
           "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-          "stars": 2286,
-          "forks": 317,
+          "stars": 2318,
+          "forks": 321,
           "createdAt": "2026-09-08T17:19:54Z",
-          "ageDays": 29,
-          "starsPerDay": 78.8,
+          "ageDays": 30,
+          "starsPerDay": 77.3,
           "pushedAt": "2026-09-18T11:52:13Z",
           "archived": false,
           "openIssues": 5,
@@ -380,7 +487,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "2286 sao, 317 fork, ~78.8 sao/ngày, 29 ngày tuổi"
+            "2318 sao, 321 fork, ~77.3 sao/ngày, 30 ngày tuổi"
           ]
         }
       },
@@ -397,84 +504,7 @@
           "caption": ""
         }
       ],
-      "score": 1214.3
-    },
-    {
-      "candidate": {
-        "key": "alesha-pro/tools",
-        "fullName": "alesha-pro/tools",
-        "url": "https://github.com/alesha-pro/tools",
-        "description": "Tools, ComfyUI workflows and benchmark configs from a 4x RTX 3090 local-inference rig",
-        "stars": 673,
-        "sources": [
-          "github-search"
-        ],
-        "signals": [
-          "⭐ 673"
-        ],
-        "signalUrls": [],
-        "points": 0,
-        "verticals": [
-          "creative"
-        ]
-      },
-      "signals": {
-        "repo": {
-          "owner": "alesha-pro",
-          "repo": "tools"
-        },
-        "github": {
-          "fullName": "alesha-pro/tools",
-          "description": "Tools, ComfyUI workflows and benchmark configs from a 4x RTX 3090 local-inference rig",
-          "stars": 673,
-          "forks": 76,
-          "createdAt": "2026-08-07T12:05:59Z",
-          "ageDays": 61,
-          "starsPerDay": 11,
-          "pushedAt": "2026-09-28T12:49:14Z",
-          "archived": false,
-          "openIssues": 0,
-          "topics": [
-            "comfyui",
-            "local-inference",
-            "lora",
-            "minimax-h3",
-            "rtx-3090",
-            "video-generation"
-          ],
-          "homepage": null,
-          "language": "HTML",
-          "suggestedHealthScore": 18
-        },
-        "hackerNews": [],
-        "reddit": [
-          {
-            "subreddit": "selfhosted",
-            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=tools&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=tools&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "opensource",
-            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=tools&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=tools&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "SideProject",
-            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=tools&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=tools&restrict_sr=1&sort=new"
-          }
-        ],
-        "heuristic": {
-          "maturitySuggestion": "rising",
-          "reasons": [
-            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "673 sao, 76 fork, ~11 sao/ngày, 61 ngày tuổi"
-          ]
-        }
-      },
-      "readmeExcerpt": "<div align=\"center\">\n\n# tools\n\nThings I build while running models on my own hardware,\ncleaned up enough for other people to use.\n\n[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Rig](https://img.shields.io/badge/measured%20on-4x%20RTX%203090-76b900.svg)](https://x.com/superalesha)\n[![X](https://img.shields.io/badge/@superalesha-follow-black.svg)](https://x.com/superalesha)\n\n</div>\n\n---\n\n## Sections\n\nEvery section stands on its own, with its own installer and its own docs. There\nis no shared setup to get through first.\n\n### [minimax-h3](minimax-h3)\n\nVideo with sound, generated at home.\n[MiniMax H3](https://huggingface.co/Comfy-Org/MiniMax-H3) writes the picture and\nthe synchronized audio in one pass, so voice, effects and music come out of the\nsame generation as the frames. Open weights.\n\nThirteen ComfyUI workflows in two sets. One set runs on any single 24 GB card. The\nother puts every card in a multi-GPU box to work and hits **3.12x on four\ncards**, taking a 15-second shot from 19 minutes of sampling down to 6:41.\n\nShips with the custom nodes, the patch that makes the turbo LoRA actually load,\nand a three-command installer.\n\n```bash\ncd minimax-h3 && ./install/setup.sh check\n```\n\n### [qwen-image-2.1](qwen-image-2.1)\n\nImage generation, editing and transparent PNGs on **one GPU**. The baseline is\nan RTX 3090 with 24 GB VRAM, using official INT8 ConvRot weights.\n\nFive native ComfyUI workflows, an isolated installer, SHA-256 model verification,\nand a script that submits a generation and checks the resulting PNG. Includes\nan [English guide](qwen-image-2.1/README.md), a\n[Russian guide](qwen-image-2.1/README.ru.md), and an\n[installation brief for an agent](qwen-image-2.1/INSTALL-WITH-AGENT.md).\n\nFor smaller GPUs, use the **[low-VRAM guide](qwen-image-2.1/LOW-VRAM.md)**:\nGGUF Q4_K_M, CPU offloading, 7 workflows, and measured memory requirements.\n\n```bash\ncd qwen-image-2.1\npython3 install/setup.py check\n```\n\n### [skills](skills)\n\nAgent skills that stand on their own.\n\n**[hand-drawn-canvas-animation](skills/hand-drawn-canvas-animation)** makes short\nfilms with authored poses and expressive strokes in JavaScript and Canvas 2D.\nIt covers pencil, ink, risograph, screen print and drawings interacting with\nreal photos, plus sand animation and projected paper. The\n[60-second phoenix film](skills/hand-drawn-canvas-animation/examples/becoming-phoenix/)\ncombines the materials through one story, including a moving storm and wings\nthat unfold from a book. The skill includes editable examples, original sound,\nan MP4 renderer and browser regression checks. No Blender or video-generation\nmodel is required.\n\n```bash\ncp -r skills/hand-drawn-canvas-animation ~/.agents/skills/\n```\n\n**[motion-reel](skills/motion-reel)** makes product films, showreels and UI morphs\nfrom a brief and visual references. It includes a Canvas renderer, spring motion,\noriginal music and SFX, beat analysis, contact sheets and MP4 checks. The skill\ncovers planning, animation, review and export, with source files you can edit.\n\nMore lands here as I clean it up.\n\n---\n\n## The rig everything is measured on\n\n4x RTX 3090, 96 GB VRAM total, PCIe 3.0 x16, no NVLink, 320 W per card. Ubuntu.\n\nNumbers in these READMEs come from real runs on that machine, not from\ndatasheets. Your absolute times will differ, the ratios usually hold.\n\nThere is one thing worth checking on your own box before anything else. Cards\nship at whatever power limit the vendor set, and it is often well under the\ndefault. Mine were at 220 W against a 350 W default, and raising them to 320\ntook an identical run from 220 seconds down to 170.\n\n```bash\nnvidia-smi --query-gpu=name,power.limit,power.default_limit --format=csv\n```\n\n---\n\n<div align=\"center\">\n\nI post the benchmarks behind all of this. Local inference on 4x RTX 3090,\nopen-weights models, argv and raw logs attached.\n\n**[@superalesha](https://x.com/superalesha)**\n\nMIT. Take it, change it, ship it.\n\n</div>\n",
-      "media": [],
-      "score": 1133.65
+      "score": 1215.9
     }
   ]
 }
