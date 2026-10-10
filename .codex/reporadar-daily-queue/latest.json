@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T07:32:35.230Z",
+  "generatedAt": "2026-10-10T07:20:02.073Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -22,12 +22,12 @@
         "fullName": "coreyhaines31/marketingskills",
         "url": "https://github.com/coreyhaines31/marketingskills",
         "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-        "stars": 53831,
+        "stars": 53968,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 53831"
+          "⭐ 53968"
         ],
         "signalUrls": [],
         "points": 0,
@@ -44,14 +44,14 @@
         "github": {
           "fullName": "coreyhaines31/marketingskills",
           "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-          "stars": 53831,
-          "forks": 8007,
+          "stars": 53968,
+          "forks": 8020,
           "createdAt": "2026-01-15T19:45:23Z",
-          "ageDays": 266,
-          "starsPerDay": 202.4,
+          "ageDays": 267,
+          "starsPerDay": 202.1,
           "pushedAt": "2026-10-08T21:51:51Z",
           "archived": false,
-          "openIssues": 29,
+          "openIssues": 30,
           "topics": [
             "agent-skills",
             "ai-agents",
@@ -115,7 +115,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "53831 sao, 8007 fork, ~202.4 sao/ngày, 266 ngày tuổi"
+            "53968 sao, 8020 fork, ~202.1 sao/ngày, 267 ngày tuổi"
           ]
         }
       },
@@ -129,12 +129,12 @@
         "fullName": "hypit-ai/hypit",
         "url": "https://github.com/hypit-ai/hypit",
         "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-        "stars": 20481,
+        "stars": 20650,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 20481"
+          "⭐ 20650"
         ],
         "signalUrls": [],
         "points": 0,
@@ -151,14 +151,14 @@
         "github": {
           "fullName": "hypit-ai/hypit",
           "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-          "stars": 20482,
-          "forks": 2250,
+          "stars": 20650,
+          "forks": 2264,
           "createdAt": "2026-07-29T18:49:19Z",
-          "ageDays": 72,
-          "starsPerDay": 284.5,
-          "pushedAt": "2026-10-09T06:59:25Z",
+          "ageDays": 73,
+          "starsPerDay": 282.9,
+          "pushedAt": "2026-10-09T18:03:34Z",
           "archived": false,
-          "openIssues": 14,
+          "openIssues": 11,
           "topics": [
             "agentic-ai",
             "ai",
@@ -207,11 +207,11 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "20482 sao, 2250 fork, ~284.5 sao/ngày, 72 ngày tuổi"
+            "20650 sao, 2264 fork, ~282.9 sao/ngày, 73 ngày tuổi"
           ]
         }
       },
-      "readmeExcerpt": "<p align=\"center\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./docs/public/hypit-logo-light.svg\">\n    <img alt=\"Hypit\" src=\"./docs/public/hypit-logo-dark.svg\" width=\"400\" height=\"122\">\n  </picture>\n</p>\n\n<h3 align=\"center\">Clone any viral video with AI agents</h3>\n<p align=\"center\">1 command, 100 variants, 100M views.</p>\n\n<p align=\"center\">\n  <a href=\"https://hypit.ai\"><strong>Demo</strong></a>\n  &nbsp;&bull;&nbsp;\n  <a href=\"https://hypit.ai/quickstart/\"><strong>Quickstart</strong></a>\n  &nbsp;&bull;&nbsp;\n  <a href=\"https://hypit.ai/guide/develop/\"><strong>Develop</strong></a>\n  &nbsp;&bull;&nbsp;\n  <a href=\"./README.zh-CN.md\"><strong>简体中文</strong></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://trendshift.io/repositories/229030\"><img alt=\"Trendshift #1 Repository of the Day\" src=\"https://trendshift.io/api/badge/trendshift/repositories/229030/daily\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://trendshift.io/repositories/229030\"><img alt=\"Trendshift #1 TypeScript Repository of the Day\" src=\"https://trendshift.io/api/badge/trendshift/repositories/229030/daily?language=TypeScript\"></a>\n  <a href=\"https://trendshift.io/repositories/229030?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-229030\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/229030/weekly?language=TypeScript\" alt=\"hypit-ai/hypit | Trendshift TypeScript Weekly\" width=\"250\" height=\"55\"></a>\n</p>\n\n<p align=\"center\">\n  <img alt=\"Stars\" src=\"https://img.shields.io/github/stars/hypit-ai/hypit?style=flat-square&color=FFD700&logo=github&logoColor=white&label=Stars\">\n  <a href=\"./package.json\"><img alt=\"Node 22.15+\" src=\"https://img.shields.io/badge/Node.js-22.15%2B-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white\"></a>\n  <a href=\"./package.json\"><img alt=\"pnpm 10.33\" src=\"https://img.shields.io/badge/pnpm-10.33-F69220?style=flat-square&logo=pnpm&logoColor=white\"></a>\n  <a href=\"./package.json\"><img alt=\"TypeScript 5.9\" src=\"https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript&logoColor=white\"></a>\n  <a href=\"./LICENSE\"><img alt=\"License\" src=\"https://img.shields.io/badge/License-Apache--2.0%20with%20conditions-E3B341?style=flat-square\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://hypit.ai\"><img alt=\"Visit our website\" src=\"https://img.shields.io/badge/Visit%20our%20website-DF3C68?style=for-the-badge&logo=hypit&logoColor=white\"></a>\n  <a href=\"https://discord.gg/85hnyQnxpn\"><img alt=\"Join our Discord\" src=\"https://img.shields.io/badge/Join%20our%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white\"></a>\n  <a href=\"https://t.me/hypitai\"><img alt=\"Join our Telegram\" src=\"https://img.shields.io/badge/Join%20our%20Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white\"></a>\n  <a href=\"https://x.com/hypitai\"><img alt=\"Follow @hypitai on X\" src=\"https://img.shields.io/badge/Follow%20%40hypitai-000000?style=for-the-badge&logo=x&logoColor=white\"></a>\n</p>\n\n<p align=\"center\">\n  ⭐ <em>Help more people find Hypit and grow the community. Star this repo!</em>\n</p>\n\n## Hypit\n\nHypit gives AI agents (Claude Code, Codex...) a language and system to create video. Drop in a video, and your agent clones it as a complete workflow: footage, captions, B-roll and effects, all anchored to words instead of seconds.\n\n**To be clear:** cloning a video is the fastest way in, not the only one. You can start from our templates, or just describe the video you want and your agent writes the workflow from scratch. Generation models are optional too: a workflow can compile captions, motion graphics and code-rendered visuals into a finished video without calling a generation model or incurring its service charges.\n\n![SVML source and live video preview](https://github.com/user-attachments/assets/981c28e8-ddab-4164-85bc-03b5d71275dc)\n\n<p align=\"center\"><em>SVML source on the left, with the corresponding video rendered live on the right.</em></p>\n\n## Install once\n\n```bash\nnpx skills add hypit-ai/hypit -g\n```\n\nThis installs the Skill. On first use, your agent checks for the Hypit executable and helps prepare\nit if needed. Your video project can live anywhere.\n\nHypit is free to use; your Coding Agent and model services have their own accounts and charges.\nHypiHub is our recommended hosted model service. You can also use your own API or local models;\ntell your agent the service name and API documentation so it can set up the appropriate connection.\n\n[Agent environments and entry partners](./docs/guide/agents.md) ·\n[Model and deployment services](./docs/guide/service-partners.md)\n\n## Examples\n\n### UGC\n\n[Generation source](examples/ranking-football/reference.svml) · [Run and production notes](examples/ranking-football/README.md)\n\n<table>\n  <tr>\n    <th width=\"16%\">Reference</th>\n    <td width=\"28%\"></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/f573bdac-62da-4b5d-825d-54d5880a7026\" controls muted></video></td>\n    <td width=\"28%\"></td>\n  </tr>\n  <tr>\n    <th width=\"16%\">Clones</th>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/3ffd9951-e423-4a48-ad8f-5c596627be69\" controls muted></video></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/eb62372d-2464-4a4b-83ee-41e227f99a8e\" controls muted></video></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/9ba050f6-355d-460c-b684-7344cf49c051\" controls muted></video></td>\n  </tr>\n  <tr>\n    <td colspan=\"4\"><p><b>\"GOAT DEBATE\"</b> — a 20-second football tier list that puts Ronaldo in D and Messi in S. Two Seedance 2 Mini 720p trolling A-rolls, a 2K goth girl portrait and ten 1K brain-rot B-rolls by GPT Image 2, WhisperX word alignment, a sound-synced ranking board, color-box karaoke captions, buttery-smooth animation and catchy background music, concurrently rendered in 64 headless Chromium processes.</p><p>Three clones included: swap the narrator to banana cat, flip the rankings and Ronaldo becomes GOAT, or replace all players with tech founders — same viral structure, different viral video.</p><p>Total cost: <b>$1.15</b>.</p></td>\n  </tr>\n</table>\n\n### Podcast\n\n[Generation source](examples/podcast/reference.svml) · [Run and production notes](examples/podcast/README.md)\n\n<table>\n  <tr>\n    <th width=\"16%\">Reference</th>\n    <td width=\"28%\"></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/22df72b8-4831-4eb6-957d-676ae9b04f2d\" controls muted></video></td>\n    <td width=\"28%\"></td>\n  </tr>\n  <tr>\n    <th width=\"16%\">Clones</th>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/9c14c5ae-bd12-4961-9d57-a46d3a2154c6\" controls muted></video></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/f44c653b-f520-4715-9530-4c2f42114387\" controls muted></video></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/92f9bf8b-4f83-4d9b-a0e8-ca27fab2cc94\" controls muted></video></td>\n  </tr>\n  <tr>\n    <td colspan=\"4\"><p><b>\"DAILY CREATINE\"</b> — an 18-second podcast clip where a muscle barbie forces creatine on a skinny college kid. Three confrontational A-rolls and an aspirational lifestyle B-roll by Seedance 2 Mini 720p, two 2K AI character portraits and three 1K montage panels by GPT Image 2, WhisperX word alignment, split-screen interview layout, speaker-aware karaoke captions, a product-handoff moment and background music, concurrently rendered in 64 headless Chromium processes.</p><p>Three clones included: swap both hosts to Pepe and Doge arguing about doggy arms, replace the creatine with retinol where a pretty boy roasts a tomboy's pores, or ditch the physical product for a CheatGPT app where a himbo jock out-GPAs a PhD student — same podcast format, three ad verticals.</p><p>Total cost: <b>$1.07</b>.</p></td>\n  </tr>\n</table>\n\n### Street Interview\n\n[Generation source](examples/interview/reference.svml) · [Run and production notes](examples/interview/README.md)\n\n<table>\n  <tr>\n    <th width=\"16%\">Reference</th>\n    <td width=\"28%\"></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/666ad535-3231-44fb-b9bc-271817ae79de\" controls muted></video></td>\n    <td width=\"28%\"></td>\n  </tr>\n  <tr>\n    <th width=\"16%\">Clones</th>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/c39a0425-2dcb-4709-b894-6a9423d351e3\" controls muted></video></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/8f71552c-0ad1-4d29-8c4e-3b937ab7c887\" controls muted></video></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/d9cab2e7-e08b-48ef-8d25-bc28ca9efc17\" controls muted></video></td>\n  </tr>\n  <tr>\n    <td colspan=\"4\"><p><b>\"NICE RIDE\"</b> — a 26-second street interview where a mob wife drops three rules for making her first million. Three A-rolls by Seedance 2 Mini 720p, one 2K AI character portrait by GPT Image 2, WhisperX word alignment, head-tracked speaker-colored captions driven by face bounding boxes from Google Video Intelligence and YOLOv8 AnimeFace, a sound-synced emoji reveal board with color flashes and reveal sound effects, plus background music, concurrently rendered in 64 headless Chromium processes.</p><p>Three clones included: swap hosts to Wojak and Chad, translate everything to Spanish with exactly the same punchlines, or swap the Lambo for an F1 car where Ada explains to Leon how driving Uber led to an accidental Grand Prix win — same three-stage reveal, distinct street-interview remixes.</p><p>Total cost: <b>$1.09</b>.</p></td>\n  </tr>\n</table>\n\n## Use the Hypit skill\n\nThe `/hypit` skill is available to coding agents. Start a session in any empty or existing project\ndirectory and ask it to create videos for you:\n\n```text\n/hypit Clone this video: /path/to/video.mp4, and replace the ranking content with a comparison of Hypit (official website: hypit.ai) with other AI video products.\n```\n\nOr start without a reference video:\n\n```text\n/hypit Make a ranking video that puts Hypit in S tier.\n```\n\nYour agent can check the environment, request the credentials the video needs, generate the material, and build the finished composition.\n\n### **👉 [Get 100 FREE AI Avatars with unique voices](https://drive.google.com/drive/u/2/folders/18J9Fz7mkU3OQNJ-2Res3eIyFQ2cemIK5)**\n\n## Why Hypit\n\n- **Clone any video:** drop in a video, get the whole workflow — footage, captions, B-roll, effects. Not a script breakdown.\n- **One workflow, 100 variants:** reuse the composition and existing material; generate the parts that change.\n- **Pluggable components:** swap the host without touching the captions. Use an installed package, adapt an example, or write your own.\n- **Open source:** no Hypit seat pricing, per-render fees or added watermark. Model-service usage is billed by the service you choose.\n\n## What Hypit Can Build\n\nDrop in a video and your agent clones the whole workflow — or describe what you want and it writes one from scratch. Either way you get an editable, re-runnable composition, not a one-off render.\n\n- **Paid social ads** — clone a winning ad from the Meta Ad Library, swap in your product, ship 50 hook variants the same day. When it fatigues in two weeks, re-run with fresh openings; the body never changes.\n- **Viral clones** — any TikTok, Reel, or Short becomes a template. Swap the host, the hook, the product, the language, the aspect ratio.\n- **TikTok Shop and affiliate videos** — one format that converts, a new SKU every day. Swap the product, the price, the CTA; the structure that worked stays untouched.\n- **AI UGC and talking heads** — narration, word-level captions, B-roll, comment stickers, beat-synced cuts, all wired automatically.\n- **Podcast and interview clips** — split-screen layouts, speaker-aware captions, reaction overlays.\n- **Code-rendered videos** — visuals driven entirely by front-end code, rendered locally without generation API calls.\n- **Localized versions** — the same video in ten languages. Rewrite a line and the timing re-flows itself.\n\n## Stay Tuned with Us\n\nStar us, and you will receive all release notifications from GitHub without any delay!\n\n![Stay tuned with us](https://github.com/user-attachments/assets/cc929974-96b8-4166-b81d-008e130b0f24)\n\n## How to Contribute\n\nPull requests are welcome, and documentation, examples and translations count as much as code. Pick\nup an open issue or open one for what you want to work on, and we will help you land it.\n[CONTRIBUTING.md](./CONTRIBUTING.md) has the setup, the checks CI runs and the pull request flow.\n\nCreating a component is ordinary video-production work, and the component normally stays with the\nvideo project that owns it. When its owner wants to share it, the same package can be handed off as\na versioned tarball or published under the owner's npm scope or private registry. Proposals for a\ncomponent maintained in Hypit's official Distribution begin with an issue describing the shared\nproduct need; official inclusion is separate from normal community sharing.\n\nThe [Development Guide](https://hypit.ai/guide/develop/) covers the prerequisites, the daily\ncommands and the repository layout.\n\n<table>\n  <tr>\n    <td>Bug reports</td>\n    <td><a href=\"https://github.com/hypit-ai/hypit/issues/new?template=bug_report.yml\">Open an issue</a></td>\n  </tr>\n  <tr>\n    <td>Feature requests</td>\n    <td><a href=\"https://github.com/hypit-ai/hypit/issues/new?template=feature_request.yml\">Open an issue</a></td>\n  </tr>\n  <tr>\n    <td>Questions</td>\n    <td><a href=\"https://discord.gg/85hnyQnxpn\">Discord</a> or <a href=\"https://t.me/hypitai\">Telegram</a></td>\n  </tr>\n</table>\n\n## Launch Partners\n\n<table>\n  <tr>\n    <td width=\"220\" align=\"center\">\n      <a href=\"https://watcha.cn/r/geIiJJ\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./docs/public/watcha-dark.png\">\n          <img alt=\"Watcha\" src=\"./docs/public/watcha-light.png\" width=\"170\">\n        </picture>\n      </a>\n    </td>\n    <td><a href=\"https://watcha.cn/r/geIiJJ\">Watcha</a> is an innovative ecosystem and community built for AI builders, connecting great products with high-quality users to turn every Demo into reality. Starting from AI product discovery and genuine feedback, Watcha provides product publishing, distribution, and reputation tracking to support builders from launch to early adoption.</td>\n  </tr>\n  <tr>\n    <td width=\"220\" align=\"center\">\n      <a href=\"https://tokendance.space/?utm_source=hypit\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./docs/public/tokendance-dark.png\">\n          <img alt=\"TokenDance\" src=\"./docs/public/tokendance-light.png\" width=\"165\">\n        </picture>\n      </a>\n    </td>\n    <td><a href=\"https://tokendance.space/?utm_source=hypit\">TokenDance</a> offers builders a unified multi-model gateway with optimized inference costs. Through programs like the Billion-Token Subsidy and the Developer Program, TokenDance helps early-stage builders cut costs so they can focus on product validation and growth.</td>\n  </tr>\n  <tr>\n    <td width=\"220\" align=\"center\">\n      <a href=\"https://autoclaw.z.ai\"><img alt=\"AutoClaw\" src=\"./docs/public/autoclaw.png\" width=\"180\"></a>\n    </td>\n    <td><a href=\"https://autoclaw.z.ai\">AutoClaw</a> is Z.ai’s desktop AI assistant for work, deeply optimized for GLM models and integrated with specialized knowledge bases and workflows for legal, finance, design, and more.</td>\n  </tr>\n  <tr>\n    <td width=\"220\" align=\"center\">\n      <a href=\"https://openagents.org/blog/posts/2026-09-08-pilot-user-program-zh-hypit\"><img alt=\"OpenAgents\" src=\"./docs/public/openagents.png\" width=\"180\"></a>\n    </td>\n    <td><a href=\"https://openagents.org\">OpenAgents Workspace</a> is a product that helps you manage AI agents, allowing you to invoke agents running on any device (whether on a mobile phone or computer) any",
+      "readmeExcerpt": "<p align=\"center\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"./docs/public/hypit-logo-light.svg\">\n    <img alt=\"Hypit\" src=\"./docs/public/hypit-logo-dark.svg\" width=\"400\" height=\"122\">\n  </picture>\n</p>\n\n<h3 align=\"center\">Clone any viral video with AI agents</h3>\n<p align=\"center\">1 command, 100 variants, 100M views.</p>\n\n<p align=\"center\">\n  <a href=\"https://hypit.ai\"><strong>Demo</strong></a>\n  &nbsp;&bull;&nbsp;\n  <a href=\"https://hypit.ai/quickstart/\"><strong>Quickstart</strong></a>\n  &nbsp;&bull;&nbsp;\n  <a href=\"https://hypit.ai/guide/develop/\"><strong>Develop</strong></a>\n  &nbsp;&bull;&nbsp;\n  <a href=\"./README.zh-CN.md\"><strong>简体中文</strong></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://trendshift.io/repositories/229030\"><img alt=\"Trendshift #1 Repository of the Day\" src=\"https://trendshift.io/api/badge/trendshift/repositories/229030/daily\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://trendshift.io/repositories/229030\"><img alt=\"Trendshift #1 TypeScript Repository of the Day\" src=\"https://trendshift.io/api/badge/trendshift/repositories/229030/daily?language=TypeScript\"></a>\n  <a href=\"https://trendshift.io/repositories/229030?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-229030\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/229030/weekly?language=TypeScript\" alt=\"hypit-ai/hypit | Trendshift TypeScript Weekly\" width=\"250\" height=\"55\"></a>\n</p>\n\n<p align=\"center\">\n  <img alt=\"Stars\" src=\"https://img.shields.io/github/stars/hypit-ai/hypit?style=flat-square&color=FFD700&logo=github&logoColor=white&label=Stars\">\n  <a href=\"./package.json\"><img alt=\"Node 22.15+\" src=\"https://img.shields.io/badge/Node.js-22.15%2B-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white\"></a>\n  <a href=\"./package.json\"><img alt=\"pnpm 10.33\" src=\"https://img.shields.io/badge/pnpm-10.33-F69220?style=flat-square&logo=pnpm&logoColor=white\"></a>\n  <a href=\"./package.json\"><img alt=\"TypeScript 5.9\" src=\"https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript&logoColor=white\"></a>\n  <a href=\"./LICENSE\"><img alt=\"License\" src=\"https://img.shields.io/badge/License-Apache--2.0%20with%20conditions-E3B341?style=flat-square\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://hypit.ai\"><img alt=\"Visit our website\" src=\"https://img.shields.io/badge/Visit%20our%20website-DF3C68?style=for-the-badge&logo=hypit&logoColor=white\"></a>\n  <a href=\"https://discord.gg/85hnyQnxpn\"><img alt=\"Join our Discord\" src=\"https://img.shields.io/badge/Join%20our%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white\"></a>\n  <a href=\"https://t.me/hypitai\"><img alt=\"Join our Telegram\" src=\"https://img.shields.io/badge/Join%20our%20Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white\"></a>\n  <a href=\"https://x.com/hypitai\"><img alt=\"Follow @hypitai on X\" src=\"https://img.shields.io/badge/Follow%20%40hypitai-000000?style=for-the-badge&logo=x&logoColor=white\"></a>\n</p>\n\n<p align=\"center\">\n  ⭐ <em>Help more people find Hypit and grow the community. Star this repo!</em>\n</p>\n\n## Hypit\n\nHypit gives AI agents (Claude Code, Codex...) a language and system to create video. Drop in a video, and your agent clones it as a complete workflow: footage, captions, B-roll and effects, all anchored to words instead of seconds.\n\n**To be clear:** cloning a video is the fastest way in, not the only one. You can start from our templates, or just describe the video you want and your agent writes the workflow from scratch. Generation models are optional too: a workflow can compile captions, motion graphics and code-rendered visuals into a finished video without calling a generation model or incurring its service charges.\n\n![SVML source and live video preview](https://github.com/user-attachments/assets/981c28e8-ddab-4164-85bc-03b5d71275dc)\n\n<p align=\"center\"><em>SVML source on the left, with the corresponding video rendered live on the right.</em></p>\n\n## Install once\n\n```bash\nnpx skills add hypit-ai/hypit -g\n```\n\nThis installs the Skill. On first use, your agent checks for the Hypit executable and helps prepare\nit if needed. Your video project can live anywhere.\n\nHypit is free to use; your Coding Agent and model services have their own accounts and charges.\nHypiHub is our recommended hosted model service. You can also use your own API or local models;\ntell your agent the service name and API documentation so it can set up the appropriate connection.\n\n[Agent environments and entry partners](./docs/guide/agents.md) ·\n[Model and deployment services](./docs/guide/service-partners.md)\n\n## Examples\n\n### UGC\n\n[Generation source](examples/ranking-football/reference.svml) · [Run and production notes](examples/ranking-football/README.md)\n\n<table>\n  <tr>\n    <th width=\"16%\">Reference</th>\n    <td width=\"28%\"></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/f573bdac-62da-4b5d-825d-54d5880a7026\" controls muted></video></td>\n    <td width=\"28%\"></td>\n  </tr>\n  <tr>\n    <th width=\"16%\">Clones</th>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/3ffd9951-e423-4a48-ad8f-5c596627be69\" controls muted></video></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/eb62372d-2464-4a4b-83ee-41e227f99a8e\" controls muted></video></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/9ba050f6-355d-460c-b684-7344cf49c051\" controls muted></video></td>\n  </tr>\n  <tr>\n    <td colspan=\"4\"><p><b>\"GOAT DEBATE\"</b> — a 20-second football tier list that puts Ronaldo in D and Messi in S. Two Seedance 2 Mini 720p trolling A-rolls, a 2K goth girl portrait and ten 1K brain-rot B-rolls by GPT Image 2, WhisperX word alignment, a sound-synced ranking board, color-box karaoke captions, buttery-smooth animation and catchy background music, concurrently rendered in 64 headless Chromium processes.</p><p>Three clones included: swap the narrator to banana cat, flip the rankings and Ronaldo becomes GOAT, or replace all players with tech founders — same viral structure, different viral video.</p><p>Total cost: <b>$1.15</b>.</p></td>\n  </tr>\n</table>\n\n### Podcast\n\n[Generation source](examples/podcast/reference.svml) · [Run and production notes](examples/podcast/README.md)\n\n<table>\n  <tr>\n    <th width=\"16%\">Reference</th>\n    <td width=\"28%\"></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/22df72b8-4831-4eb6-957d-676ae9b04f2d\" controls muted></video></td>\n    <td width=\"28%\"></td>\n  </tr>\n  <tr>\n    <th width=\"16%\">Clones</th>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/9c14c5ae-bd12-4961-9d57-a46d3a2154c6\" controls muted></video></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/f44c653b-f520-4715-9530-4c2f42114387\" controls muted></video></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/92f9bf8b-4f83-4d9b-a0e8-ca27fab2cc94\" controls muted></video></td>\n  </tr>\n  <tr>\n    <td colspan=\"4\"><p><b>\"DAILY CREATINE\"</b> — an 18-second podcast clip where a muscle barbie forces creatine on a skinny college kid. Three confrontational A-rolls and an aspirational lifestyle B-roll by Seedance 2 Mini 720p, two 2K AI character portraits and three 1K montage panels by GPT Image 2, WhisperX word alignment, split-screen interview layout, speaker-aware karaoke captions, a product-handoff moment and background music, concurrently rendered in 64 headless Chromium processes.</p><p>Three clones included: swap both hosts to Pepe and Doge arguing about doggy arms, replace the creatine with retinol where a pretty boy roasts a tomboy's pores, or ditch the physical product for a CheatGPT app where a himbo jock out-GPAs a PhD student — same podcast format, three ad verticals.</p><p>Total cost: <b>$1.07</b>.</p></td>\n  </tr>\n</table>\n\n### Street Interview\n\n[Generation source](examples/interview/reference.svml) · [Run and production notes](examples/interview/README.md)\n\n<table>\n  <tr>\n    <th width=\"16%\">Reference</th>\n    <td width=\"28%\"></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/666ad535-3231-44fb-b9bc-271817ae79de\" controls muted></video></td>\n    <td width=\"28%\"></td>\n  </tr>\n  <tr>\n    <th width=\"16%\">Clones</th>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/c39a0425-2dcb-4709-b894-6a9423d351e3\" controls muted></video></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/8f71552c-0ad1-4d29-8c4e-3b937ab7c887\" controls muted></video></td>\n    <td width=\"28%\"><video src=\"https://github.com/user-attachments/assets/d9cab2e7-e08b-48ef-8d25-bc28ca9efc17\" controls muted></video></td>\n  </tr>\n  <tr>\n    <td colspan=\"4\"><p><b>\"NICE RIDE\"</b> — a 26-second street interview where a mob wife drops three rules for making her first million. Three A-rolls by Seedance 2 Mini 720p, one 2K AI character portrait by GPT Image 2, WhisperX word alignment, head-tracked speaker-colored captions driven by face bounding boxes from Google Video Intelligence and YOLOv8 AnimeFace, a sound-synced emoji reveal board with color flashes and reveal sound effects, plus background music, concurrently rendered in 64 headless Chromium processes.</p><p>Three clones included: swap hosts to Wojak and Chad, translate everything to Spanish with exactly the same punchlines, or swap the Lambo for an F1 car where Ada explains to Leon how driving Uber led to an accidental Grand Prix win — same three-stage reveal, distinct street-interview remixes.</p><p>Total cost: <b>$1.09</b>.</p></td>\n  </tr>\n</table>\n\n## Use the Hypit skill\n\nThe `/hypit` skill is available to coding agents. Start a session in any empty or existing project\ndirectory and ask it to create videos for you:\n\n```text\n/hypit Clone this video: /path/to/video.mp4, and replace the ranking content with a comparison of Hypit (official website: hypit.ai) with other AI video products.\n```\n\nOr start without a reference video:\n\n```text\n/hypit Make a ranking video that puts Hypit in S tier.\n```\n\nYour agent can check the environment, request the credentials the video needs, generate the material, and build the finished composition.\n\n### **👉 [Get 100 FREE AI Avatars with unique voices](https://drive.google.com/drive/u/2/folders/18J9Fz7mkU3OQNJ-2Res3eIyFQ2cemIK5)**\n\n## Why Hypit\n\n- **Clone any video:** drop in a video, get the whole workflow — footage, captions, B-roll, effects. Not a script breakdown.\n- **One workflow, 100 variants:** reuse the composition and existing material; generate the parts that change.\n- **Pluggable components:** swap the host without touching the captions. Use an installed package, adapt an example, or write your own.\n- **Open source:** no Hypit seat pricing, per-render fees or added watermark. Model-service usage is billed by the service you choose.\n\n## What Hypit Can Build\n\nDrop in a video and your agent clones the whole workflow — or describe what you want and it writes one from scratch. Either way you get an editable, re-runnable composition, not a one-off render.\n\n- **Paid social ads** — clone a winning ad from the Meta Ad Library, swap in your product, ship 50 hook variants the same day. When it fatigues in two weeks, re-run with fresh openings; the body never changes.\n- **Viral clones** — any TikTok, Reel, or Short becomes a template. Swap the host, the hook, the product, the language, the aspect ratio.\n- **TikTok Shop and affiliate videos** — one format that converts, a new SKU every day. Swap the product, the price, the CTA; the structure that worked stays untouched.\n- **AI UGC and talking heads** — narration, word-level captions, B-roll, comment stickers, beat-synced cuts, all wired automatically.\n- **Podcast and interview clips** — split-screen layouts, speaker-aware captions, reaction overlays.\n- **Code-rendered videos** — visuals driven entirely by front-end code, rendered locally without generation API calls.\n- **Localized versions** — the same video in ten languages. Rewrite a line and the timing re-flows itself.\n\n## Stay Tuned with Us\n\nStar us, and you will receive all release notifications from GitHub without any delay!\n\n![Stay tuned with us](https://github.com/user-attachments/assets/cc929974-96b8-4166-b81d-008e130b0f24)\n\n## How to Contribute\n\nPull requests are welcome, and documentation, examples and translations count as much as code. Pick\nup an open issue or open one for what you want to work on, and we will help you land it.\n[CONTRIBUTING.md](./CONTRIBUTING.md) has the setup, the checks CI runs and the pull request flow.\n\nCreating a component is ordinary video-production work, and the component normally stays with the\nvideo project that owns it. When its owner wants to share it, the same package can be handed off as\na versioned tarball or published under the owner's npm scope or private registry. Proposals for a\ncomponent maintained in Hypit's official Distribution begin with an issue describing the shared\nproduct need; official inclusion is separate from normal community sharing.\n\nThe [Development Guide](https://hypit.ai/guide/develop/) covers the prerequisites, the daily\ncommands and the repository layout.\n\n<table>\n  <tr>\n    <td>Bug reports</td>\n    <td><a href=\"https://github.com/hypit-ai/hypit/issues/new?template=bug_report.yml\">Open an issue</a></td>\n  </tr>\n  <tr>\n    <td>Feature requests</td>\n    <td><a href=\"https://github.com/hypit-ai/hypit/issues/new?template=feature_request.yml\">Open an issue</a></td>\n  </tr>\n  <tr>\n    <td>Questions</td>\n    <td><a href=\"https://discord.gg/85hnyQnxpn\">Discord</a> or <a href=\"https://t.me/hypitai\">Telegram</a></td>\n  </tr>\n  <tr>\n    <td>Upgrading existing projects</td>\n    <td><a href=\"./migrations/0.3.md\">0.3 migration guide</a> · <a href=\"./migrations/0.3.1.md\">0.3.1 SDK migration guide</a></td>\n  </tr>\n</table>\n\n## Launch Partners\n\n<table>\n  <tr>\n    <td width=\"220\" align=\"center\">\n      <a href=\"https://watcha.cn/r/geIiJJ\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./docs/public/watcha-dark.png\">\n          <img alt=\"Watcha\" src=\"./docs/public/watcha-light.png\" width=\"170\">\n        </picture>\n      </a>\n    </td>\n    <td><a href=\"https://watcha.cn/r/geIiJJ\">Watcha</a> is an innovative ecosystem and community built for AI builders, connecting great products with high-quality users to turn every Demo into reality. Starting from AI product discovery and genuine feedback, Watcha provides product publishing, distribution, and reputation tracking to support builders from launch to early adoption.</td>\n  </tr>\n  <tr>\n    <td width=\"220\" align=\"center\">\n      <a href=\"https://tokendance.space/?utm_source=hypit\">\n        <picture>\n          <source media=\"(prefers-color-scheme: dark)\" srcset=\"./docs/public/tokendance-dark.png\">\n          <img alt=\"TokenDance\" src=\"./docs/public/tokendance-light.png\" width=\"165\">\n        </picture>\n      </a>\n    </td>\n    <td><a href=\"https://tokendance.space/?utm_source=hypit\">TokenDance</a> offers builders a unified multi-model gateway with optimized inference costs. Through programs like the Billion-Token Subsidy and the Developer Program, TokenDance helps early-stage builders cut costs so they can focus on product validation and growth.</td>\n  </tr>\n  <tr>\n    <td width=\"220\" align=\"center\">\n      <a href=\"https://autoclaw.z.ai\"><img alt=\"AutoClaw\" src=\"./docs/public/autoclaw.png\" width=\"180\"></a>\n    </td>\n    <td><a href=\"https://autoclaw.z.ai\">AutoClaw</a> is Z.ai’s desktop AI assistant for work, deeply optimized for GLM models and integrated with specialized knowledge bases and workflows for legal, finance, design, and more.</td>\n  </tr>\n  <tr>\n    <td width=\"220\" align=\"center\">\n      <a href=\"https://openagents.org/blog/posts/2026-09-08-pilot-user-program-zh-hypit\"><img alt=\"OpenAgents\" src=\"./docs/public/openagents.png\" width=\"180\"></a>\n    </td>\n    <td><a href=\"htt",
       "media": [
         {
           "type": "image",
@@ -259,14 +259,14 @@
         "github": {
           "fullName": "devdotfast/whiteboard",
           "description": "open-source canvas for thoughtful software design",
-          "stars": 3033,
-          "forks": 151,
+          "stars": 3077,
+          "forks": 153,
           "createdAt": "2026-08-18T15:06:04Z",
-          "ageDays": 52,
-          "starsPerDay": 58.3,
-          "pushedAt": "2026-10-09T07:27:43Z",
+          "ageDays": 53,
+          "starsPerDay": 58.1,
+          "pushedAt": "2026-10-10T06:48:24Z",
           "archived": false,
-          "openIssues": 45,
+          "openIssues": 41,
           "topics": [],
           "homepage": "https://whiteboard.dev.fast/",
           "language": "TypeScript",
@@ -302,7 +302,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "3033 sao, 151 fork, ~58.3 sao/ngày, 52 ngày tuổi"
+            "3077 sao, 153 fork, ~58.1 sao/ngày, 53 ngày tuổi"
           ]
         }
       },
@@ -337,13 +337,13 @@
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
           "stars": 5280,
-          "forks": 201,
+          "forks": 204,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 226,
-          "starsPerDay": 23.4,
+          "ageDays": 227,
+          "starsPerDay": 23.3,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
-          "openIssues": 136,
+          "openIssues": 137,
           "topics": [
             "automation",
             "controler",
@@ -398,7 +398,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5280 sao, 201 fork, ~23.4 sao/ngày, 226 ngày tuổi"
+            "5280 sao, 204 fork, ~23.3 sao/ngày, 227 ngày tuổi"
           ]
         }
       },
@@ -412,12 +412,12 @@
         "fullName": "Vincentwei1021/anything2explainer",
         "url": "https://github.com/Vincentwei1021/anything2explainer",
         "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-        "stars": 2353,
+        "stars": 2382,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 2353"
+          "⭐ 2382"
         ],
         "signalUrls": [],
         "points": 0,
@@ -433,14 +433,14 @@
         "github": {
           "fullName": "Vincentwei1021/anything2explainer",
           "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-          "stars": 2353,
-          "forks": 321,
+          "stars": 2382,
+          "forks": 324,
           "createdAt": "2026-09-08T17:19:54Z",
-          "ageDays": 31,
-          "starsPerDay": 75.9,
+          "ageDays": 32,
+          "starsPerDay": 74.4,
           "pushedAt": "2026-09-18T11:52:13Z",
           "archived": false,
-          "openIssues": 6,
+          "openIssues": 8,
           "topics": [
             "agent-skills",
             "ai-agents",
@@ -487,7 +487,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "2353 sao, 321 fork, ~75.9 sao/ngày, 31 ngày tuổi"
+            "2382 sao, 324 fork, ~74.4 sao/ngày, 32 ngày tuổi"
           ]
         }
       },
@@ -504,7 +504,7 @@
           "caption": ""
         }
       ],
-      "score": 1217.65
+      "score": 1219.1
     }
   ]
 }
