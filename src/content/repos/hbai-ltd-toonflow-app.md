@@ -11,9 +11,14 @@ vertical: ["creative", "agency"]
 
 maturity: "established"
 repoStats:
-  stars: 10554
-  forks: 1952
-  note: "~148 ngày tuổi, ~71.3 sao/ngày"
+  stars: 17335
+  forks: 3075
+  note: "~256 ngày tuổi, ~67.7 sao/ngày"
+  starsPerDay: 67.7
+  ageDays: 256
+  pushedAt: "2026-10-10T07:42:23Z"
+  archived: false
+  openIssues: 0
 standoutFeatures:
   - "Nhắm vào quy trình biến truyện/kịch bản thành hoạt hình ngắn, không chỉ text-to-video đơn lẻ."
   - "Có AI scriptwriting, storyboarding, character generation và video generation."

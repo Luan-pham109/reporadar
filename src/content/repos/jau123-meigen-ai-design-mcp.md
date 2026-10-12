@@ -11,9 +11,14 @@ vertical: ["creative", "agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 1500
-  forks: 193
-  note: "~141 ngày tuổi, ~10.6 sao/ngày"
+  stars: 1781
+  forks: 234
+  note: "~247 ngày tuổi, ~7.2 sao/ngày"
+  starsPerDay: 7.2
+  ageDays: 247
+  pushedAt: "2026-10-10T13:05:15Z"
+  archived: false
+  openIssues: 0
 standoutFeatures:
   - "README mô tả MCP server có 8 tool, thư viện 1,446 prompt và khả năng điều phối nhiều biến thể song song."
   - "Hỗ trợ nhiều model/provider như GPT Image 2, Nano Banana 2, Seedream, Midjourney, Flux, Grok, Seedance, Veo và ComfyUI local."

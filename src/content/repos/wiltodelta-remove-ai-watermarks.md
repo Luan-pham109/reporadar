@@ -8,9 +8,14 @@ vertical: ["creative", "agency"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 3647
-  forks: 326
-  note: "~94 ngày tuổi, ~38.8 sao/ngày"
+  stars: 5962
+  forks: 551
+  note: "~201 ngày tuổi, ~29.7 sao/ngày"
+  starsPerDay: 29.7
+  ageDays: 201
+  pushedAt: "2026-10-08T23:43:09Z"
+  archived: false
+  openIssues: 2
 standoutFeatures:
   - "Repo xử lý nhiều lớp provenance cùng lúc: watermark nhìn thấy được, watermark vô hình như SynthID và metadata như C2PA, EXIF, IPTC."
   - "Có chế độ `identify` để soi watermark inventory và nguồn provenance, không chỉ có phần xóa."
