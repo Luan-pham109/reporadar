@@ -17,14 +17,14 @@ vertical: ["seo", "agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 437
-  forks: 107
-  note: "~13 ngày tuổi, ~33.6 sao/ngày"
-  starsPerDay: 33.6
-  ageDays: 13
-  pushedAt: 2026-08-10T11:16:56Z
+  stars: 763
+  forks: 185
+  note: "~75 ngày tuổi, ~10.2 sao/ngày"
+  starsPerDay: 10.2
+  ageDays: 75
+  pushedAt: "2026-08-10T11:16:56Z"
   archived: false
-  openIssues: 1
+  openIssues: 6
 standoutFeatures:
   - "Chạy trọn vòng GEO trong một dashboard: đo hiện trạng → chẩn đoán → chiến lược → ticket thực thi → nghiệm thu → gói bàn giao cho khách."
   - "Đo trên 17 engine (10 tự động qua API + 7 thủ công, gồm cả Google AI Overviews), lưu lại raw answer để 'sample replay' và cho phép con người sửa lại metadata khi regex parse sai."

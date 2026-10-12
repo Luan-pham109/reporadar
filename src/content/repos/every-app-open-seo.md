@@ -11,14 +11,14 @@ vertical: ["seo", "agency", "ecom"]
 
 maturity: "rising"
 repoStats:
-  stars: 3873
-  forks: 421
-  note: "~123 ngày tuổi, ~31.5 sao/ngày"
-  starsPerDay: 31.5
-  ageDays: 123
-  pushedAt: "2026-06-29"
+  stars: 23170
+  forks: 3042
+  note: "~227 ngày tuổi, ~102.1 sao/ngày"
+  starsPerDay: 102.1
+  ageDays: 227
+  pushedAt: "2026-10-08T23:02:21Z"
   archived: false
-  openIssues: 8
+  openIssues: 243
 standoutFeatures:
   - "Định vị thẳng là bản open-source thay cho Semrush/Ahrefs, gom keyword research, rank tracking, competitor analysis, backlink và site audit vào một chỗ."
   - "Mô hình pay-as-you-go qua DataForSEO API — không thuê bao tháng, chỉ trả theo số request (~$1–$11/100 request tuỳ loại)."
