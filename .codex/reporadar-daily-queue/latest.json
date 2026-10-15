@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T06:18:38.958Z",
+  "generatedAt": "2026-10-15T05:59:51.928Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -22,12 +22,12 @@
         "fullName": "coreyhaines31/marketingskills",
         "url": "https://github.com/coreyhaines31/marketingskills",
         "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-        "stars": 54608,
+        "stars": 54789,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 54608"
+          "⭐ 54789"
         ],
         "signalUrls": [],
         "points": 0,
@@ -44,14 +44,14 @@
         "github": {
           "fullName": "coreyhaines31/marketingskills",
           "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-          "stars": 54608,
-          "forks": 8102,
+          "stars": 54789,
+          "forks": 8118,
           "createdAt": "2026-01-15T19:45:23Z",
-          "ageDays": 271,
-          "starsPerDay": 201.5,
-          "pushedAt": "2026-10-14T02:51:40Z",
+          "ageDays": 272,
+          "starsPerDay": 201.4,
+          "pushedAt": "2026-10-14T21:21:00Z",
           "archived": false,
-          "openIssues": 19,
+          "openIssues": 21,
           "topics": [
             "agent-skills",
             "ai-agents",
@@ -115,7 +115,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "54608 sao, 8102 fork, ~201.5 sao/ngày, 271 ngày tuổi"
+            "54789 sao, 8118 fork, ~201.4 sao/ngày, 272 ngày tuổi"
           ]
         }
       },
@@ -129,12 +129,12 @@
         "fullName": "hypit-ai/hypit",
         "url": "https://github.com/hypit-ai/hypit",
         "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-        "stars": 22049,
+        "stars": 22297,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 22049"
+          "⭐ 22297"
         ],
         "signalUrls": [],
         "points": 0,
@@ -151,12 +151,12 @@
         "github": {
           "fullName": "hypit-ai/hypit",
           "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-          "stars": 22049,
-          "forks": 2437,
+          "stars": 22297,
+          "forks": 2482,
           "createdAt": "2026-07-29T18:49:19Z",
-          "ageDays": 76,
-          "starsPerDay": 290.1,
-          "pushedAt": "2026-10-13T19:09:09Z",
+          "ageDays": 77,
+          "starsPerDay": 289.6,
+          "pushedAt": "2026-10-14T15:04:32Z",
           "archived": false,
           "openIssues": 12,
           "topics": [
@@ -207,7 +207,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "22049 sao, 2437 fork, ~290.1 sao/ngày, 76 ngày tuổi"
+            "22297 sao, 2482 fork, ~289.6 sao/ngày, 77 ngày tuổi"
           ]
         }
       },
@@ -259,14 +259,14 @@
         "github": {
           "fullName": "devdotfast/whiteboard",
           "description": "open-source canvas for thoughtful software design",
-          "stars": 3175,
+          "stars": 3205,
           "forks": 158,
           "createdAt": "2026-08-18T15:06:04Z",
-          "ageDays": 57,
-          "starsPerDay": 55.7,
-          "pushedAt": "2026-10-14T02:05:15Z",
+          "ageDays": 58,
+          "starsPerDay": 55.3,
+          "pushedAt": "2026-10-15T02:54:41Z",
           "archived": false,
-          "openIssues": 43,
+          "openIssues": 35,
           "topics": [],
           "homepage": "https://whiteboard.dev.fast/",
           "language": "TypeScript",
@@ -302,7 +302,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "3175 sao, 158 fork, ~55.7 sao/ngày, 57 ngày tuổi"
+            "3205 sao, 158 fork, ~55.3 sao/ngày, 58 ngày tuổi"
           ]
         }
       },
@@ -339,8 +339,8 @@
           "stars": 5290,
           "forks": 205,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 231,
-          "starsPerDay": 22.9,
+          "ageDays": 232,
+          "starsPerDay": 22.8,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
           "openIssues": 138,
@@ -398,7 +398,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5290 sao, 205 fork, ~22.9 sao/ngày, 231 ngày tuổi"
+            "5290 sao, 205 fork, ~22.8 sao/ngày, 232 ngày tuổi"
           ]
         }
       },
@@ -412,12 +412,12 @@
         "fullName": "Vincentwei1021/anything2explainer",
         "url": "https://github.com/Vincentwei1021/anything2explainer",
         "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-        "stars": 2474,
+        "stars": 2504,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 2474"
+          "⭐ 2504"
         ],
         "signalUrls": [],
         "points": 0,
@@ -433,11 +433,11 @@
         "github": {
           "fullName": "Vincentwei1021/anything2explainer",
           "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-          "stars": 2474,
-          "forks": 334,
+          "stars": 2504,
+          "forks": 340,
           "createdAt": "2026-09-08T17:19:54Z",
-          "ageDays": 36,
-          "starsPerDay": 68.7,
+          "ageDays": 37,
+          "starsPerDay": 67.7,
           "pushedAt": "2026-09-18T11:52:13Z",
           "archived": false,
           "openIssues": 8,
@@ -487,7 +487,7 @@
           "maturitySuggestion": "rising",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "2474 sao, 334 fork, ~68.7 sao/ngày, 36 ngày tuổi"
+            "2504 sao, 340 fork, ~67.7 sao/ngày, 37 ngày tuổi"
           ]
         }
       },
@@ -504,7 +504,7 @@
           "caption": ""
         }
       ],
-      "score": 1223.7
+      "score": 1225.2
     }
   ]
 }
