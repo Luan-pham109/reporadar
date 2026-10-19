@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T06:07:26.305Z",
+  "generatedAt": "2026-10-19T06:22:15.927Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -22,12 +22,12 @@
         "fullName": "coreyhaines31/marketingskills",
         "url": "https://github.com/coreyhaines31/marketingskills",
         "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-        "stars": 55274,
+        "stars": 55421,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 55274"
+          "⭐ 55421"
         ],
         "signalUrls": [],
         "points": 0,
@@ -44,14 +44,14 @@
         "github": {
           "fullName": "coreyhaines31/marketingskills",
           "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-          "stars": 55274,
-          "forks": 8190,
+          "stars": 55421,
+          "forks": 8204,
           "createdAt": "2026-01-15T19:45:23Z",
-          "ageDays": 275,
-          "starsPerDay": 201,
+          "ageDays": 276,
+          "starsPerDay": 200.8,
           "pushedAt": "2026-10-15T21:33:21Z",
           "archived": false,
-          "openIssues": 30,
+          "openIssues": 50,
           "topics": [
             "agent-skills",
             "ai-agents",
@@ -115,7 +115,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "55274 sao, 8190 fork, ~201 sao/ngày, 275 ngày tuổi"
+            "55421 sao, 8204 fork, ~200.8 sao/ngày, 276 ngày tuổi"
           ]
         }
       },
@@ -129,12 +129,12 @@
         "fullName": "hypit-ai/hypit",
         "url": "https://github.com/hypit-ai/hypit",
         "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-        "stars": 23184,
+        "stars": 23653,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 23184"
+          "⭐ 23653"
         ],
         "signalUrls": [],
         "points": 0,
@@ -151,14 +151,14 @@
         "github": {
           "fullName": "hypit-ai/hypit",
           "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-          "stars": 23184,
-          "forks": 2696,
+          "stars": 23653,
+          "forks": 2807,
           "createdAt": "2026-07-29T18:49:19Z",
-          "ageDays": 80,
-          "starsPerDay": 289.8,
-          "pushedAt": "2026-10-15T08:45:06Z",
+          "ageDays": 81,
+          "starsPerDay": 292,
+          "pushedAt": "2026-10-19T03:45:35Z",
           "archived": false,
-          "openIssues": 20,
+          "openIssues": 46,
           "topics": [
             "agentic-ai",
             "ai",
@@ -207,7 +207,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "23184 sao, 2696 fork, ~289.8 sao/ngày, 80 ngày tuổi"
+            "23653 sao, 2807 fork, ~292 sao/ngày, 81 ngày tuổi"
           ]
         }
       },
@@ -230,6 +230,114 @@
         }
       ],
       "score": 2100
+    },
+    {
+      "candidate": {
+        "key": "evolink-ai/awesome-gpt-image-2-api-prompts",
+        "fullName": "Evolink-AI/awesome-gpt-image-2-API-Prompts",
+        "url": "https://github.com/Evolink-AI/awesome-gpt-image-2-API-Prompts",
+        "description": "GPT-Image-2 API and Prompts",
+        "stars": 17320,
+        "sources": [
+          "github-search"
+        ],
+        "signals": [
+          "⭐ 17320",
+          "⭐ 17320"
+        ],
+        "signalUrls": [],
+        "points": 0,
+        "verticals": [
+          "creative"
+        ]
+      },
+      "signals": {
+        "repo": {
+          "owner": "Evolink-AI",
+          "repo": "awesome-gpt-image-2-API-Prompts"
+        },
+        "github": {
+          "fullName": "Evolink-AI/awesome-gpt-image-2-API-Prompts",
+          "description": "GPT-Image-2 API and Prompts",
+          "stars": 17320,
+          "forks": 1743,
+          "createdAt": "2026-04-18T11:22:14Z",
+          "ageDays": 184,
+          "starsPerDay": 94.1,
+          "pushedAt": "2026-07-18T06:23:28Z",
+          "archived": false,
+          "openIssues": 3,
+          "topics": [
+            "ai-art",
+            "api",
+            "awesome-list",
+            "awesome-lists",
+            "chatgpt",
+            "creative-tools",
+            "generative-ai",
+            "gpt-image-2",
+            "gpt-image-2-api",
+            "gpt-image-2-prompts",
+            "gptimage2",
+            "image-generation",
+            "image-models",
+            "image-prompt",
+            "image-to-image",
+            "openai",
+            "prompt-collection",
+            "prompt-engineering",
+            "text-to-image",
+            "visual-ai"
+          ],
+          "homepage": "https://evolink.ai/gpt-image-2-prompts",
+          "language": "Python",
+          "suggestedHealthScore": 17
+        },
+        "hackerNews": [],
+        "reddit": [
+          {
+            "subreddit": "selfhosted",
+            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=awesome-gpt-image-2-API-Prompts&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=awesome-gpt-image-2-API-Prompts&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "opensource",
+            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=awesome-gpt-image-2-API-Prompts&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=awesome-gpt-image-2-API-Prompts&restrict_sr=1&sort=new"
+          },
+          {
+            "subreddit": "SideProject",
+            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=awesome-gpt-image-2-API-Prompts&restrict_sr=1&sort=new&limit=5",
+            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=awesome-gpt-image-2-API-Prompts&restrict_sr=1&sort=new"
+          }
+        ],
+        "heuristic": {
+          "maturitySuggestion": "established",
+          "reasons": [
+            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
+            "17320 sao, 1743 fork, ~94.1 sao/ngày, 184 ngày tuổi"
+          ]
+        }
+      },
+      "readmeExcerpt": "# Awesome GPT Image 2 Prompts [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)\n\n<div align=\"center\">\n\n<a href=\"https://evolink.ai/gpt-image-2-prompts?utm_source=github&utm_medium=banner&utm_campaign=awesome-gpt-image-2-API-and-Prompts&utm_content=readme_banner\"><img src=\"https://raw.githubusercontent.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts/main/images/logo.png\" alt=\"Project logo\"></a>\n\n[![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)\n[![462 Curated Prompts](https://img.shields.io/badge/Prompts-462_Curated_Cases-111111)](README.md)\n[![Try GPT Image 2 on EvoLink](https://img.shields.io/badge/Try_GPT_Image_2-on_EvoLink-black)](https://evolink.ai/gpt-image-2?model=gpt-image-2&utm_source=github&utm_medium=badge&utm_campaign=awesome-gpt-image-2-API-and-Prompts&utm_content=model_try#playground)\n\n[![🇺🇸 English](https://img.shields.io/badge/🇺🇸_English-Default_Source-111111)](README.md)\n[![🇪🇸 Español](https://img.shields.io/badge/🇪🇸_Español-Ver-ffb703)](README_es.md)\n[![🇵🇹 Português](https://img.shields.io/badge/🇵🇹_Português-Ver-2a9d8f)](README_pt.md)\n[![🇯🇵 日本語](https://img.shields.io/badge/🇯🇵_日本語-表示-52b788)](README_ja.md)\n[![🇰🇷 한국어](https://img.shields.io/badge/🇰🇷_한국어-보기-4ea8de)](README_ko.md)\n[![🇩🇪 Deutsch](https://img.shields.io/badge/🇩🇪_Deutsch-Ansehen-f4a261)](README_de.md)\n[![🇫🇷 Français](https://img.shields.io/badge/🇫🇷_Français-Voir-e76f51)](README_fr.md)\n[![🇹🇷 Türkçe](https://img.shields.io/badge/🇹🇷_Türkçe-Görüntüle-d62828)](README_tr.md)\n[![🇹🇼 繁體中文](https://img.shields.io/badge/🇹🇼_繁體中文-查看-8338ec)](README_zh-TW.md)\n[![🇨🇳 简体中文](https://img.shields.io/badge/🇨🇳_简体中文-查看-ef476f)](README_zh-CN.md)\n[![🇷🇺 Русский](https://img.shields.io/badge/🇷🇺_Русский-Смотреть-577590)](README_ru.md)\n\n</div>\n\n<a id=\"introduction\"></a>\n\n## 🍌 Introduction\n\nWelcome to the **Awesome GPT Image 2 Prompts** repository! 🤗\n\n**This is a prompt-first library of 462 curated GPT Image 2 examples for image generation, editing, design, advertising, and visual experimentation.**\n\nBrowse by category, copy a complete prompt, and adapt its placeholders or constraints to your own image. Every case keeps its original source and creator attribution wherever available.\n\nIf this library is useful, consider giving it a star. ⭐\n\n<a id=\"quick-start\"></a>\n\n## ⚡ Quick Start\n\nUse this repository as the starting point:\n\n1. Browse the [prompt categories](#menu) and choose a case close to your goal.\n2. Copy the complete text from the case's **Prompt** code block.\n3. [Try the prompt with GPT Image 2 on EvoLink](https://evolink.ai/gpt-image-2?model=gpt-image-2&utm_source=github&utm_medium=quickstart&utm_campaign=awesome-gpt-image-2-API-and-Prompts&utm_content=browser_try#playground); upload any input image shown by the case.\n4. Refine the variables, composition, style, or output constraints and save the version that works for you.\n\n> [!NOTE]\n> This repository owns the curated prompt library. API automation, callable skills, and image-to-video workflows are separate surfaces listed under [Related Repositories](#related-repositories).\n\n<a id=\"model-overview\"></a>\n\n## ❓ What is GPT Image 2\n\n**GPT Image 2** (also known as GPT-Image-2 or gpt-image-2) is OpenAI's latest image generation and editing model, integrated natively into ChatGPT and available via the OpenAI API.\n\n**Key capabilities:**\n**Text-to-image generation** — Create photorealistic images, illustrations, posters, UI mockups, and more from natural language prompts\n**Image editing** — Modify existing images with text instructions (inpainting, outpainting, style transfer)\n**Multi-turn conversations** — Iteratively refine images through dialogue\n**High fidelity text rendering** — Accurately render text within generated images\n**Consistent character generation** — Maintain character identity across multiple generations\n\n**Why developers use the GPT Image 2 API:**\nOne API call for both generation and editing\nSuperior prompt adherence compared to previous models\nNative support for aspect ratios, transparency, and batch generation\nWorks with OpenAI's standard API format (`/v1/images/generations`)\n\n<a id=\"news\"></a>\n\n## 📰 News\n\n**June 30, 2026:** Added 10 new GPT-Image-2 prompt cases (2 portrait, 1 e-commerce, 2 ad creative, 2 poster, 1 character, 2 UI) from the daily image-prompt update loop after semantic review and media validation\n\n**June 28, 2026:** Added 10 new GPT-Image-2 prompt cases (4 poster, 3 character, 2 portrait, 1 UI) from the daily image-prompt update loop after semantic review and media validation\n\n\n**June 25, 2026:** Added 10 new GPT-Image-2 prompt cases (4 poster, 2 portrait, 2 UI, 2 comparison) from the daily image-prompt update loop after semantic review and media validation\n\n**June 24, 2026:** Added 7 new GPT-Image-2 prompt cases (2 ad creative, 1 poster, 1 comparison, 3 portrait) from the daily image-prompt update loop after semantic review and media validation\n\n**June 23, 2026:** Added 10 new GPT-Image-2 prompt cases (3 ad creative, 4 UI, 1 poster, 1 comparison, 1 portrait) from the daily image-prompt update loop after semantic review and media validation\n\n**June 22, 2026:** Added 8 new GPT-Image-2 prompt cases from the daily image-prompt update loop (5 poster, 1 portrait, 1 character, 1 UI) after semantic review and media validation\n\n**June 20, 2026:** Added 9 new GPT-Image-2 prompt cases (2 e-commerce, 1 ad creative, 3 poster, 1 character, 2 UI) from the daily image-prompt update loop after semantic review and media validation\n\n**June 18, 2026:** Added 8 new GPT-Image-2 prompt cases (2 portrait, 2 poster, 2 ad creative, 1 e-commerce, 1 UI) from the daily image-prompt update loop after semantic review and media validation\n\n**June 15, 2026:** Added 9 new GPT-Image-2 prompt cases (4 ad creative, 3 poster, 1 portrait, 1 UI) from the image-prompt update loop after semantic review and media validation\n\n**June 14, 2026:** Added 14 new GPT-Image-2 prompt cases (9 poster, 2 ad creative, 1 character, 1 UI, 1 comparison) from the image-prompt update loop after semantic review and media validation\n\n<a id=\"menu\"></a>\n\n## 📑 Menu\n\n- [Introduction](#introduction)\n- [Quick Start](#quick-start)\n- [What is GPT Image 2](#model-overview)\n- [News](#news)\n- [Menu](#menu)\n- [E-commerce Cases](#category-ecommerce)\n- [Ad Creative Cases](#category-ad-creative)\n- [Portrait & Photography Cases](#category-portrait)\n- [Poster & Illustration Cases](#category-poster)\n- [Character Design Cases](#category-character)\n- [UI & Social Media Mockup Cases](#category-ui)\n- [Comparison & Community Examples](#category-comparison)\n- [How to Contribute](#contributing)\n- [Related Repositories](#related-repositories)\n- [Acknowledge](#acknowledge)\n\n<a id=\"category-ecommerce\"></a>\n\n## 🛒 E-commerce Cases\n\n> **16 curated cases** — [Explore all E-commerce Prompts →](cases/ecommerce.md)\n\n<!-- Case 1: E-commerce Main Image - Miniature Diorama Skincare Advertisement (by @Strength04_X) -->\n### Case 1: [E-commerce Main Image - Miniature Diorama Skincare Advertisement](https://x.com/Strength04_X/status/2048074514278563949) (by [@Strength04_X](https://x.com/Strength04_X))\n\n|                                                                                                                                                                                                                 Output                                                                                                                                                                                                                 |\n| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |\n| <a href=\"https://evolink.ai/gpt-image-2-prompts?utm_source=github&utm_medium=picture&utm_campaign=awesome-gpt-image-2-API-and-Prompts\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://raw.githubusercontent.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts/main/images/poster_case151/output.jpg\" width=\"300\" alt=\"GPT-Image-2 Prompt Example - E-commerce Main Image - Miniature Diorama Skincare Advertisement\"></a> |\n\n**Prompt:**\n\n```\nA hyper-realistic miniature diorama product advertisement featuring an oversized luxury skincare pump bottle labeled \"LUXEVEIL Skin Science - Radiance Nourishing Body Lotion\" in cream/beige with a polished gold pump top, placed on a circular platform. Tiny figurine construction workers dressed in yellow coveralls and white hard hats swarm around the bottle climbing scaffolding, painting the bottle with rollers, operating a tower crane, working near industrial tanks and pipework, and unloading a miniature flatbed truck. The scene includes metal scaffolding structures, industrial silos, orange traffic cones, wooden barricades, and storage barrels. The overall color palette is warm beige, cream, gold, and mustard yellow. Studio photography style with soft diffused lighting, no shadows, clean beige background. The concept metaphorically shows workers \"crafting\" or \"building\" the perfect lotion. Tilt-shift miniature aesthetic, ultra-detailed, commercial product photography, 8K resolution, photorealistic CGI render.\n```\n\n<!-- Case 2: E-commerce Main Image - 9-Panel Product TVC Storyboard (by @Magncsans) -->\n### Case 2: [E-commerce Main Image - 9-Panel Product TVC Storyboard](https://x.com/Magncsans/status/2047876253898903594) (by [@Magncsans](https://x.com/Magncsans))\n\n|                                                                                                                                                                                                            Output                                                                                                                                                                                                            |\n| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |\n| <a href=\"https://evolink.ai/gpt-image-2-prompts?utm_source=github&utm_medium=picture&utm_campaign=awesome-gpt-image-2-API-and-Prompts\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://raw.githubusercontent.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts/main/images/poster_case160/output.jpg\" width=\"300\" alt=\"GPT-Image-2 Prompt Example - E-commerce Main Image - 9-Panel Product TVC Storyboard\"></a> |\n\n**Prompt:**\n\n```\nUsing the provided reference image, transform the single casual product photo into a polished e-commerce TVC storyboard board for a {argument name=\"video duration\" default=\"15-second\"} ad in a {argument name=\"aspect ratio\" default=\"9:16\"} vertical format, presented as a 9-panel grid. Keep the same blue-and-white ceramic ashtray as the product base, but restage it across cinematic advertising shots with warm premium lighting, shallow depth of field, and a refined lifestyle desktop environment. Add a dark storyboard layout with Chinese titles and timing for each panel. Include exactly 9 scenes: 1) environment-establishing wide shot with desk, books, window, and the product placed in context; 2) hero product medium shot on the table; 3) extreme close-up of the blue floral craftsmanship pattern; 4) use case showing a hand placing a cigarette into the ashtray with visible smoke; 5) top-down capacity display showing multiple cigarette butts inside; 6) cleaning scene under running water in a sink with a hand holding the product; 7) bottom-detail close-up showing the underside and anti-slip pads; 8) mood/lifestyle scene at night with the product on a desk, smoke rising, and ambient lamp light; 9) brand closing frame with the product as the hero plus Chinese marketing text. Add the overall header text \"产品TVC分镜脚本(15秒 / 9:16竖屏 / 9宫格)\" and a product subtitle naming it {argument name=\"product name\" default=\"青花瓷烟灰缸\"}. Give each of the 9 panels a Chinese scene title and timestamp, plus small descriptive Chinese copy beneath each image in the style of a professional commercial shot list. Use premium, realistic commercial photography throughout, consistent product identity, elegant Chinese aesthetic, and a clean high-end storyboard presentation.\n```\n\n<!-- Case 3: Burger hero image plus 9-cell ad storyboard (by @Gdgtify) -->\n### Case 3: [Burger hero image plus 9-cell ad storyboard](https://x.com/Gdgtify/status/2049449869530775877) (by [@Gdgtify](https://x.com/Gdgtify))\n\n|                                                                                                                                                                                                        Output                                                                                                                                                                                                        |\n| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |\n| <a href=\"https://evolink.ai/gpt-image-2-prompts?utm_source=github&utm_medium=picture&utm_campaign=awesome-gpt-image-2-API-and-Prompts\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://raw.githubusercontent.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts/main/images/ecommerce_case163/output.jpg\" width=\"300\" alt=\"GPT-Image-2 Prompt Example - Burger hero image plus 9-cell ad storyboard\"></a> |\n\n**Prompt:**\n\n```\nPrompt 1: Create a cinematic hero image of a gourmet cheeseburger on a dark stone surface with glossy brioche bun, melted cheese, crisp lettuce, tomato, grilled patty, sauce, realistic texture, appetizing steam, warm side light, shallow depth of field, premium food commercial style, no text/logos/watermark.\n\nPrompt 2: Create a 9-cell hybrid keyframe-to-transition storyboard sheet for a 15-second gourmet burger ad, moving from empty surface to ingredient assembly to final macro hero shot. Use large S cells and smaller T cells, motion arrows, ghosted ingredient positions, steam, sauce trails, and camera push-in icons. Style: premium food commercial, warm lighting, rich texture, appetizing, cinematic, minimal labels only. No logos, no watermark.\n```\n\n👉 **[See all 20 E-commerce prompt cases →](cases/ecommerce.md)**\n\n<!-- Case 4: Döner Commercial Food Photography Set (by @iamaiistudio) -->\n### Case 4: [Döner Commercial Food Photography Set](https://x.com/iamaiistudio/status/2063094917774086510) (by [@iamaiistudio](https://x.com/iamaiistudio))\n\n| Output |\n| :----: |\n| <a href=\"https://evolink.ai/gpt-image-2-prompts?utm_source=github&utm_medium=picture&utm_campaign=awesome-gpt-image-2-API-and-Prompts\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://raw.githubusercontent.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts/main/images/ecommerce_case164/output.jpg\" width=\"300\" alt=\"Output image\"></a> |\n\n**Prompt:**\n\n```\nprompt:\n\n8K UHD hyper-realistic commercial food photography, 3:4 aspect ratio. 6 scenes, each on its own solid or gradient background:\n\nScene 1, Döner slice explosion: Traditional Turkish döner (beef and lamb mix), paper-thin ribbons spiraling outward mid-air, white garlic sauce and red chili sau",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts/main/images/poster_case151/output.jpg",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts/main/images/poster_case160/output.jpg",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts/main/images/ecommerce_case163/output.jpg",
+          "caption": ""
+        }
+      ],
+      "score": 1966
     },
     {
       "candidate": {
@@ -259,14 +367,14 @@
         "github": {
           "fullName": "devdotfast/whiteboard",
           "description": "open-source canvas for thoughtful software design",
-          "stars": 3238,
-          "forks": 161,
+          "stars": 3250,
+          "forks": 163,
           "createdAt": "2026-08-18T15:06:04Z",
-          "ageDays": 61,
-          "starsPerDay": 53.1,
-          "pushedAt": "2026-10-17T00:21:07Z",
+          "ageDays": 62,
+          "starsPerDay": 52.4,
+          "pushedAt": "2026-10-19T03:55:58Z",
           "archived": false,
-          "openIssues": 39,
+          "openIssues": 34,
           "topics": [],
           "homepage": "https://whiteboard.dev.fast/",
           "language": "TypeScript",
@@ -302,7 +410,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "3238 sao, 161 fork, ~53.1 sao/ngày, 61 ngày tuổi"
+            "3250 sao, 163 fork, ~52.4 sao/ngày, 62 ngày tuổi"
           ]
         }
       },
@@ -336,11 +444,11 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5296,
+          "stars": 5298,
           "forks": 208,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 235,
-          "starsPerDay": 22.5,
+          "ageDays": 236,
+          "starsPerDay": 22.4,
           "pushedAt": "2026-08-13T10:09:08Z",
           "archived": false,
           "openIssues": 141,
@@ -398,90 +506,13 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5296 sao, 208 fork, ~22.5 sao/ngày, 235 ngày tuổi"
+            "5298 sao, 208 fork, ~22.4 sao/ngày, 236 ngày tuổi"
           ]
         }
       },
       "readmeExcerpt": "# Mouser — Logitech Mouse Remapper\n\n<p align=\"center\">\n  <img src=\"images/logo_icon.png\" width=\"128\" alt=\"Mouser logo\" />\n</p>\n\nEnglish | [中文文档](README_CN.md)\n\nA lightweight, open-source, fully local alternative to **Logitech Options+** for\nremapping Logitech HID++ mice. The current best experience is on the **MX Master**\nand **MX Anywhere** families, with detection and fallback UI support for additional\nLogitech models.\n\n**No telemetry. No cloud. No Logitech account required.**\n\n---\n\n## Contents\n\n- [Download & Run](#download--run)\n- [Screenshots](#screenshots)\n- [Features](#features)\n- [Device coverage](#device-coverage)\n- [Default mappings](#default-mappings)\n- [Available actions](#available-actions)\n- [Build from source](#build-from-source)\n- [Limitations](#limitations)\n- [Roadmap](#roadmap)\n- [Contributing](#contributing)\n- [Acknowledgments](#acknowledgments)\n- [License](#license)\n\n---\n\n## Download & Run\n\n> **No install required.** Just download, extract, and double-click.\n\n<p align=\"center\">\n  <a href=\"https://github.com/TomBadash/Mouser/releases/latest\">\n    <img src=\"https://img.shields.io/github/downloads/TomBadash/Mouser/latest/Mouser-Windows.zip?style=for-the-badge&color=00d4aa&logo=windows&label=Windows&displayAssetName=false\" alt=\"Windows Downloads\" />\n  </a>\n  <a href=\"https://github.com/TomBadash/Mouser/releases/latest\">\n    <img src=\"https://img.shields.io/github/downloads/TomBadash/Mouser/latest/Mouser-macOS.zip?style=for-the-badge&color=00d4aa&logo=apple&label=macOS%20Apple%20Silicon&displayAssetName=false\" alt=\"macOS Apple Silicon Downloads\" />\n  </a>\n  <a href=\"https://github.com/TomBadash/Mouser/releases/latest\">\n    <img src=\"https://img.shields.io/github/downloads/TomBadash/Mouser/latest/Mouser-macOS-intel.zip?style=for-the-badge&color=00d4aa&logo=apple&label=macOS%20Intel&displayAssetName=false\" alt=\"macOS Intel Downloads\" />\n  </a>\n  <a href=\"https://github.com/TomBadash/Mouser/releases/latest\">\n    <img src=\"https://img.shields.io/github/downloads/TomBadash/Mouser/latest/Mouser-Linux.zip?style=for-the-badge&color=00d4aa&logo=linux&label=Linux&displayAssetName=false\" alt=\"Linux Downloads\" />\n  </a>\n  <br />\n  <img src=\"https://img.shields.io/github/downloads/TomBadash/Mouser/total?style=for-the-badge&color=00d4aa&label=Total%20Downloads%20(all%20versions)\" alt=\"Downloads\" />\n</p>\n\n1. Open the [**latest release page**](https://github.com/TomBadash/Mouser/releases/latest).\n2. Download the zip for your platform:\n   - **Windows** — `Mouser-Windows.zip`\n   - **macOS (Apple Silicon)** — `Mouser-macOS.zip`\n   - **macOS (Intel)** — `Mouser-macOS-intel.zip`\n   - **Linux** — `Mouser-Linux.zip`\n3. Extract it anywhere (Desktop, Documents, `/Applications`, wherever).\n4. Run the executable: `Mouser.exe`, `Mouser.app`, or `./Mouser`.\n\nThat's it. The app opens, drops a tray / menu-bar icon, and starts remapping immediately.\n\n### What to expect on first launch\n\n- The settings window opens to the device-aware **Mouse & Profiles** page.\n- A tray icon appears (next to the clock on Windows / Linux, in the menu bar on macOS).\n- Closing the window keeps Mouser running in the tray. Right-click the tray icon → **Quit Mouser** to fully exit.\n- Mouser remembers language and startup behavior between runs.\n\n### First-time notes\n\n- **Windows SmartScreen** may warn the first time — click **More info** → **Run anyway**.\n- **Logitech Options+ must not be running.** Both apps fight over HID++ access; quit Options+ before launching Mouser.\n- **macOS** asks for **Accessibility** permission so the event tap can intercept mouse events. See [readme_mac_osx.md](readme_mac_osx.md) for the full setup walkthrough.\n- **Linux** needs read access to `/dev/hidraw*`, `/dev/input/event*`, and write access to `/dev/uinput`. Run the bundled helper once after extracting:\n  ```bash\n  cd /path/to/extracted/Mouser\n  ./install-linux-permissions.sh\n  ```\n  Reconnect the mouse, then relaunch.\n- Config is saved automatically to:\n  - `%APPDATA%\\Mouser\\config.json` (Windows)\n  - `~/Library/Application Support/Mouser/config.json` (macOS)\n  - `~/.config/Mouser/config.json` (Linux)\n- Logs rotate automatically (5 × 5 MB) under `%APPDATA%\\Mouser\\logs`, `~/Library/Logs/Mouser`, or `$XDG_STATE_HOME/Mouser/logs`.\n\n---\n\n## Screenshots\n\n| Mouse & Profiles | Point & Scroll |\n|---|---|\n| <img src=\"images/Screenshot_mouse.png\" alt=\"Mouser — Mouse & Profiles page\" /> | <img src=\"images/Screenshot_settings.png\" alt=\"Mouser — Point & Scroll settings\" /> |\n\n---\n\n## Features\n\n### Button remapping\n\n- **Remap any programmable button** — middle click, gesture button, back, forward, mode shift, DPI switch (MX Vertical), and horizontal scroll.\n- **Mouse-to-mouse remap** — bind any button to act as left, right, middle, back, or forward click.\n- **Per-application profiles** — Mouser auto-switches mappings when the foreground app changes (e.g. Chrome vs. VS Code).\n- **Custom keyboard shortcuts** — record any key combination (e.g. `Ctrl+Shift+P`) directly in the UI.\n- **40+ built-in actions** — navigation, browser, editing, media, scroll-mode, and DPI shortcuts that adapt per platform.\n\n### Device control\n\n- **DPI / pointer speed** — slider from 200 to the device max (8000 on MX Master) with quick presets, plus a `Cycle DPI Presets` action you can map to a button.\n- **Smart Shift** — toggle Logitech's ratchet ↔ free-spin scroll mode (HID++ `0x2111`), with a sensitivity threshold and a mappable `Toggle SmartShift` action.\n- **Switch scroll mode** — bind a button to flip ratchet / free-spin without opening the UI; defaults to mode-shift.\n- **Scroll direction inversion** — independent toggles for vertical and horizontal scroll.\n- **Gesture button + swipe actions** — tap for one action, swipe up/down/left/right for four others.\n\n### Cross-platform\n\n- **Windows, macOS, and Linux** — native hooks per platform (`WH_MOUSE_LL`, `CGEventTap`, `evdev` + `uinput`).\n- **Native Intel and Apple Silicon macOS builds** — separate `Mouser-macOS-intel.zip` and `Mouser-macOS.zip` artifacts; the menu-bar app runs as `LSUIElement` (no Dock icon).\n- **Resizable UI** — main window starts at 1060 × 700 with a 920 × 620 minimum; the mouse diagram and controls reflow as you resize.\n- **Start at login** — Windows registry key, macOS LaunchAgent, and Linux XDG autostart, with an independent **Start minimized** option that boots straight into the tray. Linux autostart intentionally waits about 15 seconds after login so Bluetooth / HID devices are usually ready before Mouser restores device settings.\n- **Single-instance guard** — launching a second copy brings the existing window to the front instead of starting a duplicate.\n\n### Smart connectivity\n\n- **Bluetooth and Logi Bolt** — both transports are supported on all three platforms; the UI labels the live connection (`Logi Bolt` only when the receiver PID is positively identified).\n- **Auto-reconnection** — Mouser watches for power-off / on cycles and rebinds HID++ + the OS mouse hook without a restart; SmartShift settings are replayed on every reconnect (including wake-from-sleep).\n- **Live connection status** — real-time Connected / Not Connected badge, model name, and active layout in the UI.\n- **Device-aware UI** — interactive MX Master and MX Anywhere diagrams with clickable hotspots; generic fallback card for other models, with an experimental layout-override picker.\n\n### Multi-language UI\n\n- **English / Simplified Chinese / Traditional Chinese** — switch instantly, no restart required.\n- Language preference is saved to `config.json` and restored on next launch.\n- Covers nav, mouse page, settings page, dialogs, system tray / menu bar, and permission prompts.\n\n### Privacy first\n\n- **Fully local** — config is a plain JSON file, all processing happens on your machine.\n- **System tray / menu bar** — runs quietly in the background.\n- **Zero telemetry, zero cloud, zero account required.**\n\n---\n\n## Device coverage\n\n| Family / model | Detection + HID++ probing | UI support |\n|---|---|---|\n| MX Master 4 / 3S / 3 / 2S / MX Master | Yes | Dedicated interactive per-model layouts |\n| MX Anywhere 3S / 3 / 2S | Yes | Dedicated interactive per-model layouts |\n| MX Vertical | Yes | Generic fallback card (with DPI switch button support) |\n| Unknown Logitech HID++ mice | Best effort by PID/name | Generic fallback card |\n\n> MX Master and MX Anywhere devices have dedicated visual overlays. Other devices are still detected, show their model name, and can opt into an experimental layout override — button positions just may not line up until a real overlay lands. See [CONTRIBUTING_DEVICES.md](CONTRIBUTING_DEVICES.md) to add yours.\n\n---\n\n## Default mappings\n\n| Button | Default action |\n|---|---|\n| Back button (XButton1) | Alt + Tab (Switch Windows) |\n| Forward button (XButton2) | Alt + Tab (Switch Windows) |\n| Middle click | Pass-through |\n| Gesture button | Pass-through |\n| Gesture swipes (up / down / left / right) | Pass-through |\n| Mode shift (scroll click) | Switch Scroll Mode (Ratchet / Free Spin) |\n| Horizontal scroll left | Browser Back |\n| Horizontal scroll right | Browser Forward |\n| DPI switch (MX Vertical) | Pass-through |\n\n---\n\n## Available actions\n\nAction labels adapt per platform. Windows exposes `Win+D` and `Task View`; macOS exposes `Mission Control`, `Show Desktop`, `App Exposé`, and `Launchpad`; Linux falls back to compositor-native equivalents.\n\n| Category | Actions |\n|---|---|\n| **Navigation** | Alt+Tab, Alt+Shift+Tab, Show Desktop, Previous Desktop, Next Desktop, Task View (Windows), Mission Control / App Exposé / Launchpad (macOS), Page Up / Page Down / Home / End |\n| **Browser** | Back, Forward, Close Tab (Ctrl+W), New Tab (Ctrl+T), Next Tab (Ctrl+Tab), Previous Tab (Ctrl+Shift+Tab) |\n| **Editing** | Copy, Paste, Cut, Undo, Select All, Save, Find |\n| **Media** | Volume Up, Volume Down, Volume Mute, Play / Pause, Next Track, Previous Track |\n| **Scroll** | Switch Scroll Mode (Ratchet / Free Spin), Toggle SmartShift, Cycle DPI Presets |\n| **Mouse** | Left Click, Right Click, Middle Click, Back (Mouse Button 4), Forward (Mouse Button 5) |\n| **Custom** | User-defined keyboard shortcuts (any key combination, captured in the UI) |\n| **Other** | Do Nothing (pass-through) |\n\n---\n\n## Build from source\n\nYou only need this if you want to hack on Mouser or run a development build. Most users should grab a release zip — see [Download & Run](#download--run).\n\n### Common prerequisites\n\n- **Windows 10/11**, **macOS 12+ (Monterey)**, or **Linux** (X11; KDE Wayland for app detection)\n- **Python 3.10+** (tested up to 3.14)\n- A supported Logitech HID++ mouse paired via Bluetooth or a USB receiver\n- **Logitech Options+ must NOT be running** — it conflicts with HID++ access\n- `git` and a working build toolchain\n\n```bash\ngit clone https://github.com/TomBadash/Mouser.git\ncd Mouser\npython -m venv .venv\n```\n\n<details>\n<summary><strong>Windows</strong></summary>\n\n```powershell\n.\\.venv\\Scripts\\activate\npip install -r requirements.txt\n\n# Run from source\npython main_qml.py\n\n# Or start straight into the tray\npython main_qml.py --start-hidden\n\n# Build a portable zip\nbuild.bat                # standard\nbuild.bat --clean        # force clean rebuild\n```\n\n`build.bat` installs requirements, verifies that `hidapi` is importable, and packages with PyInstaller. The output lives in `dist\\Mouser\\` — zip the folder and ship it.\n\nTo launch a source checkout without a console window, create a shortcut that uses `pythonw.exe`; see [DEVELOPMENT.md](DEVELOPMENT.md#desktop-shortcut-windows).\n\n</details>\n\n<details>\n<summary><strong>macOS</strong></summary>\n\n```bash\nsource .venv/bin/activate\npip install -r requirements.txt\n\n# Run from source\npython main_qml.py\npython main_qml.py --start-hidden     # launch directly to menu bar\n\n# Build the native menu-bar bundle\npip install pyinstaller\n./build_macos_app.sh\n```\n\nThe output is `dist/Mouser.app`. The script reuses `images/AppIcon.icns` when present, otherwise generates one from `images/logo_icon.png`. Signing depends on whether `MOUSER_SIGN_IDENTITY` is set in the environment:\n\n- **Unset (default)**: ad-hoc signs with `codesign --sign -`. Convenient for one-off builds, but the bundle's code identity can change on rebuild, so macOS may ask for Accessibility permission again.\n- **Set to a codesigning identity** (`security find-identity -v -p codesigning` to list them — SHA-1 form preferred): signs every nested `.dylib` / `.so` / `.framework` with hardened runtime options, then signs the outer app with the hardened-runtime exceptions at `build_resources/Mouser.entitlements`. This is a local developer signing path for repeated builds; stable macOS permission behavior depends on keeping the same source, resolved Python interpreter, dependency versions, architecture, signing identity, entitlements, and timestamp policy. A failing `codesign --verify --deep --strict` check aborts the build.\n\n```sh\nMOUSER_SIGN_IDENTITY=\"ABCD1234...\" ./build_macos_app.sh   # local signed build\n```\n\n- This is **not** a notarized release-signing flow. Public macOS release zips remain ad-hoc signed until a separate Developer ID signing, secure timestamp, notarization, stapling, and Gatekeeper validation workflow exists.\n- Build on the architecture you want to ship: an `arm64` Python produces an Apple Silicon bundle, an `x86_64` Python produces an Intel bundle. Set `PYINSTALLER_TARGET_ARCH=arm64|x86_64|universal2` to override.\n- Release CI publishes both `Mouser-macOS.zip` (Apple Silicon) and `Mouser-macOS-intel.zip` (Intel) automatically on tag pushes.\n- Accessibility permission is required. See [readme_mac_osx.md](readme_mac_osx.md) for the full grant flow and platform-specific notes.\n\n</details>\n\n<details>\n<summary><strong>Linux</strong></summary>\n\n```bash\nsource .venv/bin/activate\npip install -r requirements.txt\n\n# Run from source\npython main_qml.py\n\n# Install device permissions (only needed once, then reconnect the mouse)\n./packaging/linux/install-linux-permissions.sh\n\n# Build a portable bundle\nsudo apt-get install libhidapi-dev\npip install pyinstaller\npyinstaller Mouser-linux.spec --noconfirm\n```\n\nThe helper installs `69-mouser-logitech.rules`, reloads `udev`, and tries to `modprobe uinput`. After a successful run, reconnect the mouse, fully quit Mouser, and launch normally — no `sudo`. On systems without logind / `uaccess`, adding the user to the `input` group is the distro-specific fallback.\n\nThe first normal Linux launch creates or refreshes:\n\n```text\n~/.local/share/applications/io.github.tombadash.mouser.desktop\n```\n\nThe generated launcher uses absolute paths for the current portable app or source checkout, and syncs Mouser's app icon into the per-user hicolor icon theme when possible. If you move the checkout, launch Mouser once from the new path to refresh the app-menu entry. Enabling **Start at login** also manages:\n\n```text\n~/.config/autostart/io.github.tombadash.mouser.desktop\n```\n\nThat Linux autostart entry includes a short GNOME startup delay so Mouser does not race Bluetooth / HID initialization immediately after login.\n\n`xdotool` enables per-app profile switching on X11; `kdotool` adds KDE Wayland support. Other Wayland compositors fall back to the default profile.\n\n</details>\n\n> **Automated releases:** pushing a `v*` tag triggers [`.github/workflows/release.yml`](.github/workflows/release.yml), which builds Windows, macOS (Apple Silicon + Intel), and Linux artifacts in CI and uploads them to the GitHub Release.\n\nFor project layout, the architecture diagram, the HID++ gesture detector, the Engine + reconnection flow, debug CLI flags (`--hid-backend=iokit|hidapi|auto`), and how to run the test suite, see [DEVELOPMENT.md](DEVELOPMENT.md). To add a new device, see [CONTRIBUTING_DEVICES.md](CONTRIBUTING_DEVICES.md).\n\n---\n\n## Limitations\n\n- **Per-device mappings aren't fully separated yet** — layout overrides are stored per detected device, but profile mappings are still global.\n- **Conflicts with Logitech Options+** — both apps fight over HID++ ac",
       "media": [],
       "score": 1443
-    },
-    {
-      "candidate": {
-        "key": "arekejoker/qwen21-nsfw-pose-skill",
-        "fullName": "Arekejoker/qwen21-nsfw-pose-skill",
-        "url": "https://github.com/Arekejoker/qwen21-nsfw-pose-skill",
-        "description": "Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw",
-        "stars": 2666,
-        "sources": [
-          "github-search"
-        ],
-        "signals": [
-          "⭐ 2666"
-        ],
-        "signalUrls": [],
-        "points": 0,
-        "verticals": [
-          "creative"
-        ]
-      },
-      "signals": {
-        "repo": {
-          "owner": "Arekejoker",
-          "repo": "qwen21-nsfw-pose-skill"
-        },
-        "github": {
-          "fullName": "Arekejoker/qwen21-nsfw-pose-skill",
-          "description": "Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw",
-          "stars": 2666,
-          "forks": 511,
-          "createdAt": "2026-10-13T03:09:42Z",
-          "ageDays": 5,
-          "starsPerDay": 533.2,
-          "pushedAt": "2026-10-17T04:54:54Z",
-          "archived": false,
-          "openIssues": 4,
-          "topics": [
-            "agent-skill",
-            "comfyui",
-            "image-generation",
-            "openclaw",
-            "pose-control",
-            "qwen-image"
-          ],
-          "homepage": null,
-          "language": "Python",
-          "suggestedHealthScore": 21
-        },
-        "hackerNews": [],
-        "reddit": [
-          {
-            "subreddit": "selfhosted",
-            "error": "403 Blocked — https://old.reddit.com/r/selfhosted/search.json?q=qwen21-nsfw-pose-skill&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/selfhosted/search/?q=qwen21-nsfw-pose-skill&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "opensource",
-            "error": "403 Blocked — https://old.reddit.com/r/opensource/search.json?q=qwen21-nsfw-pose-skill&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/opensource/search/?q=qwen21-nsfw-pose-skill&restrict_sr=1&sort=new"
-          },
-          {
-            "subreddit": "SideProject",
-            "error": "403 Blocked — https://old.reddit.com/r/SideProject/search.json?q=qwen21-nsfw-pose-skill&restrict_sr=1&sort=new&limit=5",
-            "manualUrl": "https://www.reddit.com/r/SideProject/search/?q=qwen21-nsfw-pose-skill&restrict_sr=1&sort=new"
-          }
-        ],
-        "heuristic": {
-          "maturitySuggestion": "rising",
-          "reasons": [
-            "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "2666 sao, 511 fork, ~533.2 sao/ngày, 5 ngày tuổi"
-          ]
-        }
-      },
-      "readmeExcerpt": "# qwen21-nsfw-pose\n\n[![Package checks](https://github.com/Arekejoker/qwen21-nsfw-pose-skill/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/Arekejoker/qwen21-nsfw-pose-skill/actions/workflows/validate.yml)\n\n**Qwen-Image 2.1 本地 NSFW / 姿势出图完整配方** — 作者级提示词结构 + NSFW LoRA + 136 个 3D 姿势库 + VNCCS 人偶精确姿势控制。\n\n基于 ComfyUI + `qwen_image_2.1_int8_convrot` 底模（与 Civitai 作者同款底模），复刻并验证过 Civitai 作者样图（2026-10-12）。\n\n- 适用：Claude Code / Codex / Cursor / OpenClaw（agent 技能）+ 人类手动使用\n- 内容：可跟跑的作者案例、强制配方、姿势大胆度阶梯（L0–L3）、完整依赖与安装指南\n\n**演示**（3D 人偶调姿势 → 一键生成 → 成品，Route ④）：\n\n<img src=\"references/demo_pose_studio.gif\" width=\"100%\" alt=\"演示：3D 人偶变形 → 实时生成 → 成品\" />\n\n---\n\n## 效果展示\n\n### 本配方输出：同一海边场景的三级对照（L0 → L1 → L2）\n\n| L0 · 全着装，无 LoRA（提示词即全部） | L1 · 湿身泳装 + LoRA@1.0 | L2 · 极低机位 + 湿身蹲姿 + LoRA@1.0 |\n| --- | --- | --- |\n| <img src=\"references/pose_examples/01_seaside.png\" width=\"290\" /> | <img src=\"references/pose_examples/01b_seaside_lora.png\" width=\"290\" /> | <img src=\"references/pose_examples/06_l2_squat_lowangle.png\" width=\"290\" /> |\n\n三张图同场景递进：L0 只有提示词；L1 加 LoRA + 显式皮肤/水珠描写；L2 再加低机位与开合姿态。**LoRA 负责质感，提示词负责信息密度，机位负责大胆度。**\n\n### NSFW 效果（⚠️ 以下图片包含裸露内容）\n\n<details>\n<summary><picture><img src=\"references/author_samples_cover_cursor.gif?v=3\" width=\"100%\" alt=\"作者原图（NSFW）· 点击卡片展开\" /></picture><br/><b>👇 点击上方卡片展开作者原图（含裸露内容 · 18+，再点收起）</b></summary>\n\n**作者原图**（Civitai showcase，本配方复刻的目标）：\n\n| 作者 · 淋浴（tawsLoRa） | 作者 · 按摩（tawsLoRa） | 作者 · 自拍（TheseAlpacas） |\n| --- | --- | --- |\n| <img src=\"downloads/samples/taws_v13_shower_author.jpg\" width=\"300\" /> | <img src=\"downloads/samples/taws_v13_massage_author.jpg\" width=\"300\" /> | <img src=\"downloads/samples/thesealpacas_v2_selfie_author.jpg\" width=\"300\" /> |\n\n</details>\n\n用 §「快速开始」的命令可复刻淋浴那张（复刻输出已验证与作者原图同场景同构图，见 `downloads/samples/phase5_meta.json` 与本文快速开始一节）。\n\n### 3D 人偶精确姿势（Route ④，136 姿势库）\n\n默认人物图 `references/src_standing.png`；姿势 = 骨骼旋转 JSON（MakeHuman 网格 + three.js 渲染），\n换姿势且保身份。姿势库来源：HuggingFace 4 个公开仓库（`Totemistyk/General_Poses`、\n`Totemistyk/Ballet_PoseStudio`、`MIUProject/VNCCS_PoseLibrary_Main`、\n`MIUProject/MySuperPoseRepo`）+ 55 个手工精选，共 **136 个**。\n\n---\n\n## 快速开始（作者案例跟跑）\n\n前置安装见 [install/setup.md](install/setup.md)。装好后先跑一次自检（只读，不改动任何东西）：\n\n```bash\npython3 scripts/doctor.py\n```\n\n它逐项检查 ComfyUI 连通性、底模/LoRA、VNCCS 节点、姿势库、浏览器后端，并给出缺失项的修复指引。\n全绿后一条命令复刻作者淋浴样图（~5 分钟）：\n\n```bash\npython3 scripts/qwen_pose_test.py \\\n  --mode t2i --name author_case_shower \\\n  --prompt \"$(cat prompts/taws_v13_shower.txt)\" \\\n  --seed 80964 \\\n  --steps 50 --cfg 2.5 --sampler er_sde --scheduler beta \\\n  --width 1152 --height 1728 \\\n  --lora \"qwen2_1-femaledVaginus-nsfw-v1_3-fine_L22-31.safetensors\" \\\n  --lora-strength 1.0 \\\n  --out outputs/author_case/shower.png\n```\n\n对比对象：`downloads/samples/taws_v13_shower_author.jpg`。\n完整元数据（提示词/参数/seed/完整工作流）：`downloads/samples/phase5_meta.json`。\n\n### 硬件要求（参考）\n\n底模为 Qwen-Image 2.1 int8 套件，模型文件合计约 16GB（diffusion 6.8GB / text encoder 8.7GB / VAE 0.6GB），LoRA 各自 ≤608MB。\n\n- **最低**：NVIDIA 12GB 显存 + 32GB 内存——能跑，ComfyUI 会自动把部分模型卸载到内存，出图慢一些\n- **推荐**：24GB 显存（3090/4090 级）+ 32–64GB 内存——模型基本常驻，体验最顺\n- **8GB 显存**：建议用 GGUF 量化版（社区实测 12–16GB 显存可跑 Q4；8GB 靠 offload 会明显更慢）\n- 纯 CPU 不推荐（单张图耗时过长）\n- 硬盘预留 ~40GB；CPU 无特殊要求（现代 x86_64/ARM 均可）；Linux 最省事，Windows 建议 WSL2；Mac（Apple Silicon）见下方单独小节\n- 路线④额外需要一个可连接的桌面浏览器（Playwright/CDP，见 `install/setup.md`）\n\n本仓库案例图与实测数据来自统一内存设备（DGX Spark）：1024×1024、40 步约 32 秒/张，峰值增量约 7–10GB。\n\n### macOS（Apple Silicon）\n\n- 适用 M 系芯片（M1 及以上）；Intel Mac 不建议\n- **模型选择看统一内存**：≥32GB 直接用本仓库原版 int8 套件（ComfyUI + MPS）；16–32GB 建议改用 GGUF 量化版（搭配 ComfyUI-GGUF；社区实测 Q8 更快、Q4 更省内存）\n- **速度预期：分钟级/张**——社区报告：M5 Pro 48GB 跑 int8 约 144 秒/1024；M1 Max 64GB 约 7–10 分钟/张（加缓存优化节点如 Comfyui-Spectrum-Qwen2.1 可提速 2–3 倍）。对比本仓库 DGX Spark 实测 32 秒/张，仅供参考\n- 已知坑：编辑模式在 MPS 上偶发 VAE 编码异常，可用 ComfyUI 的 `--cpu-vae` 绕过（ComfyUI issue #16433，已有修复讨论）；内存紧张时建议单张生成、关闭其他大内存应用\n- 路线兼容：①②③ 脚本在 macOS 可直接运行（纯 Python 标准库、POSIX 兼容）；④ 需 `playwright install chromium`（macOS 版），`install/setup.md` 中的 AppArmor 提示不适用\n- ⚠️ 以上 Mac 数据来自社区报告，维护者没有 Mac 硬件、未经实测；如果你在 Mac 上跑通或遇到问题，欢迎开 issue 反馈，我们会持续更新本说明\n\n## 四条路线\n\n| 需求 | 路线 | 命令 |\n| --- | --- | --- |\n| 新 NSFW/性感图（文字出图） | ① T2I + NSFW LoRA（必开） | `scripts/qwen_pose_test.py --mode t2i` |\n| 已有角色图换姿势（保脸/保服装） | ② Edit | `scripts/qwen_pose_test.py --mode edit` |\n| 已有 3D 人偶姿势渲染图，脚本换姿势（不开浏览器） | ③ 脚本姿势迁移（人偶参考 + VNCCS LoRA） | `scripts/run_pose_transfer.py --char <角色图> --pose-ref <人偶渲染图> --out <出图.png>` |\n| 指定 3D 姿势库里的精确姿势 | ④ VNCCS PoseStudio | `scripts/run_vnccs_ui.py --pose <name> [--prompt \"<场景>\"]` |\n\n路线③的人偶参考图可由路线④的运行自动保存（输出目录里的 `doll_*.png`），或任何 3D 姿态渲染图。\n不要用照片/插画当姿势参考——模型会把参考人物拼进画面，或直接重画参考人物；请使用无身份特征的 3D 人偶渲染图（路线③/④）。\n\n姿势怎么选（大胆度阶梯 L0–L3、用户要求→姿势族映射表）：见 `SKILL.md` §4，或\n`scripts/run_vnccs_ui.py --list-poses` 列出全部 136 个姿势。\n\n## 配方要点（摘要）\n\n- `er_sde` + `beta`，CFG 2.5，50 步，1152×1728 竖版\n- **NSFW LoRA 永远开**（默认 `femaledVaginus v1.3b` @ 1.0）\n- 提示词必须按作者结构写满 7 要素、300–1500 字符、含 LoRA 触发词\n- 弱化配方（无 LoRA/短提示词/减步数）前必须告知用户代价，不许默默减弱\n\n完整规则与证据：`SKILL.md`。\n\n## 目录结构\n\n```\n├── SKILL.md            # agent 技能（完整规则）\n├── install/setup.md    # 安装指南（模型/LoRA/节点/姿势库）\n├── scripts/            # doctor.py 自检、出图/自定义姿势脚本、浏览器 fallback、media_lock.py、validate_package.py\n├── workflows/          # qwen21_t2i.json / qwen21_edit.json / VNCCS_PoseStudio_QI2.1.json\n├── prompts/            # 3 篇作者原提示词 + 参数\n├── references/         # 效果展示图（L0/L1/L2 海边对照）+ 默认人物图\n├── downloads/samples/  # 作者原图 + 作者元数据 + 原始工作流 JSON\n└── pose_library/       # 55 个手工精选姿势（安装时拷入 ComfyUI）\n```\n\n## 说明\n\n- 本仓库原创代码与文档（`scripts/`、`workflows/`、`prompts/`、`SKILL.md`、README 等）采用 [Apache License 2.0](LICENSE)\n- 第三方素材不在 Apache-2.0 覆盖范围内，权利归各自原作者：`downloads/samples/` 作者原图（Civitai 作者）、`pose_library/` 社区姿势与预览（MIUProject / Totemistyk，其中 Ballet 仓库为 MIT）、模型与 LoRA（HF `Comfy-Org/Qwen-Image-2.1`、Civitai 2986844 / 2958918 / 2988215、RunningHubAI、MIUProject 等）\n- NSFW 示例图仅供配方演示；仓库为公开仓库，介意图片的先收藏后阅读\n\n## 致谢\n\n本仓库的姿势控制能力（路线③④）与 136 姿势库基于 [AHEKOT](https://github.com/AHEKOT/ComfyUI_VNCCS_Utils)（VNCCS_Utils）、[Totemistyk](https://huggingface.co/Totemistyk)、[MIUProject](https://huggingface.co/MIUProject) 的开源工作；底模与 LoRA 来自 Qwen / Comfy-Org、RunningHubAI 及 Civitai 的 tawsLoRa、TheseAlpacas、posture-v3。感谢所有作者。\n",
-      "media": [],
-      "score": 1233.3
     }
   ]
 }
