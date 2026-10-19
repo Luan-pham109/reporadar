@@ -8,9 +8,14 @@ vertical: ["creative"]
 
 maturity: "rising"
 repoStats:
-  stars: 1597
-  forks: 275
-  note: "~109 ngày tuổi, ~14.7 sao/ngày"
+  stars: 1919
+  forks: 327
+  note: "~222 ngày tuổi, ~8.6 sao/ngày"
+  starsPerDay: 8.6
+  ageDays: 222
+  pushedAt: "2026-04-27T01:33:05Z"
+  archived: false
+  openIssues: 16
 standoutFeatures:
   - "Nhận kịch bản TXT, DOCX hoặc PDF rồi tự phân tích nhân vật, chia tập và tạo mô tả hình ảnh cho từng nhân vật."
   - "Có luồng tạo bốn góc nhìn nhân vật, storyboard, prompt video, khung đầu/cuối và ghép video có phụ đề."

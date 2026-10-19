@@ -17,9 +17,14 @@ vertical: ["creative", "agency"]
 
 maturity: "established"
 repoStats:
-  stars: 19083
-  forks: 1389
-  note: "~64 ngày tuổi, ~298.2 sao/ngày"
+  stars: 28210
+  forks: 1952
+  note: "~179 ngày tuổi, ~157.6 sao/ngày"
+  starsPerDay: 157.6
+  ageDays: 179
+  pushedAt: "2026-08-07T03:58:08Z"
+  archived: false
+  openIssues: 51
 standoutFeatures:
   - "Tạo single-file HTML slide deck cho agent environment như Claude Code và Codex."
   - "Có nhiều hướng layout như editorial magazine, Swiss design, social cover và image prompt."
