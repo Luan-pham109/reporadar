@@ -17,9 +17,14 @@ vertical: ["creative", "agency", "ecom"]
 
 maturity: "rising"
 repoStats:
-  stars: 7839
-  forks: 710
-  note: "~71 ngày tuổi, ~110.4 sao/ngày"
+  stars: 10124
+  forks: 886
+  note: "~186 ngày tuổi, ~54.4 sao/ngày"
+  starsPerDay: 54.4
+  ageDays: 186
+  pushedAt: "2026-10-19T02:17:15Z"
+  archived: false
+  openIssues: 3
 standoutFeatures:
   - "Kho prompt được cập nhật hằng ngày, có ảnh xem trước và số lượng mẫu rất lớn."
   - "Phủ nhiều nhóm use case như social post, infographic, thumbnail, product marketing và storyboard."

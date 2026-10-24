@@ -8,14 +8,14 @@ vertical: ["agency"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 6677
-  forks: 385
-  note: "~293 ngày tuổi, ~22.8 sao/ngày"
-  starsPerDay: 22.8
-  ageDays: 293
-  pushedAt: 2026-07-03T20:55:05Z
+  stars: 7283
+  forks: 446
+  note: "~391 ngày tuổi, ~18.6 sao/ngày"
+  starsPerDay: 18.6
+  ageDays: 391
+  pushedAt: "2026-10-15T08:04:13Z"
   archived: false
-  openIssues: 78
+  openIssues: 107
 standoutFeatures:
   - "Tự dựng dòng thời gian ngày làm việc từ hoạt động màn hình: hiểu bạn đang làm gì (code, xem YouTube, họp Slack) chứ không chỉ ghi tên app đang mở."
   - "Local-first, mã nguồn mở (MIT): recording và dữ liệu nằm trên máy bạn; có thể chọn chạy AI cục bộ qua Ollama/LM Studio thay vì gửi lên cloud."
