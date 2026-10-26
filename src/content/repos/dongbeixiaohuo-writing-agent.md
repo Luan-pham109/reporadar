@@ -8,14 +8,14 @@ vertical: ["agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 301
-  forks: 56
-  note: "~193 ngày tuổi, ~1.6 sao/ngày"
-  starsPerDay: 1.6
-  ageDays: 193
-  pushedAt: "2026-06-17"
+  stars: 439
+  forks: 69
+  note: "~309 ngày tuổi, ~1.4 sao/ngày"
+  starsPerDay: 1.4
+  ageDays: 309
+  pushedAt: "2026-10-22T17:44:06Z"
   archived: false
-  openIssues: 3
+  openIssues: 2
 standoutFeatures:
   - "Quy trình nhiều bước (chọn đề tài/lập trường → đào dẫn chứng → dàn ý → viết nháp → biên tập → khử giọng AI → cổng fact-check) thay vì một prompt tổng ra cả bài."
   - "Bản v0.7.8 thêm 'sổ chứng cứ' bắt buộc: mọi số liệu, tên người, tên tổ chức trong bài phải gắn nguồn, và một bước fact-check chặn xuất bản nếu phát hiện dữ kiện mâu thuẫn hoặc không có nguồn."

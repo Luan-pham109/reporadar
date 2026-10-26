@@ -17,14 +17,14 @@ vertical: ["creative", "agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 932
-  forks: 135
-  note: "~23 ngày tuổi, ~40.5 sao/ngày"
-  starsPerDay: 40.5
-  ageDays: 23
-  pushedAt: 2026-07-30T16:21:18Z
+  stars: 2458
+  forks: 354
+  note: "~108 ngày tuổi, ~22.8 sao/ngày"
+  starsPerDay: 22.8
+  ageDays: 108
+  pushedAt: "2026-10-05T16:15:11Z"
   archived: false
-  openIssues: 0
+  openIssues: 6
 standoutFeatures:
   - "Một chủ đề chạy qua pipeline: beat map → bake-off chọn style → keyframe collage → animate → voice + nhạc → ffmpeg ghép ra final.mp4."
   - "Ba luồng đầu vào: B-roll (chỉ cần chủ đề), A-roll (có sẵn video talking-head, giữ mặt/khẩu hình), C-roll (một ảnh tĩnh, cắt nhân vật thành sticker)."

@@ -8,14 +8,14 @@ vertical: ["creative"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 10618
-  forks: 363
-  note: "~165 ngày tuổi, ~64.4 sao/ngày; đang được bàn ở Show HN (418 điểm)"
-  starsPerDay: 64.4
-  ageDays: 165
-  pushedAt: 2026-05-06T10:53:19Z
+  stars: 11235
+  forks: 414
+  note: "~271 ngày tuổi, ~41.5 sao/ngày"
+  starsPerDay: 41.5
+  ageDays: 271
+  pushedAt: "2026-05-06T10:53:19Z"
   archived: false
-  openIssues: 77
+  openIssues: 96
 standoutFeatures:
   - "Render 6 loại sơ đồ (flowchart, state, sequence, class, ER, XY chart) ra cả SVG cho UI đẹp lẫn ASCII/Unicode cho terminal."
   - "Hệ theming chỉ cần 2 màu (nền + chữ) là suy ra cả sơ đồ; kèm 15 theme sẵn và tương thích mọi theme VS Code qua Shiki; đổi theme bằng CSS variable không cần render lại."

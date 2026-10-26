@@ -11,12 +11,12 @@ vertical: ["ecom"]
 
 maturity: "rising"
 repoStats:
-  stars: 1133
-  forks: 58
-  note: "~564 ngày tuổi, ~2 sao/ngày"
-  starsPerDay: 2
-  ageDays: 564
-  pushedAt: 2026-06-30T11:36:42Z
+  stars: 1154
+  forks: 67
+  note: "~671 ngày tuổi, ~1.7 sao/ngày"
+  starsPerDay: 1.7
+  ageDays: 671
+  pushedAt: "2026-10-08T06:13:45Z"
   archived: false
   openIssues: 3
 standoutFeatures:
