@@ -11,9 +11,14 @@ vertical: ["creative", "agency"]
 
 maturity: "established"
 repoStats:
-  stars: 5287
-  forks: 1173
-  note: "~289 ngày tuổi, ~18.3 sao/ngày"
+  stars: 7355
+  forks: 1969
+  note: "~410 ngày tuổi, ~17.9 sao/ngày"
+  starsPerDay: 17.9
+  ageDays: 410
+  pushedAt: "2026-10-26T07:11:28Z"
+  archived: false
+  openIssues: 1821
 standoutFeatures:
   - "Mở rộng vLLM từ text generation sang text, image, video và audio serving trong cùng framework."
   - "Hỗ trợ cả mô hình autoregressive lẫn diffusion và các pipeline đầu ra không đồng nhất."

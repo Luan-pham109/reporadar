@@ -11,14 +11,14 @@ vertical: ["agency"]
 
 maturity: "established"
 repoStats:
-  stars: 53152
-  forks: 9631
-  note: "~1079 ngày tuổi, ~49.3 sao/ngày"
-  starsPerDay: 49.3
-  ageDays: 1079
-  pushedAt: 2026-07-10T06:46:00Z
+  stars: 62046
+  forks: 12679
+  note: "~1187 ngày tuổi, ~52.3 sao/ngày"
+  starsPerDay: 52.3
+  ageDays: 1187
+  pushedAt: "2026-10-26T07:39:58Z"
   archived: false
-  openIssues: 3827
+  openIssues: 5709
 standoutFeatures:
   - "Một interface thống nhất gọi 100+ LLM theo format OpenAI: đổi nhà cung cấp mà gần như không phải viết lại code."
   - "Bản proxy/gateway self-host có virtual key, spend tracking, guardrail, load balancing và dashboard quản trị sẵn."

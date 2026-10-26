@@ -8,9 +8,14 @@ vertical: ["creative"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 824
-  forks: 118
-  note: "~95 ngày tuổi, ~8.7 sao/ngày; có tín hiệu đang được bàn ở HN/Reddit"
+  stars: 2575
+  forks: 418
+  note: "~215 ngày tuổi, ~12 sao/ngày"
+  starsPerDay: 12
+  ageDays: 215
+  pushedAt: "2026-10-24T14:56:42Z"
+  archived: false
+  openIssues: 10
 standoutFeatures:
   - "App desktop gom chat, agent mode, tạo ảnh và tạo video trong một giao diện."
   - "README nhấn mạnh chạy local, không thu dữ liệu, không cần API key nếu dùng backend local."
