@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T06:30:44.847Z",
+  "generatedAt": "2026-10-27T06:28:14.956Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -22,12 +22,12 @@
         "fullName": "coreyhaines31/marketingskills",
         "url": "https://github.com/coreyhaines31/marketingskills",
         "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-        "stars": 56564,
+        "stars": 56743,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 56564"
+          "⭐ 56743"
         ],
         "signalUrls": [],
         "points": 0,
@@ -44,14 +44,14 @@
         "github": {
           "fullName": "coreyhaines31/marketingskills",
           "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-          "stars": 56564,
-          "forks": 8365,
+          "stars": 56743,
+          "forks": 8388,
           "createdAt": "2026-01-15T19:45:23Z",
-          "ageDays": 283,
-          "starsPerDay": 199.9,
-          "pushedAt": "2026-10-22T16:57:46Z",
+          "ageDays": 284,
+          "starsPerDay": 199.8,
+          "pushedAt": "2026-10-26T19:16:55Z",
           "archived": false,
-          "openIssues": 58,
+          "openIssues": 57,
           "topics": [
             "agent-skills",
             "ai-agents",
@@ -115,7 +115,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "56564 sao, 8365 fork, ~199.9 sao/ngày, 283 ngày tuổi"
+            "56743 sao, 8388 fork, ~199.8 sao/ngày, 284 ngày tuổi"
           ]
         }
       },
@@ -129,12 +129,12 @@
         "fullName": "hypit-ai/hypit",
         "url": "https://github.com/hypit-ai/hypit",
         "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-        "stars": 25690,
+        "stars": 25942,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 25690"
+          "⭐ 25942"
         ],
         "signalUrls": [],
         "points": 0,
@@ -151,14 +151,14 @@
         "github": {
           "fullName": "hypit-ai/hypit",
           "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-          "stars": 25690,
-          "forks": 2936,
+          "stars": 25942,
+          "forks": 2962,
           "createdAt": "2026-07-29T18:49:19Z",
-          "ageDays": 88,
-          "starsPerDay": 291.9,
-          "pushedAt": "2026-10-24T21:08:40Z",
+          "ageDays": 89,
+          "starsPerDay": 291.5,
+          "pushedAt": "2026-10-26T13:12:33Z",
           "archived": false,
-          "openIssues": 59,
+          "openIssues": 75,
           "topics": [
             "agentic-ai",
             "ai",
@@ -207,7 +207,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "25690 sao, 2936 fork, ~291.9 sao/ngày, 88 ngày tuổi"
+            "25942 sao, 2962 fork, ~291.5 sao/ngày, 89 ngày tuổi"
           ]
         }
       },
@@ -237,13 +237,13 @@
         "fullName": "Evolink-AI/awesome-gpt-image-2-API-Prompts",
         "url": "https://github.com/Evolink-AI/awesome-gpt-image-2-API-Prompts",
         "description": "GPT-Image-2 API and Prompts",
-        "stars": 17350,
+        "stars": 17354,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 17350",
-          "⭐ 17350"
+          "⭐ 17354",
+          "⭐ 17354"
         ],
         "signalUrls": [],
         "points": 0,
@@ -259,11 +259,11 @@
         "github": {
           "fullName": "Evolink-AI/awesome-gpt-image-2-API-Prompts",
           "description": "GPT-Image-2 API and Prompts",
-          "stars": 17350,
-          "forks": 1744,
+          "stars": 17354,
+          "forks": 1746,
           "createdAt": "2026-04-18T11:22:14Z",
-          "ageDays": 191,
-          "starsPerDay": 90.8,
+          "ageDays": 192,
+          "starsPerDay": 90.4,
           "pushedAt": "2026-07-18T06:23:28Z",
           "archived": false,
           "openIssues": 3,
@@ -315,7 +315,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "17350 sao, 1744 fork, ~90.8 sao/ngày, 191 ngày tuổi"
+            "17354 sao, 1746 fork, ~90.4 sao/ngày, 192 ngày tuổi"
           ]
         }
       },
@@ -337,7 +337,7 @@
           "caption": ""
         }
       ],
-      "score": 1967.5
+      "score": 1967.7
     },
     {
       "candidate": {
@@ -367,14 +367,14 @@
         "github": {
           "fullName": "devdotfast/whiteboard",
           "description": "open-source canvas for thoughtful software design",
-          "stars": 3352,
-          "forks": 174,
+          "stars": 3364,
+          "forks": 175,
           "createdAt": "2026-08-18T15:06:04Z",
-          "ageDays": 69,
-          "starsPerDay": 48.6,
-          "pushedAt": "2026-10-25T17:34:25Z",
+          "ageDays": 70,
+          "starsPerDay": 48.1,
+          "pushedAt": "2026-10-27T01:33:02Z",
           "archived": false,
-          "openIssues": 41,
+          "openIssues": 32,
           "topics": [],
           "homepage": "https://whiteboard.dev.fast/",
           "language": "TypeScript",
@@ -410,7 +410,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "3352 sao, 174 fork, ~48.6 sao/ngày, 69 ngày tuổi"
+            "3364 sao, 175 fork, ~48.1 sao/ngày, 70 ngày tuổi"
           ]
         }
       },
@@ -444,11 +444,11 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5314,
+          "stars": 5316,
           "forks": 212,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 243,
-          "starsPerDay": 21.9,
+          "ageDays": 244,
+          "starsPerDay": 21.8,
           "pushedAt": "2026-10-19T15:56:15Z",
           "archived": false,
           "openIssues": 138,
@@ -506,7 +506,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5314 sao, 212 fork, ~21.9 sao/ngày, 243 ngày tuổi"
+            "5316 sao, 212 fork, ~21.8 sao/ngày, 244 ngày tuổi"
           ]
         }
       },
