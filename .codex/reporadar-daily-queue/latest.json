@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T06:28:14.956Z",
+  "generatedAt": "2026-10-28T06:57:06.151Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -22,12 +22,12 @@
         "fullName": "coreyhaines31/marketingskills",
         "url": "https://github.com/coreyhaines31/marketingskills",
         "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-        "stars": 56743,
+        "stars": 56965,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 56743"
+          "⭐ 56965"
         ],
         "signalUrls": [],
         "points": 0,
@@ -44,14 +44,14 @@
         "github": {
           "fullName": "coreyhaines31/marketingskills",
           "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-          "stars": 56743,
-          "forks": 8388,
+          "stars": 56965,
+          "forks": 8409,
           "createdAt": "2026-01-15T19:45:23Z",
-          "ageDays": 284,
-          "starsPerDay": 199.8,
-          "pushedAt": "2026-10-26T19:16:55Z",
+          "ageDays": 285,
+          "starsPerDay": 199.9,
+          "pushedAt": "2026-10-27T21:16:06Z",
           "archived": false,
-          "openIssues": 57,
+          "openIssues": 59,
           "topics": [
             "agent-skills",
             "ai-agents",
@@ -115,7 +115,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "56743 sao, 8388 fork, ~199.8 sao/ngày, 284 ngày tuổi"
+            "56965 sao, 8409 fork, ~199.9 sao/ngày, 285 ngày tuổi"
           ]
         }
       },
@@ -129,12 +129,12 @@
         "fullName": "hypit-ai/hypit",
         "url": "https://github.com/hypit-ai/hypit",
         "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-        "stars": 25942,
+        "stars": 26099,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 25942"
+          "⭐ 26099"
         ],
         "signalUrls": [],
         "points": 0,
@@ -151,14 +151,14 @@
         "github": {
           "fullName": "hypit-ai/hypit",
           "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-          "stars": 25942,
-          "forks": 2962,
+          "stars": 26099,
+          "forks": 2988,
           "createdAt": "2026-07-29T18:49:19Z",
-          "ageDays": 89,
-          "starsPerDay": 291.5,
+          "ageDays": 91,
+          "starsPerDay": 286.8,
           "pushedAt": "2026-10-26T13:12:33Z",
           "archived": false,
-          "openIssues": 75,
+          "openIssues": 77,
           "topics": [
             "agentic-ai",
             "ai",
@@ -207,7 +207,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "25942 sao, 2962 fork, ~291.5 sao/ngày, 89 ngày tuổi"
+            "26099 sao, 2988 fork, ~286.8 sao/ngày, 91 ngày tuổi"
           ]
         }
       },
@@ -237,13 +237,13 @@
         "fullName": "Evolink-AI/awesome-gpt-image-2-API-Prompts",
         "url": "https://github.com/Evolink-AI/awesome-gpt-image-2-API-Prompts",
         "description": "GPT-Image-2 API and Prompts",
-        "stars": 17354,
+        "stars": 17357,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 17354",
-          "⭐ 17354"
+          "⭐ 17357",
+          "⭐ 17357"
         ],
         "signalUrls": [],
         "points": 0,
@@ -259,11 +259,11 @@
         "github": {
           "fullName": "Evolink-AI/awesome-gpt-image-2-API-Prompts",
           "description": "GPT-Image-2 API and Prompts",
-          "stars": 17354,
-          "forks": 1746,
+          "stars": 17357,
+          "forks": 1744,
           "createdAt": "2026-04-18T11:22:14Z",
-          "ageDays": 192,
-          "starsPerDay": 90.4,
+          "ageDays": 193,
+          "starsPerDay": 89.9,
           "pushedAt": "2026-07-18T06:23:28Z",
           "archived": false,
           "openIssues": 3,
@@ -315,7 +315,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "17354 sao, 1746 fork, ~90.4 sao/ngày, 192 ngày tuổi"
+            "17357 sao, 1744 fork, ~89.9 sao/ngày, 193 ngày tuổi"
           ]
         }
       },
@@ -337,7 +337,7 @@
           "caption": ""
         }
       ],
-      "score": 1967.7
+      "score": 1967.85
     },
     {
       "candidate": {
@@ -367,12 +367,12 @@
         "github": {
           "fullName": "devdotfast/whiteboard",
           "description": "open-source canvas for thoughtful software design",
-          "stars": 3364,
+          "stars": 3373,
           "forks": 175,
           "createdAt": "2026-08-18T15:06:04Z",
-          "ageDays": 70,
-          "starsPerDay": 48.1,
-          "pushedAt": "2026-10-27T01:33:02Z",
+          "ageDays": 71,
+          "starsPerDay": 47.5,
+          "pushedAt": "2026-10-28T02:46:15Z",
           "archived": false,
           "openIssues": 32,
           "topics": [],
@@ -410,11 +410,11 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "3364 sao, 175 fork, ~48.1 sao/ngày, 70 ngày tuổi"
+            "3373 sao, 175 fork, ~47.5 sao/ngày, 71 ngày tuổi"
           ]
         }
       },
-      "readmeExcerpt": "<div align=\"center\">\n  <img\n    src=\"docs/assets/review-logo.png\"\n    width=\"96\"\n    alt=\"Whiteboard logo\"\n  />\n  <h1>Whiteboard</h1>\n  <p><strong>an open-source canvas for thoughtful software design</strong></p>\n  <p>\n    <a href=\"https://dev.fast/install\">Download for macOS, Windows, and Linux</a> ·\n    <a href=\"https://dev.fast\">Website</a> ·\n    <a href=\"https://github.com/devdotfast/whiteboard/wiki/Roadmap\">Roadmap</a> ·\n    <a href=\"https://discord.gg/wYvd2cpMQg\">Discord</a>\n  </p>\n</div>\n\nWhiteboard is an open-source desktop app where humans and agents can architect software together in a common workspace.\n\nWhiteboard plugs into the tools you already use - e.g. Claude Code, Codex, etc. – and gives your agent an SDK to draw on an in-app canvas to describe its work.\n\n<p align=\"center\">\n  <img\n    src=\".github/assets/whiteboard-demo.gif\"\n    width=\"880\"\n    alt=\"An agent writes a Whiteboard review from a terminal prompt, which includes a sequence diagram\"\n  />\n</p>\n\nHere’s a 1 min demo video explaining more: https://www.youtube.com/watch?v=ChPn3ftULWE\n\n## Quickstart\n\n1. [Download Whiteboard](https://dev.fast/install) and open the app. On macOS\n   you can also run `brew install --cask devdotfast/tap/whiteboard`.\n2. Connect Claude Code, Codex, or another coding agent from the welcome screen.\n3. Ask your agent to review your current branch against up-to-date main and\n   open the result in Whiteboard.\n\n## Guidance\n\nIn our experience, Whiteboard works best with models like GPT-6 Sol and Claude Opus 5.5 for their intelligence, cost, and speed tradeoff.\n\nHere are a few example prompts of how to use Whiteboard effectively. We are working hard to make sure the right choices are baked in by default to the system prompt - part of why this system is open source! - but in the meantime:\n\n### For a new API change\n\n> hey, this stack of commits is set up so i can get an [api] to do [objective]\n>\n> i'd like to see:\n>\n> - proposed api\n> - examples\n> - motivations for this (if available to you in context/in the repo)\n>\n> and then we can dive into implementation + explaining how things worked.\n\n### For a change to add telemetry:\n\n> Can you explain to me the telemetry changes from the newest posthog pr https://github.com/devdotfast/whiteboard/commit/4837e107946e27ebad50c282eb0f2585210d2a35 -- what are we tracking, how can we build good dashboards or product waterfalls from it? what do we do for hangs, errors, crashes etc... use whiteboard\n\nIf you see anything you don't like, highlight it in your clipboard and give it your agent, and it can re-draw on the Whiteboard to suit your needs!\n\n## Why does this exist?\n\n### Diagrams that lead to code\n\nPure HTML tools didn’t provide easy affordances to connect a spec or diagram to code; this is especially tricky since tradeoffs are often only discovered after a first pass at implementation. In Whiteboard, when you click on visualizations like a sequence diagram, an entity relationship diagram, or a quote from the agent’s trace, you can jump to the underlying code directly. When navigating code, you get keybindings and LSP support from VSCode out of the box.\n\n### Semantic diff viewer\n\nRaw diff views can be very noisy, so we wrote a semantic, AST-aware diff viewer in Rust so you can only view the code changes which are relevant to you. We’ve set up some sane defaults: large added functions are summarized as pseudocode, and things like unit tests and documentation changes are collapsed / hidden. This is all customizable with a WASM-based plugin system.\n\n### Decision log\n\nWe found it difficult to reason about what set of decisions our agents made autonomously & how that impacts a change. So we built tools for agents to query and link their own traces on the Whiteboard, so you can visualize the requirements that you set, understand how they were implemented, and understand what decisions the agent made autonomously.\n\n\n## Open source, on your machine\n\nWhiteboard is MIT-licensed and runs against your local checkouts. A hosted\nproduct for teams is planned, and everything will always remain self-hostable.\n\n## Known limitations\n\n- You cannot currently edit files in Whiteboard. If this is something that you find yourself wanting to do, please file an issue!\n\n- Working and browsing files across multiple repos in a single review isn't well supported.\n\n- While you can share reviews between machines with the share button, updates made after a review is shared don't appear for others. You would need to re-share the review.\n\n## Contributing\n\nContributions and feedback are welcome.\n\nRead [CONTRIBUTING.md](CONTRIBUTING.md) for setup and the pull request workflow,\nand follow the [Code of Conduct](CODE_OF_CONDUCT.md). Report vulnerabilities as\ndescribed in [SECURITY.md](SECURITY.md). Questions? Ask on\n[Discord](https://discord.gg/wYvd2cpMQg).\n\n## Privacy\n\nWhiteboard runs against local checkouts. Anonymous telemetry does not include\nyour code, diffs, Whiteboard text, prompts, or model output. Read the\n[privacy overview](docs/privacy.md), inspect the complete\n[telemetry reference](docs/telemetry.md), or turn telemetry off at any time.\n\n## License\n\nWhiteboard is available under the [MIT License](LICENSE). The vendored Code -\nOSS fork retains Microsoft's MIT license and third-party notices; see\n[`apps/review-desktop/LICENSE`](apps/review-desktop/LICENSE) and\n[`apps/review-desktop/UPSTREAM`](apps/review-desktop/UPSTREAM).\n\n## On vendoring Code OSS\n\nWith everyone using dedicated agent TUIs and desktop apps, we only use our text editors for reviewing line-by-line diffs now, so we figured why not have a text editor meant for reviewing code. In that case, might as well start off with the most successful open source editor out there as a baseline.\n\nWe vendor Code OSS unlike other forks that maintain patches because coding agents have a hard time with patches and there's a lot of stuff from stock VS Code (i.e., ~45% of the codebase is Copilot these days 😬) that we don't need.\n\nWe regularly monitor upstream Code OSS and merge in security/feature patches as they come in.\n\n## Influences\n\n- <https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck>\n  — a great overview of the constraints of modern software engineering.\n- <https://maggieappleton.com/2025-08-vibe-legacy-code/> and\n  <https://blog.val.town/vibe-code> — do a great job describing how AI-generated\n  code fits into the pre-2025 notion of software engineering.\n- Karpathy on agents:\n  - On LLM agents: <https://x.com/karpathy/status/1979644538185752935>\n  - On agents as \"junior engineer savants\":\n    <https://x.com/karpathy/status/1915581920022585597>\n",
+      "readmeExcerpt": "<div align=\"center\">\n  <img\n    src=\"docs/assets/review-logo.png\"\n    width=\"96\"\n    alt=\"Whiteboard logo\"\n  />\n  <h1>Whiteboard</h1>\n  <p><strong>an open-source canvas for thoughtful software design</strong></p>\n  <p>\n    <a href=\"https://dev.fast/install\">Download for macOS, Windows, and Linux</a> ·\n    <a href=\"https://dev.fast\">Website</a> ·\n    <a href=\"https://github.com/devdotfast/whiteboard/wiki/Roadmap\">Roadmap</a> ·\n    <a href=\"https://discord.gg/wYvd2cpMQg\">Discord</a>\n  </p>\n</div>\n\nWhiteboard is an open-source desktop app where humans and agents can architect software together in a common workspace.\n\nWhiteboard plugs into the tools you already use - e.g. Claude Code, Codex, etc. – and gives your agent an SDK to draw on an in-app canvas to describe its work.\n\n<p align=\"center\">\n  <img\n    src=\".github/assets/whiteboard-demo.gif\"\n    width=\"880\"\n    alt=\"An agent writes a Whiteboard review from a terminal prompt, which includes a sequence diagram and a call tree\"\n  />\n</p>\n\nHere’s a 1 min demo video explaining more: https://www.youtube.com/watch?v=ChPn3ftULWE\n\n## Quickstart\n\n1. [Download Whiteboard](https://dev.fast/install) and open the app. On macOS\n   you can also run `brew install --cask devdotfast/tap/whiteboard`.\n2. Connect Claude Code, Codex, or another coding agent from the welcome screen.\n3. Ask your agent to review your current branch against up-to-date main and\n   open the result in Whiteboard.\n\n## Guidance\n\nIn our experience, Whiteboard works best with models like GPT-6 Sol and Claude Opus 5.5 for their intelligence, cost, and speed tradeoff.\n\nHere are a few example prompts of how to use Whiteboard effectively. We are working hard to make sure the right choices are baked in by default to the system prompt - part of why this system is open source! - but in the meantime:\n\n### For a new API change\n\n> hey, this stack of commits is set up so i can get an [api] to do [objective]\n>\n> i'd like to see:\n>\n> - proposed api\n> - examples\n> - motivations for this (if available to you in context/in the repo)\n>\n> and then we can dive into implementation + explaining how things worked.\n\n### For a change to add telemetry:\n\n> Can you explain to me the telemetry changes from the newest posthog pr https://github.com/devdotfast/whiteboard/commit/4837e107946e27ebad50c282eb0f2585210d2a35 -- what are we tracking, how can we build good dashboards or product waterfalls from it? what do we do for hangs, errors, crashes etc... use whiteboard\n\nIf you see anything you don't like, highlight it in your clipboard and give it your agent, and it can re-draw on the Whiteboard to suit your needs!\n\n## Why does this exist?\n\n### Diagrams that lead to code\n\nPure HTML tools didn’t provide easy affordances to connect a spec or diagram to code; this is especially tricky since tradeoffs are often only discovered after a first pass at implementation. In Whiteboard, when you click on visualizations like a sequence diagram, an entity relationship diagram, or a quote from the agent’s trace, you can jump to the underlying code directly. When navigating code, you get keybindings and LSP support from VSCode out of the box.\n\n### Semantic diff viewer\n\nRaw diff views can be very noisy, so we wrote a semantic, AST-aware diff viewer in Rust so you can only view the code changes which are relevant to you. We’ve set up some sane defaults: large added functions are summarized as pseudocode, and things like unit tests and documentation changes are collapsed / hidden. This is all customizable with a WASM-based plugin system.\n\n### Decision log\n\nWe found it difficult to reason about what set of decisions our agents made autonomously & how that impacts a change. So we built tools for agents to query and link their own traces on the Whiteboard, so you can visualize the requirements that you set, understand how they were implemented, and understand what decisions the agent made autonomously.\n\n\n## Open source, on your machine\n\nWhiteboard is MIT-licensed and runs against your local checkouts. A hosted\nproduct for teams is planned, and everything will always remain self-hostable.\n\n## Known limitations\n\n- You cannot currently edit files in Whiteboard. If this is something that you find yourself wanting to do, please file an issue!\n\n- Working and browsing files across multiple repos in a single review isn't well supported.\n\n- While you can share reviews between machines with the share button, updates made after a review is shared don't appear for others. You would need to re-share the review.\n\n## Contributing\n\nContributions and feedback are welcome.\n\nRead [CONTRIBUTING.md](CONTRIBUTING.md) for setup and the pull request workflow,\nand follow the [Code of Conduct](CODE_OF_CONDUCT.md). Report vulnerabilities as\ndescribed in [SECURITY.md](SECURITY.md). Questions? Ask on\n[Discord](https://discord.gg/wYvd2cpMQg).\n\n## Privacy\n\nWhiteboard runs against local checkouts. Anonymous telemetry does not include\nyour code, diffs, Whiteboard text, prompts, or model output. Read the\n[privacy overview](docs/privacy.md), inspect the complete\n[telemetry reference](docs/telemetry.md), or turn telemetry off at any time.\n\n## License\n\nWhiteboard is available under the [MIT License](LICENSE). The vendored Code -\nOSS fork retains Microsoft's MIT license and third-party notices; see\n[`apps/review-desktop/LICENSE`](apps/review-desktop/LICENSE) and\n[`apps/review-desktop/UPSTREAM`](apps/review-desktop/UPSTREAM).\n\n## On vendoring Code OSS\n\nWith everyone using dedicated agent TUIs and desktop apps, we only use our text editors for reviewing line-by-line diffs now, so we figured why not have a text editor meant for reviewing code. In that case, might as well start off with the most successful open source editor out there as a baseline.\n\nWe vendor Code OSS unlike other forks that maintain patches because coding agents have a hard time with patches and there's a lot of stuff from stock VS Code (i.e., ~45% of the codebase is Copilot these days 😬) that we don't need.\n\nWe regularly monitor upstream Code OSS and merge in security/feature patches as they come in.\n\n## Influences\n\n- <https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck>\n  — a great overview of the constraints of modern software engineering.\n- <https://maggieappleton.com/2025-08-vibe-legacy-code/> and\n  <https://blog.val.town/vibe-code> — do a great job describing how AI-generated\n  code fits into the pre-2025 notion of software engineering.\n- Karpathy on agents:\n  - On LLM agents: <https://x.com/karpathy/status/1979644538185752935>\n  - On agents as \"junior engineer savants\":\n    <https://x.com/karpathy/status/1915581920022585597>\n",
       "media": [],
       "score": 1524
     },
@@ -444,14 +444,14 @@
         "github": {
           "fullName": "TomBadash/Mouser",
           "description": "A lightweight, open-source, fully local alternative to Logitech Options+ for remapping Logitech HID++ mice.",
-          "stars": 5316,
+          "stars": 5322,
           "forks": 212,
           "createdAt": "2026-02-24T23:54:14Z",
-          "ageDays": 244,
-          "starsPerDay": 21.8,
+          "ageDays": 245,
+          "starsPerDay": 21.7,
           "pushedAt": "2026-10-19T15:56:15Z",
           "archived": false,
-          "openIssues": 138,
+          "openIssues": 139,
           "topics": [
             "automation",
             "controler",
@@ -506,7 +506,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "5316 sao, 212 fork, ~21.8 sao/ngày, 244 ngày tuổi"
+            "5322 sao, 212 fork, ~21.7 sao/ngày, 245 ngày tuổi"
           ]
         }
       },
