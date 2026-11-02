@@ -8,14 +8,14 @@ vertical: ["agency", "seo", "ecom"]
 
 maturity: "established"
 repoStats:
-  stars: 120429
-  forks: 19678
-  note: "~260 ngày tuổi, ~463 sao/ngày"
-  starsPerDay: 463.2
-  ageDays: 260
-  pushedAt: "2026-06-30"
+  stars: 165984
+  forks: 26888
+  note: "~385 ngày tuổi, ~431.1 sao/ngày"
+  starsPerDay: 431.1
+  ageDays: 385
+  pushedAt: "2026-10-25T01:43:20Z"
   archived: false
-  openIssues: 82
+  openIssues: 218
 standoutFeatures:
   - "232 agent chuyên biệt chia 16 division — riêng Marketing 40+ agent (SEO Specialist, Content Creator, Growth Hacker, Social Media Strategist) và Paid Media 8 agent (PPC, Search Query Analyst, Ad Creative)."
   - "Cài native vào 13+ công cụ: Claude Code, Cursor, Copilot, Gemini CLI, Codex, Windsurf, Aider… qua app desktop hoặc script convert/install."

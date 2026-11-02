@@ -17,14 +17,14 @@ vertical: ["creative", "agency"]
 
 maturity: "established"
 repoStats:
-  stars: 33160
-  forks: 3086
-  note: "~117 ngày tuổi, ~283 sao/ngày"
-  starsPerDay: 283.4
-  ageDays: 117
-  pushedAt: "2026-07-05T05:11:17Z"
+  stars: 77349
+  forks: 7089
+  note: "~237 ngày tuổi, ~326.4 sao/ngày"
+  starsPerDay: 326.4
+  ageDays: 237
+  pushedAt: "2026-11-02T09:10:39Z"
   archived: false
-  openIssues: 96
+  openIssues: 222
 standoutFeatures:
   - "Định nghĩa video bằng HTML thuần + data attribute (data-start, data-duration, data-track-index) — không bắt buộc dùng React hay định dạng timeline riêng như các tool video-as-code khác."
   - "Render cố định (deterministic): cùng input ra cùng frame, cùng video — renderer seek từng khung trong headless Chrome rồi encode bằng FFmpeg, hợp cho CI và pipeline tự động."

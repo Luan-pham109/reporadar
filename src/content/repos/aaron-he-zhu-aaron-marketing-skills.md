@@ -8,12 +8,12 @@ vertical: ["agency", "seo"]
 
 maturity: "rising"
 repoStats:
-  stars: 2308
-  forks: 318
-  note: "~198 ngày tuổi, ~11.7 sao/ngày"
-  starsPerDay: 11.7
-  ageDays: 198
-  pushedAt: "2026-07-03T16:56:01Z"
+  stars: 3048
+  forks: 389
+  note: "~319 ngày tuổi, ~9.6 sao/ngày"
+  starsPerDay: 9.6
+  ageDays: 319
+  pushedAt: "2026-11-02T03:58:19Z"
   archived: false
   openIssues: 1
 standoutFeatures:

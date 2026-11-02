@@ -14,14 +14,14 @@ vertical: ["creative"]
 
 maturity: "established"
 repoStats:
-  stars: 27192
-  forks: 3956
-  note: "~289 ngày tuổi, ~94.1 sao/ngày"
-  starsPerDay: 94.1
-  ageDays: 289
-  pushedAt: 2026-06-14T12:40:58Z
+  stars: 29684
+  forks: 4305
+  note: "~360 ngày tuổi, ~82.5 sao/ngày"
+  starsPerDay: 82.5
+  ageDays: 360
+  pushedAt: "2026-06-14T12:40:58Z"
   archived: false
-  openIssues: 159
+  openIssues: 175
 standoutFeatures:
   - "Nhập một chủ đề, AI tự động hoàn tất cả chuỗi: viết lời bình, tạo ảnh/video minh hoạ, tổng hợp giọng đọc, thêm nhạc nền và ghép thành video."
   - "Kết nối được nhiều nhà cung cấp: chạy local hoàn toàn miễn phí (Ollama + ComfyUI) hoặc gọi API DashScope, OpenAI, Seedream, Seedance, Kling..."
