@@ -17,14 +17,14 @@ vertical: ["creative"]
 
 maturity: "rising"
 repoStats:
-  stars: 254
-  forks: 29
-  note: "~145 ngày tuổi, ~1.8 sao/ngày"
-  starsPerDay: 1.8
-  ageDays: 145
-  pushedAt: "2026-06-03"
+  stars: 287
+  forks: 32
+  note: "~268 ngày tuổi, ~1.1 sao/ngày"
+  starsPerDay: 1.1
+  ageDays: 268
+  pushedAt: "2026-07-18T17:53:41Z"
   archived: false
-  openIssues: 0
+  openIssues: 1
 standoutFeatures:
   - "Hơn 40.000 preview phong cách hoạ sĩ gắn tag Danbooru, xem trực tiếp bằng ảnh thay vì đọc tên rồi đoán."
   - "Sắp xếp theo A-Z, số lượng ảnh training (Works) hoặc độ 'độc nhất' (Uniqueness Rank) để tìm phong cách hiếm."

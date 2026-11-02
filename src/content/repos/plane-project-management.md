@@ -17,14 +17,14 @@ vertical: ["agency"]
 
 maturity: "established"
 repoStats:
-  stars: 53477
-  forks: 4802
-  note: "~3,6 năm tuổi, ~40 sao/ngày"
-  starsPerDay: 40.6
-  ageDays: 1318
-  pushedAt: "2026-06-29"
+  stars: 61845
+  forks: 6275
+  note: "~1444 ngày tuổi, ~42.8 sao/ngày"
+  starsPerDay: 42.8
+  ageDays: 1444
+  pushedAt: "2026-10-30T08:57:51Z"
   archived: false
-  openIssues: 951
+  openIssues: 1087
 
 scoreBreakdown:
   useCaseFit: 18
