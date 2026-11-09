@@ -14,14 +14,14 @@ vertical: ["seo", "agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 1578
-  forks: 274
-  note: "~168 ngày tuổi, ~9.4 sao/ngày"
-  starsPerDay: 9.4
-  ageDays: 168
-  pushedAt: "2026-07-23"
+  stars: 2681
+  forks: 459
+  note: "~264 ngày tuổi, ~10.2 sao/ngày"
+  starsPerDay: 10.2
+  ageDays: 264
+  pushedAt: "2026-11-03T00:20:12Z"
   archived: false
-  openIssues: 24
+  openIssues: 4
 standoutFeatures:
   - "Bộ skill lớn: 1 orchestrator + 31 sub-skill, 30 lệnh /blog (write, rewrite, analyze, cluster, multilingual, geo, factcheck...)."
   - "Delivery Contract 5 cổng ép mỗi bản draft phải đạt điểm 90+, đủ định dạng (.md/.html/.pdf/hero), render đúng ở 3 khổ màn hình và link trả 200 mới được giao."
