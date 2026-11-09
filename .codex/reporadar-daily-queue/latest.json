@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T07:34:12.658Z",
+  "generatedAt": "2026-11-09T08:11:20.476Z",
   "args": {
     "days": 365,
     "limit": 60,
@@ -22,13 +22,13 @@
         "fullName": "OpenMontageInc/OpenMontage",
         "url": "https://github.com/OpenMontageInc/OpenMontage",
         "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
-        "stars": 78383,
+        "stars": 78817,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 78383",
-          "⭐ 78383"
+          "⭐ 78817",
+          "⭐ 78817"
         ],
         "signalUrls": [],
         "points": 0,
@@ -45,14 +45,14 @@
         "github": {
           "fullName": "OpenMontageInc/OpenMontage",
           "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
-          "stars": 78383,
-          "forks": 10438,
+          "stars": 78817,
+          "forks": 10526,
           "createdAt": "2026-03-29T15:23:22Z",
-          "ageDays": 224,
-          "starsPerDay": 349.9,
-          "pushedAt": "2026-11-08T03:50:57Z",
+          "ageDays": 225,
+          "starsPerDay": 350.3,
+          "pushedAt": "2026-11-09T06:23:55Z",
           "archived": false,
-          "openIssues": 321,
+          "openIssues": 322,
           "topics": [
             "agent",
             "agentic-ai",
@@ -100,7 +100,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "78383 sao, 10438 fork, ~349.9 sao/ngày, 224 ngày tuổi"
+            "78817 sao, 10526 fork, ~350.3 sao/ngày, 225 ngày tuổi"
           ]
         }
       },
@@ -130,12 +130,12 @@
         "fullName": "coreyhaines31/marketingskills",
         "url": "https://github.com/coreyhaines31/marketingskills",
         "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-        "stars": 59111,
+        "stars": 59285,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 59111"
+          "⭐ 59285"
         ],
         "signalUrls": [],
         "points": 0,
@@ -152,14 +152,14 @@
         "github": {
           "fullName": "coreyhaines31/marketingskills",
           "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-          "stars": 59111,
-          "forks": 8638,
+          "stars": 59285,
+          "forks": 8665,
           "createdAt": "2026-01-15T19:45:23Z",
-          "ageDays": 296,
-          "starsPerDay": 199.7,
+          "ageDays": 298,
+          "starsPerDay": 198.9,
           "pushedAt": "2026-11-06T17:53:06Z",
           "archived": false,
-          "openIssues": 88,
+          "openIssues": 89,
           "topics": [
             "agent-skills",
             "ai-agents",
@@ -223,7 +223,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "59111 sao, 8638 fork, ~199.7 sao/ngày, 296 ngày tuổi"
+            "59285 sao, 8665 fork, ~198.9 sao/ngày, 298 ngày tuổi"
           ]
         }
       },
@@ -237,12 +237,12 @@
         "fullName": "hypit-ai/hypit",
         "url": "https://github.com/hypit-ai/hypit",
         "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-        "stars": 28502,
+        "stars": 28682,
         "sources": [
           "github-search"
         ],
         "signals": [
-          "⭐ 28502"
+          "⭐ 28682"
         ],
         "signalUrls": [],
         "points": 0,
@@ -259,14 +259,14 @@
         "github": {
           "fullName": "hypit-ai/hypit",
           "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-          "stars": 28502,
-          "forks": 3311,
+          "stars": 28682,
+          "forks": 3325,
           "createdAt": "2026-07-29T18:49:19Z",
-          "ageDays": 102,
-          "starsPerDay": 279.4,
-          "pushedAt": "2026-11-05T13:30:52Z",
+          "ageDays": 103,
+          "starsPerDay": 278.5,
+          "pushedAt": "2026-11-09T05:35:25Z",
           "archived": false,
-          "openIssues": 100,
+          "openIssues": 102,
           "topics": [
             "agentic-ai",
             "ai",
@@ -315,7 +315,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "28502 sao, 3311 fork, ~279.4 sao/ngày, 102 ngày tuổi"
+            "28682 sao, 3325 fork, ~278.5 sao/ngày, 103 ngày tuổi"
           ]
         }
       },
@@ -368,10 +368,10 @@
           "fullName": "Evolink-AI/awesome-gpt-image-2-API-Prompts",
           "description": "GPT-Image-2 API and Prompts",
           "stars": 17391,
-          "forks": 1746,
+          "forks": 1745,
           "createdAt": "2026-04-18T11:22:14Z",
-          "ageDays": 204,
-          "starsPerDay": 85.3,
+          "ageDays": 205,
+          "starsPerDay": 84.8,
           "pushedAt": "2026-07-18T06:23:28Z",
           "archived": false,
           "openIssues": 3,
@@ -423,7 +423,7 @@
           "maturitySuggestion": "established",
           "reasons": [
             "Chưa thấy bàn ở HN/Reddit (nguồn thủ công có thể bỏ sót)",
-            "17391 sao, 1746 fork, ~85.3 sao/ngày, 204 ngày tuổi"
+            "17391 sao, 1745 fork, ~84.8 sao/ngày, 205 ngày tuổi"
           ]
         }
       },
@@ -475,11 +475,11 @@
         "github": {
           "fullName": "devdotfast/whiteboard",
           "description": "open-source canvas for thoughtful software design",
-          "stars": 3470,
-          "forks": 179,
+          "stars": 3477,
+          "forks": 180,
           "createdAt": "2026-08-18T15:06:04Z",
-          "ageDays": 82,
-          "starsPerDay": 42.3,
+          "ageDays": 83,
+          "starsPerDay": 41.9,
           "pushedAt": "2026-11-06T23:02:18Z",
           "archived": false,
           "openIssues": 43,
@@ -518,7 +518,7 @@
           "maturitySuggestion": "pre-viral",
           "reasons": [
             "Đang được bàn ở HN/Reddit",
-            "3470 sao, 179 fork, ~42.3 sao/ngày, 82 ngày tuổi"
+            "3477 sao, 180 fork, ~41.9 sao/ngày, 83 ngày tuổi"
           ]
         }
       },
