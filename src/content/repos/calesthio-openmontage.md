@@ -17,9 +17,14 @@ vertical: ["creative", "ecom"]
 
 maturity: "established"
 repoStats:
-  stars: 23265
-  forks: 2585
-  note: "~89 ngày tuổi, ~261.4 sao/ngày"
+  stars: 78846
+  forks: 10531
+  note: "~225 ngày tuổi, ~350.4 sao/ngày"
+  starsPerDay: 350.4
+  ageDays: 225
+  pushedAt: "2026-11-09T06:23:55Z"
+  archived: false
+  openIssues: 323
 standoutFeatures:
   - "Có 12 pipeline, 52 tool và hơn 500 agent skill cho sản xuất video."
   - "Biến AI coding assistant thành một studio dựng video có thể gọi ffmpeg, TTS, image generation và video generation."
