@@ -8,8 +8,14 @@ vertical: ["seo", "agency"]
 
 maturity: "rising"
 repoStats:
-  stars: 253
-  note: "Số sao lấy từ snapshot discovery của pipeline (GitHub API chưa fetch được trong lần soi này, chưa có tuổi repo/sao/ngày)."
+  stars: 313
+  forks: 37
+  note: "~317 ngày tuổi, ~1 sao/ngày"
+  starsPerDay: 1
+  ageDays: 317
+  pushedAt: "2026-11-16T09:15:18Z"
+  archived: false
+  openIssues: 198
 standoutFeatures:
   - "Hơn 260 quy tắc audit chia theo ~21 nhóm: SEO, performance, security, accessibility và 'agent experience'."
   - "Có nhóm audit riêng cho mức độ AI-ready (kiểm tra tương thích với GPTBot, Claude-User...), không chỉ SEO truyền thống."

@@ -8,9 +8,14 @@ vertical: ["creative", "ecom"]
 
 maturity: "rising"
 repoStats:
-  stars: 586
-  forks: 80
-  note: "~20 ngày tuổi, ~29.3 sao/ngày"
+  stars: 740
+  forks: 120
+  note: "~161 ngày tuổi, ~4.6 sao/ngày"
+  starsPerDay: 4.6
+  ageDays: 161
+  pushedAt: "2026-11-15T05:00:37Z"
+  archived: false
+  openIssues: 2
 standoutFeatures:
   - "WebUI FastAPI cho GPT-image-2, kèm CLI để tự động hóa tác vụ tạo ảnh."
   - "Có public gallery, ảnh tham chiếu gần đây, color chip, prompt snippet chip và prompt template."
