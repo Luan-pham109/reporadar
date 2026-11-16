@@ -11,9 +11,14 @@ vertical: ["creative"]
 
 maturity: "rising"
 repoStats:
-  stars: 4498
-  forks: 231
-  note: "~219 ngày tuổi, ~20.5 sao/ngày"
+  stars: 4606
+  forks: 241
+  note: "~361 ngày tuổi, ~12.8 sao/ngày"
+  starsPerDay: 12.8
+  ageDays: 361
+  pushedAt: "2026-04-10T06:14:59Z"
+  archived: false
+  openIssues: 42
 standoutFeatures:
   - "Model 8.3B tham số nhưng README nói vẫn chạy được trên GPU consumer, với mức tối thiểu khoảng 14 GB VRAM khi bật offload."
   - "Hỗ trợ cả text-to-video lẫn image-to-video, kèm pipeline super-resolution để nâng chất lượng lên 1080p."

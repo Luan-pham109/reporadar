@@ -8,14 +8,14 @@ vertical: ["seo", "agency"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 587
-  forks: 191
-  note: "~142 ngày tuổi, ~4.1 sao/ngày"
-  starsPerDay: 4.1
-  ageDays: 142
-  pushedAt: "2026-06-14"
+  stars: 786
+  forks: 222
+  note: "~246 ngày tuổi, ~3.2 sao/ngày"
+  starsPerDay: 3.2
+  ageDays: 246
+  pushedAt: "2026-10-19T19:33:03Z"
   archived: false
-  openIssues: 3
+  openIssues: 6
 standoutFeatures:
   - "Khoảng 50+ skill chia theo 8 giai đoạn tạo thành 'flywheel' khép kín: research → content → blog/SEO → landing → phân phối → analytics → automation → meta."
   - "Chạy được với nhiều AI (Claude Code, Pi, ChatGPT, Gemini CLI, Cursor, Windsurf) vì skill chỉ là file Markdown/SKILL.md."
