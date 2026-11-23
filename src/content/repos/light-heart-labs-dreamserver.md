@@ -11,9 +11,14 @@ vertical: ["creative", "agency"]
 
 maturity: "pre-viral"
 repoStats:
-  stars: 2271
-  forks: 351
-  note: "~138 ngày tuổi, ~16.5 sao/ngày"
+  stars: 7909
+  forks: 1126
+  note: "~287 ngày tuổi, ~27.6 sao/ngày"
+  starsPerDay: 27.6
+  ageDays: 287
+  pushedAt: "2026-11-19T08:35:56Z"
+  archived: false
+  openIssues: 812
 standoutFeatures:
   - "Bộ cài một lệnh có phát hiện phần cứng, chọn model phù hợp và dựng sẵn nhiều dịch vụ local AI thay vì chỉ ship mỗi chat UI."
   - "Gộp sẵn Open WebUI, workflow automation, RAG/search, voice và image generation trong cùng một control plane."
