@@ -8,14 +8,14 @@ vertical: ["agency", "seo"]
 
 maturity: "rising"
 repoStats:
-  stars: 2308
-  forks: 318
-  note: "~198 ngày tuổi, ~11.7 sao/ngày"
-  starsPerDay: 11.7
-  ageDays: 198
-  pushedAt: "2026-07-03T16:56:01Z"
+  stars: 3192
+  forks: 402
+  note: "~340 ngày tuổi, ~9.4 sao/ngày"
+  starsPerDay: 9.4
+  ageDays: 340
+  pushedAt: "2026-11-23T05:20:58Z"
   archived: false
-  openIssues: 1
+  openIssues: 4
 standoutFeatures:
   - "69 skill chia thành 4 mảng marketing (SEO/GEO, influencer, paid ads, email) cộng 5 skill nền tảng dùng chung, thay vì chỉ làm mỗi SEO như phần lớn bộ skill Claude Code khác cùng chủ đề."
   - "5 khung chấm điểm chất lượng có 'veto' riêng (CORE-EEAT, CITE, C³, ROAS, SEND) — mỗi output đều bị một skill 'auditor' kiểm tra và ra verdict SHIP/FIX/BLOCK trước khi coi là xong."

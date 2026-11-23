@@ -7,14 +7,14 @@ vertical: ["seo"]
 
 maturity: "rising"
 repoStats:
-  stars: 222
-  forks: 37
-  note: "~107 ngày tuổi, ~2.1 sao/ngày"
-  starsPerDay: 2.1
-  ageDays: 107
-  pushedAt: "2026-06-25T12:40:00Z"
+  stars: 267
+  forks: 42
+  note: "~250 ngày tuổi, ~1.1 sao/ngày"
+  starsPerDay: 1.1
+  ageDays: 250
+  pushedAt: "2026-11-12T12:58:39Z"
   archived: false
-  openIssues: 0
+  openIssues: 1
 standoutFeatures:
   - "Một lệnh (`/seoagi \"từ khoá\"`) chạy hết quy trình: kéo SERP, phân tích đối thủ, tìm khoảng trống nội dung, rồi viết hẳn một trang có heading, FAQ từ dữ liệu People Also Ask thật và schema JSON-LD."
   - "Có checklist chất lượng 55 điểm (ngưỡng đạt 46/55) trước khi xuất bản, thay vì chỉ đưa ra một bản nháp không kiểm chứng."
